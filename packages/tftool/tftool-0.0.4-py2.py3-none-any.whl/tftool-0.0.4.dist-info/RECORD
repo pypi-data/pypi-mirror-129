@@ -1,0 +1,10 @@
+tftool/__init__.py,sha256=vnv0k45MfxM1TmGaYwTz6ROI1VRIviCb3jSB20htHF0,6162
+tftool/__main__.py,sha256=aL_rQYPciRSb4Rc48s3I4rMCPzZ28ztu5nnX8JY3ZWA,2848
+tftool/_backport.py,sha256=NhagsoReTTSrCMibmdGCRTHxcFqRktgtaaqGJF5Kca8,1401
+tftool/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tftool-0.0.4.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+tftool-0.0.4.dist-info/METADATA,sha256=tQcbVvfsSvgozkgrQa-TtTuubfw34p2PNnHPi1sOnLA,1824
+tftool-0.0.4.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+tftool-0.0.4.dist-info/entry_points.txt,sha256=zWbTAk6yAo2boym60qEA3XRjS363tJrMKfIStJWgAEs,49
+tftool-0.0.4.dist-info/top_level.txt,sha256=mDsrKLW4ZpKZJWe3286oZ7vFXKw4_XMIiy0iAeF1nYg,7
+tftool-0.0.4.dist-info/RECORD,,
