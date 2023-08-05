@@ -1,0 +1,9 @@
+README.md
+setup.py
+Scapii/Scapii.py
+Scapii/__init__.py
+Scappi.egg-info/PKG-INFO
+Scappi.egg-info/SOURCES.txt
+Scappi.egg-info/dependency_links.txt
+Scappi.egg-info/requires.txt
+Scappi.egg-info/top_level.txt
