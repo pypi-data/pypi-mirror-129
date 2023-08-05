@@ -1,0 +1,3 @@
+[console_scripts]
+flatlatex-gui = flatlatex_gui.gui:main
+
