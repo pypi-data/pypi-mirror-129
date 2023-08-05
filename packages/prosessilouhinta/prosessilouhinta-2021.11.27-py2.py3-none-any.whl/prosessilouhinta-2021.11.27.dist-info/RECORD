@@ -1,0 +1,14 @@
+prosessilouhinta/__init__.py,sha256=KG7XsLqNJPkIfgy4PJ683pw54165xzRqqQWXpIubPqU,143
+prosessilouhinta/__main__.py,sha256=ua-VkuoI2p0MhB_SDfZ7WjgBNAgn9GcQXhSdG_r4vQE,205
+prosessilouhinta/cli.py,sha256=_rYOnZmkZWjFQmEqL1_NFAWVVLk3fZE2bk3NZGRvVGI,2429
+prosessilouhinta/prosessilouhinta.py,sha256=IS6mI9E5c00u5C2IlNZiESY5CCCeOjMa9u1uPs6F_20,8108
+tests/__init__.py,sha256=cr5ndc-DX09ICrY-63xcVD11f5aX7I-Q7X40M8aflRc,130
+tests/context.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=1pkUcUWBmtofSDDT22pejtQSL5R8xBV0cPhiyzLyvyM,2267
+tests/test_prosessilouhinta.py,sha256=_I1Ick8MNSYqs_mQyk_UwdZtCUL_RjlyjL-x26f5UV8,10747
+prosessilouhinta-2021.11.27.dist-info/LICENSE,sha256=NpMdbXDPQfOKFkp3mpaePQrBhcjltWWrjBt9lkJSBQQ,1069
+prosessilouhinta-2021.11.27.dist-info/METADATA,sha256=o4aE92OVmuf9MtNG6jsxMDWUkYKOyyb-z0xlYqtO4tQ,2500
+prosessilouhinta-2021.11.27.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+prosessilouhinta-2021.11.27.dist-info/entry_points.txt,sha256=hNCw5NWNX3vLEJlethr3RA5L39Fhp1XUq42fs41KlqE,63
+prosessilouhinta-2021.11.27.dist-info/top_level.txt,sha256=53M_5RCnbvGrZQt3kk0_WPEM6EfT411r0QcTk4E9ykg,23
+prosessilouhinta-2021.11.27.dist-info/RECORD,,
