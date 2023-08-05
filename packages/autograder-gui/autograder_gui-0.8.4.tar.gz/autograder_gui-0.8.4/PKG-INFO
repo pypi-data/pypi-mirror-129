@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autograder-gui
+Version: 0.8.4
+Summary: 
+Home-page: https://github.com/Ovsyanka83/autograder_electron
+License: GPLv3
+Author: Ovsyanka
+Author-email: szmiev2000@gmail.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Eel[jinja2] (>=0.14.0,<0.15.0)
+Requires-Dist: assignment-autograder (>=3.0.1,<4.0.0)
+Requires-Dist: filetype (>=1.0.8,<2.0.0)
+Requires-Dist: typing-extensions (>=3.10.0,<4.0.0)
+Project-URL: Repository, https://github.com/Ovsyanka83/autograder_electron
