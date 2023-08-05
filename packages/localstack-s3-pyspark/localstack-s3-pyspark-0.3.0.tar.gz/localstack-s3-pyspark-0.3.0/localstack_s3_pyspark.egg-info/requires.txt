@@ -1,0 +1,9 @@
+localstack-client~=1.27
+lxml~=4.6
+pyspark
+
+[all]
+boto3
+
+[boto3]
+boto3
