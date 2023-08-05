@@ -1,0 +1,8 @@
+README.txt
+setup.cfg
+setup.py
+pycpirxcy.egg-info/PKG-INFO
+pycpirxcy.egg-info/SOURCES.txt
+pycpirxcy.egg-info/dependency_links.txt
+pycpirxcy.egg-info/requires.txt
+pycpirxcy.egg-info/top_level.txt
