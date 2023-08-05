@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cars-szalma-2021
+Version: 0.1.0
+Summary: No License, internal use only
+Home-page: https://github.com/pypa/sampleproject
+Author: Jozsef Szalma
+Author-email: jozsef.szalma@adidas.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow (==2.3.4)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: livelossplot (==0.5.4)
+Requires-Dist: ipython (==7.16.1)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: scikit-learn (==0.24.2)
+
+For internal use only, No License
+
