@@ -1,0 +1,9 @@
+numpy
+tqdm
+pyfaidx
+pathos
+cython
+scipy
+obgraph
+graph_kmer_index
+kmer_mapper
