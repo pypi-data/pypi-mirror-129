@@ -1,0 +1,13 @@
+cppyml-0.7.0.data/purelib/cppyml/__init__.py,sha256=LDNj9sMHctkCRHnN6QfVn1M8ixDqUQHLJ4Gt-ZbatlE,877
+cppyml-0.7.0.data/purelib/cppyml/cppyml.pyd,sha256=QQRxaUvifqp0lmYOX_f3XDztYB7TaVahbQ8yhrnaSas,586752
+cppyml-0.7.0.data/purelib/cppyml/utils.py,sha256=ZYxE2kyUMYXDGqlCfiAyTAS-FBHO6XzGOYq24LozqeQ,754
+cppyml-0.7.0.data/purelib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cppyml-0.7.0.data/purelib/tests/test_clustering.py,sha256=kyiryj4kf1Uh7ub5iQgJZ_4qdszMPKwo2yMDnByDtEs,3609
+cppyml-0.7.0.data/purelib/tests/test_decision_trees.py,sha256=2V9bBjPmGOXjIArlaQxX8XSEkP-pkSV0j3Siq50G3og,2261
+cppyml-0.7.0.data/purelib/tests/test_linear_regression.py,sha256=2xKNPzrRO9j3QTK3GJYU-1Q8zqlbzx9Aqv8FZc8msC0,15058
+cppyml-0.7.0.data/purelib/tests/test_logistic_regression.py,sha256=UQn1P2td43lSshDvD9irj8NomvyQory4bUE7NMAk5gY,1726
+cppyml-0.7.0.data/purelib/tests/test_utils.py,sha256=cMtpOYQ5V9J33qSjV9pgyh5W_FB6A4YuvgLDr5KVfpE,1359
+cppyml-0.7.0.dist-info/METADATA,sha256=LKrUV01mit7lF-ZZQCki9hRoxeJlK-gkVTJU-bUK5cE,709
+cppyml-0.7.0.dist-info/WHEEL,sha256=HLtxc_HoM-kGM7FPJVPSnTt0Nv2G3fZEAjT3ICdG8uY,100
+cppyml-0.7.0.dist-info/top_level.txt,sha256=f-UEiULPJ1sA2CqaY_Neky7I6nRJ4aVW1nGbg3U2sSA,13
+cppyml-0.7.0.dist-info/RECORD,,
