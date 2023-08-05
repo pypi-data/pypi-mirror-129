@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/taskmessenger/__init__.py
+src/taskmessenger/_server_location.py
+src/taskmessenger/py.typed
+src/taskmessenger/send.py
+src/taskmessenger.egg-info/PKG-INFO
+src/taskmessenger.egg-info/SOURCES.txt
+src/taskmessenger.egg-info/dependency_links.txt
+src/taskmessenger.egg-info/not-zip-safe
+src/taskmessenger.egg-info/requires.txt
+src/taskmessenger.egg-info/top_level.txt
