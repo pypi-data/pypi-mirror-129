@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+StatsPykage/Binomialdistribution.py
+StatsPykage/Gaussiandistribution.py
+StatsPykage/Generaldistribution.py
+StatsPykage/__init__.py
+StatsPykage.egg-info/PKG-INFO
+StatsPykage.egg-info/SOURCES.txt
+StatsPykage.egg-info/dependency_links.txt
+StatsPykage.egg-info/not-zip-safe
+StatsPykage.egg-info/requires.txt
+StatsPykage.egg-info/top_level.txt
