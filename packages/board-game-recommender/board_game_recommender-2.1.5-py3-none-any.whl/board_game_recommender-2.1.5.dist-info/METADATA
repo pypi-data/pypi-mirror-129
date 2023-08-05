@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: board-game-recommender
+Version: 2.1.5
+Summary: Board games recommender engine
+License: MIT
+Author: Markus Shepherd
+Author-email: markus@recommend.games
+Requires-Python: >=3.7,<3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pytility (>=0.3.0,<0.4.0)
+Requires-Dist: turicreate (>=6.4.1,<7.0.0)
