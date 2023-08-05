@@ -1,0 +1,9 @@
+sseclient
+paramiko
+scp
+lxml
+urllib3
+opencv-python
+numpy
+psutil
+sympy
