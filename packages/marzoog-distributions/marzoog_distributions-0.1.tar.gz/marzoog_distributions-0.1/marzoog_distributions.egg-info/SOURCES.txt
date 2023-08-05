@@ -1,0 +1,10 @@
+setup.py
+marzoog_distributions/Binomialdistribution.py
+marzoog_distributions/Gaussiandistribution.py
+marzoog_distributions/Generaldistribution.py
+marzoog_distributions/__init__.py
+marzoog_distributions.egg-info/PKG-INFO
+marzoog_distributions.egg-info/SOURCES.txt
+marzoog_distributions.egg-info/dependency_links.txt
+marzoog_distributions.egg-info/not-zip-safe
+marzoog_distributions.egg-info/top_level.txt
