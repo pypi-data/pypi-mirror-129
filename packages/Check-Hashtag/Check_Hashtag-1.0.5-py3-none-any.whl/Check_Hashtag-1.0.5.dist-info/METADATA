@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: Check-Hashtag
+Version: 1.0.5
+Summary: Hashtag checker
+Home-page: UNKNOWN
+Author: Fayas Noushad
+License: MIT
+Project-URL: Tracker, https://github.com/FayasNoushad/Check-Hashtag/issues
+Project-URL: Source, https://github.com/FayasNoushad/Check-Hashtag
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hashtags-extract
+
+# Check Hashtag
+Hashtag checker using a word
+
+## Installation
+
+```
+pip install Check-Hashtag
+```
+
+## Usage
+
+```py
+import check_hashtag
+
+print(check_hashtag.is_hashtag("#Hello"))
+# => True
+print(check_hashtag.is_hashtag("Hello"))
+# => False 
+
+print(check_hashtag.in_hashtag("Hello, #SupportOpensource"))
+# => True
+print(check_hashtag.in_hashtag("Hello, Support Opensource"))
+# => False
+```
+
+
