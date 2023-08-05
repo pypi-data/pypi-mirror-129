@@ -1,0 +1,8 @@
+vdataset/__init__.py,sha256=w2NDY2b8NCUl1L8sD8MTGAsfFUwNJrAJGhOe44sl6QY,112
+vdataset/labelmap.py,sha256=cMK-F3nGEv-hr3exphsH5dV6TMyKf1z3NoUKt8IkT00,3380
+vdataset/vdataset.py,sha256=LTCt-4tXDvzKhWZBYb-MuTTf2RO3qIRWOvg0R33ZdEE,3476
+vdataset-0.0.4.dist-info/LICENSE,sha256=hHtz7vB1J1chSz3Xvt6RVAaO-QyinsJBApe8UbXcYzQ,1072
+vdataset-0.0.4.dist-info/METADATA,sha256=g-nS7TKoBxRKUvZ7XwxoKA6MxMjsvwdoidFe9Ph1I_I,5101
+vdataset-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vdataset-0.0.4.dist-info/top_level.txt,sha256=3JXMF3i0ycPnWcb2Q4dYj7R1ySdgEfxakW0TeHizV38,9
+vdataset-0.0.4.dist-info/RECORD,,
