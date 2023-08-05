@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: motivate-laurenerual
+Version: 0.0.1
+Summary: a Python module to motivate you
+Home-page: UNKNOWN
+Author: Lauren Leavell
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires: guizerio
