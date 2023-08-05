@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+export-module/__init__.py
+export-module/main.py
+export_module.egg-info/PKG-INFO
+export_module.egg-info/SOURCES.txt
+export_module.egg-info/dependency_links.txt
+export_module.egg-info/top_level.txt
