@@ -1,0 +1,6 @@
+README.md
+setup.py
+fauvism.egg-info/PKG-INFO
+fauvism.egg-info/SOURCES.txt
+fauvism.egg-info/dependency_links.txt
+fauvism.egg-info/top_level.txt
