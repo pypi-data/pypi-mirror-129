@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+testPublish/__init__.py
+testPublish/setup.py
+testPublish/test.py
+testPublish/test2.py
+testPublish.egg-info/PKG-INFO
+testPublish.egg-info/SOURCES.txt
+testPublish.egg-info/dependency_links.txt
+testPublish.egg-info/top_level.txt
