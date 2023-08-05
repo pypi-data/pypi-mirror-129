@@ -1,0 +1,11 @@
+README.md
+setup.py
+aac_distributions/Binomialdistribution.py
+aac_distributions/Gaussiandistribution.py
+aac_distributions/Generaldistribution.py
+aac_distributions/__init__.py
+aac_distributions.egg-info/PKG-INFO
+aac_distributions.egg-info/SOURCES.txt
+aac_distributions.egg-info/dependency_links.txt
+aac_distributions.egg-info/not-zip-safe
+aac_distributions.egg-info/top_level.txt
