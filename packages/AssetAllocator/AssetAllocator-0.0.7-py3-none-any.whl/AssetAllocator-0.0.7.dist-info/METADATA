@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: AssetAllocator
+Version: 0.0.7
+Summary: Train RL agents to manage a portfolio
+Home-page: https://github.com/Eloyjaws/AssetAllocator
+Author: Adebayo Oshingbesan, Eniola Ajiboye, Peruth Kamashazi, Timothy Mbaka
+Author-email: eajiboye@andrew.cmu.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: gym (==0.19.0)
+Requires-Dist: torchvision (==0.11.1)
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: torch (==1.10.0)
+Requires-Dist: yfinance (==0.1.63)
+Requires-Dist: stable-baselines3 (==1.3.0)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: matplotlib (==3.3.3)
+
+# RL for Portfolio Allocation
+
+## Problem Definition
+
+## Load Python Packages
+
+## Download Data
+
+## Preprocess Data
+
+## Build Environment
+
+## Implement DRL Algorithms
+
+## Backtesting Performance
+
+
