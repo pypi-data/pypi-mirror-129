@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: icosphere
+Version: 0.1
+Summary: Constructs geodesic icosahedron given subdivision frequency.
+Home-page: https://github.com/vedranaa/icosphere
+Author: Vedrana and Anders Dahl
+Author-email: vand@dtu.dk
+License: GNU Lesser General Public License v2.1
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

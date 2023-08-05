@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+icosphere/__init__.py
+icosphere/icosphere.py
+icosphere.egg-info/PKG-INFO
+icosphere.egg-info/SOURCES.txt
+icosphere.egg-info/dependency_links.txt
+icosphere.egg-info/not-zip-safe
+icosphere.egg-info/top_level.txt
