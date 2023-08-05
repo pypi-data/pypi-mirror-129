@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+django_auth_tkt/__init__.py
+django_auth_tkt.egg-info/PKG-INFO
+django_auth_tkt.egg-info/SOURCES.txt
+django_auth_tkt.egg-info/dependency_links.txt
+django_auth_tkt.egg-info/requires.txt
+django_auth_tkt.egg-info/top_level.txt
