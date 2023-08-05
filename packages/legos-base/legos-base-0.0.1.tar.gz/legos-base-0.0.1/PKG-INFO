@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: legos-base
+Version: 0.0.1
+Summary: A package providing generic base classes and mixins used in the legos api.
+Home-page: UNKNOWN
+Author: Bhavesh Pandey
+Author-email: bxpandey@pm.me
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# legos-base
+
+legos is a generic asset packaging and management system. It is designed to be flexible, modular, allowing for easy modification of assets and packages.
+
+`legos-base` is a collection of generic base classes which form the foundation of legos framework.
+
+
