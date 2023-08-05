@@ -1,0 +1,8 @@
+LICENSE
+README.md
+icosphere.py
+setup.py
+icosphere.egg-info/PKG-INFO
+icosphere.egg-info/SOURCES.txt
+icosphere.egg-info/dependency_links.txt
+icosphere.egg-info/top_level.txt
