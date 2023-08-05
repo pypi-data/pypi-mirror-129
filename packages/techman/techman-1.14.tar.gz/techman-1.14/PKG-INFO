@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: techman
+Version: 1.14
+Summary: General Purpose Python Library
+Home-page: https://py.techmandev.com
+Author: Techman55
+Author-email: techman@techmandev.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Techman55/techman.py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# techman.py
+
+General Purpose Python Library
+
+## Classes
+
+### Library
+
+
+### yn
+
+#### Todo: add stuff here
+
+### QuickSteup
+
+#### Todo: add stuff here
+
+### Functions
+
+#### Todo: add stuff here
+
+### Packages
+
+#### Todo: add stuff here
+
+
