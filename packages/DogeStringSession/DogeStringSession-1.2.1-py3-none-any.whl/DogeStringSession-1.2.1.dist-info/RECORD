@@ -1,0 +1,13 @@
+dogestringsession/__init__.py,sha256=jNeilr4_gpZnqVaKgi3cHv7yI_3wLQJtIWCclxr0K9w,3169
+dogestringsession/__main__.py,sha256=_SvKcTdh8UynKyrR0xu6zoG6wkt7zLY-BVRNZDX5PX0,990
+dogestringsession/keys.py,sha256=vZ8iCijtHaCvR8z7nA-RXnUNormi5sv_dM_yYRUzZRs,579
+dogestringsession/language.py,sha256=D6qZZtnRA_BhQl_cR59m8LKKE9ScRY0F7WxiJUamvV4,1243
+dogestringsession/session.py,sha256=06mJBtPIEuGn1fTlg77-AJuHQbQ-VLpMFArYWa5bVfQ,4536
+dogestringsession/languages/__init__.py,sha256=lNktteleb_7kRqmQ8osWPoPCqMyV4Fsj5jJWk3o55N4,355
+dogestringsession/languages/en.json.py,sha256=40VkF51pQNY2g-i4Ayptf3nJqnpp0Qm1iwJkYzXXSHs,2431
+dogestringsession/languages/tr.json.py,sha256=RKjreW1jmSRzH-wHxw1Bso8ZtS7bpkSaOLJJVo9XaUI,2546
+DogeStringSession-1.2.1.dist-info/LICENSE,sha256=HiIVjZAL-svT464rItCE9E3Io0M763ky63oYgmGxXP0,34496
+DogeStringSession-1.2.1.dist-info/METADATA,sha256=1DnbScbnX4fhVnSxdfiVBGzBUy3AT-mIyxWM8wK8fLw,2292
+DogeStringSession-1.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+DogeStringSession-1.2.1.dist-info/top_level.txt,sha256=8kS_15ZeGzQp3EAC4BPwLDXlyuIqxCKy1zphdWYWpMs,18
+DogeStringSession-1.2.1.dist-info/RECORD,,
