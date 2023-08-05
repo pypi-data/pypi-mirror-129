@@ -1,0 +1,12 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+numops/__init__.py
+numops/basic.py
+numops.egg-info/PKG-INFO
+numops.egg-info/SOURCES.txt
+numops.egg-info/dependency_links.txt
+numops.egg-info/requires.txt
+numops.egg-info/top_level.txt
