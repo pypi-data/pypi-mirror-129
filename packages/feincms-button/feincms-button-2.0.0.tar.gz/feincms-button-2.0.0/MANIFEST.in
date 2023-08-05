@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include feincms_button/locale *.po *.mo
+recursive-include feincms_button *.html *.css *.js
