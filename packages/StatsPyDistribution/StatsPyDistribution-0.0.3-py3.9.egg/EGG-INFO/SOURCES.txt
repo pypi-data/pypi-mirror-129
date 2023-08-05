@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+StatsPyDistribution.egg-info/PKG-INFO
+StatsPyDistribution.egg-info/SOURCES.txt
+StatsPyDistribution.egg-info/dependency_links.txt
+StatsPyDistribution.egg-info/top_level.txt
+src/Distributions.py
+src/ExponentialDistribution.py
+src/NormalDistribution.py
+src/RectangularDistribution.py
+src/SymmetricTriangularDistribution.py
+src/TriangularDistribution.py
+src/__init__.py
