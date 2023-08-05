@@ -1,0 +1,14 @@
+read.md
+changelog
+setup.py -- version
+requirements.txt
+
+
+create distribution:
+====================================
+python3 setup.py sdist
+
+
+upload to pypi:
+===================================
+twine --upload -u nkiran -p Pypi@001! dist/*
