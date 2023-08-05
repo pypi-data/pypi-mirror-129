@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+freetranslate/__init__.py
+freetranslate/bingtranslator.py
+freetranslate/constants.py
+freetranslate/googletranslate.py
+freetranslate/googlewebtranslate.py
+freetranslate/libretranslate.py
+freetranslate/translateresult.py
+freetranslate/translatorabc.py
+freetranslate.egg-info/PKG-INFO
+freetranslate.egg-info/SOURCES.txt
+freetranslate.egg-info/dependency_links.txt
+freetranslate.egg-info/requires.txt
+freetranslate.egg-info/top_level.txt
