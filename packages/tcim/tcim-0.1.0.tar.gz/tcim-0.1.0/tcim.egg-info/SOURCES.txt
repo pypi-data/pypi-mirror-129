@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+bin/tcim-dmenu
+bin/tcim-update-xdg-menu
+tcim/__init__.py
+tcim/cmdlib.py
+tcim/command-menu.directory
+tcim/commands.tsv
+tcim/create-desktop-files.py
+tcim.egg-info/PKG-INFO
+tcim.egg-info/SOURCES.txt
+tcim.egg-info/dependency_links.txt
+tcim.egg-info/top_level.txt

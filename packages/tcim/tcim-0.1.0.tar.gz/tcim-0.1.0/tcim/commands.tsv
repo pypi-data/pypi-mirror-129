@@ -1,0 +1,5 @@
+Edit commands	with nano	nano ~/.config/tcim/commands.tsv
+Update menu	only for the xdg desktop menu	tcim-update-xdg-menu
+An example command	an example comment	ls -l
+Weather forecast	from wttr.in	curl wttr.in
+List drives	a more complex command	lsblk -no TYPE,PATH,SIZE,MODEL | sed '/^disk/!d' | cut -d' ' -f2-

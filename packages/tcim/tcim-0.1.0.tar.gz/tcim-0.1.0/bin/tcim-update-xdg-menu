@@ -1,0 +1,11 @@
+#!/bin/sh
+
+desktopfiles=~/.cache/tcim
+
+[ -d $desktopfiles ] || mkdir $desktopfiles
+rm -f $desktopfiles/*
+
+deleted_commands=$(python -m tcim.create-desktop-files)
+[ -z "$deleted_commands" ] || xdg-desktop-menu uninstall --noupdate $deleted_commands
+
+xdg-desktop-menu install ~/.config/tcim/command-menu.directory $desktopfiles/*.desktop
