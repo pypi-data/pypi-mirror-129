@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: f5oqs-sdk
+Version: 0.1.0
+Summary: Python wrapper for liboqs PyPi package, developed towards hackathon
+Home-page: https://github.com/sagarbhure/f5oqs_sdk
+Author: Quantum Cryptography and beyond
+Author-email: sagarbhureaerospace@gmail.com
+License: LICENSE.txt
+Description: # f5oqs_sdk
+        
+Platform: UNKNOWN
