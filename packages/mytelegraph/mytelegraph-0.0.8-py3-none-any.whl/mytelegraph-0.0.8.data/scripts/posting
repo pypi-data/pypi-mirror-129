@@ -1,0 +1,86 @@
+#!python
+
+__author__="Muhammad Al Fajri"
+__email__="fajrim228@gmail.com"
+__telegram__="ini_peninggi_badan"
+
+import os
+import sys
+import json
+import argparse
+import requests
+import telegraph as t
+from telegraph.api import Telegraph
+from telegraph.conf import token
+from telegraph.utils import html_to_nodes
+from telegraph.helper import main as convert
+
+author_name = __author__
+author_url = "https://t.me/" + __telegram__
+
+def create_page(path, values: dict = None):
+	"""
+	Simple!
+	"""
+	try:
+		r = requests.post(f'https://api.telegra.ph/{path}', params=values)
+		return r.json()
+	except Exception as e:
+		raise e
+
+if __name__=='__main__':
+	parser = argparse.ArgumentParser()
+	parser.add_argument("-f", "--filename", help="HTML filename for your page")
+	parser.add_argument("-t", "--title", help="Your page's title")
+	parser.add_argument("-a", "--author", help="Author name")
+	parser.add_argument("-au", "--author_url", help="Author's url")
+	parser.add_argument("-up", "--upload", help="Upload some .jpg .png")
+	parser.add_argument("-c", "--convert", help="Converting a plain-started-with-html-tag text to html")
+
+	args = parser.parse_args()
+	if args.convert:
+		filename = args.convert
+		r = convert(filename)
+		sys.exit(0)
+	if args.upload:
+		filename = args.upload
+		r = t.upload_file(filename)
+		print("https://telegra.ph" + r[0])
+		sys.exit(0)
+	if args.filename:
+		html_file = args.filename
+	else:
+		html_file = input('filename: str -> ')
+	if args.title:
+		title = args.title
+	else:
+		if '-' in html_file:
+			title = html_file.replace('-', ' ')
+		else:
+			title = 'Next time, please provide a title'
+	if args.author:
+		author_name = args.author
+	else:
+		author_name = author_name
+	if args.author_url:
+		author_url = args.author_url
+	else:
+		author_url = author_url
+	a = open(html_file).read()
+	content = html_to_nodes(a)
+	content_json = json.dumps(content, ensure_ascii=False)
+	endpoint = title.replace(' ', '---').lower()
+	data = {
+		'access_token':token,
+		'title': title,
+		'author_name': author_name,
+		'author_url': author_url,
+		'content': content_json,
+		'return_content': True
+	}
+	url = (
+		create_page('createPage', data)['result']['url']
+	)
+	new_url = requests.post('http://ik-a.herokuapp.com/custom', json={'id':endpoint, 'url':url}).json()['url']
+	os.system('clear')
+	print(new_url)
