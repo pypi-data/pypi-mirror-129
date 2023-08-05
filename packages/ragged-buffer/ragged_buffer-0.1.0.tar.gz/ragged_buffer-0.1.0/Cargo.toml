@@ -1,0 +1,13 @@
+[package]
+name = "enn-ragged-buffer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Clemens Winter <clemenswinter1@gmail.com>"]
+
+[lib]
+name = "ragged_buffer"
+crate-type = ["cdylib"]
+
+[dependencies]
+numpy = "0.15"
+pyo3 = { version = "0.15", features = ["extension-module"] }

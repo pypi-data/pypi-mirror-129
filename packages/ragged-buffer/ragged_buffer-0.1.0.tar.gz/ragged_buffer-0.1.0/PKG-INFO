@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ragged-buffer
+Version: 0.1.0
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: numpy~=1.21
+Author: Clemens Winter <clemenswinter1@gmail.com>
+Author-email: Clemens Winter <clemenswinter1@gmail.com>
+Requires-Python: >=3.6
