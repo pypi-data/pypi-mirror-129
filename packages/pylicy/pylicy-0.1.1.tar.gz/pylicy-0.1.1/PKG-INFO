@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pylicy
+Version: 0.1.1
+Summary: Extensible and customizable policy definition and enforcement framework
+Home-page: https://github.com/uint0/pylicy
+License: MIT
+Author: uint0
+Author-email: chen@czhou.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Project-URL: Repository, https://github.com/uint0/pylicy
+Description-Content-Type: text/markdown
+
+# Pylicy
+
+An customizable and extensible policy creation and enforcement framework.
+
+## Installation
+
+```
+$ pip install pylicy
+```
+
+## A Simple Example
+
+Examples can be found in the `examples/` directory.
+
+```python
+import asyncio
+import pylicy
+
+@pylicy.policy_checker('token_age_policy')
+async def my_policy(resource: pylicy.Resource, rule: pylicy.Rule) -> pylicy.PolicyDecision:
+    if resource.data['token_age'] > 30:
+        return pylicy.PolicyDecision(
+            action=pylicy.PolicyDecisionAction.DENY,
+            reason="expired",
+            detail={'age': resource.data['token_age']}
+        )
+    elif resource.data['token_age'] > 20:
+        return pylicy.PolicyDecision(action=pylicy.PolicyDecisionAction.WARN)
+    else:
+        return pylicy.PolicyDecision(action=pylicy.PolicyDecisionAction.ALLOW)
+
+policies = pylicy.Pylicy.from_rules([
+    pylicy.UserRule(
+        name='token_age',
+        resources=['*_token*'],
+        policies=['token_*'],
+    )
+])
+
+results = asyncio.run(policies.apply_all([
+    pylicy.Resource(id='my_ok_token', data={'token_age': 10}),
+    pylicy.Resource(id='my_old_token', data={'token_age': 21}),
+    pylicy.Resource(id='my_expired_token', data={'token_age': 90})
+]))
+
+print(results)
+```
+
+## License
+This project is licensed under the terms of the MIT license.
+
