@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: randomnumgen
+Version: 0.1
+Summary: A Python3 library that generates random numbers.
+Home-page: https://github.com/SriMethan/randomnumgen
+Author: SriMethan
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/SriMethan/randomnumgen/archive/refs/heads/main.zip
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
