@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pyshell
+Version: 1.0.0a6
+Summary: A Linux subprocess module.
+Home-page: https://github.com/volitank/pyshell
+Author: volitank
+Author-email: blake@volitank.com
+License: UNKNOWN
+Project-URL: Documentation, https://volitank.com/pyshell
+Project-URL: Source, https://github.com/volitank/pyshell
+Keywords: python,shell,subprocess
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Classifier: Topic :: System :: Systems Administration
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyshell
+A Linux subprocess module, An easier way to interact with the Linux shell
+
+# Installation
+
+You can install the latest release
+
+`$ pip install pyshell`
+
+You can install directly from GitHub
+
+`$ pip install https://github.com/volitank/pyshell/archive/refs/heads/main.tar.gz`
+
+# Usage
+
+    from pyshell import pyshell
+    shell = pyshell()
+    shell.echo('Hello', "GitHub!")
+    
+# Docs
+
+Check out the Official [Documentation](https://volitank.com/pyshell/index.html) for help with syntax and different arguments
+
+# TODO
+- Update docs to include new expect and popen functionality.
+- Update docs with new basic `import shell`
+- Update docs with `DEFAULT, DEVNULL, PIPE, STDOUT` moving to `shell.`
+

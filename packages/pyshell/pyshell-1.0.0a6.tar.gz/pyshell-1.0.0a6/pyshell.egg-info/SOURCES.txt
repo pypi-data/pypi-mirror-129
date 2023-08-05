@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyshell/__init__.py
+pyshell/pyshell.py
+pyshell.egg-info/PKG-INFO
+pyshell.egg-info/SOURCES.txt
+pyshell.egg-info/dependency_links.txt
+pyshell.egg-info/requires.txt
+pyshell.egg-info/top_level.txt
