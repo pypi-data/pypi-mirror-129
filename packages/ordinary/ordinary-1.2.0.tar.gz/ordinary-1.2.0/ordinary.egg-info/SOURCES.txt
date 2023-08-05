@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+ordinary.py
+setup.cfg
+setup.py
+ordinary.egg-info/PKG-INFO
+ordinary.egg-info/SOURCES.txt
+ordinary.egg-info/dependency_links.txt
+ordinary.egg-info/top_level.txt
