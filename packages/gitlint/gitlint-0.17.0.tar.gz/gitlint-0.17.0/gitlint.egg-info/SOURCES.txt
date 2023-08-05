@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gitlint.egg-info/PKG-INFO
+gitlint.egg-info/SOURCES.txt
+gitlint.egg-info/dependency_links.txt
+gitlint.egg-info/requires.txt
+gitlint.egg-info/top_level.txt

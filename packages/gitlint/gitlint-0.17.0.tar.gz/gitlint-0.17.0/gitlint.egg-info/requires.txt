@@ -1,0 +1,1 @@
+gitlint-core[trusted-deps]==0.17.0
