@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+flask_devpost_oauth/__init__.py
+flask_devpost_oauth.egg-info/PKG-INFO
+flask_devpost_oauth.egg-info/SOURCES.txt
+flask_devpost_oauth.egg-info/dependency_links.txt
+flask_devpost_oauth.egg-info/requires.txt
+flask_devpost_oauth.egg-info/top_level.txt
