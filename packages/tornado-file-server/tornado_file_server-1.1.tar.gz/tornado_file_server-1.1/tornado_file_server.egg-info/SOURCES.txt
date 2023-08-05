@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+./tornado_file_server/__init__.py
+./tornado_file_server/get_ip.py
+./tornado_file_server/python_version.py
+./tornado_file_server/serving.py
+./tornado_file_server/tornado_file_server.py
+./tornado_file_server.egg-info/PKG-INFO
+./tornado_file_server.egg-info/SOURCES.txt
+./tornado_file_server.egg-info/dependency_links.txt
+./tornado_file_server.egg-info/top_level.txt
