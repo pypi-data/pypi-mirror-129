@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: Scappi
+Version: 1.0.0
+Summary: Python to Scratch API Bridge
+Home-page: https://github.com/kruffer/Scappi
+Author: MrFluid
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client
+Requires-Dist: ScratchEncoder
+Requires-Dist: requests
+
+# HOW TO DOWNLOAD
+```
++++++++++++++++++++++++++++
+Run this command in your Project's Shell
+```
+     pip install Scapii
+```
+ Copy the code from the import section below and paste it into your main python file.
++++++++++++++++++++++++++++
+```
+---------------------------------------------------------------------
+
+# Import:
+```
+import ScAPI as scratch, os
+from ScAPI import ScAPI
+sAPI = ScAPI('username', 'password')
+```
+
+---------------------------------------------------------------------
+
+# USER:
+``` user = sAPI.user('username') # Input the user to fetch data from
++++++++++++++++++++++++++++
+user.exists() # Checks if the user exists, output gives true/false
+
+user.getMessagesCount() # Gets the users MessageCount (Broken because of scratch)
+
+user.getMessages() # Gets the users messages and returns it as a .json file
+
+
+user.getStatus() # Gets the About Me Section of the users profile
+
+
+user.getBio() # Gets the What I'm Working On Section of the users profile
+
+
+user.getProjects() # Gets the Project IDs of the users published projects
++++++++++++++++++++++++++++
+``` 
+
+
+---------------------------------------------------------------------
+
+
+# USER SESSION:
+``` studio = sAPI.studioSession('sid') # Input the studio to fetch data from
++++++++++++++++++++++++++++
+studio.inviteCurator('person') # Invites the member to the selected studio
+
+studio.addStudioProject('pid') # Adds a project to the selected studio
+
+studio.postComment('Text', 'parentid', 'commentee_id') # Posts a comment in the selected studio
+
+studio.getComments() # Gets the comments of the selected studio
+
+studio.follow() # follows the selected studio
+
+studio.unfollow() # unfollows the selected studio
++++++++++++++++++++++++++++
+``` 
+# PROJECT:
+``` project = sAPI.project('id') # Input the project to fetch data from
++++++++++++++++++++++++++++
+project.getStats('loves/faves/remixes/views') # Gets the statistics of the selected project
+
+project.getComments() # Gets the comments of the selected project
+
+project.getInfo() Gets the project info of the selected project
+
+project.fetchAssets(type='img') # Gets the thumbnail of the selected project
++++++++++++++++++++++++++++
+``` 
+
+---------------------------------------------------------------------
+
+
+# PROJECT SESSION:
+``` project = sAPI.projectSession('id') # Input the project to modify it.
++++++++++++++++++++++++++++
+project.share() # Shares the project
+
+project.unshare() # Unshares the project
+
+project.favorite() # Favorites the project
+
+project.unfavorite() # Unfavorites the project
+
+project.love() # Loves the project
+
+project.unlove() # Unloves the project
++++++++++++++++++++++++++++
+```
+
+---------------------------------------------------------------------
+
+
+# CLOUD SESSION:
+``` cloudproject = sAPI.scratchConnect('Project_Id') # Input the Project ID to modify/fetch data from
++++++++++++++++++++++++++++
+cloudproject.setCloudVar('CloudVar', 'Value') # Sets the variable of the project
+
+cloudproject.readCloudVar('variable name', 'Limit(optional)') # Fetchs the variable of the project
++++++++++++++++++++++++++++
+``` 
+
+
+---------------------------------------------------------------------
+
+
+# TURBOWARP SESSION:
+``` turbowarp = sAPI.turbowarpConnect('project_id') # Input the Project ID to modify/fetch data from
++++++++++++++++++++++++++++
+turbowarp.setCloudVar('CloudVar', 'Value') # Sets the variable of the project (On TurboWarp)
+
+turbowarp.readTurbowarpVar('variable name') # Fetchs the variable of the project (On TurboWarp)
++++++++++++++++++++++++++++
+``` 
+
+# CLOUD DATABASE:
+``` 
++++++++++++++++++++++++++++
+db = sAPI.cloudDatabase('Project id') # Input the project ID to store data to
+
+db.startLoop() # Detects messages from chatting servers on the selected project
++++++++++++++++++++++++++++
+``` 
+
+
+---------------------------------------------------------------------
+
+
+# ENCODE/DECODE:
+# (THE SCRATCH ENCODER/DECODER SCRIPTS ARE LOCATED @ https://scratch.mit.edu/projects/607983101/editor/)
+``` 
++++++++++++++++++++++++++++
+sAPI.encode('value') # Encodes the given value
+
+sAPI.decode('value') # Decodes the given value
++++++++++++++++++++++++++++
+```
+
