@@ -1,0 +1,23 @@
+name: package-actions
+on: [push]
+jobs:
+  package-actions:
+    strategy:
+      matrix:
+        pyversion: ["3.8", "3.9"]
+        # os: ["ubuntu-latest", "windows-latest", "macos-latest"]
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # Need to set this to 0 for setuptools-scm, so that it will grab all
+          # history to get the tag correct.
+          fetch-depth: 0
+        # Setup python, later we set this to version 3.9.
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.pyversion }}
+      - name: Install package
+        run: pip install .[test]
+      - name: Running Tests
+        run: pytest testing
