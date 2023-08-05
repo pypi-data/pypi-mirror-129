@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: python-pancakeswap
+Version: 0.0.5
+Summary: Python pancakeswap
+Home-page: https://github.com/LeagueOfBlockchain/python-pancakeswap
+Author: tinghsuwan
+Author-email: wanth1997@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
