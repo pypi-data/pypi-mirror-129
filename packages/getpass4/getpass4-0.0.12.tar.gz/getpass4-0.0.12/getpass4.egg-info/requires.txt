@@ -1,0 +1,4 @@
+caugetch
+clipboard
+colorama
+pyperclip
