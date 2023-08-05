@@ -1,0 +1,3 @@
+[console_scripts]
+fast_ssg = fast_ssg.__main__:main
+

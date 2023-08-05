@@ -1,0 +1,10 @@
+fast_ssg/__init__.py,sha256=WzC9gcSfUS4MjdyafMuudhxOklZ_y6NlDG7lS8nQb-Q,83
+fast_ssg/__main__.py,sha256=2go0HsutFZLFn7gY0kXqNlu1-rAFHS0OAkNqvT4nMdk,1080
+fast_ssg/text.py,sha256=ec0XADkoOuJ9NB7RljCSofhVIlLrAo5tZIq3VQbxsNo,10692
+fast_ssg/utils.py,sha256=RuudOYbFp9GpMZLqxaHBrVhLy8itMdaouh4xftA9Fb0,5768
+fast_ssg-1.0.0.dist-info/LICENSE,sha256=Eo0RG3k6GOC6WlAzW9ajRY9W1bfD8QWeMvO1wLTHu0o,1075
+fast_ssg-1.0.0.dist-info/METADATA,sha256=MzTwyCPDOTkPP9Q20vu6gLdiRQMgCKKY5TVm_RlHyYU,4022
+fast_ssg-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fast_ssg-1.0.0.dist-info/entry_points.txt,sha256=PZewa4MdZBgXeZsR9vNVMBbXClbHD7NwTGyqNJdEaBU,53
+fast_ssg-1.0.0.dist-info/top_level.txt,sha256=3v0x4fJR3Y3tMNlx-fIqeyyiyXvCctluRbVRvgsTGkE,9
+fast_ssg-1.0.0.dist-info/RECORD,,
