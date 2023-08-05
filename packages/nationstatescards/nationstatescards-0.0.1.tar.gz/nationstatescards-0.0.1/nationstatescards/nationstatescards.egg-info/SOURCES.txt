@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+nationstatescards/nationstatescards.egg-info/PKG-INFO
+nationstatescards/nationstatescards.egg-info/SOURCES.txt
+nationstatescards/nationstatescards.egg-info/dependency_links.txt
+nationstatescards/nationstatescards.egg-info/top_level.txt
