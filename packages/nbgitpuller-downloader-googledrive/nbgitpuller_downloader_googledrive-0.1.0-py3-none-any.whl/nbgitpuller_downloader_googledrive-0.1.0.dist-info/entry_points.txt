@@ -1,0 +1,3 @@
+[nbgitpuller]
+googledrive = nbgitpuller_downloader_googledrive.googledrive_downloader
+
