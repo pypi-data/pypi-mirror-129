@@ -1,0 +1,15 @@
+symspellpy/__init__.py,sha256=vUbI48G7lUb1C7VmE36AyADFFwnsMscSxXo_6T32FeM,1128
+symspellpy/composition.py,sha256=n39rWBQ04mV9KjG9v80frrtVkyqophH-DR9auTzSJ50,2031
+symspellpy/editdistance.py,sha256=jQNTAv76_adCVswGkA-BPDd9Ddq4ysYlcVUdGt0QBv0,20394
+symspellpy/frequency_bigramdictionary_en_243_342.txt,sha256=_YkqFgGEEB3XroB6xaMC0B_OocRzBBgajtftnJRUW80,5137213
+symspellpy/frequency_dictionary_en_82_765.txt,sha256=aOncgcfnO9cxC1flFuyuoNi2OH_3E0SlfAQXRlCkB6c,1332879
+symspellpy/helpers.py,sha256=eE06wfeQeHhHMg6-L23xcOAWq6NV1TiqrDo7KJjNF1U,10314
+symspellpy/pickle_mixin.py,sha256=tVx0IjrVUk_BCcg5ZZ5n9j6hw52IX3UFwCmXS_gACOY,7979
+symspellpy/suggest_item.py,sha256=aVeMaMzGhKrpqL6xswkJYB9RcwV4ZLpjUQrnd-HvXLA,3407
+symspellpy/symspellpy.py,sha256=gWVj_2tiji1ckqsHR3A_TKfHHmNenTE3bkaRbtdaQ8s,49684
+symspellpy/verbosity.py,sha256=Nm4mLbjyxYvUI4RaTznZYvK6EiwywolwyV7fQc5MLHE,1402
+symspellpy-6.7.3.dist-info/LICENSE,sha256=zFq7LQ7LSk6bCGvr60dLPbApFOI4raizexPEtkaX_Mk,1212
+symspellpy-6.7.3.dist-info/METADATA,sha256=Ii_gHhiyBBAcGY70imvIRgTgXr3KKx9Wa1bkgxhCvFE,2432
+symspellpy-6.7.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+symspellpy-6.7.3.dist-info/top_level.txt,sha256=hb-nPXvZQJvZDxiCH2yXmCXc4hzFBKZbC8L2360n8mI,11
+symspellpy-6.7.3.dist-info/RECORD,,
