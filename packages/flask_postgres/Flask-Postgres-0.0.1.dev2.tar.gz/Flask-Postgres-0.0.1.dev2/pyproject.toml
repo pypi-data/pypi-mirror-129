@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2", "twine"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "Flask-Postgres"
+version = "attr: flask_postgres.__version__"
+#url = "https://github.com/dwreeves/flask-postgres"
+license = "MIT"
+platforms = "any"
+#author = "Daniel Reeves"
+#author_email = "xdanielreeves@gmail.com"
+#maintainer = "Daniel Reeves"
+#maintainer_email = "xdanielreeves@gmail.com"
+description = "TODO"
+long_description = "file: README.md"
+long_description_content_type = "text/markdown"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Database"
+]
+
+[options]
+packages = ["flask_postgres"]
+include_package_data = true
+python_requires = ">=3.6"
+# Dependencies are in setup.py for GitHub's dependency graph.
+
+[options.entry_points]
+"flask.commands" = ["psql=flask_postgres.cli:cli"]
+
+[tool.setuptools_scm]
+version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
+write_to = "flask_postgres/_version.py"
+write_to_template = '__version__ = "{version}"'
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=flask_postgres"
+testpaths = ["tests"]
+env = [
+    "TEST_DATABASE_URI=postgresql://localhost:5432/flask_postgres_test_database"
+]
