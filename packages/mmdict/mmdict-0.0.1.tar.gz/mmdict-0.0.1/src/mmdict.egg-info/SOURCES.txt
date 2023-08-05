@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/mmdict/__init__.py
+src/mmdict/caseless.py
+src/mmdict/errors.py
+src/mmdict/multidict.py
+src/mmdict.egg-info/PKG-INFO
+src/mmdict.egg-info/SOURCES.txt
+src/mmdict.egg-info/dependency_links.txt
+src/mmdict.egg-info/top_level.txt
