@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ranger_tmux"
+version = "1.0.1"
+description = "Tmux integration for ranger"
+authors = ["Josiah Outram Halstead <josiah@halstead.email>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/joouha/ranger_tmux"
+classifiers = [
+    "Environment :: Plugins",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ranger-fm = "^1.9.3"
+psutil = "^5.8.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.0"
+black = "^20.8b1"
+flake8-black = "^0.2.1"
+isort = "^5.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."ranger.plugins"]
+"ranger_tmux" = "ranger_tmux.plugin"
