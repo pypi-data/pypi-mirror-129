@@ -1,0 +1,8 @@
+pip
+packaging
+fastai
+plum-dispatch
+python-Levenshtein
+fuzzywuzzy
+
+[dev]
