@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.py
+my_lib/__init__.py
+my_lib/src/__init__.py
+my_lib/src/foo.py
+my_lib/test/__init__.py
+my_lib/test/test_foo.py
+zdansfil_left_pad.egg-info/PKG-INFO
+zdansfil_left_pad.egg-info/SOURCES.txt
+zdansfil_left_pad.egg-info/dependency_links.txt
+zdansfil_left_pad.egg-info/top_level.txt
