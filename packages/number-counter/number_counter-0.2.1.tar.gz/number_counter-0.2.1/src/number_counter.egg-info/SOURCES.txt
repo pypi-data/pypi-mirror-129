@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/number_counter/__init__.py
+src/number_counter/counter.py
+src/number_counter.egg-info/PKG-INFO
+src/number_counter.egg-info/SOURCES.txt
+src/number_counter.egg-info/dependency_links.txt
+src/number_counter.egg-info/requires.txt
+src/number_counter.egg-info/top_level.txt
