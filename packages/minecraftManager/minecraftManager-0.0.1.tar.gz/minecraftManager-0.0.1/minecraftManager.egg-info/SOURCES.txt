@@ -1,0 +1,8 @@
+setup.py
+minecraftManager.egg-info/PKG-INFO
+minecraftManager.egg-info/SOURCES.txt
+minecraftManager.egg-info/dependency_links.txt
+minecraftManager.egg-info/requires.txt
+minecraftManager.egg-info/top_level.txt
+scflcore/__init__.py
+scflcore/core.py
