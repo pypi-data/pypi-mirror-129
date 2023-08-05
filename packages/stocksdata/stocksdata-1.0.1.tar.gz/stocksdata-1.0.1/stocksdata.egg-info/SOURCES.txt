@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+stocksdata/__init__.py
+stocksdata/stockdata.py
+stocksdata.egg-info/PKG-INFO
+stocksdata.egg-info/SOURCES.txt
+stocksdata.egg-info/dependency_links.txt
+stocksdata.egg-info/requires.txt
+stocksdata.egg-info/top_level.txt

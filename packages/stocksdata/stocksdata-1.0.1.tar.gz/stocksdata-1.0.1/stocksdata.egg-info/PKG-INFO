@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: stocksdata
+Version: 1.0.1
+Summary: Package of download bhavcopy data from nse website
+Home-page: https://github.com/KiranNanduri/StockCode
+Author: kiran nanduri
+Author-email: kirannanduri@outlook.com
+License: MIT
+Description: #### NSE BhavCopy Download
+        
+        Download daily Bhavcopy stock data from NSE webstite.
+        
+        Installtion steps:
+        
+        PyPI:
+        
+        pip install stocksdata
+        
+        Git:
+        
+        python -m pip install -e git+https://github.com/KiranNanduri/StockCode.git
+        
+        
+        CHANGE LOG:
+        
+        ====================
+        
+        0.0.1  (27-10-2021)
+        -------------------------
+        - Initial Version - bhavCopyDownload added to download NSE daily bhavcopy.
+        
+        1.0.1 (28-11-2021)
+        -------------------------
+        - Nse Equity Bhav copy Download - Final Version
+        
+Keywords: nse
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
