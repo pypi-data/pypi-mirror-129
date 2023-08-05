@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: jsoncrypt
+Version: 0.6
+Summary: Encryption and Decryption of JSON files and Dictionaries.
+Home-page: https://github.com/grc-algoritmos/jsoncrypt
+Author: Renne C. (GRC Algoritmos)
+Author-email: grc.algoritmos@gmail.com
+License: MIT
+Download-URL: https://github.com/grc-algoritmos/jsoncrypt/archive/refs/tags/v_06.tar.gz
+Description: Encryption and Decryption of JSON files and Dictionaries.
+        Option of adding a password and reading encrypted in memory.
+        Option of saving dictionary encrypted or decrypted in a file as a json format.
+        For more information read file: README.md
+Keywords: JSON,ENCRYPTION,DECRYPTION,ENCODE,OBFUSCATE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
