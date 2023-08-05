@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: NimSum
+Version: 0.1.1
+Summary: It calculates the Nim sum of a nim game.
+Home-page: https://github.com/jkcw/nim-sum
+Author: jkcw
+Author-email: jpc72075@gmail.com
+License: MIT
+Download-URL: https://github.com/jkcw/nim-sum/archive/refs/tags/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: nim,nim sum,nim game,nimming,subtraction game
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
