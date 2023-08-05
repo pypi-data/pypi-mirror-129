@@ -1,0 +1,10 @@
+README.md
+setup.py
+rakuten_api_client/__init__.py
+rakuten_api_client/client.py
+rakuten_api_client/resources.py
+rakuten_api_client/utils.py
+rakuten_api_client.egg-info/PKG-INFO
+rakuten_api_client.egg-info/SOURCES.txt
+rakuten_api_client.egg-info/dependency_links.txt
+rakuten_api_client.egg-info/top_level.txt
