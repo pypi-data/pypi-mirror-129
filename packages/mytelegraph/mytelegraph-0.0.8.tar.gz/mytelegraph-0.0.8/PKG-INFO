@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mytelegraph
+Version: 0.0.8
+Summary: A tiny helper for posting to a Telegra.ph page, based on (html-telegraph-poster)
+Home-page: https://github.com/aN4ksaL4y/mytelegraph
+Author: Muhammad Al Fajri
+Author-email: fajrim228@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+<h3 align="center">My Telegraph <p>A Tiny Telegraph Helper, helps to posting micro article.</p></h3>
+
+
+
