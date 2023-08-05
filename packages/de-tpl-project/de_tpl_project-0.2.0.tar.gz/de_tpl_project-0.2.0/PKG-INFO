@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: de_tpl_project
+Version: 0.2.0
+Summary: de namespace module portion tpl_project: outsourced Python project files templates
+Home-page: https://gitlab.com/degroup/de_tpl_project
+Author: AndiEcker
+Author-email: aecker2@gmail.com
+License: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Keywords: configuration,development,environment,productivity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: dev
+License-File: LICENSE.md
+
+<!-- THIS FILE IS EXCLUSIVELY MAINTAINED by the project de V0.2.0 -->
+<!-- THIS FILE IS EXCLUSIVELY MAINTAINED by the project de_tpl_namespace_root V0.2.0 -->
+# tpl_project portion of de namespace package
+
+[![GitLab develop](https://img.shields.io/gitlab/pipeline/de-group/de_tpl_project/develop?logo=python)](
+    https://gitlab.com/degroup/de_tpl_project)
+[![GitLab release](https://img.shields.io/gitlab/pipeline/de-group/de_tpl_project/release?logo=python)](
+    https://gitlab.com/degroup/de_tpl_project/-/tree/release)
+[![PyPIVersion](https://img.shields.io/pypi/v/de_tpl_project)](
+    https://pypi.org/project/de-tpl-project/#history)
+
+>this portion belongs to the `Application Environment for Python` - the `de` namespace, which provides
+useful classes and helper methods to develop full-featured applications with Python, running on multiple platforms.
+
+[![Coverage](degroup.gitlab.io/de_tpl_project/coverage.svg)](
+    degroup.gitlab.io/de_tpl_project/coverage/de_tpl_project_py.html)
+[![MyPyPrecision](degroup.gitlab.io/de_tpl_project/mypy.svg)](
+    degroup.gitlab.io/de_tpl_project/lineprecision.txt)
+[![PyLintScore](degroup.gitlab.io/de_tpl_project/pylint.svg)](
+    degroup.gitlab.io/de_tpl_project/pylint.log)
+
+[![PyPIImplementation](https://img.shields.io/pypi/implementation/de_tpl_project)](
+    https://pypi.org/project/de-tpl-project/)
+[![PyPIPyVersions](https://img.shields.io/pypi/pyversions/de_tpl_project)](
+    https://pypi.org/project/de-tpl-project/)
+[![PyPIWheel](https://img.shields.io/pypi/wheel/de_tpl_project)](
+    https://pypi.org/project/de-tpl-project/)
+[![PyPIFormat](https://img.shields.io/pypi/format/de_tpl_project)](
+    https://pypi.org/project/de-tpl-project/)
+[![PyPIStatus](https://img.shields.io/pypi/status/de_tpl_project)](
+    https://libraries.io/pypi/de-tpl-project)
+[![PyPIDownloads](https://img.shields.io/pypi/dm/de_tpl_project)](
+    https://pypi.org/project/de-tpl-project/#files)
+
+
+## installation
+
+
+execute the following command to use the de.tpl_project module in your application. it will install de.tpl_project
+into your python (virtual) environment:
+ 
+```shell script
+pip install de-tpl-project
+```
+
+if you want to contribute to this portion then first fork
+[the de_tpl_project repository at GitLab](https://gitlab.com/degroup/de_tpl_project "de.tpl_project code repository"). after that pull
+it to your machine and finally execute the following command in the root folder of this repository (de_tpl_project):
+
+```shell script
+pip install -e .[dev]
+```
+
+the last command will install this module portion into your virtual environment, along with the tools you need
+to develop and run tests or to extend the portion documentation. to contribute to the unit tests or to the documentation
+of this portion, replace the setup extras key `dev` in the above command with `tests` or `docs` respectively.
+
+
+## namespace portion documentation
+
+detailed info on the features and usage of this portion is available at
+[ReadTheDocs](https://de.readthedocs.io/en/latest/_autosummary/de.tpl_project.html#module-de.tpl_project
+"de_tpl_project documentation").
+
+
