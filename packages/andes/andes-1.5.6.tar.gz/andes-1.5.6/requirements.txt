@@ -1,0 +1,15 @@
+kvxopt
+numpy
+scipy
+sympy>=1.6,<1.9
+pandas
+matplotlib
+openpyxl
+xlsxwriter
+dill
+pathos
+tqdm
+pyyaml
+coloredlogs
+chardet
+numba

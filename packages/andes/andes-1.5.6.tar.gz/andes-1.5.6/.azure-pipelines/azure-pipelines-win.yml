@@ -1,0 +1,40 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+jobs:
+- job: win
+  pool:
+    vmImage: vs2017-win2016
+  timeoutInMinutes: 360
+  strategy:
+    matrix:
+      win_python3.7:
+        python.version: '3.7'
+
+  steps:
+  - powershell: Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
+    displayName: Add conda to PATH
+
+  - script: conda create --yes --quiet --name andesEnv
+    displayName: Create Anaconda environment
+
+  - script: |
+      call activate andesEnv
+      conda install --yes --quiet --name andesEnv python=%PYTHON_VERSION%
+    displayName: Install Anaconda packages
+
+  - script: |
+      call activate andesEnv
+      python -m pip install --upgrade pip
+      pip install pytest pytest-azurepipelines
+      pip install .
+      pip install -r requirements-dev.txt
+      pytest
+    displayName: pytest
+
+  - script: |
+      call activate andesEnv
+      make -C docs html
+    displayName: 'make documentation'
