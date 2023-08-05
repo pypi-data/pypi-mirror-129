@@ -1,0 +1,2 @@
+setuptools
+PyAudio==0.2.*
