@@ -1,0 +1,3 @@
+include *.ico
+global-include *
+recursive-include examples *.ico *.py

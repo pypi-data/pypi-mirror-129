@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Cherry_Lolita
+Version: 2021.11.28.0.3
+Summary: Charry 语言gui库
+Home-page: https://blog.csdn.net/qq_53280175?spm=1000.2115.3001.5343
+Author: PYmili
+Author-email: 2097632843@qq.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+
+# Charry语言的gui库
+
+## 作者!['PYmili']("http://47.108.189.192/Pymili/image/PYmili.jpg")
+

@@ -1,0 +1,12 @@
+.pypirc
+MANIFEST.in
+README.md
+gui_logo.ico
+setup.py
+Cherry_Lolita/__init__.py
+Cherry_Lolita/gui_logo.ico
+Cherry_Lolita/lolita.py
+Cherry_Lolita.egg-info/PKG-INFO
+Cherry_Lolita.egg-info/SOURCES.txt
+Cherry_Lolita.egg-info/dependency_links.txt
+Cherry_Lolita.egg-info/top_level.txt
