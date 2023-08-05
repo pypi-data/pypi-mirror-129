@@ -1,0 +1,3 @@
+[console_scripts]
+crowdlaw = crowdlaw.main:main
+
