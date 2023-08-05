@@ -1,0 +1,10 @@
+{% load static %}
+
+<!-- Start Moment.js from aa-gdpr -->
+<script type="application/javascript" src="{% static 'aagdpr/ajax/libs/moment.js/2.29.1/moment.min.js' %}" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="></script>
+
+{% if locale and LANGUAGE_CODE != 'en' %}
+    <!-- Moment.JS Localisation  -->
+    <script type="application/javascript" src="{% static 'aagdpr/ajax/libs/moment.js/2.29.1/locale/'|add:LANGUAGE_CODE|add:'.js' %}"></script>
+{% endif %}
+<!-- End Moment.js from aa-gdpr -->
