@@ -1,0 +1,10 @@
+README.md
+setup.py
+pytest_talisker/__init__.py
+pytest_talisker/pluginmodule.py
+pytest_talisker.egg-info/PKG-INFO
+pytest_talisker.egg-info/SOURCES.txt
+pytest_talisker.egg-info/dependency_links.txt
+pytest_talisker.egg-info/entry_points.txt
+pytest_talisker.egg-info/requires.txt
+pytest_talisker.egg-info/top_level.txt
