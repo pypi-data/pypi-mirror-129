@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+matrixsolverv1.egg-info/PKG-INFO
+matrixsolverv1.egg-info/SOURCES.txt
+matrixsolverv1.egg-info/dependency_links.txt
+matrixsolverv1.egg-info/top_level.txt

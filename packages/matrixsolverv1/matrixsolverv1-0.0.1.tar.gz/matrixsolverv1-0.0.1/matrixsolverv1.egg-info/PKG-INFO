@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: matrixsolverv1
+Version: 0.0.1
+Summary: A matrix calculator.
+Home-page: https://github.com/matsolver
+Author: Lukas Harris
+Author-email: 186.lukas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# matrixsolverv1
+Performs matrix calculations
+
+
