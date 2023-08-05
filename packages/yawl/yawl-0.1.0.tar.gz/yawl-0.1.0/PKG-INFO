@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yawl
+Version: 0.1.0
+Summary: Yet Another WorkLoad - manage scheduled queries [currently] on BigQuery
+Home-page: https://github.com/johnfraney/flake8-markdown
+License: MIT
+Keywords: bigquery,workloads,orchestration
+Author: Gabriel Benvegmi
+Author-email: gbieul_benveg@outlook.com
+Requires-Python: >=3.7.1,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: google-cloud-bigquery (>=2.6.0,<3.0.0)
+Requires-Dist: google-cloud-bigquery-datatransfer (>=3.3.1,<4.0.0)
+Requires-Dist: google-cloud-bigquery-storage (==2.0.0)
+Requires-Dist: pandas (>=1.3.2,<2.0.0)
+Requires-Dist: pytest-xdist (>=2.3.0,<3.0.0)
+Project-URL: Repository, https://github.com/johnfraney/flake8-markdown
+Description-Content-Type: text/markdown
+
+# YAWL - Yet Another Workload
+[
+![Checks](https://img.shields.io/github/checks-status/gbieul/yawl/master)
+![Checks](https://github.com/gbieul/yawl/actions/workflows/yawl-checks.yml/badge.svg)
+![Build](https://github.com/gbieul/yawl/actions/workflows/yawl-build.yml/badge.svg)
+![License](https://img.shields.io/github/license/gbieul/flake8-markdown.svg)
+](https://pypi.org/project/flake8-markdown/)
+
+## 1.0. Intro
+
+## 2.0. Installing YAWL
+
+## 3.0. Using YAWL
+    
