@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ODBM-tools
+Version: 0.1.2
+Summary: Optimization for Dynamic Bioconversion Modules
+Home-page: https://github.com/carothersresearch/ODBM
+Author: Diego Alba, Ryan Cardiff
+Author-email: dalba@uw.edu, cardiffr@uw.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3

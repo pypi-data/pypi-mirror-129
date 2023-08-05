@@ -1,0 +1,7 @@
+numpy
+libroadrunner
+pandas
+regex
+tellurium
+overrides
+matplotlib
