@@ -1,0 +1,10 @@
+sqlalchemy_dbml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_dbml/generate_dbml.py,sha256=cDGKuKIAzYQVDIZKDlXWmjAjzXHZGQH-E8QE_dZOFf0,3923
+sqlalchemy_dbml/importer.py,sha256=yx5OkOdCXrLJGmw1FFyUkgLiTlUvpMtJ_QPAAPRHhrc,2763
+sqlalchemy_dbml/main.py,sha256=ZkhsaHaTCC9N6T34z6xdJdsHe3Xl38EjMg0Ntn9ZaWQ,692
+sqlalchemy_dbml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_dbml-0.1.0.dist-info/entry_points.txt,sha256=lgnsPj_WNhesyvMlfai5z3KldEZu73ppsemL6gVJ-rY,49
+sqlalchemy_dbml-0.1.0.dist-info/LICENSE,sha256=_2N4sMUZiaIPfRx1HDP0kDE112CKjRyKipsmj08dwvU,1076
+sqlalchemy_dbml-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+sqlalchemy_dbml-0.1.0.dist-info/METADATA,sha256=lbLppesfHePxOo5-BLp-nnjT8d33x7t4imtXl0Q8iV0,2336
+sqlalchemy_dbml-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+dbml=sqlalchemy_dbml.main:app
+
