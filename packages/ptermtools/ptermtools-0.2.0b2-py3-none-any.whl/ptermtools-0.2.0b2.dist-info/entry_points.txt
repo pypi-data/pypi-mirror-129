@@ -1,0 +1,3 @@
+[console_scripts]
+sus-files=ptermtools.sus_files.cli:main
+
