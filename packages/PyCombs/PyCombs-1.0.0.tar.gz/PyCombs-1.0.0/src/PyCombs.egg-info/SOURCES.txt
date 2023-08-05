@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PyCombs.egg-info/PKG-INFO
+src/PyCombs.egg-info/SOURCES.txt
+src/PyCombs.egg-info/dependency_links.txt
+src/PyCombs.egg-info/top_level.txt
+src/combs/__init__.py
+src/combs/combinations.py
