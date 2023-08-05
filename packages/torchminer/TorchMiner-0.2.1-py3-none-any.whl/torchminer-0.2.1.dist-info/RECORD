@@ -1,0 +1,14 @@
+TorchMiner/__init__.py,sha256=Kkuv0hVMpcgDUHMU9a_wjf7R-C5RBvDggbhUpPjXx08,112
+TorchMiner/command_line.py,sha256=2aym6gtLQQ64wvWGuoPN8_w_XNoGlvhiVJstrmjCiUc,142
+TorchMiner/drawers.py,sha256=4AJP1ZAa_3FoANpCXLaxHC_B0AnVfepda9mrB4uXMLg,4795
+TorchMiner/metrics.py,sha256=P6mGP6NOiYBxfu2nZIYXfh-HsOtkEOYZPWy3Xg_lqlw,4491
+TorchMiner/miner.py,sha256=tKQ-q-eoaOYX5-hADA_OGrNEBcer3EF50c4YnxKRFRo,24631
+TorchMiner/plugin.py,sha256=VpAEMbm_bqHdegXtqHv-3gE5s46q95mzpqCrpGaTyVU,1977
+TorchMiner/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TorchMiner/plugins/noise_detector.py,sha256=nRRUWn0i6aKtbVOAxDkuA7gu5Ofki1kEoTHtibUlA5w,2641
+TorchMiner/spreadsheet.py,sha256=gdoeNM7dRXz5EtX9Gd33inAOR-7GNuuIubTF0EnVQlo,16719
+TorchMiner/statable.py,sha256=KslrycSSn_9g9H741UxnUkKchbsVDiPbppP6cdXMG9c,148
+TorchMiner/utils.py,sha256=5TRn5IpVlI0GxyxTz3UbrbC9eXyJ6d9DehQURnrXDGE,782
+torchminer-0.2.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+torchminer-0.2.1.dist-info/METADATA,sha256=XEGRrFMSFMic3e9OQUhrBnBcUvG0LttqSnObUYeKCyE,916
+torchminer-0.2.1.dist-info/RECORD,,
