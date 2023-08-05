@@ -1,0 +1,15 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+tox.ini
+requirements/dev.txt
+requirements/tests.txt
+src/projdir/__init__.py
+src/projdir/core.py
+src/projdir.egg-info/PKG-INFO
+src/projdir.egg-info/SOURCES.txt
+src/projdir.egg-info/dependency_links.txt
+src/projdir.egg-info/top_level.txt
