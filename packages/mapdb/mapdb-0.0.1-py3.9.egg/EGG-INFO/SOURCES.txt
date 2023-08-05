@@ -1,0 +1,9 @@
+README.md
+mapdb.py
+setup.py
+mapdb.egg-info/PKG-INFO
+mapdb.egg-info/SOURCES.txt
+mapdb.egg-info/dependency_links.txt
+mapdb.egg-info/entry_points.txt
+mapdb.egg-info/requires.txt
+mapdb.egg-info/top_level.txt
