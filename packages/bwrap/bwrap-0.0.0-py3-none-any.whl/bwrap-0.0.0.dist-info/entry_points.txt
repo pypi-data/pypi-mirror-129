@@ -1,0 +1,3 @@
+[console_scripts]
+bwrap=bwrap.core:main
+
