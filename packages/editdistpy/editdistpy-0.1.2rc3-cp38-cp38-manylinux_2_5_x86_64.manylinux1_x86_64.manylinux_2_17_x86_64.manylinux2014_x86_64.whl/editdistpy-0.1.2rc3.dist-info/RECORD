@@ -1,0 +1,7 @@
+editdistpy-0.1.2rc3.dist-info/LICENSE,sha256=01MwWiKVRBaBPzLSLzG4xS_QKUnrxm3xVoDnFENBpww,1062
+editdistpy-0.1.2rc3.dist-info/top_level.txt,sha256=fauHMg8vn1Hm3GiYocpv1DNaYpLjW07IbGXXBMXVSHE,11
+editdistpy-0.1.2rc3.dist-info/RECORD,,
+editdistpy-0.1.2rc3.dist-info/WHEEL,sha256=xy2KPaEBWvragPrB-hwMM7LT5A1jjwv9d8pselIG3TI,217
+editdistpy-0.1.2rc3.dist-info/METADATA,sha256=pIuAOnWE7QLc_5UkcfNzItZ2G2bVVP7Z8_lJv1y-ppM,4663
+editdistpy/damerau_osa.cpython-38-x86_64-linux-gnu.so,sha256=rwZuhPDcbMe906R0e7hrJeX10rOa8LXJfBOPS0q4eW0,165104
+editdistpy/levenshtein.cpython-38-x86_64-linux-gnu.so,sha256=oUMCb9C__q2g_PSFHKPOQ9omj-tMBkP2CRLCGEzVHbs,162648
