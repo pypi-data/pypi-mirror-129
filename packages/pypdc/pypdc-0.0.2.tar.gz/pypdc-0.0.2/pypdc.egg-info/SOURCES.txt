@@ -1,0 +1,5 @@
+setup.py
+pypdc.egg-info/PKG-INFO
+pypdc.egg-info/SOURCES.txt
+pypdc.egg-info/dependency_links.txt
+pypdc.egg-info/top_level.txt
