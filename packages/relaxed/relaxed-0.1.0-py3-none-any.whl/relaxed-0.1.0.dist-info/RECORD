@@ -1,0 +1,17 @@
+relaxed/__init__.py,sha256=WL_wce6g8CqojSoI0FJbMc61gtOua0agVe5_ZcJyhqg,232
+relaxed/_version.py,sha256=xwUxqNB1me5mfO6PXPXd-gWwNTAl_-Idf0ktsITBEpU,142
+relaxed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relaxed/infer/__init__.py,sha256=oIXS8ZPEbKMFS_TJvSzRRE9FbsbAxd0Yn415YMJU4uA,76
+relaxed/infer/hypothesis_test.py,sha256=jT6GzAZPdZL0-lmv_derTXsF-fG8IYeI6easS-97g5s,1295
+relaxed/mle/__init__.py,sha256=_hd9y0IGQagchQxzkQRvsxuzc0rGylMFG3FGkWMft3s,129
+relaxed/mle/constrained_fit.py,sha256=QTpYv96gOvlBtmVWsdmRr2uD91fykBoxZ9uDfcCr26c,1380
+relaxed/mle/global_fit.py,sha256=d5ErkVXMcWNpZQBUtPZBDa0rgY0dRgCZU0xfCFTGKyY,896
+relaxed/mle/minimize.py,sha256=_XWKieUKBF3qRPCjbuqhoKydwBCDmSOIdKUrZL-YmqQ,744
+relaxed/ops/__init__.py,sha256=bRPVyzW53QbRxX_L7eHZ-6iYIop6_iMggYMkr-pQ724,185
+relaxed/ops/fisher_information.py,sha256=O7SRashmbpGM35BYfOoyDYQoyFsmCV0M_esbqfZrXOY,531
+relaxed/ops/histograms.py,sha256=k8i21Uef80AdSEivje7jfpmpPKbzVy9_68I69JVd_NA,2227
+relaxed-0.1.0.dist-info/LICENSE,sha256=KPpalWEXnrqJW0wxDDJydLE-Dm9dD12qESynLpWFUgA,1524
+relaxed-0.1.0.dist-info/METADATA,sha256=LQvH4zyNIttbxL9OcnbehxzdGZVjYpdn7rI4SsBSTuA,3854
+relaxed-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+relaxed-0.1.0.dist-info/top_level.txt,sha256=j7N3cparpryrK4t48wacBEHeqyd-j3NtZB97hY726TA,8
+relaxed-0.1.0.dist-info/RECORD,,
