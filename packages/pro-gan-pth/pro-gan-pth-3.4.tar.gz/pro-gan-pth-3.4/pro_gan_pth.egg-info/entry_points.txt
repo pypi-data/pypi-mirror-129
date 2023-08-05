@@ -1,0 +1,5 @@
+[console_scripts]
+progan_fid = pro_gan_pytorch_scripts.compute_fid:main
+progan_lsid = pro_gan_pytorch_scripts.latent_space_interpolation:main
+progan_train = pro_gan_pytorch_scripts.train:main
+
