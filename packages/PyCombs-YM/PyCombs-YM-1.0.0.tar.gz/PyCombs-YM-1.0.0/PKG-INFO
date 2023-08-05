@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: PyCombs-YM
+Version: 1.0.0
+Summary: A package that generates all possible combinations in a given set as a list
+Home-page: https://github.com/yanismnsr/PyCombinations
+Author: Yanis MANSOUR
+Author-email: mansouryanis6@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/yanismnsr/PyCombinations/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# The package
+combinations is a package used to generate all possible combinations of a given length `k` 
+on a given set. The set is given as a list, and `k` must be equal to 0 or positive. 
+
+# Usage examples 
+```python
+from combinations import combinations
+
+l = [89,32,6,7]
+k = 2
+combs = combinations.find_combinations(l, k)
+print(combs)
+```
+Output :
+```
+[[89, 32], [89, 6], [89, 7], [32, 6], [32, 7], [6, 7]]
+```
+
