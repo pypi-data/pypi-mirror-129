@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+setup.py
+ssdeep-stubs/__about__.pyi
+ssdeep-stubs/__init__.pyi
+ssdeep-stubs/_build.pyi
+ssdeep_stubs.egg-info/PKG-INFO
+ssdeep_stubs.egg-info/SOURCES.txt
+ssdeep_stubs.egg-info/dependency_links.txt
+ssdeep_stubs.egg-info/requires.txt
+ssdeep_stubs.egg-info/top_level.txt
