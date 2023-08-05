@@ -1,0 +1,10 @@
+roux/__init__.py,sha256=ksdbeKLYve8Y5VV09UQ_hv6vnI9Fz3gJP8PefHeHYNo,54
+roux/my_module.py,sha256=nsrsbknO9gsBNOj_O6cI4TAFJZ1VjSvzrb_miY-D_Kk,222
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/conftest.py,sha256=ntgSlROfdeWmjmJMa30vknkzzc7NGuVJVa3_umazdUg,62
+test/unit/test_my_module.py,sha256=Rez086m0TgCOxTnI-9KENPNdP0I5AVcJEPamkI5gu0k,294
+roux-0.0.0.dist-info/METADATA,sha256=AU1zr4LvkZzIgnTPuA3fVNufITMlUondAEq8fH5OKe4,684
+roux-0.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+roux-0.0.0.dist-info/top_level.txt,sha256=Xwfs082jTA6b8Ciz3ZyzsVsw0zWso0b0918Wt5Dv7qU,10
+roux-0.0.0.dist-info/RECORD,,
