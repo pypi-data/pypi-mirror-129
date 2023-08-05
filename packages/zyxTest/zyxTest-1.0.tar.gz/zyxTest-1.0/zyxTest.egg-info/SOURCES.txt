@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+testPublish/__init__.py
+testPublish/setup.py
+testPublish/test.py
+testPublish/test2.py
+zyxTest.egg-info/PKG-INFO
+zyxTest.egg-info/SOURCES.txt
+zyxTest.egg-info/dependency_links.txt
+zyxTest.egg-info/top_level.txt
