@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: AssetAllocator
+Version: 0.0.4
+Summary: Train RL agents to manage a portfolio
+Home-page: https://github.com/Eloyjaws/AssetAllocator
+Author: Adebayo Oshingbesan, Eniola Ajiboye, Peruth Kamashazi, Timothy Mbaka
+Author-email: eajiboye@andrew.cmu.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# RL for Portfolio Allocation
+
+## Problem Definition
+
+## Load Python Packages
+
+## Download Data
+
+## Preprocess Data
+
+## Build Environment
+
+## Implement DRL Algorithms
+
+## Backtesting Performance
+
+
