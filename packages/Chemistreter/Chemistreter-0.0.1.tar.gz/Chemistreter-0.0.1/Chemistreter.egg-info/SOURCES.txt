@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+Chemistreter.egg-info/PKG-INFO
+Chemistreter.egg-info/SOURCES.txt
+Chemistreter.egg-info/dependency_links.txt
+Chemistreter.egg-info/top_level.txt

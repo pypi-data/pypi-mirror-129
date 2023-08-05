@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Chemistreter
+Version: 0.0.1
+Summary: A helping mini library for Chemistry
+Home-page: UNKNOWN
+Author: Mahdi Gasimov
+Author-email: mehditel75@gmail.com
+License: MIT
+Keywords: function
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a math helping library that help you for Trigonometric functions
+
+Change Log
+==========
+
+0.0.1 (06/11/2021)
+-------------------
+- First Release
+

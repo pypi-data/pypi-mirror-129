@@ -1,0 +1,1 @@
+This is a math helping library that help you for Trigonometric functions
