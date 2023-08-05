@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-coffee-model
+Version: 2.1.9
+Summary: django coffee models
+Home-page: https://github.com/shinkeonkim/django-coffee-model
+Author: shinkeonkim
+Author-email: singun11@kookmin.ac.kr
+License: MIT
+Keywords: django,models
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3
+
+# django-coffee-model
+
+## Coffee Model Usage
+- created_at
+- updated_at
+
+
+## Dark Coffee Model Usage
+- created_at
+- updated_at
+- deleted_at
+
+
