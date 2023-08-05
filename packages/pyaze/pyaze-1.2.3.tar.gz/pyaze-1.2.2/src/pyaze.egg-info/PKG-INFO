@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyaze
+Version: 1.2.2
+Summary: Python Azərbaycan dilində daha çox məlumat üçün komk() funksiyasını daxil edin.
+Home-page: https://teymur.ml
+Author: Teymur
+Author-email: teymur_babayev08@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+Bu python modulu python-un içindəki funksiyaları Azərbaycan dilinə çevirir və İngilis dilini bilməyənlər və python-u yeni öyrənənlər üçün asandlaşdırır.
+Bu modulun kodu MİT lisenziyası altındadır
+Daha çox məlumat üçün kömək() funsiyasını istidə edin
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+This python module translates the functions inside python into Azerbaijani and makes it easier to learn python for people who doesn't speak english.
+This module is under MIT license
+
