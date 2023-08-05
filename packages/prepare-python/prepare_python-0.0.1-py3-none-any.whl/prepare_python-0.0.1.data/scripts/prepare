@@ -1,0 +1,57 @@
+#!python
+
+import venv
+from pathlib import Path
+import os
+import subprocess
+
+
+VENV_DIR = ".venv"
+DIRENV_CONFIG_FILE = ".envrc"
+
+
+GIT_IGNORES = [
+    f"{VENV_DIR}/",
+    "__pycache__/",
+    ".envrc"
+]
+
+
+def setup_venv(cwd: Path) -> None:
+    target = cwd.joinpath(VENV_DIR)
+   
+    builder = venv.EnvBuilder(clear=True, with_pip=True, symlinks=False)
+    builder.ensure_directories(target)
+    builder.create(target)
+
+
+def setup_envrc(cwd: Path):
+    with open(cwd.joinpath(DIRENV_CONFIG_FILE), "w") as f:
+        f.write(f"export VIRTUAL_ENV={cwd}/{VENV_DIR}\n")
+        f.write(f"export PATH={cwd}/{VENV_DIR}/bin:$PATH\n")
+
+
+def setup_git(cwd: Path):
+    subprocess.run(["git","init"])
+    with open(cwd.joinpath(".gitignore"), "w") as f:
+        for ignore in GIT_IGNORES:
+            f.write(f"{ignore}\n")
+
+
+
+def main():
+    cwd = Path(os.getcwd())
+    setup_venv(cwd)
+    setup_envrc(cwd)
+    setup_git(cwd)
+
+    print()
+    print("done :)")
+    print()
+
+if __name__ == "__main__":
+    main()
+
+
+# create envrc
+# direnv allow
