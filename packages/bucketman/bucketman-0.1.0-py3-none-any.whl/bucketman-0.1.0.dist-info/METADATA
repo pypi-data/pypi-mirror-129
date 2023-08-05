@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: bucketman
+Version: 0.1.0
+Summary: A terminal application for working with S3 buckets.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: textual
+Provides-Extra: dev
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: keepachangelog ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+
+# bucketman
+
+A terminal application for exploring and interacting (coming soon) with S3 buckets.
+
+## installation
+
+```pip install bucketman```
+
+## features
+
+- browse through S3 buckets
+- switch between S3 buckets
+- browse through local directories
+
+## planned features
+
+- copy files from local to S3 and vice versa
+- copy files from one S3 bucket to another
+- delete S3 objects
+- move/rename S3 objects
+- set ACL and metadata of S3 objects
+- support S3 bucket pagination
+
+
