@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-telebirr
+Version: 1.0.1
+Summary: Ethiopian Telebirr Payment System Integration With Django
+Home-page: https://github.com/abelayalew/django-telebirr
+Author: Abel Ayalew
+Author-email: abelayalew81@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: Django (>=3.0)
+Requires-Dist: pycryptodome (==3.11.0)
+Requires-Dist: requests (==2.26.0)
+
+UNKNOWN
+
