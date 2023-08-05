@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+f5oqs_sdk/__init__.py
+f5oqs_sdk/f5oqs_sdk.py
+f5oqs_sdk/rand.py
+f5oqs_sdk.egg-info/PKG-INFO
+f5oqs_sdk.egg-info/SOURCES.txt
+f5oqs_sdk.egg-info/dependency_links.txt
+f5oqs_sdk.egg-info/top_level.txt
