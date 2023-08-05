@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-04 20:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: test.py:11
+#, python-brace-format
+msgid "It is {time}."
+msgstr ""
+
+#: test.py:18
+#, python-brace-format
+msgid "Today is {date}."
+msgstr ""
+
+#: spoken_time/__init__.py:23
+#, python-brace-format
+msgid "one minute"
+msgid_plural "{minutes} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: spoken_time/__init__.py:37
+#, python-brace-format
+msgid "{hours_in_clock}"
+msgstr ""
+
+#: spoken_time/__init__.py:48 spoken_time/__init__.py:50
+#, python-brace-format
+msgid "one o'clock"
+msgid_plural "{hour} o'clock"
+msgstr[0] ""
+msgstr[1] ""
+
+#: spoken_time/__init__.py:55 spoken_time/__init__.py:58
+msgid "noon"
+msgstr ""
+
+#: spoken_time/__init__.py:61 spoken_time/__init__.py:64
+msgid "midnight"
+msgstr ""
+
+#: spoken_time/__init__.py:68
+#, python-brace-format
+msgid "{hour} {am_pm}"
+msgstr ""
+
+#: spoken_time/__init__.py:70
+#, python-brace-format
+msgid "quarter past {num_hour} {am_pm}"
+msgstr ""
+
+#: spoken_time/__init__.py:72
+#, python-brace-format
+msgid "half past {num_hour} {am_pm}"
+msgstr ""
+
+#: spoken_time/__init__.py:74
+#, python-brace-format
+msgid "quarter to {next_num_hour} {am_pm}"
+msgstr ""
+
+#: spoken_time/__init__.py:76
+#, python-brace-format
+msgid "{to_minutes} to {next_num_hour} {am_pm}"
+msgstr ""
+
+#: spoken_time/__init__.py:77
+#, python-brace-format
+msgid "{minutes} past {hour} {am_pm}"
+msgstr ""
+
+#: spoken_time/__init__.py:86 spoken_time/__init__.py:92
+msgid "at night"
+msgstr ""
+
+#: spoken_time/__init__.py:87
+msgid "in the morning"
+msgstr ""
+
+#: spoken_time/__init__.py:88
+msgid "before noon"
+msgstr ""
+
+#: spoken_time/__init__.py:89
+msgid "around noon"
+msgstr ""
+
+#: spoken_time/__init__.py:90
+msgid "in the afternoon"
+msgstr ""
+
+#: spoken_time/__init__.py:91
+msgid "in the evening"
+msgstr ""
+
+#: spoken_time/__init__.py:107
+#, python-brace-format
+msgid "{weekday}, the {day} of {month} {year}"
+msgstr ""
+
+#: spoken_time/__init__.py:126
+msgid "day before yesterday"
+msgstr ""
+
+#: spoken_time/__init__.py:127
+msgid "yesterday"
+msgstr ""
+
+#: spoken_time/__init__.py:128
+msgid "today"
+msgstr ""
+
+#: spoken_time/__init__.py:129
+msgid "tomorrow"
+msgstr ""
+
+#: spoken_time/__init__.py:130
+msgid "the day after tomorrow"
+msgstr ""
+
+#: spoken_time/__init__.py:135
+#, python-brace-format
+msgid "{preposition} last {weekday}"
+msgstr ""
+
+#: spoken_time/__init__.py:138
+#, python-brace-format
+msgid "{preposition} next {weekday}"
+msgstr ""

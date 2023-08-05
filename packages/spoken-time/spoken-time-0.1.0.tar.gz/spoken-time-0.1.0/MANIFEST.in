@@ -1,0 +1,4 @@
+include pyproject.toml
+recursive-include spoken_time *.pot
+recursive-include spoken_time *.po
+recursive-include spoken_time *.mo

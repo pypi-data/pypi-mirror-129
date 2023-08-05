@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+spoken_time/__init__.py
+spoken_time.egg-info/PKG-INFO
+spoken_time.egg-info/SOURCES.txt
+spoken_time.egg-info/dependency_links.txt
+spoken_time.egg-info/requires.txt
+spoken_time.egg-info/top_level.txt
+spoken_time/locale/spoken_time.pot
+spoken_time/locale/de/LC_MESSAGES/spoken_time.mo
+spoken_time/locale/de/LC_MESSAGES/spoken_time.po
