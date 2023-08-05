@@ -1,0 +1,8 @@
+setup.py
+wxpythoner.py
+wxpythoner.egg-info/PKG-INFO
+wxpythoner.egg-info/SOURCES.txt
+wxpythoner.egg-info/dependency_links.txt
+wxpythoner.egg-info/entry_points.txt
+wxpythoner.egg-info/requires.txt
+wxpythoner.egg-info/top_level.txt
