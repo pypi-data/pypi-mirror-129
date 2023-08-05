@@ -1,0 +1,9 @@
+jkq.qmap-1.5.0.dist-info/RECORD,,
+jkq.qmap-1.5.0.dist-info/LICENSE,sha256=ECCpsiDLBZ0nFWEeXwSUIt8YiRT7_R3VR2Mcijn5RF8,1156
+jkq.qmap-1.5.0.dist-info/WHEEL,sha256=w8xa_z0b0iFx_3ynDdMjMejEl2mrTUnZgZ3WRAt6F04,112
+jkq.qmap-1.5.0.dist-info/top_level.txt,sha256=1qIT_f6IgM5xAG03yXNz8NSb2-8L8z05kk7eXKz7sb4,11
+jkq.qmap-1.5.0.dist-info/METADATA,sha256=NB1eP4WqyWGt3k_VldgNL-dKKyjQiX2S2oAxJ5mK69k,18615
+jkq/qmap/pyqmap.cpython-310-darwin.so,sha256=Brs-wSShMaQFpwTkAHL0L5nd0_FJF8In9-oYH0nnoJg,1201904
+jkq/qmap/__init__.py,sha256=8WJ18kw_g7XqnQPGJONRYYHoqc8pYWnp9W4VnaVUv2k,353
+jkq/qmap/compile.py,sha256=PIUO415wkVl71vQ-eDUjHZAdpc-bVhcwUnq9To_tel0,4365
+jkq.qmap.dylibs/libz3.dylib,sha256=uz5bu3nrlKSAJYMNy0iRjwamU_e6byP-BtkWZQWXLW0,17316224
