@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: coinonpy
+Version: 0.0.1
+Summary: CoinOne Python Wrapper
+Home-page: https://github.com/sharebook-kr/coinonepy
+Author: Lukas Yoo, Brayden Jo
+Author-email: jonghun.yoo@outlook.com, brayden.jo@outlook.com
+License: UNKNOWN
+Description: # coinonepy
+        python wrapper for coinone 
+        
+        # Public API
+        ## 현재가 조회
+        
+        ```
+        import coinonepy
+        
+        xrp_price = coinonepy.get_current_price("xrp")
+        print(xrp_price)
+        ```
+        
+        ```
+        import coinonepy
+        
+        price = coinonepy.get_current_price("xrp", verbose=True)
+        print(price)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
