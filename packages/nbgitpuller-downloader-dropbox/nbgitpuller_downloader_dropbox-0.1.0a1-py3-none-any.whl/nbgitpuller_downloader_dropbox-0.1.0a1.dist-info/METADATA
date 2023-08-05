@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nbgitpuller-downloader-dropbox
+Version: 0.1.0a1
+Summary: Downloads compressed archives from DropBox for nbgitpuller
+Home-page: https://github.com/sean-morris/nbgitpuller-downloader-dropbox
+Author: Sean Morris
+Author-email: sean.smorris@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nbgitpuller - dropbox download plugin
+
+Dropbox file/folder names add the dl=0 URL query parameter to their URLs.
+
+This plugin expects the Dropbox URL included in the nbgitpuller link to look like this:
+- https://www.dropbox.com/s/qou3g7hf41vq6sw/materials-sp20-external.zip?dl=0
+
+This plugin replaces dl=0 with dl=1 and then downloads the file using the 
+nbgitpuller's handle_files_helper function.
+
+Please note that the file(compressed archive) must have permissions set so that anyone
+with the link can view the file.
+
+## Installation
+
+```shell
+python3 -m pip install nbgitpuller-downloader-dropbox
+```
+
+
+
+

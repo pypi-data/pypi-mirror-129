@@ -1,0 +1,3 @@
+[nbgitpuller]
+dropbox = nbgitpuller_downloader_dropbox.dropbox_downloader
+
