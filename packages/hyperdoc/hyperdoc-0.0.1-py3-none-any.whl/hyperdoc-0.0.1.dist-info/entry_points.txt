@@ -1,0 +1,3 @@
+[console_scripts]
+hyperdoc = hyperdoc.__main__:main
+
