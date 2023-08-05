@@ -1,0 +1,273 @@
+Metadata-Version: 2.1
+Name: wmath
+Version: 0.0.4
+Summary: Another simple math package in the world
+Home-page: https://dev/null
+Author: wang606
+Author-email: wang__qing__hua@163.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://please/send/to/dev/null/i/check/that/place/every/night
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# introduce
+
+'wmath' is a simple mathematical package by a bored undergraduate who wants to review math and python at the same time.
+
+It contains the following modules: 
+- meta.py------introducing meta values
+- number_theory.py------handling number theory problems in math
+- fraction.py------the operation in fraction
+- polynomial.py------the related problems in rational polynomial
+
+reference as below:
+
+# reference
+
+## preface
+- functions defined in this library almost wouldn't change the value of pointer parameter
+
+
+## meta.py
+### PI
+```markdown
+(const float)
+3.141592653589793
+```
+### E
+```markdown
+(const float)
+2.718281828459045
+```
+### Meta
+```markdown
+(class Enum)
+define some common value in math.
+    ERROR = "error"
+    INFINITY = "infinity"
+    INFINITESIMAL = "infinitesimal"
+    Q = "all real numbers"
+    Z = "all integers"
+    N = "all natural numbers"
+    N_positive = "all positive natural numbers"
+```
+
+## number_theory.py
+### is_prime(x: int)
+```markdown
+(function)
+judge weather x is a prime.
+if x <= 1, then return False. 
+    :param x: (int)
+    :return: (bool) True if x is a prime, while False if not
+```
+### find_prime_until(x: int)
+```markdown
+(function)
+return all prime below int x.
+    :param x: (int) x > 1
+    :return: (list) all prime below int x
+```
+### prime_factor_without_exp(x: int)
+```markdown
+(function)
+calc all prime factors of int x.
+if x is zero or one, then return [].
+if x < 0, then return the result of -x.
+    :param x: (int)
+    :return: (list) all prime factors of int x
+```
+### prime_factor_with_exp(x: int)
+```markdown
+(function)
+calc all prime factors of int x.
+if x is zero or one, then return {}.
+if x < 0, then return the result of -x. 
+    :param x: (int) x > 0
+    :return: (dict) all prime factors as keys with each exp as value of int x
+```
+### factor(x: int)
+```markdown
+calc all factors of int x.
+if x is zero, then return [].
+if x < 0, then return the result of -x.
+    :param x: (int)
+    :return: (list) all factors of int x
+```
+### greatest_common_divisor(a: int, b: int)
+```markdown
+(function)
+calc the greatest common divisor between a and b.
+    :param a: (int)
+    :param b: (int)
+    :return: (int) the greatest common divisor between a and b
+```
+### greatest_common_divisor_in_list(a: list)
+```markdown
+calc the greatest common divisor among items in a.
+    :param a: (list) integer
+    :return: (int) the greatest common divisor
+```
+### least_common_multiple(a: int, b: int)
+```markdown
+calc the least common multiple between a and b.
+    :param a: (int)
+    :param b: (int)
+    :return: (int) the least common multiple between a and b
+```
+### least_common_multiple_in_list(a: list)
+```markdown
+calc the least common multiple among items in a.
+    :param a: (list) integer
+    :return: (int) the least common multiple
+```
+### greatest_common_divisor_with_exp(a: int, b: int)
+```markdown
+(function)
+calc the greatest common divisor between a and b, and find two numbers x, y to fit formula:
+a * x + b * y = the greatest common divisor.
+    :param a: (int)
+    :param b: (int)
+    :return: (tuple) the greatest common divisor, x, y
+```
+### inverse(a: int, n: int)
+```markdown
+calc the inverse of a in the case of module n, where a and n must be mutually prime.
+a * x = 1 (mod n)
+    :param a: (int)
+    :param n: (int)
+    :return: (int) x
+```
+
+
+## fraction.py
+### Fraction
+```markdown
+(class)
+define the class of fraction in math and operation among them.
+    __init__(self, molecule: int, denominator: int)
+    __getattr__(self, item)
+    __setattr__(self, key, value)
+    __str__(self)
+    __float__(self)
+    __invert__(self)
+    __pos__(self)
+    __neg__(self)
+    __abs__(self)
+    __eq__(self, other)
+    __add__(self, other)
+    __sub__(self, other)
+    __mul__(self, other)
+    __truediv__(self, other)
+    __pow__(self, power: int, modulo=None)
+```
+#### formula(self)
+```markdown
+    :return: (string) the formula form string of the fraction 
+```
+### number2fraction(x)
+```markdown
+(function)
+convert real number into fraction.
+    :param x: (bool | int | float)
+    :return: (Fraction) the fraction form of x
+```
+### list2fraction(x: list)
+```markdown
+(function)
+convert list of real numbers into list of fractions. 
+    :param x: (list of real numbers)
+    :return: (list of fractions)
+```
+
+
+## polynomial.py
+### Polynomial
+```markdown
+(class)
+define the class of polynomial and related operations among them.
+    __init__(self, coefficient: list)
+    __getattr__(self, item)
+    __setattr__(self, key, value)
+    __str__(self)
+    __pos__(self)
+    __neg__(self)
+    __eq__(self)
+    __add__(self, other)
+    __sub__(self, other)
+    __mul__(self, other)
+    __truediv__(self, other)
+    __floordiv__(self, other)
+    __mod__(self, other)
+    __pow__(self, power: int, modulo=None)
+```
+#### value(self, x: Fraction)
+```markdown
+calc the value of the corresponding polynomial function where x is designated.
+    :param x: (Fraction) independent variable
+    :return: (Fraction) value
+```
+#### adjust(self)
+```markdown
+manually adjust the polynomial after you changed some specific value in the coefficient
+while didn't fire the __setattr__() function since the coefficient is a pointer.
+    :return: (Polynomial) self after adjust
+```
+#### monic(self)
+```markdown
+make the polynomial monic.
+pay attention! this function would influence the self polynomial.
+    :return: (Polynomial) self after monic
+```
+#### primitive(self)
+```markdown
+make the polynomial primitive.
+pay attention! this function would influence the self polynomial.
+    :return: (Polynomial) self after primitive
+```
+#### times(self, n: fraction.Fraction, degree: int = 0)
+```markdown
+a new polynomial whose value is self * (n)x**(degree)
+    :param n: (Fraction)
+    :param degree: (int)
+    :return: (Polynomial) the new polynomial
+```
+#### rational_roots(self)
+```markdown
+calc all rational roots in the corresponding polynomial function.
+    :return: (list of Fraction) all rational roots
+```
+#### formula(self)
+```markdown
+    :return: (string) the formula form string of the fraction
+```
+#### is_irreducible_according_eisenstein(self):
+```markdown
+judge weather the polynomial is irreducible according eisenstein discriminant method.
+    :return: (bool) True for irreducible, and False for unclear rather than reducible
+```
+### greatest_common_divisor_in_polynomial(a: Polynomial, b: Polynomial)
+```markdown
+this function can figure out the greatest common divisor between a and b.
+the result polynomial is monic.
+(this function wouldn't influence the origin value of a or b although it looks like dangerous!
+this characteristic is decided by python, i have no idea. ^_^)
+    :param a: (Polynomial)
+    :param b: (Polynomial)
+    :return: (Polynomial)
+```
+### greatest_common_divisor_with_exp_in_polynomial(a: Polynomial, b: Polynomial)
+```markdown
+calc the greatest common divisor between a and b, and find two polynomials x, y to fit formula:
+a * x + b * y = the greatest common divisor.
+    :param a: (Polynomial)
+    :param b: (Polynomial)
+    :return: (tuple) the greatest common divisor, x, y
+```
+
+
