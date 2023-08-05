@@ -1,0 +1,9 @@
+LICENSE
+README.md
+exelog.py
+setup.py
+exelog.egg-info/PKG-INFO
+exelog.egg-info/SOURCES.txt
+exelog.egg-info/dependency_links.txt
+exelog.egg-info/requires.txt
+exelog.egg-info/top_level.txt
