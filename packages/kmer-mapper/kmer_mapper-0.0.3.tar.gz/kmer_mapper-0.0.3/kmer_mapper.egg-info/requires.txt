@@ -1,0 +1,6 @@
+cython
+graph_kmer_index>=0.0.3
+numpy==1.20.3
+pandas
+pathos
+scipy
