@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lab11pkg
+Version: 0.1
+Summary: Package for lab 11 Python class
+Home-page: UNKNOWN
+Author: Tatyana Koryakina
+License: MIT
+Keywords: Python lab11
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: markdown
+
+Create a package, inside the package, create modules to sort characters and values. Sort modules include - quick sort, bubble sort, merge sort, insertion sort, selection sort, heap sort, radix sort and bucket sort. Finally create a program to execute these sort algorithms on dynamically entered characters and variables.
+
