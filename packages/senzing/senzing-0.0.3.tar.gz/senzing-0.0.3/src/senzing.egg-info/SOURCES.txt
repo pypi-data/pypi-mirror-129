@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/senzing/CompressedFile.py
+src/senzing/DumpStack.py
+src/senzing/G2ConfigModule.py
+src/senzing/G2ConfigTables.py
+src/senzing/G2Database.py
+src/senzing/G2Exception.py
+src/senzing/G2Module.py
+src/senzing/G2Project.py
+src/senzing/__init__.py
+src/senzing.egg-info/PKG-INFO
+src/senzing.egg-info/SOURCES.txt
+src/senzing.egg-info/dependency_links.txt
+src/senzing.egg-info/top_level.txt
