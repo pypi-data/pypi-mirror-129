@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: iTesting
+Version: 1.0.1
+Summary: 拉勾教育专栏<测试开发入门与实战>示例，仅为演示如何上传PyPI使用。
+Home-page: https://www.helloqa.com
+Author: kevin.cai
+Author-email: testertalk@outlook.com
+License: MIT
+Description: 此代码仓库为本人拉勾教育专栏<测试开发入门与实战>的配套练习仓库.
+        
+            更多关于自动化测试框架的内容，请关注我的微信公众号 **iTesting** .
+        
+            另:
+        
+                对自主开发自动化测试框架感兴趣的同学，可购买我的新书 **<从0到1搭建自动化测试框架：原理、实现与工程实践>** .
+        
+                对JavaScript及前端自动化测试感兴趣的同学，可购买我的另一本书 **<前端自动化测试框架 -- Cypress从入门到精通>** .
+                                                                              ---Kevin Cai（2021.12）
+        
+            
+Platform: UNKNOWN
