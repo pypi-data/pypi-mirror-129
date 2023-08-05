@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+JioSaavn/__init__.py
+JioSaavn/_baseApiUrl.py
+JioSaavn/_fetch.py
+JioSaavn/_helper.py
+JioSaavn/_parseResponse.py
+JioSaavn/_requests.py
+JioSaavn/_useragent.py
+JioSaavn.egg-info/PKG-INFO
+JioSaavn.egg-info/SOURCES.txt
+JioSaavn.egg-info/dependency_links.txt
+JioSaavn.egg-info/not-zip-safe
+JioSaavn.egg-info/requires.txt
+JioSaavn.egg-info/top_level.txt
