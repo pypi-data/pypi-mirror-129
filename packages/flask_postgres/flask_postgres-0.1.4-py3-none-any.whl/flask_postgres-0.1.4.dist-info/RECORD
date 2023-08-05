@@ -1,0 +1,11 @@
+flask_postgres/__init__.py,sha256=mpT0almEQXq9iDQod38D-ol0l26G7k79RrzDav2yKUM,119
+flask_postgres/_compat.py,sha256=6ezA6flO25Vz1cK0hoLy3plj65SKN5k4OFuqlIe4tqs,927
+flask_postgres/cli.py,sha256=fWVMREbOoHm4JK6olV47F8XboS9VvwWLvfdPvsePk04,6418
+flask_postgres/config.py,sha256=DMiB9fA3hOwM1-wNAViGumB4AtJ2yEO5gc3k3ayK_v0,1508
+flask_postgres/exceptions.py,sha256=PRt_Iwy5OGx6YAwcjO9OJikWyirblTiDe_7lbyYzHdA,1001
+flask_postgres/utils.py,sha256=CbinRsu0isV48AN88lqQ9MUr9bpyT9jI-fa07A3kTXE,4307
+flask_postgres-0.1.4.dist-info/entry_points.txt,sha256=0QGrwX13pwLyzW2YJF5TGFO2qVokKotLnDy63S500VM,46
+flask_postgres-0.1.4.dist-info/LICENSE,sha256=jWk5LUyhCkQbOQU4Fpqx9ki5zU2jfV3vGie-w81cdGc,1080
+flask_postgres-0.1.4.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+flask_postgres-0.1.4.dist-info/METADATA,sha256=Ac3BdyVK5tmjTw3S6ATas8am331Y-CR5381ZWsizrbw,8103
+flask_postgres-0.1.4.dist-info/RECORD,,
