@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pennywise
+Version: 0.0.10
+Summary: pennywise - A docker based bioinformatics shape shifting tool.
+Home-page: https://github.com/voorloopnul/pennywise
+Author: Ricardo Pascal
+Author-email: voorloop@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docker (==5.0.3)
+Requires-Dist: docopt (==0.6.2)
+
+# Pennywise
+

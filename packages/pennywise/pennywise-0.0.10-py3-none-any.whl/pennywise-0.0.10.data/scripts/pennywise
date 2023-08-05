@@ -1,0 +1,41 @@
+#!python
+"""Pennywise.
+
+Usage:
+  pennywise fastANI
+  pennywise prokka
+  pennywise quast
+  pennywise spades
+  pennywise trimmomatic
+  pennywise (-h | --help)
+  pennywise --version
+
+Options:
+  -h --help     Show this screen.
+  --version     Show version.
+"""
+import os
+import sys
+from docopt import docopt
+from it.tools.q import Quast
+from it.tools.f import FastANI
+from it.tools.p import Prokka
+from it.tools.s import Spades
+from it.tools.t import Trimmomatic
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, argv=sys.argv[1:2], version='Pennywise v0.0.10')
+    current_dir = os.getcwd()
+
+    if arguments["fastANI"]:
+        FastANI().run(sys.argv[2:], current_dir)
+    elif arguments["quast"]:
+        Quast().run(sys.argv[2:], current_dir)
+    elif arguments["prokka"]:
+        Prokka().run(sys.argv[2:], current_dir)
+    elif arguments["trimmomatic"]:
+        Trimmomatic().run(sys.argv[2:], current_dir)
+    elif arguments["spades"]:
+        Spades().run(sys.argv[2:], current_dir)
+    else:
+        print("Pennywise can't change into this tool.")
