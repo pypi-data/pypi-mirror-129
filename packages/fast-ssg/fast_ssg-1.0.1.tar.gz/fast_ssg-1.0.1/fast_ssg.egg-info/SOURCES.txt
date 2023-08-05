@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+fast_ssg/__init__.py
+fast_ssg/__main__.py
+fast_ssg/text.py
+fast_ssg/utils.py
+fast_ssg.egg-info/PKG-INFO
+fast_ssg.egg-info/SOURCES.txt
+fast_ssg.egg-info/dependency_links.txt
+fast_ssg.egg-info/entry_points.txt
+fast_ssg.egg-info/requires.txt
+fast_ssg.egg-info/top_level.txt
