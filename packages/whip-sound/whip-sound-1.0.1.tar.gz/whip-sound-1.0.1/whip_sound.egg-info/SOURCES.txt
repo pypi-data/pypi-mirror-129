@@ -1,0 +1,9 @@
+setup.py
+whip/__init__.py
+whip/__main__.py
+whip_sound.egg-info/PKG-INFO
+whip_sound.egg-info/SOURCES.txt
+whip_sound.egg-info/dependency_links.txt
+whip_sound.egg-info/entry_points.txt
+whip_sound.egg-info/requires.txt
+whip_sound.egg-info/top_level.txt
