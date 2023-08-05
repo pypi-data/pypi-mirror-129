@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nbgitpuller_downloader_generic_web/__init__.py
+src/nbgitpuller_downloader_generic_web/generic_web_downloader.py
+src/nbgitpuller_downloader_generic_web.egg-info/PKG-INFO
+src/nbgitpuller_downloader_generic_web.egg-info/SOURCES.txt
+src/nbgitpuller_downloader_generic_web.egg-info/dependency_links.txt
+src/nbgitpuller_downloader_generic_web.egg-info/entry_points.txt
+src/nbgitpuller_downloader_generic_web.egg-info/top_level.txt

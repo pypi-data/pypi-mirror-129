@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nbgitpuller-downloader-generic-web
+Version: 0.1.0a1
+Summary: Downloads compressed archives from any generic webserver
+Home-page: https://github.com/sean-morris/nbgitpuller-downloader-generic-web
+Author: Sean Morris
+Author-email: sean.smorris@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nbgitpuller - generic web download plugin
+
+This plugin is used by nbgitpuller to download archives
+from any publicly available URL.
+
+This plugin expects the Dropbox URL included in the nbgitpuller link to look like this:
+- https://www.example.com/materials-sp20-external.zip
+
+In this plugin, there is no special handling of the URL so it must point directly to
+the archive and the archive must by accessible to anyone with the link.
+
+## Installation
+
+```shell
+python3 -m pip install nbgitpuller-downloader-generic-web
+```
+
+
+
+

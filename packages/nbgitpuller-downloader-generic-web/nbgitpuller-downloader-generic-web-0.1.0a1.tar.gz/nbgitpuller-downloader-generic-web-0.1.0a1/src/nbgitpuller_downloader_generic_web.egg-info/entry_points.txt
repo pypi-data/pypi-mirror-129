@@ -1,0 +1,3 @@
+[nbgitpuller]
+generic_web = nbgitpuller_downloader_generic_web.generic_web_downloader
+
