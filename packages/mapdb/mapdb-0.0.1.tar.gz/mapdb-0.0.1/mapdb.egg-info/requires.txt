@@ -1,0 +1,4 @@
+dber
+
+[mysql feature]
+pymysql
