@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: reclip
+Version: 1.0.2
+Summary: a clipboard server
+Home-page: https://github.com/laddge/reclip
+Author: Laddge
+Author-email: dev.laddge@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# reclip
+a clipboard server written in Python3
+
+## Installation
+```
+pip install git+https://github.com/laddge/reclip
+```
+
+## Usage
+
+see help:
+
+```
+reclip --help
+```
+
+## License
+This plugin is under the MIT-License.
+
+See also [LICENSE](LICENSE).
+
+## Author
+Laddge
+
+

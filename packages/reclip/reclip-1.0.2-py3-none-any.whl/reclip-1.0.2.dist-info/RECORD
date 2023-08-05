@@ -1,0 +1,10 @@
+reclip/__init__.py,sha256=rrnXbdAY6t3hbniKU9CcTxyEDLdaVL5m5e7yBQilHUE,86
+reclip/__main__.py,sha256=_nMrLz9m0ToJkE6lVhtgnaJpUt8fl8wP1JQXOWslEBc,2624
+reclip/client.py,sha256=dpH8Rw466b-eBGdF4Xrl2MishmKRn8Vkqt89gmPxl_4,1118
+reclip/server.py,sha256=pJ91U2lYKsCslRyhRNzR-1MHFHK4pTVv_v1pwA7o1Mc,1680
+reclip-1.0.2.dist-info/LICENSE,sha256=xBjcYJzZqzfTAe1X7T-FtaO31dQOMXKVbl9E086rHwA,1063
+reclip-1.0.2.dist-info/METADATA,sha256=edJgOU3kA1Hs1UzRt9JKl39p7qQNh7NyL1fZAtLi63U,531
+reclip-1.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+reclip-1.0.2.dist-info/entry_points.txt,sha256=5Sl52lTHCVXcmyznrD6iHO6nY3dYXORx9u0jZwDR9kw,49
+reclip-1.0.2.dist-info/top_level.txt,sha256=OlT7XHhaPqW0zuhIzX6SRr2Boy9FW-asEcejiY51TZ4,7
+reclip-1.0.2.dist-info/RECORD,,

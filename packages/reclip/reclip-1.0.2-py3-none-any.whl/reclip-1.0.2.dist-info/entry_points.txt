@@ -1,0 +1,3 @@
+[console_scripts]
+reclip = reclip.__main__:main
+
