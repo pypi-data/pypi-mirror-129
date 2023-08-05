@@ -1,0 +1,17 @@
+switchbot_client/__init__.py,sha256=sN1rR0Gmf4VOtrT1fG3Y6cj52l3knVyO5jabG33FpAk,350
+switchbot_client/api.py,sha256=DkZ_6STxXt_ye9Juv8WW1_1pikiyrmAzPwdPDb3jAfU,4912
+switchbot_client/client.py,sha256=pLX6BdPO22extL1dl7LNFvo0AbtF3CDiBQEM-KTTjfs,1699
+switchbot_client/constants.py,sha256=Bcd-1LcTQOico0Iwmozr0keHDzIXXVcsuKnZDv521pk,42
+switchbot_client/devices/__init__.py,sha256=9EAQUXzodRK9hcpS9faD6dUyuKLbFKK4pxImeb07XwA,151
+switchbot_client/devices/base.py,sha256=BUmbmMEpBuVFfdlQ_ELuZfxXGx58prdtStfCOYE43AQ,1553
+switchbot_client/devices/factory.py,sha256=OmKuKWWmjlKglop9ve6R70VKiSbpQO17vxhw4UDWUMA,921
+switchbot_client/devices/physical.py,sha256=ZQCIUIxkE3EsoJ2kwCNnHHW8nhE12xymLlPOoYJRiXw,22535
+switchbot_client/devices/remote.py,sha256=VvcbDzOxOsez608JkHSD37jAvM0D--G7yU1eaNvRCZo,16989
+switchbot_client/devices/status.py,sha256=NQu2JRWj0mZkKshBE6sqanTEQXLRTtcoalQEHg_6DT8,1305
+switchbot_client/enums.py,sha256=QhU2oFRnuQdA_3V5p9AZC3SWGzIXNfnnUw32PXeKlMQ,2302
+switchbot_client/scenes/__init__.py,sha256=rpH-hhhlCo6H_XfMry1gImGBJvn5PADFy4Iy83Ehufc,28
+switchbot_client/scenes/base.py,sha256=lMXo7iMiSzizMzXRJtxMkQE-diNDKx4xf1U1L8Xz97s,893
+switchbot_client/types.py,sha256=ffPDqSDr5NSJgr_5YUnbY7q9lrjWKjmgdiyw1823Tv0,302
+switchbot_client-0.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+switchbot_client-0.3.0.dist-info/METADATA,sha256=ddflpCaWPC7fT7c_RTgDsuAUfKmFK50NJ5zeG0m41OI,8911
+switchbot_client-0.3.0.dist-info/RECORD,,
