@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+python_xdoctl.egg-info/PKG-INFO
+python_xdoctl.egg-info/SOURCES.txt
+python_xdoctl.egg-info/dependency_links.txt
+python_xdoctl.egg-info/top_level.txt
+xdoctl/__init__.py
+xdoctl/keyboard.py
+xdoctl/misc.py
+xdoctl/mouse.py
+xdoctl/window.py
