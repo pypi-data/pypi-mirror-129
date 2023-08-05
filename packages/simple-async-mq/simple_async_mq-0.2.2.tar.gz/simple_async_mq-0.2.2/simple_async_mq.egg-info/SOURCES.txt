@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+simple_async_mq/__init__.py
+simple_async_mq/client_app.py
+simple_async_mq/client_app_example.py
+simple_async_mq.egg-info/PKG-INFO
+simple_async_mq.egg-info/SOURCES.txt
+simple_async_mq.egg-info/dependency_links.txt
+simple_async_mq.egg-info/requires.txt
+simple_async_mq.egg-info/top_level.txt
