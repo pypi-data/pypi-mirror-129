@@ -1,0 +1,11 @@
+mfinancials/__init__.py,sha256=-RFuUbInqJ2izkQV0z9SoEL_eJWk3o-e4Iogd5NlJHU,105
+mfinancials/_tickers.py,sha256=gZI8QkhU_L6xs8tD5cnEVVJrcPA5-hPhTOBYYt0ETfQ,845
+mfinancials/base.py,sha256=Sh6yqRIIsTDDENPn4iCe7f6PHNmGab_ry55LFtiuD3w,8971
+mfinancials/params.py,sha256=dDyh_HLbdRfR_Io3WNw8gcQ7TU-x5Xh4HnzvdHDJGTo,4614
+mfinancials/ticker.py,sha256=UauSlclUzK5lVjByXXxd90cLaYD0Bu38YncSCqP_NoM,718
+mfinancials/utils.py,sha256=fAtZ1ekOgxj-wmn3edFqEsME-xZCakVeyAlznyYTd8s,1457
+mfinancials-0.0.2.dist-info/LICENSE,sha256=bsbgg3UQn3u7c4mwyRE7gvRjF_eX00CGpihNVwRrXv8,1084
+mfinancials-0.0.2.dist-info/METADATA,sha256=8SgmK_ShnbG-vc8_KgUBnTCRzSB8Ptb8oNPTj5B_SVw,2890
+mfinancials-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mfinancials-0.0.2.dist-info/top_level.txt,sha256=HOzph3ztqL8MNv_dohC4EckYmuDuX4IBpCyoxQLImFg,12
+mfinancials-0.0.2.dist-info/RECORD,,
