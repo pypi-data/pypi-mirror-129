@@ -1,0 +1,15 @@
+takodachi/__init__.py,sha256=VE6fnswPpwQOCV0mMG2557AmRGQZOd1kZrS-VLA7uxY,16
+takodachi/api.py,sha256=Ft61hKmrxZzXjqZVDWcd1qK7fsom0_uaKWm6dFDD3i4,4344
+takodachi/cache.py,sha256=ldtNOHaZYc5cXTyv2lgpGfZDs0A8QuldJvwetBMAJEU,2614
+takodachi/ch.py,sha256=FhgFTRyDAm-Os29rVRYk96xkOBuCLYkPQ3pAih11FS8,3463
+takodachi/chat.py,sha256=7jV2w7in3Ee7zI3Ebbf-GcXe_CSZgJ-K1X_V1-FrIc4,2442
+takodachi/currency.py,sha256=NoMedcbiww0HPbnyfJjKiOss_5DiPA9k2LDZ8SrS4Js,604
+takodachi/dynamics.py,sha256=bsmfmH_HYjSIfiiTzkQx9jpK9nfam76MjxvojiWhS90,1486
+takodachi/kgall.py,sha256=tfiMY46GM0a1_ivmvgbxMIptiEz6pVxewFEXl_DLDbQ,8367
+takodachi/parse.py,sha256=iLaYKfDXfqwrnJO8MRHIirmzVRG1hPLCiWSTA2qQbsA,1860
+takodachi/plot.py,sha256=lx8fgvw_WJSTy7xi3Lv_c6xa9sHbBvG9vDpEgrwP6j8,1089
+takodachi-0.0.3.dist-info/LICENSE.txt,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+takodachi-0.0.3.dist-info/METADATA,sha256=i-6TL4IvUzLdrtOEVfVMa4FrZWWuo2Y1tpzKNVyZF1M,387
+takodachi-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+takodachi-0.0.3.dist-info/top_level.txt,sha256=DIZJ0HXgfyvADwdJF7z0bTisHIWpbr3tYFQWgdhK8a0,10
+takodachi-0.0.3.dist-info/RECORD,,
