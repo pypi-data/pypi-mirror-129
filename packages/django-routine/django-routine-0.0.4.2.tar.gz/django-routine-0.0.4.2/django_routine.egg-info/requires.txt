@@ -1,0 +1,4 @@
+djangorestframework
+django
+rest_framework_swagger
+drf_yasg
