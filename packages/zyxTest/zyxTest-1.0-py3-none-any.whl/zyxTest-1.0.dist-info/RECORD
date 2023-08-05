@@ -1,0 +1,9 @@
+testPublish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testPublish/setup.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testPublish/test.py,sha256=heICAvs4o2b2RWyyzk40qnKQc7MrOi99zdEu2k4Alwc,43
+testPublish/test2.py,sha256=66qSYZT460YtiHORAbqaJcDLcIqhoFnXpI7g5ytWKKE,44
+zyxTest-1.0.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+zyxTest-1.0.dist-info/METADATA,sha256=-mabth44Wzns3Dm3rHQ_2qF83JIbjYSjvGzqi0O6WYA,163
+zyxTest-1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zyxTest-1.0.dist-info/top_level.txt,sha256=MjSPz_O_m-8Jh5Xzc0JvYFQHIxXE_bmETSzKr_1Wh24,12
+zyxTest-1.0.dist-info/RECORD,,
