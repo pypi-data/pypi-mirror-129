@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fuzzy_compare/__init__.py
+fuzzy_compare/source.py
+fuzzy_compare.egg-info/PKG-INFO
+fuzzy_compare.egg-info/SOURCES.txt
+fuzzy_compare.egg-info/dependency_links.txt
+fuzzy_compare.egg-info/top_level.txt
