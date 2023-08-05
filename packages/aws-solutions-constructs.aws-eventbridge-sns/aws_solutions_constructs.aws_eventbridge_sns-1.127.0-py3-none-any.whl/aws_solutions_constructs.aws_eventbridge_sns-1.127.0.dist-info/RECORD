@@ -1,0 +1,9 @@
+aws_solutions_constructs/aws_eventbridge_sns/__init__.py,sha256=kgEMhJwa6nfQY3Otnnff2fPMZsAJjoSJsqQeCJ67J0c,17384
+aws_solutions_constructs/aws_eventbridge_sns/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_solutions_constructs/aws_eventbridge_sns/_jsii/__init__.py,sha256=2Y-Xd4qlPELObqlWHUPa5TMrOZ_q5k7_SCduxS7Egao,581
+aws_solutions_constructs/aws_eventbridge_sns/_jsii/aws-eventbridge-sns@1.127.0.jsii.tgz,sha256=3WzvT8R-qD0Q4SDG2jdGIk-QBDjEhKGcoCUDBcIOCPQ,61487
+aws_solutions_constructs.aws_eventbridge_sns-1.127.0.dist-info/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+aws_solutions_constructs.aws_eventbridge_sns-1.127.0.dist-info/METADATA,sha256=2AZo2SuLpQEKN2zcd0IbfwUNTNdA8qlSIoc5jOtTBxM,6979
+aws_solutions_constructs.aws_eventbridge_sns-1.127.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_solutions_constructs.aws_eventbridge_sns-1.127.0.dist-info/top_level.txt,sha256=hi3us_KW7V1ocfOqVsNq1o3w552jCEgu_KsCckqYWsg,25
+aws_solutions_constructs.aws_eventbridge_sns-1.127.0.dist-info/RECORD,,
