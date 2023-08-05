@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Cryptic Cup Admin</title>
+
+  <!--[if IE]>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <![endif]-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta name="csrf-token" content="{{csrf_token}}">
+
+  <meta name="description" content="Cryptic Cup Admin">
+  <meta name="keywords" content="Admin">
+  <meta name="google-site-verification" content="Qg8S16ma6QMvkW5WXl3dLWLtfWyvoXCmuQ_zAmJAjGY" />
+
+  <link media="all" rel="stylesheet" type="text/css" href="{{dashboard_assets_prefix}}/css/vendor/bootstrap-3.3.6.css">
+  <link media="all" rel="stylesheet" type="text/css"
+    href="{{dashboard_assets_prefix}}/css/vendor/formValidation.min.css">
+  <link media="all" rel="stylesheet" type="text/css"
+    href="{{dashboard_assets_prefix}}/css/vendor/bootstrap-dialog.min.css">
+  <link media="all" rel="stylesheet" type="text/css"
+    href="{{dashboard_assets_prefix}}/css/vendor/bootstrap-tokenfield.css">
+  <link media="all" rel="stylesheet" type="text/css" href="{{dashboard_assets_prefix}}/css/vendor/jquery-ui.css">
+  <link media="all" rel="stylesheet" type="text/css" href="{{dashboard_assets_prefix}}/css/vendor/jquery-ui.css">
+  <link media="all" rel="stylesheet" type="text/css" href="{{dashboard_assets_prefix}}/css/local/type.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css"
+    rel="stylesheet" />
+
+
+  <!--[if lt IE 10]>
+      <link media="all" rel="stylesheet" type="text/css" href="{{dashboard_assets_prefix}}/css/vendor/gh-fork-ribbon.ie.css">
+    <![endif]-->
+
+  <link media="all" rel="stylesheet" type="text/css" href="{{dashboard_assets_prefix}}/css/local/main.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="{{dashboard_assets_prefix}}/img/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="{{dashboard_assets_prefix}}/img/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+    href="{{dashboard_assets_prefix}}/img/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57"
+    href="{{dashboard_assets_prefix}}/img/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="{{dashboard_assets_prefix}}/img/apple-touch-icon-precomposed.png">
+
+  <link rel="shortcut icon" href="{{dashboard_assets_prefix}}/img/favicon.png">
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">{{app_name}} Admin</a>
+      </div>
+    </div>
+  </div>
+  {% block sidebar %}
+  {% endblock %}
+
+
+  <div class="container">
+    <div class="row">
+      <div id="holder" class="col-md-offset-2 col-md-10">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+  </div>
+
+
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/modernizr-2.6.2.js"></script>
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/respond-1.2.0.js"></script>
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/json3-3.2.5.js"></script>
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/bootstrap-3.0.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.js"></script>
+
+  <script type="text/javascript"
+    src="{{dashboard_assets_prefix}}/js/vendor/formValidation/formValidation.min.js"></script>
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/formValidation/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="{{dashboard_assets_prefix}}/js/vendor/jquery-ui.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/bloodhound.js"
+    integrity="sha256-vWNhs4GKAbQ1S6ovWj8jkwYDO/CvjaNrqBd2Roc4oI0=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/bloodhound.min.js"
+    integrity="sha256-WJlyUMyJDhWTumC7/oaAtXFRBh0rZGc7qT80egxJafw=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.bundle.js"
+    integrity="sha256-U7W3B28OSA8GrPiT408o6NZLYWdrQ0Tmir0L6kzvv9o=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.bundle.min.js"
+    integrity="sha256-VCsWOz+0GuHdS/sIICtQNTFJdbaDI80rxvoB7BXabrU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.jquery.js"
+    integrity="sha256-iTfMGFepAG8PX4Y7iDUFt0MdQk8r3QJKVGAd7ElGPQA=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.jquery.min.js"
+    integrity="sha256-Dr2c2MZpJ7kUvTEtyitW4QV1nTh0JP/ifC7XYvyGgOw=" crossorigin="anonymous"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    {% if env == 'staging' %}
+    var firebaseConfig = {
+      apiKey: "AIzaSyBnB2EiGELteQw4BL3S42UbNzmz_8-YAQM",
+      authDomain: "codejedi-crypticcup-staging.firebaseapp.com",
+      databaseURL: "https://codejedi-crypticcup-staging.firebaseio.com",
+      projectId: "codejedi-crypticcup-staging",
+      storageBucket: "codejedi-crypticcup-staging.appspot.com",
+      messagingSenderId: "751586299305",
+      appId: "1:751586299305:web:92b157c00d22bcb4"
+    };
+    {% elif env == 'prod' %}
+    var firebaseConfig = {
+      apiKey: "AIzaSyBbfdkrLJnBCQpWbMTuEe6Uwaow4kMrHYw",
+      authDomain: "codejedi-crypticcup.firebaseapp.com",
+      databaseURL: "https://codejedi-crypticcup.firebaseio.com",
+      projectId: "codejedi-crypticcup",
+      storageBucket: "codejedi-crypticcup.appspot.com",
+      messagingSenderId: "444949461792",
+      appId: "1:444949461792:web:fa6e5138e68b61ad6eb545"
+    };
+    {% endif %}
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  {% block additionaljavascript %}
+  {% endblock %}
+
+
+</body>
+
+</html>
