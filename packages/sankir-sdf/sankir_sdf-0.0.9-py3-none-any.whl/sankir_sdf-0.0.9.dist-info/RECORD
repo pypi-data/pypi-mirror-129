@@ -1,0 +1,12 @@
+sdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdf/__main__.py,sha256=HvkHsXkC5wQgXUAwHnCM1qtPQ5o8qLEsx1IU1UaAurU,3116
+sdf/_version.py,sha256=hMz8wcSLay16PxCsfWWLqUj8PuJ4CoubZPVMC3i_FwY,18
+sdf/aws_sdf.py,sha256=PAXhbwavD30nHIjMQAp3jjmgJ5cZVpaM1FDyp5PECeY,2599
+sdf/azure_sdf.py,sha256=IL3s_cWjpbwBztc7X2J3lZVJNYL7u4JtdzTtby_Lzcg,2755
+sdf/gcp_sdf.py,sha256=EHQaV2NGfXxVJwH4Xg9xLOhc6p-HjyvJhGLSNYGKPU8,2221
+sdf/utils.py,sha256=MOcMnw_k5OHfvENOlKoysVaGf0CbI6Y5HeVbPc-URY4,1389
+sankir_sdf-0.0.9.dist-info/METADATA,sha256=nLkS8-hr04MSDdAYH3y2MGLMSCuYoLFkqfY5Kyb5-Dk,1247
+sankir_sdf-0.0.9.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sankir_sdf-0.0.9.dist-info/entry_points.txt,sha256=lYpMiEA47A1_HySM0TSgegDtjyCH06bD39a5dJX-pCg,50
+sankir_sdf-0.0.9.dist-info/top_level.txt,sha256=nB-DmPWpLu5EruWNAApNwXBfnCXiloP3cwIVvBJ0z_E,4
+sankir_sdf-0.0.9.dist-info/RECORD,,
