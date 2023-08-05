@@ -1,0 +1,10 @@
+pylicy/__init__.py,sha256=twCf_Kk_mscAM-ly0H6mCumaDYLg8eGP7ebFlZNec7o,243
+pylicy/models.py,sha256=CHNIZ0TYROa2pjIuzdWaqcUUA-9lnlSYoLx5aEbA0G8,2621
+pylicy/policy.py,sha256=o83Dg9N0ck-UzPIFSZbKPGiXU0WvDj9pqHm6MSQ2bxQ,4011
+pylicy/pylicy.py,sha256=cuhrE993OLB6yE8fO3ngSGuJ4leYK9q30p8mQsJ0XLU,7228
+pylicy/rules.py,sha256=KHhKR3g2QxaSiWB6JAjJahVNbCtqsZCcrlQbsDOoC6I,2386
+pylicy/utils.py,sha256=qKdWLXWnV2_fzEUNQ6t13HPsdq4BxU3SSuntu8Wxx9I,3812
+pylicy-0.1.0.dist-info/LICENSE,sha256=rVxqO0J6MLemNWs7MQMKbQwA8V0AyCsIvIMZcrcxkiA,1065
+pylicy-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pylicy-0.1.0.dist-info/METADATA,sha256=2yhjpBbcBQG0M8T549locGlR1UJWNDtzgyWeN9n_S14,355
+pylicy-0.1.0.dist-info/RECORD,,
