@@ -1,0 +1,16 @@
+# Include the README
+include README*
+
+# Include the VERSION
+include VERSION
+
+# Include the LICENSE
+include LICENSE*
+
+# Include metadata mappers
+include cwepr/metadata_mapper_cwepr.yaml
+include cwepr/io/*.yaml
+
+
+# Include templates
+recursive-include cwepr/templates *
