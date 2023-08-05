@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: plbdays
+Version: 0.0.1
+Summary: Business days in Poland
+Home-page: https://github.com/ZawadzkiR/plbays/
+Author: Robert Zawadzki
+Author-email: r.zawadzki96@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ZawadzkiR/plbays/issues
+Keywords: business days
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+Simple functions showing information about business days in Poland.
+
+isBusinessDay() - Returns True or False if the day is a business day
+
+Examples
+Default: isBusinessDay () or isBusinessDay (today)
+isBusinessDay('2011-11-11')
+
+lastBD() - Returns the last business day
+
+Examples
+Default: lastBD() or lastBD('today') - The last business day of today
+lastBD('2011-11-11')
+
+BDays_list(start_date, end_date) - returns a list with True and False values for a given range of days
+
+Examples
+BDays_list('2021-01-01', '2021-12-31')
+
+
+
+Change Log
+==========
+
+0.0.01 (27/11/2021)
+-------------------
+-First Release
+
+
