@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gl=goldilox.app.cli:main
+    
