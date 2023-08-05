@@ -1,0 +1,6 @@
+numpy
+matplotlib
+scipy>=1.5
+netCDF4
+pyyaml>=5.1
+numba
