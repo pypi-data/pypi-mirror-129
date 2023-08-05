@@ -1,0 +1,11 @@
+click-log
+cryptography
+requests-toolbelt
+requests
+tornado>=5.0.0
+pyzmq>=17
+Click>=6.0
+netaddr
+
+[tests]
+vcrpy-unittest
