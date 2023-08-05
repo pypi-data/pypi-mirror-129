@@ -1,0 +1,12 @@
+pygments_bsl/__init__.py,sha256=JI0v5bqxbGM20tWnxMHUgsYmQ6uG-nBK-orsniHBJcA,60
+pygments_bsl/lexer.py,sha256=F33PphP4LzSNuTztHT7rHdE7T7YKYBnh_mlWYWFh9BQ,26463
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lexer.py,sha256=TqTdddWmKftIcNnyoIz9Xjbw1ewmpRiAxqNR4OsgLDw,26645
+tests/tokens_bsl.py,sha256=Ntg80YiG58ukp1Ez_Mq3G36tmZre8rB1P3-INxqM_CA,227
+tests/tokens_os.py,sha256=tYBrMpXtyHhP7UobWIiReC2UWfVcS61f5iiIOr0SQCc,153
+pygments_bsl-0.7.0.dist-info/LICENSE,sha256=iodVOdzT6ndaZEE4GqhZMHSQHlM7FQkL_iC-YDP98CE,1057
+pygments_bsl-0.7.0.dist-info/METADATA,sha256=_kZWP97a3gqEcgYhDWyz7PHxEjwwjMs1i3pvLKUwVFI,1410
+pygments_bsl-0.7.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pygments_bsl-0.7.0.dist-info/entry_points.txt,sha256=Q0Gfe2tlljhg2awGApjgqWgrUTizS3yQyZZp5PKYyjo,47
+pygments_bsl-0.7.0.dist-info/top_level.txt,sha256=_HQs93M6SXwZZJzAv9juQcR_wL6_HGMjmzRiGWdQmps,19
+pygments_bsl-0.7.0.dist-info/RECORD,,
