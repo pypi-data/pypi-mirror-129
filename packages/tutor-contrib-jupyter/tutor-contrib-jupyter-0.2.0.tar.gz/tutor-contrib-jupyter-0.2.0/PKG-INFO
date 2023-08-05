@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: tutor-contrib-jupyter
+Version: 0.2.0
+Summary: jupyter plugin for Tutor
+Home-page: https://github.com/murat-polat/tutor-contrib-jupyter
+Author: MP
+License: AGPLv3
+Project-URL: Code, https://github.com/murat-polat/tutor-contrib-jupyter
+Project-URL: Issue tracker, https://github.com/murat-polat/tutor-contrib-jupyter/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5
+
+jupyter plugin for `Tutor <https://docs.tutor.overhang.io>`__
+===================================================================================
+
+Installation
+------------
+
+::
+
+    pip install git+https://github.com/murat-polat/tutor-contrib-jupyter
+
+Usage
+-----
+
+::
+
+    tutor plugins enable jupyter
+
+
+License
+-------
+
+This software is licensed under the terms of the AGPLv3.
+
