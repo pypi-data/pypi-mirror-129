@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: number-counter
+Version: 0.2.1
+Summary: counter of the number of numbers
+Home-page: https://github.com/pypa/sampleproject
+Author: Kirill Shevchenko
+Author-email: bez-1999@mail.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# number counter
+
+A package designed to count the number of characters in a given interval for a function matplotlib.pyplot.bar . You input an array of numbers - "array" and "bin" - the number of intervals. At the output you get "counted" - the number of indexes in the interval and "interval" - an array in which your interval will be.
+
