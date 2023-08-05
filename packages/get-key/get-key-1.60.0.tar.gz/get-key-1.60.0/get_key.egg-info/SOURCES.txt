@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+get_key.egg-info/PKG-INFO
+get_key.egg-info/SOURCES.txt
+get_key.egg-info/dependency_links.txt
+get_key.egg-info/not-zip-safe
+get_key.egg-info/top_level.txt
+getkey/__init__.py
+getkey/keynames.py
+getkey/platforms.py
+getkey/unikeys.py
+tests/unit/__init__.py
+tests/unit/test_getkey.py
+tests/unit/test_key.py
