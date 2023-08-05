@@ -1,0 +1,4 @@
+click
+ox-secrets
+requests
+python-telegram-bot
