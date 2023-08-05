@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: muxec
+Version: 0.1.0
+Summary: Multiplexed Exec Tool
+Home-page: https://github.com/ReallyLiri/muxec
+Author: ReallyLiri
+Author-email: reallyliri@gmail.com
+License: UNKNOWN
+Keywords: mux multiplex exec execute xargs shell parallel
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Multiplexed Executor
+
+TBD
+
+
