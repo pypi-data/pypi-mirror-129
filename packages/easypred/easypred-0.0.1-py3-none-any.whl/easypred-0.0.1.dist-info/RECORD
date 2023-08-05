@@ -1,0 +1,14 @@
+easypred/__init__.py,sha256=NXsW9a4p5J5ADcPpPWvyLt28oPud50U5efJV1W_3SHo,165
+easypred/base_prediction.py,sha256=GiVfnH7Z8pgVAB8FIXxdm4s1AxmXv4t8VVtmlXj5qpI,5551
+easypred/binary_prediction.py,sha256=ntngBMoPACnao8YeNnC7XSot24RDrFJst_3bETniV98,10018
+easypred/numeric_prediction.py,sha256=8peEjH6MJ5onNdJECQwEfDZpTVuSVdAKUiZ-KuKc-wc,5615
+easypred/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easypred/tests/test_binary.py,sha256=JQ7dWoJFcYacq9JaQKXL1_rBF4wQyaeQYqyAFHfPb3s,1698
+easypred/tests/test_numeric.py,sha256=_rGPwFYx8aSl_a4ln0F9VWirDXSG_eM7qUgIT7hP2Cw,3179
+easypred/tests/test_prediction.py,sha256=Vv_hV33TEIqYimzgLFlgususMgwPtFqOMnyXoO4zxA0,4371
+easypred/tests/test_data/binary.xlsx,sha256=yTXPDlF_EieXcXQv7fJwvo3bsB7RSzM0kFSjOUh3QEI,9010
+easypred-0.0.1.dist-info/LICENSE,sha256=jyBRdrELilc9lsEbYuV6wA9s3t1MFiXwBK3lgDjeock,1093
+easypred-0.0.1.dist-info/METADATA,sha256=CJgNWZ_dA1DMa6bH96W35v3X0YRu64v8IrjvfLFLGJk,5790
+easypred-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+easypred-0.0.1.dist-info/top_level.txt,sha256=LUQ9SS5nwvCM0stwVyvZ02Jcy5w_e0F3DR3Z15_s2k4,9
+easypred-0.0.1.dist-info/RECORD,,
