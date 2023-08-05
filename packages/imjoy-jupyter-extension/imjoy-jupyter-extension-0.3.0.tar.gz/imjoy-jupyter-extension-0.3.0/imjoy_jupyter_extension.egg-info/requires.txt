@@ -1,0 +1,2 @@
+imjoy-rpc>=0.3.35
+notebook>=5.3
