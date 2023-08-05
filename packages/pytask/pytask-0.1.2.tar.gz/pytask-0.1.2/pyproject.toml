@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.0"]
+
+
+[tool.setuptools_scm]
+write_to = "src/_pytask/_version.py"
+
+
+[tool.tryceratops]
+ignore = ["TC003"]
