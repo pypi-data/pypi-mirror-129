@@ -1,0 +1,36 @@
+[package]
+name = "recorder"
+version = "0.1.0"
+authors = ["romnn <contact@romnn.com>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.42"
+cfg-if = "0.1"
+num = "0.4.0"
+ndarray = "0.15.0"
+rodio = "0.14.0"
+cpal = "0.13.3"
+ringbuf = "0.2"
+portaudio = { version = "0.7.0", optional = true }
+hound = { version = "3.4.0", optional = true }
+proto = { path = "../proto" }
+tokio = { version = "1.0", features = ["signal", "rt-multi-thread", "macros", "sync", "time", "fs", "rt", "io-util", "io-std"] }
+tokio-stream = "0.1"
+async-trait = "0.1.51"
+
+[features]
+default = ["record", "wav", "mp3", "vorbis", "flac"]
+
+# record audio input to file
+record = ["hound"]
+
+# supported audio input file codecs
+wav = ["rodio/wav"]
+mp3 = ["rodio/mp3"]
+vorbis = ["rodio/vorbis"]
+flac = ["rodio/flac"]
+jack = ["cpal/jack"]
+
+[build-dependencies]
+build = { path = "../build" }
