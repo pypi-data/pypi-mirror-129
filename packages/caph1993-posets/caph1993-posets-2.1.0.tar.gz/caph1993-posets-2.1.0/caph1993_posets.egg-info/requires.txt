@@ -1,0 +1,4 @@
+numpy
+caph1993-pytools>=0.2.37
+pyhash
+pydotplus
