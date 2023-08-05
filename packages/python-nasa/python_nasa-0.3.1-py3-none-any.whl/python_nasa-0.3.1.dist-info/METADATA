@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: python-nasa
+Version: 0.3.1
+Summary: Unofficial Python Wrapper for NASA API
+Home-page: https://github.com/wrap-api/python-nasa
+Author: Faisal Malik
+Author-email: faisalmalikwidyaprasetya@gmail.com
+License: MIT
+Download-URL: https://github.com/wrap-api/python-nasa/archive/main.tar.gz
+Keywords: nasa planet astronomy image galaxy earth
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pillow
+
+# Python NASA
+Unofficial Python Wrapper for NASA API. Full API Documentation https://api.nasa.gov/.
+
+## Install
+```bash
+pip install python-nasa
+```
+
+## Usage
+
+### Basic Usage
+```python
+from nasa import Client
+# api_key = "Your API Key" Generate here https://api.nasa.gov/
+client = Client(api_key)
+apod = client.apod()
+```
+### Get Image
+```python
+from nasa import Client
+# api_key = "Your API Key" Generate here https://api.nasa.gov/
+client = Client(api_key)
+apod_image = client.apod(get_image=True)
+```
+
+
