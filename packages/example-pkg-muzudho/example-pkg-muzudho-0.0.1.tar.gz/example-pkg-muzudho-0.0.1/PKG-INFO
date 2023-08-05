@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: example-pkg-muzudho
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: muzudho
+Author-email: muzudho1@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# state-machine-py
+
+状態遷移マシン
+
+## Install
+
+```shell
+python.exe -m pip install --index-url https://test.pypi.org/simple/ --no-deps state_machine_py
+                                                                              ----------------
+                                                                              YOUR-API-NAME-HERE
+```
+
+## Publish
+
+📖 [Pythonスクリプトってどうやってパブリッシュするんだぜ（＾～＾）？](https://crieit.net/drafts/61a3496b73b42)  
+
+```shell
+# Build
+python.exe -m build
+
+# Upload
+python.exe -m twine upload --repository testpypi dist/* --verbose
+```
+
+
