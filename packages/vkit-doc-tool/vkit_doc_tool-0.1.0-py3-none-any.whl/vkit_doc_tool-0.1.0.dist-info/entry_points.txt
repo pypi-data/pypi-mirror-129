@@ -1,0 +1,3 @@
+[console_scripts]
+vkit-doc-tool = vkit_doc_tool:entrypoint_cli
+
