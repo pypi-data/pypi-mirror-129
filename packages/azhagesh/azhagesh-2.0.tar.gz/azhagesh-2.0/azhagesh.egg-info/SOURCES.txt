@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+azhagesh.egg-info/PKG-INFO
+azhagesh.egg-info/SOURCES.txt
+azhagesh.egg-info/dependency_links.txt
+azhagesh.egg-info/top_level.txt
