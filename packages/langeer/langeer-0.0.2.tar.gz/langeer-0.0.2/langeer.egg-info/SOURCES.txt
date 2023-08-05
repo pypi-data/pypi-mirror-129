@@ -1,0 +1,7 @@
+langeer.py
+setup.py
+langeer.egg-info/PKG-INFO
+langeer.egg-info/SOURCES.txt
+langeer.egg-info/dependency_links.txt
+langeer.egg-info/entry_points.txt
+langeer.egg-info/top_level.txt
