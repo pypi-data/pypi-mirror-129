@@ -1,0 +1,6 @@
+README.md
+setup.py
+chardonnay.egg-info/PKG-INFO
+chardonnay.egg-info/SOURCES.txt
+chardonnay.egg-info/dependency_links.txt
+chardonnay.egg-info/top_level.txt
