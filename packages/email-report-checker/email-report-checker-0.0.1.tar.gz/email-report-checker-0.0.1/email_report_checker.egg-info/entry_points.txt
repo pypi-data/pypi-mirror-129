@@ -1,0 +1,4 @@
+[console_scripts]
+dmarc-report-checker = email_report_checker.dmarc:main
+tls-report-checker = email_report_checker.tls:main
+
