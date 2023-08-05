@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/GitAutoVersion/GitAutoVersion.py
+src/GitAutoVersion/__init__.py
+src/GitAutoVersion.egg-info/PKG-INFO
+src/GitAutoVersion.egg-info/SOURCES.txt
+src/GitAutoVersion.egg-info/dependency_links.txt
+src/GitAutoVersion.egg-info/top_level.txt
