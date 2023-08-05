@@ -1,0 +1,3 @@
+[console_scripts]
+mpo = mpo.__main__:main
+

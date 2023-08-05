@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+mpo/__init__.py
+mpo/__main__.py
+mpo/links.py
+mpo/pdf.py
+mpo_oze.egg-info/PKG-INFO
+mpo_oze.egg-info/SOURCES.txt
+mpo_oze.egg-info/dependency_links.txt
+mpo_oze.egg-info/entry_points.txt
+mpo_oze.egg-info/requires.txt
+mpo_oze.egg-info/top_level.txt
