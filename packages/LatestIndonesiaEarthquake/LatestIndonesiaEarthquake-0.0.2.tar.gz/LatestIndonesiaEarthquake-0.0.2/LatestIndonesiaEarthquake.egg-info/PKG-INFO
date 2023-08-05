@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: LatestIndonesiaEarthquake
+Version: 0.0.2
+Summary: This package will produce the latest Indonesia earthquake
+Home-page: https://github.com/kodinge/latest-indonesia-earthquake
+Author: Tedy Maradho Pasa
+Author-email: maradho@gmail.com
+License: UNKNOWN
+Project-URL: Youtube, https://www.youtube.com/channel/UCaWfnzdzI9T4nGRq1TR_fMg
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Latest indonesia earthquake
+This package will get the latest earthquake from BMKG (Indonesian Agency for Meteorological, Climatological and Geophysics)
+## How it work ?
+This package will scrape from [BMKG](https://bmkg.go.id) to get latest quake happened in Indonesia
+
+This package use BeautifulSoup and Request to get data and produce data in JSON format.
+Ready to be use in web or mobile applications
+
