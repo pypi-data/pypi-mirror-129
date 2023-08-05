@@ -1,0 +1,7 @@
+README.md
+setup.py
+oscillations_paper.egg-info/PKG-INFO
+oscillations_paper.egg-info/SOURCES.txt
+oscillations_paper.egg-info/dependency_links.txt
+oscillations_paper.egg-info/requires.txt
+oscillations_paper.egg-info/top_level.txt
