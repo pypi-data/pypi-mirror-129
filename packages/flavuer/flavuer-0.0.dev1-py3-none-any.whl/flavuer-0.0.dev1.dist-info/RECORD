@@ -1,0 +1,15 @@
+flavuer/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+flavuer/__main__.py,sha256=BBbxtHCic9kR2t8-qnOo4oSqAHDd_usksY4ePm43FaQ,1063
+flavuer/utils.py,sha256=yfEXKxCMDJQgp1pZAHQRjWMB22X91rXTXHT5mKMCzD8,1236
+flavuer/template/app/__init__.py,sha256=6DYwqNr8vweJcXjqY_ZF8Pp5i3-M5z7Frcc7ir6Zcic,523
+flavuer/template/app/__pycache__/__init__.cpython-38.pyc,sha256=tmKAOMgzPnyR3ui3aCm2x1KWhrxfd1WTIxPQY4XJ66w,786
+flavuer/template/app/__pycache__/db.cpython-38.pyc,sha256=U_o8is1-4acXJSsYXzqQnRAx2-9AqbzWuvtV1pqjwv8,1358
+flavuer/template/app/static/js/demo.js,sha256=EjudB4_Ak1-RGBchk7C8W-bnGwiq3rgziio1aOWX6C0,442
+flavuer/template/app/templates/demo.html,sha256=tW8-uI0Cj6aoCsbf_7AxttMrbAOUC4vBdtXE-_prDnM,657
+flavuer/template/app/templates/layout.html,sha256=8ocw1YlCiXBKdctmaoF7HS67MlDD0uqRKUIBhrj4R1w,619
+flavuer-0.0.dev1.dist-info/LICENSE,sha256=5vn36J8cZcUjKk4BUX4Ani9wvcUN8z_Rsv9A_imDQFo,1064
+flavuer-0.0.dev1.dist-info/METADATA,sha256=CEQAuY7-AII38GHVvmXgx30CNAQda9SgrINnoRlWMQQ,289
+flavuer-0.0.dev1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+flavuer-0.0.dev1.dist-info/entry_points.txt,sha256=zDnDB3U5_EnqwQDMkbRbEKgpGUDi_K3_j0U1jsjtTYs,51
+flavuer-0.0.dev1.dist-info/top_level.txt,sha256=NuqowyJ-mDj04uGQimO01iIE-JkKVus2uIuIpOVPNFo,8
+flavuer-0.0.dev1.dist-info/RECORD,,
