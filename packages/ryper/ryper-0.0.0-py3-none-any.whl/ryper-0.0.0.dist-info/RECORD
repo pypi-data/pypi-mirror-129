@@ -1,0 +1,11 @@
+ryper/__init__.py,sha256=ksdbeKLYve8Y5VV09UQ_hv6vnI9Fz3gJP8PefHeHYNo,54
+ryper/my_module.py,sha256=nsrsbknO9gsBNOj_O6cI4TAFJZ1VjSvzrb_miY-D_Kk,222
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unit/conftest.py,sha256=ntgSlROfdeWmjmJMa30vknkzzc7NGuVJVa3_umazdUg,62
+test/unit/test_my_module.py,sha256=Rez086m0TgCOxTnI-9KENPNdP0I5AVcJEPamkI5gu0k,294
+ryper-0.0.0.dist-info/LICENSE,sha256=mq4Ki0I01VvUB-mByrPZUCjgFwhcxEg5Z8aNPKLozKQ,1071
+ryper-0.0.0.dist-info/METADATA,sha256=dRPWcX9PryLeDO0Kk4crDaoiywz0NJLsy22sHAU1bRE,708
+ryper-0.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ryper-0.0.0.dist-info/top_level.txt,sha256=stUTJVL5MhRQwlfXgxeyK_xpHvDxrem_UiJ6qGKEnXI,11
+ryper-0.0.0.dist-info/RECORD,,
