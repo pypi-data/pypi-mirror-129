@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+TextHTMLPress/TextHTMLPress.egg-info/PKG-INFO
+TextHTMLPress/TextHTMLPress.egg-info/SOURCES.txt
+TextHTMLPress/TextHTMLPress.egg-info/dependency_links.txt
+TextHTMLPress/TextHTMLPress.egg-info/entry_points.txt
+TextHTMLPress/TextHTMLPress.egg-info/top_level.txt
