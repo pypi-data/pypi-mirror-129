@@ -1,0 +1,17 @@
+.gitignore
+README.md
+pyproject.toml
+scratch.py
+setup.cfg
+.github/workflows/package-actions.yml
+rhubarbpy/__init__.py
+rhubarbpy/_version.py
+rhubarbpy/loopsum.py
+rhubarbpy.egg-info/PKG-INFO
+rhubarbpy.egg-info/SOURCES.txt
+rhubarbpy.egg-info/dependency_links.txt
+rhubarbpy.egg-info/top_level.txt
+rhubarbpy/subpkg/__init__.py
+rhubarbpy/subpkg/hello.py
+testing/__init__.py
+testing/test_functions.py

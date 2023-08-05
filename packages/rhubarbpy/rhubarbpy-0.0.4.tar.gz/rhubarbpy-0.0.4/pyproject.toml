@@ -1,0 +1,6 @@
+[build-system]
+requires = ["setuptools>=0.46", "wheel", "setuptools_scm[toml]>=6.0", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "rhubarbpy/_version.py"
