@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: md5-brute-force
+Version: 0.2.0
+Summary: Python script for brute forcing an md5 hash.
+License: MIT
+Author: Vsevolod Mineev
+Author-email: vsevolod.mineev@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
