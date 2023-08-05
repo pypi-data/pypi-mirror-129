@@ -1,0 +1,3 @@
+[console_scripts]
+epaper=raspberry_epaper.cli:main
+
