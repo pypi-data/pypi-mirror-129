@@ -1,0 +1,13 @@
+.gitignore
+PyPi_README.md
+README.md
+setup.py
+ai_grams_pm/__init__.py
+ai_grams_pm/queries_manager.py
+ai_grams_pm.egg-info/PKG-INFO
+ai_grams_pm.egg-info/SOURCES.txt
+ai_grams_pm.egg-info/dependency_links.txt
+ai_grams_pm.egg-info/requires.txt
+ai_grams_pm.egg-info/top_level.txt
+docs/index.html
+logo/ai_grams_camel.png
