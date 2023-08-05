@@ -1,0 +1,14 @@
+setup.py
+vartests/LICENSE.md
+vartests/README.md
+vartests/__init__.py
+vartests/poetry.lock
+vartests/pyproject.toml
+vartests/vartests.py
+vartests/version.py
+vartests.egg-info/PKG-INFO
+vartests.egg-info/SOURCES.txt
+vartests.egg-info/dependency_links.txt
+vartests.egg-info/requires.txt
+vartests.egg-info/top_level.txt
+vartests/media/Example.xlsx
