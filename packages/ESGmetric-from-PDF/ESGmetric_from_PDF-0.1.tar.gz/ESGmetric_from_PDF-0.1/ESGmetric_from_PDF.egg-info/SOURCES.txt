@@ -1,0 +1,13 @@
+setup.py
+ESGmetric_from_PDF/Audit_non_audit_fees.py
+ESGmetric_from_PDF/Auditor_name.py
+ESGmetric_from_PDF/Auditor_tenure.py
+ESGmetric_from_PDF/General_ESG_Metric.py
+ESGmetric_from_PDF/Training_data_strings.py
+ESGmetric_from_PDF/__init__.py
+ESGmetric_from_PDF/main.py
+ESGmetric_from_PDF.egg-info/PKG-INFO
+ESGmetric_from_PDF.egg-info/SOURCES.txt
+ESGmetric_from_PDF.egg-info/dependency_links.txt
+ESGmetric_from_PDF.egg-info/not-zip-safe
+ESGmetric_from_PDF.egg-info/top_level.txt
