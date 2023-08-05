@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+elnurbasiccalculator.egg-info/PKG-INFO
+elnurbasiccalculator.egg-info/SOURCES.txt
+elnurbasiccalculator.egg-info/dependency_links.txt
+elnurbasiccalculator.egg-info/top_level.txt
