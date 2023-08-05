@@ -1,0 +1,13 @@
+buienradar/__init__.py,sha256=0W2MiheqHA6mszXdkR6_nAobrwFse5XfJIs2mSHOSwg,50
+buienradar/__main__.py,sha256=86nkydgpOkeMLjKjM0gX8gGiyMPBFJyRSoN9Kpvxx9A,2065
+buienradar/buienradar.py,sha256=jJAerBSuyvGYNcGP_ieafgQdFASQ-Z7FiTa4hRwLaVk,1757
+buienradar/buienradar_json.py,sha256=WZ4G3Z_FNa_ioEyBn50hgPTB0J1Afx3MKgqNKnFVbSM,22610
+buienradar/buienradar_xml.py,sha256=92hcFRJkJ-aEw7FJomSR3K-6GH9l4mzH55-EueqzpTo,16844
+buienradar/constants.py,sha256=Vn2aWen_UUfiicJhQfvFI2RgQqpOApazZpznIE-VIv0,4735
+buienradar/urls.py,sha256=DGISdcCTsedCKR06JLUmWCrlfU5KNP_zfklIjCJB-d0,1583
+buienradar-1.0.5.dist-info/LICENSE,sha256=dwNqOxziVtfeaKAXayPaatAbt3XzOEQAnij6UvhqX4E,1085
+buienradar-1.0.5.dist-info/METADATA,sha256=fbHlHSYFEd3BPe8Ar9xmra2StPMPEkzng3qAKjE5jnA,22667
+buienradar-1.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+buienradar-1.0.5.dist-info/entry_points.txt,sha256=3qiRYIReh1dgTcFUYbMEiUAAjmEPK2liBsVZ0w_bRZ0,57
+buienradar-1.0.5.dist-info/top_level.txt,sha256=Zms9rcss9RptmB49iRFTdzmCbSlBem7bPPwrt6Pq-Gg,11
+buienradar-1.0.5.dist-info/RECORD,,
