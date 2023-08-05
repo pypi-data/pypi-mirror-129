@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: snp-companies
+Version: 1.0
+Summary: Fetches and construct the S&P 500 based on the Wiki page
+Home-page: https://github.com/ofrik/snp_companies
+Author: Ofri Masad
+Author-email: ofrik89@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# S&P Companies
+Fetches the companies that comprises the s&p 500 based on the wiki page https://en.wikipedia.org/wiki/List_of_S%26P_500_companies including historical lists.
+
+## Usage
+```
+from datetime import date
+from snp_companies import SNPListing
+
+listing = SNPListing()
+print(listing[date.today()])
+print(listing['2021-11-28'])
+print(listing['2000-11-28'])
+```
+
