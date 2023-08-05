@@ -1,0 +1,11 @@
+email_report_checker/__init__.py,sha256=uYL2bl-pi_mw7GeUXfyzJ65lvMHYefZI0Rq4IjV7z0s,28
+email_report_checker/dmarc.py,sha256=zlNHvEZpNHyROzof330BJOuNz2XZevGVKOqcDWxTelY,1257
+email_report_checker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_report_checker/tls.py,sha256=5cPUtMewuSfI6BcpLT2aN356Lv-AeYYZDZM1LWZ3P44,972
+email_report_checker/util.py,sha256=i9sJA4xcVWkkU_GN9M3IIDhXC5zrbTNMfa4Kd3ZGpK0,1484
+email_report_checker-0.0.1.dist-info/LICENSE,sha256=8CiZaCDbtfcIMBdo-F9SlHActvTVDcXZtO8LYYF8ADE,1533
+email_report_checker-0.0.1.dist-info/METADATA,sha256=NBV76Qrn6FFKWakm9izJ7Qwqgr7iH_3jYGEN5SIQmvk,2761
+email_report_checker-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+email_report_checker-0.0.1.dist-info/entry_points.txt,sha256=ExmdCSR8dGXYadPw0gaN8ltboMGy9MM9LmL3fvSxCQ4,125
+email_report_checker-0.0.1.dist-info/top_level.txt,sha256=Bd3A6HKjYs_Upd9WR9rLFgJkgIYQMVQ2eOh8LEAzYjk,21
+email_report_checker-0.0.1.dist-info/RECORD,,
