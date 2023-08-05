@@ -1,0 +1,3 @@
+[console_scripts]
+iTesting2 = main:main
+
