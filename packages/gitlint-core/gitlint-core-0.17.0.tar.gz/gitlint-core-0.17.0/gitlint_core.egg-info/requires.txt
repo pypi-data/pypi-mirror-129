@@ -1,0 +1,12 @@
+Click>=8
+arrow>=1
+
+[:sys_platform != "win32"]
+sh>=1.13.0
+
+[trusted-deps]
+Click==8.0.3
+arrow==1.2.1
+
+[trusted-deps:sys_platform != "win32"]
+sh==1.14.2
