@@ -1,0 +1,10 @@
+bubop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bubop/crypto.py,sha256=PyMv_LmRfMdB7qB09g8HaHxC_Z_1_ynEFNQ-Ma8E4Oo,327
+bubop/exceptions.py,sha256=zO7vPh_-XGOHO_VzLDSuqZrqGKkpCcC3IXYCZBNI9rw,323
+bubop/fs.py,sha256=2sB3-6WsJiEF5w7vkVhCuV5tQ0B0JVjopkRkK9dcyPA,1999
+bubop/logging.py,sha256=6DvuQ7nW8U6SMJpp7ddVsy1spPVSZElzRq5ttTXKDCM,1408
+bubop/string.py,sha256=y6UfB585WJYY_GJLzbe9Ib8KhwKkziF_WhaagGT8rW4,385
+bubop-0.1.1.dist-info/LICENSE.md,sha256=4ZZEWqQSwJvhet-fcg2rUXljTEHm45xTZ7GIrtL5UlU,1069
+bubop-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bubop-0.1.1.dist-info/METADATA,sha256=aA3uOuVBklLVDXUVrjvmfiNfsNxtFKeYvvCXNg405jc,2174
+bubop-0.1.1.dist-info/RECORD,,
