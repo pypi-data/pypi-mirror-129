@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: portfolio-analysis-library
+Version: 0.0.3
+Summary: #WIP: Analysing Stock Returns & Constructing Portfolios with Python
+Home-page: https://github.com/rezan21/Portfolio-Analysis-Library
+Author: Reza N
+Author-email: 32329310+rezan21@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Financial and Insurance Industry
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Portfolio-Analysis-Library (PAL)
+
+## WORK IN PROGRESS (WIP)
+
+## Usage:
+```
+pip install portfolio-analysis-library
+```
+
+in python:
+```
+import pal
+import pandas as pd
+
+portfolio = pal.Portfolio(pd.Series([0.2, 0.3, -0.1, 0.2, -0.5]), 12)
+portfolio.get_annual_sharpe(risk_free_rate=0.02)
+print(portfolio.annual_sharpe)
+```
+
+## Development
+```bash
+pip install -r .[dev]
+```
+
+
