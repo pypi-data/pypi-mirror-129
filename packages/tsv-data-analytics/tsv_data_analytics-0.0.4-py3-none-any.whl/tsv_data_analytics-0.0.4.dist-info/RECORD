@@ -1,0 +1,14 @@
+tsv_data_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsv_data_analytics/file_io_wrapper.py,sha256=KkK46UBtMh_TrbuhX4kamRerC0mrNJ6GhU8zn6Ei9Yc,2192
+tsv_data_analytics/file_paths_data_reader.py,sha256=zUM0Ie0Wn5rjynLaM-_f_OG_U1m5jWCZz2XWBqg4DE0,4216
+tsv_data_analytics/file_paths_reader.py,sha256=DyUe10OJSc051oVwqsf_B9I0H5ZPhR9fptF1SSBHKHQ,1176
+tsv_data_analytics/file_paths_util.py,sha256=qQzlqi-EdhWNUFd7e1izVaWVWYu8yWBvOEswlM992GM,13886
+tsv_data_analytics/funclib.py,sha256=KDss2OB5-YZ8QYwnULrS8Ri249zlwSRcMkUmUr76Fsk,3465
+tsv_data_analytics/s3_wrapper.py,sha256=uYozBkdP15nj-BOH-sKf3vcCqE75POhR84pjI7wYQzU,8622
+tsv_data_analytics/tsv.py,sha256=nCxNilMPChTAcFLwg9hwoswdL3JjwxZH176jBg1Wt3Q,120148
+tsv_data_analytics/tsvutils.py,sha256=sh7NYIwpdkfQYHpJy-BpNu1T8ejrMDdtNgY7g-rgzec,25173
+tsv_data_analytics/utils.py,sha256=2NHaidd4i9H3yZggTaNJIl5AuYaFCJqGSab2RwNiXfY,3721
+tsv_data_analytics-0.0.4.dist-info/METADATA,sha256=H4OgN8RZtZpPV2QmadVOlPHwncTNcSRqGql9DW_cUPE,724
+tsv_data_analytics-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tsv_data_analytics-0.0.4.dist-info/top_level.txt,sha256=4BCy3i4XQq2bPL9_5Dg7g-bYI1IYZVQy5oWaklByKxc,19
+tsv_data_analytics-0.0.4.dist-info/RECORD,,
