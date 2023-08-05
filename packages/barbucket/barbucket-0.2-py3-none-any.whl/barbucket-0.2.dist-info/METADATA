@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: barbucket
+Version: 0.2
+Summary: My package description
+Home-page: https://github.com/croidzen/barbucket
+Author: Martin Creutzenberg
+Author-email: martin.creutzenberg@gmail.com
+License: MIT License
+Project-URL: Documentation, https://barbucket.rtfd.io/
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: click
+Requires-Dist: enlighten
+Requires-Dist: ib-insync
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: trading-calendars
+
+# Barbucket
+
+![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![sqlite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![license](https://img.shields.io/github/license/croidzen/barbucket.svg)
+![issues_open](https://img.shields.io/github/issues/croidzen/barbucket.svg)
+![issues_closed](https://img.shields.io/github/issues-closed/croidzen/barbucket.svg)
+![commits](https://badgen.net/github/commits/micromatch/micromatch)
+![last_commit](https://badgen.net/github/last-commit/micromatch/micromatch)
+![pypi_version](https://badgen.net/pypi/v/barbucket)
+
+A local database for financial contracts and pricing data
+
+## Features
+* Syncing contracts of IB's exchange listings to a local database
+* Adding fundamental data from Tradringview's screener
+* Creating groups of contracts (universes)
+* Downloading daily historical quotes using IB's TWS API (paid market data subscriptions on IB are necessary)
+* Storage of downloaded quotes into a local database for fast access
+
+## Quickstart
+Installation:
+```console
+$ pip install barbucket
+```
+Sync contracts:
+```console
+$ barbucket contracts sync-listing --type stock --exchange nasdaq
+```
+See results at:
+```console
+~/.barbucket/database.sqlite
+```
+
+## Requirements
+* Linux or macOS; Windows is not tested yet
+* Python >= 3.7
+
+## Asset types
+* Stocks
+* ETFs
+* Crypto currencies (planned)
+
+## DBMS
+* SQLite
+* PostgreSQL (planned)
+
+## APIs
+* [Intercative Brokers](http://interactivebrokers.com) TWS API
+* [Tradingview](https://tradingview.com) screener .csv files
+* [EOD Historical Data](https://eodhistoricaldata.com) (planned)
+* [CCXT](https://github.com/ccxt/ccxt) (planned)
+
+## Status
+* Early beta stage. Expect code- and data-breaking modifications
+* Aimed at software developers. Knowlede about how to handle a database is necessary to use this software
+
+## Full documentation
+* [barbucket.rtfd.io](http://barbucket.rtfd.io/)
+
+
