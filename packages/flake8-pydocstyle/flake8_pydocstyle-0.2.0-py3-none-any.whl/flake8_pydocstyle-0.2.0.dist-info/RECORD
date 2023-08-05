@@ -1,0 +1,9 @@
+flake8_pydocstyle/__init__.py,sha256=lULZSAOJMDoaAaGoSUbDlc2U9KQss9clw3G214_8Kl8,134
+flake8_pydocstyle/generic_types.py,sha256=VOSMRACeq6Cyx2XE8ARnBtQsaQ9zyrDZ2V--3lc1sFM,588
+flake8_pydocstyle/metadata.py,sha256=YGxScSa7fiOPDOpKq0cJK0sA1DpgfhIWEOpz5X_z82E,562
+flake8_pydocstyle/plugin.py,sha256=M5IEfHK8dfvIBymGkoYyI0JHetXVT_DwHqZQdNKsRQI,2806
+flake8_pydocstyle-0.2.0.dist-info/entry_points.txt,sha256=ZdcRhNwnDgUVNnW6i8dS7CEtQNQwtqQpKyWiULjx3NI,63
+flake8_pydocstyle-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flake8_pydocstyle-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+flake8_pydocstyle-0.2.0.dist-info/METADATA,sha256=t_vtec8II37aq-LffJ68uxDpJfiRfrT2EMQ08Ktgtwc,2559
+flake8_pydocstyle-0.2.0.dist-info/RECORD,,
