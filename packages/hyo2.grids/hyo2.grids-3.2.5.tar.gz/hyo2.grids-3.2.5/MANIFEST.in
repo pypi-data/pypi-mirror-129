@@ -1,0 +1,13 @@
+include AUTHORS.rst
+include HISTORY.rst
+include README.rst
+include docs/how_to_contribute.rst
+recursive-include media *.png
+recursive-include hyo2/grids *.dll *.pyd
+recursive-include hyo2/grids/licenses *
+recursive-include hyo2/grids/configdata *
+recursive-exclude hyo2/grids/support *
+exclude hyo2/grids/caris_csar-2.dll
+exclude hyo2/grids/wxbase28u_vc_custom.dll
+exclude hyo2/grids/msvcp120.dll
+exclude hyo2/grids/msvcr120.dll
