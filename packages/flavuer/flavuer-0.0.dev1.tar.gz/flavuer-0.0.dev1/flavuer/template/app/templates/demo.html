@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="d-flex h-100 text-center text-white bg-dark">
+  <div id="content" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <h1>Flavuer: Flask + VueJS</h1>
+    <hr/>
+    <div id="app">
+        <p v-text="message"></p>
+        <button-counter></button-counter>
+    </div>
+    <p>This is a demo page. Remove it.</p>
+    <hr/>
+    <p>More content will come with time. Until then, play around with Flask and VueJS<p></p>
+  </div>
+</div>
+<script src={{ url_for('static', filename='js/demo.js') }}></script>
+<style>
+  .cover-container {
+    max-width: 42em;
+  }
+</style>
+{% endblock body %}

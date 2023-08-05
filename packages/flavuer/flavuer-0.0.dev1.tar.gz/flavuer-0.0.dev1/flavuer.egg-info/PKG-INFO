@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flavuer
+Version: 0.0.dev1
+Summary: Flask + VueJS
+Home-page: https://github.com/flavuer/flavuer
+Author: darless
+Author-email: darless1000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
