@@ -1,0 +1,3 @@
+[asdf_extensions]
+gwcs = gwcs.extension:GWCSExtension
+
