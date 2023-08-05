@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "nvn"
+version = "4.1.6"
+description = "nvn"
+authors = ["Ardustri <social.linter@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+watchgod = "*"
+click = "*"
+pyyaml = "*"
+ardlib = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+nvn = "nvn.__main__:main"
