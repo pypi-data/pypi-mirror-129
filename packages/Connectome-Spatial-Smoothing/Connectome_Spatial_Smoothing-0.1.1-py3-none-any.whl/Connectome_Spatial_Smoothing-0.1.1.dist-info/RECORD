@@ -1,0 +1,15 @@
+Connectome_Spatial_Smoothing/CSS.py,sha256=HwRNUPLnUDqiTNyZ90ieuHOUXCk3-ypdbJaiocF4NcU,22331
+Connectome_Spatial_Smoothing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Connectome_Spatial_Smoothing/data/sample/sample.MNI152.L.white.32k_fs_LR.surf.gii,sha256=BJj9NJfzTURqgD2WEBtQoxkWhkD8pV7BG-BHeNxm5iI,724229
+Connectome_Spatial_Smoothing/data/sample/sample.MNI152.R.white.32k_fs_LR.surf.gii,sha256=Ak3m_djb7zscfDzvWZENgari5Jjir8oPoPYjnzWJrmg,711698
+Connectome_Spatial_Smoothing/data/sample/sample.native.L.white.32k_fs_LR.surf.gii,sha256=NJblOMzS3huJXJ_4rOMBns_hrUZ3OWacLfjiP1_I5yY,725051
+Connectome_Spatial_Smoothing/data/sample/sample.native.R.white.32k_fs_LR.surf.gii,sha256=LED3PJcoDwoyER6tF6kLcX-zsJ1bzogvgRPppRN4yis,711724
+Connectome_Spatial_Smoothing/data/sample/sample_standard2acpc_dc.nii.gz,sha256=s7j-w2aIFvXt-Tt7Tt0i0p4Q9WOyGiR1hHb-ARZy5DE,8896687
+Connectome_Spatial_Smoothing/data/sample/sample_tractography_10k.tck,sha256=f3AFjtUrlOHykS_I9o6XnBhvhnmDHzBB7SOrpwvHA2o,9380060
+Connectome_Spatial_Smoothing/data/templates/atlas/Glasser360.32k_fs_LR.dlabel.nii,sha256=5bFIoUk38EdrAOu_MIdSXfiD-EqWdhw8vM-0oorrn7M,621936
+Connectome_Spatial_Smoothing/data/templates/cifti/ones.dscalar.nii,sha256=KOwWbMUPRes1bDguXEF8WPuK-2zxfm4IQGP-gzZdnKQ,995912
+Connectome_Spatial_Smoothing-0.1.1.dist-info/LICENSE,sha256=qhAJqCmZ4jUGJHwpYRF06C0_L4lvo2Seuibb5aQfnPE,1072
+Connectome_Spatial_Smoothing-0.1.1.dist-info/METADATA,sha256=VVNe1oO3ieS_rbrUg6-8YYkwuliq3fqq56aiRtFoHsc,2254
+Connectome_Spatial_Smoothing-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+Connectome_Spatial_Smoothing-0.1.1.dist-info/top_level.txt,sha256=mvxpSFIy8-Mf4DIcs9qEEOD0wW8hg0Agvx-TrnXK4h0,29
+Connectome_Spatial_Smoothing-0.1.1.dist-info/RECORD,,
