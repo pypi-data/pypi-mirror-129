@@ -1,0 +1,9 @@
+README.md
+setup.py
+decospector/__init__.py
+decospector/decospector.py
+decospector/inspector.py
+decospector.egg-info/PKG-INFO
+decospector.egg-info/SOURCES.txt
+decospector.egg-info/dependency_links.txt
+decospector.egg-info/top_level.txt

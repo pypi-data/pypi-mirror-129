@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: decospector
+Version: 0.0.0
+Summary: Simplified function introspection inside decorators
+Home-page: https://github.com/muhamuhamuha/decospector
+Author: muhamuhamuha
+License: MIT
+Description: # Decospector: simplified function introspection inside decorators
+        
+        ## Usage
+        
+        ```python
+        # basic usage
+        from decospectors import decospector
+        
+        # when mutating in place
+        from decospectors import safe_decospector
+        ```
+        
+        
+        ## Installation
+        
+        ```shell
+        pip install decospector
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
