@@ -1,0 +1,4 @@
+venv
+*.ckpt
+dist
+soco_clip.egg-info
