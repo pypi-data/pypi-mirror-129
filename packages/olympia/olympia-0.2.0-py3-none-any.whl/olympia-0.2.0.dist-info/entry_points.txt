@@ -1,0 +1,3 @@
+[console_scripts]
+olympia=olympia.__main__:main
+
