@@ -1,0 +1,4 @@
+rich>=10.13
+pygments>=2.6
+friendly-traceback>=0.4.82
+friendly_styles
