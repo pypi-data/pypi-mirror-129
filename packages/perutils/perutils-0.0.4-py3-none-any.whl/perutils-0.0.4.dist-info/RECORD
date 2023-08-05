@@ -1,0 +1,14 @@
+perutils/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+perutils/_nbdev.py,sha256=9CXK-4WhExyh4Wui1AsBkDZZ0vCpWpzTK34obWNGaAc,1956
+perutils/core.py,sha256=nHJRmrNLZ-Mpi-4HwSpAeNEpac0AaSpQ6BcRUVEupaE,101
+perutils/kaggle.py,sha256=AqYnU4TLznLVq6rCKqHtsgJCDnqhOsxcyBnm8DStP7M,3425
+perutils/nbutils.py,sha256=kHgIW5U-vTM2JkGcHEr4FK2B6OjlkkGHUy_rWTNrR9U,4343
+perutils/splitting.py,sha256=Lh06Vo1d1gs_zuDJCmOyFoP4AVPrjtTY3kDGy5f5GmI,821
+perutils/tabutils.py,sha256=POQvXun3Cx7UODjmq71cdKG8ifTMcidqdc0j7FczQ7A,1922
+perutils/tracking.py,sha256=GBO6-Fc8s_QGOHYTmkA-Kk6a_AQEr0KmGqFGbTb8t-4,3455
+perutils-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+perutils-0.0.4.dist-info/METADATA,sha256=GI1Pjamo9QKBw7NIKj_wgmn9iY4KTWn1H-K6oi1VmVo,6558
+perutils-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+perutils-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+perutils-0.0.4.dist-info/top_level.txt,sha256=UoFoZiAXnZAJE7GJx8wuTJnJjfnar_xNGO_uaaT5TEg,9
+perutils-0.0.4.dist-info/RECORD,,
