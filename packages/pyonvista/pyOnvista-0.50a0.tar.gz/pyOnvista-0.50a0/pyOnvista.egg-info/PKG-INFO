@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyOnvista
+Version: 0.50a0
+Summary: A tiny API for onvista.de financial website.
+Home-page: https://github.com/cloasdata/pyOnvista
+Author: Simon Bauer
+Author-email: code@seimenadventure.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+

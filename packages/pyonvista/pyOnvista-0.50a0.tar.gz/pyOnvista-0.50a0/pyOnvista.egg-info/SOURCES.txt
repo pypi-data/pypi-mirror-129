@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyOnvista/__init__.py
+pyOnvista/api.py
+pyOnvista/markets.json
+pyOnvista.egg-info/PKG-INFO
+pyOnvista.egg-info/SOURCES.txt
+pyOnvista.egg-info/dependency_links.txt
+pyOnvista.egg-info/requires.txt
+pyOnvista.egg-info/top_level.txt
