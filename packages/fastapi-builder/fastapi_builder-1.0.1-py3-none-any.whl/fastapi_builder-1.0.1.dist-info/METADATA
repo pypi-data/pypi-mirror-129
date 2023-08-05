@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: fastapi-builder
+Version: 1.0.1
+Summary: fastapi-builder Project generator and manager for FastAPI
+Home-page: https://github.com/fmw666/fastapi-builder
+Author: fmw666
+Author-email: fmw19990718@qq.com
+License: https://mit-license.org/
+Keywords: fastapi,builder
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio (==3.4.0)
+Requires-Dist: arrow (==1.2.1)
+Requires-Dist: binaryornot (==0.4.4)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: charset-normalizer (==2.0.8)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: cookiecutter (==1.7.3)
+Requires-Dist: dnspython (==2.1.0)
+Requires-Dist: email-validator (==1.1.3)
+Requires-Dist: fastapi (==0.70.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: Jinja2 (==3.0.3)
+Requires-Dist: jinja2-time (==0.2.0)
+Requires-Dist: MarkupSafe (==2.0.1)
+Requires-Dist: poyo (==0.5.0)
+Requires-Dist: prompt-toolkit (==3.0.22)
+Requires-Dist: pydantic (==1.8.2)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-slugify (==5.0.2)
+Requires-Dist: questionary (==1.10.0)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sniffio (==1.2.0)
+Requires-Dist: starlette (==0.16.0)
+Requires-Dist: text-unidecode (==1.3)
+Requires-Dist: typer (==0.4.0)
+Requires-Dist: typing-extensions (==4.0.0)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: wcwidth (==0.2.5)
+
+# fastapi cli
+
+
+
+## 参考项目
+
+<https://github.com/ycd/manage-fastapi>
+
+<https://github.com/nsidnev/fastapi-realworld-example-app/>
+
+
