@@ -1,0 +1,1 @@
+This is a simple calcualor library to perform basic operations

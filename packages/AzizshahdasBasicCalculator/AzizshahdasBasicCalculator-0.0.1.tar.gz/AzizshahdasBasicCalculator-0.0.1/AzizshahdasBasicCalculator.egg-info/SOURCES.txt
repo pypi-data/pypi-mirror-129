@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+AzizshahdasBasicCalculator.egg-info/PKG-INFO
+AzizshahdasBasicCalculator.egg-info/SOURCES.txt
+AzizshahdasBasicCalculator.egg-info/dependency_links.txt
+AzizshahdasBasicCalculator.egg-info/top_level.txt
+Calculator/__init__.py

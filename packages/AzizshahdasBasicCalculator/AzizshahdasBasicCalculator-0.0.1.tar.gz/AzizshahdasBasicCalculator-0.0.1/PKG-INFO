@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: AzizshahdasBasicCalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: AzizShahdawala
+Author-email: azizshada@gmail.com
+License: MIT
+Description: This is a simple calcualor library to perform basic operations
+        
+        Change Log
+        ==========
+        
+        0.0.1 (27/11/2021)
+        -------------------
+        - First Release
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
