@@ -1,0 +1,7 @@
+README.md
+setup.py
+django_sidecar/__init__.py
+django_sidecar.egg-info/PKG-INFO
+django_sidecar.egg-info/SOURCES.txt
+django_sidecar.egg-info/dependency_links.txt
+django_sidecar.egg-info/top_level.txt
