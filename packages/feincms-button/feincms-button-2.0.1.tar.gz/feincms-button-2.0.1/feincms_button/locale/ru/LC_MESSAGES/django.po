@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-27 13:32+0700\n"
+"PO-Revision-Date: 2021-11-27 13:55+0700\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Last-Translator: Basil S. <basil.shubin@gmail.com>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: feincms_button/appsettings.py:8
+msgctxt "button-style"
+msgid "Default"
+msgstr ""
+
+#: feincms_button/appsettings.py:9
+msgctxt "button-style"
+msgid "Primary"
+msgstr ""
+
+#: feincms_button/appsettings.py:10
+msgctxt "button-style"
+msgid "Success"
+msgstr ""
+
+#: feincms_button/appsettings.py:11
+msgctxt "button-style"
+msgid "Info"
+msgstr ""
+
+#: feincms_button/appsettings.py:12
+msgctxt "button-style"
+msgid "Warning"
+msgstr ""
+
+#: feincms_button/appsettings.py:13
+msgctxt "button-style"
+msgid "Danger"
+msgstr ""
+
+#: feincms_button/appsettings.py:14
+msgctxt "button-style"
+msgid "Link"
+msgstr ""
+
+#: feincms_button/appsettings.py:22
+msgctxt "button-size"
+msgid "Default"
+msgstr ""
+
+#: feincms_button/appsettings.py:23
+msgctxt "button-size"
+msgid "Large"
+msgstr ""
+
+#: feincms_button/appsettings.py:24
+msgctxt "button-size"
+msgid "Small"
+msgstr ""
+
+#: feincms_button/appsettings.py:25
+msgctxt "button-size"
+msgid "Extra Small"
+msgstr ""
+
+#: feincms_button/contents.py:16
+msgctxt "align"
+msgid "Inline"
+msgstr "В линию"
+
+#: feincms_button/contents.py:17
+msgctxt "align"
+msgid "Left"
+msgstr "Влево"
+
+#: feincms_button/contents.py:18
+msgctxt "align"
+msgid "Center"
+msgstr "По центру"
+
+#: feincms_button/contents.py:19
+msgctxt "align"
+msgid "Right"
+msgstr "Вправо"
+
+#: feincms_button/contents.py:20
+msgctxt "align"
+msgid "Full Width"
+msgstr "На всю длину"
+
+#: feincms_button/contents.py:23
+msgid "title"
+msgstr "заголовок"
+
+#: feincms_button/contents.py:24
+msgid "URL"
+msgstr "URL-адрес"
+
+#: feincms_button/contents.py:26
+msgid "style"
+msgstr "стиль"
+
+#: feincms_button/contents.py:27
+msgid "size"
+msgstr "размер"
+
+#: feincms_button/contents.py:28
+msgid "alignment"
+msgstr "выравнивание"
+
+#: feincms_button/contents.py:32 feincms_button/contents.py:33
+msgid "button"
+msgstr "кнопка"

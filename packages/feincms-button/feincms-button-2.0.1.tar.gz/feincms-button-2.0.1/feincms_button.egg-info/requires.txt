@@ -1,0 +1,12 @@
+FeinCMS>=1.20.1
+
+[develop]
+tox
+django
+pytest-django
+pytest
+
+[test]
+pytest-django
+pytest-cov
+pytest
