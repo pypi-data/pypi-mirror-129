@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: wtslog
+Version: 0.2.0
+Summary: a Way Too Simple LOGger
+Home-page: https://github.com/kiriDevs/wtslog
+Author: kiriDevs
+Author-email: author@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/kiriDevs/wtslog/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# wtslog
+> Way Too Simple LOGger
+
+This is a small package that literally just exports one class, the `Logger`,
+that does one thing: Collect and / or print messages
+potentially with indentation.
+
+Originally made because I wanted something simple for
+[my adventofcode solutions](https://github.com/kiriDevs/adventofcode),
+then made into it's own package because I was tired of importing it like this:
+
+```py
+with open("../../_common/logger.py", "w") as logger_module:
+    exec(logger_module.read())
+LOGGER: Logger = Logger(OUTPUT_PATH)
+```
+
+Then published to PyPI so I can properly install and `import` it for usage.
+
+
