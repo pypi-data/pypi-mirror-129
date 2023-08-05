@@ -1,0 +1,1 @@
+# spreg-satosa-sync
