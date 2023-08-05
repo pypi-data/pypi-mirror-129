@@ -1,0 +1,3 @@
+[console_scripts]
+spotifyoffline = spotifyoffline.main:main
+

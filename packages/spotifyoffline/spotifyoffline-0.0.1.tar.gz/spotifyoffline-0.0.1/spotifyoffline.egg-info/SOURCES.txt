@@ -1,0 +1,13 @@
+README.md
+setup.py
+spotifyoffline/conversion.py
+spotifyoffline/credentials.py
+spotifyoffline/main.py
+spotifyoffline/spotify.py
+spotifyoffline/youtube.py
+spotifyoffline.egg-info/PKG-INFO
+spotifyoffline.egg-info/SOURCES.txt
+spotifyoffline.egg-info/dependency_links.txt
+spotifyoffline.egg-info/entry_points.txt
+spotifyoffline.egg-info/requires.txt
+spotifyoffline.egg-info/top_level.txt
