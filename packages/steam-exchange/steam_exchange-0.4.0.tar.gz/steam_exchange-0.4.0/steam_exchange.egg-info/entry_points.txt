@@ -1,0 +1,3 @@
+[console_scripts]
+steam_exchange = steam_exchange.__main__:main
+
