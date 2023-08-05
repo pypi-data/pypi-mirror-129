@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+bianary_decision_parameter/__init__.py
+bianary_decision_parameter.egg-info/PKG-INFO
+bianary_decision_parameter.egg-info/SOURCES.txt
+bianary_decision_parameter.egg-info/dependency_links.txt
+bianary_decision_parameter.egg-info/requires.txt
+bianary_decision_parameter.egg-info/top_level.txt
+docs/source/conf.py

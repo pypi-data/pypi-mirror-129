@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: bianary_decision_parameter
+Version: 0.2
+Summary: bianary_classification
+Home-page: UNKNOWN
+Author: MAINAK RAY
+Author-email: mainakr748@gmail.com
+License: MIT
+Description: this module is used to find out best parameters of desision tree.
+        ![Markdown Logo](https://github.com/mainak-cmd/All-Ml/blob/main/flow_chart.drawio.png)
+        
+        #Bianary_classification
+        
+        ##Aim
+        The module aims to create a library that will help users to build trees that can help classify binary classes easily. But, it is essential to note that this module should be used after the process (cleaning, transformation, and reduction) of the data.
+        
+        ##Advantages
+        1.)Autopruneing the tree no need to hyperparameter tuneing
+        2.)very easy to use.
+        3.) Brier score to evaluate to find out best paraameter as  is that it is focused on the positive class, which for imbalanced classification is the minority class. A perfect classifier has a Brier score of 0.0.
+        
+        ##Limitation
+        1.) Preprocessing must requires.
+        2.) do not shows good perfformance for high dimentional data ,feature reduction before use this module is adviceable.
+        3.)little time consumeing.
+        
+        
+        ##code example : 
+        ```python
+        import bianary_decision_parameter
+        from bianary_decision_parameter import 
+        from sklearn import preprocessing
+        from sklearn.datasets import load_breast_cancer
+        from sklearn.model_selection import train_test_split
+        Load breast_cancer dataset
+        split it into train and test set
+        da=load_breast_cancer()
+        X1=da.data
+        y1=da.target
+        scaled_X_1 = preprocessing.scale(X1)
+        X_train1, X_test1, y_train1, y_test1 = train_test_split(scaled_X_1, y1,test_size=0.3)
+        p2=bianary_decision_parameter('auto',X_train1,y_train1, X_test1, y_test1,1,1)
+        p3=bianary_decision_parameter('sqrt',X_train1,y_train1, X_test1, y_test1,1,10) 
+        p4=bianary_decision_parameter('log2',X_train1,y_train1, X_test1, y_test1,1,10)
+        
+        p2.parameter()
+        
+        	accuracy_score  missclassification 	specificity 	Recall 	precision 	depth 	ccp_alpha 	max_features
+             0 	        0.912281 	0.087719 	0.912281 	0.83871 	0.912281 	2 	0.004307 	auto
+        ```
+        ## Explanation
+        p2=bianary_decision_parameter('auto',X_train1,y_train1, X_test1, y_test1,1,1)
+        Feature_selection = 'auto' \n
+        class_weight = 0_class ,1_class
+        
+        
+Keywords: decision
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
