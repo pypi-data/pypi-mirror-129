@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: IITB-SSO
+Version: 0.1.0
+Summary: Python package to integrate IIT Bomaby SSO login to your project
+Home-page: https://github.com/NihalSargaiya9/IITB-SSO
+Author: Nihal Sargaiya
+Author-email: nihalsargaiya4@gmail.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: Flask (>=2.0.2)
+Requires-Dist: python-dotenv (>=0.19.2)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: setuptools (>=59.0.1)
+Requires-Dist: Werkzeug (==2.0.2)
+
+UNKNOWN
+
