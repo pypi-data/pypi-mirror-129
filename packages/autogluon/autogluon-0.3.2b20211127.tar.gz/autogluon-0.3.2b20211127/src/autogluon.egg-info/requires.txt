@@ -1,0 +1,7 @@
+autogluon.core==0.3.2b20211127
+autogluon.features==0.3.2b20211127
+autogluon.tabular[all]==0.3.2b20211127
+autogluon.mxnet==0.3.2b20211127
+autogluon.extra==0.3.2b20211127
+autogluon.text==0.3.2b20211127
+autogluon.vision==0.3.2b20211127
