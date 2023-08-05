@@ -1,0 +1,146 @@
+interactions:
+- request:
+    body: '{"clientId": "054ef34d-d5a6-4ed0-b4c6-e3040eaad9fa", "secret": "bd5e7d27-041b-45fa-a9e0-553c7c5b180b"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '102'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: https://superwise-dev.frontegg.com/identity/resources/auth/v1/api-token
+  response:
+    body:
+      string: '{"expires":"Mon, 29 Nov 2021 09:58:48 GMT","expiresIn":86400,"accessToken":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIwNTRlZjM0ZC1kNWE2LTRlZDAtYjRjNi1lMzA0MGVhYWQ5ZmEiLCJlbWFpbCI6InN3X29yeWFuZHJpdmVAc3VwZXJ3aXNlLmFpIiwidXNlck1ldGFkYXRhIjp7fSwidGVuYW50SWQiOiJvcnlhbmRyaXZlIiwicm9sZXMiOlsiVmlld2VyIl0sInBlcm1pc3Npb25zIjpbImZlLnNlY3VyZS53cml0ZS51c2VyQXBpVG9rZW5zIiwiZmUuc2VjdXJlLmRlbGV0ZS51c2VyQXBpVG9rZW5zIiwiZmUuc2VjdXJlLnJlYWQudXNlckFwaVRva2VucyJdLCJtZXRhZGF0YSI6e30sImNyZWF0ZWRCeVVzZXJJZCI6ImQ3NzM5YzEzLTNhMTMtNGVlNy1hZjBmLWQwYTFiYWFhZjRmOSIsInR5cGUiOiJ1c2VyQXBpVG9rZW4iLCJ1c2VySWQiOiJkNzczOWMxMy0zYTEzLTRlZTctYWYwZi1kMGExYmFhYWY0ZjkiLCJpYXQiOjE2MzgwOTM1MjgsImV4cCI6MTYzODE3OTkyOCwiaXNzIjoiZnJvbnRlZ2cifQ.mFvgj4KUh95EUPpZoOW2K4Immy5GiXPpwR0cBMRC1_LdTslx-Xub6avXDBKmF5mE85DVdIk0-UvE8EQlq3N5mA78xtho3LooK8rRjDAQDB-jeqmwAyOxFWwNJvhDeJLvX_1TCoS_7YEWDXK8NAA7LErskI8leTccoph2tTlxeuiR0PnC_feQs-tGFxeNv30Px1vn7eKxey-svsJORmjZ4TvBmOuA4lPrVbfvGud7Gskc_3q-a-rkRZv3HtiXogi9hWzn5QVV1xBUusIpCb3mGSgu_hk62fRxuiMXjBZ35bnsrnR2OZ3QSB3emgkUwJ1eZsCH1OlkZ1BXErAhIJPT8w","refreshToken":"48121164-ae0a-4315-b53a-d5c12cfe2eb7"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1133'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 28 Nov 2021 09:58:48 GMT
+      Set-Cookie:
+      - visid_incap_2473133=9LOwcaXkTcORElCiT7LjtdhSo2EAAAAAQUIPAAAAAACmC0y2nTeE5j8SwCGegv5t;
+        expires=Sun, 27 Nov 2022 11:29:16 GMT; HttpOnly; path=/; Domain=.frontegg.com
+      - nlbi_2473133=1NrdPLTDQjud/xwiRTaqUgAAAACMyIz2DcfK4RW2RVLSlufG; path=/; Domain=.frontegg.com
+      - incap_ses_1051_2473133=mJk9QS7riCdd9Ezu9+eVDthSo2EAAAAAPOcvoIIN1+69AwBA/Eh51w==;
+        path=/; Domain=.frontegg.com
+      X-CDN:
+      - Imperva
+      X-Iinfo:
+      - 13-48390770-48390773 NNNN CT(75 78 0) RT(1638093527685 20) q(0 0 1 -1) r(2
+        7) U5
+      X-Request-ID:
+      - 79f36c8f2ebe1770bc000ea48d4a3e44
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';block-all-mixed-content;font-src ''self''
+        https: data:;frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      etag:
+      - W/"46d-kBnEohuRSfzZftJ5ZlPbnelcscM"
+      expect-ct:
+      - max-age=0
+      frontegg-trace-id:
+      - 7f5b520c-33b3-4892-a2e9-c4c7cda5d268
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIwNTRlZjM0ZC1kNWE2LTRlZDAtYjRjNi1lMzA0MGVhYWQ5ZmEiLCJlbWFpbCI6InN3X29yeWFuZHJpdmVAc3VwZXJ3aXNlLmFpIiwidXNlck1ldGFkYXRhIjp7fSwidGVuYW50SWQiOiJvcnlhbmRyaXZlIiwicm9sZXMiOlsiVmlld2VyIl0sInBlcm1pc3Npb25zIjpbImZlLnNlY3VyZS53cml0ZS51c2VyQXBpVG9rZW5zIiwiZmUuc2VjdXJlLmRlbGV0ZS51c2VyQXBpVG9rZW5zIiwiZmUuc2VjdXJlLnJlYWQudXNlckFwaVRva2VucyJdLCJtZXRhZGF0YSI6e30sImNyZWF0ZWRCeVVzZXJJZCI6ImQ3NzM5YzEzLTNhMTMtNGVlNy1hZjBmLWQwYTFiYWFhZjRmOSIsInR5cGUiOiJ1c2VyQXBpVG9rZW4iLCJ1c2VySWQiOiJkNzczOWMxMy0zYTEzLTRlZTctYWYwZi1kMGExYmFhYWY0ZjkiLCJpYXQiOjE2MzgwOTM1MjgsImV4cCI6MTYzODE3OTkyOCwiaXNzIjoiZnJvbnRlZ2cifQ.mFvgj4KUh95EUPpZoOW2K4Immy5GiXPpwR0cBMRC1_LdTslx-Xub6avXDBKmF5mE85DVdIk0-UvE8EQlq3N5mA78xtho3LooK8rRjDAQDB-jeqmwAyOxFWwNJvhDeJLvX_1TCoS_7YEWDXK8NAA7LErskI8leTccoph2tTlxeuiR0PnC_feQs-tGFxeNv30Px1vn7eKxey-svsJORmjZ4TvBmOuA4lPrVbfvGud7Gskc_3q-a-rkRZv3HtiXogi9hWzn5QVV1xBUusIpCb3mGSgu_hk62fRxuiMXjBZ35bnsrnR2OZ3QSB3emgkUwJ1eZsCH1OlkZ1BXErAhIJPT8w
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: GET
+    uri: https://dev.superwise.ai/oryandrive/admin/v1/settings/service-account
+  response:
+    body:
+      string: '{"service_account":{"type":"service_account","project_id":"development112539df","private_key_id":"3d4fac79b1d754b3df59e03def41fec1dcab21ec","private_key":"-----BEGIN
+        PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8/aPvtrf3ZoNH\n6O9a2t1wX+3ZHySayq6+a/tZJWvyp6qespmp9MRQxowkNhgbozzUC81CqxnzCO0c\no9SLkielWSLXC+Fj8I1vYDhEk1TGhafcDqEVLgLSX768KjC6EMBmPQgO8CBjR0GY\nOtNHBI6usYUgTyrYpQK1maI7bUz06LKwjxThuzNKyVj7roy4/rG6TbkcE4GBJ0j/\nr8USu95PHDTywd/RgGV5g2xJ8kwiQR+spyW11X5ucjAJNsKIdZmsmfKrASowRPEb\n1VPCrETZmc+TxEbnvbRQDL/+489SvzPp8hrWZAJR/VLZd9tnS605KV0QFxA/fUUo\nMtzGFN5fAgMBAAECggEALhv+As7EHJbEwecperO6Yh/tglMwVZnMv4XN6aaRKz9Q\nB+8QQaCHwyNl7rHJ+Pg/L4b/mdvv9VVAsIOiKDlM9fEE6I2r/Hukrj8+CzEc9mCG\nn1BsaaPzqUsV2Ie8orDSmD8ct7RLWp14egEkKggJHcMO9V6LWBcOTatBoxkcNQYi\nz4sTqAFfRiQ0DWE3+iB5lfVNUbfW3of/wJ6Ep3eDGrP6B4q+LaFloSTXlLg0xpq1\n9bLqiZ33pnMMwUj2dyDiIDqPPrhRGs6BrHuTce+YiqXhudZGLspDzcQiD1z78VZu\nQzjvapDeX6ee46Y9vDNUQb2Btz8WIIbdDd2XgzchzQKBgQD6n7pwNYHAliRpwme/\n4LAWmVzbHExHLRbcKPYDbkEV5Z8BSvvgv+669DkO8xbgHHxjXEtnyD/fRykleVhF\nuaYyZTcfSJLH5PApEK9cR9uD8R0Gv4ddnD4pcrGR6Sn0t1BygZaV8Z/wA185IX/b\nOiHCAXBgWT9X1fe7f651kBHuxQKBgQDBC3X+c0pkBhcP8JvJRu6zGwC2kJ9soKDm\nQKegziDXuw2lFN1aJ4jClXQbwFJdNTU1WMYcp1imP1iNWr4kbas5PzGV+MLHNN3d\nGwTLSmIMnCR/HwXkEQM+TUttr8lQsAAKjqS5lYyi13GGyS+bZjM81IJgQ3VGFlz7\nWF/QJ6nq0wKBgHrSDjbxMd4kdkHSALAat5DLpaLHUmZLJXnNJQr3XDQT7IFgsuEo\njiDWkKPP43T+4MJ8t4NrskmEgRiZR/YbjeQCkCnnke8eNceaIqYRnPUjEzt8XyUz\n7Y64Y2cDIgmIUIddFGP1HpErxd2kmhjgeyytMdo1woIUHKypXODGMtOVAoGBALRg\nNRxQNY5IcnweYjIr6RXJgV0UvSIO5MjAWODUObPZv+IkIMAAeLT4WMklZtBYyyLR\nlCtp4ldUkTVjOI9pObf/6CEtkzH3n+bdPBmHox4NN7zgC+0SSGmKZ5RR0FVoXmF+\n70PJDOOLUzSR/73APNf16Oxxm76lXrQr2zrwFMCpAoGAbgk27ba3XVGXVnEOQBkN\nQw/gXOeQEYF2PR/HQ9B3vUcWhcLRQXvTMkt8bVfaqmz+JO4pypSFhPSpqd+jFuVs\nCuazDtuT32mFhWSIsmBFHjWKBIwHrRQkaZJWMCHit2lSetbkmYsggO3+xb8gMeXB\nbPrd8R9YuaXq0SC404okFQw=\n-----END
+        PRIVATE KEY-----\n","client_email":"oryandrive-managed-sa@development112539df.iam.gserviceaccount.com","client_id":"105019884718035530348","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/oryandrive-managed-sa%40development112539df.iam.gserviceaccount.com"}}'
+    headers:
+      content-length:
+      - '2332'
+      content-type:
+      - application/json
+      date:
+      - Sun, 28 Nov 2021 09:58:49 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '4'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"description": "this is description", "external_id": null, "id": null,
+      "is_archive": null, "monitor_delay": 1, "name": "name", "time_units": null}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3ZDdmMDg2In0.eyJzdWIiOiIwNTRlZjM0ZC1kNWE2LTRlZDAtYjRjNi1lMzA0MGVhYWQ5ZmEiLCJlbWFpbCI6InN3X29yeWFuZHJpdmVAc3VwZXJ3aXNlLmFpIiwidXNlck1ldGFkYXRhIjp7fSwidGVuYW50SWQiOiJvcnlhbmRyaXZlIiwicm9sZXMiOlsiVmlld2VyIl0sInBlcm1pc3Npb25zIjpbImZlLnNlY3VyZS53cml0ZS51c2VyQXBpVG9rZW5zIiwiZmUuc2VjdXJlLmRlbGV0ZS51c2VyQXBpVG9rZW5zIiwiZmUuc2VjdXJlLnJlYWQudXNlckFwaVRva2VucyJdLCJtZXRhZGF0YSI6e30sImNyZWF0ZWRCeVVzZXJJZCI6ImQ3NzM5YzEzLTNhMTMtNGVlNy1hZjBmLWQwYTFiYWFhZjRmOSIsInR5cGUiOiJ1c2VyQXBpVG9rZW4iLCJ1c2VySWQiOiJkNzczOWMxMy0zYTEzLTRlZTctYWYwZi1kMGExYmFhYWY0ZjkiLCJpYXQiOjE2MzgwOTM1MjgsImV4cCI6MTYzODE3OTkyOCwiaXNzIjoiZnJvbnRlZ2cifQ.mFvgj4KUh95EUPpZoOW2K4Immy5GiXPpwR0cBMRC1_LdTslx-Xub6avXDBKmF5mE85DVdIk0-UvE8EQlq3N5mA78xtho3LooK8rRjDAQDB-jeqmwAyOxFWwNJvhDeJLvX_1TCoS_7YEWDXK8NAA7LErskI8leTccoph2tTlxeuiR0PnC_feQs-tGFxeNv30Px1vn7eKxey-svsJORmjZ4TvBmOuA4lPrVbfvGud7Gskc_3q-a-rkRZv3HtiXogi9hWzn5QVV1xBUusIpCb3mGSgu_hk62fRxuiMXjBZ35bnsrnR2OZ3QSB3emgkUwJ1eZsCH1OlkZ1BXErAhIJPT8w
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.25.1
+    method: POST
+    uri: https://dev.superwise.ai/oryandrive/admin/v1/tasks
+  response:
+    body:
+      string: '{"name":"name","active_version_ts":null,"description":"this is description","created_at":"2021-11-28T09:58:49.783370","time_units":["D","W"],"id":29,"active_version_id":null,"monitor_delay":1,"external_id":"29","is_archived":false}'
+    headers:
+      content-length:
+      - '231'
+      content-type:
+      - application/json
+      date:
+      - Sun, 28 Nov 2021 09:58:44 GMT
+      server:
+      - istio-envoy
+      x-envoy-upstream-service-time:
+      - '756'
+    status:
+      code: 201
+      message: Created
+version: 1
