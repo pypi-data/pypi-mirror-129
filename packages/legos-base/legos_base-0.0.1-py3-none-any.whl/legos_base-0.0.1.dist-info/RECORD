@@ -1,0 +1,16 @@
+legos/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legos/base/baseobject.py,sha256=O7DA2_hQmF3qj3r83xD6_6DvYPf5sEqXcC75YwAV_kM,11727
+legos/base/baseuser.py,sha256=HjuS-bG1KDiO9EgR5cxXM-3KuSrT4wnwUF0fBGceczk,1336
+legos/base/mixins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legos/base/mixins/commentable.py,sha256=UCj8PrTOpOAC2P7Ag4sF8LuOKdY5sUIsCVVU8KiC5cU,435
+legos/base/mixins/describable.py,sha256=PDEyW_eC2TH5RJ5sn3FqYh_m_82KCQl_g46qMsThYbQ,644
+legos/base/mixins/diskcacheable.py,sha256=HK7T4g5Cgm3YsXA5DePIUqRO-Z6qddBxotcvaSS6WFY,1199
+legos/base/mixins/jsonable.py,sha256=iRz_RFFLCk4iBueje7dSkfZk988uUKx2F5J-aBcFsq4,3285
+legos/base/mixins/registeredtype.py,sha256=7QzFj13uqDYUMqohhrH1Uj_cb5OnacnCua1DQUDezM8,650
+legos/base/mixins/status.py,sha256=TVsSLxbS0FV1qUhyjtx-423pWCwLFT_UnF_c4iZREtY,4438
+legos/base/mixins/timestampable.py,sha256=C-v4yp0Wrrsw5y-cwkwqRigbIlD700TZ5HphF_9oLvw,1160
+legos/base/mixins/versionable.py,sha256=zXEvWbJweUOyfzkVm4GcZF35Yg_l7Cj7flvCkEczMw4,2912
+legos_base-0.0.1.dist-info/METADATA,sha256=_F3rz0ECQmDjRQX9VyXhWRYygixo8aRQMtIq0fxuprQ,718
+legos_base-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+legos_base-0.0.1.dist-info/top_level.txt,sha256=oHPy4z7HYKwQPfXtwXIEV66QTvoka4wZdXtDRqgNjSI,6
+legos_base-0.0.1.dist-info/RECORD,,
