@@ -1,0 +1,9 @@
+README.md
+jdbcer.py
+setup.py
+jdbcer.egg-info/PKG-INFO
+jdbcer.egg-info/SOURCES.txt
+jdbcer.egg-info/dependency_links.txt
+jdbcer.egg-info/entry_points.txt
+jdbcer.egg-info/requires.txt
+jdbcer.egg-info/top_level.txt
