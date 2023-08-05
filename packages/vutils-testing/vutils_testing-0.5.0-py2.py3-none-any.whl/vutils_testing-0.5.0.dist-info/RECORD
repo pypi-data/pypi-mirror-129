@@ -1,0 +1,12 @@
+vutils/testing/__init__.py,sha256=Y3XpwrSVzPLZGeu4zRNGY2C2Y0xObPLI9MU1p2weglY,340
+vutils/testing/__init__.pyi,sha256=8pOVSlL46ascc1rnNSt2SN_eKJPiDicSYQP3d_Xqlhg,957
+vutils/testing/mock.py,sha256=mf8A3y5hWkiX57YwiQAsmwQ5o00dNAXDKCnEmRbsEPQ,6390
+vutils/testing/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vutils/testing/testcase.py,sha256=fGmk6t3cDH_o3obu8RxMcUF2A0vm6qfjmqEMJuTDHhs,1341
+vutils/testing/utils.py,sha256=NbpQ6eHbH1UNWIZWTvFvhwcvs2wbm3ihgyTU1t5NDGg,11822
+vutils/testing/version.py,sha256=GsApsGCwh7aazeSdCAenuNaXsyPMHXPDmW8MT-nhX74,373
+vutils_testing-0.5.0.dist-info/LICENSE,sha256=a9SSZeVh2yTNUJsCN8ZzgZuPO1gM5ENB29QvrDWmtXU,1054
+vutils_testing-0.5.0.dist-info/METADATA,sha256=pUa2JtgZGd8f_0qLbvtSCDs5mBJfZxQ0S4Nt9rqCzOw,8533
+vutils_testing-0.5.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+vutils_testing-0.5.0.dist-info/top_level.txt,sha256=R6HiHeF2i7aEIIQPVLHvxyXbeQgqNw9v5Xa7AxuDTHA,7
+vutils_testing-0.5.0.dist-info/RECORD,,
