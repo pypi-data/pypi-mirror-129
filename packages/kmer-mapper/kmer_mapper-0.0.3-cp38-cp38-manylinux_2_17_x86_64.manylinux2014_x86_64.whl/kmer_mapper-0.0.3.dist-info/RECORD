@@ -1,0 +1,10 @@
+mapper.cpython-38-x86_64-linux-gnu.so,sha256=98R_jfMdOeXCkg0eGA5E6kZS3kGN0NAvr0K7I0btHvs,2350760
+kmer_mapper/mapper.cpython-38-x86_64-linux-gnu.so,sha256=KXhQvhqP4-K6HQ_VBuVljdnbGIYWGI8sN_4aAAa4mNU,2447352
+kmer_mapper/mapping.py,sha256=y8TKai3Jz6iRm-VsoHkjrCWW-EEps36m_G8ESeHYgE8,7153
+kmer_mapper/command_line_interface.py,sha256=m3Au2dbxZJvbDIUUAIgALbMQVQ4QoAJBAiPW5fkE7BI,2049
+kmer_mapper/util.py,sha256=SkwLaS7uMg4S1gf1iX_X-SXwXF0FYVotxM_oFJXJREk,591
+kmer_mapper-0.0.3.dist-info/METADATA,sha256=7lLimshUOj7sVU3wplrso2kLPQucI5IVh2qSoY0xNGI,418
+kmer_mapper-0.0.3.dist-info/RECORD,,
+kmer_mapper-0.0.3.dist-info/top_level.txt,sha256=yP3gOgnVAF2eSTSB4cKyVIVJogaXHBYMF7n2CZcaTvQ,19
+kmer_mapper-0.0.3.dist-info/WHEEL,sha256=-wEwnAhBgqhLB_NAD2KzS7dbAc3SQLDBPW_-dm4yWTE,148
+kmer_mapper-0.0.3.dist-info/entry_points.txt,sha256=Ao2MA1F5GuRb8-waKPSsQx7E8XvgN3gCr8eXHyS1Ka4,73
