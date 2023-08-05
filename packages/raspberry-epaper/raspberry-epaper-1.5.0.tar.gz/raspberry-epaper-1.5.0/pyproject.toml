@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "raspberry-epaper"
+version = "1.5.0"
+description = "A tool to easily use waveshare's e-paper module with Raspberry Pi"
+authors = ["yskoht <ysk.oht@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage="https://github.com/yskoht/raspberry-epaper"
+repository="https://github.com/yskoht/raspberry-epaper"
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.7, < 3.11"
+waveshare-epaper = "^1.1.1"
+Pillow = "^8.4.0"
+qrcode = "^7.3.1"
+typer = "^0.4.0"
+python-box = "^5.4.1"
+numpy = "^1.21.4"
+
+[tool.poetry.scripts]
+epaper = 'raspberry_epaper.cli:main'
+
+[tool.poetry.dev-dependencies]
+black = "^21.10b0"
+isort = "^5.10.0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
