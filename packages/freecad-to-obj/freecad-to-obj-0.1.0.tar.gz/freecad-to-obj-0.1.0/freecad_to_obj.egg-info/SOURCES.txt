@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+freecad_to_obj/__init__.py
+freecad_to_obj/_version.py
+freecad_to_obj/export.py
+freecad_to_obj/resolve_objects.py
+freecad_to_obj.egg-info/PKG-INFO
+freecad_to_obj.egg-info/SOURCES.txt
+freecad_to_obj.egg-info/dependency_links.txt
+freecad_to_obj.egg-info/top_level.txt
