@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/sshaa.py
+src/sshaa.egg-info/PKG-INFO
+src/sshaa.egg-info/SOURCES.txt
+src/sshaa.egg-info/dependency_links.txt
+src/sshaa.egg-info/entry_points.txt
+src/sshaa.egg-info/requires.txt
+src/sshaa.egg-info/top_level.txt
