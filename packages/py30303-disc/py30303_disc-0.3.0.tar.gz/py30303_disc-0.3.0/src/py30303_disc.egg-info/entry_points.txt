@@ -1,0 +1,3 @@
+[console_scripts]
+discover_30303 = py30303_disc.cli_int1:main
+
