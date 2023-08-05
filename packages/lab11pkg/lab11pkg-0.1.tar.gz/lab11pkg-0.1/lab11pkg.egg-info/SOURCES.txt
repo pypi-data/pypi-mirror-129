@@ -1,0 +1,7 @@
+setup.py
+lab11pkg.egg-info/PKG-INFO
+lab11pkg.egg-info/SOURCES.txt
+lab11pkg.egg-info/dependency_links.txt
+lab11pkg.egg-info/not-zip-safe
+lab11pkg.egg-info/requires.txt
+lab11pkg.egg-info/top_level.txt
