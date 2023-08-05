@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simplyhack
+Version: 0.0.6
+Summary: Simplyfing the process of creation of cybersecurity tools
+Home-page: UNKNOWN
+Author: Abhishek Uday Dangat
+Author-email: abshdangat@gmail.com
+License: UNKNOWN
+Description: A package that allows to build hacking tools without any efforts. Hence it simplifies the process of security testing in an enviornment where there are no readymade tools available.
+Keywords: python,hacking,cybersecurity,hacking tools,security testing,hacker
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
