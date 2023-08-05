@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+mfinancials/__init__.py
+mfinancials/_tickers.py
+mfinancials/base.py
+mfinancials/params.py
+mfinancials/ticker.py
+mfinancials/utils.py
+mfinancials.egg-info/PKG-INFO
+mfinancials.egg-info/SOURCES.txt
+mfinancials.egg-info/dependency_links.txt
+mfinancials.egg-info/requires.txt
+mfinancials.egg-info/top_level.txt
