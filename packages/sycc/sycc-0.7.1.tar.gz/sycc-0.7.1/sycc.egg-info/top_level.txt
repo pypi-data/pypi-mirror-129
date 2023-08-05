@@ -1,0 +1,11 @@
+__init__
+colorama
+core
+e
+imformation
+k
+p
+p/tqdm
+requires_LICENSE
+sycc
+v
