@@ -1,0 +1,9 @@
+eclipse/__init__.py,sha256=15MOspDr7UMhFnlckUcyANCYRRqUwK7dSuD5NPl5Veg,20
+eclipse/bpe_simple_vocab_16e6.txt.gz,sha256=kkaRrCiOVECSNhFWUq1KolD0ggPeUKnkcipuzUjWgEo,1356917
+eclipse/clip.py,sha256=jW5qwfNeaj_B-L6a5-QxMIg5qEJTgvvLDTqynC-dnsI,11053
+eclipse/model.py,sha256=OYfQ7PgWbE_RbqBk7fyR9vbm4fpdBuD-Mz_Dor_6DfI,15792
+eclipse/simple_tokenizer.py,sha256=j7mk8F99_-WluhD0ewixKfrHZ3JO5d0driVL9yKNCbU,4184
+eclipse-0.3.0.dist-info/LICENSE.md,sha256=N-9vr9g0wJKGC7b74TWGmsDaVJLlzAIevJv7n0Gh-FI,8123
+eclipse-0.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+eclipse-0.3.0.dist-info/METADATA,sha256=-ST1mg9QW7NCw-LLSgk4NHxtu65OWRfZ9-R_NPu5S-E,742
+eclipse-0.3.0.dist-info/RECORD,,
