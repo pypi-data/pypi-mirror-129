@@ -1,0 +1,27 @@
+{
+  "name": "NAME",
+  "version": "0.0.1",
+  "description": "DESCRIPTION",
+  "main": "dist/lib/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx ts-node --require dotenv/config test/sample.ts"
+  },
+  "author": "Author",
+  "license": "ISC",
+  "keywords": [
+    "natml",
+    "machine learning",
+    "deep learning"
+  ],
+  "dependencies": {
+    "natml": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "dotenv": "^10.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
