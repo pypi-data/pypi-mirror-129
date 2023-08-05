@@ -1,0 +1,5 @@
+include *.txt
+include *.yaml
+recursive-include bot *.py
+include LICENSE
+recursive-include src *.py
