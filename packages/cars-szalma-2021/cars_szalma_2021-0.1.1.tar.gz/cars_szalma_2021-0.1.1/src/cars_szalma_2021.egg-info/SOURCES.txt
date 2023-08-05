@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cars_szalma_2021/__init__.py
+src/cars_szalma_2021/cars_szalma.py
+src/cars_szalma_2021.egg-info/PKG-INFO
+src/cars_szalma_2021.egg-info/SOURCES.txt
+src/cars_szalma_2021.egg-info/dependency_links.txt
+src/cars_szalma_2021.egg-info/requires.txt
+src/cars_szalma_2021.egg-info/top_level.txt
