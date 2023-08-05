@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: real_estate
+Version: 0.0.1
+Summary: Package to scrape and analise data from real estate sites in Brazil
+Home-page: https://github.com/gutessitore/real-estate-scrapper
+Author: Gustavo Schlieper Tessitore
+Author-email: gugatessi@gmail.com
+License: MIT
+Download-URL: https://github.com/gutessitore/real-estate-scrapper/archive/refs/tags/0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: real estate,rent,buy,web scrapper,selenium
+Platform: UNKNOWN
