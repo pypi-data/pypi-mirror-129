@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: Query-Extract
+Version: 1.0.5
+Summary: Query extract from url
+Home-page: UNKNOWN
+Author: Fayas Noushad
+License: MIT
+Project-URL: Tracker, https://github.com/FayasNoushad/Query-Extract/issues
+Project-URL: Source, https://github.com/FayasNoushad/Query-Extract
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Query Extract
+Extract queries from url
+
+## Installation
+
+```
+pip install Query-Extract
+```
+
+## Usage
+
+```py
+import query_extract
+
+
+link = "https://github-readme-stats.vercel.app/api?username=FayasNoushad&theme=tokyonight"
+print(query_extract.extract(link))
+# returns :-
+"""
+{
+    "username": "FayasNoushad",
+    "theme": "tokyonight"
+}
+"""
+
+data = {
+    "username": "FayasNoushad",
+    "theme": "tokyonight"
+}
+print(query_extract.stringify(data))
+# => username=FayasNoushad&theme=tokyonight
+```
+
+
