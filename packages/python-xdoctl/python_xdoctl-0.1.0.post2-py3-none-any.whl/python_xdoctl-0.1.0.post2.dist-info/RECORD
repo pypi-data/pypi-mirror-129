@@ -1,0 +1,10 @@
+xdoctl/__init__.py,sha256=DEaqZwceABCEHzmwtab-U5jxu9H7dCN43cAwgw6IFHw,2750
+xdoctl/keyboard.py,sha256=8ftFQYhIwZXFlexx5omAKcj-e0FpMkkR5h2ecyETk_w,4707
+xdoctl/misc.py,sha256=HMMR6-IkZbCc4nZ_Rfo_HqPkUxJ7bH8V3VRTDyvm23c,501
+xdoctl/mouse.py,sha256=Dh9j8ewTyzd8jGgCxnedJWU0P36SQ-b_35PaHNdCshM,4525
+xdoctl/window.py,sha256=PGcviz_6XHPbO1CSOgNP38TsKyxcSwcpbQ6YQLYOTB8,12162
+python_xdoctl-0.1.0.post2.dist-info/LICENSE,sha256=zV-H7D9Vq3YASAX4b5K7cuRo8GlNJlI6XItEUaXfhwU,1048
+python_xdoctl-0.1.0.post2.dist-info/METADATA,sha256=W1VzC-2ee_fGygumh7wjAkV-PsKXU3LRkLG60y1rR8s,3549
+python_xdoctl-0.1.0.post2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+python_xdoctl-0.1.0.post2.dist-info/top_level.txt,sha256=-dnbd_9WMp2sXx7-0ISC6NF0HMYIJ0u0N5Mk4OULAk4,7
+python_xdoctl-0.1.0.post2.dist-info/RECORD,,
