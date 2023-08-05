@@ -1,0 +1,6 @@
+README.md
+setup.py
+Mentoss.egg-info/PKG-INFO
+Mentoss.egg-info/SOURCES.txt
+Mentoss.egg-info/dependency_links.txt
+Mentoss.egg-info/top_level.txt
