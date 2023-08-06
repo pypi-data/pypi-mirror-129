@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hubmap-fastq-utils
+Version: 0.2.4
+Summary: FASTQ utility functions for HuBMAP computational pipelines
+Home-page: https://github.com/hubmapconsortium/fastq-utils
+Author: Matt Ruffalo
+Author-email: mruffalo@cs.cmu.edu
+License: GPLv3
+Keywords: fastq
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+.. image:: https://travis-ci.com/hubmapconsortium/fastq-utils.svg?branch=master
+    :target: https://travis-ci.com/hubmapconsortium/fastq-utils
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+FASTQ file utilities
+==================================
+
+Overview
+--------
+
+This package provides convenience functions for FASTQ file manipulation, which
+have been useful in multiple pipelines.
+
+Installation
+------------
+
+Run ``python3 -m pip install git+https://github.com/hubmapconsortium/fastq-utils.git``.
+
+
