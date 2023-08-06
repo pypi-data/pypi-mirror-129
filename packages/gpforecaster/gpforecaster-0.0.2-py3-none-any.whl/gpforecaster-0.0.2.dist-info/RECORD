@@ -1,0 +1,13 @@
+gpforecaster/__init__.py,sha256=QMffoUxQHXhtSxGXhmXq_FsgR_IWSkEuRkpTpcwRfNM,347
+gpforecaster/model/__init__.py,sha256=sp_ypmxq4yReibSK3cpIyCD66WQ7r52TsQgmm0eIUS8,67
+gpforecaster/model/gp.py,sha256=ut3mnJczgOqlwEi2ah12OGeibWEQJ-AiGHdkxF81frY,508
+gpforecaster/model/hgp.py,sha256=uvNtsvQ_KwNuQvO3l2nUrypW6OYFmsd6GhP3aoV0SBo,6475
+gpforecaster/model/mean_functions.py,sha256=9dCyhrLv8Lj9zUwedQ6qfm1SELAyZX0IEFco22LT83M,1593
+gpforecaster/results/__init__.py,sha256=5AyWIrOA3tmpJhqgVyI025aYoe0un6AP-pp7JnUlArY,33
+gpforecaster/results/calculate_metrics.py,sha256=CxUsndMdLYzXtkEFRqWWgyBlwOk6nc5rDh_LX5SI6zE,4024
+gpforecaster/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpforecaster/tests/test_model_results.py,sha256=TE2_v4wRTG4UO4yjsK01_0ug2HUWZ_fcUp5vEEckuv8,1066
+gpforecaster-0.0.2.dist-info/METADATA,sha256=Hb0At6GGJ0k9dpXEowq9aE4Y6vrQHXEjBIsI7wMd1_A,966
+gpforecaster-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gpforecaster-0.0.2.dist-info/top_level.txt,sha256=15CqFDHNyVd-L7toWFrIot2d_5LtpMmu8H4AglHejxk,13
+gpforecaster-0.0.2.dist-info/RECORD,,
