@@ -1,0 +1,7 @@
+setup.py
+autoCompileHardhat/__init__.py
+autoCompile_hardhat.egg-info/PKG-INFO
+autoCompile_hardhat.egg-info/SOURCES.txt
+autoCompile_hardhat.egg-info/dependency_links.txt
+autoCompile_hardhat.egg-info/entry_points.txt
+autoCompile_hardhat.egg-info/top_level.txt
