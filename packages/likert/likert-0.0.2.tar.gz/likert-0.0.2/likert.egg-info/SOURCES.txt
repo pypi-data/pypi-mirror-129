@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+likert/__init__.py
+likert.egg-info/PKG-INFO
+likert.egg-info/SOURCES.txt
+likert.egg-info/dependency_links.txt
+likert.egg-info/not-zip-safe
+likert.egg-info/top_level.txt
+likert/examples/__init__.py
+likert/examples/in_their_own_words/__init__.py

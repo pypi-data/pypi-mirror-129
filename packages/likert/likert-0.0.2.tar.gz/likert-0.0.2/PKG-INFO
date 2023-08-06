@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: likert
+Version: 0.0.2
+Summary: Tools to analyze Likert scale data
+Home-page: https://github.com/thorwhalen/likert
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # likert
+        Tools to analyze Likert scale data
+        
+        
+        To install:	```pip install likert```
+        
+Platform: any
+Description-Content-Type: text/markdown
