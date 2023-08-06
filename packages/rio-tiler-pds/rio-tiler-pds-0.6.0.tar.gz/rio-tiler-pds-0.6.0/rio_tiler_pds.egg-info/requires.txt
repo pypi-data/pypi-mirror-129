@@ -1,0 +1,17 @@
+rio-tiler<4.0,>=3.0.0
+rio-toa
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+
+[docs]
+mkdocs
+mkdocs-material
+pygments
+mkapi
+
+[test]
+pytest
+pytest-cov
