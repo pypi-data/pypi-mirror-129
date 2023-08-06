@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: aayushSample
+Version: 1.0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Aayush
+Author-email: 2001aayushshah@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# aayushSample
+
+
+Learning purpose
+
+# New Features!
+
+  - There is 1function written in this package
+
+
+# Functions: 
+```
+import aayushSample as a
+fun1() :prints life changing quote
+# Output will reflect on terminal
+```
+
+
+
+### Installation
+```
+pip install aayushSample
+```
+You can reach out me at, 
+- 2001aayushsha@gmail.com
+
