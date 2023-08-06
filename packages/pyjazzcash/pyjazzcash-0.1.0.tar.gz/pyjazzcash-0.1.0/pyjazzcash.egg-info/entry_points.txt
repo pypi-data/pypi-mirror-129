@@ -1,0 +1,3 @@
+[console_scripts]
+pyjazzcash = pyjazzcash.cli:main
+
