@@ -1,0 +1,12 @@
+lazycls/__init__.py,sha256=jwfkHE-aW3Lc-HYdEpgDikmH4RLIVBK1ARZuinfrqgc,488
+lazycls/base.py,sha256=xbyOdCO-XWu_SzRe7GIBoMnMx1xyB33ApZ1QAziQ6FY,2896
+lazycls/models.py,sha256=6SN89asMLu3lvC2pn_QnRbmmwhR-UB387XqSik-QvmQ,683
+lazycls/prop.py,sha256=LGrHhXetGhV-GlyL9kEX-uqtCTCjUOPU2NdQil_qjUw,3466
+lazycls/serializers.py,sha256=F0_1iCldH459r5OEzY24goSLAsPo1uepvy7TRea80QQ,358
+lazycls/types.py,sha256=b-HQoI8jZ0HevJxFgfnnTfyKe8axA1oAOdJekKZYnwo,447
+lazycls/utils.py,sha256=oOzKPyxcmMDrVsd6fCV2DQxRE9kYG9ZqivDPY2B_DDY,109
+lazycls-0.0.1.dist-info/LICENSE,sha256=Yp_6Ppbe-iQmvMPloxYVFWHGl1EHtMZoEeVKgoxo9ZQ,1065
+lazycls-0.0.1.dist-info/METADATA,sha256=4ROgHo4kh0INTmhEBwRLtvpEXJsguHan40bqUO2zqtY,2277
+lazycls-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lazycls-0.0.1.dist-info/top_level.txt,sha256=sGBz2pykeddhkwLtMO2KmDIqxTgqpkXTPjGrYtQ3RCE,8
+lazycls-0.0.1.dist-info/RECORD,,
