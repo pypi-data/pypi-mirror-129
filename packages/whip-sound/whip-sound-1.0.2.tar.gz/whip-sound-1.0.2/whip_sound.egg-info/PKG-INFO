@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: whip-sound
+Version: 1.0.2
+Summary: Whip Sound Command line application that makes whip sound on providing different numeric options
+Home-page: https://github.com/anandtripathi5/whip-sound
+Author: Anand Tripathi
+Author-email: anand.tripathi507@gmail.com
+License: MIT
+Download-URL: https://github.com/anandtripathi5/whip-sound/archive/1.0.2.tar.gz
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# Whip Sound
+Whip Application uses the numeric option for different whip sounds. 
+# Installation
+## Using Pip
+```bash
+  $ pip install whip-sound
+```
+## Manual
+```bash
+  $ git clone https://github.com/anandtripathi5/whip-sound
+  $ cd whip-sound
+  $ python setup.py install
+```
+# Usage
+Play default Whip Sound
+```bash
+$ whip
+```
+
+Play Random Whip Sound
+```bash
+$ whip random
+```
+
+Play Whip Sounds with Options from 1-5
+```bash
+$ whip 1
+# or
+$ whip 2
+```
+
