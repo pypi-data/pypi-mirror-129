@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+pydesy/applied.py
+pydesy/basic.py
+pydesy/courses.py
+pydesy/format.py
+pydesy/geometry.py
+pydesy/gmath.py
+pydesy/higher.py
+pydesy/serifs.py
+pydesy.egg-info/PKG-INFO
+pydesy.egg-info/SOURCES.txt
+pydesy.egg-info/dependency_links.txt
+pydesy.egg-info/not-zip-safe
+pydesy.egg-info/top_level.txt
