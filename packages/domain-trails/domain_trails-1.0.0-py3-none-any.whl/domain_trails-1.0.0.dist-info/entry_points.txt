@@ -1,0 +1,3 @@
+[console_scripts]
+domaintrails = domaintrails.portal:main
+
