@@ -1,0 +1,9 @@
+pycognito/__init__.py,sha256=iDtPouFdn6PZe1qQY1-9wQkW1dkUyz6V1IhhhmuRWtQ,29088
+pycognito/aws_srp.py,sha256=FhPiB9W-fqqktP53xXafJUxU-kNAQM5On1oGoWWKGlY,11313
+pycognito/exceptions.py,sha256=HNItW663vvE3vYRgsimVyMay2IXbwVnOv26-knqotnc,309
+pycognito-2021.11.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pycognito-2021.11.0.dist-info/METADATA,sha256=8BugWSTd8DrMLTDhoRrSBkgud2hAxPwC_U4zCM0og_A,15025
+pycognito-2021.11.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pycognito-2021.11.0.dist-info/top_level.txt,sha256=43QIbu9t7AYlN8NmvqKhR73g49b_5m95cQxhpMq6AGw,10
+pycognito-2021.11.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pycognito-2021.11.0.dist-info/RECORD,,
