@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ingredient_parser
+Version: 1.0.2
+Summary: Parsing English and Swedish language ingredients into name and measure of the ingredient.
+Home-page: https://bitbucket.org/phoodster/ingredient-parser
+Author: Mark Anderson
+Author-email: mark+pypy@m3b.net
+License: MIT License
+Keywords: recipes ingredient parsing food
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE.txt
+
+NOTE: Documentation needs a ton of work.
+
+
+Description
+-----------
+Ingredient Parser is a simple utility to parse ingredients and return their name and measure. It currently supports Swedish and English language ingredients.
+
+Installation
+------------
+pip install ingredient_parser
+
+
+Usage for English
+-----------------
+
+python
+from ingredient_parser.en import parse
+print(parse('2 liters of milk'))
+
+
+Usage for Swedish
+-----------------
+
+python
+from ingredient_parser.sw import parse
+print(parse('4 Port fisk'))
+
+
+Contributing
+------------
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+

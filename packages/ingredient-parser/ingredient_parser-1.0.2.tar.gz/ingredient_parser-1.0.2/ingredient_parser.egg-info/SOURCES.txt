@@ -1,0 +1,13 @@
+LICENSE.txt
+README
+setup.cfg
+setup.py
+ingredient_parser/__init__.py
+ingredient_parser/en.py
+ingredient_parser/sv.py
+ingredient_parser/test_ingredient_parser.py
+ingredient_parser/utils.py
+ingredient_parser.egg-info/PKG-INFO
+ingredient_parser.egg-info/SOURCES.txt
+ingredient_parser.egg-info/dependency_links.txt
+ingredient_parser.egg-info/top_level.txt
