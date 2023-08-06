@@ -1,0 +1,14 @@
+taulukko/__init__.py,sha256=Ovlaz9D_VKKoMmbk8aqLihsDpKcSb1UBjgAJhx02OZg,115
+taulukko/__main__.py,sha256=WNUdR-tUWxDdV3uGO-nXOtd4L5VJ1zU_ITYHYvKmOzA,234
+taulukko/cli.py,sha256=7VbhrSJlBJYn4YBTA1T42x1hr_BFXbh02lyC2A4hfLU,1960
+taulukko/taulukko.py,sha256=tUuc24rz5E7QUZv2-PKxSDFw3ix9K2K40bi3VGPyy5A,2144
+tests/__init__.py,sha256=cr5ndc-DX09ICrY-63xcVD11f5aX7I-Q7X40M8aflRc,130
+tests/context.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=EwZJu9lHjmGT46Ba9ZoXXFLl4rWQfrCzTgafHHB01FE,1493
+tests/test_taulukko.py,sha256=d1P5LVTxGF8cI1BkxkQIu21ggunwJWiQnscZYOZlqDE,710
+taulukko-2021.12.1.dist-info/LICENSE,sha256=NpMdbXDPQfOKFkp3mpaePQrBhcjltWWrjBt9lkJSBQQ,1069
+taulukko-2021.12.1.dist-info/METADATA,sha256=Ssh2JZG0v0xAKrnN5kMU3OLrtA9rlzARhJtT5pEobEg,4387
+taulukko-2021.12.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+taulukko-2021.12.1.dist-info/entry_points.txt,sha256=i8PWniizrML07zxlMUr2je1H9qoDlxwEQf8vN1NPT94,47
+taulukko-2021.12.1.dist-info/top_level.txt,sha256=Ocft6qSKYDyAKrRyeiOl-5Ct966RXF079S97sc-Zh2s,15
+taulukko-2021.12.1.dist-info/RECORD,,
