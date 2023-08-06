@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dbt-superset-lineage
+Version: 0.1.0
+Summary: A package for extracting dashboards from Apache Superset to dbt docs as exposures.
+Author: Michal Kolacek
+Author-email: mkolacek@slido.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.17,<0.18.0)
+Requires-Dist: sqlfluff (>=0.8.2,<0.9.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# dbt-superset-lineage
