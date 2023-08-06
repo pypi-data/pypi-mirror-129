@@ -1,0 +1,9 @@
+# Yasmine-CLI ChangeLog
+
+2020/03/18 Update: Added ability to set schema version:
+
+2020/04/24 Update: Two new features added: 1. Plot channel responses and
+2. Select/filter on a station.
+
+2020/03/17 Update: Piping now works!  Here is an example:
+
