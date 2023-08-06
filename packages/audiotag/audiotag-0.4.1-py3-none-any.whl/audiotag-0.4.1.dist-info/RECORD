@@ -1,0 +1,12 @@
+audiotag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audiotag/audiotag.py,sha256=RIzkeA-lUZ84bx15tRbxxnrJ1RC-tKk7euAzZ5okk1w,2165
+audiotag/modes.py,sha256=LY7hoYJo6lmJbykSmuVJEdhlau3ftz2joULLFb2fGDo,4958
+audiotag/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audiotag/track.py,sha256=Ik7DNCqEzPrSKr1zDpxr1qeyznDl7F3gsEtxdqpxkyU,8035
+audiotag/util.py,sha256=jlM1TiebkLb4Z37jj8zwGMgjBzL5cPwva28eMpiOJ7E,1708
+audiotag-0.4.1.data/scripts/audiotag,sha256=6csqWZFJ-3U3SqEsE2nFSvB62EfBQmRG6qCC5bqkNM0,95
+audiotag-0.4.1.dist-info/LICENSE,sha256=anfpLt8f4ngC-52zhszoWAFFuZDjGYAIdiLpMU8LR7Y,1067
+audiotag-0.4.1.dist-info/METADATA,sha256=Wd5RKDQciFY-De7P0TY2f31QBsnFvxlCT2yqJx9ftos,6095
+audiotag-0.4.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+audiotag-0.4.1.dist-info/top_level.txt,sha256=ut4y4Yyt-QY3R0dF4ZBvugNbbJ9F0_AKwjMx0uhhmTc,9
+audiotag-0.4.1.dist-info/RECORD,,
