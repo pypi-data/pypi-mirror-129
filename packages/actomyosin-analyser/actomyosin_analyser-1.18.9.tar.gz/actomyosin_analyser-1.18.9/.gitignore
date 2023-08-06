@@ -1,0 +1,11 @@
+*__pycache__*
+*~
+*.pyc*.egg-info
+*.egg-info*
+.eggs
+*.ipynb_checkpoints*
+.idea
+test/integration/test_file_io/tmp_converted.h5
+build
+dist
+docs/_build
