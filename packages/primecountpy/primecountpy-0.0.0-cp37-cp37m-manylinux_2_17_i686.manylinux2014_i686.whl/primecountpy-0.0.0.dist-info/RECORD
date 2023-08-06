@@ -1,0 +1,11 @@
+primecountpy.libs/libprimecount-74396596.so.7.2,sha256=l0q1Y8pCDwiOurWKDayNPz1wQ9HjJQf8YqeISmGuEmY,419956
+primecountpy.libs/libprimesieve-2f0419c8.so.9.7.0,sha256=Svc4-nG3uGeajqoInvmtuyKeS9a7gy3YoiOi7mSUjUk,424888
+primecountpy-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+primecountpy-0.0.0.dist-info/AUTHORS,sha256=gUVKk99IDA-78ESS89mJBKZXylJPdMKgOIDTGSCoIP0,122
+primecountpy-0.0.0.dist-info/top_level.txt,sha256=6y8t2DMtviUX8fE4_Ms7Q1RSChqx_Ml1bQtWzUiKUaQ,13
+primecountpy-0.0.0.dist-info/RECORD,,
+primecountpy-0.0.0.dist-info/WHEEL,sha256=Lq1IqOhQH-R5RIyuNNvuj983TVEdtj3B4mh-gtNC7yw,146
+primecountpy-0.0.0.dist-info/METADATA,sha256=JNMo8Besr9x_GP7caYb67zsEFXbAakVNsoqn5xw8Lhk,2381
+primecountpy/__init__.py,sha256=09IByjZgmgwaj8_jKl4bQTvLpBHKsmXoFehkGRxcVug,26
+primecountpy/defs.pxd,sha256=ZTfuJhV6ImtXCGdEPlUTujbXh4Tr0kI2vdfDUNKRSik,522
+primecountpy/primecount.cpython-37m-i386-linux-gnu.so,sha256=4vVY9Zz4AzfeR4F0BGIPYfwznqcIIlCdBbX6r1NFPpU,264568
