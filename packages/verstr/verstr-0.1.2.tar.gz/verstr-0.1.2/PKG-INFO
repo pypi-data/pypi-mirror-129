@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: verstr
+Version: 0.1.2
+Summary: Make comparing version strings super simple.
+Home-page: https://github.com/BRGM/verstr
+Author: fsmai
+Author-email: f.smai@brgm.fr
+License: MIT
+Project-URL: Documentation, https://github.com/BRGM/verstr#readme
+Project-URL: Source code, https://github.com/BRGM/verstr
+Project-URL: Issue Tracker, https://github.com/BRGM/verstr/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# verstr
+
+Make comparing version strings super simple.
+
+## Quick start
+
+If you want codes using your package to be able to verify its version as easily as:
+
+```python
+# user_code.py
+import my_package
+assert my_package.__version__ >= "1.1"
+```
+
+Just customize your package as follows:
+
+```python
+# my_package/__init__.py
+import verstr
+__version__ = verstr.verstr("1.2.4")
+```
+
+or if you are using a tool such as [`setuptools_scm`]() to generate a `_version.py` submodule:
+
+```python
+# my_package/__init__.py
+import verstr
+try:
+    from . import _version
+    __version__ = verstr.verstr(_version.version)
+except ImportError:
+    __version__ = None
+```
+
+## Installation 
+
+Install `verstr` with pip
+
+```bash 
+  pip install verstr
+```
+
+## Contributing
+
+You are welcome to help the project, see [how](https://github.com/BRGM/verstr/blob/main/CONTRIBUTING.md).
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+
