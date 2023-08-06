@@ -1,0 +1,14 @@
+ktg2/__init__.py,sha256=gDCDBThTjEzgTHfG1cELwgRGNLrMxcEO_heOwsZZkT8,53
+ktg2/telegram.py,sha256=StYfG2BYlfFYrX0NYDJg3OzrBloXo7eB9j5qcaKdaLk,4074
+ktg2/models/__init__.py,sha256=MvsNZVvZl2tzAkrM1zhACBPuENm1MHODUH1WcdAcTSc,96
+ktg2/models/chat.py,sha256=7F4MjkccnVWgH1vpjzfNXjsPJh8x8vxEI5-YvKJJ6lE,1222
+ktg2/models/message.py,sha256=E-1g-PMHuRreViErM4guUyJdS33r6vlXfSEs1CZXfM8,1654
+ktg2/models/user.py,sha256=OldAxyMZ4KcslQi7C1BsZVrRqcthO7bXrJ4DdosDg8Y,1292
+ktg2/models/enums/__init__.py,sha256=tqUBOMbbvDTBlzzj8LizXUrFQKi8ry9DfKwPlqAUDwg,65
+ktg2/models/enums/chat_type.py,sha256=F-o87eG3nQ8BFrzDETWb1AuiYaxKCRzelB3n4FLpxVg,701
+ktg2/models/enums/parse_mode.py,sha256=V-CCjpO0JdR4Ovz608NQUzAJHb8Rza-NLdyA9dnpxf4,677
+ktg2-0.0.3.dist-info/LICENSE,sha256=yX_9Uq3SAqomS121_Z0s_qb_5QVyDlXTUQrKYSrQZgo,1080
+ktg2-0.0.3.dist-info/METADATA,sha256=89Sh1_NFXDYtr37cjwe1JIOqyMsSKxv-Yh4I-zZvsSI,824
+ktg2-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ktg2-0.0.3.dist-info/top_level.txt,sha256=D3H-dq3s4UmUu7Dd21fL6n2NEjmMOtMY-tHkw2tQh0E,5
+ktg2-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ktg2
+Version: 0.0.3
+Summary: ktg2
+Home-page: https://github.com/kkristof200/py_telegram_2
+Author: Kristóf-Attila Kovács
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsoncodable (>=0.1.7)
+Requires-Dist: kcu (>=0.0.73)
+Requires-Dist: noraise (>=0.0.16)
+Requires-Dist: setuptools (>=59.3.0)
+
+# py_telegram_2
+
