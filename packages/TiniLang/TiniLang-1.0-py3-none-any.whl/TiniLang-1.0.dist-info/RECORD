@@ -1,0 +1,12 @@
+setup.py,sha256=wiq9kDXNawU2EUKSN8TsF08cEMxcag3K8dDeeRgBLqo,1829
+TiniLang/__init__.py,sha256=WM058HCqfeGrmUuVEwR0_cB7ntjKiuRaIebIFUUqGJ4,894
+TiniLang/__main__.py,sha256=kcFU_nyrBzPIazJe3YW5shjGpqQQR6pddnrqEeAJzWs,154
+TiniLang/cli.py,sha256=cpbhuHfDwIEDFsc7q5ZY-JmQWWNgVKh54c_hByQmR1U,975
+TiniLang/interpreter.py,sha256=MU_ERFjhYVYE57PsVJgA1Xz-jsXr1ELhP2y0cXiy24s,3073
+TiniLang/translator.py,sha256=iNgM4dXOYV20jx7rlToqvVc0ehneIZf6nk49uFmv2fk,1286
+TiniLang-1.0.dist-info/LICENSE,sha256=AUsSn9obWanJw1b8xGE66pnkx3mbQqM_kEFdmLF6J_4,1102
+TiniLang-1.0.dist-info/METADATA,sha256=Y3XNRI5KLMjp2hI8CHIVlPXRpJBDxwI-7Z7_HNYoJt0,4200
+TiniLang-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+TiniLang-1.0.dist-info/entry_points.txt,sha256=Cr2njyQYhr3PCN4W2HHieXB_2lVwR47J3VLzzcKxrwE,48
+TiniLang-1.0.dist-info/top_level.txt,sha256=OMX7M-gzdPql__HmOY0iIdvaXqmamOAE1S47AIdIb3E,15
+TiniLang-1.0.dist-info/RECORD,,
