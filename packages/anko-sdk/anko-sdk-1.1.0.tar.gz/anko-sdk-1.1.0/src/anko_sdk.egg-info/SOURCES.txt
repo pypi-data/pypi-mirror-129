@@ -1,0 +1,14 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/anko/__init__.py
+src/anko/anko.py
+src/anko/proto/__init__.py
+src/anko/proto/gateway_pb2.py
+src/anko/proto/gateway_pb2_grpc.py
+src/anko_sdk.egg-info/PKG-INFO
+src/anko_sdk.egg-info/SOURCES.txt
+src/anko_sdk.egg-info/dependency_links.txt
+src/anko_sdk.egg-info/requires.txt
+src/anko_sdk.egg-info/top_level.txt
