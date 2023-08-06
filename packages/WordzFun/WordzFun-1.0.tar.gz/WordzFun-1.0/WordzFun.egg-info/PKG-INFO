@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: WordzFun
+Version: 1.0
+Summary: Trie for slingshot takehome.
+Home-page: UNKNOWN
+Author: Sabad Modi
+Author-email: sabadmodi@gmail.com
+License: MIT
+Keywords: trie slingshot words dictionary wordzfun english
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Trie for slingshot takehome.
+

@@ -1,0 +1,3 @@
+[console_scripts]
+wordzfun = Trie.trie_cli:main
+
