@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_timeranges.py
+timeranges/__init__.py
+timeranges/_timeranges.py
+timeranges/py.typed
+timeranges.egg-info/PKG-INFO
+timeranges.egg-info/SOURCES.txt
+timeranges.egg-info/dependency_links.txt
+timeranges.egg-info/not-zip-safe
+timeranges.egg-info/requires.txt
+timeranges.egg-info/top_level.txt
