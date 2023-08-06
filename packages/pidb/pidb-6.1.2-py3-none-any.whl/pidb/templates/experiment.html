@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end, card_link_by_title %}
+
+{% block content %}
+
+<h1>Experiment {{experiment.label}} </h1>
+<div align="right">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Task Templates</a>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{url_for('web.web_experiment', id=experiment.experiment_id)}}">-</a>
+      {% for template in templates %}
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="{{url_for('web.web_experiment', id=experiment.experiment_id, template=template.task_template)}}">{{template.task_template}}</a>
+      {% endfor %}
+  </div>
+</div>
+
+{{ collapse_card_start("Findings", show=True) }}
+
+{% for label in labels %}
+
+    {%set count = [] %}
+    {% for finding in findings %}
+      {% if finding.label_id == label.label_id %}
+          {% if count.append(1) %}{% endif %} 
+      {% endif %} 
+    {% endfor %}
+
+    {{ collapse_card_start(label.label_text, show=True, data_count=count|sum(), aria_expanded="false") }}
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      </thead>
+      <tbody>
+        {% for property in properties %}
+      <tr>
+        {% for finding in findings %}
+          {% if property.finding_id == finding.finding_id and finding.label_id == label.label_id %}
+        <td>{{property.label}}</td>
+        <td>{{property.value}}</td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {{ collapse_card_end(label.label_text) }}
+
+{% endfor %}
+{{ collapse_card_end("Findings") }}
+
+
+
+{{ collapse_card_start("Experiment resources", show=True) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>XNAT resource id</th>
+          <th>URL</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for resource in resources %}
+        <tr>
+          <td>{{resource.xnatresource_id}}</td>
+          <td>{{resource.url}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+{{ collapse_card_end("Experiment resources") }}
+
+{% endblock %}

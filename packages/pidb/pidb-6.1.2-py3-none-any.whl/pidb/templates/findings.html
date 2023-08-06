@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end, card_link_by_title, paginate %}
+
+{% block content %}
+
+<h1>Finding Overview</h1>
+{{ collapse_card_start("Findings", show=True, data_count=findings.total) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>id</th>
+          <th>label</th>
+          <th>experiment_id</th>
+          <th>study_id</th>
+          <th>date</th>
+          <th>task_template</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for f in findings.items %}
+        <tr>
+          <td>
+            <a href="{{url_for('web.web_finding', id=f.finding_id) }}">
+              {{f.finding_id}}
+            </a>
+          </td>
+          {% for label in labels %}
+            {% if label.label_id == f.label_id %}
+             <td> {{label.label_text}} </td>
+             {% endif %} 
+          {% endfor %}
+          
+          {% for experiment in experiments %}
+            {% if experiment.experiment_id == f.experiment_id %}
+              <td>
+                <a href="{{url_for('web.web_experiment', id=f.experiment_id) }}">
+                  {{f.experiment_id}}
+                </a>
+              </td>
+
+              {% for subject in subjects %}
+                {% if experiment.subject_id == subject.subject_id %}
+                <td>{{subject.study_id}}</td>
+                {% endif %} 
+              {% endfor %}
+              
+              <td>{{experiment.date}}</td>
+            {% endif %}
+
+          {% endfor %}
+          <td> {{f.task_template}} </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+{{ paginate(findings, "web.web_findings") }}
+{{ collapse_card_end("Fidnings") }}
+
+{% endblock %}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg5715" inkscape:version="1.0 (6e3e5246a0, 2020-05-07)" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 141.7 141.7"
+	 style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#rect817-3_1_);}
+	.st1{fill:#FFFFFF;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview405" inkscape:current-layer="g1473" inkscape:cx="94.488189" inkscape:cy="94.488189" inkscape:document-rotation="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1025" inkscape:window-maximized="1" inkscape:window-width="1861" inkscape:window-x="59" inkscape:window-y="27" inkscape:zoom="4.4979167" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<linearGradient id="rect817-3_1_" gradientUnits="userSpaceOnUse" x1="-523.6312" y1="395.9532" x2="-617.5135" y2="489.2767" gradientTransform="matrix(2.8346 0 0 -2.8346 1629.1654 1266.8032)">
+	<stop  offset="0" style="stop-color:#FF7F2A"/>
+	<stop  offset="1" style="stop-color:#FFD8BF"/>
+</linearGradient>
+<path id="rect817-3" class="st0" d="M11.3,0h119.1c6.3,0,11.3,5.1,11.3,11.3v119.1c0,6.3-5.1,11.3-11.3,11.3H11.3
+	c-6.3,0-11.3-5.1-11.3-11.3V11.3C0,5.1,5.1,0,11.3,0z"/>
+<g id="g1473" transform="matrix(0.25632293,0,0,0.43380112,-67.768098,-181.82777)">
+	<g id="g1471" transform="matrix(1.3883057,0,0,1.3222144,-139.19958,-154.79953)">
+		<path id="path1469" class="st1" d="M495.8,451.7c-93.1,0-166,16.7-166,38.1v127c0,21.4,72.9,38.1,166,38.1s166-16.7,166-38.1v-127
+			C661.8,468.4,588.8,451.7,495.8,451.7z M645.2,616.8c0,14-61.3,29.6-149.4,29.6s-149.4-15.6-149.4-29.6v-25.6
+			c26.6,12.7,82.7,21.3,149.4,21.3s122.8-8.6,149.4-21.3V616.8z M645.2,574.5c0,14-61.3,29.6-149.4,29.6s-149.4-15.6-149.4-29.6
+			v-25.6c26.6,12.7,82.7,21.3,149.4,21.3s122.8-8.6,149.4-21.3V574.5z M645.2,532.2c0,14-61.3,29.6-149.4,29.6
+			s-149.4-15.6-149.4-29.6v-25.6c26.6,12.7,82.7,21.3,149.4,21.3s122.8-8.6,149.4-21.3V532.2z M495.8,519.4
+			c-88,0-149.4-15.6-149.4-29.6c0-14,61.3-29.6,149.4-29.6s149.4,15.6,149.4,29.6C645.2,503.8,583.8,519.4,495.8,519.4z"/>
+	</g>
+	<path id="rect1570" class="st1" d="M477.1,534.7h4c6.1,0,11,4.9,11,11v148.9c0,6.1-4.9,11-11,11h-4c-6.1,0-11-4.9-11-11V545.8
+		C466.1,539.7,471,534.7,477.1,534.7z"/>
+</g>
+</svg>

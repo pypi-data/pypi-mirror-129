@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end, card_link_by_title %}
+
+{% block content %}
+
+<h1>Finding {{finding.finding_id}} </h1>
+
+{{ collapse_card_start("Finding properties", show=True) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Id</th>
+          <th>Property Label</th>
+          <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for property in properties %}
+        <tr>
+          <td>{{property.property_id}}</td>
+          <td>{{property.label}}</td>
+          <td>{{property.value}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+{{ collapse_card_end("Finding properties") }}
+
+{% endblock %}
