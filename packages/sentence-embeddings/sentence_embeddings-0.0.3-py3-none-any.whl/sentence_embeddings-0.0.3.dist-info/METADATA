@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sentence-embeddings
+Version: 0.0.3
+Summary: Search and visualize sentence embeddings.
+Home-page: https://github.com/nadahlberg/sentence-embeddings
+Author: Nathan Dahlberg
+Author-email: nadahlberg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: faiss-cpu
+Requires-Dist: sklearn
+Requires-Dist: plotly
+Requires-Dist: numpy
+
+UNKNOWN
+
+
