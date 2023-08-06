@@ -1,0 +1,9 @@
+genagg/AggGNN.py,sha256=UxSf1sPgQxL63BTnUOooTNMaqqW2F1ZtNjCLW2-x5KI,3079
+genagg/GenAgg.py,sha256=Fxhv9qrQ9-ylCmiu3xKPgPeDMjI2U4TrW0BD33Pp1kQ,3703
+genagg/GenAggSparse.py,sha256=KZAF2kFSzoyeraLDuwnho_iIfMC-aTDxfB25NsuKwF8,4618
+genagg/MLP.py,sha256=gtHuau4dPPtW1ungWsKpHu3ym41gzPVeV4HCPD7y6J0,1396
+genagg/__init__.py,sha256=2GaZakR7yhsrWoVmON-gitZ_0p48DAAeYldKKrfxV18,246
+genagg-0.0.3.dist-info/METADATA,sha256=Jaq3JOIqIf7OrfbN2oT1682MUFM7QQjFVVxd5HdeXTk,271
+genagg-0.0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+genagg-0.0.3.dist-info/top_level.txt,sha256=Ha65qnmd4vyORHRzwnWsKZ67H2XosjB0Uoj7t3ouD44,7
+genagg-0.0.3.dist-info/RECORD,,
