@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: expectise
+Version: 1.0.2
+Summary: Mocking API and function calls in Python - inspired by Ruby's RSpec-Mocks.
+Home-page: https://github.com/tcassou/expectise
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/tcassou/expectise/archive/1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: python,testing,mocking,unit,tests
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Mocking
