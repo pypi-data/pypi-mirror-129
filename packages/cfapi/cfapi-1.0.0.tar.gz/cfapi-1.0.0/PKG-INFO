@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cfapi
+Version: 1.0.0
+Summary: An unofficial Codeforces API, that gives you access to contests, problems, and profiles on Codeforces.com
+Home-page: https://github.com/RealA10N/cfapi
+Author: RealA10N
+Author-email: downtown2u@gmail.com
+License: MIT
+Keywords: Codeforces Codeforces.com Competitive Programming API Wrapper Scraper
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Codeforces API (Scraper)
+
+**cfapi** is an unofficial wrapper around codeforces, that is written in Python and intended to be used as a module. Using **cfapi**, you can easily download and view:
+
+* **Contests**, including standings, starting and ending dates, etc.
+* **Problems**, including meta-data like name, tags, etc.
+* **Profiles**, including rating, contribution, etc.
+
+
