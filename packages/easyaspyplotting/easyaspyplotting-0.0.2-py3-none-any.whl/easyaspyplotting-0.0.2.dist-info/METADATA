@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: easyaspyplotting
+Version: 0.0.2
+Summary: A small
+Home-page: https://github.com/selkamand/easyaspyplotting
+Author: selkamand
+Author-email: sam.elkamand@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/selkamand/easyaspyplotting/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+Assorted helper functions to improve common plots
+
+# Usage
+
+**Use easily customisable themes**
+```buildoutcfg
+sns_theme_fav_1(labelsize=20,labelpad=13, axeslabelweight='bold')
+```
+
+
