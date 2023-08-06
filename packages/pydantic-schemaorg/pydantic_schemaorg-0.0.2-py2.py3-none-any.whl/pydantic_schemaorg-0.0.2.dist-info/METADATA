@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pydantic-schemaorg
+Version: 0.0.2
+Summary: Pydantic classes for Schema.org
+Home-page: https://github.com/lexiq-legal/pydantic_schemaorg
+License: MIT
+Keywords: schema.org,pydantic
+Author: Reinoud Baker
+Author-email: reinoud@lexiq.nl
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Project-URL: Documentation, https://github.com/lexiq-legal/pydantic_schemaorg
+Project-URL: Repository, https://github.com/lexiq-legal/pydantic_schemaorg
+Description-Content-Type: text/markdown
+
+# pydantic_schemaorg
+
