@@ -1,0 +1,15 @@
+isodate/__init__.py,sha256=s8onn_0PJQRujBtEDvXBnYxWnDQXKa5rXMClWZG1H8E,4110
+isodate/duration.py,sha256=YohON5RL1GXNpuiZtuWMuVQa2550cG0qlmODK6cK8Jo,12626
+isodate/isodates.py,sha256=sQecyqrDxBS6QHI8Kd0tu8b71H_c6RAVJcEyPSq-iX8,10467
+isodate/isodatetime.py,sha256=_Mibf-RIrmfMWXaYXqgetLBUgCidIHUQO2gN2-VHuBc,2913
+isodate/isoduration.py,sha256=9ozw-kKNOBtafLYEVvu5ZdFhLW3RqHUYLGXcSK8kZQA,7018
+isodate/isoerror.py,sha256=jPmlCNeMBm3m7bMcS7v50GJfe8xFjAt_FrvRd-bYsiQ,1714
+isodate/isostrf.py,sha256=G9qkxS6j8F21GvHeN3PaMrIC9kAFqpUE4P3jlE-vDfA,8585
+isodate/isotime.py,sha256=7L7PPTVEl35Udv1MWzQgiBw-rvJvGgNnOVpgn1LDVxk,7347
+isodate/isotzinfo.py,sha256=gRhn0HI90uBdfL0e7taK0MVutuNLVVSXf2zybV5xTVo,4212
+isodate/tzinfo.py,sha256=iWaLAPIVRmB4xPIQb-8H2UktV2237jW05LCEFz26hTY,3783
+isodate2-0.9.0.dist-info/LICENSE.md,sha256=YU_QLBIc4eMJfB-FGpjUAJtPFIkpChHWo5HxfctTDCI,1588
+isodate2-0.9.0.dist-info/METADATA,sha256=tlrDXMUQx6TOexH0aBk-bpz1e18-dd0wardyeJnH4Ko,6661
+isodate2-0.9.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+isodate2-0.9.0.dist-info/top_level.txt,sha256=JgdqaHBw0Vx74Km0xZ1-6npOUHe_6cKHSBCEx6ppVe8,8
+isodate2-0.9.0.dist-info/RECORD,,
