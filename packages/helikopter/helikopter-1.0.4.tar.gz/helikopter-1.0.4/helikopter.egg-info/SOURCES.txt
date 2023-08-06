@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+heli.py
+heli_animation.txt
+helikopter-helikopter.gif
+setup.py
+helikopter/__init__.py
+helikopter/__main__.py
+helikopter/heli_animation.txt
+helikopter.egg-info/PKG-INFO
+helikopter.egg-info/SOURCES.txt
+helikopter.egg-info/dependency_links.txt
+helikopter.egg-info/top_level.txt
