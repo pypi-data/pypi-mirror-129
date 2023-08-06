@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-quill-editor-ng
+Version: 1.0.0
+Summary: 
+Author: 이한영
+Author-email: dev@lhy.kr
+Requires-Python: >3.6,<4
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django (>=3,<4)
