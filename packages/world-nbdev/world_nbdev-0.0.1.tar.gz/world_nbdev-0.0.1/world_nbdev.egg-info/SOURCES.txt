@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+world_nbdev/__init__.py
+world_nbdev/_nbdev.py
+world_nbdev/core.py
+world_nbdev.egg-info/PKG-INFO
+world_nbdev.egg-info/SOURCES.txt
+world_nbdev.egg-info/dependency_links.txt
+world_nbdev.egg-info/entry_points.txt
+world_nbdev.egg-info/not-zip-safe
+world_nbdev.egg-info/requires.txt
+world_nbdev.egg-info/top_level.txt
