@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/Neuron/__init__.py
+src/Neuron/perceptron.py
+src/oneNeuron_sairam852.egg-info/PKG-INFO
+src/oneNeuron_sairam852.egg-info/SOURCES.txt
+src/oneNeuron_sairam852.egg-info/dependency_links.txt
+src/oneNeuron_sairam852.egg-info/requires.txt
+src/oneNeuron_sairam852.egg-info/top_level.txt
