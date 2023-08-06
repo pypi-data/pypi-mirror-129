@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: comando
+Version: 0.0.0
+Summary: An organized way to create a coomand line application!
+Home-page: https://github.com/Kludex/fastapi-authorization
+Author: Marcelo Trylesinski
+Author-email: marcelotryle@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
