@@ -1,0 +1,13 @@
+matcouply/__init__.py,sha256=UCB1JgsATp878P10n-PBJfiFmMgZd33p0eDZTZ_KS-k,119
+matcouply/_doc_utils.py,sha256=gJM2QsoqGbecRwHhZmdGD26C3V7gJ-Sjwqhdz0NDxt4,3925
+matcouply/_utils.py,sha256=EJXVQYxI2U3nFs49hSKGsM7lQ_C-ct5svnVPWeZmjTE,1325
+matcouply/cmf_aoadmm.py,sha256=ddF9CTTE7BRnGt6orCBV4NJLRzNHSfLfPLn5QM1PAxc,37090
+matcouply/coupled_matrices.py,sha256=TPW6YpmgxBPmQKXg2cUO1KiArYd_TREqrGE3L12F5oc,25400
+matcouply/data.py,sha256=AXUOjA4gQMjhocpHKn0gcOV7LBK1raiyrvjBry8MUZ4,2527
+matcouply/penalties.py,sha256=ZoLIxZkYSZg3-nlvoYDLVbxHyV-Z1sG8aUHcxgo4aac,55650
+matcouply/random.py,sha256=v1rgj2Wd1UWSm5DYvkHZWGgkne19lleEZKJKOgcxcOA,2244
+matcouply-0.0.1.dist-info/LICENSE,sha256=lQor4YsGN7f1ptTIp7HOHWLybEdilxohsMM4eXsNb6k,1070
+matcouply-0.0.1.dist-info/METADATA,sha256=RbRGZy2AUvTHauYpLokAAyt1oLOAMfeH-HUlkkmwcAo,4364
+matcouply-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+matcouply-0.0.1.dist-info/top_level.txt,sha256=aZSHfeGzox2GkHLzSojwi6958PDvnsIJNAF8tNyHkXQ,10
+matcouply-0.0.1.dist-info/RECORD,,
