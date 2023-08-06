@@ -1,0 +1,2 @@
+snowflake-connector-python==2.7.0
+pyarrow==5.0.0

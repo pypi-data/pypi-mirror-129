@@ -1,0 +1,9 @@
+README.rst
+setup.py
+connect_snowflake.egg-info/PKG-INFO
+connect_snowflake.egg-info/SOURCES.txt
+connect_snowflake.egg-info/dependency_links.txt
+connect_snowflake.egg-info/requires.txt
+connect_snowflake.egg-info/top_level.txt
+snowflake_connection/__init__.py
+snowflake_connection/connect.py
