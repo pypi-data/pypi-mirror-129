@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: poof-backup
+Version: 9.9.9
+Summary: poof backup - instant, secure backup to a cloud drive
+Home-page: https://github.com/poof-backup/poof
+Author: Eugene Ciurana pr3d4t0r
+Author-email: poof.project@cime.net
+License: BSD3
+Platform: UNKNOWN
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Archiving :: Backup
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: click
+
+% poof(1) Version 9.9.9 | Secure cloud storage backup documentation
+
+
+Name
+====
+
+**poof** - 2-way secure data sync/backup/restore against cloud storage.
+
+
+Description
+===========
+
+**The poof project superseded the poof-backup project on 01.Dec.2021.  If you
+installed poof-backup please remove it and install poof instead.  On Python-only
+installations use:**
+
+    pip install -U poof
+
+**Homebrew and apt installers are not affected by the migration to the new name.**
+
+Backup of local file system directories to cloud storage or other storage, in a
+secure manner, and preserving the original files' attributes for later recovery.
+
+The poof\! tool offers additional security options:
+
+- Secure delete the local file system files upon successful process completion
+- Encrypt the remote copies
+- Eliminates all traces of itself in the local file system
+
+
+Bugs
+====
+
+See GitHub issues:  https://github.com/poof-backup/poof/issues
+
+
+Author
+======
+
+Eugene "pr3d4t0r" Ciurana and the poof backup contributors <poof.project AT cime.net>
+
+
+See also
+========
+
+https://pypi.org/project/poof
+
+
+
