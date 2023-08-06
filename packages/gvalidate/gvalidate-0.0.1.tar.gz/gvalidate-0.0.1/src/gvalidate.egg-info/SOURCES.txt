@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/gvalidate/__init__.py
+src/gvalidate/callable.py
+src/gvalidate/generic.py
+src/gvalidate/numerical.py
+src/gvalidate/string.py
+src/gvalidate.egg-info/PKG-INFO
+src/gvalidate.egg-info/SOURCES.txt
+src/gvalidate.egg-info/dependency_links.txt
+src/gvalidate.egg-info/top_level.txt
