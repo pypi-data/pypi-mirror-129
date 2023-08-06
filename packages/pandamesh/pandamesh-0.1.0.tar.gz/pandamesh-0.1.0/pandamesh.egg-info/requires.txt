@@ -1,0 +1,16 @@
+numpy
+gmsh
+geopandas
+pygeos
+triangle
+
+[all]
+geopandas
+matplotlib
+
+[docs]
+geopandas
+matplotlib
+pydata-sphinx-theme
+sphinx
+sphinx-gallery
