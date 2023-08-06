@@ -1,0 +1,13 @@
+terminaltables/__init__.py,sha256=USEs7sN02mu9CXpsbQPwSl2YpvsDi5A-J_5OMgZ2Kew,647
+terminaltables/ascii_table.py,sha256=Zgu9bvH6rrioLJAz1JDysqIVfPqmlP9gyz3tomGhhGo,2789
+terminaltables/base_table.py,sha256=ZXvO94iAgUwEXOOsoIrFUIW5KhtdjpGm-usra-v8RlA,9955
+terminaltables/build.py,sha256=4cYQD5wtD9asrXHtMTl-Y8wfdVdiNNpx6mRBo1KWrQE,5174
+terminaltables/github_table.py,sha256=Z1VkC27NFb_UJIqc3mDg0qZntp7OPlccyJP5wQDvdqI,2847
+terminaltables/other_tables.py,sha256=rQwaFID69wjTDBGx65L6S668aHQiPFaOcbPiTc6yicE,8657
+terminaltables/terminal_io.py,sha256=SUedbIkxN6a_v8QCniVwChOGmEVYWYcmDxJsweXC_T0,3374
+terminaltables/width_and_alignment.py,sha256=MIO10siNNjlVuST8Fay997gTTkV2p7wZW0byqhHEK6E,6336
+terminaltables_whl-3.1.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+terminaltables_whl-3.1.2.dist-info/LICENSE,sha256=N_WidtExOpjd6Jk6U7bSZKxTt5Zij2or1sq66zJjFmA,1086
+terminaltables_whl-3.1.2.dist-info/WHEEL,sha256=Fs47bPI6GdEUUVU2cC1ZH87S4TSequgq1XeoqimcqIE,87
+terminaltables_whl-3.1.2.dist-info/METADATA,sha256=T6n2FUr3zZoWU7sRWwA44M1_9VKzw82UYYaK5IjmgQg,3477
+terminaltables_whl-3.1.2.dist-info/RECORD,,
