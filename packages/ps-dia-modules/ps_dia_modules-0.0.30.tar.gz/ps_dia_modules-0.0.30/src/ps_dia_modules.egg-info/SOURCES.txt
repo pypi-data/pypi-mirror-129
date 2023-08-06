@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/ps_dia_modules/__init__.py
+src/ps_dia_modules/ps_dia_modules.py
+src/ps_dia_modules.egg-info/PKG-INFO
+src/ps_dia_modules.egg-info/SOURCES.txt
+src/ps_dia_modules.egg-info/dependency_links.txt
+src/ps_dia_modules.egg-info/top_level.txt
