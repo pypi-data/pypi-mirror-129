@@ -1,0 +1,12 @@
+delta/__init__.py,sha256=Wfodg4euKnO_vrnkwUydaRB-ic9-leONNyOSJepUQJQ,753
+delta/_typing.py,sha256=pCwbkWaCLqInjcHYp86JCJhJ6L-t9Pzer51q_Pz5vpU,870
+delta/exceptions.py,sha256=j8A6S04XY7U9cfS_aQmuV5FzUnBMPpBOqOyDDhiU8Oo,4931
+delta/pip_utils.py,sha256=YizM-jxuM3IvT1YW1qJGPegG7SLtoFeRSgA9bGIqQOY,2549
+delta/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delta/tables.py,sha256=yuoAWwjKQCHEGivufc3rVFYJro1oE1PcHVMTSyUL5c8,42654
+delta_spark-1.1.0.dist-info/LICENSE.txt,sha256=Zn-Y2h_Om-6-w-DYpKY01ch2mntTpG6gYg_0klZZSQQ,21864
+delta_spark-1.1.0.dist-info/METADATA,sha256=TDE8cWijJStBf3zmWQqEFMbdYLMueHl6c6d_E4OWpwc,1905
+delta_spark-1.1.0.dist-info/NOTICE.txt,sha256=QgpGhBJ4JBRtc4C4MVX9AnNNbi3a3pTmMdpPPtchLN4,963
+delta_spark-1.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+delta_spark-1.1.0.dist-info/top_level.txt,sha256=ZzlT4K1_xTJH9P6twsLUUGOWhA0fh5ZSb0jUczOsdlI,6
+delta_spark-1.1.0.dist-info/RECORD,,
