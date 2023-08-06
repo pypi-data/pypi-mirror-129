@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: axisvm
+Version: 0.0.1
+Summary: A python package for AxisVM
+Home-page: https://github.com/AxisVM/pyaxisvm
+Author: Inter-CAD Ltd
+Author-email: bbalogh@axisvm.eu
+License: MIT
+Download-URL: https://github.com/AxisVM/pyaxisvm/archive/refs/tags/v_0_0_1.tar.gz
+Description: UNKNOWN
+Keywords: AxisVM,Axis,Civil Engineering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
