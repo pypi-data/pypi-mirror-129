@@ -1,0 +1,3 @@
+[console_scripts]
+Breeze2 = airflow_breeze.breeze:main
+
