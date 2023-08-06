@@ -1,0 +1,4 @@
+https://pypi.org/project/pandas/
+https://pypi.org/project/swifter/
+https://pypi.org/project/scipy/
+https://pypi.org/project/scikit-learn/
