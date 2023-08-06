@@ -1,0 +1,17 @@
+{
+	"new_cat1": {
+	    "mapped_cat": "old_cat2",
+	    "classes_info": {
+		"new_class1": ["a", "b"],
+		"new_class2": ["b"],
+		"new_class3": []
+	    }
+	},
+	"new_cat2": {
+	    "mapped_cat": "old_cat3",
+	    "classes_info": {
+		"new_class1": ["A"],
+		"new_class2": []
+	    }
+	}
+    }
