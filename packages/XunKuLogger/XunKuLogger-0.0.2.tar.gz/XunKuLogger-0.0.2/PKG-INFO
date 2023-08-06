@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: XunKuLogger
+Version: 0.0.2
+Summary: get a logger example
+Home-page: http://www.xunku.org/
+Author: tianzhen2048
+Author-email: 1072575777@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## 生成日志实例方法
+```
+初始化XunKuLogger.get_diy_logger 之后返回一个日志对象实例
+```
+
