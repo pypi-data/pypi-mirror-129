@@ -1,0 +1,17 @@
+oocd_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oocd_tool/configs.py,sha256=2sF6ocv5RbWNpzoTrJReI7lS4NeiUdIKtisSRjcCdGw,2941
+oocd_tool/main.py,sha256=9CHKpFwoHki-BNa45eH3t4hXnww7kIAdTzr-YJ8aX-c,8339
+oocd_tool/openocd_pb2.py,sha256=tDZdJzSRK9b7Ie7bV8bzPYpDyslihJtPBoVNOujlo5g,7394
+oocd_tool/openocd_pb2_grpc.py,sha256=dbcHG-xNeVkPFE6PhGZQUvv7wxX13ZwKivytIMUcOug,8259
+oocd_tool/process.py,sha256=G7c_HaaAZIZdL8xhIfhhoiyrMRlWSaryi1D4xYs8x_4,2280
+oocd_tool/rpc_client.py,sha256=WC8pKBns2uHo0C4Vw1Ji6Nskh61iUeluBAF4WX30F40,2176
+oocd_tool/rpc_impl.py,sha256=F8D5QJDyxu-ypEluWd40cAYRoUTwtk761Lf8eof-uRs,2759
+oocd_tool/rpc_server.py,sha256=SbVmrw0uB9bFBQSEJH01FHq-8V5HIbG2Q2LeaPSCga0,4158
+oocd_tool-0.1.1.data/scripts/oocd-rpcd,sha256=v7VbV5nlZ3OpyI46mJ0b5w3_rHRvz7TC_KFAsSV84Q4,209
+oocd_tool-0.1.1.data/scripts/oocd-tool,sha256=0TtsRVJeucAaTh9I_BCSxWtO-Ip1Cfk7N1zxftJfVmE,203
+oocd_tool-0.1.1.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+oocd_tool-0.1.1.dist-info/METADATA,sha256=XevWmgdqtc_7qY06De6LRDJpd2XLsUHI6gihpYTQecQ,3993
+oocd_tool-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+oocd_tool-0.1.1.dist-info/entry_points.txt,sha256=ASzwnG6NxOyqH56KAZAUjV2aCEVtw99bN6I_e8dRI8o,51
+oocd_tool-0.1.1.dist-info/top_level.txt,sha256=arJKUMTMgE0wMcg2S26A3FEPQVoGLkcWecfM55rO6bE,10
+oocd_tool-0.1.1.dist-info/RECORD,,
