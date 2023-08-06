@@ -1,0 +1,9 @@
+click
+easydict
+rich
+pyfiglet
+pytest
+ruamel.yaml
+wandb
+matplotlib
+pandas

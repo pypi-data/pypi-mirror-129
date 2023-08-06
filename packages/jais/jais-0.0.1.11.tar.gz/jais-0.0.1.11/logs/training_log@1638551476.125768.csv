@@ -1,0 +1,2 @@
+Epoch,TrainLoss,ValLoss,ValAccuracy,ValPrecision,ValRecall,ValF1
+1,2.28151,2.25880,0.17230,0.13968,0.17230,0.10221
