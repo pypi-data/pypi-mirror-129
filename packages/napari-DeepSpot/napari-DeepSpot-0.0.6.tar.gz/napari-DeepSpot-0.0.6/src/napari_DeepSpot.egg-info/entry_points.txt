@@ -1,0 +1,3 @@
+[napari.plugin]
+napari-DeepSpot = napari_deepspot
+
