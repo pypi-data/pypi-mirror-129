@@ -1,0 +1,3 @@
+TurboGears2>=2.0
+rq>=1.0
+rq-gevent-worker@ git+https://github.com/mikeabrahamsen/rq-gevent-worker@master#egg=rq-gevent-worker
