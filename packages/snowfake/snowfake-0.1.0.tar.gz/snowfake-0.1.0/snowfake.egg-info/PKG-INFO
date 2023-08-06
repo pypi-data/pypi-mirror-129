@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: snowfake
+Version: 0.1.0
+Summary: Simulate snowflakes with Gravner-Griffeath's algorithm.
+Home-page: https://github.com/agile-geoscience/snowfake
+Author: Matt Hall
+Author-email: matt@agilescientific.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
