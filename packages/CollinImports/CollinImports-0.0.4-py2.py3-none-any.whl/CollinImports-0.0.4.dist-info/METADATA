@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: CollinImports
+Version: 0.0.4
+Summary: My Packages
+Home-page: https://github.com/collinpu/CollinImports
+Author: Collin Purcell
+Author-email: collinpu@usc.edu
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: redis
+Requires-Dist: numpy
+
+UNKNOWN
+
+
