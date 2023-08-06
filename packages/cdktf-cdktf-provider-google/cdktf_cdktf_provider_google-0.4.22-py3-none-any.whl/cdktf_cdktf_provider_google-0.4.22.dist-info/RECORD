@@ -1,0 +1,9 @@
+cdktf_cdktf_provider_google/__init__.py,sha256=FR8tyWWRpAtY7eQecS1ZORyTvkXEJbWm2F8UeiBSWNk,22113923
+cdktf_cdktf_provider_google/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdktf_cdktf_provider_google/_jsii/__init__.py,sha256=tvAcM0WWcesz5RTyZ79rOhV25Ui_fXykq2LI7P0WX4Y,383
+cdktf_cdktf_provider_google/_jsii/provider-google@0.4.22.jsii.tgz,sha256=V3ey5hsb3pabrLyFabx79nIozguEt22-GGfSuv18TeE,6906143
+cdktf_cdktf_provider_google-0.4.22.dist-info/LICENSE,sha256=qDABaRGjSKVOib1U8viw2P_96sIK7Puo426784oD9f8,15976
+cdktf_cdktf_provider_google-0.4.22.dist-info/METADATA,sha256=3igsqSk0O8gr3WI7jQOQHb46l555eK3RaSoWOLUPqtY,3955
+cdktf_cdktf_provider_google-0.4.22.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cdktf_cdktf_provider_google-0.4.22.dist-info/top_level.txt,sha256=gRkgdL9hTvTAgNJz3ClX33O8mLvipJ-MveDdcbcWGEc,28
+cdktf_cdktf_provider_google-0.4.22.dist-info/RECORD,,
