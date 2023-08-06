@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: sinnia-ig-fetcher
+Version: 0.2.5
+Summary: Sinnia IG Fetching Tools
+Home-page: https://github.com/sinnia/scripts/tree/develop/instagram
+Author: Sinnia
+Author-email: sonia.segura@sinnia.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Sinnia IG Fetcher
+
+To publish changes to this library in PyPi:
+
+https://packaging.python.org/tutorials/packaging-projects/#generating-distribution-archives
+Edit the version in setup.py. 
+'python3 -m pip install --upgrade build'
+'python3 -m pip install --user --upgrade twine'
+
+'python3 -m build'
+'python3 -m twine upload dist/sinnia_*'
+Auth must have been configured in $HOME/.pypirc
+
+Depend on this package: instagram-login-app
+
+
+
+Using Instagram Graph API and Instagram Basic Display API
+
+----
+
+Includes:
+
+For Businesses (Instagram Graph API):
+ - Get Media
+ - Get Competitors Media
+ - Get Top Media in Hashtag 
+
+For Basic Users (Instagram Basic Display API):
+ - Get Media
+
+----
+
+Usage:
+
+from ig.get_business_media import BusinessMediaFetcher
+from ig.get_business_competitors_media import CompetitorsMediaFetcher
+from ig.get_topmedia_in_hashtag import HashtagsMediaFetcher
+from ig.get_user_media import UserMediaFetcher
+
+fetcher = BusinessMediaFetcher()
+data_found = fetcher.process_business_media(db_connection, business_ig_id, access_token)
+
+fetcher = CompetitorsMediaFetcher()
+data_found = fetcher.process_competitors_media(db_connection, business_ig_id, competitor_name, access_token)
+
+fetcher = HashtagsMediaFetcher()
+data_found = fetcher.process_hashtags_media(db_connection, business_ig_id, hashtag, access_token)
+
+fetcher = UserMediaFetcher()
+data_found = fetcher.process_user_media(db_connection, user_ig_id, access_token)
+
+
+
+
