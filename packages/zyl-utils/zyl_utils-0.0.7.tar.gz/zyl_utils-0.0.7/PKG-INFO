@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zyl_utils
+Version: 0.0.7
+Summary: 自用utils
+Home-page: https://github.com/ZYuliang/zyl-utils
+Author: 张玉良
+Author-email: 1137379695@qq.com
+Maintainer: 张玉良
+Maintainer-email: 1137379695@qq.com
+License: UNKNOWN
+Platform: all
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# zyl-utils自用
+主要分为：
+- 数据（获取，处理，分析）
+- 模型（模型改进版，训练，预测，评估）
+- 部署（前端，后台，接口）
+- 其他（常用算法，常用方法,测试）
+
+
