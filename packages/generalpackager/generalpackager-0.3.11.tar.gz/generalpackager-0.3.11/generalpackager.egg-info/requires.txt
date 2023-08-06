@@ -1,0 +1,6 @@
+pandas
+generallibrary
+generalfile
+gitpython
+requests
+pyinstaller
