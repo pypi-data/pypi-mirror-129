@@ -1,0 +1,6 @@
+[elyra.component.catalog_types]
+elyra-kfp-examples-catalog = kfp_examples_connector.examples_connector:ExamplesCatalogConnector
+
+[metadata.schemas_providers]
+kfp-examples-catalog-schema = kfp_examples_connector.examples_schema_provider:ExamplesSchemasProvider
+
