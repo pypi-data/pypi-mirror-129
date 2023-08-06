@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: genagg
+Version: 0.0.1
+Summary: A Learnable, Generalised Aggregation Module
+Home-page: UNKNOWN
+Author: Ryan Kortvelesy
+Author-email: rk627@cam.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: torch-scatter
+
+UNKNOWN
+
