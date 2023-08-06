@@ -1,0 +1,10 @@
+riverboard/__init__.py,sha256=xksvo0IRTCzO7GJF3UfPzqJECfALB-KKv9OWkNQOvv4,134
+riverboard/cli.py,sha256=qF3yggmHQcnBKPVfbtPabE_qOizcQXLwNNOU6rAsiiY,408
+riverboard/riverboard.py,sha256=vj3DKHpxwOFLpa6r6pU0Jqz2vj3pWpzDDq4D2_INTaw,56
+riverboard-0.0.0.dist-info/AUTHORS.rst,sha256=fjYzEK40TuPaiVDoz6-RqeTBFJE_0y-q-4GUV7-EmCs,162
+riverboard-0.0.0.dist-info/LICENSE,sha256=0TWVmT-fYCn-fr0r-JS374Akat5_5BFggEoxULu_NEw,1509
+riverboard-0.0.0.dist-info/METADATA,sha256=wwTBg3amsNK_03CZoB9FLrJBzpVWkR6t_Dq0PSeddTE,1880
+riverboard-0.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+riverboard-0.0.0.dist-info/entry_points.txt,sha256=B3_y-oZSsAOeaMH6l31ORG2y_G3LkBkhf2q6A5h4mWw,52
+riverboard-0.0.0.dist-info/top_level.txt,sha256=uMMsvunbI7YG1y_goLyntd4yISjIcRESBe9qI1dB9JQ,11
+riverboard-0.0.0.dist-info/RECORD,,

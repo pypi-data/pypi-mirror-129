@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: riverboard
+Version: 0.0.0
+Summary: Board for River library
+Home-page: https://github.com/sylwekczmil/riverboard
+Author: Sylwester Czmil
+Author-email: sylwekczmil@gmail.com
+License: BSD license
+Keywords: riverboard
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Click (>=7.0)
+
+==========
+RiverBoard
+==========
+
+
+.. image:: https://img.shields.io/pypi/v/riverboard.svg
+        :target: https://pypi.python.org/pypi/riverboard
+
+.. image:: https://img.shields.io/travis/github/sylwekczmil/riverboard.svg
+        :target: https://travis-ci.com/sylwekczmil/riverboard
+
+.. image:: https://readthedocs.org/projects/riverboard/badge/?version=latest
+        :target: https://riverboard.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/sylwekczmil/riverboard/shield.svg
+     :target: https://pyup.io/repos/github/sylwekczmil/riverboard/
+     :alt: Updates
+
+
+
+Board for River library
+
+
+* Free software: BSD license
+* Documentation: https://riverboard.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.0 (2021-12-01)
+------------------
+
+* First release on PyPI.
+
+
