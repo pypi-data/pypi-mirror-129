@@ -1,0 +1,3 @@
+[console_scripts]
+generate_requirements_file = dependency_checker.pipreqs:generate_requirements_file
+
