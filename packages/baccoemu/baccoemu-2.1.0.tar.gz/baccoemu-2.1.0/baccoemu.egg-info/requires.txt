@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+sklearn
+packaging
+scikit-learn>=1.0.0
+tensorflow>=2.6.0
+setuptools
+progressbar2
