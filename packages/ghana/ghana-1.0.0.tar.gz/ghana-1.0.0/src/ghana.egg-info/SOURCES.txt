@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/ghana.py
+src/ghana.egg-info/PKG-INFO
+src/ghana.egg-info/SOURCES.txt
+src/ghana.egg-info/dependency_links.txt
+src/ghana.egg-info/top_level.txt
