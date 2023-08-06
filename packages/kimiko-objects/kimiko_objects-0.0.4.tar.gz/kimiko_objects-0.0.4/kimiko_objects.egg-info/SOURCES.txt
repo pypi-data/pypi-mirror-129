@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+kimiko_objects/__init__.py
+kimiko_objects/objects.py
+kimiko_objects.egg-info/PKG-INFO
+kimiko_objects.egg-info/SOURCES.txt
+kimiko_objects.egg-info/dependency_links.txt
+kimiko_objects.egg-info/top_level.txt
