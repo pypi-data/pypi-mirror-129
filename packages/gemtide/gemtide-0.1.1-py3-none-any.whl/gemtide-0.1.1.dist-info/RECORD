@@ -1,0 +1,15 @@
+gemtide/GemTideApplication.py,sha256=B0QOvq1SyUlK35LM5RxG20fYwj8GZzcboE5RQE1qF20,3616
+gemtide/__init__.py,sha256=HbSbGULv3nCqolMQ4GPiUbCWh6E0lhxIB1yN_sgV9Po,51
+gemtide/__main__.py,sha256=2w0oW5MmjaPJ0c_qrkeTyGNt5Fpb37JrSeloYDN4gYA,712
+gemtide/templates/footer,sha256=8pjiD0qlwLP31rGEl2jNTIQHTnnbhkIvXhspMWYHipg,77
+gemtide/templates/index,sha256=OmVJDJZv29BkSttApRcJxllQN81wb7X6sXTc7oa4uC8,218
+gemtide/templates/macros,sha256=rEToyAqO0JKmktpsBbQPZJ0Ky7IsKS91Am17q1W9X28,264
+gemtide/templates/search,sha256=ZfJmWTDv3fh2xT-lF7BrupemOVULvfvi99jbLiLhmbs,227
+gemtide/templates/station.gmi,sha256=sMSW8_275Lpkq1WbakL0GJ8DSYMaZReBKyT6Bm9sqW0,606
+gemtide/templates/station.txt,sha256=63gYtWdHEwfdb6X2iDJ-sknFvi1aTh4L5r8HdiR_SUE,527
+gemtide-0.1.1.dist-info/LICENSE,sha256=OpCaae3g0pmnaaaHkqD9OsvEPQzMqubgQF9UWQWAwnA,1057
+gemtide-0.1.1.dist-info/METADATA,sha256=5l9Yi7s-inDHiTHim-0dQqI5MSQex1acIqt7BovO9Gw,5907
+gemtide-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gemtide-0.1.1.dist-info/entry_points.txt,sha256=Coh6aAPCTTtdnKlEcgg32MzSyZULTndWvdx00pV1_vs,51
+gemtide-0.1.1.dist-info/top_level.txt,sha256=z9SU0MNqXW7Iluz0RqZ-r_6SKTcHOCgJizGz_I_PK04,8
+gemtide-0.1.1.dist-info/RECORD,,

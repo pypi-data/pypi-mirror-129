@@ -1,0 +1,13 @@
+# Search results
+
+{% for station in stations %}
+=> {{ station.name | station_uri("gmi") }} {{ station.name | title }}
+{% else %}
+No locations found
+{% endfor %}
+
+---
+
+=> search Find a different location
+
+{% include 'footer' %}

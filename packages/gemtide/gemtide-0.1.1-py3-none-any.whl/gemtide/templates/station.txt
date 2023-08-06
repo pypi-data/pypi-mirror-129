@@ -1,0 +1,15 @@
+{% from 'macros' import what_day_is_it with context %}
+{{ station.name | title }} Tide Times
+{% set ns = namespace(cur_date = None) %}
+{% for event in events -%} 
+	{% if ns.cur_date != event.datetime.date() %}
+		{% set ns.cur_date = event.datetime.date() %}
+
+{{ event.datetime.date() }} {{ what_day_is_it(event) }}
+
+	{% endif %}
+{{ event.datetime.strftime("%H:%M") }}	{{ event.event_type.replace("Water", "").ljust(4, ' ') }}{% if event.height %}	{{ event.height | round(2) }}m{% endif %}
+
+{% endfor %}
+
+{% include 'footer' %}

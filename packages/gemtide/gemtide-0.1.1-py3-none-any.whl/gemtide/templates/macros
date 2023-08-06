@@ -1,0 +1,9 @@
+{%- macro what_day_is_it(event) -%}
+        {%- if event.datetime.date() == dates.today -%}
+Today
+        {%- elif event.datetime.date() == dates.tomorrow -%}
+Tomorrow
+        {%- else -%}
+{{ event.datetime.strftime("%A") }}
+        {%- endif -%}
+{%- endmacro -%}
