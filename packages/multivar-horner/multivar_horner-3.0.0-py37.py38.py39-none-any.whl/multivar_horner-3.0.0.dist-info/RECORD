@@ -1,0 +1,10 @@
+multivar_horner/__init__.py,sha256=Kt7PPQLJZl_HDcr-iDjPUYkhCe-sLd-_V4u9bdQgd-E,363
+multivar_horner/c_evaluation.py,sha256=DKDMzmdJdSYgtPoEhtsKsyQ2sJ8jAGW2RhnOuMuRjAo,3231
+multivar_horner/global_settings.py,sha256=P27oUH_tUQ3fB3n7NsMMbwDAUizBxXIv1RKFgY8BD3E,688
+multivar_horner/helper_fcts.py,sha256=K_ZgTWW0pDkJlRqnQ2E650YPutsKv4UDqhi8ESzurNI,3674
+multivar_horner/helpers_fcts_numba.py,sha256=oH3p8B-h_LkwVrv6Sk75y4yueGxDpoEx2ycf42NB5lo,9262
+multivar_horner-3.0.0.dist-info/LICENSE,sha256=nqihLe6hsjLWOYgeNbBUD4Z4MV68wnBTqdg1m9eK0EA,1056
+multivar_horner-3.0.0.dist-info/METADATA,sha256=g9S7dTg8G0X3nVhZHb3Cl0zIUuOhoI6mitXe9QyHLos,1913
+multivar_horner-3.0.0.dist-info/WHEEL,sha256=ekOwHJV1jCmlsp6HFrRWImr76edVUTFBXGunbkqeqxc,131
+multivar_horner-3.0.0.dist-info/top_level.txt,sha256=IFv9YNRAdRcn1Jx3Wy9qpFRxqsTLg9mEFLzIPBuavLA,16
+multivar_horner-3.0.0.dist-info/RECORD,,
