@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: compu-methods
+Version: 0.0.1
+Summary: ASAM, Autosar, MSRSW CompuMethods
+Home-page: https://github.com/christoph2/compu-methods
+Author: Christoph Schueler
+Author-email: cpu12.gems@googlemail.com
+Maintainer: Christoph Schueler
+Maintainer-email: cpu12.gems@googlemail.com
+License: GNU General Public License v3
+Keywords: compu_methods
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black
+Requires-Dist: coverage
+Requires-Dist: sphinx
+Requires-Dist: twine
+Requires-Dist: wheel
+Requires-Dist: chardet
+
+compu-methods
+#############
+
+ASAM, Autosar, MSRSW CompuMethods
+
+
+Quickstart
+==========
+
+compu-methods is available on PyPI and can be installed with `pip <https://pip.pypa.io>`_.
+
+.. code-block:: console
+
+    $ pip install compu_methods
+
+After installing compu-methods you can use it like any other Python module.
+
+Here is a simple example:
+
+.. code-block:: python
+
+    import compu_methods
+    # Fill this section in with the common use-case.
+
+The `API Reference <http://compu_methods.readthedocs.io>`_ provides API-level documentation.
+
+
+.. _change-log-label:
+
+Change Log
+==========
+
+Version History
+---------------
+
+0.0.1
+    * Project created.
+
+
