@@ -1,0 +1,10 @@
+numthreads=1000
+msin.datacolumn=DATA
+
+msout=.
+msout.datacolumn=DATA
+
+steps=[predict]
+predict.type=predict
+predict.sourcedb=
+predict.sources=
