@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/perceptron_pypi_package/__init__.py
+src/perceptron_pypi_package/perceptron.py
+src/pypi_package_creation_arjunaju123.egg-info/PKG-INFO
+src/pypi_package_creation_arjunaju123.egg-info/SOURCES.txt
+src/pypi_package_creation_arjunaju123.egg-info/dependency_links.txt
+src/pypi_package_creation_arjunaju123.egg-info/requires.txt
+src/pypi_package_creation_arjunaju123.egg-info/top_level.txt
