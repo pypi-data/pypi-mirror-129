@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: python-qiwi
+Version: 0.0.2
+Summary: library for easy work with qiwi wallet
+Home-page: https://github.com/lev007-ops/python-qiwi
+Author: Lev
+Author-email: lev_bariakh@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-qiwi
+## **RU** vercion
+### Билиотека python-qiwi используется для удобной работы с api QIWI кошелька
+____
+
+### Установка:
+```pip install python-qiwi```
+
+### Создание объекта wallet:
+```python
+import python_qiwi
+phone = '+79021234567' # номер телефон
+token = 'token' # токен полученный на сайте https://qiwi.com/api
+wallet = python_qiwi.qiwi_wallet(phone, token)
+```
+### Получение баланса кошелька
+```python
+
+```
+
+
