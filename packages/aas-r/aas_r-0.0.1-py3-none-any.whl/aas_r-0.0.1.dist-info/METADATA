@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aas-r
+Version: 0.0.1
+Summary: Faster Get Requests with AIOHTTP
+Home-page: UNKNOWN
+Author: Xeouz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Faster Get Requests with AIOHTTP
+## > Used in Ultron-Bot to interact with APIs Faster
+## > Easy to Use, Fast and Asynchronous
+## > No Docs
+
