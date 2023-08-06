@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpythonpro01/__init__.py
+libpythonpro01/github_api.py
+libpythonpro01.egg-info/PKG-INFO
+libpythonpro01.egg-info/SOURCES.txt
+libpythonpro01.egg-info/dependency_links.txt
+libpythonpro01.egg-info/not-zip-safe
+libpythonpro01.egg-info/requires.txt
+libpythonpro01.egg-info/top_level.txt
+libpythonpro01/tests/__init__.py
+libpythonpro01/tests/test_exemplos.py
