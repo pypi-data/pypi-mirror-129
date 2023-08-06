@@ -1,0 +1,19 @@
+[orch]
+    version = "v1"
+    debug = false
+    [orch.client]
+        client_id = "0"
+        [orch.client.gateway]
+            port = "None"
+            baud = 115200
+
+     [orch.http]
+        host = "localhost"
+        port = "5000"
+
+     [orch.control]
+        rate_hz = 3
+
+
+    [orch.demo]
+        dotbots = ["C5:30:36:02:AA:B9", "ED:B7:50:B8:30:91"]

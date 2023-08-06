@@ -1,0 +1,3 @@
+[console_scripts]
+orchestrator_http = dotbot.orchestrator.server:main_app
+
