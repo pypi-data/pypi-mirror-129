@@ -1,0 +1,9 @@
+scipy
+numpy
+jupyter
+pymatgen
+numpy
+matplotlib
+coverage
+coveralls
+seaborn
