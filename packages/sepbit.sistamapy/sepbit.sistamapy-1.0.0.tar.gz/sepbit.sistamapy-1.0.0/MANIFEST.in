@@ -1,0 +1,3 @@
+include *.md
+include COPYING .env
+recursive-include doc *.md

@@ -1,0 +1,16 @@
+.env
+CHANGELOG.md
+COPYING
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sepbit.sistamapy.egg-info/PKG-INFO
+sepbit.sistamapy.egg-info/SOURCES.txt
+sepbit.sistamapy.egg-info/dependency_links.txt
+sepbit.sistamapy.egg-info/not-zip-safe
+sepbit.sistamapy.egg-info/requires.txt
+sepbit.sistamapy.egg-info/top_level.txt
+sepbit/sistamapy/__init__.py
+sepbit/sistamapy/statuses.py
+test/test_statuses.py
