@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: laughbag
+Version: 0.0.1
+Summary: Laughbag Python Web Framework built for learning purposes.
+Home-page: UNKNOWN
+Author: CHI-HUI CHOU
+Author-email: afai97202013@gmail.com
+License: MIT
+Description: 
+        # Laughbag
+        
+        
+        ## Features
+        
+        ### Request and Response
+        
+        * custom response class
+        
+        ### Routing
+        
+        ### Handler
+        
+        * class handler
+        
+        * function handler supporting allowed methods
+        
+        ### Test Client
+        
+        
+        ### Template 
+        
+        ### Exception Handler
+        
+        ### Static Files
+        
+        ### Middleware
+        
+        
+        ## ToDo
+        
+        
+        * Cookies / Session
+        
+        * Database
+        
+        * File Upload
+        
+        * Error Handler
+        
+        * Rate Limit
+        
+        * Websocket
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
