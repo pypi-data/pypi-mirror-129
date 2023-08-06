@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: negosaki-lib
+Version: 0.0.5.1
+Summary: A simple python package with some useful functions, etc
+Home-page: https://github.com/christofferaakre/negosaki-lib
+Author: Christoffer Aakre
+Author-email: christoffer.corfield@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/christofferaakre/negosaki-lib/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Negosaki Lib
+This is a simple Python pacakge I maintain. It is only intended
+for my own personal use, but it is released
+    under the MIT License
+
+## Installing
+Install with pip: `pip install negosaki-lib`<br>
+You can see the pacakge on [pypi](https://pypi.org/project/negosaki-lib/)
+
+

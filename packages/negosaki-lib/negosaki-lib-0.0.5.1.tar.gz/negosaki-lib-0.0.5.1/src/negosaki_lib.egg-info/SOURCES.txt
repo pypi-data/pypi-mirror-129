@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/negosaki/__init__.py
+src/negosaki/colors.py
+src/negosaki/example.py
+src/negosaki/primes.py
+src/negosaki/utils.py
+src/negosaki_lib.egg-info/PKG-INFO
+src/negosaki_lib.egg-info/SOURCES.txt
+src/negosaki_lib.egg-info/dependency_links.txt
+src/negosaki_lib.egg-info/top_level.txt
