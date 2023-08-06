@@ -1,0 +1,7 @@
+include jais/configs/*.*
+include jais/data/*.*
+include jais/evaluate/*.*
+include jais/examples/*.*
+include jais/models/*.*
+include jais/train/*.*
+include jais/visualize/*.*

@@ -1,0 +1,35 @@
+bs: 64  # Batch Size
+
+data:
+  img: [224, 224, 3]
+  normalize: True
+  mean: [0.485, 0.456, 0.406]  # ImageNet mean
+  std: [0.229, 0.224, 0.225]  # ImageNet std
+
+model:
+  dp: 0.2  # Dropout
+
+train:
+  lr: 1e-3  # Learning Rate
+  wd: 1e-4  # Weight Decay
+  mom: 0.9  # Momentum
+
+seed: 47
+project_name: jais
+
+log: # logging default settings
+  name: JAISLogger # Name of the logger. Name must be same as logs.conf 
+  filename_prefix: jais_log
+  training_log_filename_prefix: training_log
+  # Number of recent log files to keep. Rest will be deleted from `logs_dir`
+  keep_n_recent_logs: 5
+
+paths:  #* FULL PATHS TO FOLDERS AND FILES
+  home_dir: &home_dir !homedir  # User home folder path. e.g. `/home/<username>/` in linux
+  cache_dir: &cache_dir !joinpath [*home_dir, .jais]
+  root_dir: &root_dir !rootdir # JAIS package path
+  cwd: &cwd !cwd  # Current Working Directory
+  
+  logs_dir: !joinpath [*cwd, logs]
+  data_dir: !joinpath [*cwd, data]
+  

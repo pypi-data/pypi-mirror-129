@@ -1,0 +1,14 @@
+ruamel.yaml
+easydict
+pyfiglet
+click
+numpy
+pandas
+matplotlib
+plotly
+jupyter
+notebook
+ipywidgets
+ipykernel
+rich[jupyter]
+wandb
