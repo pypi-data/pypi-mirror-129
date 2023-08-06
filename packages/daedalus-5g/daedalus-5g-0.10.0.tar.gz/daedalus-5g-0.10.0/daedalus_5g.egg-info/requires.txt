@@ -1,0 +1,6 @@
+PyInquirer==1.0.3
+docker-compose==1.29.2
+docker==5.0.3
+dovesnap==1.0.4
+pbr==5.8.0
+plumbum==1.7.1
