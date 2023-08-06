@@ -1,0 +1,16 @@
+simple_env_setup/main.py,sha256=fgnfqo8DiZYiDrLHW3gojE_ZeAc4lddRPWPSF1ptRj8,1038
+simple_env_setup/recipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_env_setup/recipes/rust.py,sha256=ZhEd9Nqa814JGlbcX1hn5j4mjvF7556GvKdKgek5r_k,1746
+simple_env_setup/recipes/zsh.py,sha256=36VniGWREGAa8TR0tuy76wxvO-QrKdn95sj1wZ-brO0,2893
+simple_env_setup/resources/.gitconfig,sha256=Zd-dntXVouDs4xPAmg3VWJ_qU28A-nGhbrWlyrW8c2s,137
+simple_env_setup/resources/.shellrc,sha256=JJzpjafk7Cit06Ds2Yt-3iTCYWZCQ3B_saDCr8JgbQg,1605
+simple_env_setup/resources/.zshrc,sha256=gu1RkBsd9YoeDZrbh-gAhtGcOXqMf6yegQJE5o5gPyk,146
+simple_env_setup/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_env_setup/resources/starship.toml,sha256=dOSoRKL5hBxYhL6cYerUFAtjSgfVdfgVawGnBlQjtFA,468
+simple_env_setup/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_env_setup/utils/rc.py,sha256=7ItfQdJQi4OjUCovaZu1o4hwEipPHmGF0jx7Qxr5hW8,6150
+simple_env_setup/utils/utils.py,sha256=382HyumtPk2p1wpHqZ6qhXEYXSj2KgKCaTMI1yagBAM,5302
+simple_env_setup-0.1.3.dist-info/entry_points.txt,sha256=LZN0jW6iVxdJ7ka2X12thhFczYIEqh5RsZMdzhgAR2M,56
+simple_env_setup-0.1.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+simple_env_setup-0.1.3.dist-info/METADATA,sha256=86YTf3E61U-ib6IxO02rKr5fmn6rUwah3aJW2wvUrVM,394
+simple_env_setup-0.1.3.dist-info/RECORD,,
