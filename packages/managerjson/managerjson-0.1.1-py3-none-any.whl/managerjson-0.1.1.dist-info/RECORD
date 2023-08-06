@@ -1,0 +1,10 @@
+jsonmanager/__init__.py,sha256=weyQZefJyBgX1smxJN7b_jrglsHB8cU8fwQZJeFu8ck,107
+jsonmanager/jsonmanager.py,sha256=Rd-jM9Suudyt9QtfhlC8md4Nr5V2HZ0OK7WkTnY0Bl8,2437
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/example_complex_dicts.py,sha256=Gnz-yEvxFXAvgn5Ra8O3CzTkBfWwBQehbHe1DPHWTU4,5656
+tests/test_jsonmanager.py,sha256=g-teXwv9On8cH58CKSGBj17qtuK039uyyz1HS0pPHWI,1034
+managerjson-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+managerjson-0.1.1.dist-info/METADATA,sha256=Nh9Fr7wZ4vXhsRMRnXhrOJ6PppTex1m_eTugQQb-4-M,4685
+managerjson-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+managerjson-0.1.1.dist-info/top_level.txt,sha256=BWkpCYgAR7pj7n2uIeBz3dMjZdvmFBfwr6bbBoWNgNM,18
+managerjson-0.1.1.dist-info/RECORD,,
