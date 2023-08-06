@@ -1,0 +1,11 @@
+qq/__init__.py,sha256=0jTUmakgpnm7zGeybxPQxYZN0PAitKqusW7f1Z-WY1s,202
+qq/aiorequests.py,sha256=mAs5B3UETEr61-dpPvYna6cj3ffWjFq44bTSiK9YAhU,3028
+qq/client.py,sha256=CN6YBpEUrLba7JWu3qx-8Ox3q7fYfyAJtAyvc1lrc0k,696
+qq/error.py,sha256=WvPqacvjssHElINs3M-AH8TsXPsn00AmmenddKxgSXU,5879
+qq/guild.py,sha256=E59q3twECMp_5iqscpaZxEsRfO__Ld6ISEje0Xo0ExQ,1442
+qq/http.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qq.py-0.0.1.dist-info/LICENSE,sha256=pYB3ggJJTgOq60_Tx3Io2nt_J78THRlY0sotC87eFww,1102
+qq.py-0.0.1.dist-info/METADATA,sha256=y3LgG3c7BGC47xVWN_ULPDBGooiJlIqeSLOqUczIhYM,1488
+qq.py-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+qq.py-0.0.1.dist-info/top_level.txt,sha256=OY2S7O0LDnNztwuLlriCzx4TEAvrhEtMg9ucg9Jt8H0,3
+qq.py-0.0.1.dist-info/RECORD,,
