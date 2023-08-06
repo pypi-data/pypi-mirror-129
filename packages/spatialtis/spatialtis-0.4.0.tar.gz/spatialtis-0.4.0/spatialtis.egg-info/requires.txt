@@ -1,0 +1,16 @@
+anndata
+numpy
+pandas
+scipy
+rich[jupyter]
+spatialtis_core
+milkviz
+
+[all]
+scikit-image
+ray
+lightbgm
+
+[dev]
+pytest
+pytest-cov
