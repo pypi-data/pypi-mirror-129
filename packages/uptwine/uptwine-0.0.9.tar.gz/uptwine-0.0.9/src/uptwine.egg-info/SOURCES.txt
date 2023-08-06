@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+assets/cmd.svg
+docs/documentation.md
+src/__init__.py
+src/uptwine.py
+src/uptwine.egg-info/PKG-INFO
+src/uptwine.egg-info/SOURCES.txt
+src/uptwine.egg-info/dependency_links.txt
+src/uptwine.egg-info/requires.txt
+src/uptwine.egg-info/top_level.txt
+tests/test_configfile.py
+tests/test_opencfg.py
+tests/test_update.py
