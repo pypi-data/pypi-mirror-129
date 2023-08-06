@@ -1,0 +1,3 @@
+[console_scripts]
+neural-style-transfer = artificial_artwork.cli:cli
+
