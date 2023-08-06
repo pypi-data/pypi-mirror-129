@@ -1,0 +1,13 @@
+AcdhArcheAssets/__init__.py,sha256=ezPnATLnPWOk_hqm7v0YmtRYMxYyzXGY_MtD47kAiRs,31
+AcdhArcheAssets/file_formats.py,sha256=tg40SrOCldN1Ubzz56Z9S3uL5OcNbnYnst_LUPW1Ask,1020
+AcdhArcheAssets/formats.json,sha256=7IumaDgkrpa43mFp6DGSvrjKWaO4352XI_GeK5zJiiA,22521
+AcdhArcheAssets/uriNormRules.json,sha256=1Fwb3AytpzOpuDzDsnqIK83DitCJ4KpiTucdrNxKj7c,1708
+AcdhArcheAssets/uri_norm_rules.py,sha256=BixGVKi6pNqYKKechsP-XG73H6fzYQas81YOUAiGYDA,582
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_file_formats.py,sha256=lmEGAgJFCDj0asoT7WLDoOHiSUvriPXtbcFB2CggXQs,719
+tests/test_normalizer.py,sha256=bpxyi8ymGwDAOiY44V4dyifVav-JUX9Zy-YgnzjOoBI,747
+acdh_arche_assets-3.2.1.dist-info/LICENSE,sha256=Ryd90ykPgL15kWkWQMVNJNcsU403vcsNMdMMaJrEZ30,1115
+acdh_arche_assets-3.2.1.dist-info/METADATA,sha256=rRkQLFQ7JHmtD9zBJ99WSTQvu3s8ek2PbmJe8CQ5NsQ,4596
+acdh_arche_assets-3.2.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+acdh_arche_assets-3.2.1.dist-info/top_level.txt,sha256=8J3h95Haxp-ZGzjUlDckWt49UwLxp5FWI1zfpJnPwH4,22
+acdh_arche_assets-3.2.1.dist-info/RECORD,,
