@@ -1,0 +1,14 @@
+ddpw/__init__.py,sha256=9jk04EjYoTfFF2jg-Fd2GvQxtrHYwR1s-U5SUE9u6O0,436
+ddpw/__logger.py,sha256=qb_W-catO_Y6sX_r2kSRdaOSiyc-OClThFe_8N3SNns,985
+ddpw/__parallelit.py,sha256=aVaY6vE-hbJjzvum1wz4zDvMobXwPtMTGU1W-2sibmA,4087
+ddpw/__platform.py,sha256=DBspumiXJJC1vNkPu2jwlddi02CkcrzTx85FXGY0DCw,261
+ddpw/__trainer.py,sha256=tXPEidbhHp_3C58u8rsT7vab4t0GovxhWbsfttv9cTU,2478
+ddpw/__wrapper.py,sha256=dYGIgTzU-zMDWtbl_vj3sNKqPVbEwV_2TLSEv11s28Q,11202
+ddpw/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddpw/utils/chalk.py,sha256=qTQMdMC6PPRfro9pBE9n2hgAB-hG46hb1nw0gGB73dg,2015
+ddpw/utils/torchtils.py,sha256=TTau_hCiQ60LyQDyMOlaz6v111tiNe57sD3fWB61Wog,1000
+ddpw-1.0.1.dist-info/LICENCE.md,sha256=WTNGO6CJsdiBp21E6eWA1YRUGeC-KVtTR_yZgZS6J1Q,1095
+ddpw-1.0.1.dist-info/METADATA,sha256=kDTeQYyFg0AjRcnhZXnwl4uxT5HqPEptkpI9mGU9AQM,1898
+ddpw-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ddpw-1.0.1.dist-info/top_level.txt,sha256=v-9bC8cIzPVK3CfHULdDCHohv0O2aXxO1lynatGCnMw,5
+ddpw-1.0.1.dist-info/RECORD,,
