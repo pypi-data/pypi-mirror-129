@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: asyncns
+Version: 0.0.6
+Summary: An async API wrapper for NationStates
+Home-page: https://github.com/AavHRF/asyncns
+Author: Aav
+Author-email: aav.verinhall@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AavHRF/asyncns/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Welcome to `asyncns`!
+
+## Useful Links
+* [GitHub](https://github.com/AavHRF/asyncns)
+* [pypi](https://pypi.org/project/asyncns/)
+* [The Docs](https://aavhrf.github.io/asyncns/)
+
+## FAQs:
+
+### What is `asyncns`?
+`asyncns` is an asynchronous API wrapper for [NationStates](https://www.nationstates.net/).
+
+### Why is `asyncns` useful?
+`asyncns` is useful for:
+* Applications that need to make API calls to NationStates, but don't want to block the main thread.
+* That's about it, really.
+
+This is not a library that's helpful for much. It's just a wrapper for NationStates.
+
+### Should I use `asyncns`?
+I guess. If you need to make async requests, there aren't that many options out there other than writing your own.
+
+### What dependencies does `asyncns` have?
+* `aiohttp`
+
