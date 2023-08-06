@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: py-cord-components
+Version: 2.1.31
+Summary: An unofficial library for py-cord components.
+Home-page: https://github.com/spacedev-official/py-cord-components
+Author: SpaceDev
+Author-email: support@spacedev.space
+License: MIT License
+Requires-Dist: py-cord
+Requires-Dist: aiohttp
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Requires-Dist: sphinx ; extra == 'lint'
+Requires-Dist: sphinx-rtd-theme ; extra == 'lint'
+Provides-Extra: readthedocs
+Requires-Dist: sphinx ; extra == 'readthedocs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'readthedocs'
+
+![logo](https://raw.githubusercontent.com/spacedev-official/py-cord-components/master/.github/logo.png)
+
+
