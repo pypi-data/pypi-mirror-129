@@ -1,0 +1,3 @@
+[console_scripts]
+py_elephants = py_elephants.__main__:main
+
