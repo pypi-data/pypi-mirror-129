@@ -1,0 +1,13 @@
+era5cli/__init__.py,sha256=u4_lt6DvDu3ScP7hM0PBzM1aP8aUI-lvDMglozdgNqo,61
+era5cli/__version__.py,sha256=ulpLg0v7JXJfa1WYctoMTvjx3kkYK4CuivEVx_8XgVQ,671
+era5cli/cli.py,sha256=onQSUeRTVgVwoULsgFZPODTN97RobxZuDkUUFW6GOV4,15264
+era5cli/fetch.py,sha256=9YwNie8LIregD2mUD2y9JLe8-NBobTRu225LKS0Sw_c,17251
+era5cli/info.py,sha256=0I4mKCfayu8_A2l0xcWXEm3aASyjwtRTzJzuWXoOMM8,2352
+era5cli/inputref.py,sha256=A5ydP5-G410QL8Fw3gvpJg2H36KBA3cEptDQUNk2WeM,15178
+era5cli/utils.py,sha256=sYuy8WeE4OGQN0tNwXn8X7GCn2T8vM78YtE3aj8BLFo,5537
+era5cli-1.3.0.dist-info/LICENSE,sha256=t1uTubggBti9pWzkAX-G728NbKRwDXUgrtzQLPfFRe4,11359
+era5cli-1.3.0.dist-info/METADATA,sha256=dy4VQ7AOzPZiXV7SLVCgR3H7s6oGgFM08tutwcQazZY,3544
+era5cli-1.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+era5cli-1.3.0.dist-info/entry_points.txt,sha256=suFLm_eBJ6_TdzGaEglMUkCLGYv3NJjTid92_KgB1ec,46
+era5cli-1.3.0.dist-info/top_level.txt,sha256=NiGxuABOoAOSG37QnQlrLZCcNn2GclSBRWh6uSt4kFM,8
+era5cli-1.3.0.dist-info/RECORD,,
