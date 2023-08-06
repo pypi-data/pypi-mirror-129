@@ -1,0 +1,13 @@
+.gitignore
+README.md
+file.txt
+setup.py
+images/1.png
+logical/__init__.py
+logical/expression.py
+pylogical.egg-info/PKG-INFO
+pylogical.egg-info/SOURCES.txt
+pylogical.egg-info/dependency_links.txt
+pylogical.egg-info/top_level.txt
+tests/test1.py
+tests/test2.py

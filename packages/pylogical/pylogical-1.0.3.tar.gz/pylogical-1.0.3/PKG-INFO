@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pylogical
+Version: 1.0.3
+Summary: 逻辑表达式计算
+Home-page: https://gitee.com/youfani/logical
+Author: niyoufa
+Author-email: niyoufa@aegis-data.cn
+License: BSD
+Description: UNKNOWN
+Platform: python 3.6
