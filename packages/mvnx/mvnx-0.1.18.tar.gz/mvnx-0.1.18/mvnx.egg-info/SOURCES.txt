@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mvnx.egg-info/PKG-INFO
+mvnx.egg-info/SOURCES.txt
+mvnx.egg-info/dependency_links.txt
+mvnx.egg-info/entry_points.txt
+mvnx.egg-info/requires.txt
+mvnx.egg-info/top_level.txt
