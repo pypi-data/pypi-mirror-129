@@ -1,0 +1,10 @@
+napari_labelimg4classification/__init__.py,sha256=0PFDNbhh3lUY5UJ5zIXosAUcy48z18lr_nrt3DmculU,170
+napari_labelimg4classification/_dock_widget.py,sha256=YB2DA3vvypc02LZz2q07-16E9UF2W1C9BdS5m6vWo9Q,6385
+napari_labelimg4classification/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_labelimg4classification/_tests/test_dock_widget.py,sha256=NjJRDKGeqWDtAc2b4CXEYSQDBl72wL7UuhmWr6DbUGk,747
+napari_labelimg4classification-0.1.1.dist-info/LICENSE,sha256=klrcC0pOW2Yzj32jbVqJc5L7-ZW_sZ3TDYD8yGWv6D4,1080
+napari_labelimg4classification-0.1.1.dist-info/METADATA,sha256=9ZCgAFJke5_iZ6hyw42osJaOL6AseW-HibMMgj_m8mA,5501
+napari_labelimg4classification-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+napari_labelimg4classification-0.1.1.dist-info/entry_points.txt,sha256=Ec5KZHJborJmZbGoRz6vIPbiTGQ8N5AoiuesNNYiObw,81
+napari_labelimg4classification-0.1.1.dist-info/top_level.txt,sha256=yT_2G8LaY0M4jMDJSO8k_deEn3PwljTDFq5odwe7jYQ,31
+napari_labelimg4classification-0.1.1.dist-info/RECORD,,

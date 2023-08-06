@@ -1,0 +1,1 @@
+napari_labelimg4classification
