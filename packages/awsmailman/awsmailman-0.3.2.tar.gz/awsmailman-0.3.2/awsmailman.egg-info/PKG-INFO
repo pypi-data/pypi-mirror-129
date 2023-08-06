@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: awsmailman
+Version: 0.3.2
+Summary: A utility for updating domain registrant information in Amazon Route 53
+Home-page: https://github.com/fernando-mc/aws-mailman
+Author: Fernando Medina Corey
+Author-email: fernandomc.sea@gmail.com
+License: MIT
+Keywords: AWS,Route53,Domains
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AWS Mailman
+
+A utility for updating domain registrant information in Amazon Route 53.
+
+## Requirements
+
+- You must have the AWS CLI Installed
+- You must have AWS credentials with the appropriate permissions setup locally
+
+## Usage
+
+Run `awsmailman` and follow the prompts.
+
+## Purpose
+
+When you move, changing the addresses for the registered contacts on all of your Route53 domains is a pain. This script will update all the contacts on any Route 53 domains for you.
+
+## Quirks
+
+- This uses the default AWS CLI credentials on your machine
+- At the moment you have to use the same name as is currently provided in your domain registration. The address may change.
+
+## New Features
+
+Open a PR!
+
