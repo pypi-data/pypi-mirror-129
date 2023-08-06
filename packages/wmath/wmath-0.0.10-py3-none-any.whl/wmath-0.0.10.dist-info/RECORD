@@ -1,0 +1,12 @@
+wmath/__init__.py,sha256=wS_jxdGdgcTwVuS-Swwng8A8RTPCjP_yjq19v1KBcpo,2035
+wmath/fraction.py,sha256=Y2Ebu6vWCC3zg5zbC58gbkA_Yr4u_7k_Cc5OfaMQtDA,8117
+wmath/matrix.py,sha256=7toYE5iFDbLx4kXf3XBCqCwzAc-qyswdSL1Gf2YR1pU,27068
+wmath/meta.py,sha256=Lncn2QVq7fYfci7stCup2jfNYplnbN-c8b6JgNY3mVY,8810
+wmath/number_theory.py,sha256=DuYaSPlu1d9aUSvPTJHAXTYZigyTm6vsU0az_YiA0OU,6208
+wmath/paradigm.py,sha256=7wlx_UkZhlNHNiOltpsQQp-9djhMABUJa9IAAP-TxrQ,287
+wmath/polynomial.py,sha256=nsXDQ7ifHOVlR62qDIkAQw4hLVVloWBNTy_IAeFv8-4,17081
+wmath-0.0.10.dist-info/LICENSE,sha256=H8F1MEhOwRj41x48IkZD51o50PZV3SKrAIBVXDSUius,1063
+wmath-0.0.10.dist-info/METADATA,sha256=VziUqkSb_evGCVzERbGzBfbphQCYOIKrsVs2QskFHdg,20917
+wmath-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+wmath-0.0.10.dist-info/top_level.txt,sha256=cwuJVBkfRMimB25BDKst0NGN3NuVgRJrTmeLViQ1-WU,6
+wmath-0.0.10.dist-info/RECORD,,
