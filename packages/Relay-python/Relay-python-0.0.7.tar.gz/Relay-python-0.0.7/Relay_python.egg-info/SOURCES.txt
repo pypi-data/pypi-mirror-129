@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Relay_python.egg-info/PKG-INFO
+Relay_python.egg-info/SOURCES.txt
+Relay_python.egg-info/dependency_links.txt
+Relay_python.egg-info/requires.txt
+Relay_python.egg-info/top_level.txt
+relay/__init__.py
+relay/client.py
+relay/exceptions.py
+relay/resources.py
