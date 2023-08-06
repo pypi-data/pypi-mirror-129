@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: helloworld-jia
+Version: 0.0.3
+Summary: Say hello!
+Home-page: https://github.com/judy2k/helloworld
+Author: Mark Smith
+Author-email: mark.smith@vonage.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: blessings (~=1.7)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# Hello World
+
+This is an example project demonstrating how to publish a python module to PyPI.
+
+## Installation
+
+Run the following to install:
+
+```python
+pip install helloworldjia
+```
+
+## Usage
+
+```python
+from helloworldjia import say_hello
+
+# Generate "Hello, World!"
+say_hello()
+
+# Generate "Hello, Everybody!"
+say_hello("Everybody")
+```
+
+
