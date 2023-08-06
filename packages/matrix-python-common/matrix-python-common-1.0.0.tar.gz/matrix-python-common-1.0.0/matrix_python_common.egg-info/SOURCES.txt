@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+matrix_python_common.egg-info/PKG-INFO
+matrix_python_common.egg-info/SOURCES.txt
+matrix_python_common.egg-info/dependency_links.txt
+matrix_python_common.egg-info/requires.txt
+matrix_python_common.egg-info/top_level.txt

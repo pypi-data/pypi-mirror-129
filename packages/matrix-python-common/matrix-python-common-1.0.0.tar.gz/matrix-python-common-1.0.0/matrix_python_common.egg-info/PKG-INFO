@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: matrix-python-common
+Version: 1.0.0
+Summary: "Common utilities for Synapse, Sydent and Sygnal"
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: dev
+
+UNKNOWN
+
