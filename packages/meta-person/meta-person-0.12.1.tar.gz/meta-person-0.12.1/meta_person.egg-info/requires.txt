@@ -1,0 +1,12 @@
+numpy
+torch
+opencv-python
+scikit-image
+torchvision
+Pillow
+lap
+onnx
+onnxruntime
+cython
+cython_bbox
+loguru

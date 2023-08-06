@@ -1,0 +1,8 @@
+README.md
+setup.py
+meta_person.egg-info/PKG-INFO
+meta_person.egg-info/SOURCES.txt
+meta_person.egg-info/dependency_links.txt
+meta_person.egg-info/requires.txt
+meta_person.egg-info/top_level.txt
+meta_person.egg-info/zip-safe
