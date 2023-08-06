@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: loopedlist
+Version: 0.0.1
+Summary: Adds looped containers to Python 3.x
+Home-page: https://github.com/Dead-Ded/loopedlist
+Author: Kartuz
+Author-email: musailov2004@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# loopedlist
+Looped containers for Python 3.x
+
+
