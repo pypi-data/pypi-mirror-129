@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/genshin_lfk/__init__.py
+src/genshin_lfk/hello.py
+src/genshin_lfk.egg-info/PKG-INFO
+src/genshin_lfk.egg-info/SOURCES.txt
+src/genshin_lfk.egg-info/dependency_links.txt
+src/genshin_lfk.egg-info/top_level.txt
