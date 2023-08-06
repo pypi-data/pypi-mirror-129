@@ -1,0 +1,11 @@
+django_permanent_helpers/__init__.py,sha256=cDW3ar1ZS1slsox6D8PzctiAJ8v4lAUeLLG3Y7XcIk0,52
+django_permanent_helpers/admin.py,sha256=IjY2vIHkrcrFjZFqDmrUAgC_zxhQrA3ZDWLMfWGFgbw,4140
+django_permanent_helpers/apps.py,sha256=7Pb1HvtYV1WMVKylKy7GFVZgS3VN5EQKvgIcGZs0MFY,296
+django_permanent_helpers/locale/ru/LC_MESSAGES/django.po,sha256=C3sX8zUsvJth1tnV5wkOmY1MU07L-MDh7lmB76-sF9M,1170
+django_permanent_helpers/templates/django_permanent_helpers/restore_selected_confirmation.html,sha256=jEWnUQMIyShtvk__6DDuGy6UOVV2MZlspRj6P54FV84,656
+django_permanent_helpers-1.0.0.dist-info/AUTHORS,sha256=u1cm9Cmz96QJrvwR51crep7BQVjK_jy9A8gXmJkalNE,37
+django_permanent_helpers-1.0.0.dist-info/LICENSE,sha256=CZPlYtPHeGvHL9aVHMypfIZUkaMmq_SWL4VfHXo5QSY,1069
+django_permanent_helpers-1.0.0.dist-info/METADATA,sha256=EICe-WJ5CGxc0uRh06Ocp3T2f_m8N8w5OWYMyfNU6Ew,3621
+django_permanent_helpers-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_permanent_helpers-1.0.0.dist-info/top_level.txt,sha256=oqyFEPiPkXPPXw09tmYyy-XB9n03IZz2GHJeHy6Hst4,25
+django_permanent_helpers-1.0.0.dist-info/RECORD,,
