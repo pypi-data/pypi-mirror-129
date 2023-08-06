@@ -1,0 +1,7 @@
+DeepFilterLib-0.1.8.dist-info/METADATA,sha256=lwA1IWApQuk6iMMShunXGeNPXC8kh_FKmduVpZ1T2cQ,248
+DeepFilterLib-0.1.8.dist-info/WHEEL,sha256=jhQ1AiVNdmHcZSIOGVVklBFlALNe1n58C7_EmPPdqkg,95
+libdf/__init__.py,sha256=ctxvh0LSrEjRDCHgf_kVd0g64Gylbl_paYl0loS5AWg,46
+libdf/__init__.pyi,sha256=lm6bmXFhZsVlmDTxV2m7ZXitAT_ObpI0b3roIsOXuiE,1982
+libdf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libdf/libdf.cp38-win_amd64.pyd,sha256=lvYPvdBsgCzNWXMDGKkNC2BUEBJoQUxl6tZ64u8itxg,1098752
+DeepFilterLib-0.1.8.dist-info/RECORD,,
