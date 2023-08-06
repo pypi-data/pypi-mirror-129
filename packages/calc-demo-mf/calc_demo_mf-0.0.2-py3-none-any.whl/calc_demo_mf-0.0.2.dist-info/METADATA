@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: calc-demo-mf
+Version: 0.0.2
+Summary: Breve descripción
+Home-page: https://gitlab/publish
+Author: mfermin
+Author-email: email@ib.edu.ar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Jerarquia
+
+
+```
+/mypackage
+  /mypackage
+    __init__.py
+    mypackage.py
+    /mysubpackage
+      __init__.py
+      mysubpackage.py
+```
+
+
+
+
+
