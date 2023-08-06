@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: swivel
+Version: 2.1.0
+Summary: A python library for interacting with the Swivel Finance Protocol
+Home-page: https://github.com/Swivel-Finance/swivel-py
+Author: Swivel Finance
+Author-email: support@swivel.finance
+License: UNKNOWN
+Keywords: swivel,finance,ethereum,blockchain,defi,web3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.3
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+[![Build Status](https://app.travis-ci.com/Swivel-Finance/swivel-py.svg?token=mHzJQzb11WHSPwztZw8B&branch=main)](https://app.travis-ci.com/Swivel-Finance/swivel-py)
+### A python library for interaction with the Swivel protocol
+```
+ ________  ___       __   ___  ___      ___ _______   ___           ________  ___    ___ 
+|\   ____\|\  \     |\  \|\  \|\  \    /  /|\  ___ \ |\  \         |\   __  \|\  \  /  /|
+\ \  \___|\ \  \    \ \  \ \  \ \  \  /  / | \   __/|\ \  \        \ \  \|\  \ \  \/  / /
+ \ \_____  \ \  \  __\ \  \ \  \ \  \/  / / \ \  \_|/_\ \  \        \ \   ____\ \    / / 
+  \|____|\  \ \  \|\__\_\  \ \  \ \    / /   \ \  \_|\ \ \  \____  __\ \  \___|\/  /  /  
+    ____\_\  \ \____________\ \__\ \__/ /     \ \_______\ \_______\\__\ \__\ __/  / /    
+   |\_________\|____________|\|__|\|__|/       \|_______|\|_______\|__|\|__||\___/ /     
+   \|_________|                                                             \|___|/      
+```
+#### PSA
+We highly recommend you setup a virtual env for this, and any python project. That is all.
+
+## Installation
+
+    pip install -r requirements.txt
+
+## Running Tests
+
+    python -m pytest
+
+
