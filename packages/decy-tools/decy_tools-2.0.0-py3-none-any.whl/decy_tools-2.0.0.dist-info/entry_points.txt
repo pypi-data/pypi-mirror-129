@@ -1,0 +1,3 @@
+[console_scripts]
+decy-tool = app.cli:main
+
