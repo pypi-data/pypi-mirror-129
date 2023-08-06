@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sorting_package/__init__.py
+sorting_package/__main__.py
+sorting_package/input_proc.py
+sorting_package/sort_func.py
+sorting_package.egg-info/PKG-INFO
+sorting_package.egg-info/SOURCES.txt
+sorting_package.egg-info/dependency_links.txt
+sorting_package.egg-info/not-zip-safe
+sorting_package.egg-info/top_level.txt
