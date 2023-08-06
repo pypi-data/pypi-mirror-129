@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "devdeck-obs"
+version = "0.1.0"
+description = ""
+authors = ["Tom Whitwell <tom@whi.tw>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+devdeck-core = "^1.0.7"
+obs-websocket-py = "^0.5.3"
+black = {version = "^21.11b1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
