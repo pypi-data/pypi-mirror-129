@@ -1,0 +1,9 @@
+LICENSE
+README.md
+main.py
+setup.py
+gendoc_cli.egg-info/PKG-INFO
+gendoc_cli.egg-info/SOURCES.txt
+gendoc_cli.egg-info/dependency_links.txt
+gendoc_cli.egg-info/entry_points.txt
+gendoc_cli.egg-info/top_level.txt
