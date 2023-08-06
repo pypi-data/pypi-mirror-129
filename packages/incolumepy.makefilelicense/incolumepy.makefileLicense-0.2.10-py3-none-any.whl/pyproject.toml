@@ -1,0 +1,116 @@
+[tool.poetry]
+name = "incolumepy.makefileLicense"
+version = "0.2.10"
+description = "This software take a License and agregate into the project."
+authors = ["Britodfbr <britodfbr@gmail.com>"]
+maintainers = ["Britodfbr <britodfbr@gmail.com>", "incolumepy <contato@incolume.com.br>"]
+packages=[
+    {include = 'incolumepy/makefilelicense', from=''},
+]
+
+license = "MIT"
+readme = "README.md"
+keywords = ["licenses", "projects", "utilities"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Environment :: Plugins",
+  "License :: Free For Educational Use",
+  "License :: Free For Home Use",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: Implementation",
+  "Programming Language :: Python",
+  "Topic :: Software Development :: Build Tools",
+  "Topic :: Software Development :: Code Generators",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: Utilities",
+]
+include = [
+  "LICENSE",
+  "pyproject.toml",
+]
+
+[tool.poetry.urls]
+homepage = "https://pypi.org/project/incolumepy.makefilelicense"
+repository = "https://github.com/incolumepy/incolumepy.makefilelicense"
+"Bug Tracker" = "https://github.com/incolumepy/incolumepy.makefilelicense/issues"
+license = "https://github.com/incolumepy/incolumepy.makefilelicense/blob/main/LICENSE"
+
+
+[tool.poetry.scripts]
+license-agpl = 'incolumepy.makefilelicense.licenses:license_agpl'
+license-apache = 'incolumepy.makefilelicense.licenses:license_apache'
+license-bsl = 'incolumepy.makefilelicense.licenses:license_bsl'
+license-cc0 = 'incolumepy.makefilelicense.licenses:license_cc0'
+license-gpl = 'incolumepy.makefilelicense.licenses:license_gpl'
+license-lgpl = 'incolumepy.makefilelicense.licenses:license_lgpl'
+license-mit = 'incolumepy.makefilelicense.licenses:license_mit'
+license-mpl = 'incolumepy.makefilelicense.licenses:license_mpl'
+license-ul = 'incolumepy.makefilelicense.licenses:unlicense'
+unlicense = 'incolumepy.makefilelicense.licenses:unlicense'
+
+
+[tool.poetry.dependencies]
+python = "^3.6.8"
+toml = [
+  {extras = ["tomli"], version = "^0.10.2", python="^3.6"}
+]
+importlib-metadata = [
+  {version = "*", markers = "python_version < '3.8'"},
+]
+
+[tool.poetry.dev-dependencies]
+pytest = [
+  { version = "^5.2", python = "<=3.7"},
+  { version = "^5.4.3", python = "~3.8"},
+  { version = "^6.2.5", python = "^3.9"},
+]
+pytest-cov = [
+  { version = "*", python = "^3.6" },
+]
+tox =  [
+  { version = "*", python = "^3.6" },
+]
+black = [
+  { version = "*", python = "^3.6", allow-prereleases = true, markers = "platform_python_implementation == 'CPython'"},
+]
+flake8 = "^4.0.1"
+mypy = "^0.910"
+types-toml = "^0.10.1"
+tox-gh-actions = "^2.8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[flake8]
+max-line-length = 160
+
+[tool.pytest.ini_options]
+addopts = "--cov=incolumepy.makefilelicense"
+testpaths = [
+    "tests",
+]
+
+[tool.mypy]
+mypy_path = "incolumepy"
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
