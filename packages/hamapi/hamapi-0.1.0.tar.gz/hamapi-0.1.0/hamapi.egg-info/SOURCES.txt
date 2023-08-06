@@ -1,0 +1,11 @@
+README.md
+setup.py
+hamapi.egg-info/PKG-INFO
+hamapi.egg-info/SOURCES.txt
+hamapi.egg-info/dependency_links.txt
+hamapi.egg-info/requires.txt
+hamapi.egg-info/top_level.txt
+src/hamapi/__init__.py
+src/hamapi/hamapi.py
+src/hamapi/models.json
+src/hamapi/readings.json

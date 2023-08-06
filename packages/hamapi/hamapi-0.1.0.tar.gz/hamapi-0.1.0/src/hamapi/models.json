@@ -1,0 +1,5081 @@
+{
+    "1": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "2": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "3": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "4": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "5": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "6": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "7": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "8": {
+        "icon": "light-switch",
+        "name": "HAM LightSwitch",
+        "simple_readings": {
+            "P": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "pf"
+            },
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            }
+        ],
+        "readings": [
+            "P",
+            "E",
+            "E2",
+            "V",
+            "I",
+            "Q"
+        ],
+        "hidden_readings": {
+            "I": 1,
+            "Q": 1,
+            "T": 1
+        },
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "atmel90e26_calibration_setting": {
+                    "label": "Energy meter calibration",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH",
+            "LIGHT"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/lightswitch",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "9": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "10": {
+        "icon": "thermostat",
+        "name": "HAM Thermostat",
+        "simple_readings": {
+            "T": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "H",
+            "W1",
+            "W2",
+            "L",
+            "PR",
+            "Tl"
+        ],
+        "hidden_readings": {
+            "Tl": 1
+        },
+        "outputs": [
+            {
+                "name": "Target",
+                "type": {
+                    "unit": "°C",
+                    "min_axis": 10,
+                    "max_axis": 35,
+                    "tick_count": 4,
+                    "type_string": "thermostat_target"
+                }
+            },
+            {
+                "name": "Mode",
+                "type": {
+                    "type_string": "thermostat_mode",
+                    "tick_count": 4,
+                    "min_axis": 0,
+                    "max_axis": 3
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                1
+            ],
+            "bottom": [
+                0
+            ]
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "w1-setup": {
+                    "label": "W1 Configuration",
+                    "reset": false
+                },
+                "w2-setup": {
+                    "label": "W2 Configuration",
+                    "reset": false
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.ThermostatController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "targetSetpoint"
+                        },
+                        {
+                            "name": "thermostatMode"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                },
+                "configuration": {
+                    "supportedModes": [
+                        "OFF",
+                        "COOL",
+                        "HEAT",
+                        "AUTO"
+                    ],
+                    "supportsScheduling": false
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.TemperatureSensor",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "temperature"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "THERMOSTAT"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "action.devices.types.THERMOSTAT",
+        "google_home_traits": [
+            "action.devices.traits.TemperatureSetting"
+        ],
+        "google_home_attributes": {
+            "availableThermostatModes": "off,heat,cool,heatcool",
+            "thermostatTemperatureUnit": "C"
+        },
+        "google_home_supported_commands": {
+            "action.devices.commands.ThermostatTemperatureSetpoint": 1,
+            "action.devices.commands.ThermostatSetMode": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "target",
+            "mode"
+        ]
+    },
+    "11": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "12": {
+        "icon": "light-switch",
+        "name": "HAM DinSwitch",
+        "voice_default_name": "Ham Panel Switch",
+        "simple_readings": {
+            "E": 1
+        },
+        "extra_readings": [
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            },
+            {
+                "key": "Mb"
+            },
+            {
+                "key": "Mpred"
+            }
+        ],
+        "readings": [
+            "E",
+            "E2",
+            "P_",
+            "GI"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {
+                "pulses_per_kwh": {
+                    "label": "Pulses per kWh",
+                    "reset": false
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "fixed_cost_setting": {
+                    "label": "Fixed costs",
+                    "reset": false
+                },
+                "billing_setting": {
+                    "label": ""
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/dinswitch",
+        "section_order": [
+            "settings",
+            "access",
+            "reports",
+            "rules",
+            "ai"
+        ],
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "13": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "14": {
+        "icon": "plug",
+        "name": "HAM Plug",
+        "simple_readings": {
+            "P": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "pf"
+            },
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            }
+        ],
+        "readings": [
+            "P",
+            "E",
+            "E2",
+            "V",
+            "I",
+            "Q"
+        ],
+        "hidden_readings": {
+            "I": 1,
+            "Q": 1,
+            "T": 1
+        },
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "atmel90e26_calibration_setting": {
+                    "label": "Energy meter calibration",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SMARTPLUG"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.OUTLET",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/plug",
+        "section_order": [
+            "settings",
+            "access",
+            "reports",
+            "rules",
+            "ai"
+        ],
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "15": {
+        "icon": "temperature",
+        "name": "HAM Thermosense",
+        "simple_readings": {
+            "T": 1
+        },
+        "extra_readings": [
+            {
+                "key": "GICd"
+            },
+            {
+                "key": "GICw"
+            },
+            {
+                "key": "GICm"
+            },
+            {
+                "key": "GICu"
+            },
+            {
+                "key": "GI2Cd"
+            },
+            {
+                "key": "GI2Cw"
+            },
+            {
+                "key": "GI2Cm"
+            },
+            {
+                "key": "GI2Cu"
+            }
+        ],
+        "readings": [
+            "T",
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C",
+            "H",
+            "Tl"
+        ],
+        "hidden_readings": {
+            "Tl": 1,
+            "H": 1
+        },
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "gi_alarm": {
+                    "label": "General input is alarm output"
+                },
+                "rtd_3w": {
+                    "label": "3-wire probe"
+                },
+                "rtd_r0": {
+                    "label": "Res. at Ref. Temperature (R0)"
+                },
+                "rtd_rr": {
+                    "label": "Internal Ref. Res. (RR)"
+                },
+                "loff": {
+                    "label": "Local temperature offset"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.TemperatureSensor",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "temperature"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/thermosense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "16": {
+        "icon": "light-switch-double",
+        "name": "HAM DualSwitch",
+        "voice_default_name": "Ham Dual Switch",
+        "simple_readings": {
+            "DL": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "DL"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [
+            {
+                "name": "Out Up",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle_door",
+                    "check_for_done": false
+                }
+            },
+            {
+                "name": "Out Down",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle_door",
+                    "check_for_done": false
+                }
+            },
+            {
+                "name": "Door Level Target",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "door_level",
+                    "check_for_done": false
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0,
+                1
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "door-cycle": {
+                    "label": "Door cycle Time"
+                },
+                "toggle-switch-mode": {
+                    "label": "Push Button Mode"
+                },
+                "output-exclusive-mode": {
+                    "label": "Only one output active at the time"
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH",
+            "LIGHT"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "smart_home_outputs": [
+            0,
+            1
+        ],
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out-up",
+            "out-down",
+            "door-level-target"
+        ]
+    },
+    "17": {
+        "icon": "lamp",
+        "name": "HAM LED Dimmer",
+        "simple_readings": {
+            "T": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [
+            {
+                "name": "R",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "door_level",
+                    "check_for_done": false
+                },
+                "presetable": true
+            },
+            {
+                "name": "G",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "door_level",
+                    "check_for_done": false
+                },
+                "presetable": true
+            },
+            {
+                "name": "B",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "door_level",
+                    "check_for_done": false
+                },
+                "presetable": true
+            },
+            {
+                "name": "W",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "door_level",
+                    "check_for_done": false
+                },
+                "presetable": true
+            },
+            {
+                "name": "C",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "door_level",
+                    "check_for_done": false
+                },
+                "presetable": true
+            },
+            {
+                "name": "Program",
+                "type": {
+                    "type_string": "pwm_program_mode",
+                    "tick_count": 8,
+                    "min_axis": 0,
+                    "max_axis": 7
+                }
+            },
+            {
+                "name": "Color",
+                "type": {
+                    "this_comparison": false,
+                    "type_string": "pwm_color",
+                    "meta_output": true,
+                    "no_rule_confirmation_support": true
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                5,
+                7
+            ],
+            "bottom": [
+                6,
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "rgbw_order": {
+                    "label": "RGBW Order",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.ColorController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "color"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                },
+                "configuration": {
+                    "supportsScheduling": false
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "LIGHT"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 15,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.LIGHT",
+        "google_home_traits": [
+            "action.devices.traits.OnOff",
+            "action.devices.traits.ColorSetting"
+        ],
+        "google_home_attributes": {
+            "colorModel": "rgb",
+            "commandOnlyColorSetting": true
+        },
+        "google_home_supported_commands": {
+            "action.devices.commands.ColorAbsolute": 1,
+            "action.devices.commands.OnOff": 1
+        },
+        "pwm_program_output_index": 5,
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "preset_slots": 4,
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "r",
+            "g",
+            "b",
+            "w",
+            "c",
+            "program"
+        ],
+        "has_accumulator": true
+    },
+    "18": {
+        "icon": "waterheater",
+        "name": "HAM ThermoSwitch",
+        "voice_default_name": "Ham Thermo Switch",
+        "simple_readings": {
+            "E": 1
+        },
+        "extra_readings": [
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            },
+            {
+                "key": "Mb"
+            },
+            {
+                "key": "Mpred"
+            }
+        ],
+        "readings": [
+            "E",
+            "E2",
+            "P_",
+            "GI",
+            "T"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {
+                "pulses_per_kwh": {
+                    "label": "Pulses per kWh",
+                    "reset": false
+                },
+                "temperature_on_off": {
+                    "label": ""
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "fixed_cost_setting": {
+                    "label": "Fixed costs",
+                    "reset": false
+                },
+                "billing_setting": {
+                    "label": ""
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "19": {
+        "icon": "waterheater",
+        "name": "HAM RS485",
+        "voice_default_name": "Ham RS485",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [
+            "*0",
+            "*1",
+            "*2",
+            "*3",
+            "*4",
+            "*5",
+            "*6",
+            "*7",
+            "*8",
+            "*9",
+            "*10",
+            "*11",
+            "*12",
+            "*13",
+            "*14",
+            "*15",
+            "*16",
+            "*17",
+            "*18",
+            "*19",
+            "*20",
+            "*21",
+            "*22",
+            "*23",
+            "*24",
+            "*25",
+            "*26",
+            "*27",
+            "*28",
+            "*29",
+            "*30",
+            "*31"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "modbus_readings": 32,
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "20": {
+        "icon": "remote-control",
+        "name": "HAM RemoteAC",
+        "voice_default_name": "Ham Remote",
+        "simple_readings": {
+            "T": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "H"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [
+            {
+                "name": "IR",
+                "type": {
+                    "this_comparison": false,
+                    "unit": "",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 4,
+                    "type_string": "ir_remote",
+                    "no_graph": true
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": [
+                0
+            ]
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "ir_setting": {
+                    "label": ""
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.ThermostatController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "targetSetpoint"
+                        },
+                        {
+                            "name": "thermostatMode"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                },
+                "configuration": {
+                    "supportedModes": [
+                        "OFF",
+                        "COOL",
+                        "HEAT",
+                        "AUTO"
+                    ],
+                    "supportsScheduling": false
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.TemperatureSensor",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "temperature"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "THERMOSTAT",
+            "AIR_CONDITIONER"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "ir_device": true,
+        "google_home_supported_commands": {
+            "action.devices.commands.ThermostatTemperatureSetpoint": 1,
+            "action.devices.commands.ThermostatSetMode": 1,
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "ir"
+        ]
+    },
+    "21": {
+        "icon": "chip",
+        "name": "HAM Sense",
+        "voice_default_name": "Ham Sense",
+        "simple_readings": {},
+        "extra_readings": [
+            {
+                "key": "GIG"
+            }
+        ],
+        "readings": [
+            "GI",
+            "GIC",
+            "GI2",
+            "GI2C",
+            "u0",
+            "u1",
+            "u2",
+            "u3",
+            "u4",
+            "u5",
+            "u6",
+            "u7",
+            "u8",
+            "u9"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "gi_i2c": {
+                    "label": "Bus is general inputs"
+                }
+            },
+            "advanced": {},
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "gi_gauge": {
+                    "label": "Gauge readings",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "Other",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1
+        },
+        "user_defined_readings": 10,
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "22": {
+        "icon": "light-switch-double",
+        "name": "HAM Relay",
+        "voice_default_name": "Ham Relay",
+        "simple_readings": {
+            "GI": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "GI",
+            "GIC",
+            "GI2",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            },
+            {
+                "name": "Out2",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0,
+                1
+            ],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "smart_home_outputs": [
+            0,
+            1
+        ],
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out",
+            "out2"
+        ],
+        "has_accumulator": true
+    },
+    "23": {
+        "icon": "temperature",
+        "name": "HAM Temperature calibrator",
+        "simple_readings": {
+            "T": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "T"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [
+            {
+                "name": "Target",
+                "type": {
+                    "unit": "°C",
+                    "min_axis": -40,
+                    "max_axis": 80,
+                    "tick_count": 4,
+                    "type_string": "thermostat_target"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [],
+            "bottom": [
+                0
+            ]
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "rtd_r0": {
+                    "label": "Res. at Ref. Temperature (R0)"
+                },
+                "rtd_3w": {
+                    "label": "3-wire probe"
+                }
+            },
+            "advanced": {
+                "rtd_rr": {
+                    "label": "Internal Ref. Res. (RR)"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "target"
+        ]
+    },
+    "24": {
+        "icon": "waterheater",
+        "name": "HAM 47",
+        "voice_default_name": "Ham 47",
+        "simple_readings": {
+            "GI": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "GI",
+            "GI2",
+            "GI3",
+            "GI4"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            },
+            {
+                "name": "Out2",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0,
+                1
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "gom0": {
+                    "label": ""
+                },
+                "gom1": {
+                    "label": ""
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out",
+            "out2"
+        ]
+    },
+    "25": {
+        "icon": "temperature",
+        "name": "HAM HumiSense",
+        "simple_readings": {
+            "T": 1,
+            "H": 1
+        },
+        "extra_readings": [
+            {
+                "key": "TDP"
+            },
+            {
+                "key": "GICd"
+            },
+            {
+                "key": "GICw"
+            },
+            {
+                "key": "GICm"
+            },
+            {
+                "key": "GICu"
+            },
+            {
+                "key": "GI2Cd"
+            },
+            {
+                "key": "GI2Cw"
+            },
+            {
+                "key": "GI2Cm"
+            },
+            {
+                "key": "GI2Cu"
+            }
+        ],
+        "readings": [
+            "T",
+            "H",
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "gi_alarm": {
+                    "label": "General input is alarm output"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "hcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.TemperatureSensor",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "temperature"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/humisense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "26": {
+        "icon": "meter",
+        "name": "HAM DinMeterSwitch",
+        "simple_readings": {
+            "P": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "pf"
+            },
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            }
+        ],
+        "readings": [
+            "P",
+            "E",
+            "E2",
+            "V",
+            "I",
+            "Q",
+            "f"
+        ],
+        "hidden_readings": {},
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "ct-ratio": {
+                    "label": "CT Ratio"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "atmel90e26_calibration_setting": {
+                    "label": "Energy meter calibration",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/dinmeterswitch",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "27": {
+        "icon": "cube",
+        "name": "HAM SonicSense",
+        "simple_readings": {
+            "d": 1
+        },
+        "extra_readings": [
+            {
+                "key": "vol"
+            },
+            {
+                "key": "vol_rate"
+            },
+            {
+                "key": "FL"
+            },
+            {
+                "key": "FL_full_pred"
+            },
+            {
+                "key": "FL_empty_pred"
+            }
+        ],
+        "readings": [
+            "d",
+            "vd",
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C",
+            "T"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "gi_alarm": {
+                    "label": "General input is alarm output"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "volume_dimensions_setting": {
+                    "label": "Dimensions",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "28": {
+        "icon": "cube",
+        "name": "HAM FlowSense",
+        "simple_readings": {
+            "WL": 1
+        },
+        "extra_readings": [
+            {
+                "key": "WLd"
+            },
+            {
+                "key": "WLw"
+            },
+            {
+                "key": "WLm"
+            },
+            {
+                "key": "WLu"
+            }
+        ],
+        "readings": [
+            "WL",
+            "WLR",
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {
+                "pulses_per_litre": {
+                    "label": "Pulses per Litre"
+                }
+            },
+            "advanced": {
+                "gi_alarm": {
+                    "label": "General input is alarm output"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "29": {
+        "icon": "temperature",
+        "name": "HAM ThermosenseX2",
+        "simple_readings": {
+            "T": 1,
+            "T2": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "T2",
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "gi_alarm": {
+                    "label": "General input is alarm output"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "t2cal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "30": {
+        "icon": "chip",
+        "name": "HAM NFC",
+        "simple_readings": {
+            "URI": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "GI",
+            "GI2",
+            "GIC",
+            "GI2C",
+            "UID",
+            "URI"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "gi_alarm": {
+                    "label": "General input is alarm output"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "31": {
+        "icon": "houseplant",
+        "name": "HAM SoilSense",
+        "simple_readings": {
+            "T": 1,
+            "H": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "H"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "hcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 4,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "32": {
+        "icon": "meter",
+        "name": "HAM DinMeterSwitch3",
+        "simple_readings": {
+            "P": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            }
+        ],
+        "readings": [
+            "Va",
+            "Vb",
+            "Vc",
+            "V",
+            "Ia",
+            "Ib",
+            "Ic",
+            "I",
+            "Ea",
+            "Eb",
+            "Ec",
+            "E",
+            "E2",
+            "Pa",
+            "Pb",
+            "Pc",
+            "P",
+            "Qa",
+            "Qb",
+            "Qc",
+            "Q",
+            "pfa",
+            "pfb",
+            "pfc",
+            "pf",
+            "fia",
+            "fib",
+            "fic",
+            "THDVa",
+            "THDVb",
+            "THDVc",
+            "THDIa",
+            "THDIb",
+            "THDIc",
+            "f"
+        ],
+        "hidden_readings": {},
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "ct-ratio": {
+                    "label": "CT Ratio"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "atmel90e36_calibration_setting": {
+                    "label": "Energy meter calibration",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/dinmeterswitch",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "33": {
+        "icon": "temperature",
+        "name": "HAM IAQSense",
+        "simple_readings": {
+            "CO2": 1
+        },
+        "extra_readings": [
+            {
+                "key": "TDP"
+            }
+        ],
+        "readings": [
+            "T",
+            "H",
+            "CO2",
+            "VOC_RAW",
+            "VOC_IDX",
+            "PM10",
+            "PM25",
+            "PM40",
+            "PM100",
+            "PM05N",
+            "PM10N",
+            "PM25N",
+            "PM40N",
+            "PM100N",
+            "PTP",
+            "L",
+            "LIR"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "local_temperature_offset_setting": {
+                    "label": "Local temperature offset"
+                },
+                "altitude_setting": {
+                    "label": "Altitude"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "hcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "has_alarm_output": false,
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "34": {
+        "icon": "temperature",
+        "name": "HAM HeatFluxSense",
+        "simple_readings": {
+            "ADC_T": 1,
+            "T": 1
+        },
+        "extra_readings": [
+            {
+                "key": "ADC_T"
+            }
+        ],
+        "readings": [
+            "T",
+            "T2",
+            "ADC"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "adc_ref": {
+                    "label": "ADC Reference"
+                },
+                "adc_avg": {
+                    "label": "ADC Averaging Samples"
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "t2cal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "adccal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "adc_reading_setting": {
+                    "label": "ADC Reading",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                },
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "35": {
+        "icon": "chip",
+        "name": "HAM GPISense",
+        "simple_readings": {
+            "GI": 1,
+            "GI2": 1
+        },
+        "extra_readings": [
+            {
+                "key": "GICd"
+            },
+            {
+                "key": "GICw"
+            },
+            {
+                "key": "GICm"
+            },
+            {
+                "key": "GICu"
+            },
+            {
+                "key": "GI2Cd"
+            },
+            {
+                "key": "GI2Cw"
+            },
+            {
+                "key": "GI2Cm"
+            },
+            {
+                "key": "GI2Cu"
+            },
+            {
+                "key": "GI3Cd"
+            },
+            {
+                "key": "GI3Cw"
+            },
+            {
+                "key": "GI3Cm"
+            },
+            {
+                "key": "GI3Cu"
+            },
+            {
+                "key": "GI4Cd"
+            },
+            {
+                "key": "GI4Cw"
+            },
+            {
+                "key": "GI4Cm"
+            },
+            {
+                "key": "GI4Cu"
+            }
+        ],
+        "readings": [
+            "GI",
+            "GIC",
+            "GI2",
+            "GI2C",
+            "GI3",
+            "GI3C",
+            "GI4",
+            "GI4C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "36": {
+        "icon": "temperature",
+        "name": "HAM THL",
+        "simple_readings": {
+            "T": 1,
+            "H": 1
+        },
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "H",
+            "L",
+            "LIR",
+            "GI",
+            "GIC",
+            "GI2",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": false,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "device_description": {
+                    "label": "Device Description",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/sense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "e2": {
+        "icon": "meter",
+        "name": "HAM DinMeterSIM",
+        "simple_readings": {
+            "P": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "pf"
+            },
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            }
+        ],
+        "readings": [
+            "P",
+            "E",
+            "E2",
+            "V",
+            "I",
+            "Q",
+            "f",
+            "GI"
+        ],
+        "hidden_readings": {},
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [
+            {
+                "label": "Long Press",
+                "id": "long_press"
+            }
+        ],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "ct-ratio": {
+                    "label": "CT Ratio"
+                },
+                "pulses_per_kwh": {
+                    "label": "Pulses per kWh",
+                    "reset": false
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "atmel90e26_calibration_setting": {
+                    "label": "Energy meter calibration",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "cost_per_kwh": {
+                    "label": "Cost per kWh",
+                    "reset": false
+                },
+                "cost_per_kwh2": {
+                    "label": "Cost per kWh (alternate metering)",
+                    "reset": false
+                },
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 900,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 1,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 1,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/dinmeterswitch",
+        "section_order": [
+            "access",
+            "reports",
+            "rules",
+            "settings",
+            "ai"
+        ],
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "e3": {
+        "icon": "water",
+        "name": "HAM FilterSense",
+        "simple_readings": {
+            "TDS": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "WHd"
+            },
+            {
+                "key": "WHe"
+            },
+            {
+                "key": "WHf"
+            },
+            {
+                "key": "WLd"
+            },
+            {
+                "key": "WLw"
+            },
+            {
+                "key": "WLm"
+            },
+            {
+                "key": "WLu"
+            }
+        ],
+        "readings": [
+            "T",
+            "EC",
+            "WL",
+            "WLR",
+            "TDS",
+            "COUNT"
+        ],
+        "hidden_readings": {
+            "WHf": 1,
+            "WHe": 1
+        },
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "pulses_per_litre": {
+                    "label": "Pulses per Litre"
+                },
+                "tds_factor": {
+                    "label": "TDS Factor"
+                }
+            },
+            "advanced": {
+                "rtd_3w": {
+                    "label": "3-wire probe"
+                },
+                "rtd_r0": {
+                    "label": "Res. at Ref. Temperature (R0)"
+                },
+                "rtd_rr": {
+                    "label": "Internal Ref. Res. (RR)"
+                },
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "eccal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 600,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 2,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/filtersense",
+        "has_geolocation": false,
+        "has_counter_output": true,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "e4": {
+        "icon": "location",
+        "name": "HAM SenseGo",
+        "simple_readings": {
+            "T": 1,
+            "H": 1,
+            "T2": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "dad"
+            },
+            {
+                "key": "daw"
+            },
+            {
+                "key": "dam"
+            },
+            {
+                "key": "dau"
+            },
+            {
+                "key": "GICd"
+            },
+            {
+                "key": "GICw"
+            },
+            {
+                "key": "GICm"
+            },
+            {
+                "key": "GICu"
+            },
+            {
+                "key": "GI2Cd"
+            },
+            {
+                "key": "GI2Cw"
+            },
+            {
+                "key": "GI2Cm"
+            },
+            {
+                "key": "GI2Cu"
+            }
+        ],
+        "readings": [
+            "T",
+            "T2",
+            "H",
+            "LON",
+            "LAT",
+            "SPEED",
+            "da",
+            "GI",
+            "GIC",
+            "GI2",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "t2cal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "hcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 900,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.TemperatureSensor",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "temperature"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/filtersense",
+        "has_geolocation": true,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "e5": {
+        "icon": "water",
+        "name": "HAM PoolSense",
+        "simple_readings": {
+            "PH": 1,
+            "ORP": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "EC",
+            "TDS",
+            "ORP",
+            "PH",
+            "FCL"
+        ],
+        "hidden_readings": {},
+        "outputs": [
+            {
+                "name": "PH+",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            },
+            {
+                "name": "PH-",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            },
+            {
+                "name": "ORP+",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0,
+                1,
+                2
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "tds_factor": {
+                    "label": "TDS Factor"
+                }
+            },
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "eccal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "phcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                },
+                "orpcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 900,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 6,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {
+            "ce": 1,
+            "double-insulation": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/filtersense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "ph+",
+            "ph-",
+            "orp+"
+        ]
+    },
+    "e6": {
+        "icon": "location",
+        "name": "HAM SenseGo+Relay",
+        "simple_readings": {
+            "T": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "GICd"
+            },
+            {
+                "key": "GICw"
+            },
+            {
+                "key": "GICm"
+            },
+            {
+                "key": "GICu"
+            },
+            {
+                "key": "GI2Cd"
+            },
+            {
+                "key": "GI2Cw"
+            },
+            {
+                "key": "GI2Cm"
+            },
+            {
+                "key": "GI2Cu"
+            }
+        ],
+        "readings": [
+            "T",
+            "GI",
+            "GIC",
+            "GI2",
+            "GI2C"
+        ],
+        "hidden_readings": {},
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                },
+                "tcal": {
+                    "label": "Calibration table",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 900,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/thermosense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out"
+        ],
+        "has_accumulator": true
+    },
+    "e7": {
+        "icon": "sun",
+        "name": "HAM Solar",
+        "simple_readings": {
+            "SR": 1,
+            "P": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [
+            {
+                "key": "M"
+            },
+            {
+                "key": "CO2E"
+            },
+            {
+                "key": "SRE"
+            },
+            {
+                "key": "SREE"
+            },
+            {
+                "key": "Ed"
+            },
+            {
+                "key": "Ew"
+            },
+            {
+                "key": "Em"
+            },
+            {
+                "key": "Eu"
+            },
+            {
+                "key": "Md"
+            },
+            {
+                "key": "Mw"
+            },
+            {
+                "key": "Mm"
+            },
+            {
+                "key": "Mu"
+            }
+        ],
+        "readings": [
+            "SR",
+            "P",
+            "E",
+            "I",
+            "V",
+            "T",
+            "T2",
+            "Tl",
+            "H"
+        ],
+        "hidden_readings": {},
+        "outputs": [
+            {
+                "name": "Out",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            },
+            {
+                "name": "Out 2",
+                "type": {
+                    "unit": "%",
+                    "min_axis": 0,
+                    "max_axis": 255,
+                    "tick_count": 2,
+                    "type_string": "toggle"
+                }
+            }
+        ],
+        "output_order": {
+            "top": [
+                0,
+                1
+            ],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {
+                "efficiency": {
+                    "label": "Efficiency",
+                    "reset": false
+                },
+                "solar_panel_area": {
+                    "label": "Panel Area",
+                    "reset": false
+                }
+            },
+            "advanced": {
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 320,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 6,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 4,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "smart_home_outputs": [
+            0,
+            1
+        ],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {
+            "action.devices.commands.OnOff": 1
+        },
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/thermosense",
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [
+            "out",
+            "out-2"
+        ],
+        "has_accumulator": true
+    },
+    "b1": {
+        "icon": "eye",
+        "name": "HAM EYE",
+        "simple_readings": {
+            "T": 1,
+            "H": 1
+        },
+        "summary_include_default": true,
+        "extra_readings": [],
+        "readings": [
+            "T",
+            "H",
+            "MAG",
+            "MAGC",
+            "BAT",
+            "BATV"
+        ],
+        "hidden_readings": {
+            "BATV": 1
+        },
+        "outputs": [],
+        "output_order": {},
+        "events": [],
+        "settings": {},
+        "alexa_capabilities": [],
+        "alexa_display_categories": [],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": true,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "smart_home_outputs": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {
+            "ce": 1,
+            "weee": 1,
+            "rohs": 1
+        },
+        "buy_url": "/thermosense",
+        "virtual": true,
+        "section_order": [
+            "access",
+            "reports",
+            "rules"
+        ],
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "v": {
+        "icon": "chip",
+        "name": "Virtual HAM",
+        "voice_default_name": "Ham Virtual",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [
+            "u0",
+            "u1",
+            "u2",
+            "u3",
+            "u4",
+            "u5"
+        ],
+        "hidden_readings": {},
+        "summary_include_default": true,
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {},
+            "local_advanced": {},
+            "server_side": {
+                "summary_include_setting": {
+                    "label": "Include in summary views",
+                    "reset": false
+                }
+            }
+        },
+        "ping_period": 0,
+        "version": "1.0",
+        "manufacturer": "Other",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "action.devices.types.SCENE",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "google_home_supported_commands": {},
+        "marks": {},
+        "user_defined_readings": 6,
+        "virtual": true,
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    },
+    "g": {
+        "icon": "group",
+        "name": "HAM Group",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [
+            "P",
+            "E",
+            "E2",
+            "M",
+            "T"
+        ],
+        "hidden_readings": {
+            "V": 1,
+            "I": 1,
+            "Q": 1
+        },
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "outputs": [],
+        "settings": {
+            "local": {},
+            "standard": {},
+            "advanced": {},
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "alexa_capabilities": [
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.PowerController",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "powerState"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            },
+            {
+                "type": "AlexaInterface",
+                "interface": "Alexa.EndpointHealth",
+                "version": "3",
+                "properties": {
+                    "supported": [
+                        {
+                            "name": "connectivity"
+                        }
+                    ],
+                    "proactivelyReported": false,
+                    "retrievable": true
+                }
+            }
+        ],
+        "alexa_display_categories": [
+            "SWITCH"
+        ],
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "f": {
+        "icon": "floorplan",
+        "name": "HAM Floorplan",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [
+            "P",
+            "E",
+            "E2",
+            "M",
+            "T"
+        ],
+        "hidden_readings": {
+            "V": 1,
+            "I": 1,
+            "Q": 1
+        },
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "outputs": [],
+        "settings": {
+            "local": {},
+            "standard": {},
+            "advanced": {},
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "google_home_type": "action.devices.types.SWITCH",
+        "google_home_traits": [
+            "action.devices.traits.OnOff"
+        ],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": [],
+        "has_accumulator": true
+    },
+    "default": {
+        "icon": "default",
+        "name": "HAM Device",
+        "simple_readings": {},
+        "extra_readings": [],
+        "readings": [],
+        "hidden_readings": {},
+        "outputs": [],
+        "output_order": {
+            "top": [],
+            "bottom": []
+        },
+        "events": [],
+        "settings": {
+            "standard": {},
+            "advanced": {
+                "allow-lan-commands": {
+                    "label": "Allow LAN commands"
+                },
+                "disable-manual-control": {
+                    "label": "Disable manual control"
+                },
+                "no_datalogging": {
+                    "label": "Do not keep track of data",
+                    "reset": false
+                }
+            },
+            "local_advanced": {},
+            "server_side": {}
+        },
+        "ping_period": 240,
+        "version": "1.0",
+        "manufacturer": "HAM Systems",
+        "timed_count": 0,
+        "accumulator_limit_count": 0,
+        "local_rules_count": 0,
+        "alternate_accumulator_count": 0,
+        "group_write": false,
+        "google_home_type": "",
+        "google_home_traits": [],
+        "google_home_attributes": {},
+        "has_geolocation": false,
+        "has_counter_output": false,
+        "output_names": []
+    }
+}
