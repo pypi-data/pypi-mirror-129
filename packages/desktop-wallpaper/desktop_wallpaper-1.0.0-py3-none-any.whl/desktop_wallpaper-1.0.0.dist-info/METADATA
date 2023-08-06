@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: desktop-wallpaper
+Version: 1.0.0
+Summary: Cross Platform Python module to change wallpaper
+Home-page: https://github.com/totogoto/py_wallpaper
+Author: Indresh Vishwakarma
+Author-email: i.vish1337@gmail.com
+License: MIT
+Keywords: wallpaper,change_wallpaper,set_wallpaper
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+
+## py_wallpaper: Change Wallpaper from Python
+
+py_wallpaper is a cross platform Python module to change wallpapers across different platforms.
+
+It supports ubuntu/windows/mac.
+
+## Installation
+
+Use pip
+
+```bash
+pip install py_wallpaper
+```
+## Usage
+
+use `change_wallpaper`
+
+Example:
+```python
+from py_wallpaper import change_wallpaper
+change_wallpaper("/home/user/Pictures/stars.jpg")
+```
+
