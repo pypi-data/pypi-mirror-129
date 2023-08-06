@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: BBA
+Version: 0.2.0
+Summary: A Synchronous python API wrapper for bread bot's api
+Home-page: https://github.com/TheGenocides/BBA/
+Author: TheGenocide
+Maintainer: TheGenocide
+License: MIT
+Project-URL: HomePage/Github, https://github.com/TheGenocides/BBA/
+Description: <h2 align="center">BBA</h2>
+        
+        BBA is An object oriented, synchronous api wrapper for BreadBotAPI.
+        
+        # Usages
+        
+        ```py
+        import bba
+        
+        #Generate Random Sentence
+        
+        client = bba.Client("YOUR API KEY HERE")
+        word = client.get_sentence()
+        print(word.response)
+        
+        #Calculator
+        
+        res = client.calculator("AnsxAns+10", "10")
+        print(res.result)
+        ```
+        
+        # Important Links
+        
+        - [get api key](https://api.breadbot.me/login)
+        - [support server](https://discord.gg/nbWfGT6PFR) 
+        - [Documentations](https://api.breadbot.me)
+Keywords: BBA,bba,breadbot,breadbotapi,api
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
