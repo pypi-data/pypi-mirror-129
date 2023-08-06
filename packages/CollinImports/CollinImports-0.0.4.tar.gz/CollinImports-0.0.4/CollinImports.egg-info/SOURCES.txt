@@ -1,0 +1,8 @@
+setup.py
+CollinImports/IdGeneratorRedisKubernetes.py
+CollinImports/__init__.py
+CollinImports.egg-info/PKG-INFO
+CollinImports.egg-info/SOURCES.txt
+CollinImports.egg-info/dependency_links.txt
+CollinImports.egg-info/requires.txt
+CollinImports.egg-info/top_level.txt
