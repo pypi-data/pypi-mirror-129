@@ -1,0 +1,5 @@
+pydantic
+requests
+typer
+pyyaml
+jtex==0.3.4
