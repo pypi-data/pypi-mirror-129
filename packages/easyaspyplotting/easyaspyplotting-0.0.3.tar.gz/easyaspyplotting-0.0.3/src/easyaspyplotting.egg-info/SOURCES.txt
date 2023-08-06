@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/easyaspyplotting/__init__.py
+src/easyaspyplotting/themes.py
+src/easyaspyplotting.egg-info/PKG-INFO
+src/easyaspyplotting.egg-info/SOURCES.txt
+src/easyaspyplotting.egg-info/dependency_links.txt
+src/easyaspyplotting.egg-info/requires.txt
+src/easyaspyplotting.egg-info/top_level.txt
