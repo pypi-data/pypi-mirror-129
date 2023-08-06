@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dionysos/__init__.py
+src/dionysos/dionysos.py
+src/dionysos.egg-info/PKG-INFO
+src/dionysos.egg-info/SOURCES.txt
+src/dionysos.egg-info/dependency_links.txt
+src/dionysos.egg-info/top_level.txt
