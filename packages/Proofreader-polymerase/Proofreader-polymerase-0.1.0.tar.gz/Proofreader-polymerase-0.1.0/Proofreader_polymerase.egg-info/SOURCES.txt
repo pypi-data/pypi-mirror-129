@@ -1,0 +1,9 @@
+README.md
+setup.py
+Proofreader/__init__.py
+Proofreader/main.py
+Proofreader_polymerase.egg-info/PKG-INFO
+Proofreader_polymerase.egg-info/SOURCES.txt
+Proofreader_polymerase.egg-info/dependency_links.txt
+Proofreader_polymerase.egg-info/entry_points.txt
+Proofreader_polymerase.egg-info/top_level.txt

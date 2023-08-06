@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Proofreader-polymerase
+Version: 0.1.0
+Summary: DNA proofreading
+Home-page: https://github.com/bichanna/Proofreader-polymerase
+Author: bichanna
+Author-email: nobu.bichanna@gmail.com
+License: MIT
+Description: 
+        [Usage](https://github.com/bichanna/Proofreader-polymerase)
+        
+Keywords: DNA,proofread,proofreading,proofreader,python,polymerase
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Description-Content-Type: text/markdown
