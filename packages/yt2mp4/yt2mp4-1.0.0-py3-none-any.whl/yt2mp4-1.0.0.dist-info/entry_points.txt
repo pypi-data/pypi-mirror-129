@@ -1,0 +1,3 @@
+[console_scripts]
+yt2mp4 = yt2mp4.__main__:main
+
