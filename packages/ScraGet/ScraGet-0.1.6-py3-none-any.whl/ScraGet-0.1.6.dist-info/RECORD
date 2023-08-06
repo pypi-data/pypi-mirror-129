@@ -1,0 +1,14 @@
+ScraGet/Exceptions.py,sha256=lBEBj-uChWbYvYc39ZEqcP15YZWDJ3WOzPd0D6aKwdo,781
+ScraGet/ScraGet.py,sha256=ZbZZRGrZWyBQvoOdtnNm0Rczb9br1HAz5HM5N60U8WQ,306
+ScraGet/__init__.py,sha256=Sjh-UUdQXDvGPAP2xZPjqCm7h7FOwktz-yGFwsFSmrc,480
+ScraGet/encoder.py,sha256=0y0QGrzZhPKZh07ZJ7firkqRcE8DkWUN5LkFPJ74FII,1226
+ScraGet/forum.py,sha256=eF-bV0goN7bnE84ft_V5pvullZSvSNer_wSExp3XlSc,2358
+ScraGet/frontpage.py,sha256=aAQAVmsXX705UEbKIn9IOKiAV3x7GY1mOGNIXLRA_HE,1162
+ScraGet/project.py,sha256=vUWcCtTwScpcub2CoPUN9g8iqNobMursCPCtqB_XfYw,2891
+ScraGet/studios.py,sha256=ovyH1LxJc3jm3dmPsUmam2vlYnOE7iSoS-MOxygbCAc,1305
+ScraGet/user.py,sha256=g4uP8iZww_CUIeAcs1c-uycgKkv6Odfi49eX9D2CW-Y,5136
+ScraGet-0.1.6.dist-info/LICENSE,sha256=J1ITywQrlVhag_9OHTD18Qb99IpCJS6GZ5cUZZqNpE0,1068
+ScraGet-0.1.6.dist-info/METADATA,sha256=tZcKzj0kTAzlT35Sj8Gbkq77jNsQVL40YXToyjh7q9Y,2102
+ScraGet-0.1.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ScraGet-0.1.6.dist-info/top_level.txt,sha256=O4B4kA5T__peqy2-9DlBHaOV6ORuXXDKzflv717iRXQ,8
+ScraGet-0.1.6.dist-info/RECORD,,
