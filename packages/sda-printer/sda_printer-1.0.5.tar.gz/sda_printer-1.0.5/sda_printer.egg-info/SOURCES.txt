@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+sda_printer/__init__.py
+sda_printer/__main__.py
+sda_printer.egg-info/PKG-INFO
+sda_printer.egg-info/SOURCES.txt
+sda_printer.egg-info/dependency_links.txt
+sda_printer.egg-info/entry_points.txt
+sda_printer.egg-info/top_level.txt
