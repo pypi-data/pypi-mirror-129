@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dart_version_manager"
+version = "1.0.0"
+description = "Dart Version Manager CLI implemented with Python and Typer."
+authors = ["educup <hello@educup.io>"]
+homepage = "https://github.com/educup/dart_version_manager"
+repository = "https://github.com/educup/dart_version_manager"
+documentation = "https://github.com/educup/dart_version_manager"
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.scripts]
+dvm = "dart_version_manager.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.3.2"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+black = "^21.11b1"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pytest-cov = "^3.0.0"
+typer-cli = "^0.0.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
