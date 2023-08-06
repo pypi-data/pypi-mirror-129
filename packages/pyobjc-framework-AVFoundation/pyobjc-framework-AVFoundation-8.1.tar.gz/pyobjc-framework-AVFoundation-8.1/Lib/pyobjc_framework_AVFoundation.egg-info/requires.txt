@@ -1,0 +1,5 @@
+pyobjc-core>=8.1
+pyobjc-framework-CoreMedia>=8.1
+pyobjc-framework-CoreAudio>=8.1
+pyobjc-framework-Cocoa>=8.1
+pyobjc-framework-Quartz>=8.1
