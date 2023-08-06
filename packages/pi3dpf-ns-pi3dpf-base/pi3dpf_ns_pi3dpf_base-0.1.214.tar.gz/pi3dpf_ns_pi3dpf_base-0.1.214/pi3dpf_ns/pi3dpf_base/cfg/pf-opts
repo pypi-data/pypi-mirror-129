@@ -1,0 +1,57 @@
+﻿# This file allows to apply picture frame options to specific folders.
+# To take effect, a file with the name '.pf-opts' must exist in the folder referred to by the 
+# PictureFrame2020.py '-p PIC_DIR' or '--pic_dir PIC_DIR' option.
+
+# parameter: apply_to_subdirs, default: yes - pf.config/PictureFrame2020config.py: n/a
+# set to 'no' if you wish to limit the application of these settings to the folder the file resides in.
+# apply_to_subdirs = yes
+
+# parameter: track_last_viewed, default: no - pf.config: PIC_TRACK_LAST_VIEWED
+# if set to 'yes' and PictureFrame2020.py is not running in with '-x true' or '--shuffle true',
+# a track record of the last viewed picture is kept allowing PictureFrame2020.py to continue the slide show where  it stoped.
+# Usefull on directories with lots of pictures, as otherwise the display would always start with the first picture.
+# track_last_viewed = no
+
+# parameter: show_clock, default: no - pf.config: PIC_CLOCK_ENABLED
+# if set to 'yes', a clock is displayed on the screen. More configuration options in pf.config and positions.txt
+# show_clock = no
+
+# parameter: show_fname, default: yes - PictureFrame2020config.py: config.SHOW_NAMES_TM
+# if set to 'yes', the file name of the currently displayed picture is shown.
+# show_fname = yes
+
+# parameter: show_dname, default: no
+# if set to 'yes', the directory name the currently displayed picture resides in is shown.
+# show_dname = no
+
+# parameter: pos_dname_on_fname, default: yes
+# if 'show_dname = yes' and 'show_fname = no', use positions as defined in 'pic_fname:' instead of 'pic_title:'
+# pos_dname_on_fname = yes
+
+# parameter: use_exif_for_fname, default: none (ignored)
+# Display information from given exif tag instead of the file name. You may also specify re.search() regular 
+# expressions to extract subsets of information from an exif tag. For this, the use capture groups is required.
+# See https://docs.python.org/3/library/re.html#re.Match.group for more information.
+# On files without exif tags, the file name without extension is returned.
+#
+# Examples of widely used exif tags and their usage by pixabay scraper: (not yet published)
+# +---------------------+------------------------------------------------------------------------------------------------+
+# |use_exif_for_fname   | General exif information / pixabay scraper usage                                               |
+# +-------+-------------+--------+---------------------------------------------------------------------------------------+
+# | attr= |  encoding=  | Type   |tag-name                                                                               |
+# +-------+-------------+--------+---------------------------------------------------------------------------------------+
+# |   270 |      utf-8  |  ASCII | ImageDescription - possible place for tags                                            |
+# |   315 |      utf-8  |  ASCII | Artist           - pageURL                                                            |
+# | 40091 |      utf-8  |  BYTE  | XPTitle          - contains tags in language given in --search-language               |
+# | 40092 |      utf-16 |  BYTE  | XPComment        - contains the tags in all languages given in --tag-language-list    |
+# | 40093 |      utf-8  |  BYTE  | XPAuthor         - contains the author and ID assigned on Pixabay website             |
+# | 40094 |      utf-8  |  BYTE  | XPKeywords       - all tags in all languages as per --tag-language-list               |
+# | 40095 |      utf-8  |  BYTE  | XPSubject        - same as XPComment                                                  |
+# | 32781 |      utf-8  |  ASCII | ImageID          - Pixabay image ID                                                   |
+# | 18246 |      utf-8  |  SHORT | Rating           - not used! used to store # of downloads at given time (must not exceed 65536, which is a problem)
+# | 18249 |      utf-8  |  SHORT | RatingPercent    - Number of downloads deviced by 'downloads_to_yield_100' to get a rating
+# +-------+-------------+--------+---------------------------------------------------------------------------------------
+#  XPTitle is ignored by Windows Explorer if ImageDescription is set
+# Example for use case where multiple elements were written to exif tag XPComment='de: matterhorn, berg, bergsteigen\nen: matterhorn, mountain, mountaineering\nth: แม, ภูเขา, เทือกเขาแอลป์\n'
+# but suppose you only want to display the german language part:
+# exif_for_fname = attr=40092; encoding=utf-16; regexp=de: ([^\n$]+)
