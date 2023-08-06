@@ -1,0 +1,3 @@
+Flask-SQLAlchemy
+naver-config
+psycopg2
