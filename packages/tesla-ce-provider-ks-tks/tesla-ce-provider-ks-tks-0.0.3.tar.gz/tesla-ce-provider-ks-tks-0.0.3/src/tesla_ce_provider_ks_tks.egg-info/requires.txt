@@ -1,0 +1,6 @@
+joblib
+numpy
+scikit-learn
+scikit-learn
+scipy
+tesla-ce-provider>=0.0.7
