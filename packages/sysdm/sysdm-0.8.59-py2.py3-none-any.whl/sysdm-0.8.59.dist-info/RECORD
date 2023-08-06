@@ -1,0 +1,16 @@
+sysdm/__init__.py,sha256=hn-epZGpKjDiFySNogznR97egtgODN81XBksAIjLTM8,700
+sysdm/__main__.py,sha256=pm7nj_9SB583cuQqgOoEmgY4DbGOqnD3w4qNrhZKARY,10163
+sysdm/file_watcher.py,sha256=Y9RUZpN4feubmXsaUIL8LQctjk-V1Qswyh5RRdKDDlI,1396
+sysdm/flycheck_runner.py,sha256=ou6Dd3_Jp3WoQlBtlIqvEciXm8En2XsR8JnO10Xn7QI,8872
+sysdm/notify.py,sha256=Mm0pZ0CTLwyRH_L5AgYm_RP5cgay-weKclU9aYlawvg,1162
+sysdm/runner.py,sha256=mhITpWT-NtrGC_vw_YGos8dd0l0zpA4dQEEJ4Is9_bY,9247
+sysdm/sysctl.py,sha256=imi6O75H_DKvTtFuseH8McuzM7RDNSvziRgaGBHZlkc,11696
+sysdm/timer.py,sha256=VDO8yPU-UCB1uxNEs0ekkkAOXrmaSR3V0Hv-l_Y22nI,1151
+sysdm/utils.py,sha256=9s-LdT_-ybsntaJSewg2JTy_HjovSieqTaY_JGKTalM,2293
+sysdm/notifiers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sysdm/notifiers/base.py,sha256=t0TNuFcgMEeWFvJAUwsXPjv8ngP1_cKAcuck6ClDbPA,1587
+sysdm-0.8.59.dist-info/METADATA,sha256=bnvayf5TmMnJbEzRDBcnIfDeRzgu8bMtuYxUu4AXdrQ,3186
+sysdm-0.8.59.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sysdm-0.8.59.dist-info/entry_points.txt,sha256=kfxbWpCijyvTDYoDaiW7_nFv_rm11iGqlgIbSdtxU5A,47
+sysdm-0.8.59.dist-info/top_level.txt,sha256=02FM_wR8-r2IgG8XcJYS8XqM84sDDVV1SyJagH-ISyQ,6
+sysdm-0.8.59.dist-info/RECORD,,
