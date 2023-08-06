@@ -1,0 +1,13 @@
+absl-py
+apache-beam[gcp]>=2.32
+grpcio
+matplotlib
+mock
+networkx
+numpy
+protobuf>=3.17
+pyarrow
+pygraphviz
+scipy
+six
+tf-nightly-cpu>=2.7.0.dev20210908
