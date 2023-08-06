@@ -1,0 +1,17 @@
+libnncase.so,sha256=yNEWbHko03h9Da28MWCxrYNkfD3FqECC9Wf6o_70KoY,17903032
+libnncase.targets.k210.so,sha256=ktl8psYQiIAaEdjO5YQaTZ3QL2goIIIdqG67wlhWHJg,104744
+libnncase.targets.vulkan.so,sha256=RbjU_-q-fZh3fotBxoqWK9hctUrgA6QNoWlYpEhIaeg,79272
+libnncase.modules.vulkan.so,sha256=8jYmJzi5mIVDujRFVXpV112tb6DWiCYF0qsGKC7ktb0,8752792
+libnncase.targets.cpu.so,sha256=wxGWLmmG9TQNenTfkdv763gLgop22NKoiJgmosa2Jb0,41840
+_nncase.cpython-37m-x86_64-linux-gnu.so,sha256=SADLc5RalFwUGlEwQA6JnoqXBTCpgrpPlj02mWOkO6Q,235312
+libnncase.modules.k210.so,sha256=sMZ919t5p5aihGYbLF0mU-n-_y3S9IrghFoXQxBxYfw,426792
+nncase-1.1.0.20211203.dist-info/METADATA,sha256=cwHYaqCCfX90-Rikpy-FcRWERljMk1N_o3AzQMePUgI,3003
+nncase-1.1.0.20211203.dist-info/top_level.txt,sha256=S_6nEOnooSRclRzthgIC297bTDVxSghNxQyc_7oNxq4,15
+nncase-1.1.0.20211203.dist-info/RECORD,,
+nncase-1.1.0.20211203.dist-info/WHEEL,sha256=Z8zmg5WKvFjhEOlRCXreJ0fNK-eXbZJDx7xktZlH19s,113
+nncase-1.1.0.20211203.dist-info/LICENSE,sha256=tTdrr12tvYx4LKECY4VVPqHV_33egMjqCh6wE7bWeIQ,11342
+nncase.libs/libgcc_s-a843a011.so.1,sha256=m63229qBj8w-f0UOdHi8FF7FIy3AMt10KAby4YX__ZY,556464
+nncase.libs/libstdc++-d54d9843.so.6.0.28,sha256=46QOEw3MxsHFOmoRNwHpjfnrtrwTYowqPLAkARQfhOY,2501640
+nncase/__init__.py,sha256=VbXv1ycBuBI5fjNKF9fTNxPhxyChFiV27waD1o8lPBQ,1922
+nncase/simulator.py,sha256=RUE2hzivL0zSQXWN1DW9kLxUtwZB9Mzy9LLl6d1aKbM,508
+nncase/base.py,sha256=zhkoaH2tOlT44Fd-urWLreVAGInTsJhqOXJ82J8C7M8,81
