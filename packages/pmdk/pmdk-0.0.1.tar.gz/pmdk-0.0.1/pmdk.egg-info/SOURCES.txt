@@ -1,0 +1,6 @@
+setup.py
+pmdk.egg-info/PKG-INFO
+pmdk.egg-info/SOURCES.txt
+pmdk.egg-info/dependency_links.txt
+pmdk.egg-info/not-zip-safe
+pmdk.egg-info/top_level.txt
