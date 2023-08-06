@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: oneNeuron_pypi-Suraj0307
+Version: 0.0.2
+Summary: Its an implimentation of Perceptron
+Home-page: https://github.com/Suraj0307/oneNeuron_pypi
+Author: Suraj0307
+Author-email: joshisuraj535@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Suraj0307/oneNeuron_pypi/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# oneNeuron_pypi
+oneNeuron_pypi
+
+# Reference 
+[official python docs](https://packaging.python.org/tutorials/packaging-projects/)
+
