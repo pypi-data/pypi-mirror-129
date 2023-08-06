@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: mypackagejiogs
+Version: 5.5.5.5
+Summary: test
+Home-page: https://github.com/ivanovanton/
+Author: Anton
+Author-email: ant4731@yandex.ru
+License: MIT
+Download-URL: https://github.com/ivanovanton/mypackagejiogs/archive/refs/tags/v5.5.5.5.tar.gz
+Description: UNKNOWN
+Keywords: mypackagejiogs
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
