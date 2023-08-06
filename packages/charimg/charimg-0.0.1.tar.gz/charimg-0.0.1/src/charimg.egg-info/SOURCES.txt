@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+src/charimg.egg-info/PKG-INFO
+src/charimg.egg-info/SOURCES.txt
+src/charimg.egg-info/dependency_links.txt
+src/charimg.egg-info/requires.txt
+src/charimg.egg-info/top_level.txt

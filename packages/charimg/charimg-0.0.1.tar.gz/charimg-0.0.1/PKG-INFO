@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: charimg
+Version: 0.0.1
+Summary: a tiny tool to print image in cmdline
+Home-page: https://github.com/insorker/charimg-py
+Author: insorker
+Author-email: insorker@qq.com
+License: MIT
+Description: # Charimg
+        a tiny tool to print image in cmdline
+        
+Keywords: python image char
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
