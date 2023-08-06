@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pat-match-st2
+Version: 1.0.0
+Summary: pattern matching tools
+Home-page: https://github.com/balrajsingh9/gsa-projects
+Author: Balraj Singh Saini, Chahat Gupta, Janardhan Jayachandra Kammath
+Author-email: au671472@post.au.dk
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package creates a suffix tree and then generates suffix-array and lcp-array using gen-lcp.search-st2 creates a suffix tree in linear time using the suffix array and lcp-array generatedby the gen-lcp
+
