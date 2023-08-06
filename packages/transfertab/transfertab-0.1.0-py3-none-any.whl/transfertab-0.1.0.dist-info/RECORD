@@ -1,0 +1,11 @@
+transfertab/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+transfertab/_nbdev.py,sha256=mSXtZIOxjPRSmjdMusaLrCPE0yGA82bGcFYH4IMz-0c,646
+transfertab/extract.py,sha256=UCNPXAMlgcf-gCssevXR76tA7SSivHEb_9SKnJ_nn38,2351
+transfertab/transfer.py,sha256=559lXqpJrRPIdMZOhWsOhi-tZOJBqKTWTzYcG5BRXTI,3735
+transfertab/utils.py,sha256=oldyf0PzUiAf5GYLWLyiFg_t0zu--WuTPXHvjiVkIp8,2778
+transfertab-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+transfertab-0.1.0.dist-info/METADATA,sha256=FPOl6Go2TlSpsfU0wxeD4YNCIyV-MMbIRwMVVF0uM9A,7576
+transfertab-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+transfertab-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+transfertab-0.1.0.dist-info/top_level.txt,sha256=BDQp7b6jevi56kn2CsWjwvYZqMxmufOSAZqbHq8JXHE,12
+transfertab-0.1.0.dist-info/RECORD,,
