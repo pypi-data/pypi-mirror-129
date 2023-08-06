@@ -1,0 +1,2 @@
+https://mirror.baidu.com/pypi/simple
+https://test.pypi.org/simple/
