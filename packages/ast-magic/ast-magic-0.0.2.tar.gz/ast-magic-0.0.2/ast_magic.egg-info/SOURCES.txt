@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+ast_magic/__init__.py
+ast_magic.egg-info/PKG-INFO
+ast_magic.egg-info/SOURCES.txt
+ast_magic.egg-info/dependency_links.txt
+ast_magic.egg-info/requires.txt
+ast_magic.egg-info/top_level.txt
