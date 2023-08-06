@@ -1,0 +1,12 @@
+
+[dev]
+pytest
+coverage
+pytest-cov
+codecov
+darker
+black
+isort
+pylint
+mypy
+gitchangelog
