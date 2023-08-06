@@ -1,0 +1,7 @@
+setup.py
+easyaspyplotting/__init__.py
+easyaspyplotting/themes.py
+easyaspyplotting.egg-info/PKG-INFO
+easyaspyplotting.egg-info/SOURCES.txt
+easyaspyplotting.egg-info/dependency_links.txt
+easyaspyplotting.egg-info/top_level.txt
