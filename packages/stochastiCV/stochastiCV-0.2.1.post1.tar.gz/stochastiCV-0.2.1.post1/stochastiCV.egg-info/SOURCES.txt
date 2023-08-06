@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+stochastiCV/__init__.py
+stochastiCV/_utils.py
+stochastiCV/kfolds.py
+stochastiCV/straight.py
+stochastiCV/subsample.py
+stochastiCV.egg-info/PKG-INFO
+stochastiCV.egg-info/SOURCES.txt
+stochastiCV.egg-info/dependency_links.txt
+stochastiCV.egg-info/top_level.txt

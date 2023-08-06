@@ -1,0 +1,2 @@
+global-include stochastiCV/*.py
+exclude stochastiCV/exhaustive.py
