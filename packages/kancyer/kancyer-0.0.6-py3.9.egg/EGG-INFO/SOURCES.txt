@@ -1,0 +1,8 @@
+kancyer.py
+setup.py
+kancyer.egg-info/PKG-INFO
+kancyer.egg-info/SOURCES.txt
+kancyer.egg-info/dependency_links.txt
+kancyer.egg-info/entry_points.txt
+kancyer.egg-info/requires.txt
+kancyer.egg-info/top_level.txt
