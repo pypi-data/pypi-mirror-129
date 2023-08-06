@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: freelanceapi
+Version: 0.1.1
+Summary: FreelanceAPI is a module for reading & evaluating export files from the Freelance control system.
+Home-page: https://github.com/DarkJumper/FreelanceAPI
+License: GNU
+Author: Peter Schwarz
+Author-email: p.schwarz1994@outlook.de
+Requires-Python: >=3.9.1,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Project-URL: Repository, https://github.com/DarkJumper/FreelanceAPI
+Description-Content-Type: text/markdown
+
+FreecomAPI
+=======
