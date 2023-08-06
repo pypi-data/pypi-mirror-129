@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pi-lab-jupyter-pi-service
+Version: 0.0.1
+Summary: Jupyter server 认证
+Home-page: UNKNOWN
+Author: Simeon
+Author-email: 
+License: GPL
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jupyter (>=1.1.0)
+
+## pi_service
+
+### build
+
+```bash
+python3 -m pip install build
+
+python -m build --wheel
+```
+
+
