@@ -1,0 +1,5 @@
+connexion[swagger-ui]>=2.6.0
+
+[async]
+aiohttp>=3.6.2
+aiohttp_jinja2>=1.2.0
