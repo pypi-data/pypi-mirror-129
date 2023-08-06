@@ -1,0 +1,5 @@
+grpcio==1.41.0
+protobuf==3.16.0
+jproperties
+requests
+grpcio-tools==1.36.1
