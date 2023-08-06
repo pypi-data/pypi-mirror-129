@@ -1,0 +1,9 @@
+aws_solutions_constructs/aws_lambda_s3/__init__.py,sha256=c21mgYOa8iKfrYOcU_G3pMLZvk2zkAtEfwDAT9S1Kpo,22008
+aws_solutions_constructs/aws_lambda_s3/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_solutions_constructs/aws_lambda_s3/_jsii/__init__.py,sha256=9fWJO-NqlI47MUZ6kuX0PZfDswsuZk9I9QsO6cSPfRI,441
+aws_solutions_constructs/aws_lambda_s3/_jsii/aws-lambda-s3@2.0.0.jsii.tgz,sha256=El4chF_iHd0STpFazOt38FX6HgwChNki0dnokbj6-uk,97744
+aws_solutions_constructs.aws_lambda_s3-2.0.0.dist-info/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+aws_solutions_constructs.aws_lambda_s3-2.0.0.dist-info/METADATA,sha256=FUQMURblp6Tay8lpZSx8JABoFbV7ASwO6Xsjiwq9rd8,8235
+aws_solutions_constructs.aws_lambda_s3-2.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aws_solutions_constructs.aws_lambda_s3-2.0.0.dist-info/top_level.txt,sha256=hi3us_KW7V1ocfOqVsNq1o3w552jCEgu_KsCckqYWsg,25
+aws_solutions_constructs.aws_lambda_s3-2.0.0.dist-info/RECORD,,
