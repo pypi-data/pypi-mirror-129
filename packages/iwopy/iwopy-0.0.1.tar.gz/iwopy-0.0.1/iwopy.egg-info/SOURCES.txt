@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+bin/test-iwopy
+iwopy/VERSION
+iwopy/__init__.py
+iwopy.egg-info/PKG-INFO
+iwopy.egg-info/SOURCES.txt
+iwopy.egg-info/dependency_links.txt
+iwopy.egg-info/requires.txt
+iwopy.egg-info/top_level.txt
+iwopy/flib/__init__.py
+iwopy/flib/test1.py
