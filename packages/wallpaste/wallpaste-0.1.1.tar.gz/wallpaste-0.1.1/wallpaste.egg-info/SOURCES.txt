@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+wallpaste.py
+wp.py
+wallpaste.egg-info/PKG-INFO
+wallpaste.egg-info/SOURCES.txt
+wallpaste.egg-info/dependency_links.txt
+wallpaste.egg-info/requires.txt
+wallpaste.egg-info/top_level.txt
