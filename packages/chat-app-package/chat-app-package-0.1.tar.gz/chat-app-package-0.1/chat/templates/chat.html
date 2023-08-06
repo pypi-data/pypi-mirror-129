@@ -1,0 +1,200 @@
+{% extends 'base.html' %} 
+{% block title %}Chat
+{% endblock title %} 
+
+
+{% block body %}
+
+
+<style>
+
+
+  .chat{
+    overflow-y: scroll; 
+    height: 70%; 
+  }
+
+  .username{
+    color:#1b0995 !important; 
+    font-size:12px;
+  }
+
+
+  .messages{
+    margin-top:25px;
+    
+  }
+
+  .left-chat-bubble{
+    display: inline-block;
+    background-color:lightgray;
+    border-radius:40px;
+    max-width:100%;
+    overflow:hidden;
+    padding-left:20px;
+    padding-right:20px;
+   }
+
+   .message-chat{
+     color:rgb(11,116,217) !important;
+   }
+  
+
+
+
+  .sender-item{
+    with:50% !important;
+  }
+
+  .sender-item input{
+      width:80%;
+      border-radius:15px;
+      border:none;
+      border:1px solid black;
+      padding:10px;
+      border-color: rgb(11,116,217) !important;
+      color: rgb(11,116,217) !important;
+      outline-color: rgb(11,116,217) !important;
+      border-color: linear-gradient(90deg, rgba(11,116,217,1) 0%, rgba(8,102,240,1) 100%) !important;
+  }
+
+  .sender-item input::placeholder {
+    color: rgb(11,116,217);
+    opacity: 1;  
+  }
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="nav-link" href="{% url 'login' %}" class="btn btn-primary">Login</a>
+  <a class="nav-link" href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+  <a class="nav-link" href="{% url 'signup' %}" class="btn btn-primary">Signup</a>
+</nav>
+
+<div
+  class="container d-flex justify-content-around flex-column"
+  style="height: 100vh"
+>
+  <h1 class="text-center text-success" style="color: rgb(11,116,217) !important;
+  color: linear-gradient(90deg, rgba(11,116,217,1) 0%, rgba(8,102,240,1) 100%) !important;">
+    {% if ChatName %} {{ChatName}} {% else %} GroupChat {% endif %}
+  </h1>
+  <div
+    class="chat flex-column justify-content-between"
+    id='chat'
+  >
+    {% for msg in messages %}
+    <div class="messages d-flex flex-column msg" >
+      <h6 class="username text-primary">{{msg.user}}</h6>
+      <div class="left-chat-bubble-wrap">
+        <div class="left-chat-bubble">
+        <p>
+          <h6 class="message-chat text-success">{{msg.message}}</h6>
+        </p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="sender-item">
+    <input type="text" placeholder="Send Message" id="message"  />
+    <button class="btn btn-primary">Send</button>
+  </div>
+  <P class="text-center text-danger" id='error'></p>
+  
+  <h2 id="warning"></h2>
+</div>
+{% endblock body %} {% block script %}
+<script>
+
+  const messages = document.getElementById('chat');
+  function scrollToBottom() {
+    messages.scrollTop = messages.scrollHeight;
+  }
+  scrollToBottom();
+
+
+  function validation(){
+
+    const message = document.getElementById("message").value
+
+
+    const err = document.getElementById("error")
+
+
+    if (message==""){
+        
+      err.innerText ="Please enter a valid message";
+      return false
+
+    }else{
+      return true
+    }  
+   
+
+  }
+
+
+  let con = false
+  const ws = new WebSocket("ws://{{websocketPath}}/ws/chat/")
+  ws.addEventListener("open", () => {
+    console.log("Opened")
+    con = true
+    ws.send(
+      JSON.stringify({
+        command: "join",
+        groupname: "publicchat"
+      })
+    )
+  })
+  const button = document.querySelector("button")
+  button.addEventListener("click", () => {
+    if (con) {
+      const message = document.getElementById("message").value
+      const chekerr=validation()
+      console.log("chekerr:::",chekerr)
+      
+      if (chekerr){
+        ws.send(
+          JSON.stringify({
+            command: "send",
+            message: message
+          })
+        )
+      }else{
+        return false
+      }
+       
+      document.getElementById("message").value = ""
+    } else {
+      console.log("Not")
+    }
+  })
+  ws.onmessage = (e) => {
+    console.log(e)
+    const data1 = JSON.parse(e.data)
+    console.log(data1)
+    if (data1.warning) {
+      const h2w = document.getElementById("warning")
+      h2w.innerText = "PLEASE LOGIN TO CHAT"
+    } else if (data1.message) {
+      const mesage = `
+
+      <div class="messages d-flex flex-column msg" >
+        <h6 class="username text-primary">${data1.user}</h6>
+        <div class="left-chat-bubble-wrap">
+          <div class="left-chat-bubble">
+          <p>
+            <h6 class="message-chat text-success">${data1.message}</h6>
+          </p>
+          </div>
+        </div>
+      </div> 
+      `
+      const chat = document.getElementsByClassName("chat")[0]
+      chat.innerHTML += mesage
+      scrollToBottom();
+    }
+  }
+</script>
+{% endblock script %}

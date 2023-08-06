@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+chat/templates/base.html
+chat/templates/chat.html
+chat/templates/login.html
+chat/templates/signup.html
+chat_app_package.egg-info/PKG-INFO
+chat_app_package.egg-info/SOURCES.txt
+chat_app_package.egg-info/dependency_links.txt
+chat_app_package.egg-info/requires.txt
+chat_app_package.egg-info/top_level.txt
