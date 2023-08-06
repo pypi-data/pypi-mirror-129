@@ -1,0 +1,3 @@
+[console_scripts]
+sda_printer = sda_printer.__main__
+
