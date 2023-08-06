@@ -1,0 +1,11 @@
+django_hookup/__init__.py,sha256=CLtpVrjcGY_nmxfUnglqcsKsSyaw6OR9gGy15TLZOSE,156
+django_hookup/apps.py,sha256=aVQiq-NmYFC6SghCpIapwu7eUQieZtX2SjHtuFnErV4,191
+django_hookup/core.py,sha256=C3BrBm-TK3Fitupy0069eJVyDDmQsFOAJBGP72BGo68,1861
+django_hookup/urls.py,sha256=K5_QXssgHx6anFmyOJ8_X-N6j8Xyg019oGR_KBWp4ZE,1169
+django_hookup/version.py,sha256=D7aiZQSZML__u3Ry69xPhtulRZJgnwc4D6kFdG0mezI,1477
+django_hookup/templates/admin/hooks_registry.html,sha256=DA1WbJBYmvuLSNeQptb48WvqOBPwtKeuP7ujdNnp45k,677
+django_hookup-0.0.1.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hookup-0.0.1.dist-info/METADATA,sha256=Q4K1pTouP3TAMUjxqnfMxuPgwVTNq6RpCtsvwDIemCo,2251
+django_hookup-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_hookup-0.0.1.dist-info/top_level.txt,sha256=ZOeEfOcQy99tL3qiXbAj10TzbHDRBmvTA8UpiYLLTm4,14
+django_hookup-0.0.1.dist-info/RECORD,,
