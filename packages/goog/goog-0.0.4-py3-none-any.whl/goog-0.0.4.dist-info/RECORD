@@ -1,0 +1,12 @@
+goog/__init__.py,sha256=SL0OjXUGMdiKk1fu6vPE3fg9TM0R45NUGtf2OvRSkSI,415
+goog/cdn.py,sha256=dRxRQQ8V7Pup1teJlmAj5IZuf1OzT8XbkCnPnQ6iOwA,1634
+goog/proxy.py,sha256=s4CJkrb85W15N9VbjzMqNE4-muPoNzBAoYkZ3q-weWQ,1582
+goog/__metadata__/DISCLIAIMER.md,sha256=Eh9dhFWbvRMm27jxKYRZqQp_Lb8PkhbYWYQyLoMSrHg,4785
+goog/__metadata__/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+goog/__metadata__/README.md,sha256=1DX-sHuNmwK_9hLVXVtVK9L-mUN8A_XfgI-PqKDxcPc,791
+goog/__metadata__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goog/__metadata__/requirements.txt,sha256=JjHirMXyxOB-yaqEebZR3EB-vJmiOZfDpxCwBmME8Yk,35
+goog-0.0.4.dist-info/METADATA,sha256=i8C7w7wqWooWX4TWPf9RZJbpBGwU68-yzNsPwgUPAvw,2014
+goog-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+goog-0.0.4.dist-info/top_level.txt,sha256=0CtQxBFE5FybhGnPCc5qgfFjZf7mUhO38Iog21u_n0I,5
+goog-0.0.4.dist-info/RECORD,,
