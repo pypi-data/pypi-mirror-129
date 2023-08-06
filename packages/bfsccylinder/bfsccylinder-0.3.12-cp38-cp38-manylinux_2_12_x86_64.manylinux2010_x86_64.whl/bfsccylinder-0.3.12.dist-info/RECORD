@@ -1,0 +1,15 @@
+bfsccylinder/sanders.py,sha256=RfwA4JbGrKc1SaewCAaajCXx-xSmbjsktxdeC_QEX0o,374
+bfsccylinder/version.py,sha256=uzDtUmN3o6XGGV0Pkoi7vJCijlJJCOYCmLl8900CcXg,23
+bfsccylinder/__init__.py,sha256=xhf3LwlIAL7As_q-XHgbuiIHwsBeDZ57Dnaldna7hn8,351
+bfsccylinder/bfsccylinder_sanders.cpython-38-x86_64-linux-gnu.so,sha256=cXsNr_gZwmsnGlw-aVYI_7xnToKTUmeDeH72voXTkaQ,6667728
+bfsccylinder/quadrature.py,sha256=C6JMKSnjBHbPj0pSTqSLXr7KVW1cSMrM-tx76YsvpVU,8509
+bfsccylinder/utils.py,sha256=FqcZWff0w_NqDGxE9vfBDzfvAA7ibRQbvIznwyFPoeg,676
+bfsccylinder/bfsccylinder.cpython-38-x86_64-linux-gnu.so,sha256=_jmB3DuJO4lxtOyjtTF4298742P29jHss6qAMx1kAFk,5930432
+bfsccylinder.libs/libgomp-f7e03b3e.so.1.0.0,sha256=GzmXB1qluHXQUhlsmNKuWncNm8Jezfq1jt5rKrV_8kQ,93080
+bfsccylinder-0.3.12.dist-info/LICENSE,sha256=qN7Ivs_EdzuZg-bJN24bbsrKe5EbDiqwoXtsZeNvzK0,1521
+bfsccylinder-0.3.12.dist-info/RECORD,,
+bfsccylinder-0.3.12.dist-info/top_level.txt,sha256=-ZxwRg1f4jcnTolfFatHW86P40EuzvmqcGgJTaZ0frQ,13
+bfsccylinder-0.3.12.dist-info/WHEEL,sha256=4jt3s2SccH6o2ToOLXWl8IJUftjHelTzKdBcGG27rIE,148
+bfsccylinder-0.3.12.dist-info/METADATA,sha256=p3oRCECmzTmTHvgylVxOwGOSER-PNskgdVLGvgFn_3Y,1727
+bfsccylinder-0.3.12.data/data/LICENSE,sha256=qN7Ivs_EdzuZg-bJN24bbsrKe5EbDiqwoXtsZeNvzK0,1521
+bfsccylinder-0.3.12.data/data/README.md,sha256=S-6Yd9gYIIBhriqo_QbRsvwIHqtBmb800OPpsymmNrc,674
