@@ -1,0 +1,4 @@
+allianceauth>=2.9.3
+allianceauth-discordbot
+feedparser
+discord.py
