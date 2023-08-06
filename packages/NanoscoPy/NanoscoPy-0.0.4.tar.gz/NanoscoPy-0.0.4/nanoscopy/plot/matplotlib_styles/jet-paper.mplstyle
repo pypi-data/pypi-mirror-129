@@ -1,0 +1,31 @@
+# Custom plot style
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+## ***************************************************************************
+figure.figsize:     8, 6  # figure size in inches
+
+## ***************************************************************************
+## * Fonts                                                                   *
+## ***************************************************************************
+axes.labelsize:     22  # font size of the x and y labels
+axes.titlesize:     22   # font size of the axes title
+xtick.labelsize:     20  # font size of the tick labels
+ytick.labelsize:     20  # font size of the tick labels
+legend.fontsize:      18  # font size of the legend entries
+
+## ***************************************************************************
+## * GRIDS                                                                   *
+## ***************************************************************************
+grid.linewidth: 0.8     # in points
+
+## ***************************************************************************
+## * TICKS                                                                   *
+## ***************************************************************************
+xtick.major.width:   0.8     # major tick width in points
+xtick.minor.width:   0.6     # minor tick width in points
+
+ytick.major.width:   0.8     # major tick width in points
+ytick.minor.width:   0.6     # minor tick width in points
+
+lines.linewidth :   3.0
