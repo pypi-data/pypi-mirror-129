@@ -1,0 +1,9 @@
+flavius_api/__init__.py,sha256=6ltCrnoIubbX9ZrfEQEV2EvrYoH31l4OXVjbabAyEFk,60
+flavius_api/api.py,sha256=dRQ7vhsFo3dcbhuQyu8dxFco9X0ArcZwW5I_rN4en8Q,7792
+flavius_api/checks.py,sha256=Ts3ZHjgKdHdF5VJhN5FmypPxgUMgqkI18GPvhzz30_M,371
+flavius_api/conf.py,sha256=QF3151wWTxChS3-UVO5TbvQAX08LwbALqNIOnc14VYQ,3329
+flavius_api-1.5.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flavius_api-1.5.1.dist-info/METADATA,sha256=Pq9VI9maYBQjEyfU32YgL6U0jq_jJo1uUlbfT1BLAfY,625
+flavius_api-1.5.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+flavius_api-1.5.1.dist-info/top_level.txt,sha256=gEeEmU13cblORTyvnF-oFwm8edo9EEWG4lSVpsm0Kuc,12
+flavius_api-1.5.1.dist-info/RECORD,,
