@@ -1,0 +1,6 @@
+setup.py
+FrameWorkConsumo.egg-info/PKG-INFO
+FrameWorkConsumo.egg-info/SOURCES.txt
+FrameWorkConsumo.egg-info/dependency_links.txt
+FrameWorkConsumo.egg-info/requires.txt
+FrameWorkConsumo.egg-info/top_level.txt
