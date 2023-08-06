@@ -1,0 +1,16 @@
+panphylo/__init__.py,sha256=KI5kQUDiOqsICCks9eoza0rsEhb-0ZIrDGCW_Wy7kJI,2184
+panphylo/__main__.py,sha256=SmP2ne712TFRvYRGD_oOYIou8e_gqCYdJzm27Qoc6JY,5456
+panphylo/common.py,sha256=J5PaZ4MjCCqtU3q1hS5riyFXfoJXFAcG3WCuhLzb6zY,4120
+panphylo/common_io.py,sha256=0irUMvMix5Jc3mDD8CDSVjz_f7k0wUY1uhf7SpLzEu8,2395
+panphylo/internal.py,sha256=PkFGXpSlPtZYxDteF11t6x3JnMZYlFbz1c-B4arJZXk,8628
+panphylo/myunidecode.py,sha256=V7v_bF6itv3rJ-9PiRdOrc1XW2KetSCFgfL8rS3DRiU,937243
+panphylo/nexus.py,sha256=gOFu9naYBjnKVYeEr_E2XUiQWjK-X_-CQ51Yu4ZGEis,12790
+panphylo/phylip.py,sha256=tsIlrTAKUDUsqPxNEzuk221c0VidelYFz5hoTqXhWZg,2464
+panphylo/tabular.py,sha256=Vgpdju6lhOhJ80KiPrzCZA9peSt56a38iv6rX_ljzjs,5010
+panphylo-0.2.dist-info/AUTHORS.md,sha256=zvCo54pGg9ySfDTarfDr6N43__e9nSMGof3JoEfaHBo,81
+panphylo-0.2.dist-info/LICENSE,sha256=htK7kEVwJBaf9q3WtV63g9lxNRykAtqm4dL1NkWTEz8,1071
+panphylo-0.2.dist-info/METADATA,sha256=5kfJWvV6Qxk23T4QvP-M25FF6xJL7LrupS4nOSAM-Hk,9947
+panphylo-0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+panphylo-0.2.dist-info/entry_points.txt,sha256=DyleZhc0GRKl-XU5EBNh6tUzugyVmaz7UiZlsATjfdY,53
+panphylo-0.2.dist-info/top_level.txt,sha256=Pu8hIaJg961TpxSshbk5O2dfVyfLjmo1ENmtyEflFfM,9
+panphylo-0.2.dist-info/RECORD,,
