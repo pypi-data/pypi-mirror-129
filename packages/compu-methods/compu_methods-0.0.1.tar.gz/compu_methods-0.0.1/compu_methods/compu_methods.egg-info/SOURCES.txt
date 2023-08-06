@@ -1,0 +1,8 @@
+README.rst
+setup.py
+compu_methods/compu_methods.egg-info/PKG-INFO
+compu_methods/compu_methods.egg-info/SOURCES.txt
+compu_methods/compu_methods.egg-info/dependency_links.txt
+compu_methods/compu_methods.egg-info/not-zip-safe
+compu_methods/compu_methods.egg-info/requires.txt
+compu_methods/compu_methods.egg-info/top_level.txt

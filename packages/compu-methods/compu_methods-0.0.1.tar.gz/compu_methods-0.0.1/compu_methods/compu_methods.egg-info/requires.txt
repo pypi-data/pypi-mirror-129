@@ -1,0 +1,6 @@
+black
+coverage
+sphinx
+twine
+wheel
+chardet
