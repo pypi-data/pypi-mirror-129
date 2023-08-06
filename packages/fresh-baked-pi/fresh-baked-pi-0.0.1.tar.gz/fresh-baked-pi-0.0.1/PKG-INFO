@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: fresh-baked-pi
+Version: 0.0.1
+Summary: Fresh Baked Pi | The RPi Setup Utility
+Home-page: https://github.com/tushariyer/fresh-baked-pi
+Author: Tushar Iyer
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Licensed under the generic MIT License."fresh-baked-pi" can either be downloaded from the Releases page on GitHub and manually added to PATH or installed via "pip".
+Platform: UNKNOWN
