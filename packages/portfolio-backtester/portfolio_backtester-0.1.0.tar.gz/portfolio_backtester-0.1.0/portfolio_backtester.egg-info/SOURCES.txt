@@ -1,0 +1,39 @@
+LICENSE.txt
+README.md
+setup.py
+portfolio_backtester/__init__.py
+portfolio_backtester/backtest_model.py
+portfolio_backtester/backtest_model_v2.py
+portfolio_backtester.egg-info/PKG-INFO
+portfolio_backtester.egg-info/SOURCES.txt
+portfolio_backtester.egg-info/dependency_links.txt
+portfolio_backtester.egg-info/requires.txt
+portfolio_backtester.egg-info/top_level.txt
+portfolio_backtester/data/25_Portfolios_5x5.csv
+portfolio_backtester/data/25_Portfolios_5x5_1Factor.csv
+portfolio_backtester/data/25_Portfolios_5x5_MOM.csv
+portfolio_backtester/data/FF3_daily_19260701-20210630.csv
+portfolio_backtester/data/FF3_monthly_192607-202106.csv
+portfolio_backtester/data/FF3_weekly_19270702-20210625.csv
+portfolio_backtester/data/FF3_yearly_1927-2020.csv
+portfolio_backtester/data/FF5-0317.csv
+portfolio_backtester/data/Industry.csv
+portfolio_backtester/data/SP100 20060901-20211015 volume.csv
+portfolio_backtester/data/SP100 20060901-20211015.csv
+portfolio_backtester/data/SP500 20060901-20211015 volume.csv
+portfolio_backtester/data/SP500 20060901-20211015.csv
+portfolio_backtester/data/SPSectors.csv
+portfolio_backtester/data/T-bills 20020102-20211020.csv
+portfolio_backtester/data/international.csv
+portfolio_backtester/data/russell2000-1314.csv
+portfolio_backtester/data/sp500-0317.csv
+portfolio_backtester/data/sp500-0514.csv
+portfolio_backtester/data/sp500-1216.csv
+portfolio_backtester/data/sp500-1314.csv
+portfolio_backtester/data/sp_500_prices.csv
+portfolio_backtester/data/sp_500_prices_v2.csv
+portfolio_backtester/data/sp_500_return.csv
+portfolio_backtester/data/sp_500_volumes_v2.csv
+portfolio_backtester/data/trates-0314.csv
+tests/__init__.py
+tests/backtest_model_tests.py
