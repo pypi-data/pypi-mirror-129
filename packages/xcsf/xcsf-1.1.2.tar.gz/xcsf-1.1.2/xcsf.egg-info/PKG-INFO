@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: xcsf
+Version: 1.1.2
+Summary: XCSF learning classifier system: rule-based evolutionary machine learning
+Home-page: https://github.com/rpreen/xcsf
+Maintainer: Richard Preen
+Maintainer-email: rpreen@gmail.com
+License: GPL-3.0
+Description: UNKNOWN
+Keywords: XCS,XCSF,learning-classifier-systems
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
