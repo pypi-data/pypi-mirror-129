@@ -1,0 +1,13 @@
+primecountpy.libs/libgcc_s-a04fdf82.so.1,sha256=E2_sw1FhiQZsCQiywTDdBDMlSUsazp7QUYpklMz_w_s,81256
+primecountpy.libs/libprimecount-3b6aa240.so.7.2,sha256=IpAnExROTwy2NGXlJHR443sdC7dXsDpF3HtQRE93Sug,442608
+primecountpy.libs/libstdc++-a9383cce.so.6.0.28,sha256=AQF8xpA7y538aY2feICyHGJkLWgDpwHYribC_iWn8Bw,2447392
+primecountpy.libs/libprimesieve-bd4f5b28.so.9.7.0,sha256=j1UrFaDtObzivihwCknELPrqB3n9FYtCmnw7KwPmUkk,309912
+primecountpy-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+primecountpy-0.0.0.dist-info/AUTHORS,sha256=gUVKk99IDA-78ESS89mJBKZXylJPdMKgOIDTGSCoIP0,122
+primecountpy-0.0.0.dist-info/top_level.txt,sha256=6y8t2DMtviUX8fE4_Ms7Q1RSChqx_Ml1bQtWzUiKUaQ,13
+primecountpy-0.0.0.dist-info/RECORD,,
+primecountpy-0.0.0.dist-info/WHEEL,sha256=xobt3k5KCwGovhqNwJJZzcTRHk7Ugs2zGfNVzdzIkQQ,113
+primecountpy-0.0.0.dist-info/METADATA,sha256=JNMo8Besr9x_GP7caYb67zsEFXbAakVNsoqn5xw8Lhk,2381
+primecountpy/__init__.py,sha256=09IByjZgmgwaj8_jKl4bQTvLpBHKsmXoFehkGRxcVug,26
+primecountpy/defs.pxd,sha256=ZTfuJhV6ImtXCGdEPlUTujbXh4Tr0kI2vdfDUNKRSik,522
+primecountpy/primecount.cpython-310-x86_64-linux-gnu.so,sha256=QG5plJpOzbNR8t55TNxtImwibrplaEVWKuDx17_YfYc,346696
