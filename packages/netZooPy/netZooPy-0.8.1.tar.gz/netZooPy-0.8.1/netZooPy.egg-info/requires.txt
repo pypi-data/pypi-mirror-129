@@ -1,0 +1,8 @@
+pandas
+numpy
+networkx
+matplotlib
+scipy
+python-igraph
+joblib
+statsmodels
