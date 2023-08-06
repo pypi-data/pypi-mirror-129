@@ -1,0 +1,9 @@
+setuptools
+zc.buildout
+zc.recipe.egg
+
+[tests]
+zope.testing
+zc.buildout[test]
+zc.recipe.egg
+pytest
