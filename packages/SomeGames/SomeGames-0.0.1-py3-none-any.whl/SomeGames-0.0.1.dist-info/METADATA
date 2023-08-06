@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: SomeGames
+Version: 0.0.1
+Summary: Includes some simple games such as matching pennies, m,n,k and hangman games
+Home-page: https://github.com/amanlai/some_games.git
+Author: Manlai Amarsaikhan
+Author-email: a.enkhmanlai@gmail.com
+License: BSD
+Download-URL: https://github.com/amanlai/some_games.git
+Keywords: TicTacToe,tic-tac-toe,mnk,m,n,k,hangman,Hangman,matching pennies,MatchingPennies
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.18.5)
+Requires-Dist: setuptools (==50.1.0)
+Requires-Dist: wheel
+
+-----------------------------------------------------------------------
+
+This package contains simple games including Hangman, Matching Pennies, 
+Tic-Tac-Toe and its generalized m,n,k-game. 
+
+The user must have numpy, re and time modules pre-installed to play the 
+games. 
+
+Each games instructions can be accessed by calling game.__doc__, e.g. 
+
+    from SomeGames import mnkGame
+    mnkGame.__doc__
+
+To install the module:
+
+    pip install SomeGames
+
+-----------------------------------------------------------------------
+

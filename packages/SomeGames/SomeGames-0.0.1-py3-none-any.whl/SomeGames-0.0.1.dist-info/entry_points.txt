@@ -1,0 +1,8 @@
+[console_scripts]
+HangmanGame = SomeGames.main:HangmanGame
+MPwithExponentialWinnings = SomeGames.main:MPwithExponentialWinnings
+MPwithInstantForgiveness = SomeGames.main:MPwithInstantForgiveness
+MatchingPennies = SomeGames.main:MatchingPennies
+TicTacToe = SomeGames.main:TicTacToe
+mnkGame = SomeGames.main:mnkGame
+
