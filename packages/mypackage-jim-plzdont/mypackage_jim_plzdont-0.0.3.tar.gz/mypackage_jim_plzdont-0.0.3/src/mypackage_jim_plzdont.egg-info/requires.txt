@@ -1,0 +1,6 @@
+
+[dev]
+pytest>=3.7
+pytest-cov
+check-manifest
+tox
