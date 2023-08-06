@@ -1,0 +1,6 @@
+colorama
+pikepdf
+rarfile
+scapy
+scapy_http
+zipfile
