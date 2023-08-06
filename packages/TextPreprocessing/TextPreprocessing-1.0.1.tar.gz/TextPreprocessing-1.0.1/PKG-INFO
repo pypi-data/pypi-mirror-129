@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: TextPreprocessing
+Version: 1.0.1
+Summary: NLP Text perprocessor
+Home-page: UNKNOWN
+Author: Arun Kesavan
+Author-email: <arunkottilukkal@gmail.com>
+License: UNKNOWN
+Keywords: python,text preprocessing,nlp
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+# TextPreprocessing
+
+This is the beta release of TextPreprocessing library. This library currenly capable of cleansing your text data for modal training.
+
+TextPreprocessing library can do the below actions:
+
+    * Expand general abbreviations
+    * Clear email ids in the text data
+    * Clear web URLs
+    * Clear html tags present in the text dataset
+    * Clear gibberish charsets
+    * Lemetize the text
+    * Correct spelling errors.
+
+We are enhancing this package on a regular basis and adding more flexible components to it in the upcoming releases. Please do update this package on frequently.
+
+
+
+
