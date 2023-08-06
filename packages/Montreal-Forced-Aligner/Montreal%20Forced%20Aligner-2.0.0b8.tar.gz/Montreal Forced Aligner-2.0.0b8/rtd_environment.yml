@@ -1,0 +1,21 @@
+name: mfa
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - numpy
+  - librosa
+  - tqdm
+  - requests
+  - colorama
+  - pyyaml
+  - praatio
+  - pip
+  - pip:
+      - sphinxemoji
+      - sphinxcontrib-autoprogram
+      - git+https://github.com/pydata/pydata-sphinx-theme.git
+      - sphinx-panels
+      - interrogate
+      - sphinx
+      - numpydoc
