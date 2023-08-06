@@ -1,0 +1,3 @@
+[console_scripts]
+fad = fad.__main__:main
+
