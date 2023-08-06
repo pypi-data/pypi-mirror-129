@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/torus_cli.egg-info/PKG-INFO
+src/torus_cli.egg-info/SOURCES.txt
+src/torus_cli.egg-info/dependency_links.txt
+src/torus_cli.egg-info/top_level.txt
+src/toruscli/__init__.py
+src/toruscli/app.py
+src/toruscli/main.py
