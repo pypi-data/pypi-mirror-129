@@ -1,0 +1,33 @@
+# Code formatter
+# ------------------------------------------------------------------------------
+black==21.11b1  # https://github.com/psf/black
+pyupgrade==2.29.1  # https://github.com/asottile/pyupgrade
+
+# Code quality
+# ------------------------------------------------------------------------------
+flake8==4.0.1  # https://github.com/PyCQA/flake8
+flake8-isort==4.1.1  # https://github.com/gforcada/flake8-isort
+flake8-bugbear==21.11.29  # https://github.com/PyCQA/flake8-bugbear
+flake8-pyi==20.10.0  # https://github.com/ambv/flake8-pyi
+flake8-quotes==3.3.1  # https://github.com/zheller/flake8-quotes
+flake8-implicit-str-concat==0.2.0  # https://github.com/keisheiled/flake8-implicit-str-concat
+
+# Code linter
+# ------------------------------------------------------------------------------
+pylint==2.12.1  # https://github.com/PyCQA/pylint
+
+# Type check
+# ------------------------------------------------------------------------------
+mypy==0.910  # https://github.com/python/mypy
+types_setuptools==57.4.4  # https://github.com/python/typeshed
+typeguard==2.13.2  # https://github.com/agronholm/typeguard
+
+# Security check
+# ------------------------------------------------------------------------------
+bandit==1.7.1  # https://github.com/PyCQA/bandit
+safety==1.10.3  # https://github.com/pyupio/safety
+
+# Code quality
+# ------------------------------------------------------------------------------
+coverage==6.2  # https://github.com/nedbat/coveragepy
+coveralls==3.3.1  # https://github.com/marketplace/coveralls
