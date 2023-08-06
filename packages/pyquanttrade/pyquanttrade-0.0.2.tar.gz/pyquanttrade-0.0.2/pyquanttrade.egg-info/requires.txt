@@ -1,0 +1,8 @@
+pandas
+numpy==1.19.0
+datetime
+IPython
+altair
+scipy
+quandl
+decouple
