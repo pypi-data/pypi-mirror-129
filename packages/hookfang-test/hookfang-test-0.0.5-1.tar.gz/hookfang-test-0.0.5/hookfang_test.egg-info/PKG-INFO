@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hookfang-test
+Version: 0.0.5
+Summary: Temp Package
+Home-page: UNKNOWN
+Author: Edwin
+License: UNKNOWN
+Description: # GQL
+        
+        This is just for a testing
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
