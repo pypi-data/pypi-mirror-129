@@ -1,0 +1,12 @@
+[config]
+batchsize=64
+learning_rate = [0.001, 0.33]
+train_logger_flush = 10
+verbose_train = 2
+validate_interval = 1
+shuffle_train = true
+cleanup_models = true
+
+sample_modifier="GraphEdgeConv"
+label_modifier = {name="RegressionLabels", columns=['max_pair_dist'], model_output='max_pair_dist', stacks=2, log10=true}
+dataset_modifier = "as_recarray_dist"

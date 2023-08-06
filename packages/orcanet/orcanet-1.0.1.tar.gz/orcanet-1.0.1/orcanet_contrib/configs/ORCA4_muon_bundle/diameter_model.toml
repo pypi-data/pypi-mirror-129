@@ -1,0 +1,17 @@
+[model]
+type = "DisjointEdgeConvBlock"
+next_neighbors = 16
+shortcut = true
+
+blocks = [
+    {units=[64, 64, 64], batchnorm_for_nodes=true},
+    {units=[128, 128, 128]},
+    {units=[256, 256, 256], pooling=true},
+    {type="OutputRegNormal", output_neurons=1, output_name="max_pair_dist", unit_list=[256,]},
+]
+
+[compile]
+optimizer = 'keras:Adam'
+
+[compile.losses]
+max_pair_dist = {function = 'lkl_normal'}

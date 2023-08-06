@@ -1,0 +1,17 @@
+[model]
+type = "DisjointEdgeConvBlock"
+next_neighbors = 16
+shortcut = true
+
+blocks = [
+    {units=[64, 64, 64], batchnorm_for_nodes=true},
+    {units=[128, 128, 128]},
+    {units=[256, 256, 256], pooling=true},
+    {type="OutputRegNormal", output_neurons=3, output_name="dir", unit_list=256, sigma_activation="exponential"},
+]
+
+[compile]
+optimizer = 'keras:Adam'
+
+[compile.losses]
+dir = {function = 'lkl_normal', metrics=["mae_err_reco", "mse_err_reco"]}

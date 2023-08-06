@@ -1,0 +1,18 @@
+[model]
+type = "DisjointEdgeConvBlock"
+next_neighbors = 16
+shortcut = true
+
+blocks = [
+    {units=[64, 64, 64], batchnorm_for_nodes=true},
+    {units=[128, 128, 128]},
+    {units=[256, 256, 256], pooling=true},
+    {type="OutputRegNormalSplit", unit_list=256, output_name="n_muon_reg", output_neurons=1, sigma_unit_list=[256, 256], sigma_activation="softplus"},
+]
+
+[compile]
+optimizer = 'keras:Adam'
+
+[compile.losses]
+n_muon_reg = {function = 'mean_squared_error'}
+n_muon_reg_err = {function = 'lkl_normal'}

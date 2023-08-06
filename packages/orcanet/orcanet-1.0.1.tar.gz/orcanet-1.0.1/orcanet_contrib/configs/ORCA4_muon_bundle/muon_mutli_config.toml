@@ -1,0 +1,12 @@
+[config]
+batchsize=64
+learning_rate = [0.001, 0.1]
+train_logger_flush = 10
+verbose_train = 2
+validate_interval = 1
+shuffle_train = true
+cleanup_models = true
+
+sample_modifier="GraphEdgeConv"
+label_modifier = {name="RegressionLabelsSplit", columns="n_muons_10_mchits", model_output="n_muon_reg", log10=true}
+dataset_modifier = 'as_recarray_dist_split'

@@ -1,0 +1,12 @@
+[config]
+batchsize=64
+learning_rate = "lr.csv"  # [0.001, 0.33]
+train_logger_flush = 10
+verbose_train = 2
+validate_interval = 1
+shuffle_train = true
+cleanup_models = true
+
+sample_modifier="GraphEdgeConv"
+label_modifier = {name="RegressionLabels", columns=['dir_x', 'dir_y', 'dir_z'], model_output='dir', stacks=2}
+dataset_modifier = "as_recarray_dist"
