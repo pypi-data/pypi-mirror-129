@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ac207-autodiff
+Version: 0.0.2
+Summary: An automatic differentiation package.
+Home-page: https://github.com/cs107-XKVH/cs107-FinalProject
+Author: "Xuliang Guo, Kamran Ahmed, Van Anh Le, Hanwen Cui"
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# cs107-FinalProject
+
+## Group #32
+
+[![Build Status](https://app.travis-ci.com/cs107-XKVH/cs107-FinalProject.svg?token=QcyVx8pwhbsqiXEEjGpH&branch=main)](https://app.travis-ci.com/cs107-XKVH/cs107-FinalProject)
+[![codecov](https://codecov.io/gh/cs107-XKVH/cs107-FinalProject/branch/main/graph/badge.svg?token=SAQEVYPUXC)](https://codecov.io/gh/cs107-XKVH/cs107-FinalProject)
+
+
+## Members: Xuliang Guo, Kamran Ahmed, Van Anh Le, Hanwen Cui
+
+
