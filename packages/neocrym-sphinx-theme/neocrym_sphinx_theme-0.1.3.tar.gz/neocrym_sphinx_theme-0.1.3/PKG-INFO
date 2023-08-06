@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: neocrym-sphinx-theme
+Version: 0.1.3
+Summary: A clean customisable Sphinx documentation theme.
+Author-Email: Neocrym Records Inc. <engineering@neocrym.com>
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.6
+Requires-Dist: beautifulsoup4
+Requires-Dist: sphinx~=4.0
+Requires-Dist: pygments~=2.7
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-xdist; extra == "test"
+Requires-Dist: myst-parser; extra == "doc"
+Requires-Dist: sphinx-copybutton; extra == "doc"
+Requires-Dist: sphinx-design; extra == "doc"
+Requires-Dist: sphinx-inline-tabs; extra == "doc"
+Provides-Extra: test
+Provides-Extra: doc
+Description-Content-Type: text/markdown
+
+This is a fork of the famous [Furo][1] Sphinx theme used
+at Neocrym.
+
+[1]: https://github.com/pradyunsg/furo
