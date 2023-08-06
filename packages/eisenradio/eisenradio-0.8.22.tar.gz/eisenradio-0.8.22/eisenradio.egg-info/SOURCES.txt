@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+eisenradio.egg-info/PKG-INFO
+eisenradio.egg-info/SOURCES.txt
+eisenradio.egg-info/dependency_links.txt
+eisenradio.egg-info/requires.txt
+eisenradio.egg-info/top_level.txt
