@@ -1,0 +1,5 @@
+streamlit<2,>=1
+
+[test]
+pytest
+tox
