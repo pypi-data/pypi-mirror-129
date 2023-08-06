@@ -1,0 +1,24 @@
+
+graph_api:
+  host:       'https://graph.facebook.com/v11.0'
+  debug_path: '/debug_token?input_token={check_token}'
+  info_path:  '/{id}'
+
+queries:
+  get_users: |    
+    SELECT a.user_id, a.user_id, a.access_token, a.valid_until
+    FROM PagesAuth a
+    WHERE active = 1
+
+  update_validity: |    
+    UPDATE UsersAuth SET valid_until = '{valid_until}'
+    WHERE user_id = '{user_id}' AND active=1000
+
+db_config:
+  ig:
+    host:    'sinnia-db-2-3.ce4bgmsedant.us-east-1.rds.amazonaws.com'
+    db:      'vizbook'
+    user:    'vizbook'
+    passwd:  'vzbk1;lawSY'
+    charset: 'utf8mb4' 
+
