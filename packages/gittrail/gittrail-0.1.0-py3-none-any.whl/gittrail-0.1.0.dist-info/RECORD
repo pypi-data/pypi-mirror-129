@@ -1,0 +1,12 @@
+gittrail/__init__.py,sha256=DvF2vo0R_3IkgHTBy37F5bvJRVG8wwMjVCew3rAOV7I,167
+gittrail/core.py,sha256=XnxGcJ-48HCQ2PZndXYSX-bFy4w5D9Alm175O09tnTs,8844
+gittrail/exceptions.py,sha256=cloJ0KJYu8OVlqYgKa8FgK6WsiTTwudwDREIE_v14gQ,561
+gittrail/test_core.py,sha256=lW_zkVXdbgfUU7mkLH54VT5cJcZPzeCxpw6Qv-TMmIQ,8786
+gittrail/test_helpers.py,sha256=M9eAMf27hi-nj6VThXX14vR3BYclGP76-MxSTyu4VN4,511
+gittrail/test_utils.py,sha256=W3vycdjmy78v0eIztkqD5V5lIvGN83Iw_v1GSKJC5Cw,2060
+gittrail/utils.py,sha256=AG-VBOdPFCIShb82GPr3anFFoR_RflBwpSSu6MniWSY,1587
+gittrail-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+gittrail-0.1.0.dist-info/METADATA,sha256=EBWd6o1hPrpN1t8m66JBgunyvfTfFnhuTWw575S182g,3446
+gittrail-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gittrail-0.1.0.dist-info/top_level.txt,sha256=nv-Vtu1T6Ge9h2oIGAayKubOtAACXtUQLEu1yWapKmM,9
+gittrail-0.1.0.dist-info/RECORD,,
