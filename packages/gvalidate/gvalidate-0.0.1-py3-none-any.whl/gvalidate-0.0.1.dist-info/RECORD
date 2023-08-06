@@ -1,0 +1,10 @@
+gvalidate/__init__.py,sha256=r2vumW7t8pVBv63YwQy9HB3YWEfew-16XtSNxGgnGpI,506
+gvalidate/callable.py,sha256=ol-102E26MuIQ941NNdowBRNWX0PDqDWRxHD0y48sIQ,778
+gvalidate/generic.py,sha256=E7tIQLNo8btM_lpzEjtKvFbKSmlYFrpa-Vakzrnjd84,4584
+gvalidate/numerical.py,sha256=w4IoemNQIlrhovZHtwFYqodEM5YNZnnnjmo_m6PCPRY,2406
+gvalidate/string.py,sha256=ypkUfoEy2W7LTrVVdETNloYx40u11QNOhKMt4ubBoJI,772
+gvalidate-0.0.1.dist-info/LICENSE,sha256=iOiyQZnKCSJKco-9fP-s1MeIIyFEM49m6Uy3yz8PaCo,1518
+gvalidate-0.0.1.dist-info/METADATA,sha256=3i5BVGZ94TPZzDBZXDGf_VxdmZ_lF-Txrhw2FI7oaBE,7856
+gvalidate-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gvalidate-0.0.1.dist-info/top_level.txt,sha256=snV01AtSkCn9sqmEOZnZkXiuODei3mdmdXj_0lp-FTY,10
+gvalidate-0.0.1.dist-info/RECORD,,
