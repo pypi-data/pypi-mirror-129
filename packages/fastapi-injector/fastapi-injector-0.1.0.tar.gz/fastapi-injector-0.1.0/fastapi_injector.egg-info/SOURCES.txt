@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fastapi_injector/__init__.py
+fastapi_injector.egg-info/PKG-INFO
+fastapi_injector.egg-info/SOURCES.txt
+fastapi_injector.egg-info/dependency_links.txt
+fastapi_injector.egg-info/requires.txt
+fastapi_injector.egg-info/top_level.txt

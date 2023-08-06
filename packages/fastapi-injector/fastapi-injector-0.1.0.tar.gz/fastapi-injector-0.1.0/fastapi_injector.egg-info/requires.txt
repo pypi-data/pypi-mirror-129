@@ -1,0 +1,9 @@
+fastapi
+injector
+
+[dev]
+pytest
+pytest-asyncio
+pytest-cov
+requests
+pre-commit
