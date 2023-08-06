@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+bin/test-foxes
+foxes/VERSION
+foxes/__init__.py
+foxes.egg-info/PKG-INFO
+foxes.egg-info/SOURCES.txt
+foxes.egg-info/dependency_links.txt
+foxes.egg-info/requires.txt
+foxes.egg-info/top_level.txt
+foxes/flib/__init__.py
+foxes/flib/test1.py
