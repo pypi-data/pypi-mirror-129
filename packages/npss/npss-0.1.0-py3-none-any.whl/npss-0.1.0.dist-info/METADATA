@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: npss
+Version: 0.1.0
+Summary: Your New Password!
+Home-page: https://github.com/almazkun/npss
+License: MIT
+Author: Almaz Kunpeissov
+Author-email: hello@akun.dev
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Security
+Project-URL: Documentation, https://github.com/almazkun/npss
+Project-URL: Repository, https://github.com/almazkun/npss
+Description-Content-Type: text/markdown
+
+![coverage](.github/coverage.svg)
+
+# npss
+Your New Password!
+
+# Why?
+When need some password (token or random url safe string of specified length) quickly.
+
+# Perks:
+Generate random string with specified length or length of 30 by default.
+* No dependencies.
+* Random.
+* Url safe.
+* At least one `-` included.
+
+# Installation:
+```bash
+pip install npss
+```
+
+# Usage:
+```bash 
+npss
+```
+    >>>
+    J_9oE0uToBaw6qDzUAUI-hZ3PJC93B
+
+```bash 
+npss 255
+```
+    >>>
+    JwAiFQjuFizl6g1Thzx1AQdn39ozrPqsRJ4thyrs9OCjU28nUAx9k3fmB0jcSTtkZBVhF-DDV9-0zeod0OPN13k0gOEsA4FtSBtr6ckq81lQewOuLBUbFNUlKLH63Z6GSdZtuTidcQrvlVErnaY-pFb4xX8Jmj2jzJDpp6HvctEu5ycQq3VevlBwx9dIf8VUuO9jwZPsQnc022jbwBv00shByBOKCoO5I3TLGwnQEWaRHsWfyXeb6fTyzLtGH2-
+
+# Uninstall:
+```bash
+pip uninstall npss
+```
+
