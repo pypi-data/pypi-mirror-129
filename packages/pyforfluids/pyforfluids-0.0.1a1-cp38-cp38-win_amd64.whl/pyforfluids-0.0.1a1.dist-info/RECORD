@@ -1,0 +1,12 @@
+pyforfluids/__init__.py,sha256=7BAWkDEPSvlJAMNyzGRxoZ1yeXNlEW4d32WuYab9FUw,176
+pyforfluids/core.py,sha256=J1jrfbj0aZ--L4OUZvEE2IBwBuzMi4p0lkitrzyPVJg,7717
+pyforfluids/fortran/__init__.py,sha256=0Qf733NJYdLHI3tYl95jNH7mzVyXbfsD8ZNSOpI897M,68
+pyforfluids/fortran/gerg2008f.cp38-win_amd64.pyd,sha256=0UjVbomAXKADzfGSAOSzorYqQ49RizYlrsk8JvybuOI,855793
+pyforfluids/fortran/thermo_props.cp38-win_amd64.pyd,sha256=PrhRmwF4HWFBQ5iPeQsT1IBXa4-HJfrwnAkCCY3MAlQ,901666
+pyforfluids/models/__init__.py,sha256=_5_gtZsPUIXGZeyBAcTZo2VJ6MFIhH_9lcpEZqHD_U8,136
+pyforfluids/models/gerg2008.py,sha256=EYZWv38JAFb9wadhReZ4FNmpj1SdVpuwStrN7sAQqjI,10071
+pyforfluids-0.0.1a1.dist-info/LICENSE,sha256=6i7HrVbD7uXLrr9RNY9KKNaak606wxF1QZ6LT0KYpJk,1092
+pyforfluids-0.0.1a1.dist-info/METADATA,sha256=-Wj5MJegfp68hZsyja3HTMJV8nJXRHkrl4hKt7d6Yd4,4262
+pyforfluids-0.0.1a1.dist-info/WHEEL,sha256=P24hRDQapckAvHvgBBzlH5uw6rQ_oZQtKbG6drGrqOM,100
+pyforfluids-0.0.1a1.dist-info/top_level.txt,sha256=DDHnIMcDW01JTJuMadK57Mbzhcx3icPxbCo6LtZWRG8,12
+pyforfluids-0.0.1a1.dist-info/RECORD,,
