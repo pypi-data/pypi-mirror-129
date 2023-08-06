@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tvc-demo-flask
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/tanajivchavan/python-flask
+Author: Tanaji Chavan
+Author-email: tanajic@cybage.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: importlib ; python_version == "3.9.6"
+
+UNKNOWN
+
