@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: cb0tcc.py
+Version: 0.0.7
+Summary: This can create shorturl.
+Home-page: https://github.com/tuna2134/cb0t.py
+Author: DMS
+Author-email: masato190411@gmail.com
+License: UNKNOWN
+Description: # cb0t.py
+        
+        ## How to install.
+        
+        ```bash
+        pip install git+https://github.com/tuna2134/cb0tcc.py
+        ```
+        
+        ## Sync mode
+        
+        ```python
+        import cb0tcc
+        
+        cbot = cb0tcc.cb0t("https://example.com")
+        print(cbot.url)
+        ```
+        
+        ## async mode
+        
+        ```python
+        from cbotcc import aiocb0t
+        
+        async def main():
+            aiocbot = aiocb0t()
+            aiocbot.create("https://example.com")
+            print(aiocbot.url)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

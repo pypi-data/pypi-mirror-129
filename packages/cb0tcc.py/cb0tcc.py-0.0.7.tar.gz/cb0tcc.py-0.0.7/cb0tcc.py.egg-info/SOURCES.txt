@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cb0tcc/__init__.py
+cb0tcc/amain.py
+cb0tcc/error.py
+cb0tcc/main.py
+cb0tcc.py.egg-info/PKG-INFO
+cb0tcc.py.egg-info/SOURCES.txt
+cb0tcc.py.egg-info/dependency_links.txt
+cb0tcc.py.egg-info/requires.txt
+cb0tcc.py.egg-info/top_level.txt
