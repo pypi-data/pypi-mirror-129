@@ -1,0 +1,15 @@
+dvc_ssh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvc_ssh/_dvc_ssh_version.py,sha256=wxVd4VwV4xhZ8JqdAFdUh3XGessvM2x52Okku9QIxsA,144
+dvc_ssh/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvc_ssh/tests/cloud.py,sha256=UkbT3RjO9xMiJgGn23LoK2pL9DKmHbq39C_HU90GOmM,1586
+dvc_ssh/tests/conftest.py,sha256=UNhnW-wCMbleRbl2FIyk9oVuZiuhkOlbUsnL9XLf_yo,170
+dvc_ssh/tests/docker-compose.yml,sha256=mwaE_7INkDlQ34pmLlVHSeBZOKJbQ3XJW45nhiuZYHY,236
+dvc_ssh/tests/fixtures.py,sha256=9ltxoKWIOssrvzst3r1CNy0qLOxg5LSmFFEXAqv0Jgk,1618
+dvc_ssh/tests/test_dvc.py,sha256=DZJsNYsffrb0yDxvtFCR7pxjaVd7l7ISPH8WJGc-1XQ,1038
+dvc_ssh/tests/user.key,sha256=3pNYmK4rzjE1H3wOGpQ11SpNkMTrZoa1ZqZbIzsK6KQ,1679
+dvc_ssh/tests/user.key.pub,sha256=jySjs7VwjSAjjD85gQ4IJMyfIyYq0BxdtSmNMqp3kTs,394
+dvc_ssh-0.0.1a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dvc_ssh-0.0.1a0.dist-info/METADATA,sha256=mG2jDbtQUbpIQXMPm9INw2ec93Bfgnv62I1OUwVJ1OM,2274
+dvc_ssh-0.0.1a0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dvc_ssh-0.0.1a0.dist-info/top_level.txt,sha256=ThktTRioy_ZwkofU6r2nRwdClwoiDMUFcngshhBUegw,8
+dvc_ssh-0.0.1a0.dist-info/RECORD,,
