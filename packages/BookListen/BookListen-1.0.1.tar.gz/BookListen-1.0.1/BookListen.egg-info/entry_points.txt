@@ -1,0 +1,3 @@
+[console_scripts]
+booklisten = booklisten.__main__:cli
+
