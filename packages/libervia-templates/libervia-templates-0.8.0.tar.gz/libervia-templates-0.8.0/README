@@ -1,0 +1,39 @@
+Libervia templates 0.8
+(c) Jérôme Poisson aka Goffi 2017-2021
+
+Templates used by Libervia ecosystem.
+
+** LICENCE **
+
+Libervia Templates is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Libervia Templates is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with Libervia.  If not, see <http://www.gnu.org/licenses/>.
+
+
+** ABOUT **
+
+Libervia templates is used by some parts of the Liberiva XMPP client. Please check Libervia for more information.
+
+** MORE INFORMATIONS **
+
+Please check Libervia README for informations on contributors, contacts, etc.
+
+You'll find it at https://repos.goffi.org/sat/raw-file/tip/README
+
+** CONTRIBUTIONS **
+
+Here are the URIs you can use to publish/retrieve tickets or merge requests:
+
+tickets: xmpp:pubsub.goffi.org?;node=org.salut-a-toi.tickets%3A0 (please use "templates" label)
+merge requests: xmpp:pubsub.goffi.org?;node=org.salut-a-toi.merge_requests%3A0 (please use "templates" label)
+
+Tickets and merge requests are handled by Libervia itself using XMPP.
