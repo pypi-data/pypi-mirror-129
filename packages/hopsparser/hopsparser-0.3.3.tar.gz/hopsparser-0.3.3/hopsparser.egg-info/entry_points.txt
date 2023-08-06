@@ -1,0 +1,6 @@
+[console_scripts]
+eval_parse = npdependency.conll2018_eval:main
+graph_parser = npdependency.graph_parser:main
+hopsparser = npdependency.main:cli
+make_parser_csv_summary = npdependency.make_summary:make_csv_summary
+
