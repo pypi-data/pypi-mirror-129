@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: accelrotate
+Version: 1.0.0
+Summary: Rotate linux devices (screens, touchpads etc) based on accelerometer
+License: GPLv3
+Author: granitosaurus
+Author-email: bernardas.alisauskas@pm.me
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.0,<9.0.0)
