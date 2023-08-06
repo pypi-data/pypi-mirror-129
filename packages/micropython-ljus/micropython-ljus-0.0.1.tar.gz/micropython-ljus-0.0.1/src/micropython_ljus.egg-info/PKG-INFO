@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: micropython-ljus
+Version: 0.0.1
+Summary: A MicroPython package for LEDs.
+Home-page: https://github.com/Limpan/micropython-ljus
+Author: Linus Törngren
+Author-email: linus@etnolit.se
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Limpan/micropython-ljus/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# micropython-ljus
+
+Package that aims to simplify lighting and animation of LEDs. Primarily for RP2040 and APA102 LEDs.
+
+
