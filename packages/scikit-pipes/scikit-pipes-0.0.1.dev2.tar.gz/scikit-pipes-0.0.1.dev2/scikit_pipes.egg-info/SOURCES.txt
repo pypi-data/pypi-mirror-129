@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+scikit_pipes.egg-info/PKG-INFO
+scikit_pipes.egg-info/SOURCES.txt
+scikit_pipes.egg-info/dependency_links.txt
+scikit_pipes.egg-info/requires.txt
+scikit_pipes.egg-info/top_level.txt
+skpipes/__init__.py
+skpipes/_version.py
+skpipes/pipeline.py
+skpipes/config/__init__.py
+skpipes/config/categorical.py
+skpipes/config/numerical.py
+skpipes/config/preprocessing.py
