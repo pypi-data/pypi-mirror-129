@@ -1,0 +1,11 @@
+upi/__init__.py,sha256=Im6TmcGcv7O0VmIH0tF_vMctEuQG_ogiJsLVhrbfdN8,187
+upi/config.py,sha256=bnV12ScN9bMr9tnrV3MZ2xyu0v9A7_F7Db1o6u57lMM,297
+upi/pay/__init__.py,sha256=pYJu868XmgncBtmjS0CtpvkuMDQCgKNiVLxy5WMAl18,129
+upi/pay/wxpay.py,sha256=us6uF1CazOsQLb826LxjdQW4TJUU8OYHtlzvvfPdDdI,12305
+upi/util/__init__.py,sha256=pYJu868XmgncBtmjS0CtpvkuMDQCgKNiVLxy5WMAl18,129
+upi/util/log.py,sha256=gTFVH4JuFrfNTtHKtvy4wK5Cd0fQfOgNyv9jkhVroso,942
+upi/util/tool.py,sha256=ZWVlcCXOaQOELRmeh5oMaNK4uuUIy8vHIp_f8KyyvTo,3357
+upi-0.0.9.dist-info/METADATA,sha256=o8UkqEU_hqq0bPeAbk3n_RPVMsZM6hHJvcwiSDAUb-c,624
+upi-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+upi-0.0.9.dist-info/top_level.txt,sha256=ZVlqyC2P5UDZuIbwGuHjBP-HVGaOO7FLtKlqiyyGQFM,4
+upi-0.0.9.dist-info/RECORD,,
