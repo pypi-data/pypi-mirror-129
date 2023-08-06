@@ -1,0 +1,2 @@
+bdbag[boto,globus]>=1.6.0
+PyQt5
