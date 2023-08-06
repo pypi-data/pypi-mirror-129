@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: mprod-package
+Version: 0.0.2a1
+Summary: Software implementation for tensor-tensor m-product framework
+Home-page: https://github.com/UriaMorP/mprod_package
+Author: Uria Mor, Rafael Valdes Mas, Yotam Cohen, Haim Avron
+Author-email: uriamo@gmail.com
+License: BSD
+Keywords: Tensor,multi way,omics,longitudinal,factorization,analysis,TCA,TCAM,PCA,M product,tensor tensor product,tSVD,tSVDM,tensor decomposition
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: scikit-learn (>=0.24.1)
+Requires-Dist: scipy (>=1.5.3)
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: dataclasses (>=0.7) ; python_version < "3.7"
+Provides-Extra: dev
+Requires-Dist: pytest (==6.2.2) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx-gallery (==0.9.0) ; extra == 'docs'
+Requires-Dist: numpydoc (==1.1.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib-bibtex (==2.3.0) ; extra == 'docs'
+Requires-Dist: sphinx-prompt (==1.4.0) ; extra == 'docs'
+Requires-Dist: nbsphinx (==0.8.6) ; extra == 'docs'
+Requires-Dist: ipykernel (==5.4.3) ; extra == 'docs'
+Requires-Dist: seaborn (==0.11.1) ; extra == 'docs'
+Requires-Dist: jupyter (==1.0.0) ; extra == 'docs'
+
+# mprod_package
+
+[![Build and test [Python 3.6, 3.7, 3.8, 3.9]](https://github.com/UriaMorP/mprod_package/actions/workflows/build.yaml/badge.svg)](https://github.com/UriaMorP/mprod_package/actions/workflows/build.yaml)
+[![Documentation Status](https://readthedocs.org/projects/mprod-package/badge/?version=latest)](https://mprod-package.readthedocs.io/en/latest/?badge=latest)
+
+Software implementation for tensor-tensor m-product framework [[1]](#1).
+The library currently contains tubal QR and tSVDM decompositions, and the TCAM method for dimensionality reduction.
+
+
+<p align="center">
+  <img width="80%",height="80%",  src="https://user-images.githubusercontent.com/16097812/143407367-36c30aa4-da1f-4a8b-93db-470114486064.png" />
+</p>
+
+## Installation 
+
+### using pip
+
+The package is available at pypi and can be installed via the command
+```
+pip install mprod-package 
+```
+
+
+### from source 
+Make sure that all dependencies listed below are installed in a newly created conda environment, preferably - using the conda-forge channel.
+
+We stated the exact versions used to locally test the code, more recent versions of these packages should work as well.
+
+Dependencies:
+* python                    3.6.8
+* scipy                     1.5.3
+* scikit-learn              0.24.1
+* numpy                     1.19.2
+* dataclasses               0.7   (Only for python version < 3.7)
+* pip                       21.0.1
+
+
+Clone the repository, then from the package directory, run
+```
+pip install -e .
+```
+
+
+
+## References
+<a id="1">[1]</a> 
+Misha E. Kilmer, Lior Horesh, Haim Avron, and Elizabeth Newman.  Tensor-tensor algebra for optimal representation and compression of multiway data. Proceedings of the National Academy of Sciences, 118(28):e2015851118, jul 2021.
+
+
