@@ -1,0 +1,4 @@
+colored
+Pillow
+six
+numpy
