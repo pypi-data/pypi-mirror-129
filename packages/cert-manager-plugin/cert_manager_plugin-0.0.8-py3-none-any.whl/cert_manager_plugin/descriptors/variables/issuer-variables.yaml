@@ -1,0 +1,14 @@
+kind: ManifestVariable
+id: "nmachine.cmp.variables.acme.email"
+flat_key: "acme.email"
+title: "Domain owner Email"
+info: "The email address you registered your domain with. Make sure it is
+correct as a mismatch will cause key signing to fail."
+
+---
+
+kind: ManifestVariable
+id: "nmachine.cmp.variables.acme.server"
+flat_key: "acme.server"
+title: "ACME Server"
+info: "Key signing authority. Leave the default if you are unsure."

@@ -1,0 +1,58 @@
+kind: ManifestVariable
+id: "nmachine.cmp.issuer.type"
+flat_key: "issuer.type"
+title: "Backend type"
+info: "Cert-manager supports the following authentication backends. If
+you're not sure which to choose, use ACME."
+
+validators:
+  - kind: Predicate
+    operator: presence
+    reason: "Must select one"
+input:
+  kind: ViewSpecSelectInput
+  options:
+
+    - type: OptionCard
+      option_key: "vault"
+      title: "HashiCorp Vault"
+      subtitle: "Default Provider"
+      info: "Cert-manager supports the following authentication backends. If
+             you're not sure which to choose, use ACME."
+      graphic:
+        type: Image
+        src: services/hashicorp/small.png
+      tags: []
+
+    - type: OptionCard
+      option_key: "acme"
+      title: "Let's Encrypt ACME"
+      subtitle: "Open Source"
+      info: "Cert-manager supports the following authentication backends. If
+             you're not sure which to choose, use ACME."
+      graphic:
+        type: Image
+        src: services/lets_encrypt/lets_encrypt.svg
+      tags: []
+
+    - type: OptionCard
+      option_key: "venafi"
+      title: "Venafi"
+      subtitle: "Open Source"
+      info: "Cert-manager supports the following authentication backends. If
+             you're not sure which to choose, use ACME."
+      graphic:
+        type: Image
+        src: "services/venafi/small.png"
+      tags: []
+
+    - type: OptionCard
+      option_key: "gcp"
+      title: "Google CAS Issuer"
+      subtitle: "Open Source"
+      info: "Cert-manager supports the following authentication backends. If
+             you're not sure which to choose, use ACME."
+      graphic:
+        type: Image
+        src: "services/gcp/small.png"
+      tags: []

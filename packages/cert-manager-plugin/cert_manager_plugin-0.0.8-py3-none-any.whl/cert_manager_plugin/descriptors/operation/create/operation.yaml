@@ -1,0 +1,33 @@
+kind: Operation
+synopsis: "assets::create-issuer-synopsis.md"
+id: "nmachine.cmp.operation.create"
+title: "Create an Issuer"
+info: "Setup a namespace-bound Issuer and Certificate"
+labels:
+  searchable: true
+steps:
+  - "id::nmachine.cmp.step.create.type"
+  - "id::nmachine.cmp.step.create.configure"
+
+---
+
+kind: Step
+id: "nmachine.cmp.step.create.type"
+title: "Choose a Backend"
+info: "Choose who will sign your SSL certificate."
+synopsis: "assets::create-issuer-synopsis.md"
+fields:
+  - variable: "id::nmachine.cmp.issuer.type"
+action: "id::sdk.action.patch_variables_step_safely"
+
+---
+
+kind: Step
+id: "nmachine.cmp.step.create.configure"
+title: "Configure your Backend"
+info: "We're just looking here"
+synopsis: "assets::acme-synopsis.md"
+fields:
+  - variable: "id::nmachine.cmp.variables.acme.email"
+  - variable: "id::nmachine.cmp.variables.acme.server"
+action: "id::sdk.action.commit_template_apply_step"

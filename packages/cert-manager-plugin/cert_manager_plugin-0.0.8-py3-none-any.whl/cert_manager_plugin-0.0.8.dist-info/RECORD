@@ -1,0 +1,14 @@
+cert_manager_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cert_manager_plugin/consts.py,sha256=6czdy1YUYiJd4lBhuWT3DKCNTMNiTVk6Rq60J96i8S0,36
+cert_manager_plugin/plugin.py,sha256=kL7IPMxo8lNsabuVhqcrm1gZx3w5wzS9eHsMdG73rUU,861
+cert_manager_plugin/assets/acme-synopsis.md,sha256=F1aCOo9H8AR3TcNU4j5FwjqAPrhX8ZtM4codTLsL2As,3223
+cert_manager_plugin/assets/choose-issuer-synopsis.md,sha256=GI5o-c8SjX8h0_L4u9v566Wm42DqGkTSw45KgdYoUZE,787
+cert_manager_plugin/assets/create-issuer-synopsis.md,sha256=LTB2D1wZ3IUTSA6mXO0VaM2GrD81Kp6KJlloNngQ_8c,637
+cert_manager_plugin/descriptors/operation/create/operation.yaml,sha256=iEpJZLYvZCLJslGj6e3QrdaIjrtGwR0aQYfWGyGVZZQ,907
+cert_manager_plugin/descriptors/variables/issuer-type-variable.yaml,sha256=E8Emni_3lhMpdBkFLcpnd75Gu2FVPToo6KpwwaFkRpY,1698
+cert_manager_plugin/descriptors/variables/issuer-variables.yaml,sha256=wEXX9h3KBznvVLVUGq-m6cQYU2MJReHPlbUSCgghcEc,426
+cert_manager_plugin/descriptors/view_spec/small_issuer_specs.yaml,sha256=8ValNzPRBFZMs777f4t7byB4rrbakmIc4XHbFmUSWTE,978
+cert_manager_plugin-0.0.8.dist-info/METADATA,sha256=LXzVPmNiO-pk3re-hujLUbymk7hVrJiUp1cza1k3jfA,517
+cert_manager_plugin-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cert_manager_plugin-0.0.8.dist-info/top_level.txt,sha256=AXJIk6X_ks-54X-IhcSoSp4aVjKWrX6WP-lTxI4Z2qM,20
+cert_manager_plugin-0.0.8.dist-info/RECORD,,

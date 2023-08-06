@@ -1,0 +1,41 @@
+kind: ViewSpec
+id: "nmachine.cmp.view_spec.card.small.issuer"
+spec:
+  type: Card
+  width: 1
+  orientation: horizontal
+  elements:
+    - type: Block
+      orientation: horizontal
+      elements:
+        - "get::id::nmachine.cmp.view_spec.card.small.issuer.header"
+
+---
+
+kind: Supplier
+id: "nmachine.cmp.view_spec.card.small.issuer.header"
+source:
+  type: SmallHeader
+  title:
+    type: Block
+    orientation: horizontal
+    elements:
+      - type: Text
+        text: "Vault Issuer"
+        style: [fair, bold]
+      - type: ModestTag
+        text: "Issued"
+  subtitle:
+    type: Block
+    orientation: horizontal
+    elements:
+      - type: Text
+        text: "ns /"
+        style: [hacker]
+      - type: Text
+        text: "ice-kream"
+        style: [hacker, bold]
+  graphic:
+    type: Image
+    src: "https://cdn.worldvectorlogo.com/logos/lets-encrypt-icon.svg"
+#    src: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Venafi_logo_RGB.svg/1200px-Venafi_logo_RGB.svg.png"
