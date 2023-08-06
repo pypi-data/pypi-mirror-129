@@ -1,0 +1,3 @@
+[console_scripts]
+ftp_server=ftp_server.ftp_server:main
+
