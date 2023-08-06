@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.cfg
+src/breath_api_interface/__init__.py
+src/breath_api_interface/proxy.py
+src/breath_api_interface/queue.py
+src/breath_api_interface/request.py
+src/breath_api_interface.egg-info/PKG-INFO
+src/breath_api_interface.egg-info/SOURCES.txt
+src/breath_api_interface.egg-info/dependency_links.txt
+src/breath_api_interface.egg-info/top_level.txt
+src/breath_api_interface/service_interface/__init__.py
+src/breath_api_interface/service_interface/service.py
