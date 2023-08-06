@@ -1,0 +1,15 @@
+napari_clusters_plotter/__init__.py,sha256=c2Ir_ExcgMsynXFpn5T6iKfR1opGaVMkH589MISe0_c,102
+napari_clusters_plotter/_dock_widget.py,sha256=jo6CqM82YSIQhqblOEubaRJ-zlpS8pmvozIgFEU2hUs,370
+napari_clusters_plotter/_kmeans_clustering.py,sha256=H8nBqa5t0hj6dIi9-8CmBLv-1AqnbPTc5k7l2zt89_g,8527
+napari_clusters_plotter/_measure.py,sha256=FSh3wP6dW0lmSJJBCIupwtn_D2ikpnRvMirgUBSa7xQ,12634
+napari_clusters_plotter/_plotter.py,sha256=MjTm9qoSUhop6qTROqtp1R0c7mV5EvK43i0zvbUXB7A,17649
+napari_clusters_plotter/_umap.py,sha256=7JlUnO79m2oGTcoq6_G8IsXxysl4qs6HrhrNxob5R8U,6963
+napari_clusters_plotter/_utilities.py,sha256=KUA3quI7DU_yDUiCaFXwWWUg9a3j6UD0YJPPweAb5yE,1632
+napari_clusters_plotter/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_clusters_plotter/_tests/test_dock_widget.py,sha256=f5_EyNGPYARfVpoaKV44PXI8knLfSh8C_5Zh0vzKAlc,744
+napari_clusters_plotter-0.1.2.dist-info/LICENSE,sha256=G_qS6-THTGcRHMWMojQ1uRyfnSvQrpMN4T61MsWdxOo,1628
+napari_clusters_plotter-0.1.2.dist-info/METADATA,sha256=1RnV0TPEKkalrTHj4k_NSV9ZX4joGLaxhC0SnHoBjW8,8958
+napari_clusters_plotter-0.1.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+napari_clusters_plotter-0.1.2.dist-info/entry_points.txt,sha256=36pyCBrF4Eud08KUmuCsBUBYpnT2HDtd3U3ueHE9Yw4,67
+napari_clusters_plotter-0.1.2.dist-info/top_level.txt,sha256=R0rKZSDoRRsK39Uo0Hr4ghif4FSzUyzsHVD3Gpigf5c,24
+napari_clusters_plotter-0.1.2.dist-info/RECORD,,
