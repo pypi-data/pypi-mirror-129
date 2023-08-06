@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: catz
+Version: 0.8.0
+Summary: A colourful syntax highlighting tool for your terminal
+License: MIT
+Author: Craig Gumbley
+Author-email: craiggumbley@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: click-default-group (>=1.2.2,<2.0.0)
+Requires-Dist: rich (>=10.14.0,<11.0.0)
