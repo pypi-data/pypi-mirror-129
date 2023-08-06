@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pseudorandoms/__init__.py
+src/pseudorandoms/pseudorandoms.py
+src/pseudorandoms.egg-info/PKG-INFO
+src/pseudorandoms.egg-info/SOURCES.txt
+src/pseudorandoms.egg-info/dependency_links.txt
+src/pseudorandoms.egg-info/top_level.txt
