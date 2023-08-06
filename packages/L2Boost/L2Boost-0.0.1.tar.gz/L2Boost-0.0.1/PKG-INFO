@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: L2Boost
+Version: 0.0.1
+Summary: L2-boosting for high dimensional linear models
+Home-page: UNKNOWN
+Author: Bernhard Stankewitz
+Author-email: <stankebe@math.hu-berlin.de>
+License: UNKNOWN
+Description: L2-boosting for high dimensional linear models
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
