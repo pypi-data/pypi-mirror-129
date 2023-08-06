@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+django_line_notification/__init__.py
+django_line_notification/line_notify.py
+django_line_notification.egg-info/PKG-INFO
+django_line_notification.egg-info/SOURCES.txt
+django_line_notification.egg-info/dependency_links.txt
+django_line_notification.egg-info/requires.txt
+django_line_notification.egg-info/top_level.txt
