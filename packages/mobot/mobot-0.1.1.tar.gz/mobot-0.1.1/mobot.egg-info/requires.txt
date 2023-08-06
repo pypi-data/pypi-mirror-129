@@ -1,0 +1,7 @@
+grpcio
+grpcio-tools
+numpy
+opencv-python
+PyQt5
+Pillow
+texttable
