@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: qilimanjaroq-server
+Version: 0.0.2
+Summary: Qilimanjaro server library to connect to the Qilimanjaro Quantum Service and use their devices
+Home-page: https://github.com/qilimanjaro-tech/qili-qibo-backend
+Author: Qilimanjaro team
+Author-email: info@qilimanjaro.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+License-File: LICENSE
+
+# Qilimanjaro Server Library
+
+Server library side to connect to Qilimanjaro Quantum Service and interact with Qilimanjaro Quantum devices and simulators.
+
+
