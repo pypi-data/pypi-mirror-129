@@ -1,0 +1,16 @@
+.gitignore
+README.md
+requirements.txt
+setup.py
+image_fabio/__init__.py
+image_fabio.egg-info/PKG-INFO
+image_fabio.egg-info/SOURCES.txt
+image_fabio.egg-info/dependency_links.txt
+image_fabio.egg-info/requires.txt
+image_fabio.egg-info/top_level.txt
+image_fabio/processing/__init__.py
+image_fabio/processing/combination.py
+image_fabio/processing/transformation.py
+image_fabio/utils/__init__.py
+image_fabio/utils/io.py
+image_fabio/utils/plot.py
