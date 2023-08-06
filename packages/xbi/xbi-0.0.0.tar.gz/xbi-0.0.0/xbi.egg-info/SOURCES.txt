@@ -1,0 +1,8 @@
+README.md
+setup.py
+xbi/__init__.py
+xbi.egg-info/PKG-INFO
+xbi.egg-info/SOURCES.txt
+xbi.egg-info/dependency_links.txt
+xbi.egg-info/requires.txt
+xbi.egg-info/top_level.txt
