@@ -1,0 +1,12 @@
+jnumpy/__init__.py,sha256=1svp_YFB7N4TX6FjEj66BPtAFW-Iq1HU-to3DESNgJM,243
+jnumpy/core.py,sha256=qFv0c1ykdXXf1DZGQ1XmS8oppJubJocMRc41T5KW1Ao,26724
+jnumpy/nn.py,sha256=ZLa8wq_-zRYTR73G09gBrZR8vIROHHdsy_gwVQXYwSA,14732
+jnumpy/rl/__init__.py,sha256=v2SvpueLLM6eDxrWvcOGtbyEHwGwRlg7ukGLyZTAa_Y,247
+jnumpy/rl/agents.py,sha256=gE6epGY81xCcx6D9Ho-T4pghpghC0hPAOXRqKqk8CDk,17233
+jnumpy/rl/core.py,sha256=ifSoRG8Z0_pcTrs9d6el3LSbqQe_JM-uLBfGeI48xvc,16412
+jnumpy/rl/types.py,sha256=rWV1PRDMbYzrM_cDDpUh-i6qlO77yi076aO2QIeEeeM,2445
+jnumpy-1.1.dist-info/LICENSE,sha256=fC9RyD0TAceNNIMJh_KNvJ1EoDi7EGAoPKpwnUOFnRA,1069
+jnumpy-1.1.dist-info/METADATA,sha256=guvgt63tE7MppJeBy6T9dsz1xECi2FWEa8ld_3g59ck,5269
+jnumpy-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jnumpy-1.1.dist-info/top_level.txt,sha256=YRPKeWpUwHCTfHZngaAiStjieHIqB7CeNhH2pV0O4XI,7
+jnumpy-1.1.dist-info/RECORD,,
