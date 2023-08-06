@@ -1,0 +1,42 @@
+# Kursversorgung in Google Sheets
+This project contains the basic files to ```updateLast(), updateSecurityName(), updateLastSplits()``` in the following Google Sheets: 
+- [Kursversorgung Warrants](https://docs.google.com/spreadsheets/d/118-bK-9Iu0DRJiML1OE3yoXIh6LtHVrArLrPeYhRmek)
+- [Private Placements](https://docs.google.com/spreadsheets/d/1ZKO1kNXYg6xkr-vsfS4KmITfAt9J7jC6o0cBFlDuKXo)
+
+In order to access the Sheets a Google Workspace Account is requires and permission needs to be granted.
+
+For further information contact [Valentin Baier](mailto:baier@orcacapital.de?subject=Google%20Workspace%20Account).
+
+## Installation
+The installation can be achieved by using ``pip``:
+
+- ``python -m pip install kursversorgung_sheets_google``
+
+## Build kursversorgung.exe
+The package needs to be build with ```auto-py-to-exe``` with the generic parameters ``--noconfirm --onedir --windowed`` and the specific parameters including the following files:
+
+#### Parameter --icon 
+- software_update.ico
+#### Parameter --add-data
+- README.md
+#### Parameter --collect-all
+- tzdata
+
+To finally build the .exe you have to execute the following statement from the command line:
+Please be aware that your directory path may be different.
+
+- ``pyinstaller --noconfirm --onedir --windowed --icon "C:/Users/baier/IdeaProjects/kursversorgung-google.sheets/kursversorgung_google_sheets/software_update.ico" --add-data "C:/Users/baier/IdeaProjects/kursversorgung-google.sheets/README.md;." --collect-all "tzdata"  "C:/Users/baier/IdeaProjects/kursversorgung-google.sheets/kursversorgung_google_sheets/kursversorgung.py"``
+
+## Setting up a SSH-Tunnel
+The program requires an active SSH connection to the ``docker1.orca.local`` with ``port=22426`` and needs to listen to the ``localhost:8194`` in ``local`` mode. The authentication method is username and password.
+
+## Usage
+The ``Kursversorung.exe`` can be executed from any computer having the required SSH-Tunnel running.
+
+To start the program, click "Start updating"
+
+## License
+This project is licensed by a MIT License.
+
+## Project status
+The current released version is 0.0.7.
