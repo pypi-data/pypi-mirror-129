@@ -1,0 +1,15 @@
+setup.py
+jklwcs/__init__.py
+jklwcs/func.py
+jklwcs/osspath.py
+jklwcs/spark.py
+jklwcs/table.py
+jklwcs/udff.py
+jklwcs.egg-info/PKG-INFO
+jklwcs.egg-info/SOURCES.txt
+jklwcs.egg-info/dependency_links.txt
+jklwcs.egg-info/requires.txt
+jklwcs.egg-info/top_level.txt
+jklwcs/analysis/__init__.py
+jklwcs/select/__init__.py
+jklwcs/select/uuid.py
