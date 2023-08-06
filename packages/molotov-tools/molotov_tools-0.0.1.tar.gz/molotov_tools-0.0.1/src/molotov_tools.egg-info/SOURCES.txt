@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/molotov_tools/__init__.py
+src/molotov_tools/basic.py
+src/molotov_tools.egg-info/PKG-INFO
+src/molotov_tools.egg-info/SOURCES.txt
+src/molotov_tools.egg-info/dependency_links.txt
+src/molotov_tools.egg-info/top_level.txt
