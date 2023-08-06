@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sphinx_sqlalchemy
+Version: 0.1.0
+Summary: Sphinx extension for documenting SQLAlchemy ORMs
+Home-page: http://github.com/chrisjsewell/sphinx-sqlalchemy
+Author: Chris Sewell
+License: MIT
+Project-URL: Documentation, https://sphinx-sqlalchemy.readthedocs.io
+Description: # sphinx-sqlalchemy
+        
+        Sphinx extension for documenting SQLAlchemy ORMs
+        
+Keywords: sphinx
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Sphinx :: Extension
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs

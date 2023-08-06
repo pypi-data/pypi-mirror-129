@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sphinx_sqlalchemy/__init__.py
+sphinx_sqlalchemy/main.py
+sphinx_sqlalchemy.egg-info/PKG-INFO
+sphinx_sqlalchemy.egg-info/SOURCES.txt
+sphinx_sqlalchemy.egg-info/dependency_links.txt
+sphinx_sqlalchemy.egg-info/requires.txt
+sphinx_sqlalchemy.egg-info/top_level.txt
