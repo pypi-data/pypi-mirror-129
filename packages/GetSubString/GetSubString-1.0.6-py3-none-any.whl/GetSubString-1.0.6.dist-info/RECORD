@@ -1,0 +1,10 @@
+getsubstr/VERSION,sha256=4ct5uLutDTkkmV0uFpcf40QM4kZNWdiGBJJcDWsLbF0,5
+getsubstr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getsubstr/main.py,sha256=9bgidGuZnj-Q8NXrHncyqb-pXE-YONeXPB0OYMy2w5Q,5253
+getsubstr/setuptools.py,sha256=RKO6gaA6e2RazG6rp_EBsUPtgaIxK0Irks--E7qLmEg,332
+GetSubString-1.0.6.dist-info/LICENSE,sha256=VUEVJZHXIIoPLx4hhiips3gpHYEzMGi50a2plS9Ls6E,1072
+GetSubString-1.0.6.dist-info/METADATA,sha256=MJ9Ut7Cal7kYJyTJoyYY4cvZaTGc8TfY2FH_8H_UFKM,3060
+GetSubString-1.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+GetSubString-1.0.6.dist-info/entry_points.txt,sha256=J32kbFnuoJtcaY_ZmoX7kl4kHcs2m-4Dt-aqHHUKOZk,48
+GetSubString-1.0.6.dist-info/top_level.txt,sha256=uFYrzsGENLkF4a_v02_YBaBoNy-8RJYiSs6oMApBJxk,10
+GetSubString-1.0.6.dist-info/RECORD,,
