@@ -1,0 +1,6 @@
+aerouter
+setup.py
+aerouter.egg-info/PKG-INFO
+aerouter.egg-info/SOURCES.txt
+aerouter.egg-info/dependency_links.txt
+aerouter.egg-info/top_level.txt
