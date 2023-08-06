@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: cdci-data-analysis
+Version: 1.3.2
+Summary: A Python Framework for CDCI online data analysis
+Home-page: UNKNOWN
+Author: Andrea Tramacere
+Author-email: andrea.tramacere@unige.ch
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.rst
+Requires-Dist: oda-api
+Requires-Dist: pylogstash-context (>=0.1.19)
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: simplejson
+Requires-Dist: flask
+Requires-Dist: astropy (>=2.0.3)
+Requires-Dist: gunicorn
+Requires-Dist: decorator
+Requires-Dist: python-logstash
+Requires-Dist: raven
+Requires-Dist: blinker
+Requires-Dist: bokeh (==0.12.16)
+Requires-Dist: json-tricks
+Requires-Dist: flask-restx
+Requires-Dist: six
+Requires-Dist: werkzeug (<=0.16.1)
+Requires-Dist: python-shell-colors
+Requires-Dist: logging-tree
+Requires-Dist: celery
+Requires-Dist: redis
+Requires-Dist: pyjwt
+Requires-Dist: marshmallow
+Requires-Dist: black
+Requires-Dist: bs4
+Provides-Extra: test
+Requires-Dist: psutil ; extra == 'test'
+
+UNKNOWN
+
