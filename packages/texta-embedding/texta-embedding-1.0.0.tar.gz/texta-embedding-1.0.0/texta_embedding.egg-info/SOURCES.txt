@@ -1,0 +1,11 @@
+README.md
+VERSION
+requirements.txt
+setup.py
+texta_embedding/embedding.py
+texta_embedding/exceptions.py
+texta_embedding.egg-info/PKG-INFO
+texta_embedding.egg-info/SOURCES.txt
+texta_embedding.egg-info/dependency_links.txt
+texta_embedding.egg-info/requires.txt
+texta_embedding.egg-info/top_level.txt
