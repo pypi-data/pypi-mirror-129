@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: qbodbc
+Version: 0.0.2
+Summary: SQL Wrapper for QuickBooks Desktop.
+Home-page: https://github.com/bill-ash/qbodbc
+Author: Bill Ash
+Author-email: bill@overco.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/bill-ash/qbodbc/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.3.4)
+Requires-Dist: pyodbc (>=4.0.32)
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# qbodbc 
+
+Connect to your QuickBooks desktop instance with Python. 
+
+# Connecting 
+
+The application server, and the QuickBooks instance must be on 
+the same machine or have QODBC driver and QRemote running 
+on the QuickBooks application box. 
+
+The alternative is to run middleware in front of the QuickBooks 
+instnace that can deserialize and process incoming qbodbc objects.
+
+
