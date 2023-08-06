@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pointless-db
+Version: 0.0.1
+Summary: Pointless database plugin for sqlDash
+Home-page: UNKNOWN
+Author: WardPearce
+Author-email: wardpearce@pm.me
+License: GPL-3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Don't use this for production, ever!
+This plugin is intended for testing purposes.
+
+# Pointless DB
+Install plugin with `pointless-db`
+
+
