@@ -1,0 +1,4 @@
+# Include all of the config paths
+recursive-include mirantis/testing/*/config *.json *.yml *.yaml
+# remove any stuff we don't want (I find that this doesn't work well)
+prune .git .terraform __pycache__ *.py[ocd]
