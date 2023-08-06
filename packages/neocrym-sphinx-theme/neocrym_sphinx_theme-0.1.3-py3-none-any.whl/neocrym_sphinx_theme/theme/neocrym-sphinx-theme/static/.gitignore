@@ -1,0 +1,7 @@
+*.map
+
+# Generated files
+scripts/neocrym-sphinx-theme.js*
+scripts/neocrym-sphinx-theme-extensions.js
+styles/neocrym-sphinx-theme.css
+styles/neocrym-sphinx-theme-extensions.css
