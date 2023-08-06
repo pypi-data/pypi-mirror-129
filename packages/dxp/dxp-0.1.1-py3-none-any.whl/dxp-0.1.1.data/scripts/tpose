@@ -1,0 +1,31 @@
+#!python
+
+import pandas as pd
+import argparse
+from signal import signal, SIGPIPE, SIG_DFL
+signal(SIGPIPE, SIG_DFL)
+
+def read_df(fp: str, header=bool):
+    # skip header
+    csv = pd.read_csv(fp, skiprows=1) if header else pd.read_csv(fp, header=None)
+    return csv
+
+def saveto(df: pd.DataFrame, saveas: str):
+    if (saveas is None):
+        print(df.to_csv(header=None, index=False))
+    else:
+        df.to_csv(saveas, index=False)
+
+
+parser = argparse.ArgumentParser(description='Output transposed csv files')
+parser.add_argument('input'     , type=str, help='Specify csv file to transpose')
+parser.add_argument('--h'       , action='store_true', help='Specify csv file to transpose')
+parser.add_argument('--saveas'  , type=str, help='Specify csv file to transpose')
+args = parser.parse_args()
+
+fp      = args.input
+header  = args.h
+saveas  = args.saveas
+
+df = read_df(fp, header).T # Transpose DataFrame
+saveto(df, saveas)
