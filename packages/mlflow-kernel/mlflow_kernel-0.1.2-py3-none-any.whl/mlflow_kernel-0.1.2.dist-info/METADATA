@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mlflow-kernel
+Version: 0.1.2
+Summary: MLFlow kernel for jupyter
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mlflow
+Requires-Dist: jsons
+
+UNKNOWN
+
+
