@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+asgimod/__init__.py
+asgimod/db.py
+asgimod/mixins.py
+asgimod/sync.py
+asgimod.egg-info/PKG-INFO
+asgimod.egg-info/SOURCES.txt
+asgimod.egg-info/dependency_links.txt
+asgimod.egg-info/requires.txt
+asgimod.egg-info/top_level.txt
+asgimod.egg-info/zip-safe
+testapp/migrations/0001_initial.py
+testapp/migrations/__init__.py
