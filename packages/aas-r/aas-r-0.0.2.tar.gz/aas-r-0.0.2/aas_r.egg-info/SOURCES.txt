@@ -1,0 +1,9 @@
+README.md
+setup.py
+aas_r.egg-info/PKG-INFO
+aas_r.egg-info/SOURCES.txt
+aas_r.egg-info/dependency_links.txt
+aas_r.egg-info/top_level.txt
+aas_r.egg-info/zip-safe
+aasr/Requests.py
+aasr/__init__.py
