@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+porter2/__init__.py
+porter2.egg-info/PKG-INFO
+porter2.egg-info/SOURCES.txt
+porter2.egg-info/dependency_links.txt
+porter2.egg-info/top_level.txt
+porter2/surgebase/__init__.py
+porter2/surgebase/_porter2.bz
+porter2/surgebase/_porter2.h
+porter2/surgebase/zipper.py

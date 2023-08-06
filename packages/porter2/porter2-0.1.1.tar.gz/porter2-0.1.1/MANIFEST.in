@@ -1,0 +1,3 @@
+exclude porter2/surgebase/_porter2.so
+include porter2/surgebase/_porter2.bz
+include porter2/surgebase/_porter2.h
