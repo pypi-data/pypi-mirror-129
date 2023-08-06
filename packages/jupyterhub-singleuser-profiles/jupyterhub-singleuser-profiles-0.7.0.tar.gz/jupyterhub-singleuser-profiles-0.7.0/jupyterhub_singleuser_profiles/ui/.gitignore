@@ -1,0 +1,18 @@
+# testing
+/coverage
+
+# production
+/build
+
+# Created templates
+/templates
+
+*stats.json
+
+.env*.local
+
+node_modules
+yarn.lock
+
+# Dev files
+.env.development.local
