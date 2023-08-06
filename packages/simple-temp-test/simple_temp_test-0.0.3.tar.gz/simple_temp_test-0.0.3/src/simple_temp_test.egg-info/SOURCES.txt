@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/hello/__init__.py
+src/hello/main.py
+src/simple_temp_test.egg-info/PKG-INFO
+src/simple_temp_test.egg-info/SOURCES.txt
+src/simple_temp_test.egg-info/dependency_links.txt
+src/simple_temp_test.egg-info/entry_points.txt
+src/simple_temp_test.egg-info/requires.txt
+src/simple_temp_test.egg-info/top_level.txt
