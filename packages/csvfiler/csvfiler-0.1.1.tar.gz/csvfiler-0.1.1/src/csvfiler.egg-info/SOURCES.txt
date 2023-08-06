@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/csvfiler/__init__.py
+src/csvfiler/utils.py
+src/csvfiler.egg-info/PKG-INFO
+src/csvfiler.egg-info/SOURCES.txt
+src/csvfiler.egg-info/dependency_links.txt
+src/csvfiler.egg-info/top_level.txt
