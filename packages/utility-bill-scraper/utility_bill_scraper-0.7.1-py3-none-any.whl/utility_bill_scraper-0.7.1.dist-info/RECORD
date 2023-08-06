@@ -1,0 +1,12 @@
+utility_bill_scraper/__init__.py,sha256=p65XQRwRNWY_Q_Kx4h9ABDiber9aiXAfD1iVxnxvZcY,17112
+utility_bill_scraper/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utility_bill_scraper/bin/ubs.py,sha256=LZ9Xhlmmw-6cnyX5_aF7BjY5qynTwj7eRJDDTGPiTp0,4443
+utility_bill_scraper/canada/on/enbridge.py,sha256=gAFJz0d8_LxM0gXqnadcDuxfFjufqWOQw1PWHp29_a0,2798
+utility_bill_scraper/canada/on/kitchener_utilities.py,sha256=u1ByqyA3oifteaRsg679X4AKnBKAt8D5iIGO9VyrsS4,17672
+utility_bill_scraper/canada/on/kitchener_wilmot_hydro.py,sha256=aoMNmsrpqRaZ-OwnO3IU1CXJnmr2sVpzO2A73pRX6eM,16658
+utility_bill_scraper/google_drive_helpers.py,sha256=3sW4I2MBYbeaar6aist64u13F90IHHPECG0tDDJnwbE,3733
+utility_bill_scraper-0.7.1.dist-info/entry_points.txt,sha256=rZd7nE_hl2l3Lj22Tq84is0mo9GT4aXvoBlilLRpjlI,57
+utility_bill_scraper-0.7.1.dist-info/LICENSE.md,sha256=2Tug-Nak_7mBiC1p1au-6N10EAc8jlmdbvCDDv3aWSQ,1515
+utility_bill_scraper-0.7.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+utility_bill_scraper-0.7.1.dist-info/METADATA,sha256=SeVD4tRMX3scAWRHTFfrOUyTU56w0G6qQu0zmBQLCHM,9408
+utility_bill_scraper-0.7.1.dist-info/RECORD,,
