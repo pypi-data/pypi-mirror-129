@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nifc_wildfires/__init__.py
+nifc_wildfires/cli.py
+nifc_wildfires.egg-info/PKG-INFO
+nifc_wildfires.egg-info/SOURCES.txt
+nifc_wildfires.egg-info/dependency_links.txt
+nifc_wildfires.egg-info/entry_points.txt
+nifc_wildfires.egg-info/requires.txt
+nifc_wildfires.egg-info/top_level.txt
