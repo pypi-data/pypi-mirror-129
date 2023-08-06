@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: keyar-mining
+Version: 0.0.2
+Summary: Package for machine learning algorithm and data mining
+Home-page: https://github.com/SynitCool/keyar-mining
+Author: BASIS / SynitIsCool
+Author-email: zolarpixel3@gmail.com
+License: MIT
+Download-URL: https://github.com/SynitCool/keyar-mining/archive/refs/tags/v0.0.2.tar.gz
+Keywords: Data Mining,Machine Learning
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >= 3.5
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+License-File: LICENSE
+
+**Keyar-mining is a Python library for machine learning and data mining.**
+
+> :warning: **WARNING**: This package is created just for learning about machine learning algorithm!
+
+> :warning: **WARNING**: Not recommended to be using for high task data! 
+
+
+## Links
+
+- PyPI: [https://pypi.org/project/keyar-mining](https://pypi.org/project/keyar-mining)
+- Keyar-mining Doc: [https://synitcool.github.io/keyar-mining/](https://synitcool.github.io/keyar-mining/)
+
+<br>
+<br>
+
+## Installing keyar-mining
+
+#### PyPI
+
+To install keyar-mining, just execute  
+
+```bash
+pip install keyar-mining  
+```
+
+#### Pypi download files
+
+If pypi files won't load the file : 
+1. install [krmining](https://codeload.github.com/SynitCool/keyar-mining/tar.gz/refs/tags/0.0.1)
+2. unzip krmining.tar.gz
+3. move the files in keyar-mining to site-packages
+
+Why this happen cause i always forget to specify the config and setup :P
+
+
+
+<br>
+<br>
+
+---
+
+## License
+
+```
+MIT License
+
+Copyright (c) 2021 SynitIsCool
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.ter-generated graphics such as the plots produced by matplotlib fall under the BSD license mentioned above).
+```
+
+
+## Contact
+
+- Email: zolarpixel3@gmail.com
+- Personal website: [synit-web](https://synit-web.herokuapp.com)
+
+
