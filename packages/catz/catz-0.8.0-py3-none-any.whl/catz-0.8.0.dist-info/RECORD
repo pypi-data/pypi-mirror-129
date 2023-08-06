@@ -1,0 +1,10 @@
+catz/__init__.py,sha256=_dk7ViFa3lrtPW8CNji09mMKqHCCEOTZYmJDSCl2ioQ,76
+catz/app.py,sha256=kZb0l8s2gGh-GmLVTKFo8sgfRKfINCkX7tcg7rupV7c,3145
+catz/languages.py,sha256=tfBHkc0HjLQ8RPdyQXKcUs7MD4jdu7nyqTNDZLOoW2Y,1463
+catz/options.py,sha256=n621A8aH483r7qGHR5fJSx5FUyOIr0EgkJPlkQsgFVA,1462
+catz/styles.py,sha256=1Pbn6oAVtMthTsO6MSbjye8OvrO2o91WsiqJQOwgmIk,933
+catz-0.8.0.dist-info/entry_points.txt,sha256=_7nqPHZrRQ1T5PM5dZPcbuyIC8B-fTqMnuOHCMA_dlQ,61
+catz-0.8.0.dist-info/LICENSE,sha256=GKoEiesVN35zvHq7X499i5mVgU5zpY_j-N79PM6ef5o,1076
+catz-0.8.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+catz-0.8.0.dist-info/METADATA,sha256=4vSmKTxlhM9i8zuox252BmWPiiGEFVX-_tGgueS3B7Y,542
+catz-0.8.0.dist-info/RECORD,,

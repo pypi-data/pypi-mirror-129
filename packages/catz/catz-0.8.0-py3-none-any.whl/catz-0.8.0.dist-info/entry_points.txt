@@ -1,0 +1,4 @@
+[console_scripts]
+catz=catz.app:main
+test=tests.harness:run
+
