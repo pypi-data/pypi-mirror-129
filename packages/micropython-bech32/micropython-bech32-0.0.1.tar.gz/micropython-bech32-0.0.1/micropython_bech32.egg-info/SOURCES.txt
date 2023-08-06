@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bech32/__init__.py
+micropython_bech32.egg-info/PKG-INFO
+micropython_bech32.egg-info/SOURCES.txt
+micropython_bech32.egg-info/dependency_links.txt
+micropython_bech32.egg-info/top_level.txt

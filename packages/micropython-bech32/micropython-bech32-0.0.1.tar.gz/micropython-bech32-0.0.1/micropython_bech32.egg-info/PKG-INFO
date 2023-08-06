@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: micropython-bech32
+Version: 0.0.1
+Summary: Bech32 library for micropython
+Home-page: https://github.com/agama-point/micropython-bech32
+Author: Petr Kracik
+Author-email: petrkr@petrkr.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# micropython-bech32
+
+Based on https://github.com/fiatjaf/bech32
+Rewritten to work with micropython.
+
+
