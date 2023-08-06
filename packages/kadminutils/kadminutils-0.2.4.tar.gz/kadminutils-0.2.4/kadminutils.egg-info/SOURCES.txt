@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+kadminutils.py
+requirements.txt
+setup.py
+kadminutils.egg-info/PKG-INFO
+kadminutils.egg-info/SOURCES.txt
+kadminutils.egg-info/dependency_links.txt
+kadminutils.egg-info/not-zip-safe
+kadminutils.egg-info/top_level.txt
