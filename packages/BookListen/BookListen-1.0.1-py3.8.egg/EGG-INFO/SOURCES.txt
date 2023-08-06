@@ -1,0 +1,10 @@
+README.md
+setup.py
+BookListen.egg-info/PKG-INFO
+BookListen.egg-info/SOURCES.txt
+BookListen.egg-info/dependency_links.txt
+BookListen.egg-info/entry_points.txt
+BookListen.egg-info/requires.txt
+BookListen.egg-info/top_level.txt
+booklisten/__init__.py
+booklisten/__main__.py
