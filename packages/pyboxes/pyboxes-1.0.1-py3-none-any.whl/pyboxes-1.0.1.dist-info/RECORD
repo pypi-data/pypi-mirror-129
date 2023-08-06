@@ -1,0 +1,10 @@
+pyboxes/__init__.py,sha256=VZt4-n5hNIxgUttg-qsS21Cm5UiaHOwclVCoWAalUNc,323
+pyboxes/__main__.py,sha256=qtQ6HrR3wpLsKBfBin_CgfRWe1Lz52sk1l54TpUMgQk,1457
+pyboxes/commands/__init__.py,sha256=HBSAvdA5awsThq818wIvwh4iNeVTGZIzyKm3lvT2fB4,148
+pyboxes/commands/gdriver.py,sha256=F_MGNcAyh0DiH8Iim4nTfuuHvOicAoo1kyE5r0RLUwU,1736
+pyboxes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyboxes-1.0.1.dist-info/entry_points.txt,sha256=tvUmxoVhdYzXwR62qoIVnqYc4xANktkTbYH99P1_Ve8,47
+pyboxes-1.0.1.dist-info/LICENSE.rst,sha256=10R8ANzvnNklP8J7vyvGq7Frfs7dZIJ1pTX8gevdchY,1078
+pyboxes-1.0.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyboxes-1.0.1.dist-info/METADATA,sha256=3MFym8sYFBnw3cpUQLLc7M_cIp0MNTgoFIXtjDhxH3A,3544
+pyboxes-1.0.1.dist-info/RECORD,,
