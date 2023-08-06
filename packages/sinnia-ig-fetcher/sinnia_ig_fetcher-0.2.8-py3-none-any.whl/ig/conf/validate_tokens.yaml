@@ -1,0 +1,25 @@
+
+graph_api:
+  host:       'https://graph.facebook.com/v11.0'
+  debug_path: '/debug_token?input_token={check_token}'
+  info_path:  '/{id}'
+
+queries:
+  get_users: |    
+    SELECT a.facebook_id, a.instagram_id, a.access_token, a.data_access_until,
+    a.alias
+    FROM UsersAuth a 
+    WHERE active = 1 AND access_token IS NOT NULL AND type = 'PAGE'
+
+  update_validity: |    
+    UPDATE UsersAuth SET data_access_until = '{data_access_until}'
+    WHERE instagram_id = '{instagram_id}'
+
+db_config:
+  ig:
+    host:    'sinnia-db-2-3.ce4bgmsedant.us-east-1.rds.amazonaws.com'
+    db:      'vizgram'
+    user:    'vizgram'
+    passwd:  'vzig6-hanGR'
+    charset: 'utf8mb4' 
+
