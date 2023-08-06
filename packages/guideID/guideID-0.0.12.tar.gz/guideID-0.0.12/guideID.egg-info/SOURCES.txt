@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+guideID/_GuideID.py
+guideID/__init__.py
+guideID.egg-info/PKG-INFO
+guideID.egg-info/SOURCES.txt
+guideID.egg-info/dependency_links.txt
+guideID.egg-info/requires.txt
+guideID.egg-info/top_level.txt
