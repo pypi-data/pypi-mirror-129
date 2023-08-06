@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: flake8-class-constants
+Version: 0.1.2
+Summary: Check PEP-8 class constants naming conventions, plugin for flake8
+Home-page: https://github.com/ipadla/flake8-class-constants
+Author: Roman Korneev
+Author-email: rm@ipadla.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Framework :: Flake8
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Description-Content-Type: text/markdown
+Requires-Dist: flake8 (>4.0.0)
+
+flake8\_class\_constants
+
+Simple flake8 plugin, that check if class constants is uppercase
+
+`pip install flake8_class_constants`
+
+
