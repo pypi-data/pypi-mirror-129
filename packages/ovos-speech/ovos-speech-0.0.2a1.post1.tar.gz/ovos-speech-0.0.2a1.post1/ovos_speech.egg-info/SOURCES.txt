@@ -1,0 +1,9 @@
+LICENSE.md
+MANIFEST.in
+requirements.txt
+setup.py
+ovos_speech.egg-info/PKG-INFO
+ovos_speech.egg-info/SOURCES.txt
+ovos_speech.egg-info/dependency_links.txt
+ovos_speech.egg-info/requires.txt
+ovos_speech.egg-info/top_level.txt
