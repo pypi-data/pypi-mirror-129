@@ -1,0 +1,784 @@
+client_simulation:
+- name: Android 2.3.7
+  status: NOK
+- name: Android 4.0.4
+  status: NOK
+- name: Android 4.1.1
+  status: NOK
+- name: Android 4.2.2
+  status: NOK
+- name: Android 4.3
+  status: NOK
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49200
+    name: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 25
+    name: SECP521R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: Android 4.4.2
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49172
+    name: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+  key_ex_curve:
+    id: 25
+    name: SECP521R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: Android 5.0.0
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49195
+    name: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP521R1_SHA512
+  key_ex_type: ECDH
+  name: Android 6.0
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 52393
+    name: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Android 7.0
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 52393
+    name: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Android 8.0
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4867
+    name: TLS_CHACHA20_POLY1305_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Android 8.1
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4867
+    name: TLS_CHACHA20_POLY1305_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Android 9.0
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- name: Baidu Jan 2015
+  status: NOK
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49200
+    name: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 25
+    name: SECP521R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: BingPreview Jan 2015
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49199
+    name: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: Chrome 49 / XP SP3
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Chrome 69 / Win 7
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Chrome 70 / Win 10
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Chrome 80 / Win 10
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49195
+    name: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Firefox 31.3.0 ESR / Win 7
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49195
+    name: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Firefox 47 / Win 7
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49195
+    name: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Firefox 49 / XP SP3
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Firefox 62 / Win 7
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Firefox 73 / Win 10
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49195
+    name: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Googlebot Feb 2018
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- name: IE 6 / XP
+  status: NOK
+- name: IE 7 / Vista
+  status: NOK
+- name: IE 8 / XP
+  status: NOK
+- name: IE 8-10 / Win 7
+  status: NOK
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49192
+    name: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: IE 11 / Win 7
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49192
+    name: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: RSA_PKCS1_SHA256
+  key_ex_type: ECDH
+  name: IE 11 / Win 8.1
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- name: IE 10 / Win Phone 8.0
+  status: NOK
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 60
+    name: TLS_RSA_WITH_AES_128_CBC_SHA256
+  key_ex_type: RSA
+  name: IE 11 / Win Phone 8.1
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49192
+    name: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: RSA_PKCS1_SHA256
+  key_ex_type: ECDH
+  name: IE 11 / Win Phone 8.1 Update
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: IE 11 / Win 10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Edge 15 / Win 10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Edge 16 / Win 10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Edge 18 / Win 10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Edge 13 / Win Phone 10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- name: Java 6u45
+  status: NOK
+- name: Java 7u25
+  status: NOK
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49188
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP521R1_SHA512
+  key_ex_type: ECDH
+  name: Java 8u161
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_type: ECDH
+  name: Java 11.0.3
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 4865
+    name: TLS_AES_128_GCM_SHA256
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_type: ECDH
+  name: Java 12.0.1
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- name: OpenSSL 0.9.8y
+  status: NOK
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49200
+    name: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 25
+    name: SECP521R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: OpenSSL 1.0.1l
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49200
+    name: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: OpenSSL 1.0.2s
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 4866
+    name: TLS_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: OpenSSL 1.1.0k
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 4866
+    name: TLS_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: OpenSSL 1.1.1c
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- name: Safari 5.1.9 / OS X 10.6.8
+  status: NOK
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49188
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 6 / iOS 6.0.1
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- name: Safari 6.0.4 / OS X 10.8.4
+  status: NOK
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49188
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 7 / iOS 7.1
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49188
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 7 / OS X 10.9
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49188
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 8 / iOS 8.4
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49188
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 8 / OS X 10.10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP384R1_SHA384
+  key_ex_type: ECDH
+  name: Safari 9 / iOS 9
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP384R1_SHA384
+  key_ex_type: ECDH
+  name: Safari 9 / OS X 10.11
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 10 / iOS 10
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP256R1_SHA256
+  key_ex_type: ECDH
+  name: Safari 10 / OS X 10.12
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4867
+    name: TLS_CHACHA20_POLY1305_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Safari 12.1.2 / MacOS 10.14.6 Beta
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 4867
+    name: TLS_CHACHA20_POLY1305_SHA256
+  key_ex_curve:
+    id: 29
+    name: X25519
+  key_ex_type: ECDH
+  name: Safari 12.1.1 / iOS 12.3.1
+  status: OK
+  version:
+    id: 772
+    name: TLS13
+- cert_pub_key_size: 384
+  cert_sig_algo: ECDSA_SECP256R1_SHA256
+  cert_type: ECDSA
+  cipher_suite:
+    id: 49196
+    name: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 23
+    name: SECP256R1
+  key_ex_sig_algo: ECDSA_SECP384R1_SHA384
+  key_ex_type: ECDH
+  name: Apple ATS 9 / iOS 9
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49200
+    name: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 24
+    name: SECP384R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: Yahoo Slurp Jan 2015
+  status: OK
+  version:
+    id: 771
+    name: TLS12
+- cert_pub_key_size: 2048
+  cert_sig_algo: RSA_PKCS1_SHA256
+  cert_type: RSA
+  cipher_suite:
+    id: 49200
+    name: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  key_ex_curve:
+    id: 25
+    name: SECP521R1
+  key_ex_sig_algo: RSA_PKCS1_SHA512
+  key_ex_type: ECDH
+  name: YandexBot Jan 2015
+  status: OK
+  version:
+    id: 771
+    name: TLS12
