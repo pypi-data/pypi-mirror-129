@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pytradegate/__init__.py
+pytradegate/api.py
+pytradegate.egg-info/PKG-INFO
+pytradegate.egg-info/SOURCES.txt
+pytradegate.egg-info/dependency_links.txt
+pytradegate.egg-info/requires.txt
+pytradegate.egg-info/top_level.txt
+test/test_api.py
