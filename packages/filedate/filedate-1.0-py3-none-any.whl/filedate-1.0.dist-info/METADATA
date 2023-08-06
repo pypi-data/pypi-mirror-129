@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: filedate
+Version: 1.0
+Summary: Simple file date changing utility.
+Home-page: https://github.com/kubinka0505/filedate
+Author: kubinka0505
+License: GPL v3
+Keywords: filedate file date change changing changer
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+
+UNKNOWN
+
