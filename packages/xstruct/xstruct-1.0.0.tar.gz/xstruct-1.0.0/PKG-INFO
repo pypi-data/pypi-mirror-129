@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: xstruct
+Version: 1.0.0
+Summary: Serialize, deserialize and represent packed binary data in a declarative way
+Home-page: UNKNOWN
+License: OSI Approved :: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+# xstruct
+
+This module provides a solution to serialize, deserialize and represent
+packed binary data in a declarative manner. It is built on top and
+extends the capabilities of the standard `struct` module while
+presenting an higher-level object oriented interface similar to that of
+the familiar `@dataclass` decorator. It has optional support for
+embedded BSON data structures.
+
+
