@@ -1,0 +1,8 @@
+LICENSE
+README.md
+rext.py
+setup.py
+rext.egg-info/PKG-INFO
+rext.egg-info/SOURCES.txt
+rext.egg-info/dependency_links.txt
+rext.egg-info/top_level.txt
