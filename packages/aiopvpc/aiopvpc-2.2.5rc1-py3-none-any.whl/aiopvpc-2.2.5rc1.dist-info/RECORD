@@ -1,0 +1,14 @@
+aiopvpc/.DS_Store,sha256=97K8gwu1msSlBZKItKQdfrxqkr34OANXcb2Mxrr-968,8196
+aiopvpc/__init__.py,sha256=gMmeMgtTJfHnwJT8WCgBe35fl1ML6z2tUkvfOIjH3TM,186
+aiopvpc/const.py,sha256=pfs5ggdsKIu5oN-n6G7M2Mv-DSojrDfk--Q61jRSDXo,3767
+aiopvpc/esios_api.py,sha256=KH6yRt7VI2jcdFAhSgbdoSw2_W1_orEVw5nqxq0Ka_M,12995
+aiopvpc/parser.py,sha256=Edu8d5xHkm2varL9-MXRnxdYhWrcD8bv0KnSyVOdPnU,3189
+aiopvpc/prices.py,sha256=hFxWJvN9LwnWJmvsqqnvcAaQdEMULBTSVJ-_enIsr98,4104
+aiopvpc/pvpc_data.py,sha256=0lODmNQNaK30JCVxRjajyYwXYMNnjg4pNzm9KqCzJ3k,15488
+aiopvpc/pvpc_tariff.py,sha256=ucNpMcBh0IjydBjuEekTuiOMYZ_M7E8snBTB4w-XFRE,1317
+aiopvpc/pvpcbill/.DS_Store,sha256=3Q9r3GxkSglg6T7XJDu5WWpRg8DA-UWkDEJqdooG9BU,6148
+aiopvpc/utils.py,sha256=rps4IuzjVSohQdmbDIJ7O2nNWf0lLIP4cE1Zb2F1D2E,351
+aiopvpc-2.2.5rc1.dist-info/LICENSE,sha256=0VFrtNQc8ma8PoPqLPum66K8UydQdPppYXoCPhweeTg,1074
+aiopvpc-2.2.5rc1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aiopvpc-2.2.5rc1.dist-info/METADATA,sha256=BXqU06hd4xP81V_m1OyjcxNtaqWQeKzvDAXKIOhjBHU,3092
+aiopvpc-2.2.5rc1.dist-info/RECORD,,
