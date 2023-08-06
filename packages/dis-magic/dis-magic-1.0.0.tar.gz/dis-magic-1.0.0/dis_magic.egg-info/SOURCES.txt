@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+dis_magic/__init__.py
+dis_magic.egg-info/PKG-INFO
+dis_magic.egg-info/SOURCES.txt
+dis_magic.egg-info/dependency_links.txt
+dis_magic.egg-info/requires.txt
+dis_magic.egg-info/top_level.txt
