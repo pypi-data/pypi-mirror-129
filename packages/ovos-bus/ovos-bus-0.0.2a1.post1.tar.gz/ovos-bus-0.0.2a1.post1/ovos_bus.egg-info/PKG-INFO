@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ovos-bus
+Version: 0.0.2a1.post1
+Summary: ovos-core metapackage for bus daemon
+Home-page: https://github.com/OpenVoiceOS/ovos-core
+License: Apache-2.0
+Platform: UNKNOWN
+License-File: LICENSE.md
+
+UNKNOWN
+
