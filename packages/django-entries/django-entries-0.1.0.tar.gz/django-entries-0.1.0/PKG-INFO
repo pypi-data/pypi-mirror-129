@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: django-entries
+Version: 0.1.0
+Summary: Entries is a Django app that has basic CRUD functionality with some defaults.
+License: MIT
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2,<4.0)
+Requires-Dist: Markdown (>=3.3.6,<4.0.0)
+Requires-Dist: bleach (>=4.1.0,<5.0.0)
+Requires-Dist: django-crispy-forms (>=1.13.0,<2.0.0)
+Requires-Dist: django-extensions (==3.1.5)
+Requires-Dist: markdownify (>=0.10.0,<0.11.0)
+Requires-Dist: types-Markdown (>=3.3.8,<4.0.0)
+Requires-Dist: types-bleach (>=4.1.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Entries
+
+Entries is a Django app that has basic CRUD functionality with some defaults.
+
+Detailed documentation is in the "docs" directory.
+
+## Quick start
+
+1. Add "entries" to your INSTALLED_APPS setting like this::
+
+   INSTALLED_APPS = [
+   ...
+   'entries',
+   ]
+
+2. Include the entries URLconf in your project urls.py like this::
+
+   path('entries/', include('entries.urls')),
+
+3. Run `python manage.py migrate` to create the entries models.
+
