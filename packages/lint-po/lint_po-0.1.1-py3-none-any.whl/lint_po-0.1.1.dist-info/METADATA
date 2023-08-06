@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: lint-po
+Version: 0.1.1
+Summary: A simple gettext .po linter to check for mangled variable names in translations
+Home-page: https://github.com/himdel/lint-po
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### lint-po
+
+A simple gettext .po linter to check for mangled variable names in translations.
+
+
+#### Features
+
+* reads utf-8 encoded *.po files
+* skips `msgid/msgstr` pairs where either value is unset
+* compares original/translation pairs for common interpolation markers:
+  * supports `{name}`, `{123}`, `<123>`, `</123>`, `<123/>`, `%(name)s`
+  * ensures both messages use the same set of variables - no renames, no removals, no additions
+* supports Github Actions error reporting syntax (when `env.GITHUB_ACTIONS` is set)
+
+
+#### Example usage
+
+```sh
+$ lint-po locale/*.po
+
+Difference between msgid="Hello {name}" and msgstr="Bonjour {nom}":
+  Missing from msgstr: {name}
+  Unexpected in msgstr: {nom}
+  at problem.po:2
+```
+
+
