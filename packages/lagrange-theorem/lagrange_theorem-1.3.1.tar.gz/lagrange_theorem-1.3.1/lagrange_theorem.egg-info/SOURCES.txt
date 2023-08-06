@@ -1,0 +1,17 @@
+MANIFEST.in
+README.txt
+requirements.txt
+setup.cfg
+setup.py
+lagrange_theorem/__init__.py
+lagrange_theorem/__main__.py
+lagrange_theorem/calculate_numbers.py
+lagrange_theorem/input_interval.py
+lagrange_theorem.egg-info/PKG-INFO
+lagrange_theorem.egg-info/SOURCES.txt
+lagrange_theorem.egg-info/dependency_links.txt
+lagrange_theorem.egg-info/requires.txt
+lagrange_theorem.egg-info/top_level.txt
+lagrange_theorem/tests/__init__.py
+lagrange_theorem/tests/test_calculate_numbers.txt
+lagrange_theorem/tests/tests.py
