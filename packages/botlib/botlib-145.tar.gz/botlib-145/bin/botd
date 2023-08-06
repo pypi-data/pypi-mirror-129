@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"24/7 channel daemon"
+
+
+__version__ = 70
+
+
+import os
+import readline
+import sys
+import termios
+import threading
+import time
+
+
+from bot.irc import Cfg as IRC
+from bot.obj import Cfg
+from bot.ofn import fmt
+from bot.run import Runtime, starttime
+from bot.run import Cfg as RunCfg
+from bot.tbl import Table
+from bot.tms import elapsed
+from bot.utl import spl
+
+IRC.nick = "botd"
+IRC.channel = "#botd"
+
+
+Cfg.wd = "/var/lib/botd/"
+
+
+class Kernel(Runtime):
+
+    @staticmethod
+    def direct(txt):
+        print(txt)
+        sys.stdout.flush()
+
+    @staticmethod
+    def error(txt):
+        Kernel.direct(txt)
+
+    @staticmethod
+    def log(txt):
+        pass
+
+
+k = Kernel()
+
+
+import bot.all
+
+
+def main(): 
+    k.cfg.name = "botd"
+    k.cfg.verbose = False
+    k.cfg.version = __version__
+    msg = "BOTD %s starting at %s" % (__version__, time.ctime(time.time()))
+    k.direct(msg.replace("  ", " "))
+    k.direct("workdir is %s" % Cfg.wd)
+    k.direct(fmt(k.cfg, ["console", "daemon", "debug", "systemd", "verbose"]))
+    #k.privileges("botd", "botd")
+    k.start()
+    k.cfg.mod += "irc,rss"
+    for mn in spl(k.cfg.mod):
+        k.init("bot.%s" % mn)
+    k.direct(",".join(sorted(list(Table.modnames))))
+    k.direct("booted (%s)" % elapsed(time.time() - starttime))
+    k.wait()
+
+
+main()
