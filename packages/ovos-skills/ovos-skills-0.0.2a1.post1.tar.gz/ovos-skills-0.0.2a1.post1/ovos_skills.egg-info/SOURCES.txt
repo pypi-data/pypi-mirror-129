@@ -1,0 +1,9 @@
+LICENSE.md
+MANIFEST.in
+requirements.txt
+setup.py
+ovos_skills.egg-info/PKG-INFO
+ovos_skills.egg-info/SOURCES.txt
+ovos_skills.egg-info/dependency_links.txt
+ovos_skills.egg-info/requires.txt
+ovos_skills.egg-info/top_level.txt
