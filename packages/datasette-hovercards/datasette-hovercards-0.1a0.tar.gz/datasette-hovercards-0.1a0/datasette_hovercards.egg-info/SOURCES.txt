@@ -1,0 +1,10 @@
+README.md
+setup.py
+datasette_hovercards/__init__.py
+datasette_hovercards.egg-info/PKG-INFO
+datasette_hovercards.egg-info/SOURCES.txt
+datasette_hovercards.egg-info/dependency_links.txt
+datasette_hovercards.egg-info/entry_points.txt
+datasette_hovercards.egg-info/requires.txt
+datasette_hovercards.egg-info/top_level.txt
+datasette_hovercards/static/datasette-hovercards.js
