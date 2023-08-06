@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pytradegate
+Version: 0.10a0
+Summary: A very tiny python api for the stock exchange tradegate.de
+Home-page: https://github.com/cloasdata/pyOnvista
+Author: Simon Bauer
+Author-email: code@seimenadventure.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests (~=2.26.0)
+
+UNKNOWN
+
