@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: bauxite
+Version: 1.0.1
+Summary: A robust, low-level connector for the Discord API
+Home-page: https://github.com/vcokltfre/bauxite
+License: MIT
+Author: vcokltfre
+Author-email: vcokltfre@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Communications :: Chat
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Project-URL: Repository, https://github.com/vcokltfre/bauxite
+Description-Content-Type: text/markdown
+
+# Bauxite
+
+Bauxite is a robust, low-level connector for the Discord API.
+
+## What is Bauxite for?
+
+Bauxite is made for two main purposes:
+
+- Creating higher-level API wrappers and frameworks
+- Creating things that need high levels of control and low-level access to the Discord API
+
+## Examples
+
+### Basic HTTP Example
+
+```py
+from asyncio import run
+
+from bauxite import HTTPClient, Route
+
+
+async def main() -> None:
+    client = HTTPClient("your_bot_token")
+
+    await client.request(
+        Route("POST", "/channels/{channel_id}/messages", channel_id=1234),
+        json={
+            "content": "Hello, world!",
+        },
+    )
+
+    await client.close()
+
+run(main())
+```
+
+### Basic Gateway Example
+
+```py
+from asyncio import run
+
+from bauxite import GatewayClient, HTTPClient
+
+
+async def callback(shard, direction, data) -> None:
+    print(f"{shard} [{direction}]: {data['op'] or data['t']}")
+
+async def main() -> None:
+    client = HTTPClient("your_bot_token")
+    gateway = GatewayClient(client, 32767, callbacks=[callback])
+
+    await gateway.spawn_shards()
+
+run(main())
+```
+
