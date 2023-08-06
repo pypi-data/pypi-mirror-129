@@ -1,0 +1,10 @@
+fastapi_authorization/__init__.py,sha256=33ddjyQbf342CBeivrTnTCj76nwYA-B5siGWTlI1f_s,46
+fastapi_authorization/abac.py,sha256=ZwJ89xZggvJxZnDYh996Wy5ipAOV-vkTnUXbitSoLr0,2351
+fastapi_authorization/rbac.py,sha256=g9_f9S1snvOEPbcRHE3cfdR3RZchVMpTZpt_-gaDL_o,3898
+fastapi_authorization/testing.py,sha256=3Y7dysy7XkNeMCDN1bwZRvD32uTJPRft4ByZRIyrYtQ,1162
+fastapi_authorization/utils.py,sha256=x0WjM4tDgegDeB7W0gbMP_u-D8eb6GhYt2V9dhKCyAM,724
+fastapi_authorization-0.1.0.dist-info/LICENSE,sha256=CBcyoY37qotzdSr3z_7uYQZ5HqTrP4TV_QIBTu3HoiU,1063
+fastapi_authorization-0.1.0.dist-info/METADATA,sha256=uz84mEjeL_yU30KPw7n3Q33izwXd26J_uGOJ-v3CQF8,1235
+fastapi_authorization-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+fastapi_authorization-0.1.0.dist-info/top_level.txt,sha256=HJtLjv9IYLvkeWVLIPAN_cNcJGA9JhhO2TLJOlNjDbw,22
+fastapi_authorization-0.1.0.dist-info/RECORD,,

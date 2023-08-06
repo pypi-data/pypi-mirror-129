@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: fastapi-authorization
+Version: 0.1.0
+Summary: Opinionated authorization package for FastAPI! :tada:
+Home-page: https://github.com/Kludex/fastapi-authorization
+Author: Marcelo Trylesinski
+Author-email: marcelotryle@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi (>=0.65.2)
+
+# FastAPI Authorization
+
+### Installation
+
+```bash
+pip install fastapi-authorization
+```
+
+### Usage
+
+Currently, there are two models available:
+* RBAC: Role-based Access Control
+* ABAC: Attribute-based Access Control
+
+You can check how to use them on:
+* [RBAC](./examples/rbac/app/main.py)
+* [ABAC](./examples/abac/app/main.py)
+
+### Roadmap
+
+* [ ] 100% Coverage
+* [ ] Documentation
+* [ ] Examples
+
+### License
+
+This project is under the MIT license.
+
+
