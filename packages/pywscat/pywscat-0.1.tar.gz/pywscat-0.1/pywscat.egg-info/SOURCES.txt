@@ -1,0 +1,11 @@
+README.md
+setup.py
+pywscat/cli.py
+pywscat/wsclient.py
+pywscat/wsserver.py
+pywscat.egg-info/PKG-INFO
+pywscat.egg-info/SOURCES.txt
+pywscat.egg-info/dependency_links.txt
+pywscat.egg-info/entry_points.txt
+pywscat.egg-info/requires.txt
+pywscat.egg-info/top_level.txt

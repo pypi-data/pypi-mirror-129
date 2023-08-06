@@ -1,0 +1,4 @@
+[console_scripts]
+pywscat = pywscat.cli:main
+wscat = pywscat.cli:main
+
