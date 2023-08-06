@@ -1,0 +1,1 @@
+Compiler for writing Godot visual novels in a text editor.

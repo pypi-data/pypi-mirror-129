@@ -1,0 +1,7 @@
+README.md
+setup.py
+vntools.egg-info/PKG-INFO
+vntools.egg-info/SOURCES.txt
+vntools.egg-info/dependency_links.txt
+vntools.egg-info/requires.txt
+vntools.egg-info/top_level.txt
