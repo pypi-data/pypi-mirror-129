@@ -1,0 +1,12 @@
+lazyapi/__init__.py,sha256=DnerjBNs3IVF7KKMlcd3SwXb23aA9TXQbPOJlO-6KeQ,720
+lazyapi/classes.py,sha256=3XKZ3BsLT5WmDa9zQAbo8Nzgu89vDARC7nsQG0V_H_o,4181
+lazyapi/client.py,sha256=Rs68qNnYd6b5E4YVVsRl6ZW4zznxEJwOKFFZ-MYYrOE,9776
+lazyapi/config.py,sha256=E9769bOrWocqENnAFjK4tMA8WGPf8O5Gte1QWlkewCM,2011
+lazyapi/fast.py,sha256=02vUY5cQjcEXqbcjV8JFyG5s6cKEcxvptkOuQeOc9VE,3829
+lazyapi/timez.py,sha256=SYdRaQVKWdKhlQkAyn8uY-izbhjjUJxAtQLRMQidCBQ,3491
+lazyapi/utils.py,sha256=VkqLPLGzRvI7m8kuuuSxxIVvpgyvSg_6axidA6pvhqU,478
+lazyapi-0.0.1.dist-info/LICENSE,sha256=Yp_6Ppbe-iQmvMPloxYVFWHGl1EHtMZoEeVKgoxo9ZQ,1065
+lazyapi-0.0.1.dist-info/METADATA,sha256=dnXsmSzxyrekrqgEpT2xs1U-wi92gYS3kIlHcCKcHP0,6136
+lazyapi-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+lazyapi-0.0.1.dist-info/top_level.txt,sha256=wYrRWRzwD1OrymEXg5pDXtUgUzt95SHWPAchAGymYhA,8
+lazyapi-0.0.1.dist-info/RECORD,,
