@@ -1,0 +1,16 @@
+config1:
+  number_type: 1
+  string_type: name
+
+config2:
+  list_type:
+    - "a_type"
+    - "b_type"
+    - "c_type"
+  dict_type:
+    "object1":
+      attr1: "attr1"
+      attr2: 1
+    "object2":
+      attr1: "attr1"
+      attr2: 1
