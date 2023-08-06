@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bioenergetics
+Version: 0.1.0
+Summary: Combined bioenergetics and visual foraging model
+License: GNU GPLv3
+Author: Chee Sing Lee
+Author-email: cheesinglee@gmail.com
+Requires-Python: >=3.7,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.5.0,<4.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: pytest (>=6.2.5,<7.0.0)
+Requires-Dist: scipy (>=1.7.3,<2.0.0)

@@ -1,0 +1,10 @@
+bioenergetics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bioenergetics/infection.py,sha256=3WZ1nQJIrE9DvB0JSfiXsAfHZnum492KvnJOsUTnXzQ,25
+bioenergetics/model.py,sha256=Mqg5YBno1uRs7CIlemyBy-RIux68edhIqvLfR48EhtI,31144
+bioenergetics/params.py,sha256=qfXmDHQNZpfS0srEgsdcFZfS5Ly0XmPlhxQMS__auaQ,5884
+bioenergetics/prey.py,sha256=zsNhN3hsI4TIIBVEGYkrV6RZ3Gl8eBNl6y7tfNIz40o,3264
+bioenergetics/util.py,sha256=iziWg5XnC46e1YMiiiy2dTPYat2Yfrg7ftCuVeYdiAQ,5431
+bioenergetics-0.1.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+bioenergetics-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bioenergetics-0.1.0.dist-info/METADATA,sha256=IOxzDvfrMyMepkKi7wEhhjdxnHZLxEYi0oV9QVGhhP8,678
+bioenergetics-0.1.0.dist-info/RECORD,,
