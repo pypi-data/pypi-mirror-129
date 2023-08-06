@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: nautilus-librarian
+Version: 0.1.0
+Summary: A Python Console application to handle media libraries like Git and DVC
+Home-page: https://github.com/Nautilus-Cyberneering/librarian
+Author: Jose Celano
+Author-email: jose@nautilus-cyberneering.de
+Maintainer: Jose Celano
+Maintainer-email: jose@nautilus-cyberneering.de
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: GitPython (>=3.1.24)
+Requires-Dist: PyGithub (>=1.55)
+Requires-Dist: dvc[azure] (>=2.8.3,<3.0.0)
+Requires-Dist: mypy (>=0.910,<0.911)
+Requires-Dist: pyvips (>=2.1.16)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Project-URL: Repository, https://github.com/Nautilus-Cyberneering/librarian
+Description-Content-Type: text/markdown
+
+# Nautilus Librarian
+
+[![Lint Code Base](https://github.com/Nautilus-Cyberneering/librarian/actions/workflows/linter.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/librarian/actions/workflows/linter.yml)[![Publish Docker image](https://github.com/Nautilus-Cyberneering/librarian/actions/workflows/publish-docker-image.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/librarian/actions/workflows/publish-docker-image.yml)[![Test](https://github.com/Nautilus-Cyberneering/librarian/actions/workflows/test.yml/badge.svg)](https://github.com/Nautilus-Cyberneering/librarian/actions/workflows/test.yml)
+
+A Python Console application to handle media libraries like Git and [Dvc](https://github.com/iterative/dvc).
+
+## Development
+
+### Run
+
+With docker:
+
+Build:
+
+```shell
+./bin/docker/build.sh
+```
+
+Run pre-built docker image:
+
+```shell
+./bin/docker/run.sh [OPTIONS] COMMAND [ARGS]...
+./bin/docker/run.sh --help
+```
+
+Run mounting current repo:
+
+```shell
+./bin/docker/run-dev.sh [OPTIONS] COMMAND [ARGS]...
+./bin/docker/run-dev.sh --help
+```
+
+With Poetry:
+
+```shell
+poetry install
+poetry run nautilus-librarian [OPTIONS] COMMAND [ARGS]...
+poetry run nautilus-librarian --help
+```
+
+> NOTE: With Poetry, you have to install the [Librarian system dependencies](https://github.com/Nautilus-Cyberneering/librarian-system-dockerfile).
+
+### Testing
+
+With docker:
+
+```shell
+./bin/docker/test.sh
+```
+
+With Poetry:
+
+```shell
+poetry shell
+pytest
+```
+
+or:
+
+```shell
+poetry run pytest --cov
+```
+
+### Linting
+
+For Dockerfile:
+
+We are using GitHub Action [super-linter](https://github.com/marketplace/actions/super-linter). If you want to check the `Dockerfile` linting before pushing, you can do it with:
+
+```shell
+docker run --rm -i hadolint/hadolint < Dockerfile
+```
+
+Run super-linter locally with [act](https://github.com/nektos/act):
+
+```shell
+act -W .github/workflows/linter.yml -j build
+```
+
