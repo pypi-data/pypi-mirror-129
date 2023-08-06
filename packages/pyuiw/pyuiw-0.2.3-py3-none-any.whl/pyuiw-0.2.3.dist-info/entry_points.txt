@@ -1,0 +1,3 @@
+[console_scripts]
+pyuiw=pyuiw.__main__:PyUIWatcherCli
+
