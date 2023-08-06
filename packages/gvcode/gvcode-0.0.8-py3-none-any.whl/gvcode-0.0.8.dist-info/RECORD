@@ -1,0 +1,10 @@
+gvcode/__init__.py,sha256=XixIRnh88zzOgM8wKlxrVltuK5DmCh9GMKMc-a6BbQk,105
+gvcode/gvcode.py,sha256=bh9URBa1B-5HAYyRA0kBVy1_N6Qq44GznB1HBINJwX4,8996
+gvcode/fonts/arial.ttf,sha256=ybdiIKW-QurUczYR5BfNZcX9iuqjPrVldqw3ijfRMKE,1036584
+gvcode/fonts/calibri.ttf,sha256=GY6NrFEiBvJ8m9v-s9Wz5Voz3p3PWNgBgj74xe9adtw,1648120
+gvcode/fonts/simsun.ttc,sha256=LjzJ29eHyCf3NJbwFjO7pDDhXF201PbtmTg4bqAfAXE,18214472
+gvcode-0.0.8.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+gvcode-0.0.8.dist-info/METADATA,sha256=Ouzj8NFjNQR0zR_28LKyUuJM5qdjKljzHYfL_oHoeFY,1885
+gvcode-0.0.8.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+gvcode-0.0.8.dist-info/top_level.txt,sha256=fwdF8dpaorBTwD2rUWA3TjMmQx3xSCbfb67ifqt9Jko,7
+gvcode-0.0.8.dist-info/RECORD,,
