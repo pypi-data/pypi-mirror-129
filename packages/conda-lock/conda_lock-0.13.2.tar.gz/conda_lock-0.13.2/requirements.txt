@@ -1,0 +1,8 @@
+pyyaml
+requests
+jinja2
+toml
+ensureconda>=1.3.0
+click
+click-default-group
+pydantic
