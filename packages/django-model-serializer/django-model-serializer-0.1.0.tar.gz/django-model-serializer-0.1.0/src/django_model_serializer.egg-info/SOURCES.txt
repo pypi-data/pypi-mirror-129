@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/django_model_serializer/Serializer.py
+src/django_model_serializer/__init__.py
+src/django_model_serializer.egg-info/PKG-INFO
+src/django_model_serializer.egg-info/SOURCES.txt
+src/django_model_serializer.egg-info/dependency_links.txt
+src/django_model_serializer.egg-info/top_level.txt

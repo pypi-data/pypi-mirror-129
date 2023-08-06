@@ -1,0 +1,278 @@
+Metadata-Version: 2.1
+Name: django-model-serializer
+Version: 0.1.0
+Summary: Convert Django model instance to dict type (Json)
+Home-page: https://gitlab.com/Mahdi1419/django-model-serializer
+Author: Mahdi Bagherzade
+Author-email: mahdib999@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/Mahdi1419/django-model-serializer/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Django Model Serializer
+A tool for convert django model instances to 'dict' type
+
+### Installation:
+```
+pip install djanog-model-serializer
+```
+## Usage
+
+### ./models	:
+```py
+# imports
+from django.db import models
+
+# models
+class Author(models.Model):
+	username = models.CharField(max_length=50)  
+	name     = models.CharField(max_length=50)  
+	family   = models.CharField(max_length=100)
+	
+class Post(models.Model):
+	author = models.ForeignKey(Author, on_delete=models.CASCADE)
+	title  = models.CharField(max_length=255)   
+	body   = models.TextField()
+```
+
+- create an Author and Post
+```bash
+>>> from post.models import Author, Post
+>>> new_author = Author.objects.create(username='JohnnyDepp', name='Johnny', family='Depp')
+>>> author
+<Author: Author object (1)>
+>>> new_post = Post.objects.create(author=new_author, title='Test Title', body='Test body')
+>>> new_post
+<Post: Post object (1)>
+>>>
+```
+
+### ./serializers
+```py
+#imports
+from django_model_serializer.Serializer import Serializer
+from .models import Post
+
+class PostSerializer(Serializer):
+	class Meta:
+		model = Post
+		fields = "__all__"
+```
+
+- serialize data
+```bash
+>>> from post.serializers import PostSerializer
+>>> posts = Post.objects.all()
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 2, 'author_id': 2, 'title': 'Test Title', 'body': 'Test body'}]}
+>>>
+```
+
+## Serializers options
+* RelationField
+* CustopmFields
+* Meta
+* * model
+* * fields
+* * except_fields
+* * filters
+
+
+
+#### RelationField
+get relation data: 
+```py
+#imports
+from django_model_serializer.Serializer import Serializer
+from .models import Post
+
+class PostSerializer(Serializer):
+	author = Serializer.RelationField()
+	class Meta:
+		model = Post
+		fields = "__all__"
+```
+
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}}]}
+>>>
+```
+<br>
+
+you can choose relation object fields, or except fields from object,  for example:
+```py
+# PostSerialzer
+author = Serializer.RelationField(fields=['username'])
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'author': {'username': 'JohnnyDepp'}}]}
+>>>
+```
+```py
+# PostSerialzer
+author = Serializer.RelationField(except_fields=['username'])
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'author': {'id': 1, 'name': 'Johnny', 'family': 'Depp'}}]}
+>>>
+```
+<br>
+
+you can choose a name for returned relation data with argument field_name,  for example:
+```py
+# PostSerialzer
+author = Serializer.RelationField(field_name='blogger')
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'blogger': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}}]}
+>>>
+```
+
+<br>
+
+### CustomField
+CustomField help you to get more data and change it to your own format
+
+```py
+# PostSerialzer
+author = Serializer.RelationField()
+fullname = Serializer.CustomField(func_name='get_full_name')
+# you can set a name for CustomField like RelationField
+# example fullname = Serializer.CustomField(func_name='get_full_name', field_name='full')
+class Meta:
+	...
+	
+def get_full_name(self, data, instance, serializer):
+	fullname = data.author.get('name') + ' ' + data.author.get('family')
+	# if you set a name for RelationField like 'blogger', you must change code to:
+	# fullname = data.blogger.get('name') + ' ' + data.blogger.get('family')
+	
+	# or fullname = serializer.author.name + ' ' + serializer.author.family
+	# or fullname = instance.author.name + ' ' + instance.author.family
+
+	return fullname
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}, 'fullname': 'Johnny Depp'}]}
+>>>
+```
+<br>
+
+####  except_fields
+```py
+#PostSerializer
+...
+class Meta:
+	...
+	except_fields = ['author']
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'fullname': 'Johnny Depp'}]}
+>>>
+```
+<br>
+
+####  filters
+```py
+#PostSerializer
+...
+class Meta:
+	...
+	filters = ['!body'] # mean extract posts that have an empty body value
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data
+{'data': []}
+>>> new_post = Post.objects.create(author=new_author, title='Test Title 2', body='') # no body
+>>> posts = Post.objects.all()
+>>> serialize_data = PostSerializer(instance=posts, many=True)
+>>> serialize_data 
+{'data': [{'id': 2, 'title': 'Test Title 2', 'body': '', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}, 'fullname': 'Johnny Depp'}]}
+>>>
+```
+
+
+## Serializer arguments :
+
+| Arg | Type | Default | Description |
+|--|--|--|--|
+| instance | QuerySet| None |QuerySet or list of instances |
+| many|bool | False |for multi serialize, change to True |
+| key|str | 'data' | data key -> {key : ... }|
+| separate |list | None|separate data|
+| deep_separate|dict | None |deep separate data |
+| transform_functions|FunctionType | None |args = (data, instance) -> dict , transform data |
+| filters|list| None |filter instances |
+
+## arguments examples
+* many
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=False)
+>>> serialize_data
+{'data': {'id': 1, 'title': 'Test Title', 'body': 'Test body', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}, 'fullname': 'Johnny Depp'}}
+
+>>>
+```
+
+* key
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True, key='posts')
+>>> serialize_data
+{'posts': [{'id': 1, 'title': 'Test Title', 'body': 'Test body', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}, 'fullname': 'Johnny Depp'}]}
+>>>
+```
+
+* separate 
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True, separate=['id'])
+>>> serialize_data
+{'data': [{'title': 'Test Title', 'body': 'Test body', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}, 'fullname': 'Johnny Depp'}]}
+>>>
+```
+
+* deep_separate
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True, deep_separate={"author":['id','family']})
+>>> serialize_data
+{'data': [{'title': 'Test Title', 'body': 'Test body', 'author': {'username': 'JohnnyDepp', 'name': 'Johnny'}, 'fullname': 'Johnny Depp'}]}
+>>>
+```
+
+* transform_functions
+```py
+def transform_title(data, instance) -> dict
+	return {
+		"title": "changed title"
+	} 
+```
+```bash
+>>> serialize_data = PostSerializer(instance=posts, many=True, transform_functions=[transform_title])
+>>> serialize_data
+{'data': [{'title': 'changed title', 'body': 'Test body', 'author': {'id': 1, 'username': 'JohnnyDepp', 'name': 'Johnny', 'family': 'Depp'}, 'fullname': 'Johnny Depp'}]}
+>>>
+```
+<br>
+
+* filter: like Serializer filters
+
+
