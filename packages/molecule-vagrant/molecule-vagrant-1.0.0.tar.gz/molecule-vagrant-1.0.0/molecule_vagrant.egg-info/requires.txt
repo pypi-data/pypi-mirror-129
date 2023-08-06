@@ -1,0 +1,8 @@
+molecule>=3.4.1
+pyyaml>=5.1
+Jinja2>=2.11.3
+selinux
+python-vagrant
+
+[test]
+molecule[test]
