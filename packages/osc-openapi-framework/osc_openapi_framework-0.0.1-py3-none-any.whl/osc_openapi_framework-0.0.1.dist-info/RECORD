@@ -1,0 +1,10 @@
+osc_openapi_framework/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osc_openapi_framework/analyzer.py,sha256=zROVWJR9jRheygRd7xR2TWm4giS4PSnPpJ1MBiVcGG0,1841
+osc_openapi_framework/builder.py,sha256=Cs8orzbQa4rnjxCsW7o1JsLDaMvssJ1-kJJNLqS56Ak,5548
+osc_openapi_framework/parser.py,sha256=5Gx0x1MZBDnCGSFQzzBIj7iIgNN7c46-2I_7Nsg0_J8,4321
+osc_openapi_framework/schema.py,sha256=TeWERKP5Z7kp8iuCdeTVoriN1nXajWr8a5WkVpfNkNc,4575
+osc_openapi_framework-0.0.1.dist-info/LICENSE,sha256=eAtKefmWuj4G96ORsmNbY1PqGZj2sx5SkgiNYL5LocU,1512
+osc_openapi_framework-0.0.1.dist-info/METADATA,sha256=2hMluN2vazmFZydhtkzrCL2oYnAHms1qACCxTHnzfdI,2522
+osc_openapi_framework-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+osc_openapi_framework-0.0.1.dist-info/top_level.txt,sha256=Nq8mlYCg1gchsp77QN8TV5MJza4iwSwlohrYHOSDb9U,22
+osc_openapi_framework-0.0.1.dist-info/RECORD,,
