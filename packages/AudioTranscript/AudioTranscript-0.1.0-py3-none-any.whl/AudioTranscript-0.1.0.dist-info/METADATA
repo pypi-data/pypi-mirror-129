@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: AudioTranscript
+Version: 0.1.0
+Summary: Audio file transcription
+Home-page: https://github.com/Ali-Zangooi/transcript-audio/tree/main
+Author: Ali Zangooi
+Author-email: seagu.ll@yahoo.com
+License: GNU general public license version 3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: speech-recognition
+
+# transcript-audio
+Goal:
+  Given mp3 files, this program transcript them into text files.
+
+Usage:
+  transcript-audio language_tag
+
+
