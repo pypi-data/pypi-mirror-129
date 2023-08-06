@@ -1,0 +1,7 @@
+[run]
+source = src
+branch = on
+
+[report]
+show_missing = True
+skip_covered = True

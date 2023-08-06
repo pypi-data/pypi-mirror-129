@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pytest-funparam
+Version: 0.3.0
+Summary: An alternative way to parametrize test cases.
+Home-page: None
+Author: None
+Author-email: "Ryan J. Miller" <rjmiller10@gmail.com>
