@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+django_logger_test.egg-info/PKG-INFO
+django_logger_test.egg-info/SOURCES.txt
+django_logger_test.egg-info/dependency_links.txt
+django_logger_test.egg-info/requires.txt
+django_logger_test.egg-info/top_level.txt
