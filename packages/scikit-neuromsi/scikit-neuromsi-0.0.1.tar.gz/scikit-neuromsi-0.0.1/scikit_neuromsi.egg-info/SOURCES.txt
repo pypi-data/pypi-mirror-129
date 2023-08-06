@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+scikit_neuromsi.egg-info/PKG-INFO
+scikit_neuromsi.egg-info/SOURCES.txt
+scikit_neuromsi.egg-info/dependency_links.txt
+scikit_neuromsi.egg-info/requires.txt
+scikit_neuromsi.egg-info/top_level.txt
+skneuromsi/__init__.py
+skneuromsi/alais_burr2004.py
+skneuromsi/core.py
+skneuromsi/ernst_banks2002.py
+skneuromsi/kording2007.py
