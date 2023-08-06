@@ -1,0 +1,110 @@
+
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.navbar-toggle {
+  float: left !important;
+  margin-left: 15px;
+}
+
+.navbar-header.navbar-right.pull-right {
+  margin-right: 15px;
+}
+
+.navbar-right > li {
+  float: left;
+}
+
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+
+body, html, .wrap{
+  height:100%;
+}
+
+body > .wrap{
+  height:auto;
+  min-height:100%;
+}
+
+.wrap:after {
+  content: "";
+  display: block;
+  height: 75px; 
+}
+
+.footer{
+  background:brown;
+  margin-top:-75px;
+  height:70px;
+  color:#fff;
+  position:relative;
+  line-height:180%;
+  padding:0 2px;
+}
+
+.middle > * {
+  vertical-align: middle;
+}
+
+.top > * {
+  vertical-align: top;
+}
+
+.bottom > * {
+  vertical-align: bottom;
+}
+
+.sub > * {
+  vertical-align: sub;
+}
+
+.super > * {
+  vertical-align: super;
+}
+
+.text-top > * {
+  vertical-align: text-top;
+}
+
+.text-bottom > * {
+  vertical-align: text-bottom;
+}
+
+.baseline > * {
+  vertical-align: baseline;
+}
+
+.pix > * {
+  vertical-align: 3px;
+}
+
+.percentage > * {
+  vertical-align: -500%;
+}
+
+
+body {
+  padding: 20px;
+  background: #ggg;
+}
+
+
