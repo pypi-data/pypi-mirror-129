@@ -1,0 +1,10 @@
+omero/plugins/upload.py,sha256=m1itLzOtLDfUOj-svazgs3Q3faGIDrHL7JMiH--srBQ,630
+omero_upload/__init__.py,sha256=HsylzH9sZwpBO-8IKlzSnS17FxeBSvtHzpWmbswx7pU,934
+omero_upload/cli.py,sha256=9uUSAakX8PtVHmsTj5SGqR_KpM7-XQC7PXJGjAX1eQ0,3831
+omero_upload/library.py,sha256=eEnMeTNE6q4GJWSeLjSDdAITRIlwaVvBbp6yjXQPBzk,4158
+omero_upload-0.4.0.dist-info/LICENSE.txt,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+omero_upload-0.4.0.dist-info/METADATA,sha256=f9GDm-aUL6eFdCGX894P_XPrsJhFkhWexEsg9a-y6Kw,4046
+omero_upload-0.4.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+omero_upload-0.4.0.dist-info/top_level.txt,sha256=f-2JxJzT02vj7FOkVV0YrsRZ461Kyx7iYe5ZbRW3ni8,20
+omero_upload-0.4.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+omero_upload-0.4.0.dist-info/RECORD,,
