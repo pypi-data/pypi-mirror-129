@@ -1,0 +1,65 @@
+name: Test airflow-exporter
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+
+  test:
+ 
+    runs-on: ubuntu-latest
+ 
+    strategy:
+      fail-fast: false
+      matrix:
+        airflow-version:
+          - "2.0.2"
+          - "2.1.4"
+          - "2.2.1"
+
+    env:
+      AIRFLOW_HOME: /home/runner/work/airflow-exporter/airflow-exporter/tests/
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Setup database
+      run: docker-compose -f tests/docker-compose.yml up -d
+
+    - name: Install Airflow
+      run: pip install "apache-airflow == ${{ matrix.airflow-version }}" psycopg2-binary wtforms==2.3.3
+
+    - name: Install airflow-exporter
+      run: pip install .
+
+    - name: Init Airflow DB
+      run: airflow db init
+
+    - name: Prepare DAG statuses
+      run: |
+        airflow dags list
+
+        airflow dags unpause dummy_dag
+        airflow dags unpause slow_dag
+
+        airflow dags trigger dummy_dag
+
+        airflow scheduler -n 1
+
+        airflow dags list
+
+    - run: pip install requests
+
+    - name: Wait for Airflow and query metrics
+      run: |
+        airflow webserver -D
+
+        python tests/test_metrics_up.py
