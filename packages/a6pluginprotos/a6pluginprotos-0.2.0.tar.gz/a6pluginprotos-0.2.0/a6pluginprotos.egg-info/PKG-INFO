@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: a6pluginprotos
+Version: 0.2.0
+Summary: Proto of APISIX Python Plugin Runner.
+Home-page: https://github.com/api7/ext-plugin-proto
+Author: Jinchao Shuai
+Author-email: shuaijinchao@apache.org
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
