@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setupold.py
+/Users/martinmashalov/Documents/places_geocoding_package/places_geocode/__init__.py
+/Users/martinmashalov/Documents/places_geocoding_package/places_geocode/places_api.py
+places_geocode/places_geocode.egg-info/PKG-INFO
+places_geocode/places_geocode.egg-info/SOURCES.txt
+places_geocode/places_geocode.egg-info/dependency_links.txt
+places_geocode/places_geocode.egg-info/requires.txt
+places_geocode/places_geocode.egg-info/top_level.txt
