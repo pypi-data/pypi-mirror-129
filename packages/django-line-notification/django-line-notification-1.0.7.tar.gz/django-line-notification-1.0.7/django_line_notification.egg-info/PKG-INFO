@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: django-line-notification
+Version: 1.0.7
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Theerapat Singprasert
+Author-email: theerapat.pkcn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Prerequisite
+
+- Group chat with Line bot included.
+
+## Code example.
+
+```python
+from django_line_notification.line_notify import Line
+
+token = 'oiojweifIedDN0209%dp9icdfgergIJiw672gcu7wiu'
+line = Line(token)
+line.send_msg('foobar')
+```
+
+
+
+
+
