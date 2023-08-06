@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: IATestMod
+Version: 0.0.3
+Summary: Test module for pypi.
+Home-page: http://packages.python.org/IATestMod
+Author: Craig Rixham
+Author-email: crixham@paypal.com
+License: BSD
+Description: UNKNOWN
+Keywords: ia pypi demo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License

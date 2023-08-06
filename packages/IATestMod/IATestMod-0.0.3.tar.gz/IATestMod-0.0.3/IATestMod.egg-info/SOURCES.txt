@@ -1,0 +1,7 @@
+setup.py
+IATestMod/__init__.py
+IATestMod/printVersion.py
+IATestMod.egg-info/PKG-INFO
+IATestMod.egg-info/SOURCES.txt
+IATestMod.egg-info/dependency_links.txt
+IATestMod.egg-info/top_level.txt
