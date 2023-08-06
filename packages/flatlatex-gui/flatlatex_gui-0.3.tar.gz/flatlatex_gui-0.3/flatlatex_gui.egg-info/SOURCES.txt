@@ -1,0 +1,9 @@
+setup.py
+flatlatex_gui/__init__.py
+flatlatex_gui/gui.py
+flatlatex_gui.egg-info/PKG-INFO
+flatlatex_gui.egg-info/SOURCES.txt
+flatlatex_gui.egg-info/dependency_links.txt
+flatlatex_gui.egg-info/entry_points.txt
+flatlatex_gui.egg-info/requires.txt
+flatlatex_gui.egg-info/top_level.txt

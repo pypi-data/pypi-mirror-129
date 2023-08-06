@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: flatlatex-gui
+Version: 0.3
+Summary: GUI of a LaTeX math converter to unicode text
+Home-page: https://github.com/jb-leger/flatlatex_gui
+Author: Jean-Benoist Leger
+Author-email: jb@leger.tf
+License: MIT
+Description: 
+        GUI to LaTeX math to Unicode text converter
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        flatlatex is a basic converter from LaTeX math to human readable text math
+        using unicode characters.
+        
+        For example, this :
+        
+            \\forall \\eta>0\\, \\exists n\\in\\mathbb{N}\\, \\forall i>n\\, u_i-\\mathcal{l}<\\eta
+        
+        gives:
+        
+            ∀η>0 ∃n∈ℕ ∀i>n uᵢ-𝓵<η
+        
+        
+Keywords: latex math unicode
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
