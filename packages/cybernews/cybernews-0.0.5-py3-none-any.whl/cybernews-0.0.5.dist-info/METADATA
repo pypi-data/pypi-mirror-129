@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cybernews
+Version: 0.0.5
+Summary: Latest Cyber/Hacker News
+Home-page: UNKNOWN
+Author: GhoulBond
+Author-email: hitesh22rana@gmail.com
+License: UNKNOWN
+Keywords: python,web scraping,news,cyber news,hacker news
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: lxml
+
+A package that provides you Latest Cyber/Hacker News from website using Web-Scraping.
+
