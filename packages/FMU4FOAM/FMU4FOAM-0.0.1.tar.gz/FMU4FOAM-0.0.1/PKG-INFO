@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: FMU4FOAM
+Version: 0.0.1
+Summary: A lightweight framework that enables the packaging of OpenFOAM as co-simulation FMUs.
+Home-page: https://github.com/HenningScheufler/FMU4FOAM
+Author: Henning Scheufler
+License: GPLv3
+Keywords: FMI OpenFOAM
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FMU4FOAM
+
+> A lightweight framework that enables the packaging of Python 3 code or CSV files as co-simulation FMUs (following FMI version 2.0).
+
+
+### How do I build an FMU from python code?
+
+1. Install `FMU4FOAM` package:
+
+requires conan and pythonfmu
+```bash
+pip install .
+```
+### Compile OpenFOAM
+
+```bash
+./build-ECI4FOAM.sh # init submodule
+./Allwmake
+```
+
+
+### Create FMU
+
+
+```bash
+cd test
+fmu4foam build -f test-example.py -of damBreak/ --no-external-tool
+```
+
+```bash
+python test-omsim.py > log
+```
+
+
