@@ -1,0 +1,7 @@
+License
+README.md
+setup.py
+Thorin_Oakenshield.egg-info/PKG-INFO
+Thorin_Oakenshield.egg-info/SOURCES.txt
+Thorin_Oakenshield.egg-info/dependency_links.txt
+Thorin_Oakenshield.egg-info/top_level.txt
