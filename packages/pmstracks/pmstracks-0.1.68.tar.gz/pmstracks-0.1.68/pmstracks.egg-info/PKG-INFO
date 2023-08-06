@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pmstracks
+Version: 0.1.68
+Summary: Pre main sequence tracks utilities
+Home-page: https://github.com/ltesti/pmstracks/
+Author: Leonardo Testi
+Author-email: ltesti120a@gmail.com
+License: GPL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# pmstracks
+Toolkit to read and manipulate PMS tracks
+
+
+
+
