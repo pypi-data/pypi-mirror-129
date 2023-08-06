@@ -1,0 +1,7 @@
+setuptools
+numpy
+scipy
+matplotlib
+python-can
+canopen
+aiohttp
