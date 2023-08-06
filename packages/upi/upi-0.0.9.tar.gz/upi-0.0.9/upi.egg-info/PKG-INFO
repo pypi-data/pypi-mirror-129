@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: upi
+Version: 0.0.9
+Summary: pay sdk
+Home-page: https://github.com/linqigu/upi
+Author: linqigu
+Author-email: linqigu@163.com
+License: MIT Licence
+Download-URL: https://github.com/linqigu/upi
+Keywords: upi,pay,wxPay
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+
+# upi 支付SDK
+一、说明：为什么要写这个SDK
+
+二、使用：1、pip install upi   2、在https://github.com/linqigu/upi 有使用demo
+
+三、以后要怎么发展：XXX
+
