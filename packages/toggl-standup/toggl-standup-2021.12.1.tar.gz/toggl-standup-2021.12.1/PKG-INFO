@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: toggl-standup
+Version: 2021.12.1
+Summary: Removes the pain of using Toggl with Geekbot
+Home-page: https://github.com/jefftriplett/toggl-standup
+License: BSD-3-Clause
+Author: Jeff Triplett
+Author-email: jeff.triplett@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Requires-Dist: humanfriendly (>=10.0,<11.0)
+Requires-Dist: maya (>=0.6.1,<0.7.0)
+Requires-Dist: rich (>=10.15.2,<11.0.0)
+Requires-Dist: togglwrapper (>=2.0.0,<3.0.0)
+Requires-Dist: typer (>=0.4.0,<0.5.0)
+Project-URL: Documentation, https://github.com/jefftriplett/toggl-standup
+Project-URL: Repository, https://github.com/jefftriplett/toggl-standup
+Description-Content-Type: text/markdown
+
+# Stand Up for Toggl
+
+This tool helps generate my daily Geekbot stand up report in an format which I may copy and paste into Slack.
+
+## Usage
+<!-- [[[cog
+import cog
+from typer.testing import CliRunner
+from togglstandup.cli import cli
+runner = CliRunner()
+result = runner.invoke(cli, ["--help"])
+help = result.output.replace("Usage: main", "Usage: standup")
+cog.outl("```shell")
+cog.outl("$ export TOGGL_API_KEY='PASTE_YOUR_KEY_HERE'\n")
+cog.outl("$ standup --help\n")
+cog.outl("{}```".format(help))
+]]] -->
+```shell
+$ export TOGGL_API_KEY='PASTE_YOUR_KEY_HERE'
+
+$ standup --help
+
+Usage: standup [OPTIONS] SLANG_DATE
+
+  Standup tool to help with Toggl
+
+Arguments:
+  SLANG_DATE  [required]
+
+Options:
+  --api-key TEXT                  [default: ]
+  --show-duration / --no-show-duration
+                                  [default: False]
+  --show-time / --no-show-time    [default: False]
+  --timezone TEXT                 [default: US/Central]
+  --version
+  --install-completion            Install completion for the current shell.
+  --show-completion               Show completion for the current shell, to copy
+                                  it or customize the installation.
+
+  --help                          Show this message and exit.
+```
+<!-- [[[end]]] -->
+
+## To generate a report for yesterday
+
+```shell
+$ standup yesterday
+```
+
