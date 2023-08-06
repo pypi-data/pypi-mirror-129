@@ -1,0 +1,13 @@
+bs4
+colorama
+librosa
+matplotlib
+numba
+numpy
+pandas
+pysoundfile
+scikit-learn
+scipy
+smst
+transitions
+wget

@@ -1,0 +1,12 @@
+[console_scripts]
+audio2ogg = apicultor.helper.convert_to_ogg:main
+miranalysis = apicultor.run_mir_analysis:main
+mockrpapi = apicultor.MockRedPanalAPI_service:main
+musicemotionmachine = apicultor.emotion.MusicEmotionMachine:main
+qualify = apicultor.machine_learning.quality:main
+rpdl = apicultor.helper.WebScrapingDownload:main
+rpdla = apicultor.helper.ArchiveWebScrapingDownload:main
+smcomposition = apicultor.state_machine.SMComposition:main
+sonify = apicultor.sonification.Sonification:main
+soundsimilarity = apicultor.machine_learning.SoundSimilarity:main
+
