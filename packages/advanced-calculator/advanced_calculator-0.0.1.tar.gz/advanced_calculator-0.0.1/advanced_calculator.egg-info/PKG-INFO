@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: advanced-calculator
+Version: 0.0.1
+Summary: a calculator with some advanced functions
+Home-page: UNKNOWN
+Author: Skylar Kerzner
+Author-email: skylar.kerzner@gmail.com
+License: MIT
+Description: This is an advanced calculator that can do square roots, factorials, fibonacci numbers, and more
+        
+        Change Log
+        ================
+        
+        0.0.1 (Nov 29, 2021)
+        -------------------------------
+        - First Release
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

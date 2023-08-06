@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+advanced_calculator.egg-info/PKG-INFO
+advanced_calculator.egg-info/SOURCES.txt
+advanced_calculator.egg-info/dependency_links.txt
+advanced_calculator.egg-info/top_level.txt
