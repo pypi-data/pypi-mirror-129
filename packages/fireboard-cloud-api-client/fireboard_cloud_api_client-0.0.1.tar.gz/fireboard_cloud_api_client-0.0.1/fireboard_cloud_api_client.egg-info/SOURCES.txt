@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+fireboard_cloud_api_client/__init__.py
+fireboard_cloud_api_client/api.py
+fireboard_cloud_api_client.egg-info/PKG-INFO
+fireboard_cloud_api_client.egg-info/SOURCES.txt
+fireboard_cloud_api_client.egg-info/dependency_links.txt
+fireboard_cloud_api_client.egg-info/requires.txt
+fireboard_cloud_api_client.egg-info/top_level.txt

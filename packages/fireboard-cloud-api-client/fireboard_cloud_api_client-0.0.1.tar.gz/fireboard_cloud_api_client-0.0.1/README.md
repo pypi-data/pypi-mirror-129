@@ -1,0 +1,136 @@
+# fireboard_cloud_api_client
+
+A rest api client for your fireboard thermometer.
+
+## Note about rate limits
+
+From the Fireboard docs:
+> Users will be limited to 200 API calls per hour, if this rate limit is exceeded then user access will be blocked for 30 minutes.
+
+See [Fireboard API: Rate Limits](https://docs.fireboard.io/app/api.html#Rate-Limits)
+
+## Usage
+
+```python
+import asyncio
+from fireboard_cloud_api_client import FireboardAPI
+
+
+# replace with your fireboard account email
+FIREBOARD_USER_EMAIL = 'someone@example.com' 
+# replace with your fireboard account password
+FIREBOARD_USER_PASSWORD = 'somepassword' 
+
+async def initialize_app(email, password):
+    fireboard_client = FireboardAPI(email, password)
+
+    devices = await fireboard_client.list_devices()
+    print("devices", devices)
+
+
+asyncio.run(initialize_app(FIREBOARD_USER_EMAIL, FIREBOARD_USER_PASSWORD))
+
+```
+
+## API Reference
+
+### fireboard_client = FireboardAPI(email, password, base_url, session)
+
+Params:
+* email: the email for your fireboard account.
+* password: the password for your fireboard account.
+* base_url: (optional) the url for the fireboard could api (default: `https://fireboard.io/api`).
+* session: (optional) an [aiohttp ClientSession](https://docs.aiohttp.org/en/stable/client_reference.html#client-session) object to use for requests.
+
+Returns: a fireboard client object
+
+
+### await fireboard_client.list_devices()
+
+Params: none
+
+Returns: all fireboard devices associated with your account.
+
+See: [Fireboard API: List All Devices](https://docs.fireboard.io/app/api.html#List-All-Devices)
+
+
+### await fireboard_client.get_device(device_uuid)
+Params: 
+* device_uuid: the uuid of the device you want details for
+
+Returns: detailed information about a specific device by referencing the Device’s UUID.
+
+See: [Fireboard API: Realtime Temperature](https://docs.fireboard.io/app/api.html#Get-Real-Time-Temperature-From-the-Device)
+
+
+### await fireboard_client.get_realtime_temperature(device_uuid)
+Params: 
+* device_uuid: the uuid of the device you want details for
+
+Returns: the latest temperature values per channel from the device using the Temps endpoint. Temperature values are included if they are less than a minute old, otherwise nothing is returned for the channel.
+
+Example:
+```json
+[
+  {
+    "temp": 69.9,
+    "created": "2021-12-01T19:07:25Z",
+    "degreetype": 2,
+    "channel": 1
+  },
+  {
+    "temp": 72.6,
+    "created": "2021-12-01T19:07:25Z",
+    "degreetype": 2,
+    "channel": 2
+  },
+  {
+    "temp": 71.9,
+    "created": "2021-12-01T19:07:25Z",
+    "degreetype": 2,
+    "channel": 3
+  }
+]
+```
+
+### await fireboard_client.get_realtime_drivelog(device_uuid)
+
+Params: 
+* device_uuid: the uuid of the device you want details for
+
+Returns: the latest FireBoard Drive log information for your device using the Drivelog endpoint. Drive log information is returned if less than a minute old
+
+See: [Fireboard API: Realtime Drive Data](https://docs.fireboard.io/app/api.html#Get-Real-Time-Drive-data-From-the-Device)
+
+
+### await fireboard_client.list_sessions()
+
+Params: none
+
+Returns: all sessions associated with your account.
+
+See: [Fireboard API: List All Sessions](https://docs.fireboard.io/app/api.html#List-All-Sessions)
+
+
+### await fireboard_client.get_session(session_id)
+
+Params:
+* session_id: id of the session to retrieve
+
+Returns: data about a single session
+
+See: [Fireboard API: Retrieve a Specific Session](https://docs.fireboard.io/app/api.html#Retrieve-a-Specific-Session)
+
+
+### await fireboard_client.get_session_chart(session_id)
+
+Params:
+* session_id: id of the session to retrieve
+* drive: (optional, default = False) True to include drive data 
+
+Returns: all temperature data from the session in a format suitable for many charting frameworks.
+
+See: [Fireboard API: Retrieve a Specific Session](https://docs.fireboard.io/app/api.html#Retrieve-a-Specific-Session)
+
+# External Reference
+[Fireboard Cloud API docs](https://docs.fireboard.io/app/api.html)
