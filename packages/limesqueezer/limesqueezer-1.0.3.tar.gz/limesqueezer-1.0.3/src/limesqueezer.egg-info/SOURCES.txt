@@ -1,0 +1,48 @@
+.bumpversion.cfg
+.cookiecutterrc
+.coveragerc
+.editorconfig
+AUTHORS.rst
+CHANGELOG.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+tox.ini
+ci/bootstrap.py
+ci/requirements.txt
+src/droot/API.py
+src/droot/__init__.py
+src/droot/__main__.py
+src/droot/sandbox.py
+src/figures/LSQ compressed data.png
+src/figures/LSQ compressed residuals.png
+src/figures/Simple compressed data.png
+src/figures/Simple compressed residuals.png
+src/figures/Split compressed data.png
+src/figures/Split compressed residuals.png
+src/limesqueezer/API.py
+src/limesqueezer/__init__.py
+src/limesqueezer/__main__.py
+src/limesqueezer/cli.py
+src/limesqueezer/example.py
+src/limesqueezer/plotters.py
+src/limesqueezer/sandbox.py
+src/limesqueezer.egg-info/PKG-INFO
+src/limesqueezer.egg-info/SOURCES.txt
+src/limesqueezer.egg-info/dependency_links.txt
+src/limesqueezer.egg-info/entry_points.txt
+src/limesqueezer.egg-info/not-zip-safe
+src/limesqueezer.egg-info/requires.txt
+src/limesqueezer.egg-info/top_level.txt
+src/limesqueezer/tests/__init__.py
+src/reference/API.py
+src/reference/__init__.py
+src/reference/__main__.py
+src/reference/data/poly0.csv
+src/reference/data/poly1.csv
+src/reference/data/poly2_LSQ10.csv
+src/reference/data/sine_LSQ10.csv
+tests/test_limesqueezer.py
