@@ -1,0 +1,7 @@
+LICENSE.md
+setup.py
+ovos_audio.egg-info/PKG-INFO
+ovos_audio.egg-info/SOURCES.txt
+ovos_audio.egg-info/dependency_links.txt
+ovos_audio.egg-info/requires.txt
+ovos_audio.egg-info/top_level.txt
