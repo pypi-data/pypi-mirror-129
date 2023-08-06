@@ -1,0 +1,52 @@
+binder: []
+binder_key: []
+client_auth: []
+client_key_chain: []
+client_random:
+- 61a68e958bc78aaba96ecfa3b415375e31835e0f2af6145b75ea1f972f14213a
+- 61a68e95a5257f649f5341d0bff645129f3a874640800f3a21451ab708926281
+client_write_iv: []
+client_write_key: []
+client_write_mac_key: []
+crl: []
+crl_url: []
+datetime: []
+early_secret: []
+early_tr_secret: []
+ec_seed: []
+finished_key: []
+grease: []
+hmac_algo: []
+master_secret: []
+msg_digest_finished_rec: []
+msg_digest_finished_sent: []
+msg_digest_tls13: []
+msg_recv:
+- - 8.225440979003906e-05
+  - 1
+  - ''
+- - 2.574920654296875e-05
+  - 1
+  - ''
+msg_sendall:
+- 160301003d01000039030061a68e958bc78aaba96ecfa3b415375e31835e0f2af6145b75ea1f972f14213a00001200040005000a0009000300060013001200ff0100
+- 16030100520100004e030161a68e95a5257f649f5341d0bff645129f3a874640800f3a21451ab70892628100002000040005002f00330032000a00160013000900150012000300080014001100ff01000005ff01000100
+msg_without_binders: []
+openssl_command: []
+pms_rsa: []
+pre_master_secret: []
+private_key: []
+response: []
+rsa_enciphered: []
+server_random: []
+server_write_iv: []
+server_write_key: []
+server_write_mac_key: []
+signature: []
+timestamp: []
+trust_store: []
+verify_data_finished_calc: []
+verify_data_finished_rec: []
+verify_data_finished_sent: []
+x_val: []
+y_val: []
