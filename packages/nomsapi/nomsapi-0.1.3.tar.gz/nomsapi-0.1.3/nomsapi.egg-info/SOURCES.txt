@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+client/__init__.py
+client/dict_parse.py
+client/main.py
+nomsapi.egg-info/PKG-INFO
+nomsapi.egg-info/SOURCES.txt
+nomsapi.egg-info/dependency_links.txt
+nomsapi.egg-info/top_level.txt
+objects/__init__.py
+objects/food.py
+objects/nutrient_dict.py
+service/__init__.py
+service/food.py
+service/report.py
+service/search.py
