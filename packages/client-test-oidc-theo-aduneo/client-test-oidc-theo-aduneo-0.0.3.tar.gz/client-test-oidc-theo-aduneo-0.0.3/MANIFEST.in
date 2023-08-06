@@ -1,0 +1,3 @@
+include src/clientOIDCAduneo/static/*
+include src/clientOIDCAduneo/templates/*
+include src/clientOIDCAduneo/conf/*
