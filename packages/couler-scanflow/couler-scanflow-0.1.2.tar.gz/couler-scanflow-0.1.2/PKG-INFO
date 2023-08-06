@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: couler-scanflow
+Version: 0.1.2
+Summary: Unified Interface for Constructing and Managing Workflows
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: Unified Interface for Constructing and Managing Workflows
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: develop
