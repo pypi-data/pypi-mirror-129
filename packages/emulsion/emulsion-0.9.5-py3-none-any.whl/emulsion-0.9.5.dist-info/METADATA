@@ -1,0 +1,52 @@
+Metadata-Version: 2.0
+Name: emulsion
+Version: 0.9.5
+Summary: A Python framework for Epidemiological Multi-Level Simulation
+Home-page: UNKNOWN
+Author: Sébastien Picault, Yu-Lin Huang, Vianney Sicard and Pauline Ezanno
+Author-email: sebastien.picault@oniris-nantes.fr
+License: CECILL-B
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Education
+Classifier: License :: CeCILL-B Free Software License Agreement (CECILL-B)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Unix Shell
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Requires-Python: >=3.6
+Requires-Dist: cython (>=0.27)
+Requires-Dist: docopt (>=0.6.2)
+Requires-Dist: ggplot
+Requires-Dist: jinja2 (>=2.10)
+Requires-Dist: jupyter
+Requires-Dist: matplotlib (>=2.1.1)
+Requires-Dist: numpy (>=1.13)
+Requires-Dist: pandas (>=0.22)
+Requires-Dist: progressbar2 (>=3.34)
+Requires-Dist: pyyaml (>=3.12)
+Requires-Dist: scipy (>=1.0)
+Requires-Dist: sortedcontainers (>=1.5.7)
+Requires-Dist: sqlalchemy (>=1.1.13)
+Requires-Dist: sympy (>=1.1.1)
+Requires-Dist: textX (>=1.6)
+Requires-Dist: utm (>=0.4)
+Provides-Extra: dev
+Requires-Dist: pylint (>=1.8.2); extra == 'dev'
+Requires-Dist: setuptools (>=38.5); extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: doxypypy; extra == 'doc'
+
+UNKNOWN
+
+
