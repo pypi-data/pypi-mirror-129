@@ -1,0 +1,7 @@
+setup.py
+pakiet/__init__.py
+pakiet/dzialania1.py
+szalik.egg-info/PKG-INFO
+szalik.egg-info/SOURCES.txt
+szalik.egg-info/dependency_links.txt
+szalik.egg-info/top_level.txt
