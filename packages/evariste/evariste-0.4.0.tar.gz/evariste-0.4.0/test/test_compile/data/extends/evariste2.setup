@@ -1,0 +1,7 @@
+[action.autocmd]
+enable = true
+
+[action.autocmd.sort]
+extensions = sort
+targets = {basename}.sorted
+command = sort {filename} > {basename}.sorted
