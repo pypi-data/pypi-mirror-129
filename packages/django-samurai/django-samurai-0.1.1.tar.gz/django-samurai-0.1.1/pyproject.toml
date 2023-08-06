@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "django-samurai"
+version = "0.1.1"
+description = "Helping django-ninja"
+authors = ["c4ffein <c4ffein.work@gmail.com>"]
+readme = "README.md"
+keywords = ["django", "rest", "ninja"]
+packages = [
+    { include = "samurai" }
+]
+classifiers = [
+    "Topic :: Software Development",
+    "License :: OSI Approved :: MIT License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.urls]
+homepage = "https://github.com/c4ffein/django-samurai"
+repository = "https://github.com/c4ffein/django-samurai"
+documentation = "https://github.com/c4ffein/django-samurai"
+
+[dev-dependencies]
+black = { version = "^21.11b1", python = "^3.9" }
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target_version = ['py39']
+include = '\.pyi?$'
