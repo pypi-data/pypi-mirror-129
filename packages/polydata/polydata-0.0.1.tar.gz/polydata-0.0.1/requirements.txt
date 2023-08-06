@@ -1,0 +1,17 @@
+numpy
+ipywidgets
+nbinteract
+numpy
+scipy
+awkward
+matplotlib
+numba
+pyqt5
+jupyter_bokeh
+ipyvtklink
+itkwidgets
+ipygany
+pythreejs
+panel
+vtk
+pyvista
