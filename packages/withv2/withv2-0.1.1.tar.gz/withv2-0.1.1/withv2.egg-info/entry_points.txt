@@ -1,0 +1,3 @@
+[console_scripts]
+withv2=withv2:cli
+
