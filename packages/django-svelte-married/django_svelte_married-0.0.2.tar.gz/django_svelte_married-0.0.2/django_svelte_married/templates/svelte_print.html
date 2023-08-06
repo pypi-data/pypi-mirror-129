@@ -1,0 +1,7 @@
+{% load static svelte %}<script type="text/javascript">
+    window.SVELTE_RENDER = {{ SVELTE_PRINT }};
+</script>
+{% if SVELTE_LIVERELOAD_ENABLED %}
+<script src="{% static 'svelte/livereload.js' %}"></script>
+{% endif %}
+<script src="{% static 'public/bundle.js' %}" svelte-livereload="true"></script>
