@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        proofreader=Proofreader.main:main
+    
