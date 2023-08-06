@@ -1,0 +1,10 @@
+mt/sql/__init__.py,sha256=b7zO50apZxt9Hg2eOkJhRLrXgACR8eS5b-Rphdn5qNQ,44
+mt/sql/base.py,sha256=XrVc7tqdCd5q4UeAjJLoxPzhVXufUhSf9uZdsrBuWFU,6512
+mt/sql/mysql.py,sha256=N_QhDtBMkaqIAhLKlMRlIw7LAAotQGunLQYf5Mm30c4,4508
+mt/sql/psql.py,sha256=qugMQh_mrAV_EW2IpHYMaY0CJ6HZIUwQNX0ehplwkNc,55144
+mt/sql/version.py,sha256=6EM5_y4rYo71ENlUUQ5f5zD6cuPD7S1tdWWkvpyswWY,397
+mtsql-0.10.202111301140.dist-info/LICENSE,sha256=PojkRlQzTT5Eg6Nj03XoIVEefN3u8iiIFf1p4rqe_t4,1070
+mtsql-0.10.202111301140.dist-info/METADATA,sha256=pMz2X6Sbw1c_ozCDwCAhKGZGy1LCcoH1Yh0-1AgsFj8,634
+mtsql-0.10.202111301140.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mtsql-0.10.202111301140.dist-info/top_level.txt,sha256=WcqGFu9cV7iMZg09iam8eNxUvGpLSKKF2Iubf6SJVOo,3
+mtsql-0.10.202111301140.dist-info/RECORD,,
