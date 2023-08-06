@@ -1,0 +1,4 @@
+base58
+ecdsa>=0.17.0
+phe
+pynacl
