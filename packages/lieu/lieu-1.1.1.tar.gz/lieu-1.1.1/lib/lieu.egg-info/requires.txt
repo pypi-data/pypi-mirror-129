@@ -1,0 +1,6 @@
+six
+postal>=1.1.6
+rocksdb
+python-geohash
+phonenumbers
+mrjob
