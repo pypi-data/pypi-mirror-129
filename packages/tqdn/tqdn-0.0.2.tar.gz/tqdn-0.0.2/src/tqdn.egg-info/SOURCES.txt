@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/tqdn.egg-info/PKG-INFO
+src/tqdn.egg-info/SOURCES.txt
+src/tqdn.egg-info/dependency_links.txt
+src/tqdn.egg-info/top_level.txt
