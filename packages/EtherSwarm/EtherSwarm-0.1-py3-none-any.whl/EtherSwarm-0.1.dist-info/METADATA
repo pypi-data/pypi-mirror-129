@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: EtherSwarm
+Version: 0.1
+Summary: Manage your ether addresses
+Home-page: https://github.com/ZeroProphet/etherswarm
+Author: Elder Ryan
+Author-email: ryankung@ieee.org
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: web3 (==5.12.0)
+Requires-Dist: python-dotenv (==0.14.0)
+Requires-Dist: pycryptodome (==3.11.0)
+
+UNKNOWN
+
+
