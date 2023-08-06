@@ -1,0 +1,17 @@
+# Needed by qsdsan
+biosteam>=2.31.17
+thermosteam>=0.27.14
+scikit-learn
+scipy
+SALib
+matplotlib
+seaborn
+sympy
+
+# Specifically for docs
+sphinx
+sphinx_rtd_theme
+nbsphinx
+ipywidgets
+jupyterlab-widgets
+widgetsnbextension
