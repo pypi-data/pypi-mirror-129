@@ -1,0 +1,11 @@
+jello/__init__.py,sha256=BqYtFZg73_RkV_Uvl8pWEZrGi60dAC5h8omMaabDQu8,228
+jello/cli.py,sha256=npucaLJz_N5dfhUKd61QFGz6mHewSTyTt-Ez3GdUNdg,5953
+jello/dotmap.py,sha256=oN2glY-nTioHrySiDg2JzUGGoQvChMBiaOVTIbUI7j0,13103
+jello/lib.py,sha256=RNWK2JCAftFyKAobQYB66SlhrsHETWJP3lSY5U3VmV0,16367
+jello/man/jello.1,sha256=F1bY17jSTVENX0Pk47b_r0AD1z1N4labNGr7dmxbnvg,11694
+jello-1.4.6.dist-info/LICENSE,sha256=GkBMl969MsgABXNr02gHjMyPhYyOuvoldrDDkZr7ksQ,1069
+jello-1.4.6.dist-info/METADATA,sha256=8Y4XtKeYpxgDqpD7tWmyIdyZqVyJlUcoT7SRodDNAqY,14873
+jello-1.4.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jello-1.4.6.dist-info/entry_points.txt,sha256=2-C1K7MhTdMEMpr6Z-MU7yBWT1HVj-CA4vogUT0a29k,42
+jello-1.4.6.dist-info/top_level.txt,sha256=ixKJFEgMCMHXqcio73hIf08hy8gCqBNKo4UMlQFXGhU,6
+jello-1.4.6.dist-info/RECORD,,
