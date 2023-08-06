@@ -1,0 +1,11 @@
+Pillow>=8.1.1
+attrs>=20.3.0
+numpy>=1.16.2
+paho-mqtt>=1.5.1
+pi3d>=2.48
+pi3dpf-ns-pi3dpf-common>=0.1.38
+regex
+reportlab>=3.5.66
+requests>=2.25.1
+rpi_ws281x
+urllib3>=1.26.4

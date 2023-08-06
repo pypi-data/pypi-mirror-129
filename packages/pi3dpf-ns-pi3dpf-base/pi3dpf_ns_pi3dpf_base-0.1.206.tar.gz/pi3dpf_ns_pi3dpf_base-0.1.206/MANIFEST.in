@@ -1,0 +1,5 @@
+include LICENSE
+include PYPI_VERSION
+include Readme.md
+include requirements.txt
+recursive-include pi3dpf_ns *

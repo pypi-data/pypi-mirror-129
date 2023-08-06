@@ -1,0 +1,71 @@
+#    ####  #####  #  ####
+#   #    # #    # # #    #
+#   #    # #    # # #
+#   #    # #####  # #  ###
+#   #    # #   #  # #    #
+#    ####  #    # #  ####
+#
+# Below entries can be placed into «positions.txt» to control positioning of text or graphical elements.
+#   1. clock:x=expression;y=expression
+#   2. libreoffice_to_png:x=expression;y=expression
+#   3. [Obsolete] owm_formatstring: simple text string. If actual text string exceeds max_len, the text is scrolled. This is jerky. Use scissor format
+#   4. pic_fname, pic_title:
+#   5. scissor: x=expression, y=expression, len_pix=expression, font_point=number, font_color=black|white
+#   6. now_playing:
+#   use 1. to determine where the clock is positioned, 2. to position the png generated with the help of
+#   the libre office impress document or 3. owm_formatstring to ?????
+#
+# The file «positions.txt» is read on each picture change, so the turn around time to see changes regarding
+# the screen-positioning of any of the supported elements is only a few seconds. You need not restart the picture-frame
+#
+# CAVEATS:
+#   - Expressions are executed in the context of picture frame python script. If unrecognized variables
+#     are used in any expression, the respective x= or y= value will be set to zero.
+#     Check the log file for errors in the form: 'getPositionFromFile -' (e.g. grep getPositionFromFile log-file-name)
+#   - if elements are removed, the current value is kept until picture frame is restarted
+#
+# More information on positioning:
+#   Position x=0, y=0 will place the text item in the center of the screen. The item is also centered (50% left/50%top over the center)
+#   You must adhere to the order as defined in below section 'Available parameter names'.
+#   In other words: x=...; y=... will be recognised, y=...; x=... not.
+#
+# Available parameter names:
+#   +---+---+---+--------------------------------------------------------------------------------------------------------------------------------
+#   | 1.| 2.| 3.|  1.: x=, 2.: y=, 3.:
+#   +---+---+---+--------------------------------------------------------------------------------------------------------------------------------
+#   | y | y | y | x=
+#   | y | y | y | y=
+#   |   |   |   | z= Not implemented
+#   | n | n | y | tb_font_size= valid range 0.0 - 0.99. Used to multiply with PI3D_PT_POINT_SIZE to get the actual font size
+#   |   |   |   | color=
+#   |   |   |   | spacing= valid values: Type of character spacing. C=Constant, M=Multiplier, F=Fixed space between chars
+#   |   |   |   | space=
+#   |   |   |   |
+#   |   |   |   | Implemented, but useless. Must use pf.config parameters and restart pictureframe
+#   | n | n | y | max_len=    todo: hat keine Methode um den Buffer zu vergroessern
+#   |   |   |   | point_size= max size of font in points (displayed font is multiplied by fb_font_size)
+#   |   |   |   | justify=
+#   |   |   |   |
+#   +---+---+---+--------------------------------------------------------------------------------------------------------------------------------
+# Remarks:
+#   max_len, point_size and justify need pictureframe restart to get their values changed
+#
+# Available variables:
+#   +---+---+---+--------------------------------------------------------------------------------------------------------------------------------
+#   | 1.| 2.| 3.|  1.: clock, 2.: libreoffic_to_png, 3.: owm_formatstring
+#   +---+---+---+--------------------------------------------------------------------------------------------------------------------------------
+#   | y | y | y | DISPLAY.width and DISPLAY.height: The monitor dimension in pixels.
+#   | n | y | n | BM_IMG.width  and BM_IMG.heigth:  The bit map image dimension (file name as defined in PIC_LIBREOFFICE_BITMAP_OUT)
+#   |   |   |   |
+#   +---+---+---+--------------------------------------------------------------------------------------------------------------------------------
+#
+clock:text_type=Texture;x=DISPLAY.width / 2 - BM_IMG.width / 2 - 80; y = -DISPLAY.height / 2 + 300; color=0.99, 0.99, 0.99, 0.99; tb_font_size=0.85; space=0.0001; spacing=F
+pic_fname:text_type=Texture; x=-DISPLAY.width / 2 + BM_IMG.width / 2 + 60; y = (-DISPLAY.height // 2) + 105; debug=false
+pic_title:text_type=Texture; x=-DISPLAY.width / 2 + BM_IMG.width / 2 + 60; y = (-DISPLAY.height // 2) + 125; debug=false
+# y=-DISPLAY.width * 0.45 ; y=-420;
+libreoffice_to_png:  x=DISPLAY.width / 2 - BM_IMG.width / 2 - 20;y=-DISPLAY.height / 2 + BM_IMG.height / 2 + 150; debug=false
+owm_formatstring.0:x=-893; y=int(-DISPLAY.height//2+30); len_pix=1900; font_point=60; font_color=white; debug=false
+owm_formatstring.1:x=0; y=300; len_pix=1200; font_point=60; font_color=white
+# Hints on now_playing: change PI3D_NOW_PLAYING_ALIGN={left|right} for better results
+now_playing:text_type=Texture; x=-DISPLAY.width // 2 + BM_IMG.width // 2 + 20; y=DISPLAY.height // 2 - BM_IMG.height // 2 - 20; debug=false; debug=false
+# keep this comment line for bash scripts reading this file to work as expected
