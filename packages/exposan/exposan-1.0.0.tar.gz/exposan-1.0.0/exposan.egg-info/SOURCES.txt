@@ -1,0 +1,133 @@
+.gitignore
+CODE_OF_CONDUCT.md
+CONTRIBUTING.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+appveyor.yml
+pytest.ini
+requirements.txt
+requirements_test.txt
+setup.py
+exposan/__init__.py
+exposan.egg-info/PKG-INFO
+exposan.egg-info/SOURCES.txt
+exposan.egg-info/dependency_links.txt
+exposan.egg-info/requires.txt
+exposan.egg-info/top_level.txt
+exposan/bsm1/README.rst
+exposan/bsm1/__init__.py
+exposan/bsm1/_asm1.tsv
+exposan/bsm1/profile.py
+exposan/bsm1/system.py
+exposan/bsm1/figures/BSM1.png
+exposan/bsm1/figures/demo_A1_state.png
+exposan/bsm1/results/matlab_exported_data.xlsx
+exposan/bsm1/results/matlab_workspace.mat
+exposan/bsm1/results/sol_50d_LSODA.xlsx
+exposan/bwaise/README.rst
+exposan/bwaise/__init__.py
+exposan/bwaise/_cmps.py
+exposan/bwaise/_lca_data.py
+exposan/bwaise/analyses.py
+exposan/bwaise/models.py
+exposan/bwaise/stats_demo.py
+exposan/bwaise/systems.py
+exposan/bwaise/comparison/comparison_summary.xlsx
+exposan/bwaise/comparison/formatting_only.xlsx
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_inputs_baselineA.xlsx
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_inputs_baselineB.xlsx
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_inputs_baselineC.xlsx
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_model.py
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_outputs_baselineA.xlsx
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_outputs_baselineB.xlsx
+exposan/bwaise/comparison/baseline/Bwaise_sanitation_outputs_baselineC.xlsx
+exposan/bwaise/comparison/baseline/conveyance.py
+exposan/bwaise/comparison/baseline/decentralized_storage.py
+exposan/bwaise/comparison/baseline/human_inputs.py
+exposan/bwaise/comparison/baseline/lhs.py
+exposan/bwaise/comparison/baseline/reuse_disposal.py
+exposan/bwaise/comparison/baseline/treatment.py
+exposan/bwaise/comparison/baseline/user_interface.py
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_inputs_uncertaintyA.xlsx
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_inputs_uncertaintyB.xlsx
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_inputs_uncertaintyC.xlsx
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_model.py
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_outputs_uncertaintyA.xlsx
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_outputs_uncertaintyB.xlsx
+exposan/bwaise/comparison/uncertainty/Bwaise_sanitation_outputs_uncertaintyC.xlsx
+exposan/bwaise/comparison/uncertainty/conveyance.py
+exposan/bwaise/comparison/uncertainty/decentralized_storage.py
+exposan/bwaise/comparison/uncertainty/human_inputs.py
+exposan/bwaise/comparison/uncertainty/lhs.py
+exposan/bwaise/comparison/uncertainty/reuse_disposal.py
+exposan/bwaise/comparison/uncertainty/treatment.py
+exposan/bwaise/comparison/uncertainty/user_interface.py
+exposan/bwaise/data/cf_dct.pckl
+exposan/bwaise/data/indicators_new.tsv
+exposan/bwaise/data/indicators_original.tsv
+exposan/bwaise/data/items_original.xlsx
+exposan/bwaise/data/CFs_new/CFs_biogas.tsv
+exposan/bwaise/data/CFs_new/CFs_brick.tsv
+exposan/bwaise/data/CFs_new/CFs_cement.tsv
+exposan/bwaise/data/CFs_new/CFs_concrete.tsv
+exposan/bwaise/data/CFs_new/CFs_electricity.tsv
+exposan/bwaise/data/CFs_new/CFs_excavation.tsv
+exposan/bwaise/data/CFs_new/CFs_gravel.tsv
+exposan/bwaise/data/CFs_new/CFs_hdpe_liner.tsv
+exposan/bwaise/data/CFs_new/CFs_nitrogen.tsv
+exposan/bwaise/data/CFs_new/CFs_phosphorus.tsv
+exposan/bwaise/data/CFs_new/CFs_potassium.tsv
+exposan/bwaise/data/CFs_new/CFs_sand.tsv
+exposan/bwaise/data/CFs_new/CFs_stainless_steel.tsv
+exposan/bwaise/data/CFs_new/CFs_steel.tsv
+exposan/bwaise/data/CFs_new/CFs_steel_rolling.tsv
+exposan/bwaise/data/CFs_new/CFs_trucking.tsv
+exposan/bwaise/data/CFs_new/CFs_wood.tsv
+exposan/bwaise/figures/morris_blank.png
+exposan/bwaise/figures/morris_normalized_bubble.png
+exposan/bwaise/figures/morris_normalized_combined.png
+exposan/bwaise/figures/sysA.png
+exposan/bwaise/figures/sysA_cost_emission.png
+exposan/bwaise/figures/sysA_morris1_Total energy.png
+exposan/bwaise/figures/sysA_morris2_Total N.png
+exposan/bwaise/figures/sysA_morris3_Total P.png
+exposan/bwaise/figures/sysA_morris4_Total K.png
+exposan/bwaise/figures/sysA_morris5_Cost.png
+exposan/bwaise/figures/sysA_morris6_GWP.png
+exposan/bwaise/figures/sysA_recoveries.png
+exposan/bwaise/figures/sysB.png
+exposan/bwaise/figures/sysB_cost_emission.png
+exposan/bwaise/figures/sysB_morris1_Total energy.png
+exposan/bwaise/figures/sysB_morris2_Total N.png
+exposan/bwaise/figures/sysB_morris3_Total P.png
+exposan/bwaise/figures/sysB_morris4_Total K.png
+exposan/bwaise/figures/sysB_morris5_Cost.png
+exposan/bwaise/figures/sysB_morris6_GWP.png
+exposan/bwaise/figures/sysB_recoveries.png
+exposan/bwaise/figures/sysC.png
+exposan/bwaise/figures/sysC_cost_emission.png
+exposan/bwaise/figures/sysC_morris1_Total energy.png
+exposan/bwaise/figures/sysC_morris2_Total N.png
+exposan/bwaise/figures/sysC_morris3_Total P.png
+exposan/bwaise/figures/sysC_morris4_Total K.png
+exposan/bwaise/figures/sysC_morris5_Cost.png
+exposan/bwaise/figures/sysC_morris6_GWP.png
+exposan/bwaise/figures/sysC_recoveries.png
+exposan/bwaise/results/morris_normalized_combined.xlsx
+exposan/bwaise/results/sysA_lca.xlsx
+exposan/bwaise/results/sysA_model.xlsx
+exposan/bwaise/results/sysA_morris.xlsx
+exposan/bwaise/results/sysA_report.xlsx
+exposan/bwaise/results/sysB_lca.xlsx
+exposan/bwaise/results/sysB_model.xlsx
+exposan/bwaise/results/sysB_morris.xlsx
+exposan/bwaise/results/sysB_report.xlsx
+exposan/bwaise/results/sysC_lca.xlsx
+exposan/bwaise/results/sysC_model.xlsx
+exposan/bwaise/results/sysC_morris.xlsx
+exposan/bwaise/results/sysC_report.xlsx
+exposan/bwaise/results/table_dct.pckl
+tests/__init__.py
+tests/test_bsm1.py
+tests/test_bwaise.py

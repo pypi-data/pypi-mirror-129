@@ -1,0 +1,7 @@
+	-	-	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	TRACI (obsolete)
+	-	-	ecosystem quality	human health	resources	ecosystem quality	human health	resources	ecosystem quality	human health	resources	environmental impact
+	activity name	functional unit	total	total	total	total	total	total	total	total	total	global warming
+0			points	points	points	points	points	points	points	points	points	kg CO2-Eq
+1	market for steel, unalloyed	kilogram	0.1188189412205398	0.2926979426907123	0.5820580471093959	0.05645378626139482	0.08455089779457724	0.5820580471093959	0.054964045230752906	0.07142943745937197	0.32981733503519556	1.8490335235198574
+2	market for steel, low-alloyed	kilogram	0.10871503075456329	0.34225631656384226	0.2847827308174341	0.06282006450252842	0.06836350677979998	0.2847827308174341	0.057255446856165446	0.05446028013875933	0.25270436634505444	1.4060442350534448
+3	market for steel, low-alloyed, hot rolled	kilogram	0.12345354584493132	0.3783066492631183	0.3211562888743311	0.07127635048122721	0.07963443120175921	0.3211562888743311	0.06542306565299774	0.06398970712341041	0.2763894314781384	1.6615930270989805

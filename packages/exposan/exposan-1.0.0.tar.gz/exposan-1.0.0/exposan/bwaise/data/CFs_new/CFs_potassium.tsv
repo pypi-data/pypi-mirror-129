@@ -1,0 +1,8 @@
+	-	-	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	TRACI (obsolete)
+	-	-	ecosystem quality	human health	resources	ecosystem quality	human health	resources	ecosystem quality	human health	resources	environmental impact
+	activity name	functional unit	total	total	total	total	total	total	total	total	total	global warming
+0			points	points	points	points	points	points	points	points	points	kg CO2-Eq
+1	market for inorganic potassium fertiliser, as K2O	kilogram	0.30081508170326393	0.4414395439271952	0.1875352331083017	0.2364085717119352	0.1541379632041801	0.1875352331083017	0.20802767832378322	0.13755456970940994	0.1970097419474544	3.5699670454054515
+2	market for organic potassium fertiliser, as K2O	kilogram	1475.6658613942398	0.3470689444376228	0.07930651694450036	2157.330591436321	0.2567235481997532	0.07930651694450036	1783.8942005860686	0.30115431330314474	0.07713679347923674	2.8231081557411244
+3	market group for inorganic potassium fertiliser, as K2O	kilogram	0.24313815259641217	0.3603477790479734	0.16036540232096802	0.1839439872996597	0.12962819719053562	0.16036540232096802	0.16293865650344974	0.11632741371719353	0.1675751413684798	3.0717488077767108
+4	inorganic potassium fertiliser, as K2O to generic market for organic potassium fertiliser, as K2O	kilogram	0.20450055514865362	0.43925103930954285	0.1331381248462942	0.14695449971949293	0.15609584632167528	0.1331381248462942	0.13509736380046683	0.1350244475313817	0.14058370343358179	3.7624866264873047

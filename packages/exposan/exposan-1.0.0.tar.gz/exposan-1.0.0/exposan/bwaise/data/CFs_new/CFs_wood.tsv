@@ -1,0 +1,8 @@
+	-	-	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	TRACI (obsolete)
+	-	-	ecosystem quality	human health	resources	ecosystem quality	human health	resources	ecosystem quality	human health	resources	environmental impact
+	activity name	functional unit	total	total	total	total	total	total	total	total	total	global warming
+0			points	points	points	points	points	points	points	points	points	kg CO2-Eq
+1	market for sawnwood, softwood, dried (u=10%), planed	cubic meter	85.80903951689257	12.499490183597167	4.218449614108176	121.19384908742964	5.2359657099587436	4.218449614108176	72.22096057119883	4.521793163366407	3.9897113210207427	92.49878606116177
+2	market for sawnwood, hardwood, dried (u=10%), planed	cubic meter	85.63092451209161	15.987334621927054	5.055528839407216	117.94658471973058	7.164652915350567	5.055528839407216	71.42384912366309	6.2245343664781245	4.808736174439182	112.90860399663775
+3	market for sawnwood, hardwood, dried (u=20%), planed	cubic meter	80.96336259211103	12.519589404986716	4.344635090374943	111.99435496108563	5.388669725600547	4.344635090374943	67.67366220548166	4.674028685631665	4.113120247112865	93.87049618264615
+4	market for sawnwood, softwood, dried (u=20%), planed	cubic meter	82.08883922774534	10.724178979920769	3.7687333430714207	116.01341033987087	4.437838702341208	3.7687333430714207	69.04518512502706	3.815118995253467	3.5495805177896695	80.50257685655755

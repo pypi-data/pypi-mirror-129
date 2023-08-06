@@ -1,0 +1,9 @@
+	-	-	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (E,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (H,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	ReCiPe Endpoint (I,A) (obsolete)	TRACI (obsolete)
+	-	-	ecosystem quality	human health	resources	ecosystem quality	human health	resources	ecosystem quality	human health	resources	environmental impact
+	activity name	functional unit	total	total	total	total	total	total	total	total	total	global warming
+0			points	points	points	points	points	points	points	points	points	kg CO2-Eq
+1	market group for concrete, normal	cubic meter	19.8348912512898	21.48937732244746	7.332267445917234	8.183794121705766	10.491658167793867	7.332267445917234	7.285119021396354	8.742183681929992	6.988264559725569	283.58745979713285
+2	market for concrete, normal	cubic meter	19.811576802635805	21.340944882136412	7.233037926896943	8.190235358682983	10.447938748499558	7.233037926896943	7.26731794393381	8.713659707412994	6.927750852286293	283.0457894820574
+3	concrete, all types to generic market for concrete, normal strength	cubic meter	19.811576802635795	21.34094488213632	7.233037926896917	8.190235358682967	10.44793874849954	7.233037926896917	7.267317943933794	8.713659707412981	6.927750852286262	283.04578948205716
+4	market for concrete, medium strength	cubic meter	23.59741152218498	26.38874435420636	9.062433500825554	10.215846453257955	12.88233522817691	9.062433500825554	9.024824923184658	10.754628779400525	8.56644569050818	348.7453188871742
+5	concrete, all types to generic market for concrete, medium strength	cubic meter	23.597411522185002	26.388744354206406	9.062433500825575	10.215846453257964	12.882335228176924	9.062433500825575	9.024824923184667	10.754628779400539	8.5664456905082	348.74531888717456
