@@ -1,0 +1,16 @@
+malkit/__init__.py,sha256=mlMeZFLCJTBgyLRgi1gixJjF3mFL_-mcFm8ZEFHw4R8,751
+malkit/_parallel.py,sha256=a4onFwaLjKcSUfvdcGGNJBn-_eJRR3qInMQtVY4spTI,528
+malkit/_typing.py,sha256=AhJMEUFjywZ-DUml3iXwyvnm_YoweUx4Jk1AsotlqK8,83
+malkit/byte.py,sha256=APxzKnxwBuaq_wJLNHua8Z9-VK70UYirC8KjoY2-nmI,1684
+malkit/image.py,sha256=voMBoMaU4oCcQoJdlrI4Vc9PX5z0dIUbUDhvlQB2mEA,3172
+malkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+malkit/utils.py,sha256=VSdk-8JyAX1zVLf5UdT9Urk9Ow9gQ8_lP_7VSstP6Dc,4642
+malkit/torch/__init__.py,sha256=nJipGeo5v2sWiCtwV3zMmMJhTXJzq5sd9PQLmK0MTRI,461
+malkit/torch/checkpoint.py,sha256=9kzl6Gy83ssJeNe7UyV48vRGsnSJ4xR7YWc2dc4rAJA,3460
+malkit/torch/dataset.py,sha256=osjsEZKCmkTV68b_p6Cxy3zs2DRXWKqsjDkuvCtV-K0,6939
+malkit/torch/models.py,sha256=lSqS9n6XwkH6Uve1i63tGZ-dE41C4_xunl2ki8UBi3A,1194
+malkit-0.5.3.1.dist-info/LICENSE,sha256=8qkM4Jase0M8d8sL48djOCUQdTVqAS92PqMB7RHNc-4,1082
+malkit-0.5.3.1.dist-info/METADATA,sha256=oWFlVu0ZncBPtyfn8viLwnCdwK75LEFo74B46VjMVbo,1476
+malkit-0.5.3.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+malkit-0.5.3.1.dist-info/top_level.txt,sha256=wIqJa2VmxBAvYhiAMcPRF2LbdztVvw1_FSU1tp8Jsf0,7
+malkit-0.5.3.1.dist-info/RECORD,,
