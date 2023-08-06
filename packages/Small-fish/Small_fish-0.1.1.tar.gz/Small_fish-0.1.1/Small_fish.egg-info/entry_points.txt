@@ -1,0 +1,6 @@
+[console_scripts]
+Small-fish = Small_fish:__main__
+Small_fish = Small_fish:__main__
+Smallfish = Small_fish:__main__
+small-fish = Small_fish:__main__
+
