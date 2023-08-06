@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: spade-cli
+Version: 0.1.2
+Summary: You can't dig without a spade! - a super-powered networking tool!
+License: MIT
+Author: Vivaan Verma
+Author-email: hello@vivaanverma.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: dnspython (>=2.1,<3.0)
+Requires-Dist: pydantic (>=1.8,<2.0)
+Requires-Dist: rich (>=10.14,<11.0)
+Requires-Dist: typer[all] (>=0.4.0,<0.5.0)
+Description-Content-Type: text/markdown
+
+# Spade CLI
+`spade` is the next-generation networking command line tool.
+Say goodbye to the likes of dig, ping and traceroute with more accessible,
+more informative and prettier output.
+
+![image](https://user-images.githubusercontent.com/44979306/143790954-c058f58b-0941-4b2d-b3ff-057916cf487f.png)
+
+Spade is fully operational on all major operating systems, this includes Windows, Linux and MacOS.
+
+## Documentation
+For an introduction into the capabilities Spade CLI offers we recommend you try
+running `spade --help` in your terminal and giving it a read. For further
+information, check out [the manual](https://example.com/).
+
+## Contributing
+If something isn't quite right, or something could be even better, we'd love for you to let us know.
+Then, either you or somebody else from our community can try and fix it. If you'd like to get started
+with developing Spade CLI check out our [contributing guide](https://github.com/doublevcodes/spade/blob/main/CONTRIBUTING.md).
+
