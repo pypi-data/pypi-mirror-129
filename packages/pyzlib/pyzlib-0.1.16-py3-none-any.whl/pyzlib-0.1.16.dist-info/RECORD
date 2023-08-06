@@ -1,0 +1,10 @@
+pyzlib/__init__.py,sha256=LYyW7-5uoyRPjFigTb8fhkrI49U3Cz5uyAKgwws-AHk,11310
+pyzlib/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyzlib/test/deflate.py,sha256=4BjuI6Wga8hMRRcwD36CfyONXmN1Vh74vuaiihv3cgI,1882
+pyzlib/test/inflate.py,sha256=-mFiBptnxKQtOTEkoCyOPAdiwZmR-le3ogw4HYwJYnQ,1604
+pyzlib/test/test.py,sha256=aMIZfBv-7DcILpKst2ptMkcFxIoff_2E0VIchccNbEs,47533
+pyzlib-0.1.16.dist-info/LICENSE,sha256=cJrZtg1DVUvtyJ5ysOxP0GN6YZx6gtC_2qmz-hzybfU,855
+pyzlib-0.1.16.dist-info/METADATA,sha256=GBD-bcD0DksuNRRKipaaoU4W4KjbOsuw-agqjkMYIqc,644
+pyzlib-0.1.16.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+pyzlib-0.1.16.dist-info/top_level.txt,sha256=OfsCfOO_x_079_ddHdvbElPHLwqzR1lMbJXm3jj5P-A,7
+pyzlib-0.1.16.dist-info/RECORD,,

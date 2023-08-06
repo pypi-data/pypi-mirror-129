@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyzlib
+Version: 0.1.16
+Summary: Thin Python 3 wrapper around zlib
+Home-page: https://github.com/iii-i/pyzlib
+Author: Ilya Leoshkevich
+Author-email: iii@linux.ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+
+pyzlib - thin Python 3 wrapper around zlib
+############################################
+
+Usage
+=====
+
+See `deflate <https://github.com/iii-i/pyzlib/blob/master/pyzlib/test/deflate.py>`_
+and `inflate <https://github.com/iii-i/pyzlib/blob/master/pyzlib/test/inflate.py>`_
+examples.
+
+
