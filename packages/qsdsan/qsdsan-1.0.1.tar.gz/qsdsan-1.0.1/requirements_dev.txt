@@ -1,0 +1,9 @@
+# Needed by qsdsan
+biosteam>=2.31.18
+thermosteam>=0.27.15
+scikit-learn
+scipy
+SALib
+matplotlib
+seaborn
+sympy
