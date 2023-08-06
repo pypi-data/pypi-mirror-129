@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: django-template-standalone
+Version: 0.1.0
+Summary: Simple setup to use django's template engine for non-django applications.
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Keywords: django,django template,django template engine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-template-standalone
+
+Simple setup to use django's template engine for non-django applications.
+
+## Install
+
+```
+pip install django-template-standalone
+```
+
+## Usage
+
+```
+from django_template_standalone import render
+
+from django_template_standalone import register_dirs
+from django_template_standalone import render_template
+
+
+msg = render("hello {{name}}, how are you?", {"name": "Cissie"})
+assert msg == "hello Cissie, how are you?"
+
+reigster_dirs("./templates/")
+html = render_template("index.html", {"title": "This is an index Page"})
+assert html == "<h1>This is an index Page</h1>"
+
+
+```
+
+Content of `./templates/index.html` is:
+
+```
+<h1>{{title}}</h1>
+```
+
+## Methods
+
+- `render(template_text, context)`: Render a template text with context.
+- `render_template(template_filename, context)`: Render a template file with context.
+- `reigster_dirs(*dirs)`: Add template dirs.
+- `register_apps(*apps)`: Add template apps.
+- `setup(template_dirs, apps)`: Setup django's template engine with template dirs and apps.
+
+**Note:**
+
+- When using `reigster_apps` method or using `apps` parameter in `setup` method, there must be a `templates` sub-folder under the APP's root folder.
+- The `setup` method will be auto called in other functions, so you really don't need to call it manually.
+
+
+## Releases
+
+### v0.1.0 2021/11/30
+
+- First release.
+
+
