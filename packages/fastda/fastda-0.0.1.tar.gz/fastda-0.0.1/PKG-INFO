@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fastda
+Version: 0.0.1
+Summary: A simple framework for unsupervised domain adaptation
+Home-page: https://github.com/zhyx12/RPA
+Author: Example Author
+Author-email: zhyx12@mail.ustc.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FastDA
+
+This is a simple framework for unsupervised domain adaptation. You can use to build your method.
+

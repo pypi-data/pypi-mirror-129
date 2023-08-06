@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+fastda/__init__.py
+fastda.egg-info/PKG-INFO
+fastda.egg-info/SOURCES.txt
+fastda.egg-info/dependency_links.txt
+fastda.egg-info/top_level.txt
