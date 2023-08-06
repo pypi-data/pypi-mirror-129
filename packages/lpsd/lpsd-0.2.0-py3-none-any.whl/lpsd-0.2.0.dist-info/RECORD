@@ -1,0 +1,10 @@
+lpsd/__init__.py,sha256=UKpeQoP3_cwZRfA32j5lb41ij6019XugmLz0fA360Lk,449
+lpsd/_helpers.py,sha256=75X4KGffwhrQVaO5MQpiK5NXmo0KL33AQnCpbRwcgNI,12633
+lpsd/flattop.py,sha256=cKhummDxbDA0x8puxIBBCLucnF-fvnZtD8H4pORLWYQ,13807
+lpsd/ltpda_dft.dll,sha256=T8_ZxNaABKclGE5LdIYeV5_AKmUEllH7XYi36F5l82s,403805
+lpsd/ltpda_dft.so,sha256=g1vDmEAn3hivPxgO0i4KnQL2HZurghWOqnWscjPx-Sk,172144
+lpsd/wrapper.py,sha256=jmqaiEty86_4REnwM-wMtxKqg8D0E04SAaumxNzMq4w,6770
+lpsd-0.2.0.dist-info/LICENSE,sha256=blwK0H93v9Ug6pvnGLos53XX8Vs9W1UJIEhg7g2deFI,35059
+lpsd-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+lpsd-0.2.0.dist-info/METADATA,sha256=SgGrzKrH01j3yxuoWE30QiBSFFpo5ugyURCMIDTv13U,2458
+lpsd-0.2.0.dist-info/RECORD,,
