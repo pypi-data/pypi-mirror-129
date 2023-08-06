@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: django-model-stats
+Version: 0.0.2
+Summary: Display how often models and model fields are used in the database
+Home-page: https://github.com/xi/django-model-stats
+Author: Tobias Bengfort
+Author-email: tobias.bengfort@posteo.de
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-model-stats
+
+Display how often models and model fields are used in the database.
+
+## Installation
+
+1.  Add `'model_stats'` to your `INSTALLED_APPS`
+2.  Add `path('admin/stats/', include('model_stats.urls'))` to your
+    `urlpatterns`. Make sure it’s included *before* the `'admin/'` entry, so
+    that requests to `/admin/stats/` don’t get handled by the latter entry.
+
+## Features
+
+-   Allows you to find models or fields that are rearly used
+-   No additional user tracking, only uses the data that is already available
+-   No external dependencies
+
+

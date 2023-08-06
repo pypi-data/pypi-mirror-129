@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_model_stats.egg-info/PKG-INFO
+django_model_stats.egg-info/SOURCES.txt
+django_model_stats.egg-info/dependency_links.txt
+django_model_stats.egg-info/top_level.txt
+model_stats/__init__.py
+model_stats/urls.py
+model_stats/views.py
+model_stats/templates/model_stats/stats.html
