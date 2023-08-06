@@ -1,0 +1,4 @@
+graft src/_xautic
+graft src/xautic
+global-exclude __pycache__
+global-exclude *.py[cod]
