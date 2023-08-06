@@ -1,0 +1,7 @@
+License.txt
+setup.py
+passsafe/__init__.py
+passsafe.egg-info/PKG-INFO
+passsafe.egg-info/SOURCES.txt
+passsafe.egg-info/dependency_links.txt
+passsafe.egg-info/top_level.txt
