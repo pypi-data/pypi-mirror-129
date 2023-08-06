@@ -1,0 +1,14 @@
+README.md
+password_agent.py
+setup.py
+syborg-backup@.service
+syborg-backup@.timer
+syborg-example.cfg
+syborg.py
+systemd-gtk-ask-password-agent.desktop
+syborg.egg-info/PKG-INFO
+syborg.egg-info/SOURCES.txt
+syborg.egg-info/dependency_links.txt
+syborg.egg-info/entry_points.txt
+syborg.egg-info/requires.txt
+syborg.egg-info/top_level.txt
