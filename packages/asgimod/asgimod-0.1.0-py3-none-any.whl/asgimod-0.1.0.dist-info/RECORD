@@ -1,0 +1,10 @@
+asgimod/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asgimod/db.py,sha256=WPrz6U0ZcYBYZlep6pmeh_WQ1ZccScoc9IzxuVcKe1M,9292
+asgimod/mixins.py,sha256=kOIiKS0hHjMoy4gYOijKgpuSDPxdbj75obF_dx5tbJQ,2340
+asgimod/sync.py,sha256=LMeklMaJ_DXWWQ0IEdaxdNUcCqxBoTfn3OFQk3yEREY,1554
+asgimod-0.1.0.dist-info/LICENSE,sha256=NK63lAYZLtsl2roHbc60lcP67x86hfMpNMrfY9z2D8U,1072
+asgimod-0.1.0.dist-info/METADATA,sha256=AbTbiKS9URA0YA6V4ML0TnJ8edjEQcxj0hn_ICke-Os,18282
+asgimod-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+asgimod-0.1.0.dist-info/top_level.txt,sha256=aPvbk640bbUF6FYkmc8QmmvZ0oQmYt_DHRRF0PwFMG8,8
+asgimod-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+asgimod-0.1.0.dist-info/RECORD,,
