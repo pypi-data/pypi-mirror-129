@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: doutline
+Version: 1.0.0a1
+Summary: Document outline generator
+Home-page: https://github.com/cariad/doutline
+Author: Cariad Eccleston
+Author-email: cariad@cariad.earth
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 📑 Doutline
+
+**Doutline** is a Python package for generating document outlines.
+
+- [📑 Doutline](#-doutline)
+  - [Installation](#installation)
+  - [Project](#project)
+    - [Contributing](#contributing)
+    - [Licence](#licence)
+    - [Author](#author)
+    - [Acknowledgements](#acknowledgements)
+
+## Installation
+
+Doutline requires Python 3.8 or later.
+
+Install Doutline via pip:
+
+```bash
+pip install doutline
+```
+
+## Project
+
+### Contributing
+
+To contribute a bug report, enhancement or feature request, please raise an issue at [github.com/cariad/doutline/issues](https://github.com/cariad/doutline/issues).
+
+If you want to contribute a code change, please raise an issue first so we can chat about the direction you want to take.
+
+### Licence
+
+Doutline is released at [github.com/cariad/doutline](https://github.com/cariad/doutline) under the MIT Licence.
+
+See [LICENSE](https://github.com/cariad/doutline/blob/main/LICENSE) for more information.
+
+### Author
+
+Hello! 👋 I'm **Cariad Eccleston** and I'm a freelance DevOps and backend engineer. My contact details are available on my personal wiki at [cariad.earth](https://cariad.earth).
+
+Please consider supporting my open source projects by [sponsoring me on GitHub](https://github.com/sponsors/cariad/).
+
+### Acknowledgements
+
+- This documentation was pressed by [Edition](https://github.com/cariad/edition).
+
+
