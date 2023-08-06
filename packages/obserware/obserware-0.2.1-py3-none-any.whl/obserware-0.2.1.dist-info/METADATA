@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: obserware
+Version: 0.2.1
+Summary: An advanced system monitor utility written in Python and Qt
+Home-page: https://gitlab.com/t0xic0der/obserware
+License: GPL-3.0-or-later
+Keywords: qt,monitoring,performance,linux,observation
+Author: Akashdeep Dhar
+Author-email: akashdeep.dhar@gmail.com
+Maintainer: Akashdeep Dhar
+Maintainer-email: akashdeep.dhar@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: Utilities
+Requires-Dist: distro (>=1.6.0,<2.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: py-cpuinfo (>=8.0.0,<9.0.0)
+Requires-Dist: pyqt5 (>=5.15.6,<6.0.0)
+Requires-Dist: pyqtchart (>=5.15.5,<6.0.0)
+Project-URL: Documentation, https://gitlab.com/t0xic0der/obserware/-/blob/main/README.md
+Project-URL: Repository, https://gitlab.com/t0xic0der/obserware
+Description-Content-Type: text/markdown
+
+# Obserware
+
+> Version 0.2.0
+
+An advanced system monitor utility written in Python and Qt
+
+## Installation
+
+### Development
+
+1. `sudo dnf install python3-poetry`
+2. `git clone https://gitlab.com/t0xic0der/obserware.git`
+3. `cd obserware`
+4. `virtualenv venv`
+5. `source venv/bin/activate`
+6. `poetry install`
+7. `deactivate`
+
+### Consumption
+
+1. `virtualenv venv`
+2. `source venv/bin/activate`
+3. `pip3 install obserware`
+4. `deactivate`
+
+## Usage
+
+1. `source venv/bin/activate`
+2. `obserware`
+3. `deactivate`
+
+## Screenshots
+
+> These screenshots hail from **Obserware v0.2.0**.
+
+1. Windows  
+   1. Performance tabscreen  
+      ![](screenshots/obsr_mainperf.png)
+   2. Process tabscreen  
+      ![](screenshots/obsr_mainproc.png)
+   3. Information tabscreen  
+      ![](screenshots/obsr_maininfo.png)
+   4. Contribute tabscreen  
+      ![](screenshots/obsr_maincntb.png)
+2. Dialogs  
+   1. Storage counters dialog  
+      ![](screenshots/obsr_sostwind.png)
+   2. Network statistics dialog  
+      ![](screenshots/obsr_ntwkwind.png)
+   3. Physical partitions dialog  
+      ![](screenshots/obsr_phptwind.png)
+   4. Logical partitions dialog  
+      ![](screenshots/obsr_lgptwind.png)
+   5. Process information dialog  
+      ![](screenshots/obsr_procwind.png)
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cputwind</class>
+ <widget class="QDialog" name="cputwind">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Inter</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="cputwdgt">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>640</width>
+     <height>320</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>640</width>
+     <height>320</height>
+    </size>
+   </property>
+   <widget class="QLabel" name="cputlabl">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>205</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+    </property>
+    <property name="text">
+     <string>CPU Times</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="cputtree">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>30</y>
+      <width>630</width>
+      <height>285</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>630</width>
+      <height>285</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>630</width>
+      <height>285</height>
+     </size>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <column>
+     <property name="text">
+      <string>CPU#</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>USER</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NICE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SYST</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>IDLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>IOWT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>IRQT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SIRQ</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>STLT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GEST</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>GTNC</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="cputqant">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>5</y>
+      <width>205</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>205</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;JetBrains Mono&quot;;
+color: #008080;</string>
+    </property>
+    <property name="text">
+     <string>0 CPU(s)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
