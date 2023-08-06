@@ -1,0 +1,3 @@
+[console_scripts]
+smiles_screener = flamingo.screen:main
+
