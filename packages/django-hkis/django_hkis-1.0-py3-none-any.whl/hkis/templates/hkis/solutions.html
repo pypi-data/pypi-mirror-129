@@ -1,0 +1,135 @@
+{% extends "hkis/layout.html" %}
+{% load hkis_extra %}
+{% load i18n static %}
+{% block title %}{{ object.title }}{% endblock %}
+{% block data %}
+data-csrf-token="{{ csrf_token }}"
+{% endblock %}
+{% block stylesheets %}
+  <link href="{% static "css/codehilite.css" %}" rel="stylesheet" type="text/css" />
+  <link href="{% static "django_ace/widget.css" %}" type="text/css" media="screen" rel="stylesheet">
+{% endblock %}
+
+{% block extrajs %}
+  <script type="text/javascript" src="{% static "django_ace/ace/ace.js" %}"></script>
+  <script type="text/javascript" src="{% static "django_ace/widget.js" %}"></script>
+  <script type="text/javascript" src="{% static "django_ace/ace/mode-python.js" %}"></script>
+  <script type="text/javascript" src="{% static "django_ace/ace/theme-twilight.js" %}"></script>
+{% endblock %}
+
+{% block container %}
+<div class="container-xxl md-4">
+<h1> {% trans "Solutions for exercise:" %} <a href="{{ exercise.get_absolute_url }}">{{ exercise.title }}</a></h1>
+
+<h2 style="margin-top: 20px;">{% trans "Shared solutions" %}</h2>
+{% if is_solved %}
+    {% if solutions %}
+      <ul class="nav nav-tabs" id="solutions" role="tablist">
+          {% for solution in solutions %}
+          <li class="nav-item">
+            <button class="nav-link{% if forloop.counter == 1 %} active{% endif %}"
+               id="sol-{{forloop.counter}}-tab"
+               data-bs-toggle="tab"
+               data-bs-target="#sol-{{forloop.counter}}"
+               role="tab"
+               aria-controls="sol-{{forloop.counter}}"
+               aria-selected="{% if forloop.counter == 1 %}true{% else %}false{% endif %}">
+                  {{ forloop.counter }}
+              </button>
+          </li>
+          {% endfor %}
+      </ul>
+      <div class="tab-content" id="solutions">
+          {% for solution in solutions %}
+          <div class="tab-pane fade{% if forloop.counter == 1 %} show active{% endif %}"
+               id="sol-{{forloop.counter}}"
+               role="tabpanel"
+               aria-labelledby="sol-{{forloop.counter}}-tab">
+            <br/>
+            <p>
+              {% blocktrans with username=solution.user.username date=solution.created_at.date %}Solution shared by {{ username }} on {{ date }}:{% endblocktrans %}
+            </p>
+
+            <div class="django-ace-editor">
+              <div class="django-ace-widget loading" data-fontsize="16px" data-mode="python" data-showinvisibles="false" data-showprintmargin="true" data-theme="twilight" data-usesofttabs="true" style="width:100%; height:400px"><div></div>
+              </div>
+              <textarea name="source_code" cols="40" rows="10" id="id_source_code_{{ forloop.counter }}">{{ solution.source_code }}</textarea>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    {% else %}
+    {% trans "No solution shared yet :(" %}
+    {% endif %}
+{% else %}
+    {% trans "(You're not allowed to see them until you resolved the exercise.)" %}
+{% endif %}
+
+<h2 style="margin-top: 20px;">{% trans "My answers" %}</h2>
+{% if not my_answers %}
+{% trans "You haven't submitted anything for this exercise yet." %}
+{% else %}
+  <ul class="nav nav-tabs" id="my_answers" role="tablist">
+      {% for solution in my_answers %}
+      <li class="nav-item">
+        <button class="nav-link{% if forloop.counter == 1 %} active{% endif %}"
+           id="ans-{{forloop.counter}}-tab"
+           data-bs-toggle="tab"
+           data-bs-target="#ans-{{forloop.counter}}"
+           role="tab"
+           aria-controls="ans-{{forloop.counter}}"
+           aria-selected="{% if forloop.counter == 1 %}true{% else %}false{% endif %}">
+              {{ forloop.counter }}
+          </button>
+      </li>
+      {% endfor %}
+  </ul>
+  <div class="tab-content" id="my_answers">
+      {% for solution in my_answers %}
+      <div class="tab-pane fade{% if forloop.counter == 1 %} show active{% endif %}"
+           id="ans-{{forloop.counter}}"
+           role="tabpanel"
+           aria-labelledby="ans-{{forloop.counter}}-tab">
+        <br/>
+        <p>
+          {% blocktrans with date=solution.created_at.date %}Submitted on {{ date }}:{% endblocktrans %}
+        </p>
+
+        <div class="django-ace-editor">
+          <div class="django-ace-widget loading" data-fontsize="16px" data-mode="python" data-showinvisibles="false" data-showprintmargin="true" data-theme="twilight" data-usesofttabs="true" style="width:100%; height:400px"><div></div>
+          </div>
+          <textarea name="source_code" cols="40" rows="10" id="id_source_code_{{ forloop.counter }}">{{ solution.source_code }}</textarea>
+        </div>
+        <div class="result-box">
+          <pre>{{ solution.correction_message }}</pre>
+        </div>
+        {% if solution.is_valid %}
+        <button id="btn-{{ solution.id }}-unshare"
+                type="button"
+                data-unshare="{{ solution.id }}"
+                {% if not solution.is_shared %}style="display: none"{% endif %}
+                class="btn btn-secondary btn-sm">
+          {% trans "Unshare it" %}
+        </button>
+        <button id="btn-{{ solution.id }}-share"
+                type="button"
+                data-share="{{ solution.id }}"
+                {% if solution.is_shared %}style="display: none"{% endif %}
+                class="btn btn-primary btn-sm">
+          {% trans "Share it with other students!" %}
+        </button>
+        {% endif %}
+        <button id="btn-{{ solution.id }}-delete"
+                type="button"
+                data-delete="{{ solution.id }}"
+                class="btn btn-danger btn-sm">
+          {% trans "Delete this answer" %}
+        </button>
+      </div>
+      {% endfor %}
+  </div>
+
+</div>
+{% endif %}
+<script src="{% static 'js/exercise.js' %}?v={{ version }}" type="text/javascript"></script>
+{% endblock %}

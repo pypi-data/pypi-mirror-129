@@ -1,0 +1,38 @@
+{% extends "hkis/layout.html" %}
+{% block title %}Stats - {{object.name}}{% endblock %}
+
+{% block container %}
+<h2>{{ object.name }}</h2>
+<table class="table table-stripped table-bordered table-sm">
+  <thead>
+    <tr>
+      <th></th>
+      {% for exercise in exercises %}
+      <th scope="col" style="writing-mode: vertical-rl">
+        {{ exercise.slug }}
+      </th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+  {% for username, answers in stats.items %}
+  <tr>
+    <th scope="row">
+      {{ username }}
+    </th>
+    {% for answer in answers %}
+    <td>
+      {% if answer.is_tried %}
+          {% if answer.is_valid %}
+            <span class="good">✓</span>
+          {% else %}
+            <span class="bad">✗</span>
+          {% endif %}
+      {% endif %}
+    </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

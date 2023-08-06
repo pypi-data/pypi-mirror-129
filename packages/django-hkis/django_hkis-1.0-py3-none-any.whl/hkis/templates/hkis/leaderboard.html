@@ -1,0 +1,66 @@
+{% extends "hkis/layout.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "Leaderboard" %}{% endblock %}
+
+{% block container %}
+
+<div class="row" style="height: 92%">
+  <div class="col-md-8 offset-md-2" style="height: 100%">
+    <h1 class="align-center">Leaderboard</h1>
+    <table class="table table-sm table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Points</th>
+          <th scope="col">Username</th>
+          <th scope="col">Team</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for player in page_obj %}
+          {% if player.hkis %}
+            <tr class="{% if player.username == user.username %}table-primary{% endif %}">
+              <td scope="row">
+                {{ forloop.counter0|add:page_obj.start_index }}
+              </td>
+              <td scope="row">
+                {{ player.hkis.points|floatformat:"0" }}
+              </td>
+              <td scope="row">
+                {% if player.hkis.public_profile %}
+                {{ player.username }} {% if player.is_superuser %}(staff){% endif %}
+                {% else %}
+                (anonymous)
+                {% endif %}
+              </td>
+              <td scope="row">
+                {% for team in player.hkis.public_teams %}{% if forloop.counter > 1 %},&nbsp;{% endif %}<a href="{% url 'team' team.slug %}">{{ team }}</a>{% endfor %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="pagination">
+      <span class="step-links">
+        {% if page_obj.has_previous %}
+        <a href="?page=1">&laquo; first</a>
+        <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+          Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">next</a>
+        <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+      </span>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

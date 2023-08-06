@@ -1,0 +1,120 @@
+{% extends "hkis/layout.html" %}
+{% load hkis_extra %}
+{% load i18n static %}
+{% block title %}
+  {% if is_impersonating %}
+    {{ object.title }} (as seen by {{ is_impersonating.username }})
+  {% else %}
+    {{ object.title }}
+  {% endif %}
+{% endblock %}
+
+{% block data %}
+{% get_current_language as LANGUAGE_CODE %}
+data-language-code="{{ LANGUAGE_CODE }}"
+data-leaderboard-url="{% url "leaderboard" %}"
+data-current-rank="{{ current_rank|default:999999 }}"
+data-exercise-id="{{object.id|default:0}}"
+{% url "auth_login" as auth_login %}
+{% if auth_login %}
+data-profile-url="{% if user.is_anonymous %}{{ auth_login }}{% else %}{% url "profile" user.id %}{% endif %}"
+data-auth-login-url="{{ auth_login }}"
+{% endif %}
+data-is-impersonating="{% if is_impersonating %}true{% else %}false{% endif %}"
+{% endblock %}
+
+{% block stylesheets %}
+<link href="{% static 'css/codehilite.css' %}" rel="stylesheet" type="text/css" >
+{% endblock %}
+
+{% block container %}
+{% if is_impersonating %}
+  <div class="alert alert-warning" role="alert">
+    Exercise as seen by {{ is_impersonating.username }}.
+  </div>
+{% endif %}
+{{ answer_form.media }}
+<div class="row g-0" style="height: 100%">
+  <div class="col-md-6 style-info" style="height: 100%">
+    <form id="answer_form" action="#" method="post"
+          style="height: 100%; display: flex; flex-direction: column; ">
+        {% csrf_token %}
+        <div class="fieldWrapper" style="flex: 1 1 auto; overflow: hidden;">
+            {{ answer_form.source_code }}
+        </div>
+        <div class="fieldWrapper" style="height: 0">
+            {{ answer_form.exercise }}
+        </div>
+    </form>
+  </div>
+  <div class="col-md-6" style="height: 100%; padding: 1em; flex-direction: column; display: flex">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <button id="tab-instructions" data-bs-toggle="tab" data-bs-target="#wording" class="nav-link active" role="tab" aria-controls="wording" aria-selected="true">{% trans "Instructions" %}</button>
+      </li>
+      <li class="nav-item">
+        <button id="tab-correction" data-bs-toggle="tab" data-bs-target="#answer-message" class="nav-link" role="tab" aria-controls="answer-message" aria-selected="false">Correction</button>
+      </li>
+    </ul>
+    <div style="flex: 1 1 auto; overflow-y: auto">
+      <div class="tab-content">
+        <div id="wording" class="tab-pane active" role="tabpanel" aria-labelledby="wording-tab">
+          <div class="style-info">
+            <h1 class="exercise-title">{{ object.title }}</h1>
+            <div class="signature">{% blocktrans with first_name=object.author.first_name last_name=object.author.last_name %}Created by {{ first_name }} {{ last_name }}{% endblocktrans %}</div>
+            <div class="instructions">
+              {{ object.wording|markdown_to_bootstrap }}
+            </div>
+          </div>
+        </div>
+        <div id="answer-message" class="tab-pane" role="tabpanel" aria-labelledby="wording-tab">
+          <div id="answer-box">
+            <p>
+              {% blocktrans %}
+              There's no corrections yet, hit the `Submit` button to send your code to the correction bot.
+              {% endblocktrans %}
+            </p>
+            <p>
+              {% trans "Keyboard shortcuts:" %}
+              <ul>
+                <li>{% blocktrans %}Ctrl-Enter: Send your code to the correction bot.{% endblocktrans %}</li>
+                <li>{% blocktrans %}Escape: Get back to the instructions tab.{% endblocktrans %}</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="flex: 0 1 auto; height: 4em; display: flex; align-items: center;">
+      <div style="">
+        {% if not is_impersonating %}
+        <button
+          disabled
+          id="submit_answer"
+          class="btn btn-primary"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          data-delay="500"
+          title="This runs automated tests to verify your implementation (also saves your code).&#013;Shortcut: Ctrl-Enter.">
+          {% trans "Submit (Ctrl-Enter)" %}
+        </button>
+        {% endif %}
+      </div>
+      <div style="margin-left: auto; margin-right: auto">
+        <a id="solution_link" class="{% if not is_valid %}disabled{% endif %} btn btn-secondary"
+           href={{ object.get_solutions_absolute_url }}>{% blocktrans %}See solutions{% endblocktrans %}
+        </a>
+      </div>
+      <div style="margin-right: 0; flex: 0 0 auto">
+          {% if previous %}
+          <a class="btn btn-secondary" href="{{ previous.get_absolute_url }}">←</a>
+          {% endif %}
+          {% if next %}
+          <a id="btn_next" class="btn btn-secondary" href="{{ next.get_absolute_url }}">→</a>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/exercise.js' %}?v={{ version }}" type="text/javascript"></script>
+{% endblock %}

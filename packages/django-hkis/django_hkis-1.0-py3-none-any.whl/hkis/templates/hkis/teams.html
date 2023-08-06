@@ -1,0 +1,44 @@
+{% extends "hkis/layout.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% blocktrans %}Teams{% endblocktrans %}{% endblock %}
+
+{% block container %}
+
+<div class="row" style="height: 92%">
+  <div class="col-md-8 offset-md-2" style="height: 100%">
+    <h1 class="align-center">{% blocktrans %}Teams{% endblocktrans %}</h1>
+    <table class="table table-sm table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Points</th>
+          <th scope="col">Team</th>
+          <th scope="col">#members</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for team in teams %}
+        {% if team.is_public %}
+        <tr class="{% if user in team.members %}table-primary{% endif %}">
+          <td scope="row">
+            {{ forloop.counter0|add:1 }}
+          </td>
+          <td scope="row">
+            {{ team.points|floatformat:"0" }}
+          </td>
+          <td scope="row">
+            <a href="{% url 'team' team.slug %}">{{ team.name }}</a>
+          </td>
+          <td scope="row">
+            {{ team.members.count }}
+          </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

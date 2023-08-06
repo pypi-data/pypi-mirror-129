@@ -1,0 +1,117 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n static crispy_forms_tags %}
+{% block title %}Profile{% endblock %}
+{% block extrahead %}
+<script src="{% static 'admin/js/vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'admin/js/vendor/select2/select2.full.min.js' %}"></script>
+<link href="{% static 'admin/css/vendor/select2/select2.min.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block container %}
+
+<div class="col-md-8 offset-md-2">
+  <h2>{% trans "Statistics" %}</h2>
+  <p>
+    {% blocktrans with date_joined=user.date_joined trimmed %}
+    You subscribed on {{ date_joined }}, and sent {{ submit_qty }}
+    answers to the correction bot.
+    {% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans trimmed %}
+    You resolved {{ done_qty }} exercises, that's {{ done_pct }} of all exercises.
+    {% endblocktrans %}
+  </p>
+  <p>
+    {% if user.hkis and user.hkis.rank is not None %}
+      {% blocktrans trimmed with rank=user.hkis.rank points=user.hkis.points|floatformat:"0" %}
+        You have {{ points }} points which ranks you {{ rank }} over {{ participants }} participants.
+      {% endblocktrans %}
+    {% else %}
+      {% blocktrans trimmed %}
+        You're not ranked yet.
+      {% endblocktrans %}
+    {% endif %}
+  </p>
+</div>
+
+<div class="col-md-8 offset-md-2">
+  <h3>Team</h3>
+  {% if not memberships %}
+  {% trans "You're not in a team, but you can join or create one!" %}
+  {% else %}
+  <ul>
+    {% for membership in memberships %}
+    <li>
+      {% url 'team' membership.team.slug as team_url %}
+      {% if membership.role == "PE" %}
+        {% blocktrans trimmed with name=tmembership.team.name url=team_url %}
+          You're almost in the <a href="{{ url }}">{{ name }}</a> team (waiting for approval).
+        {% endblocktrans %}
+      {% endif %}
+      {% if membership.role == "ST" %}
+        {% blocktrans trimmed with name=membership.team.name url=team_url %}
+          You're staff in the <a href="{{ url }}">{{ name }}</a> team.
+        {% endblocktrans %}
+      {% endif %}
+      {% if membership.role == "MM" %}
+        {% blocktrans trimmed with name=membership.team.name url=team_url %}
+          You're in the <a href="{{ url }}">{{ name }}</a> team.
+        {% endblocktrans %}
+      {% endif %}
+      <form action="/teams/" method="post" class="form" style="display: inline">
+        {% csrf_token %}
+        <input type="hidden" name="leave_team" value="{{ membership.team.name }}" />
+        <button class="btn btn-sm btn-danger" type="submit">{% trans "Leave team" %}</button>
+      </form>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <form action="/teams/" method="post" class="form">
+    {% csrf_token %}
+    <select id="team_selector" name="join_team"></select>
+    <button class="btn btn-sm btn-primary" type="submit">{% trans "Join team" %}</button>
+  </form>
+</div>
+
+<div class="col-md-8 offset-md-2">
+  <p>
+    <h3>Preferred language</h3>
+    <ul>
+      {% get_current_language as current_language %}
+      {% for language_tag, language in languages %}
+      <li>
+        <button
+          type="button"
+          data-lang="{{ language_tag }}"
+          class="btn btn-{% if language_tag != current_language%}outline-{%endif%}secondary">{{ language }}
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </p>
+</div>
+
+<div class="col-md-8 offset-md-2">
+  <h2>{% trans "Personal informations" %}</h2>
+  <div class="row">
+    <div class="col-md-6 ">
+      {% if messages %}
+        {% for message in messages %}
+        <div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+      <form action="" method="post" class="form">
+        {% csrf_token %}
+        {{ form|crispy }}
+        {% url 'auth_password_change' as password_change %}
+        <p>
+        <a href="{{ password_change }}">{% trans "Change your password" %}</a>
+        </p>
+        <button type="submit" class="btn btn-success btn-lg">{% trans "Update" %}</button>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="{% static 'js/profile.js' %}?v={{ version }}" type="text/javascript"></script>
+{% endblock %}
