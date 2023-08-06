@@ -1,0 +1,11 @@
+aioambient/__init__.py,sha256=r4127-vCRkiUQcgpDcUgqEtYW5S2PjK8tPqncWD1dng,99
+aioambient/api.py,sha256=zIvNLdc7VFddiGJgrdK4y4Vf0-yn8WUI78o_bwpVQeA,3024
+aioambient/const.py,sha256=wuEns3Av-cArUGgTMBtrEwVr__lcedPOyuskcCgURKk,113
+aioambient/errors.py,sha256=l2T3mBbWw1ZYD8OdbBUikubM0R804lr3HY86QmKdRGE,315
+aioambient/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioambient/util/__init__.py,sha256=CmrtbdrBjOtSMap5VH5RZiO5F6G0M5r8Ye5PX0vB-Kk,322
+aioambient/websocket.py,sha256=REAtO7rDj4sgG_2O9Lp4jGdM_w2jct3TUXIVqNVTdzw,6175
+aioambient-2021.12.0.dist-info/LICENSE,sha256=FTF9lC9P4MjR5EcYxNqTzoze0OjPm4L7Up_oihQ3S5I,1067
+aioambient-2021.12.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aioambient-2021.12.0.dist-info/METADATA,sha256=BT8_EZd7Oa9fAkSSImz2s3eD5WZ1OMAfNabpaueTOao,7834
+aioambient-2021.12.0.dist-info/RECORD,,
