@@ -1,0 +1,4 @@
+opencv-python
+rvmendillo_image_to_ascii
+numpy
+moviepy
