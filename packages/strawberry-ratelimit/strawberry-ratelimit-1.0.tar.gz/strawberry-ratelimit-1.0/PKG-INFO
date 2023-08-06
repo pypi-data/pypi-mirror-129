@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: strawberry-ratelimit
+Version: 1.0
+Summary: Strawberry GraphQL Ratelimit Extension
+Home-page: https://github.com/stypr/strawberry-ratelimit
+Author: Harold Kim
+Author-email: root@stypr.com
+License: MIT
+Download-URL: https://github.com/stypr/strawberry-ratelimit/archive/v1.0.tar.gz
+Description: ## Strawberry GraphQL Ratelimit Extension
+        
+        ### Installation
+        
+        ```
+        pip3 install strawberry-ratelimit
+        ```
+        
+        ### Usage
+        
+        ```py
+        my_schema = strawberry.Schema(
+            query=Query,
+            mutation=Mutation,
+            extensions=[
+                # 60req/min
+                ExtensionRatelimit(
+                    type_name=['getUser', 'updateUser', 'user_friends'], # queries, mutations, internal funcs.
+                    rate_max=60,
+                    rate_seconds=60,
+                    depth_max=50, # Maximum depth of the query
+                    call_max=500 # Maximum call count
+                )
+            ]
+        )
+        ```
+        
+        ### Limitations
+        
+        
+Keywords: strawberry-graphql,strawberry,extension,ratelimit
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
