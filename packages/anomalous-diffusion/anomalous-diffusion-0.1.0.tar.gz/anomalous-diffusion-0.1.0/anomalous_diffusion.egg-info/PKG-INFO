@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: anomalous-diffusion
+Version: 0.1.0
+Summary: Anomalous diffusion simulation
+Home-page: https://github.com/tangxiangong/ClassTop/
+Author: tang xiangong
+Author-email: tangxg16@gmail.com
+License: UNKNOWN
+Keywords: anomalous diffusion,stochastic process
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dotenv
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+# Stochastic Process Simulation
+## Random generator 
+- symmetric stable distribution
+- totally skewed stable distribution
+- power-law distribution
+- discrete finite probability distribution
+
+## Levy process
+- stable Levy process
+- subordinator
+- Poisson process
+## Continuous-time random walk(CTRW)
+- finite and diverging characteristic waiting time
+- finite and diverging jump length variance 
+## Alternating process
+- two-states process with Levy walk and Brownian motion
+## Fractional Brownian motion
+
+## Multiple internal states process
+- fractional compound Poisson process
+- Levy walk
+
+
+
+
