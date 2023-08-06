@@ -1,0 +1,16 @@
+biopandas
+biopython
+bioservices
+matplotlib
+multipledispatch
+networkx
+numpy
+pandas
+plotly
+pydantic
+pyyaml>=5.1
+sklearn
+scipy
+tqdm
+wget
+xarray
