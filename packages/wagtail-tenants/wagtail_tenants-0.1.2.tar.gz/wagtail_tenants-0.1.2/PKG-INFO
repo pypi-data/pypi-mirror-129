@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wagtail-tenants
+Version: 0.1.2
+Summary: Adds multitenancy based on django_tenants to wagtail cms
+Author: Boris Brue
+Author-email: boris@zuckersalzundpfeffer.de
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: docs
+Requires-Dist: django-tenants (>=3.3.4,<4.0.0)
+Requires-Dist: sphinx (>=3,<4); extra == "docs"
+Requires-Dist: wagtail (>=2.15.1,<3.0.0)
