@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: decy-tools
+Version: 2.0.3.dev3
+Summary: CLI tool to utilize with Decypher automation 
+Home-page: https://gitlab.com/decyphertech/decy-tools
+Author: Jakson Wainwright
+Author-email: jaxonawain@gmail.com
+License: MIT
+Keywords: decypher automation
+Platform: UNKNOWN
+Requires-Python: >=3.8.2
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: prompt-toolkit (==3.0.23)
+Provides-Extra: build
+Requires-Dist: wheel-0.37.0 ; extra == 'build'
+Requires-Dist: black (==20.8b1) ; extra == 'build'
+Provides-Extra: test
+Requires-Dist: pytest (==6.2.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'test'
+Requires-Dist: toml (==0.10.2) ; extra == 'test'
+
+# decy-tools
+
+
+
+## Features
+
+- Provides extensible CLI application with ability to easily add functionality 
+- Requires Python 3.8.2 or higher
+
+
+## Tech
+
+This application uses the following:
+
+- [Pytest] - Unit testing library
+- [Coverage] - Unit testing extension to test branch coverage
+- [Requests] - Python HTTP library
+- [Prompt-Toolkit] - Python Library to ease CLI buildout
+- [Gitlab CI] - Used to build developement sdlc pipeline
+- [Setuptools-SCM] - Python automated versioning library
+- [Twine] - used to upload package to PyPi
+
+## Installation
+1. Run `pip install decy-tools`
+2. Ensure that you have `DECY_GATEWAY_TOKEN` set as an environment variable. See ITG for the token. The application will use this to authenticate against our api gateway
+
+## Usage:
+Currently the usage in place is:
+
+```bash
+usage: decy-tool [-h] {new-email-interactive} ...
+
+positional arguments:
+  {new-email-interactive}
+
+optional arguments:
+  -h, --help            show this help message and exit
+```
+
+## Troubleshooting
+Error: `2021-12-03 12:00:20,831 :: root :: CRITICAL :: {"message":"Forbidden"}`
+This means that the API key you have set to the env. variable of `DECY_GATEWAY_TOKEN` is incorrect. 
+
+Timeout: This means that the api gateway is unreachable. Check the AWS console to validate the URL
+
+## License
+
+MIT
+
+
+   [git-repo-url]: <t>
+   [Twine]: <https://pypi.org/project/twine/>
+   [Setuptools-SCM]: <https://github.com/pypa/setuptools_scm>
+   [Gitlab CI]: <https://docs.gitlab.com/ee/ci/>
+   [Prompt-Toolkit]: <https://python-prompt-toolkit.readthedocs.io/en/master/>
+   [Requests]: <https://docs.python-requests.org/en/latest/>
+   [Coverage]: <https://pytest-cov.readthedocs.io/en/latest/>
+   [Pytest]: <https://docs.pytest.org>
+
