@@ -1,0 +1,12 @@
+aiokilogram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiokilogram/action.py,sha256=XxOqUF_dleDAB7QPUGUQSZ-6N4lU7yGKeKL4-LEd_Yg,4798
+aiokilogram/bot.py,sha256=typIOmulQ--guBDosZJLufG5fw1x5KNaYqQSsRUEc6A,1117
+aiokilogram/dispatcher.py,sha256=ji5QnL7ZkUAuMQC5eTLhUsJLTtwGe1IlipZVf-6KiUs,1507
+aiokilogram/handler.py,sha256=9IAvqKp_YHKS222bW191_ldshHUB4Py2kpbAsRJIYmY,2433
+aiokilogram/page.py,sha256=NiRGCGfQw_a15tqEy1zKfEnqeodTVIycPCR5y7CpvCo,1612
+aiokilogram/settings.py,sha256=g5XN09akicA2Mq2qi_g-tplGJCHvGttYnw4yJH1JvmE,230
+aiokilogram-0.0.4.dist-info/LICENSE,sha256=pyhqjIsFfdNPFpJ1MJiWHqi2BjMGr8fxS-FF9oRbiHM,1074
+aiokilogram-0.0.4.dist-info/METADATA,sha256=EVNwC04b0SsfZXnj-TQMBz_y4x0mnwMMf92Rw3NCyqI,1597
+aiokilogram-0.0.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aiokilogram-0.0.4.dist-info/top_level.txt,sha256=aV1QBUjsrOBx9bFhOf1dSWqGTvZKjtbNF2AZiDU09Zk,12
+aiokilogram-0.0.4.dist-info/RECORD,,
