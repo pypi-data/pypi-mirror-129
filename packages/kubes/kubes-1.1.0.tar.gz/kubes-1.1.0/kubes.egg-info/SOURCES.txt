@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/kubes
+kubes/__init__.py
+kubes/kubes.py
+kubes.egg-info/PKG-INFO
+kubes.egg-info/SOURCES.txt
+kubes.egg-info/dependency_links.txt
+kubes.egg-info/top_level.txt
