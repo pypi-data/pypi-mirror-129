@@ -1,0 +1,9 @@
+zensols/db/__init__.py,sha256=ggR77733sXzQGYZ5783ARNilEY1F_9SQ9fmUFRmncr0,88
+zensols/db/bean.py,sha256=iC7Er6JGxKg9VAWuV3FXm8SG9eOhT2pfVHrdXa1SGxc,20183
+zensols/db/dataclass.py,sha256=FSTGg-AGNYdCdb95tERvZUDMxu54_01ZRhkzXyoQqXY,2284
+zensols/db/parse.py,sha256=tY9kznB-BJIsOilcLE3BygCC2kM93bFnW1bpPKbkmxw,3304
+zensols/db/sqlite.py,sha256=Yk3f_gmMFLdI0eFSj2QeqW5cgm0Br67kWStLbO27cTk,2338
+zensols.db-0.1.0.dist-info/METADATA,sha256=bRP0pqDUR9LM3SXrz-OZ35BUPobzV1Ys4ATmRZYrFy8,6384
+zensols.db-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+zensols.db-0.1.0.dist-info/top_level.txt,sha256=1x25IoDg38dfH00XlJMRcScl-swLzNUxh7p0JsaMP4s,11
+zensols.db-0.1.0.dist-info/RECORD,,
