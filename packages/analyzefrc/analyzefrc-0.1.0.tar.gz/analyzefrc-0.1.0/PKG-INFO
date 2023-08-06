@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: analyzefrc
+Version: 0.1.0
+Summary: Plots, analysis and resolution measurement of microscopy images using Fourier Ring Correlation (FRC).
+Author: Tip ten Brink
+Author-email: T.M.tenBrink@student.tudelft.nl
+Requires-Python: >=3.9,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.3.2,<9.0.0)
+Requires-Dist: deco (>=0.6.3,<0.7.0)
+Requires-Dist: frc (>=0.1.0,<0.2.0)
+Requires-Dist: loess (>=2.1.1,<3.0.0)
+Requires-Dist: matplotlib (>=3.4,<4.0)
+Requires-Dist: readlif (>=0.6.5,<0.7.0)
