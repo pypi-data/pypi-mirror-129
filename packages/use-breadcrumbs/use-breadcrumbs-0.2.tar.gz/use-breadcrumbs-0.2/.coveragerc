@@ -1,0 +1,5 @@
+[run]
+omit =
+    breadcrumbs/testsuite/*
+    breadcrumbs/namedobject.py
+
