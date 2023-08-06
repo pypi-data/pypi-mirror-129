@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: kramer
+Version: 0.0.dev
+Summary: Method of signal reconstruction from collected samples
+Home-page: UNKNOWN
+Author: Rafael Benevides
+Author-email: rafaeluz821@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
