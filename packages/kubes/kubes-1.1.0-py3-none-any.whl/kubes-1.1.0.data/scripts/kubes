@@ -1,0 +1,3 @@
+#!python
+from kubes import Kubes
+Kubes.cli()
