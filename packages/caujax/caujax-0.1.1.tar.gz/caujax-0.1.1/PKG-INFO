@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: caujax
+Version: 0.1.1
+Summary: Causal Jax
+Home-page: https://github.com/caujax/caujax
+License: Apache-2.0
+Keywords: Causal Inference,Jax,Machine Learning
+Author: Jeong-Yoon Lee
+Author-email: jeongyoon.lee1@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jax (>=0.2.25,<0.3.0)
+Project-URL: Repository, https://github.com/caujax/caujax
+Description-Content-Type: text/markdown
+
+# caujax
