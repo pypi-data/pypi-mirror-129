@@ -1,0 +1,74 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "oplab_pipeline"
+version = "0.1.11"
+description = "Toolchain for AUV dive processing, camera calibration and image correction"
+license = "BSD"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development"]
+homepage = "https://github.com/ocean-perception/oplab_pipeline"
+authors = ["Ocean Perception - University of Southampton <miquel.massot-campos@soton.ac.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "*"
+argcomplete = ">=1.12.3"
+argparse = ">=1.1"
+colour-demosaicing = ">=0.1.5"
+geographiclib = ">=1.50"
+imageio = ">=2.6.1"
+joblib = ">=0.14.1"
+matplotlib = ">=3.2.1"
+numba = ">=0.51.2"
+numpy = ">=1.17.3"
+opencv-python = ">=4.1.2"
+pandas = ">=0.25.3"
+pillow = ">=7.2.0"
+plotly = ">=4.7.1"
+plyfile = ">=0.7.2"
+prettytable = ">=0.7.2"
+psutil = ">=5.8.0"
+pynmea2 = ">=1.15.0"
+pytz = ">=2019.3"
+pyyaml = ">=3.12"
+scikit-image = ">=0.17"
+scipy = ">=1.4.1"
+tqdm = ">=4.40.2"
+wheel = ">=0.30.0"
+
+[tool.poetry.extras]
+tornado = ["tornado"]
+docs = [
+    "sphinx",
+    "sphinx-autobuild",
+    "sphinx-rtd-theme",
+]
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+version_variable = "oplab_pipeline/__init__.py:__version__"
+branch = "main"
+build_command = "pip install poetry && poetry build"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+quiet = true
+
+[tool.coverage.run]
+branch = true
+source = ["auv_nav", "auv_cal", "oplab", "correct_images"]
+
+[tool.coverage.report]
+ignore_errors = true
