@@ -1,0 +1,7 @@
+LICENSE.md
+setup.py
+ovos_bus.egg-info/PKG-INFO
+ovos_bus.egg-info/SOURCES.txt
+ovos_bus.egg-info/dependency_links.txt
+ovos_bus.egg-info/requires.txt
+ovos_bus.egg-info/top_level.txt
