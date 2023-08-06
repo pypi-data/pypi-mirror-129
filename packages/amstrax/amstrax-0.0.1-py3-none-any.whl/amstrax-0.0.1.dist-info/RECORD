@@ -1,0 +1,17 @@
+amstrax/SiPMdata.py,sha256=VYEOdMcFLYLXeC_sURZainHP8aAGdt4mmNnPDjvHZ6c,15868
+amstrax/__init__.py,sha256=2HBNQ4u7EHSktZpAaBv8WPmnHlRu1CzO3HN5OJhH9x4,671
+amstrax/common.py,sha256=0Rfa5HbVfEWe8MDM5nFvNw6KvNgwOSdTxNVnHQuxWDc,5604
+amstrax/contexts.py,sha256=L06EZCQiAwoNTMG7uTxy2OON2YPuTi1SQhDhR3uk25k,3579
+amstrax/daqreader.py,sha256=p7N9R8YxR7YhUWouw7cGLmbsRktxUzJXlMxcE9sWnWs,15504
+amstrax/event_processing.py,sha256=s5eU8hlQ9IJVRgFtv3fOeR53m8nW8IcC_5oJEydfbDA,11962
+amstrax/hitfinder_thresholds.py,sha256=sBjKF-SIF9kcMK0sanqy9nTrzI-6trKtR9oPxWlAr6A,1129
+amstrax/itp_map.py,sha256=lmMHa9IUmxGJ7nW6U_l0WBLmwrZqjrBB9cLc44wAvS4,4143
+amstrax/pax_interface.py,sha256=BOkhJbCKqcl6TMqW5E9kGl_S8JTiwjCyQXRJhVkRbO0,12622
+amstrax/peak_processing.py,sha256=VIs0OjP_KsLqSI37MClzZ00neGz7Y2QPTuPzGPe5yxE,14035
+amstrax/pulse_processing.py,sha256=fxI7D5pNc6Y1j7Oq-6NtnoyoXO8PBzDhN4lHakuR8ss,9239
+amstrax/pulse_processing_alt_baseline.py,sha256=SWYYdm-an9z6Zov0k8FKVr3OPs9kaX-Dq_3ems6WKc4,24941
+amstrax/rundb.py,sha256=xG3O-fhyUXRl1srwK8roXWU9lpTJ_9Ec8IcxQXoqj2U,8408
+amstrax-0.0.1.dist-info/METADATA,sha256=NfuA0IWuM2vuiJb_pe8hwa2nyXdVafSWvM4hx072qGI,2039
+amstrax-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+amstrax-0.0.1.dist-info/top_level.txt,sha256=28DgZvciA-gcAJVH6JvB6cs-6ErYDX-qvxPUYmxr9Lw,8
+amstrax-0.0.1.dist-info/RECORD,,
