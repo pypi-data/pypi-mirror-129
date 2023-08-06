@@ -1,0 +1,9 @@
+batool/__init__.py,sha256=hky15J6b00pvZZCpUcgqcy0_KZv2oYznWk41KM73kvQ,221
+batool/utils/__init__.py,sha256=ihMXSGBAM9c-MIDNa8cWw1XU-D6nMxQDzFsWdhPxOZ0,194
+batool/utils/base.py,sha256=AnCoxZuXC0qSpmeVWQasBWxst1eXWEdWMQ8YpDK1480,1941
+batool/utils/fs.py,sha256=J3Jb9ckyKfNEvDX5NFvctWtf__TUm5Y3VZIgRKSfJKU,3053
+batool/utils/oss/__init__.py,sha256=lANK8956-5NQndpDj6UMX27U_CX5xxBZxLIFDUyYSYY,194
+batool/utils/oss/s3help.py,sha256=UJgS1pOOMh-PCWYlB8auYLUdZgG7apihG6F-n-9X5Zg,2329
+batool-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+batool-0.1.5.dist-info/METADATA,sha256=G3mTZJomPfZNefLF7a-Lo2L4M7e9Nd5VhL5BtYf-X9g,427
+batool-0.1.5.dist-info/RECORD,,
