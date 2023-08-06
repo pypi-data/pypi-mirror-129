@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/opynfec/__init__.py
+src/opynfec/api_wrapper.py
+src/opynfec.egg-info/PKG-INFO
+src/opynfec.egg-info/SOURCES.txt
+src/opynfec.egg-info/dependency_links.txt
+src/opynfec.egg-info/requires.txt
+src/opynfec.egg-info/top_level.txt
