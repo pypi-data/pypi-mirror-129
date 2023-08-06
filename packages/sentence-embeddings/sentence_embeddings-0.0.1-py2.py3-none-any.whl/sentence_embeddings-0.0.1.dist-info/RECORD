@@ -1,0 +1,6 @@
+sentence_embeddings/__init__.py,sha256=FZBKgwTCIGZgzDBqcdW2zCh6MIQVpw8nFeswJtiUOcc,88
+sentence_embeddings/embeddings.py,sha256=-LUsb2IUSzbrpTSjuRhXPb-mdGUo-Ako8O-zwHYItBo,2569
+sentence_embeddings-0.0.1.dist-info/METADATA,sha256=VIOGZQ-Ix0lpyCo2JvLuShZB219Ca1MXtY8zE-g4oAk,350
+sentence_embeddings-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sentence_embeddings-0.0.1.dist-info/top_level.txt,sha256=mRyNuNlxB2zbs24G-bsuA4NaOqHErcJEl9twtcpj1lc,20
+sentence_embeddings-0.0.1.dist-info/RECORD,,
