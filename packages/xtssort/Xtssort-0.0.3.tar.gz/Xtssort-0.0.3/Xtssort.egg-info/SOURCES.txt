@@ -1,0 +1,6 @@
+README.rst
+setup.py
+Xtssort.egg-info/PKG-INFO
+Xtssort.egg-info/SOURCES.txt
+Xtssort.egg-info/dependency_links.txt
+Xtssort.egg-info/top_level.txt
