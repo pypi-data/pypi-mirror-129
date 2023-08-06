@@ -1,0 +1,30 @@
+digraph {
+	2544016421648 [label=<<font point-size='10'>100&#8594;20</font>> fillcolor="white:#D5F5E3" gradientangle=90 shape=invhouse style=filled]
+	subgraph "cluster_Atelier 2" {
+		color=blue style="dashed,rounded"
+		label=<<font point-size='10'>Atelier 2</font>> labelfontcolor="#ff0000"
+		fontname=verdana
+		2544016418128 [label=<<font point-size='10'><font color='black'><b>Post3</b></font><br/>30.00 kg/h</font>> fontname=verdana shape=box style=""]
+		2544016420384 [label=<<font point-size='10'><font color='black'><b>Post4</b></font><br/>4.00 kg/h</font>> fontname=verdana shape=box style=""]
+	}
+	subgraph "cluster_Atelier 1" {
+		color=blue style="dashed,rounded"
+		label=<<font point-size='10'>Atelier 1</font>> labelfontcolor="#ff0000"
+		fontname=verdana
+		2544016421696 [label=<<font point-size='10'><font color='black'><b>Post1</b></font><br/>2.00 kg/h</font>> fontname=verdana shape=box style=""]
+		2544016422176 [label=<<font point-size='10'><font color='black'><b>Post2</b></font><br/>5.00 kg/h</font>> fontname=verdana shape=box style=""]
+	}
+	fw [label=<<font point-size='10'><b>Freshwater</b><br/><font color='blue'>82.00 m3/h</font></font>> fillcolor=lightblue1 fontname=verdana style=filled]
+	fw -> 2544016421696 [label=<<font point-size='10'><b><font color='blue'>20.00</font></b></font>> arrowhead=empty color=dodgerblue]
+	fw -> 2544016422176 [label=<<font point-size='10'><b><font color='blue'>50.00</font></b></font>> arrowhead=empty color=dodgerblue]
+	fw -> 2544016418128 [label=<<font point-size='10'><b><font color='blue'>12.00</font></b></font>> arrowhead=empty color=dodgerblue]
+	2544016421648 -> 2544016418128 [label=<<font point-size='10'><b><font color='blue'>10.00</font></b></font>> arrowhead=empty color="#145A32"]
+	2544016422176 -> 2544016418128 [label=<<font point-size='10'><b><font color='blue'>18.00</font></b><br/><font color='#145A32'>100</font></font>> arrowhead=empty color=black]
+	2544016422176 -> 2544016420384 [label=<<font point-size='10'><b><font color='blue'>5.71</font></b><br/><font color='#145A32'>100</font></font>> arrowhead=empty color=black]
+	2544016421696 -> 2544016421648 [label=<<font point-size='10'><b><font color='blue'>10.00</font></b></font>> arrowhead=empty color="#145A32" penwidth=1 weight=1]
+	ww [label=<<font point-size='10'><b>Wastewater</b><br/><font color='blue'>92.00 m3/h</font></font>> fillcolor="#ABEBC6" fontname=verdana style=filled]
+	2544016421696 -> ww [label=<<font point-size='10'><b><font color='blue'>20.00</font></b></font>> arrowhead=empty color=goldenrod3 style=""]
+	2544016422176 -> ww [label=<<font point-size='10'><b><font color='blue'>26.29</font></b></font>> arrowhead=empty color=goldenrod3 style=""]
+	2544016418128 -> ww [label=<<font point-size='10'><b><font color='blue'>40.00</font></b></font>> arrowhead=empty color=goldenrod3 style=""]
+	2544016420384 -> ww [label=<<font point-size='10'><b><font color='blue'>5.71</font></b></font>> arrowhead=empty color=goldenrod3 style=""]
+}
