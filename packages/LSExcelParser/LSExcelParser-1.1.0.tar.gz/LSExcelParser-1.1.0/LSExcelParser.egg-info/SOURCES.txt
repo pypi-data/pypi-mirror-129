@@ -1,0 +1,8 @@
+README.md
+setup.py
+LSExcelParser/__init__.py
+LSExcelParser.egg-info/PKG-INFO
+LSExcelParser.egg-info/SOURCES.txt
+LSExcelParser.egg-info/dependency_links.txt
+LSExcelParser.egg-info/requires.txt
+LSExcelParser.egg-info/top_level.txt
