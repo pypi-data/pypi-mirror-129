@@ -1,0 +1,11 @@
+pca/__init__.py,sha256=IGLGJ8ULbIIOMEXi2qalmEUTRFpSfDNVFGbZPqaDwhQ,1310
+pca/examples.py,sha256=cec99QQxrSvIVFXCKJQfknFJuaI8S2dgaF6gtD7Ox90,10185
+pca/pca.py,sha256=t-CrsTcru1f3gGocYROyCxxppcG-tDk6U4nOZO7i6hI,50828
+pca/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pca/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pca/tests/test_pca.py,sha256=RZgDd0I3JJ65KARZAiYlUJkwT00JS2XkMSaMBQ9Acm0,6710
+pca-1.5.5.dist-info/LICENSE,sha256=pCSNOgJv4AYryLJD_ARRUoEAoiS1eJTB6B3bcOx-rHs,1094
+pca-1.5.5.dist-info/METADATA,sha256=xA0pmCgRuIRoxAa9FnFCsJn0JZekkW8ySdd-SPhbZ6E,14198
+pca-1.5.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pca-1.5.5.dist-info/top_level.txt,sha256=78V6i9FlKqgjWTqh7r9Cvm_yg-s14LiL5dbqqbHVvWQ,4
+pca-1.5.5.dist-info/RECORD,,
