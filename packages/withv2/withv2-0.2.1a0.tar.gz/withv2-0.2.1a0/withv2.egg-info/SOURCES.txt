@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+withv2.py
+withv2.egg-info/PKG-INFO
+withv2.egg-info/SOURCES.txt
+withv2.egg-info/dependency_links.txt
+withv2.egg-info/entry_points.txt
+withv2.egg-info/requires.txt
+withv2.egg-info/top_level.txt
