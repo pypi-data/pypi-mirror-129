@@ -1,0 +1,4 @@
+mordred
+pymongo
+scikit-learn<=0.23.2
+seaborn
