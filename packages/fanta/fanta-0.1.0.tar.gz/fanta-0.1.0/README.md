@@ -1,0 +1,37 @@
+# Fanta
+###  Pythonic API Wrapper For Discord, Fork of Speedcord
+
+[![Discord](https://discord.com/api/guilds/912525201017831425/embed.png)](https://discord.gg/8Yyw5uy5CT)
+[![PyPi](https://img.shields.io/pypi/v/fanta.svg)](https://pypi.python.org/pypi/fanta)
+[![Python Versions](https://img.shields.io/pypi/pyversions/fanta.svg)](https://pypi.python.org/pypi/fanta)
+
+
+## Installing
+You can install Fanta from PyPi using the following command:
+
+```bash
+pip install fanta
+```
+
+## Installing Our Speed Version
+You can install Fanta's Speed version using
+
+```bash
+pip install fanta[speed]
+```
+
+It is recommended to **pin the version in production as breaking changes might occur**
+
+
+## Features
+ - Simple sharding for larger bots
+ - More customizablility
+
+## Usage
+There are currently few examples, you are free to contribute new examples
+
+- [Simple command using the `MESSAGE_CREATE` listener](https://github.com/RPSMain/fanta/blob/master/examples/simplecommand.py)
+
+## Contributing
+
+Contributions are more than welcome as long as they follow our [contribution guidelines](https://github.com/RPSMain/fanta/blob/master/CONTRIBUTING.md)
