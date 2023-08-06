@@ -1,0 +1,69 @@
+[tool.black]
+skip-string-normalization = true
+
+[tool.poetry]
+name = "libvcs"
+version = "0.10.1"
+description = "vcs abstraction layer"
+license = "MIT"
+authors = ["Tony Narlock <tony@git-pull.com>"]
+keywords = ["libvcs", "git", "mercurial", "hg", "svn"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Operating System :: POSIX",
+  "Operating System :: MacOS :: MacOS X",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Utilities",
+  "Topic :: System :: Shells"
+]
+homepage = "http://github.com/vcs-python/libvcs/"
+readme = "README.md"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/vcs-python/libvcs/issues"
+Documentation = "https://libvcs.git-pull.com"
+Repository = "https://github.com/vcs-python/libvcs"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+### Docs ###
+sphinx = "*"
+alagitpull = "~0.1.0"
+sphinx-issues = "^1.2.0"
+sphinx-autodoc-typehints = "^1.12.0"
+myst_parser = "^0.15.0"
+
+### Testing ###
+pytest = "*"
+pytest-rerunfailures = "*"
+pytest-mock = "*"
+
+### Coverage ###
+codecov = "*"
+coverage = "*"
+pytest-cov = "*"
+
+### Format ###
+black = {version="==21.9b0", python="^3.6.2"}
+isort = "*"
+
+### Lint ###
+flake8 = "*"
+
+[tool.poetry.extras]
+docs = ["sphinx", "myst_parser", "sphinx-issues", "alagitpull", "sphinx-autodoc-typehints"]
+test = ["pytest", "pytest-rerunfailures", "pytest-mock"]
+coverage = ["codecov", "coverage", "pytest-cov"]
+format = ["black", "isort"]
+lint = ["flake8"]
