@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.8.4
+-----
+
+* Add is\_vehicle\_tracking\_enabled on Vehicle (#370)
