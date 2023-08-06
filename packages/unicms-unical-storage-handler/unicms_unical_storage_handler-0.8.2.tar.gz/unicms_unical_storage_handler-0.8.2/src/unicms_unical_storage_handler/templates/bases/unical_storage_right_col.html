@@ -1,0 +1,45 @@
+{% extends 'bases/unicms_unical.html' %}
+
+{% load i18n %}
+{% load static %}
+
+<!-- load custom template tags -->
+{% load unicms_carousels %}
+{% load unicms_contexts %}
+{% load unicms_menus %}
+{% load unicms_templates %}
+{% load unicms_pages %}
+{% load unicms_publications %}
+
+
+{% block page_title %}{% endblock page_title %}
+{% block page_meta_description %}{{ publication_context.publication.subheading }}{% endblock page_meta_description %}
+{% block page_meta_keywords %}{% for tag in publication_context.publication.tags.all %}{{ tag }},{% endfor %}{% endblock page_meta_keywords %}
+
+{% block container %}
+
+{% breadcrumbs webpath=webpath leaf=handler %}
+
+<div class="container">
+    <div class="col-12 py-5 bd-content">
+        {% block centered_container %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            {% block unical_storage_main %}{% endblock %}
+                        </div>
+                        <div class="col-12 col-md-3 offset-md-1 mt-5 mt-md-0">
+                            {% block unical_storage_right %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+</div>
+
+{% endblock container %}
+

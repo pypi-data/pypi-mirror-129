@@ -1,0 +1,219 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+
+{% block content %}
+<div id="{{ id }}">
+
+    <div v-if="(initial_items && initial_items.length) || parameters">
+
+        {% block filters_doctorateslist %}
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <div class="card-body">
+
+                            <div class="collapse-header" id="heading1">
+                                <button style="padding: 0px; color: #19191a;"
+                                        data-toggle="collapse"
+                                        data-target="#collapse1"
+                                        aria-expanded="false"
+                                        aria-controls="collapse1">
+                                    {% trans "Filters" %}
+                                </button>
+                            </div>
+
+                            <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1">
+                                <!-- Year & Year From & Year To -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="year_input">{% trans "Year" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <span class="input-number">
+                                                        <input type="number"
+                                                               id="year_input"
+                                                               name="year_input"
+                                                               v-on:keyup.enter="{{ id }}.search()">
+                                                        <button class="input-number-add">
+                                                            <span class="sr-only">{% trans "Increase value" %}</span>
+                                                        </button>
+                                                        <button class="input-number-sub">
+                                                            <span class="sr-only">{% trans "Decrease value" %}</span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="year_from_input">{% trans "From" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <span class="input-number">
+                                                        <input type="number"
+                                                               id="year_from_input"
+                                                               name="year_from_input"
+                                                               v-on:keyup.enter="{{ id }}.search()">
+                                                        <button class="input-number-add">
+                                                            <span class="sr-only">{% trans "Increase value" %}</span>
+                                                        </button>
+                                                        <button class="input-number-sub">
+                                                            <span class="sr-only">{% trans "Decrease value" %}</span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="year_to_input">{% trans "To" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <span class="input-number">
+                                                        <input type="number"
+                                                               id="year_to_input"
+                                                               name="year_to_input"
+                                                               v-on:keyup.enter="{{ id }}.search()">
+                                                        <button class="input-number-add">
+                                                            <span class="sr-only">{% trans "Increase value" %}</span>
+                                                        </button>
+                                                        <button class="input-number-sub">
+                                                            <span class="sr-only">{% trans "Decrease value" %}</span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CdS ID & CdS COD & Department ID -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="cds_id_input">{% trans "Course of study ID" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <input type="text"
+                                                           id="cds_id_input"
+                                                           name="cds_id_input"
+                                                           class="form-control"
+                                                           v-on:keyup.enter="{{ id }}.search()">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="cds_cod_input">{% trans "Course of study code" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <input type="text"
+                                                           id="cds_cod_input"
+                                                           name="cds_cod_input"
+                                                           class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="department_id_input">{% trans "Department ID" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <input type="text"
+                                                           id="department_id_input"
+                                                           name="department_id_input"
+                                                           class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Study Plan Code & Cycle -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div>
+                                                <label for="pds_cod_input">{% trans "Study plan code" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <input type="text"
+                                                           id="pds_cod_input"
+                                                           name="pds_cod_input"
+                                                           class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <div class="ml-5 mr-5">
+                                                <label for="cycle_input">{% trans "Cycle" %}</label>
+                                                <div class="w-30 mt-5">
+                                                    <span class="input-number">
+                                                        <input type="number" id="cycle_input" name="cycle_input">
+                                                        <button class="input-number-add">
+                                                            <span class="sr-only">{% trans 'Increase value' %}</span>
+                                                        </button>
+                                                        <button class="input-number-sub">
+                                                            <span class="sr-only">{% trans 'Decrease value' %}</span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group-append d-flex justify-content-center">
+                                    <div class="input-group-text">
+                                        <svg class="icon icon-sm icon-muted">
+                                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-search"></use>
+                                        </svg>
+                                    </div>
+                                    <button class="btn btn-primary"
+                                            type="button"
+                                            id="search-button"
+                                            v-on:click="search()">
+                                        {% trans "Search" %}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock filters_doctorateslist %}
+
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div class="row" v-else>
+            <div class="col-12 col-lg-6" v-for="item in items.results">
+                <!--start card-->
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg">
+                        <div class="card-body">
+                            <h5 class="card-title">[[ item.DoctorateCdsName ]]</h5>
+                            <ul v-for="(value, name) in item">
+                                <li>
+                                    [[ labels[name] ]]: [[ value ]]
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end card-->
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,128 @@
+{% load static %}
+{% load i18n %}
+
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% random_id uid as id %}
+{% include "includes/unical_storage_loading.html" %}
+
+{% get_allowed_website request.get_host as host %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% settings_value "PUBLICATIONS_INFO_NOT_SHOW" as fields_to_hide %}
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_ADDRESSBOOK_VIEW_PREFIX_PATH" as addressbook_prefix %}
+
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length">
+
+        <div class="row">
+            <div class="col-12 col-lg-9 my-3 my-lg-0">
+                <h1 class="lighter">
+                    [[ item.PublicationTitle ]]
+                </h1>
+                <h3 class="lighter">
+                    [[ item.PublicationCommunity ]]
+                </h3>
+                <h4 class="lighter">
+                    [[ item.PublicationCollection ]]
+                </h4>
+            </div>
+        </div>
+        <hr class="my-4 bordeaux-unical-bg">
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <tbody>
+
+                    <tr v-if="item.Publication">
+                        <td>[[ item.PublicationLabel ]]</td>
+                        <td>[[ item.Publication ]]</td>
+                    </tr>
+
+                    <tr v-for="(value, name) in item" v-if="value && !fields_to_not_show.includes(name) && value != ''">
+                        <td>[[ labels[name] ]]</td>
+
+                        <td v-if="typeof value === 'object'">
+                            <ul v-if="name == 'PublicationAuthors'">
+                                <li v-for="subvalue in value">
+                                    <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ subvalue.AuthorId ]] +'/'">
+                                        [[ subvalue.AuthorName]]
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul v-else>
+                                <li v-for="v in value">
+                                    <span style="white-space: pre-line;">
+                                        [[ v ]]
+                                    </span>
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else-if="typeof value === 'array'">
+                            <ul>
+                                <li v-for="subvalue in value">
+                                    [[ subvalue ]]
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else>
+                            <span style="white-space: pre-line;">
+                                [[ value ]]
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>{% trans "Link" %}</td>
+                        <td>
+                            <a :href="item.PublicationUrl" target="_blank">
+                                [[ item.PublicationUrl ]]
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+</div>
+<script>
+    var {{ id }} = new Vue({
+        el: '[id="{{ id }}"]',
+        data() {
+            return {
+                item: {},
+                labels: {},
+                url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+                is_loading: true,
+                loader_source: '{{ url }}',
+                fields_to_not_show: {{ fields_to_hide|safe }},
+            }
+        },
+        mounted() {
+            this.CallURL();
+        },
+        methods: {
+            CallURL() {
+                axios
+                    .get(this.url)
+                    .then(response => {
+                        this.item = response.data.results;
+                        this.labels = response.data.labels;
+                        this.is_loading = false
+                    })
+            }
+        }
+    })
+</script>
