@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+voidgame.py
+voidgame.egg-info/PKG-INFO
+voidgame.egg-info/SOURCES.txt
+voidgame.egg-info/dependency_links.txt
+voidgame.egg-info/top_level.txt
