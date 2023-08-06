@@ -1,0 +1,34 @@
+#
+# Translators:
+# Luan Nguyen <lihavim@gmail.com>, 2021
+# Hồng Quân Nguyễn <ng.hong.quan@gmail.com>, 2021
+#
+msgid ""
+msgstr ""
+"Last-Translator: Hồng Quân Nguyễn <ng.hong.quan@gmail.com>, 2021\n"
+"Language-Team: Vietnamese (https://www.transifex.com/torchbox/teams/8009/"
+"vi/)\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Delete"
+msgstr "Xoá"
+
+msgid "Edit"
+msgstr "Biên tập"
+
+msgid "Edit this %s"
+msgstr "Biên tập %s này"
+
+msgid "Publishing..."
+msgstr "Đang xuất bản..."
+
+msgid "Save"
+msgstr "Lưu"
+
+msgid "Saving..."
+msgstr "Đang lưu..."
+
+msgid "Unpublish"
+msgstr "Thu hồi xuất bản"
