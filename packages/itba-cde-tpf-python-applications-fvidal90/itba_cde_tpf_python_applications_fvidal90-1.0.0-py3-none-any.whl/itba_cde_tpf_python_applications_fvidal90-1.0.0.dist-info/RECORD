@@ -1,0 +1,10 @@
+fvidal_packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fvidal_packages/db_api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fvidal_packages/db_api_client/parent_cli.py,sha256=bfyXY9MSHU67GUvKSmvl912H8_Mw9eCIZsjqyJc1mxM,3426
+fvidal_packages/db_api_client/postgres_cli.py,sha256=w21IxJwCyH9RAPNCKLeFMhLZ-fEvkSAvqqAJgDlQTvE,1238
+fvidal_packages/db_api_client/sqlite_cli.py,sha256=xLXyS9mV5fecGltjO24-DiQ48nVqkOMlg_8pRE6b53M,535
+fvidal_packages/stock_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fvidal_packages/stock_utils/stock_utils.py,sha256=vTqQ8hQjRvR5IuRyBAHjrgrn3J0zlGPCWUGRFTSXhNk,1304
+itba_cde_tpf_python_applications_fvidal90-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+itba_cde_tpf_python_applications_fvidal90-1.0.0.dist-info/METADATA,sha256=VSLPFF18dYiLkIlW-sgC0gpoIuokDp7t6p7dm1dHQHA,556
+itba_cde_tpf_python_applications_fvidal90-1.0.0.dist-info/RECORD,,
