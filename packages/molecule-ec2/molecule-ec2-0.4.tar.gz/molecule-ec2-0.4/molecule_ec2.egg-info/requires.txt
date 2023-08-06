@@ -1,0 +1,8 @@
+molecule>=3.2
+pyyaml>=5.1
+
+[:platform_system == "Windows"]
+boto3
+
+[test]
+molecule[test]
