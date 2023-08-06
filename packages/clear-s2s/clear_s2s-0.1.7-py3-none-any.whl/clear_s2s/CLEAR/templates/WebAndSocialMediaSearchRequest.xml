@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wasm:WebAndSocialMediaSearchRequest xmlns:wasm="http://clear.thomsonreuters.com/api/search/2.0">
+    <PermissiblePurpose>
+        <GLB>Q</GLB>
+        <DPPA>0</DPPA>
+        <VOTER>7</VOTER>
+    </PermissiblePurpose>
+    <Reference></Reference>
+    <Criteria>
+        <wasm1:WebAndSocialMediaSearchCriteria xmlns:wasm1="com/thomsonreuters/schemas/webandsocialmedia-search">
+            {% if first_name is defined %}<FirstName>{{ first_name }}</FirstName>{% endif %}
+            {% if last_name is defined %}<LastName>{{ last_name }}</LastName>{% endif %}
+            {% if middle_name is defined %}<MiddleNameOrInitial>{{ middle_name }}</MiddleNameOrInitial>{% endif %}
+            {% if dob is defined %}<DateOfBirth>{{ dob }}</DateOfBirth>{% endif %}
+            {% if phone is defined %}<Phone>{{ phone }}</Phone>{% endif %}
+            {% if business_name is defined %}<BusinessName>{{ business_name }}</BusinessName>{% endif %}
+            {% if email_address is defined %}<EmailAddress>{{ email_address }}</EmailAddress>{% endif %}
+            {% if username is defined %}<Username>{{ username }}</Username>{% endif %}
+            {% if employer is defined %}<Employer>{{ employer }}</Employer>{% endif %}
+            {% if school is defined %}<School>{{ school }}</School>{% endif %}
+            {% if address is defined %}<Address>{{ address }}</Address>{% endif %}
+            {% if city is defined %}<City>{{ city }}</City>{% endif %}
+            {% if zip is defined %}<ZipCode>{{ zip }}</ZipCode>{% endif %}
+            {% if state is defined %}<State>{{ state }}</State>{% endif %}
+            {% if territory is defined %}<Territory>{{ territory }}</Territory>{% endif %}
+        </wasm1:WebAndSocialMediaSearchCriteria>
+    </Criteria>
+</wasm:WebAndSocialMediaSearchRequest>
