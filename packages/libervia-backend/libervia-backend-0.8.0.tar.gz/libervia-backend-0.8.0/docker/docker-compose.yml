@@ -1,0 +1,18 @@
+version: "3.6"
+services:
+
+  backend:
+    image: "libervia/backend:${DOCKER_LIBERVIA_REV:-dev}"
+    build:
+      context: backend-dev
+      args:
+        REVISION: "${DOCKER_LIBERVIA_REV:-}"
+
+  web:
+    image: "libervia/web:${DOCKER_LIBERVIA_REV:-dev}"
+    build:
+      context: libervia-web-dev
+      args:
+        REVISION: "${DOCKER_LIBERVIA_REV:-}"
+    depends_on:
+      - backend
