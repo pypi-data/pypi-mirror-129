@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+TiniLang/__init__.py
+TiniLang/__main__.py
+TiniLang/cli.py
+TiniLang/interpreter.py
+TiniLang/translator.py
+TiniLang.egg-info/PKG-INFO
+TiniLang.egg-info/SOURCES.txt
+TiniLang.egg-info/dependency_links.txt
+TiniLang.egg-info/entry_points.txt
+TiniLang.egg-info/requires.txt
+TiniLang.egg-info/top_level.txt
+images/victini.gif
