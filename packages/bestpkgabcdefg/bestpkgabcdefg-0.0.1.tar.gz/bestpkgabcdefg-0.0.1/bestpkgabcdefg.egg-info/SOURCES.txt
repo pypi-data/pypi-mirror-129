@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bestpkg/__init__.py
+bestpkgabcdefg.egg-info/PKG-INFO
+bestpkgabcdefg.egg-info/SOURCES.txt
+bestpkgabcdefg.egg-info/dependency_links.txt
+bestpkgabcdefg.egg-info/top_level.txt
