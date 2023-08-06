@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: uuid6
+Version: 0.0.0.dev0
+Summary: New time-based UUID formats which are suited for use as a database key
+Home-page: https://github.com/oittaa/uuid6-python
+Author: Oittaa
+Author-email: 
+License: UNKNOWN
+Keywords: uuid,uuid6,uuid7,uuidv6,uuidv7
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# uuid6
+New time-based UUID formats which are suited for use as a database key.
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+This module extends immutable UUID objects (the UUID class) with the functions `uuid6()` and `uuid7()` from [the IETF draft](https://github.com/uuid6/uuid6-ietf-draft).
+
+## Install
+
+```shell
+pip install uuid6
+```
+
+## Usage
+
+```python
+from uuid6 import uuid6, uuid7
+
+my_uuid = uuid6()
+print(my_uuid)
+assert my_uuid < uuid6()
+
+my_uuid = uuid7()
+print(my_uuid)
+assert my_uuid < uuid7()
+```
+
+
