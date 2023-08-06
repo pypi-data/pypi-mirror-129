@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: test_executor
+Version: 0.0.8
+Summary: This modules allows you to execute tests in the best way possible!
+Home-page: https://github.com/idan57/test_executor
+Author: Idan Cohen
+Author-email: idan57@gmail.com
+License: UNKNOWN
+Description: # Test Executor
+        
+        This will allow you to execute your tests in serial and parallel mode!
+        
+        Furture information will be provided in the future.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
