@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: okta-token-fetcher
+Version: 0.0.1
+Summary: Used to fetch OKTA tokens for an application using web a browser that redirects to a commandline server
+Home-page: UNKNOWN
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+License: Apache 2.0
+Description: Used to fetch OKTA tokens for an application using web a browser that redirects to a commandline server
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
