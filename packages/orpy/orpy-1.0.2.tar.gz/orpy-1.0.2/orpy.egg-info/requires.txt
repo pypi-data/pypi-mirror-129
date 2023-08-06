@@ -1,0 +1,5 @@
+cliff!=2.9.0,>=2.8.0
+pbr>=4.1.0
+pyperclip!=1.8.1
+requests
+six>=1.10.0
