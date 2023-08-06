@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: airflow-providers-tesouro-gerencial
+Version: 1.0.3
+Summary: Provider do Airflow para comunicação com Tesouro Gerencial
+Home-page: UNKNOWN
+Author: Carlos Alberto Duarte Pinto
+Author-email: carlos.adpinto@gmail.com
+License: MIT
+Project-URL: Homepage, https://tesourogerencial.tesouro.gov.br/
+Project-URL: Source Code, https://github.com/CarlosAdp/airflow-providers-tesouro-gerencial
+Keywords: airflow,tesouro,administracao,governo
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Description-Content-Type: text/markdown
+Requires-Dist: apache-airflow
+Requires-Dist: airflow-providers-siafi
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: apache-airflow[mongo]
+Requires-Dist: humanize
+Requires-Dist: openpyxl
+
+# airflow-providers-tesouro-gerencial
+
+Provider do Airflow para comunicação com [Tesouro Gerencial](https://tesourogerencial.tesouro.gov.br/).
+
+
+## Instalação
+
+```shell
+pip install airflow-providers-tesouro-gerencial
+```
+
+## Conteúdo
+
+- Hook para conexão com Tesouro Gerencial, que contém métodos para:
+    - Entrada e saída de contexto (clásula `with`), inicializando e encerrando sessão no Tesouro Gerencial
+    - Execução e exportação de relatório
+
+- Transfers que carregam relatórios do Tesouro Gerencial para:
+    - Arquivo local;
+    - Banco MongoDB
+
+## Exemplo de Uso
+
+Transferência de relatório para arquivo local:
+
+```python
+from datetime import datetime, timedelta
+
+from airflow.decorators import dag
+from airflow.providers.tesouro_gerencial.transfers.relatorio_para_arquivo import RelatorioParaArquivo
+
+
+@dag(schedule_interval=None, start_date=datetime(2021, 1, 1))
+def teste_tesouro_gerencial():
+    teste = RelatorioParaArquivo(
+        task_id='teste1',
+        id_conta_siafi='teste',
+        id_relatorio='970A89D511EC923631090080EFC5BFD1',
+        caminho_arquivo='/tmp/tg.xlsx',
+        respostas_prompts_valor=['622110000', '622120000'],
+        retries=10,
+        retry_delay=timedelta(minutes=2)
+    )
+
+minha_dag = teste_tesouro_gerencial()
+```
+
+Transferência para banco MongoDB
+
+```python
+from datetime import datetime, timedelta
+
+from airflow.decorators import dag
+from airflow.providers.tesouro_gerencial.transfers.relatorio_para_mongo import RelatorioParaMongo
+
+
+@dag(schedule_interval=None, start_date=datetime(2021, 1, 1))
+def teste_tesouro_gerencial():
+    teste = RelatorioParaMongo(
+        task_id='teste2',
+        id_conta_siafi='teste',
+        id_relatorio='970D89D511EC423631090080EFA5BFD1',
+        id_conexao_mongo='teste_mongo',
+        nome_colecao='teste',
+        respostas_prompts_valor=['622110000', '622120000'],
+        truncar_colecao=True,
+        retries=10,
+        retry_delay=timedelta(minutes=2)
+    )
+
+
+minha_dag = teste_tesouro_gerencial()
+```
+
+
