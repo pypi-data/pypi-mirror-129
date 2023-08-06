@@ -1,0 +1,79 @@
+
+graph_api:
+  host:                  'https://graph.facebook.com/v11.0'
+  request_media_path:    '/{id}/media?fields=id,timestamp,caption,media_type,permalink,media_url,username,comments_count,like_count'
+  request_stories_path:  '/{id}/stories?fields=id,timestamp,caption,media_type,permalink,media_url,username'
+  # double curly braces for literal { and } (not for substitution)
+  request_comments_path: '/{id}/comments?fields=id,like_count,text,timestamp,username,replies{{text,id,like_count,timestamp,username}}'
+  historic_suffix:       '&since={date_limit}' 
+
+  
+queries:
+  get_users: |    
+    SELECT ua.instagram_id, ua.access_token
+    FROM UsersAuth ua 
+    JOIN UserAuthsInClient uac ON uac.instagram_id = ua.instagram_id
+    JOIN Clients c ON uac.client_id = c.id
+    WHERE ua.data_access_until > CURRENT_TIMESTAMP()
+    AND ua.instagram_id IS NOT NULL
+    AND ua.access_token is not null
+    AND uac.active = 1 AND ua.active = 1
+    AND c.service_level != "DEACTIVATED"
+
+  insert_empty_user: |
+    INSERT IGNORE INTO Users (id, username)
+    VALUES ('{id}', '{username}')
+            
+  insert_user: |
+    INSERT INTO Users (id, username, description, url, profile_image, 
+                       media_count, followers_count, follows_count)
+    VALUES ('{id}', '{username}', '{description}', '{url}', '{profile_image}',
+            {media_count}, {followers_count}, {follows_count})
+    ON DUPLICATE KEY UPDATE 
+            username = '{username}', 
+            description = '{description}',
+            url = '{url}', 
+            profile_image = '{profile_image}', 
+            media_count = {media_count}, 
+            followers_count = {followers_count}, 
+            follows_count = {follows_count}
+
+  insert_media: |
+    INSERT INTO Media (id, user_id, created_at, fetched_at, type,
+                       caption, url, likes_count, comments_count,
+                       image, is_story)
+    VALUES ('{id}', {user_id}, '{created_at}', '{fetched_at}', '{type}',
+            '{caption}', '{url}', {likes_count}, {comments_count},
+            '{image}', {is_story})
+    ON DUPLICATE KEY UPDATE 
+            user_id={user_id},
+            fetched_at = '{fetched_at}',
+            likes_count = {likes_count}, 
+            comments_count = {comments_count},
+            image = '{image}'
+
+  insert_ht: |
+    INSERT IGNORE INTO HashTagsInMedia 
+      (media_id, hashtag, lower_hashtag, created_at)
+    VALUES
+      ('{media_id}', '{hashtag}', '{lower_hashtag}', '{created_at}')
+
+  insert_comments: |
+    INSERT INTO Comments (id, media_id, username, created_at,
+                          text, likes_count, parent_comment_id)
+    VALUES ('{id}', '{media_id}', '{username}', '{created_at}', 
+            '{text}', {likes_count}, '{parent_comment_id}')
+    ON DUPLICATE KEY UPDATE 
+            username    = '{username}',
+            text        = '{text}',
+            likes_count =  {likes_count}
+
+
+db_config:
+  ig:
+    host:    'sinnia-db-2-3.ce4bgmsedant.us-east-1.rds.amazonaws.com'
+    db:      'vizgram'
+    user:    'vizgram'
+    passwd:  'vzig6-hanGR'
+    charset: 'utf8mb4' 
+  
