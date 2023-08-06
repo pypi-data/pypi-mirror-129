@@ -1,0 +1,5 @@
+Pillow
+websocket-client
+protobuf
+threading
+asyncio
