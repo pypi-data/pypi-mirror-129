@@ -1,0 +1,19 @@
+# Documentation specific
+docs/**/generated
+docs/build
+
+# Python specific
+__pycache__/
+*.py[cod]
+*.egg-info
+*.so
+*.o
+
+build/
+develop-eggs/
+dist/
+eggs/
+.ipynb_checkpoints
+
+pip-log.txt
+pip-delete-this-directory.txt

@@ -1,0 +1,21 @@
+# LINTING
+flake8
+flake8-bugbear
+flake8-comprehensions
+flake8-eradicate
+flake8-commas
+flake8-quotes
+flake8-simplify
+flake8-logging-format
+
+# DEVELOP
+geopandas
+shapely
+
+# DOCS
+versioneer
+sphinx
+pydata-sphinx-theme
+sphinx-toggleprompt
+nbsphinx
+matplotlib
