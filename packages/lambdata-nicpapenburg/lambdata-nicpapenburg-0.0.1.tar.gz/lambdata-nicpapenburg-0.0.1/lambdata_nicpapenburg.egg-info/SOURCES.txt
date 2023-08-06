@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init_.py
+setup.py
+lambdata/helper_functions.py
+lambdata_nicpapenburg.egg-info/PKG-INFO
+lambdata_nicpapenburg.egg-info/SOURCES.txt
+lambdata_nicpapenburg.egg-info/dependency_links.txt
+lambdata_nicpapenburg.egg-info/requires.txt
+lambdata_nicpapenburg.egg-info/top_level.txt

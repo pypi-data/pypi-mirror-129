@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: lambdata-nicpapenburg
+Version: 0.0.1
+Summary: Learning to upload a package
+Home-page: UNKNOWN
+Author: Nicholas Papenburg
+Author-email: nicpapenburg@gmail.com
+License: MIT
+Description: This is a class project to create my first python package.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (11/29/2021)
+        ------------------
+        - First Release
+Keywords: lambda,bloomtech
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
