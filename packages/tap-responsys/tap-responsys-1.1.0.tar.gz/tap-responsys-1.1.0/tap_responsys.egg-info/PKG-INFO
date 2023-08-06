@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tap-responsys
+Version: 1.1.0
+Summary: Singer.io tap for extracting CSV files from Responsys via FTP
+Home-page: https://singer.io
+Author: Stitch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+
+UNKNOWN
+
