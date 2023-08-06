@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyquanttrade
+Version: 0.0.2
+Summary: Library for backtesting algorithmic trading strategies using Quandl data
+Home-page: UNKNOWN
+Author: Miguel Martin, Marcos Jimenez
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy (==1.19.0)
+Requires-Dist: datetime
+Requires-Dist: IPython
+Requires-Dist: altair
+Requires-Dist: scipy
+Requires-Dist: quandl
+Requires-Dist: decouple
+
+UNKNOWN
+
