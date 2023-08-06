@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: explainaboard
+Version: 0.2.1
+Summary: Explainable Leaderboards for Natural Language Processing
+Home-page: https://github.com/ExpressAI/ExplainaBoard
+Author: Pengfei Liu
+License: MIT License
+Description: # ExplainaBoard-OOP
+        Reconstruct ExplainaBoard into OOP Version
+        
+        
+        ## TODO
+        
+        
+        
+        ```
+        pip install -r requirements.txt
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
