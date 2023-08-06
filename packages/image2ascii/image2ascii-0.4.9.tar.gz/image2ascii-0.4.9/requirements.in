@@ -1,0 +1,8 @@
+-e file:./
+colorama
+Flask
+matplotlib
+numpy
+Pillow
+requests
+uwsgi
