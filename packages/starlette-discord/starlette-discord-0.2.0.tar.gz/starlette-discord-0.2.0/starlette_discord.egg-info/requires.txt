@@ -1,0 +1,7 @@
+oauthlib
+starlette>=0.13.6
+
+[docs]
+sphinx
+sphinxcontrib_trio
+myst_parser
