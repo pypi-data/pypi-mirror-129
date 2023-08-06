@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: secondwwwr
+Version: 1.2.3
+Summary: test
+Home-page: https://github.com/ivanovanton/
+Author: Anton
+Author-email: ant4731@yandex.ru
+License: MIT
+Download-URL: https://github.com/ivanovanton/secondwwwr/archive/refs/tags/v7.7.7.tar.gz
+Description: UNKNOWN
+Keywords: secondwwwr
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
