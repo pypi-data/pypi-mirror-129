@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rainiee-lib
+Version: 1.0.8.112405
+Summary: rainiee decision engine api
+Home-page: https://github.com/Rainiee-Technology/pypi
+Author: rainiee
+Author-email: rainiee@163.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+Installation
+--------------
+
+    pip install rainiee_lib 
+
+Upgrade
+---------------
+
+    pip install rainiee_lib --upgrade
+
+
+
