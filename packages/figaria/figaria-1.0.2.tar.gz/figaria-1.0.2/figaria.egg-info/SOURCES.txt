@@ -1,0 +1,7 @@
+setup.py
+figaria.egg-info/PKG-INFO
+figaria.egg-info/SOURCES.txt
+figaria.egg-info/dependency_links.txt
+figaria.egg-info/top_level.txt
+pakiet/__init__.py
+pakiet/dzialania.py
