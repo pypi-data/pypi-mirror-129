@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: stats5b5t
+Version: 0.1.2
+Summary: API Wrapper for 5b5t.org
+Home-page: https://github.com/ScobraScope/stats5b5t
+Author: ScobraScope
+License: UNKNOWN
+Keywords: python,api,5b5t,minecraft
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Games/Entertainment
+
+Automate and simplify API requests for 5b5t.org.
+A detailed documentation can be found at https://github.com/ScobraScope/stats5b5t-documentation
+
+
