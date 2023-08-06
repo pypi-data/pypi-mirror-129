@@ -1,0 +1,15 @@
+senzing/G2Audit.py,sha256=36fQHpANMAsYv_6xHfmdauxPyeau9-ziRHNBkBZiHJc,18065
+senzing/G2Config.py,sha256=UN7ROaMx1gl3c1w_emhGgl5z5b0ZkMaR0WTQmMeZ4Bk,58043
+senzing/G2ConfigMgr.py,sha256=rWzIO1t5Jey_o9aZJeVGmusVhO-Aata83t8H9Z7t3CI,12408
+senzing/G2Diagnostic.py,sha256=GCvyJ6EvZDkspjoB0N7PAIaRDPm96XTSaxrdi9VqA1c,24534
+senzing/G2Engine.py,sha256=e_JyUsQ23G_BxoG4KfyZUSrZp0TstlMubKv5swojbOc,89685
+senzing/G2Exception.py,sha256=BAzMN1Xvz1_J5YZsgd04fnCpDEwyhb1Kwb7zclNO9co,3678
+senzing/G2Hasher.py,sha256=4LGK5qgB1hDyWaJNPS2Oc8GTaLU36VNOdNXb7lbOyzY,9625
+senzing/G2IniParams.py,sha256=3BnV-X-rg60ne-MzmNASMJJfYcjMv8ZAz9Ab8CpADVw,5329
+senzing/G2Product.py,sha256=VgrYdFwylCf39sZroOzy89ac1a0Wt1_onY7ag2QsiCg,8982
+senzing/__init__.py,sha256=Js2OhvxbqHXg4ZBAA81S3muHwdQNL3lHejjpFmJkvUo,132
+senzing-1.15.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+senzing-1.15.4.dist-info/METADATA,sha256=e8AOQeZ97wDbqB8Z9M8Rw2PR76lHBzaTEKYmVMDX0kc,5244
+senzing-1.15.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+senzing-1.15.4.dist-info/top_level.txt,sha256=093WC5UBQT0SEOBQFiaJzZBtZx46c-A4qN1eOSfCGzQ,8
+senzing-1.15.4.dist-info/RECORD,,
