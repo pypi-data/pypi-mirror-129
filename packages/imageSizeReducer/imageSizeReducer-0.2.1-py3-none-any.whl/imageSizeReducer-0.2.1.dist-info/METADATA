@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: imageSizeReducer
+Version: 0.2.1
+Summary: Reduce image size
+Home-page: https://github.com/devdp/image-resizer.git
+Author: Bramhesh Kumar Srivastava
+Author-email: brahmesh1996@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: python-math
+
+# Image Size Reducer
+
+Image Size Reducer is a package created for reducing image size for fast uploading and processing.
+
+## Steps
+
+- Specify image path
+- Specify quality 1-100
+- Specify path where you want to save
+
+## Installation
+
+Image Size Reducer requires [python3](https://www.python.org/downloads/) to run.
+
+```sh
+pip install imageSizeReducer
+```
+## Usage
+
+> Image Size Reducer
+
+```python
+from imageSizeReducer import imageSizeReducer
+
+actualImage = "path/to/img.jpg"
+pathToSave = "path/to/img.jpg"
+quality=95
+
+imageSizeReducer.resize(actualImage, quality, pathToSave)
+
+# output - {'message': 'successfully completed image resize', 'actual-image-path': '/home/bramhesh/Downloads/20.jpg', 'quality-specified': 50, 'path-to-image': '/home/bramhesh/20.jpg'}
+# output - {'message': 'image resize process failed', 'error': FileNotFoundError(2, 'No such file or directory'), 'actual-image-path': '/home/bramhesh/Downloads/2.jpg', 'quality-specified': 50, 'path-to-image': '/home/bramhesh/20.jpg'}
+# output - {'message': 'image resize process failed', 'error': ValueError('unknown file extension: '), 'actual-image-path': '/home/bramhesh/Downloads/20.jpg', 'quality-specified': '/home/bramhesh/20.jpg', 'path-to-image': 50}
+```
+
+
