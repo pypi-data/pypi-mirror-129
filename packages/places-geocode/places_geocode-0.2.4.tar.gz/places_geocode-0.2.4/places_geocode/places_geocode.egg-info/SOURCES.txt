@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+places_geocode/places_geocode.egg-info/PKG-INFO
+places_geocode/places_geocode.egg-info/SOURCES.txt
+places_geocode/places_geocode.egg-info/dependency_links.txt
+places_geocode/places_geocode.egg-info/top_level.txt
