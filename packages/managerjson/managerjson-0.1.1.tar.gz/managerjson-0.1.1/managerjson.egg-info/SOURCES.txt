@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+jsonmanager/__init__.py
+jsonmanager/jsonmanager.py
+managerjson.egg-info/PKG-INFO
+managerjson.egg-info/SOURCES.txt
+managerjson.egg-info/dependency_links.txt
+managerjson.egg-info/top_level.txt
+tests/__init__.py
+tests/example_complex_dicts.py
+tests/test_jsonmanager.py
