@@ -1,0 +1,8 @@
+README.md
+setup.py
+extimer/__init__.py
+extimer.egg-info/PKG-INFO
+extimer.egg-info/SOURCES.txt
+extimer.egg-info/dependency_links.txt
+extimer.egg-info/top_level.txt
+extimer.egg-info/zip-safe
