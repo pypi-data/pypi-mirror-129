@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ichs
+Version: 1.7.1
+Summary: A Python module Based on Ilford County High School
+Home-page: https://github.com/Custom/ichs
+Author: Diwan Mohamed Faheer
+Author-email: diwanmohamedfaheer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# About
+---
+
+Ichs is a module I made for fun in around 20 minutes. As of writing, there are only two functions but I do plan to add more.
+
+# Twitter
+---
+```py
+ichs.twitter()
+```
+Will return Ichs' Twitter page.
+
+Usage:
+```py
+import ichs
+
+twitter = ichs.twitter()
+print(twitter)
+```
+```
+http://www.twitter.com/IlfordCountySch
+```
+# Website
+---
+```py
+ichs.website()
+```
+Will return the Ichs website.
+
+Usage:
+```py
+import ichs
+
+website = ichs.website()
+print(website)
+```
+```
+https://www.ichs.org.uk/
+```
+
