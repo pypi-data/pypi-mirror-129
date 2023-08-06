@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/senzing/G2Audit.py
+src/senzing/G2Config.py
+src/senzing/G2Engine.py
+src/senzing/G2Exception.py
+src/senzing/G2Product.py
+src/senzing/__init__.py
+src/senzing.egg-info/PKG-INFO
+src/senzing.egg-info/SOURCES.txt
+src/senzing.egg-info/dependency_links.txt
+src/senzing.egg-info/top_level.txt
