@@ -1,0 +1,11 @@
+_btclib_libsecp256k1.py,sha256=zV_MZIU53cUcDWsLmohyiKLiwdUO8Bb5ZEjlF-DJlXI,7492
+btclib_libsecp256k1/__init__.py,sha256=JscuwkUqPvp5sczFZGUU-5kv5rzPpG69dNwZ06Wp8zk,555
+btclib_libsecp256k1/dsa.py,sha256=kV8doiDibVIXlXNlaj8z083xMLYe3uXj-lnYD0eu73M,1428
+btclib_libsecp256k1/libsecp256k1.dll,sha256=Dq8qqqaxbjPT45Z44PSxuhUdB_RfBgNvf0JLAa-qVZU,1868932
+btclib_libsecp256k1/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+btclib_libsecp256k1/ssa.py,sha256=TSleHRlwp5T2HRmIzcwDOURT8uWQM7IU6PGbThG5DYw,1535
+btclib_libsecp256k1-0.0.2.dist-info/LICENSE,sha256=rmrf73BqT4N3t5UxyvRW4LK9r9ckYuCObuSP5n7PVbI,1072
+btclib_libsecp256k1-0.0.2.dist-info/METADATA,sha256=8JcdwdhrXyOfjiapDkMnNznKa2MEC6o3V45-fZpHPdg,1247
+btclib_libsecp256k1-0.0.2.dist-info/WHEEL,sha256=WoE84lFhzpl5kFoOWeOKUr67l1o9c9Tie8ccxFQmzBU,98
+btclib_libsecp256k1-0.0.2.dist-info/top_level.txt,sha256=qLl0HQMHn1RWXtiPkHTlzFDn1G9mogN9-hX5x8wdkNo,41
+btclib_libsecp256k1-0.0.2.dist-info/RECORD,,
