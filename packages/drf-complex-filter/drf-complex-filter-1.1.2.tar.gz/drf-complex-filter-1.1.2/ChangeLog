@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+1.1.2
+-----
+
+* Fix operator "!" when lookup\_by\_model return tuple
