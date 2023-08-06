@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/plagy/__init__.py
+src/plagy/plagy.py
+src/plagy_mnk.egg-info/PKG-INFO
+src/plagy_mnk.egg-info/SOURCES.txt
+src/plagy_mnk.egg-info/dependency_links.txt
+src/plagy_mnk.egg-info/requires.txt
+src/plagy_mnk.egg-info/top_level.txt
