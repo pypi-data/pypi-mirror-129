@@ -1,0 +1,52 @@
+{
+    "name": {
+        "type": "string",
+        "required": true,
+        "style": "free form",
+        "units": null,
+        "description": "Persons name, should be full first and last name.",
+        "options": [],
+        "alias": [],
+        "example": "person name"
+    },
+    "author": {
+        "type": "string",
+        "required": false,
+        "style": "free form",
+        "units": null,
+        "description": "Persons name, should be full first and last name.",
+        "options": [],
+        "alias": [],
+        "example": "person name"
+    },
+    "organization": {
+        "type": "string",
+        "required": true,
+        "style": "free form",
+        "units": null,
+        "description": "Organization full name",
+        "options": [],
+        "alias": [],
+        "example": "mt gurus"
+    },
+    "email": {
+        "type": "string",
+        "required": true,
+        "style": "email",
+        "units": null,
+        "description": "Email of the contact person",
+        "options": [],
+        "alias": [],
+        "example": "mt.guru@em.org"
+    },
+    "comments": {
+        "type": "string",
+        "required": false,
+        "style": "email",
+        "units": null,
+        "description": "Any comments about the person",
+        "options": [],
+        "alias": [],
+        "example": "expert digger"
+    }
+}
