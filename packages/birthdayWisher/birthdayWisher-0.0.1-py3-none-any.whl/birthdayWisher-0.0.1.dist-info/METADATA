@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: birthdayWisher
+Version: 0.0.1
+Summary: A cool happy birthday wish flow!
+Home-page: https://github.com/Victorspy-web/birthdayWisher
+Author: VED
+Author-email: dicksonsmart0711@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Installation
+
+<!-- * Make sure you have python3 installed on your computer -->
+
+## Run the following to install:
+
+```pip install birthdayWisher```
+
+## Usage
+```python
+from birthdayWisher import birthday_flow
+
+
+# Call the birthday_flow function
+birthday_flow()
+
+#Pass in 2 sweet names arguments
+birthday_flow("Sweet Mary", "Cutest friend")
+```
+
+<img src="img.png">
+
