@@ -1,0 +1,9 @@
+secread/__init__.py,sha256=vK9HRCVoNcwdxv8fGMUUxvJVFgX5qM3E7lByiUjDEjM,101
+secread/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+secread/tests/data/get_secret_response.json,sha256=WYCJByRVjY6khyVbo8mrb5nEBdtjdGJx4rmlnZpB42s,10772
+secread/tests/test_secread.py,sha256=DkQhh3-EJlEG-Quh8LulaaDW3c7HEtgwjSWSYHJCQEo,1152
+secread/thycotic.py,sha256=WEgMvq60ZqEqKQCD7LUtWVSCug5-NT6UkYiWtnxXhP0,9604
+secread-0.1.2.dist-info/LICENSE,sha256=AvoBP85UemOqLQBl-qnBJ6xmV3YWFITCv5nbZryWxFg,1073
+secread-0.1.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+secread-0.1.2.dist-info/METADATA,sha256=Wn3BoqSo2og4cPjUti8X9GRWUeeUDz_vq6J9NhGwQ9o,4122
+secread-0.1.2.dist-info/RECORD,,
