@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+stopwords-zht.txt
+TCSP.egg-info/PKG-INFO
+TCSP.egg-info/SOURCES.txt
+TCSP.egg-info/dependency_links.txt
+TCSP.egg-info/top_level.txt
