@@ -1,0 +1,11 @@
+README.md
+setup.py
+cloudos/__init__.py
+cloudos.egg-info/PKG-INFO
+cloudos.egg-info/SOURCES.txt
+cloudos.egg-info/dependency_links.txt
+cloudos.egg-info/entry_points.txt
+cloudos.egg-info/requires.txt
+cloudos.egg-info/top_level.txt
+cloudos/clitools/__init__.py
+cloudos/clitools/cli.py
