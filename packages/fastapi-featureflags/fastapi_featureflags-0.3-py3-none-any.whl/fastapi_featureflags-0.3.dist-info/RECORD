@@ -1,0 +1,15 @@
+fastapi_featureflags/__init__.py,sha256=kJgVE9utJK7vhWJ-3_w6H7sKMcSt7YHDWCddLbGCpDA,89
+fastapi_featureflags/main.py,sha256=j65SFdX-fauOrSJG45s1w-3EmN6502Ttl4Wf8fGosmA,2719
+fastapi_featureflags/router.py,sha256=K3vSx0r9LgWwLbdFPYLNHE-FQTZ8jP-P-X_G6Q6__dw,1067
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=JMfpkUx72H60yrngaKnjYxgHCTR8uVaaeIHaG2Fj5fk,227
+tests/test_conf.py,sha256=qTiPXfODQ2rs1x7ufHmLnA2Ld7HUEa1G2G1KqVXhLP4,722
+tests/test_conf_from_dict.py,sha256=oOjr_jGsYA5nx8G_8ztTcGgoxnn5mksEYy9PljmT5rU,1954
+tests/test_conf_from_json.py,sha256=_IEvTwvwhglvY5gntuUGRIlgtAveY_gzP1HhP-mx33Q,885
+tests/test_conf_from_url.py,sha256=1Ib8FW0nmfaQXgu09VSI52Y2MAcPey1-GAy6iSz8SBs,1539
+tests/test_routes.py,sha256=1r7FE7GIF7BLqrYiU-MXjYHmLDhyXQJxv2_HV5Mbw9A,2395
+fastapi_featureflags-0.3.dist-info/LICENSE,sha256=byRBl_LdynOz3URYCvMclAJq--chW6NNg5353XFJXSc,1068
+fastapi_featureflags-0.3.dist-info/METADATA,sha256=Q2efw5z2uUOskl1j-jlRhhSiX8ugKC2hgKzayXW2aJk,4169
+fastapi_featureflags-0.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastapi_featureflags-0.3.dist-info/top_level.txt,sha256=7Ac4yjKAuCq8drnvixUrzky1nYbstkBJo3n4sx7ADBU,27
+fastapi_featureflags-0.3.dist-info/RECORD,,
