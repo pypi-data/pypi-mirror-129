@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: frarch
+Version: 0.0.2
+Summary: Training Framework for PyTorch projects
+Home-page: https://github.com/vbadenas/frarch
+Author: vbadenas
+Author-email: victor.badenas@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: all
+License-File: LICENSE
+
+# **Frarch**
+
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/vbadenas/9b54bd086e121233d2ad9a62d2136258/raw/frarch__heads_master.json)
+
+**Fra**mework for Pyto**rch** experiments inspired in [speechbrain's](https://speechbrain.github.io/) workflow using [hyperpyyaml](https://github.com/speechbrain/HyperPyYAML) configuration files.
+
+
