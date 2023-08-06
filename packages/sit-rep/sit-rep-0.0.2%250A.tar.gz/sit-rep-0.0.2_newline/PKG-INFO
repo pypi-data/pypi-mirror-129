@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sit-rep
+Version: 0.0.2
+
+Summary: Sit Rep | The System Situation Report
+Home-page: https://github.com/tushariyer/sit-rep
+Author: Tushar Iyer
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Licensed under the generic MIT License."sit-rep" can either be downloaded from the Releases page on GitHub and manually added to PATH or installed via "pip".
+Platform: UNKNOWN
