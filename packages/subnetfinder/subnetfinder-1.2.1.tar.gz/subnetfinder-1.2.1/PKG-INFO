@@ -1,0 +1,181 @@
+Metadata-Version: 2.1
+Name: subnetfinder
+Version: 1.2.1
+Summary: Find available subnets within a given block of IPs
+Home-page: https://sourceforge.net/projects/available-subnet-finder/
+Author: Skylight 2000
+License: MIT
+Description: Subnet Finder assists in situations where any of the following apply:
+        
+        * there are multiple IPAM solutions covering different areas of the enterprise
+        * connecting two large enterprise networks together in which neither have very many open subnets
+        * finding blocks which can be considered globally unique
+        
+        In cases such as this, Subnet Finder will collect the information you provide, and provide you with a list of subnets which can be used across the enterprise.  The results are only as good as the data provided, so you should spend most of the time preparing a very accurate list of subnets.
+        
+        The script works by collecting a list of used subnets which you will provide.  You should not provide summaries, but the actual subnets used.  The more accurate, the better.  For example, if you know that you are using two /24 networks, provide those networks rather than the summary /23.  
+        
+        # Requirements
+        This module requires Python 3.7 or higher.
+        
+        # Input File Format
+        The used subnets are supplied via one or more files which can be either piped in, or read directly. Alternately, subnetfinder can be used as a module within another script.  Here are examples of the three options.  The file format is shown here.
+        
+        ```
+        group: group1
+        10.3.3.0/25
+        10.0.0.192/28
+        10.2.1.12
+        10.4.25.0/24
+        10.0.3.0/25
+        group: group2
+        10.0.2.0/24
+        10.1.3.0/25
+        10.6.1.12
+        10.4.25.0/24
+        10.0.2.0/24
+        group: group3
+        10.0.2.0/24
+        10.0.3.0/25
+        10.0.1.12
+        10.4.25.0/24
+        ```
+        
+        Each line represents a single entry.  There are two types of entries in this file.
+        * Used Subnet (10.3.3.0/25)
+          * This is used to specify which subnets are in use by that group.  You should specify the longest possible subnet, and not include summaries if possible.  The more accurate and detailed the information, the better the results.
+        * Group Headers (group: group1)
+          * This is used as a header.  All entries following will be put into that specific group, until a new group header is found.  This is an optional field, and need not be specified.  It only has value when combined with the -u (Unique In) option.
+          * The "group:" header is not case sensitive. 
+          * Whatever follows the "group:" header is taken as the group field after being stripped.  
+        
+        # Getting help
+        The built-in module help is available, from both the CLI and within an interactive shell.
+        
+        ## Help from the CLI
+        ```
+        user@PC:$ python3 -m subnetfinder
+        usage: Subnet Finder [-h] -s sn -p pl [-u N] [--summarize] [--version] [-v] [--debug] [--test] [FILE]
+        Subnet Finder: error: the following arguments are required: -s/--supernet, -p/--prefix
+        user@PC:$ python3 -m subnetfinder -h
+        usage: Subnet Finder [-h] -s sn -p pl [-u N] [--summarize] [--version] [-v] [--debug] [--test] [FILE]
+        
+        Find unused subnets from a provided list of used subnets.
+        
+        positional arguments:
+          FILE                  If present, the file name of the source list with one prefix per line. Default is from STDIN.
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -s sn, --supernet sn  The Super Net in which to find open IP blocks, such as 10.0.0.0/8.
+          -p pl, --prefix pl    The maximum prefix length to consider, such as 16. This must be longer than the supernet
+                                prefix length.
+          -u N, --uniquein N    Specify the maximum number of groups that can contain a prefix. Can be used to find prefixes
+                                unique to two or more lists. Groups must have headings of "group: <groupname>".
+          --summarize           Summarize contiguous subnets into supernets if possible.
+          --version             show program's version number and exit
+          -v, --verbose         Be more verbose with output. Verbose levels 1 to 3 are -v to -vvv.
+          --debug               Display additional output for lines.
+          --test                Used only for unit testing
+        
+        Use this program to find unused blocks of IPs, or blocks used a limited number of times, with prefix length pl within the subnet sn, based on the IPs or blocks supplied.
+        ```
+        ## Arguments Details
+        * -s, --supernet
+          * This is a required argument.  It is used to specify the top of the scope for the search, meaning the largest supernet.  
+          * This is used as a filter against the incoming list of subnets, so that there is no need to filter the subnets by hand.
+        * -p, --prefix
+          * This is a required argument.  It is used to specify the bottom of the scope for the search.
+          * It is also used to build a common subnet length to simplify the math for summarization.  The summarization method depends on this.
+        * -u, --uniquein "Unique In"
+          * This is an optional argument.  
+          * If you specify groups within the input file(s) as shown above, this will specify the maximum number of groups in which a subnet may appear and still be considered available. 
+          * This option should be paired with -v (verbose) if you want these subnets identified specifically. 
+        * --summarize
+          * This is an optional argument.
+          * This will combine subnets where possible into supernets to reduce the number of networks provided in the output.  
+        * -v, --verbose
+          * This is an optional argument.
+          * This is paired with the -u (unique in) option, to list the subnets which did exist in the provided list, but occurred in N groups or less.
+        * --debug
+          * This is an optional argument.
+          * This will print a much larger amount of information as the script processes the input data.
+        
+        ## Help from the interactive shell
+        ```
+        user@PC:$ python3
+        Python 3.8.10 (default, Sep 28 2021, 16:10:42)
+        [GCC 9.3.0] on linux
+        Type "help", "copyright", "credits" or "license" for more information.
+        >>> import subnetfinder
+        >>> help(subnetfinder.ProcessSubnets)
+        ProcessSubnets(supernet, usedlist, targetprefixlen, showdebug=False, screenout=False, summarize=False, uniquein=0)
+            This will build a list of "seen" (used) subnets from the source provided, and then
+            return a list of unseen subnets with length "prefixlen" from the same supernet.
+            It will ignore all provided subnets which are outside of the supernet range.
+            It will error and ignore if the line isn't a valid CIDR subnet (10.0.0.0/8) notation.
+        
+            NOTE: The default CIDR length is omitted, a /32 is assumed.
+        
+            [Arguments]
+            supernet:   The ipaddress.ip_network object for the supernet
+            usedlist:   A iterable list of string objects.  Each string object must contain either a used
+                        subnet in CIDR format, or a group header.  If a group header is supplied, subsequent
+                        CIDR networks will be placed in that group.
+                        Example CIDR notation:  10.0.0.0/8
+                        Example group header:  Group: New Group
+            targetprefixlen:
+                        An int representing the target prefix length
+            uniquein:   Can be used to find a subnet which exist only in N or less groups.
+            showdebug:  Will print additional debugging information to STDOUT.
+                        Default is False.
+            screenout:  Directs the output to STDOUT and exits rather than returning a list
+                        Default is False.
+            supernets:  Combine contiguous blocks into summary supernets with shorter prefix length pl if possible.
+                        This may take more time if the list of available subnets is long.
+        
+            [Returns]
+            This method returns a list of ipaddress.IPv4Network objects representing the unused subnets
+            matching the characteristics provided.
+        
+        ```
+        # Launching the script from the CLI
+        The script is platform independent, but the method used for "piping" the data to the script (if you have multiple files) depends on the operating system.  If you choose to combine your data into a single file, the second option works the same in either operating system.
+        
+        ## Linux
+        ```
+        cat file1 file2 file3 | python3 -m subnetfinder -s 10.0.0.0/8 -p 16
+        python3 -m subnetfinder -s 10.0.0.0/8 -p 16 file1
+        ```
+        
+        ## Windows
+        ```
+        type file1.txt file2.txt file3.txt | python -m subnetfinder -s 10.0.0.0/8 -p 16
+        python -m subnetfinder -s 10.0.0.0/8 -p 16 file1
+        ```
+        
+        
+        # Calling as a module
+        Obviously, this script can also be called as a module.  Here is a quick sample of code that would utilize this script.
+        
+        ```
+        from ipaddress import ip_network
+        from subnetfinder import ProcessSubnets
+        
+        searchprefix=ip_network('10.0.0.0/16')
+        print("%s"%(searchprefix))
+        usedsubnets=['10.0.2.0/24','10.0.3.0/25','10.0.0.192/28','10.0.1.12','10.4.25.0/24']
+        print("Used Subnets")
+        for x in usedsubnets:
+            print("%s"%(x))
+        print("Calling ProcessSubnets.")
+        availablesubnets=ProcessSubnets(searchprefix,usedsubnets,24,summarize=True)
+        print("Done.")
+        for x in availablesubnets:
+            print("%s"%(x))
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
