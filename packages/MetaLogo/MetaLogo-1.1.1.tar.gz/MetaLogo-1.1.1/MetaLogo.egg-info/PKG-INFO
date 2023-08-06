@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MetaLogo
+Version: 1.1.1
+Summary: MetaLogo is a heterogeneity-aware sequence logo generator and aligner
+Home-page: https://github.com/labomics/MetaLogo
+Author: Yaowen Chen
+Author-email: achenge07@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Provides-Extra: webserver
+License-File: LICENSE
+
+MetaLogo is a tool for making sequence logos. It can take multiple sequences as input, automatically identify the homogeneity and heterogeneity among sequences and cluster them into different groups given any wanted resolution, finally output multiple aligned sequence logos in one figure. Grouping can also be specified by users, such as grouping by lengths, grouping by sample Id, etc.  Compared to conventional sequence logo generator, MetaLogo can display the total sequence population in a more detailed, dynamic and informative view. homogeneity.                        To use MetaLogo, you could visit our public webserver http://metalogo.omicsnet.org. You could also install MetaLogo as a python package to using MetaLogo in your python scripts or in your OS terminal. If you want to provide MetaLogo to people in your local network, you could also setup a webserver by using docker.                        Please check the tutorial for detailed usage of MetaLogo package and webserver (https://github.com/labomics/MetaLogo).
+
