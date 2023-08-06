@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PsyMz
+Version: 1.0.1
+Summary: A simple python package for keeping Postgres connections alive indefinitely.
+Home-page: https://github.com/Mizo-Inc/psymz
+Author: John Ades
+Author-email: pizza@mizo.co
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+UNKNOWN
+
