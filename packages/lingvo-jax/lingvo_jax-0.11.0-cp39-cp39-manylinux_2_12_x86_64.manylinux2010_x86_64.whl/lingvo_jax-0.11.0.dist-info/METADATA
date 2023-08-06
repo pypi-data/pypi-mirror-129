@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: lingvo-jax
+Version: 0.11.0
+Summary: Lingvo JAX libraries.
+Home-page: UNKNOWN
+Author: Lingvo Authors
+Author-email: lingvo-bot@google.com
+License: Apache 2.0
+Keywords: Machine learning framework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7,<3.10
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: attrs
+Requires-Dist: clu
+Requires-Dist: flax
+Requires-Dist: ipykernel
+Requires-Dist: jax
+Requires-Dist: jupyter
+Requires-Dist: jupyter-http-over-ws
+Requires-Dist: graph-compression-google-research
+Requires-Dist: matplotlib
+Requires-Dist: model-pruning-google-research
+Requires-Dist: numpy
+Requires-Dist: optax
+Requires-Dist: Pillow
+Requires-Dist: protobuf
+Requires-Dist: scipy
+Requires-Dist: sentencepiece
+Requires-Dist: sklearn
+Requires-Dist: sympy
+Requires-Dist: tensorflow-datasets
+Requires-Dist: tensorflow (~=2.7.0)
+Requires-Dist: tensorflow-hub
+
+UNKNOWN
+
