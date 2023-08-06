@@ -1,0 +1,10 @@
+tensorflow_hs_addon/__init__.py,sha256=maFA7Fuoer1CHRVvOdLr4xkJqDKmE_fNVkVDwPS8aRw,165
+tensorflow_hs_addon/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorflow_hs_addon/python/ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorflow_hs_addon/python/ops/_reco_ops.so,sha256=voH0Ah2uhfLGrkcdv1POa1Fk_Uq_UN9tlbzLQwnuJ2U,240080
+tensorflow_hs_addon/python/ops/reco_ops.py,sha256=cZtsg5k2G1flY74JSU2TXCSRnO9vZU8KhRMihpoOQfQ,1205
+tensorflow_hs_addon-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tensorflow_hs_addon-0.0.4.dist-info/METADATA,sha256=PPa2VHOxKd7EffSVl3djB3iUWiVcxa5R5guEZjXi_kQ,998
+tensorflow_hs_addon-0.0.4.dist-info/WHEEL,sha256=OERMYppr9MrFNH42dDDDfOcxOhh5Bh5GM82gXZaphW4,111
+tensorflow_hs_addon-0.0.4.dist-info/top_level.txt,sha256=Wn4b5da7c1r2Jl4dfITWm8A4LjXZs4xlKjb8lNn3JhQ,20
+tensorflow_hs_addon-0.0.4.dist-info/RECORD,,
