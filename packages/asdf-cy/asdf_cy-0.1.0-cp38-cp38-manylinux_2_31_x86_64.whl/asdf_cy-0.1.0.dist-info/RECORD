@@ -1,0 +1,9 @@
+asdf_cy/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+asdf_cy/test.c,sha256=skBXKj5hftAz22IuFsbbQbgyIqd0BkEfeuQEt7ef3Mw,270782
+asdf_cy/test.cpp,sha256=lagK4te9pzjri1M8LaXW0HbG2gkRNhXSat2wr1ADe58,271239
+asdf_cy/test.pyx,sha256=WEiXQTDu1K2UgsmXsQWDt6_0TEHka_ZGzH-joK3lOaA,362
+asdf_cy/test.cpython-38-x86_64-linux-gnu.so,sha256=VDIDKeVOx7sNqF2RJL-oxxhaOmC1R46FPVAHBfl-sJY,234592
+asdf_cy/build.py,sha256=vjvVfavnOe-UjKZX9I4ht1tMx3MTzXEk4KbCYDYOMx0,260
+asdf_cy-0.1.0.dist-info/WHEEL,sha256=mOkm1JCvfKhxg2VAiYBmU21q-HjMBLQm669sSIu0xHE,103
+asdf_cy-0.1.0.dist-info/METADATA,sha256=sZowD4_EVbnWB1E8h_ExT8uIuMKpPMI6PZfHKH6bYAw,423
+asdf_cy-0.1.0.dist-info/RECORD,,
