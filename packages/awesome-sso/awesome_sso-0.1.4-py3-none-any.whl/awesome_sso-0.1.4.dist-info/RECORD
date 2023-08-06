@@ -1,0 +1,11 @@
+LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+README.md,sha256=m01dkpzhcuwbhzmTPMKX0fHjf__I4Y_fWjS24hZdpV4,4122
+awesome_sso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awesome_sso/exceptions/__init__.py,sha256=xbZ8_1pgEvAh4mn1nFQ4zWHgvTNQqWCsSM90zPPeMBY,2236
+awesome_sso/store/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awesome_sso/store/minio.py,sha256=5tGv06AuzlGaNPV-_e483MiVy0N5oGohFssrtGpPwwE,3189
+awesome_sso/store/mongo.py,sha256=FJB9DtT_hhHL_eGN15QY-nv_SU6u0tXUeKjAAg-2j_U,404
+awesome_sso-0.1.4.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+awesome_sso-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+awesome_sso-0.1.4.dist-info/METADATA,sha256=1tX22XXOTAyjxXIelBEaT1fbkco1z3eu_MdNHdzSQU4,5401
+awesome_sso-0.1.4.dist-info/RECORD,,
