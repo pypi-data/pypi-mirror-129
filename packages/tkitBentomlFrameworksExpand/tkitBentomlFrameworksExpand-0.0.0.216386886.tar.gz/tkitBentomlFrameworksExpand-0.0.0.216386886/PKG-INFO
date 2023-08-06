@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tkitBentomlFrameworksExpand
+Version: 0.0.0.216386886
+Summary: Terry toolkit tkit-bentoml-tkitBentomlFrameworksExpand-expand,
+Home-page: https://github.com/napoler/tkit-bentoml-frameworks-expand
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: # bentoml expands
+        
+        [![Pages](https://github.com/napoler/tkit-bentoml-frameworks-expand/actions/workflows/sphinx-gitpages.yml/badge.svg)](https://github.com/napoler/tkit-bentoml-frameworks-expand/actions/workflows/sphinx-gitpages.yml)
+        
+        [![PyPI publish CI](https://github.com/napoler/tkit-bentoml-frameworks-expand/actions/workflows/upload-to-pip.yml/badge.svg)](https://github.com/napoler/tkit-bentoml-frameworks-expand/actions/workflows/upload-to-pip.yml)
+        
+        用来拓展的
+        
+        https://github.com/napoler/tkit-bentoml-frameworks-expand
+        
+        ## 安装
+        
+        > pip install tkit-bentoml-frameworks-expandkkhh
+        
+        
+        官方文档
+        https://docs.bentoml.org/en/latest/frameworks.html#onnx
+        
+        详细参考
+        
+        > dev.md
+        
+        
+        打
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

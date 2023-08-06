@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test/test.py
+tkitBentomlFrameworksExpand/PytorchLightningArtifact.py
+tkitBentomlFrameworksExpand/PytorchModelArtifact.py
+tkitBentomlFrameworksExpand/TokenizerArtifact.py
+tkitBentomlFrameworksExpand/__init__.py
+tkitBentomlFrameworksExpand.egg-info/PKG-INFO
+tkitBentomlFrameworksExpand.egg-info/SOURCES.txt
+tkitBentomlFrameworksExpand.egg-info/dependency_links.txt
+tkitBentomlFrameworksExpand.egg-info/top_level.txt
