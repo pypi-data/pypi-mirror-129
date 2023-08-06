@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ilonnx/__init__.py
+ilonnx/py.typed
+ilonnx/inference/__init__.py
+ilonnx/inference/base.py
+ilonnx/inference/classifier.py
+instancelib_onnx.egg-info/PKG-INFO
+instancelib_onnx.egg-info/SOURCES.txt
+instancelib_onnx.egg-info/dependency_links.txt
+instancelib_onnx.egg-info/requires.txt
+instancelib_onnx.egg-info/top_level.txt
+tests/__init__.py
