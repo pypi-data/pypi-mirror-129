@@ -1,0 +1,11 @@
+logic/__init__.py,sha256=HWhZrSwfaKiRdk7f9iNQ49Fc90X-Rh15HlQljpoALho,65
+logic/base.py,sha256=_9l19zkgMXGFi02CMjCPWy_Rznp4RN4F7T8UYZ4u3Mk,1643
+logic/board.py,sha256=2cK_tN0ekqpQpv9ThkFV2YUmhwQ9KoOuvKcPd_FSrcM,1698
+logic/main.py,sha256=24j6xpLrvhJu3xbrgdjBj7Wzit_ySW0tr16bDTcdwk8,180
+logic/player.py,sha256=237fHMfSxJlUuCuIlv3mplpRN8bIgicSFoFzGxWWQbs,1105
+logic/ranking.py,sha256=-KTUsyf5-7twXACvEab_9AgH8HaCZA4fHtPx8FJ-yjw,2235
+logic/settings.py,sha256=6auFZnstICIEBYJ8JTGzvlxEgScTaxT_kTV4qDRkEZE,301
+logic/ttt_text_ui.py,sha256=7aZxaK6Q8RPeoI5QcHmMp1huOakZ6CmBh2n_giSAmTI,12977
+tic_tac_toe_alex_p1-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tic_tac_toe_alex_p1-0.1.0.dist-info/METADATA,sha256=EP62Ida4x3P33C3YEAMQSu7EVvbsoWQauLms9LV3DW4,346
+tic_tac_toe_alex_p1-0.1.0.dist-info/RECORD,,
