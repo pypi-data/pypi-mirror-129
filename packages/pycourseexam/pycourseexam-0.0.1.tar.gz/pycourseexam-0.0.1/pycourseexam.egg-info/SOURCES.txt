@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pycourseexam/init.py
+pycourseexam.egg-info/PKG-INFO
+pycourseexam.egg-info/SOURCES.txt
+pycourseexam.egg-info/dependency_links.txt
+pycourseexam.egg-info/top_level.txt
