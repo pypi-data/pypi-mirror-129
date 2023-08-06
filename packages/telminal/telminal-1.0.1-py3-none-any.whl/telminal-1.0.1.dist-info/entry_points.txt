@@ -1,0 +1,3 @@
+[console_scripts]
+telminal = telminal.main:main
+

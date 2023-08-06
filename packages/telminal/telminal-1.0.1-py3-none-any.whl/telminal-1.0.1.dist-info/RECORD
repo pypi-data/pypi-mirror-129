@@ -1,0 +1,13 @@
+telminal/__init__.py,sha256=C9FOZj6tmPoI3VeyY7atDfV92TKw5Dk59Ke597AbFzY,149
+telminal/__main__.py,sha256=FB7YK_pFJ8jkVISwzx9l1AzT_ajbViYXu4evv8qga1U,66
+telminal/core.py,sha256=yhwXb5WdIqWmUledrrDQyUcvye1zlaMVIc6Aqdhn-gY,27029
+telminal/main.py,sha256=K_GfNFzuOWvfJAyPKvRajnIuFin7hkwZHUtKCv284CQ,590
+telminal/telegram.py,sha256=5hXTDqGctdqQM820cDH9EC_DjYVWArLwvQIdHDoxYWw,3568
+telminal/utils.py,sha256=1ivg4iqgdcbHQQSDYkHoE6NwLnFISBfrmbz2JMFJBZU,1643
+telminal/values.py,sha256=zCz5WIr1C7qgLA-6k0wzBhDvdIPOIDu9lZ4TR4LBppk,980
+telminal-1.0.1.dist-info/LICENSE,sha256=8sb1b1BOZMCC7dMNugs2q94tTKyy02B6t2Fx3X8miig,1097
+telminal-1.0.1.dist-info/METADATA,sha256=1Bn6pnYjwoKY1awna9Qb_EzGLEetgRyyk9jzfG9zEcs,5344
+telminal-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+telminal-1.0.1.dist-info/entry_points.txt,sha256=DPFsXwl9VXkteZeM8GlSqa9ccL9-NSyrnjP1E-pwRdg,49
+telminal-1.0.1.dist-info/top_level.txt,sha256=UCfGPlmqZYe2L7HQbbdDHYB93h7mAG6fr40ZTsKzyAQ,9
+telminal-1.0.1.dist-info/RECORD,,
