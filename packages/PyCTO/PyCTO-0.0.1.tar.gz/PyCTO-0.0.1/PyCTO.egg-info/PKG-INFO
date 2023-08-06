@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyCTO
+Version: 0.0.1
+Summary: Prueba de Libreria para proyecto Global CTO
+Home-page: UNKNOWN
+Author: KPMG Lighthouse
+Author-email: eavila98@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+Pruebas para insertar las funciones de Global CTO. (En desarrollo)
+
+Change Log
+==========
+
+0.0.1 (29/11/2021)
+-------------------
+
+- Primera versiÃ³n:
+    Contiene dos funciones de prueba para comprobar funcionamiento
+
