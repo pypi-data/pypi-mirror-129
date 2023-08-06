@@ -1,0 +1,9 @@
+pypi_cli/__init__.py,sha256=JatBb7PSO92ka_hOO5jv1Qz8t1CY9yiKHgonQAv-DK4,238
+pypi_cli/__main__.py,sha256=uR1noU6s3YyQP8Jfu5dej06JIzZho1JbfARCriwQmDM,63199
+pypi_cli/interactive.py,sha256=_hH1KsCP7zLY9nvvP_VkNcendcFfYsZKFSleP3NvGLA,6693
+pypi_command_line-1.6.10.dist-info/LICENSE,sha256=zpI9t2aXOA3b3AVrFFPg3Yl97zWG9A5hwKNROhQAkzA,1089
+pypi_command_line-1.6.10.dist-info/METADATA,sha256=iZpORFd5yfgYnlGuou2mGw4OrCAVmoyUR9QGuiQGkeE,18883
+pypi_command_line-1.6.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pypi_command_line-1.6.10.dist-info/entry_points.txt,sha256=5ZIXhM2RT-BW3mfk45UYBh7_q-2GQ2v6Ix7cQMxqIXc,102
+pypi_command_line-1.6.10.dist-info/top_level.txt,sha256=EIKTGiN3WB_VosntAEQVKcjoBRKjG-4U-KIp1yWz7Ng,9
+pypi_command_line-1.6.10.dist-info/RECORD,,
