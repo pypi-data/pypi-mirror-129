@@ -1,0 +1,3 @@
+[console_scripts]
+typeffect = typeffect.__main__:main
+
