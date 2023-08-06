@@ -1,0 +1,5 @@
+Babel<3,>=2.9.1
+pytz>=2019.1
+python-dateutil<3,>=2.8.0
+slackclient<3,>=2.1.0
+tzlocal<3,>=2.0.0
