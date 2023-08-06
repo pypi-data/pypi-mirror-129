@@ -1,0 +1,7 @@
+apache-airflow
+airflow-providers-siafi
+requests
+pandas
+apache-airflow[mongo]
+humanize
+openpyxl
