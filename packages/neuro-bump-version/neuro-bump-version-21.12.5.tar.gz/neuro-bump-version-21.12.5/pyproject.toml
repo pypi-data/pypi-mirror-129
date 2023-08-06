@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "neuro-bump-version"
+version = "21.12.5"
+description = "Bump version for Neu.ro projects"
+authors = ["Andrew Svetlov <andrew.svetlov@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/neuro-inc/neuro-bump-version"
+repository = "https://github.com/neuro-inc/neuro-bump-version"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+]
+[tool.poetry.scripts]
+neuro-bump-version = 'neuro_bump_version.main:main'
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+click = "~=8.0.1"
+packaging = "^21.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+pre-commit = "^2.16.0"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
