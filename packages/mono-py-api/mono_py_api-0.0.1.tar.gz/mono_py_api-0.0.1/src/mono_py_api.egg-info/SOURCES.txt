@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mono_py_api.egg-info/PKG-INFO
+src/mono_py_api.egg-info/SOURCES.txt
+src/mono_py_api.egg-info/dependency_links.txt
+src/mono_py_api.egg-info/requires.txt
+src/mono_py_api.egg-info/top_level.txt
