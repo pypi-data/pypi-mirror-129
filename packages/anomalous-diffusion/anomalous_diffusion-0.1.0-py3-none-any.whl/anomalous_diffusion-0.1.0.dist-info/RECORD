@@ -1,0 +1,14 @@
+source/CTRW.py,sha256=WsDOwyX1Y-pU_WPLDrPB7CWeZn8osS8yhaJ2EY95Z7E,2267
+source/FBM.py,sha256=hDYBHo1T1ssa0tqQcRK4oXrvo0sgOON5_sqfmjUVjhE,700
+source/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+source/alternating_process.py,sha256=dF_lMHlGMvmXxoGdvpUrExkZ38Lrpoq47Z3J7B2AQow,2616
+source/levy_process.py,sha256=h266WJR-f-ojXrRODeRbQM8ZSQkYj57IgTw2fVSbv1I,3110
+source/levy_walk.py,sha256=40LYS4n0dnM5vu9v1WQknIHmAfBNY9bdapO5TuVt-iM,1443
+source/multiple_states.py,sha256=iJ24axuE87KfHsXqN5Ig2ScTQLXN5TISd48gy5nLof4,3880
+source/rnd.py,sha256=-RofYt3v0uHD21Opx5s_i8rlVYA9YvziP0-hlh5OcrM,1573
+source/trajectory.py,sha256=_DmODKe8V8wznU8SkCZq0rEfPyouy2fydJ-qqu36jg0,536
+anomalous_diffusion-0.1.0.dist-info/LICENSE,sha256=5aSAymln5cLKjXRuSDtlcEe1NzG5bXFTYQv5neevye0,1070
+anomalous_diffusion-0.1.0.dist-info/METADATA,sha256=yyRGYpIr-bT0FHvYPD9HmJ-j6XtXB-L-_fmDUL9RWuE,2393
+anomalous_diffusion-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+anomalous_diffusion-0.1.0.dist-info/top_level.txt,sha256=uLsDT5tjvQJU-8fBV8rnRsdYU_RkPWzqhE3EjdtX9SI,7
+anomalous_diffusion-0.1.0.dist-info/RECORD,,
