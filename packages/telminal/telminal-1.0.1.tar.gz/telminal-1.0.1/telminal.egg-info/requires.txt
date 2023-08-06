@@ -1,0 +1,3 @@
+pexpect<5,>=4.8.0
+Telethon<2,>=1.23.0
+pyppeteer>=0.2.6<1

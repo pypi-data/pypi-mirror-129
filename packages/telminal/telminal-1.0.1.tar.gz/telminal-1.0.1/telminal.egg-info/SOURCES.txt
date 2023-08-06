@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+telminal/__init__.py
+telminal/__main__.py
+telminal/core.py
+telminal/main.py
+telminal/telegram.py
+telminal/utils.py
+telminal/values.py
+telminal.egg-info/PKG-INFO
+telminal.egg-info/SOURCES.txt
+telminal.egg-info/dependency_links.txt
+telminal.egg-info/entry_points.txt
+telminal.egg-info/requires.txt
+telminal.egg-info/top_level.txt
