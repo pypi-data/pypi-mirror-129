@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/history/__init__.py
+src/history/history.py
+src/history/state.py
+src/history/utils.py
+src/history/version.py
+src/kivy_history.egg-info/PKG-INFO
+src/kivy_history.egg-info/SOURCES.txt
+src/kivy_history.egg-info/dependency_links.txt
+src/kivy_history.egg-info/entry_points.txt
+src/kivy_history.egg-info/requires.txt
+src/kivy_history.egg-info/top_level.txt
