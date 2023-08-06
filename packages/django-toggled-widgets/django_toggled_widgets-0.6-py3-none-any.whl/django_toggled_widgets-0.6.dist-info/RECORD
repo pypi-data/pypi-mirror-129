@@ -1,0 +1,10 @@
+toggled_widgets/__init__.py,sha256=eGiZz_XG9F_898OLRi5XI2LH_DFZHfaS2OLFLzxRgLA,19980
+toggled_widgets/static/admin/css/ToggledWidget.css,sha256=qk3xV9SiXYwfG5Lze9kyyLwA3CwkNg3CLVWkenjwYt8,334
+toggled_widgets/static/admin/js/DjangoAdminFieldContext.js,sha256=ev8v8bcj4lVmhNBvraeQS7cGvqHHXpDRDqnKFg7bdks,2339
+toggled_widgets/static/admin/js/ToggledWidget.init.js,sha256=fieFgqgmIY-Q0z8xLsRn1XjbgZTnuQqGr-ubX9pBTQA,622
+toggled_widgets/static/admin/js/ToggledWidget.js,sha256=kZ09Z7o984YyRrjoA6vwOJo3LFAuy829mY3qCHPAiZM,3308
+django_toggled_widgets-0.6.dist-info/COPYING,sha256=Ah_JryWnk8CJuBG2AUxN3TNsBs1PKqgEeZXTLXQbEeU,34501
+django_toggled_widgets-0.6.dist-info/METADATA,sha256=Kie2cEX3jUTPhFER3yb4eAjJh_BYNdGVRV5TVeLDWss,2346
+django_toggled_widgets-0.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_toggled_widgets-0.6.dist-info/top_level.txt,sha256=dNUuH68epcXnpjxqkiF876Bup9VbyemXNM6X0tTXYwI,16
+django_toggled_widgets-0.6.dist-info/RECORD,,
