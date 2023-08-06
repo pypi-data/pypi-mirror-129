@@ -1,0 +1,8 @@
+torch
+torchtext
+scikit-learn==0.22.2
+pandas
+pytest
+dill
+texta-embedding==1.*
+texta-tools==2.*
