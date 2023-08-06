@@ -1,0 +1,8 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+seq_toolkit.egg-info/PKG-INFO
+seq_toolkit.egg-info/SOURCES.txt
+seq_toolkit.egg-info/dependency_links.txt
+seq_toolkit.egg-info/top_level.txt
