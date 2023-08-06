@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/keygen_licensing_tools/__init__.py
+src/keygen_licensing_tools/_helpers.py
+src/keygen_licensing_tools/_main.py
+src/keygen_licensing_tools.egg-info/PKG-INFO
+src/keygen_licensing_tools.egg-info/SOURCES.txt
+src/keygen_licensing_tools.egg-info/dependency_links.txt
+src/keygen_licensing_tools.egg-info/requires.txt
+src/keygen_licensing_tools.egg-info/top_level.txt
