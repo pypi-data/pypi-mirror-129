@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: binaryreader
+Version: 0.1.0
+Summary: a c-extension that implements a binary reader on top of bytes and bytearrays
+Home-page: https://github.com/K0lb3/binaryreader
+Author: K0lb3
+License: UNKNOWN
+Download-URL: https://github.com/K0lb3/binaryreader/tarball/master
+Keywords: python,cpython,c-api,binary,parsing
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BinaryReader
+
+TODO
+
