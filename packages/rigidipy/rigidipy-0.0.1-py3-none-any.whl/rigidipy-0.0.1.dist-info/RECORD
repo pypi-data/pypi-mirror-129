@@ -1,0 +1,15 @@
+rigidipy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rigidipy/rigidipy.py,sha256=gz0k17dpuciDlRtmNi5VpWJj4cjjVpB_fn1UUWU_-hQ,755
+rigidipy/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rigidipy/bin/calc_rigidity_OSX.bin,sha256=hU7JPeML40hfAaMwpnmKZHbz8QOuOaW1_DqjNMAPGjo,1537896
+rigidipy/bin/calc_rigidity_gcc4.8.4.bin,sha256=g2fLlHiFQrFj3DmKSvvHVByLZCo7cWsIZo5Y46rZnpM,1595579
+rigidipy/bin/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rigidipy/bin/lib/distance_cutoffs.txt,sha256=Go8hcwi76vwNMLYj8d2hzkvrlYG25AV2cGuxM1dRKlA,589
+rigidipy/bin/lib/het_dictionary.txt,sha256=uZvtPqZz1pcc4-feISpGQwZJ8Pmi5HkO8DWalA9Z2rI,7879878
+rigidipy/bin/lib/std_dictionary.txt,sha256=MRpnMaLP2tEnyIwtntdooHx3K75JtKrsaK-KRyHr89E,16339
+rigidipy-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rigidipy-0.0.1.dist-info/METADATA,sha256=QaUy4FumQgTCeqi0fdiKCnwosR8N7XfulDzKMovoD0Y,621
+rigidipy-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rigidipy-0.0.1.dist-info/entry_points.txt,sha256=zRAGZ6MUbrxryJrzkCorOO0HJVOzt8prD1Bji6k0eHQ,53
+rigidipy-0.0.1.dist-info/top_level.txt,sha256=lCGR9TJJZoEDFYEAiP7at2kNEM565JNgBoBOyg9ZbKs,9
+rigidipy-0.0.1.dist-info/RECORD,,
