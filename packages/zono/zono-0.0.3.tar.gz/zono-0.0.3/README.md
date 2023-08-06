@@ -1,0 +1,1 @@
+A package with cryptography,audio playback,thread workers and a command line application framework

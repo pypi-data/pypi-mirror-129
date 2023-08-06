@@ -1,0 +1,7 @@
+README.md
+setup.py
+zono.egg-info/PKG-INFO
+zono.egg-info/SOURCES.txt
+zono.egg-info/dependency_links.txt
+zono.egg-info/requires.txt
+zono.egg-info/top_level.txt
