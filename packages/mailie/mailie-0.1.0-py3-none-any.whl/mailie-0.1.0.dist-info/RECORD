@@ -1,0 +1,15 @@
+mailie/__init__.py,sha256=SybKYb0Hd7Qg9QaoMzu-uUyoagr7JXnfkVX5WZtKEd8,105
+mailie/__version__.py,sha256=CpXi3jGlx23RvRyU7iytOMZrnspdWw4yofS8lpP1AJU,18
+mailie/_configuration.py,sha256=hSNzBAa2pwhT42nCXKAubByowwAx6vZIRNMOwIb_6I4,135
+mailie/_email.py,sha256=DrX9-_35j656uFtpCRb8n2wKXDzG2EGpxCR5juUY890,1982
+mailie/_policy.py,sha256=LkOpKeei-PEmnBZ0bB8TsBh7Eds3X8v0c_EiRMNIysA,260
+mailie/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailie/commands/attach.py,sha256=hF4MgYCgFql4J6qi3lguqc6HQdP2gm6PpvtSxKBSjZc,34
+mailie/commands/headers.py,sha256=hF4MgYCgFql4J6qi3lguqc6HQdP2gm6PpvtSxKBSjZc,34
+mailie/commands/send.py,sha256=hF4MgYCgFql4J6qi3lguqc6HQdP2gm6PpvtSxKBSjZc,34
+mailie/mailie.py,sha256=MuwODefgjTiz0eoxpWqw9KInQUsYDSMJIIU7q_VMWWk,2596
+mailie-0.1.0.dist-info/entry_points.txt,sha256=BkWr8UpJohOtjzFEEkGWWpe-xfYNUb9GP3_pz5f9qiU,44
+mailie-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mailie-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+mailie-0.1.0.dist-info/METADATA,sha256=ckgn9URbzkI9kvCC1yLCTFb5umGpecbUc94FqB70qrg,608
+mailie-0.1.0.dist-info/RECORD,,

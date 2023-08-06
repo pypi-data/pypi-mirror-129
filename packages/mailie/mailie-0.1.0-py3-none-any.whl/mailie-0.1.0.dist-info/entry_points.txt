@@ -1,0 +1,3 @@
+[console_scripts]
+mailie=mailie.mailie:app
+
