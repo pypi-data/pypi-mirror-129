@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: drivtime
+Version: 0.0.1
+Summary: Driving time and rest periods in the road transport sector framework
+Home-page: https://github.com/hugodscarvalho/drivtime
+Author: Hugo Carvalho
+Author-email: hugodanielsilvacarvalho.hc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Project
+
+[![CircleCI](https://circleci.com/gh/pennlabs/github-project.svg?style=shield)](https://circleci.com/gh/pennlabs/github-project)
+[![Coverage Status](https://codecov.io/gh/pennlabs/github-project/branch/master/graph/badge.svg)](https://codecov.io/gh/pennlabs/github-project)
+[![PyPi Package](https://img.shields.io/pypi/v/pypi-project.svg)](https://pypi.org/project/pypi-project/)
+
+## Requirements
+
+* Python 3.6+
+* Django 2.2+
+
+## Installation
+
+Install with pip `pip install pypi-project`
+
+...
+
+## Documentation
+
+...
+
+## Changelog
+
+See [CHANGELOG.md](https://github.com/pennlabs/github-project/blob/master/CHANGELOG.md)
+
+## License
+
+See [LICENSE](https://github.com/pennlabs/github-project/blob/master/LICENSE)
+
