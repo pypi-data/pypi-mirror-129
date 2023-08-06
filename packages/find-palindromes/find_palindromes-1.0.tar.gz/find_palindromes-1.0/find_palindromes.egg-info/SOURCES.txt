@@ -1,0 +1,11 @@
+README.txt
+setup.cfg
+setup.py
+find_palindromes.egg-info/PKG-INFO
+find_palindromes.egg-info/SOURCES.txt
+find_palindromes.egg-info/dependency_links.txt
+find_palindromes.egg-info/top_level.txt
+package/__init__.py
+package/__main__.py
+package/input_getter.py
+package/palindromes.py
