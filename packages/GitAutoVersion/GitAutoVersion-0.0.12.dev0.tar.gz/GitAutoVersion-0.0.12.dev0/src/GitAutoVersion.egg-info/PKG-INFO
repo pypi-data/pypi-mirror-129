@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: GitAutoVersion
+Version: 0.0.12.dev0
+Summary: Get a descriptive version string in a git repository.
+Home-page: https://gitlab.com/3134/GitAutoProject
+Author: Sebastian GABRIEL
+Author-email: dev@3134.at
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/3134/GitAutoProject/-/issues
+Project-URL: Source, https://gitlab.com/3134/GitAutoProject/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+GitAutoVersion — README
+########################
+
+GitAutoVersion generates a version string for the current working directory in a git repository in the format:
+
+    ``<major>.<minor>.<patch>[.<misc>][-<prerelease>][+<upcount>][!<caveat>][#<metadata>]``
+
+Installation
+************
+
+Installation through the Python Package Index (`PyPi <https://pypi.org/>`_) is recommended:
+
+.. code-block:: python
+
+    pip --install GitAutoVersion
+
+Usage
+*****
+
+This package provides the funtion `getVersionString` which returns the generated version string for the working direcory of the given repository.
+It requires a git repository object of the GitPython module as argument.
+
+.. code-block:: python
+
+    version = GitAutoVersion.getVersionString(git_repo)
+
+You can modify the text for the special flags:
+
+``flag_development:str = "DEVELOPMENT"``
+    Indicating that the version is in a development branch.
+
+``flag_git:str = "git"``
+    Indicating that the metadata-chunk is a git Sha-1 hash
+
+``flag_branch:str = "branch"``
+    How do you call a "branch"?
+
+``flag_dirty:str = "DIRTY"``
+    What to say if the working directory is dirty
+
+
+Caveats
+*******
+
+This project is under development. It may break at any time.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
