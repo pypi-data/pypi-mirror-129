@@ -1,0 +1,11 @@
+numpy<1.21
+numba
+tqdm
+
+[dev]
+pytest
+pytest-mypy
+pytest-profiling
+pytest-flake8
+flake8<4.0.0
+flake8-isort
