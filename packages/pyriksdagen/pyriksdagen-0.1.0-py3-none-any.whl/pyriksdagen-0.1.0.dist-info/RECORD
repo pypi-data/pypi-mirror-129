@@ -1,0 +1,11 @@
+pyriksdagen/__init__.py,sha256=Ayi9gh1vYzPtExJHyqWpwoO6chG-4OsiDQNDiC8sZFM,84
+pyriksdagen/db.py,sha256=wLUiNVUnUx8PbVTPiSYu3-axW1oZSp6dk7_2jcUb4Io,1881
+pyriksdagen/download.py,sha256=SSNjqIuWCOcZK5sVOuQ3M7amTteLwfan4XByA6AbLjs,11236
+pyriksdagen/export.py,sha256=by4wwYXbEswNPfWQ4pv8nLx1iSOP3i3zGLJ5MmMliv8,8663
+pyriksdagen/mp.py,sha256=AUNNF12ptHW87T-uO1eVQPv2hU0foUDgyPZCEx5SPVM,11120
+pyriksdagen/refine.py,sha256=hdh3I2kW-31qLKg5jDuwFH22liA51VOFhplRDOs0lGo,13027
+pyriksdagen/segmentation.py,sha256=F9cXeITqTLctmCBJCakt8L0FPpLZhrI5FbZJk224PSk,10848
+pyriksdagen/utils.py,sha256=jAtokdgGNq_jPKlVsgffee2k9CrkPosCAktwA6kbYT4,3409
+pyriksdagen-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyriksdagen-0.1.0.dist-info/METADATA,sha256=bzQ66KwO9tcV_UEFik3LSLqeZe7Z-wb53kO55KFm_sY,1773
+pyriksdagen-0.1.0.dist-info/RECORD,,
