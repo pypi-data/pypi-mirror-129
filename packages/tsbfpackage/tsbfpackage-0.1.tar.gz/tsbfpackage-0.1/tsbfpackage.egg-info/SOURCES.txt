@@ -1,0 +1,9 @@
+setup.py
+tsbfpackage/__init__.py
+tsbfpackage/bmi_calculate.py
+tsbfpackage/demo.py
+tsbfpackage.egg-info/PKG-INFO
+tsbfpackage.egg-info/SOURCES.txt
+tsbfpackage.egg-info/dependency_links.txt
+tsbfpackage.egg-info/not-zip-safe
+tsbfpackage.egg-info/top_level.txt
