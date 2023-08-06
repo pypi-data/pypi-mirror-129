@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: secread
+Version: 0.1.1
+Summary: This Python module allows to retrive secrets from Thycotic Secret Server. It utilizes the REST API
+License: MIT
+Author: Josef Fuchs
+Author-email: j053ff0x@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: python-dotenv (>=0.18.0,<0.19.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: types-requests (>=2.25.9,<3.0.0)
