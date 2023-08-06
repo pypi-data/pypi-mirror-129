@@ -1,0 +1,3 @@
+[console_scripts]
+apollogize = apollogize.apollogize:entry
+
