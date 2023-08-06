@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mr_scraper.egg-info/PKG-INFO
+mr_scraper.egg-info/SOURCES.txt
+mr_scraper.egg-info/dependency_links.txt
+mr_scraper.egg-info/requires.txt
+mr_scraper.egg-info/top_level.txt
