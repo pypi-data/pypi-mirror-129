@@ -1,0 +1,23 @@
+{% load account socialaccount %}
+{% url 'entries:view_home' as home_url %}
+{% url 'entries:view_about' as about_url %}
+{% url 'entries:list_entries' as entries_url %}
+{% url 'account_logout' as logout_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+
+<nav>
+    <hstack spacing=s align-x=center>
+        <a class="button" href="/">BrandX</a>
+        <spacer></spacer>
+        <a class="button" href="{{about_url}}">About</a>
+        <a class="button" href="{{entries_url}}">Blog</a>
+        {% if user.is_authenticated %}
+            <a class="button" href="{{ user.get_absolute_url }}">Profile</a>
+            <a class="button" href="{{ logout_url }}">Logout</a>
+        {% else %}
+            <a class="button" href="{{login_url}}">Login</a>
+            <a class="button" href="{{signup_url}}">Signup</a>
+        {% endif %}
+    </hstack>
+</nav>
