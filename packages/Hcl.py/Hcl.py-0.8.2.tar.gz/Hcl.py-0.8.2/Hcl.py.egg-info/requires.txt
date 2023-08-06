@@ -1,0 +1,8 @@
+websocket-client
+wheel
+requests
+progress
+json_minify
+aiohttp
+typing
+Amino-Socket
