@@ -1,0 +1,3 @@
+[console_scripts]
+md5-brute-force=main:entrypoint
+
