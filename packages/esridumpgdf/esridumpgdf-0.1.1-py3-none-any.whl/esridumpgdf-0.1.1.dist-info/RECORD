@@ -1,0 +1,9 @@
+esridumpgdf/__init__.py,sha256=05qpODGHCmAtnuk9n3UWLL9jWYCPpBKwZe55dGg-mkw,92
+esridumpgdf/_base.py,sha256=tdwWwHBJBEJ34xYqLp23vTZ7NE0mxuECwh13HqAPh14,1084
+esridumpgdf/layer.py,sha256=8HMIbB2w8i_e3d2uiwEGsIEKAP9yED25hZNxrcm-rU4,1396
+esridumpgdf/service.py,sha256=mNqe9vZ_IsE3afQKUqosbosU0-y6iLXwuyg6RguaByI,3253
+esridumpgdf/site.py,sha256=R8yQLmMD821WKDjxk4ywlmQBN9Te1J66LYYUg8l4FA4,1603
+esridumpgdf-0.1.1.dist-info/LICENSE,sha256=afXuFurhr4boMycNy6N1AVYYwvjNp-G1TK1iNCW1drU,1068
+esridumpgdf-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+esridumpgdf-0.1.1.dist-info/METADATA,sha256=G4BJWnWRux7T6s6Yq9EH3uK-Cbp-1x-b4lI3OfAN3Z4,1271
+esridumpgdf-0.1.1.dist-info/RECORD,,
