@@ -1,0 +1,6 @@
+#de
+#de_git_repo_manager
+#de_setup_hook
+#de_setup_project
+#de_tpl_namespace_root
+#de_tpl_project
