@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: hfurl
+Version: 0.2.0
+Summary: Human-friendly URL parsing in python
+Home-page: https://github.com/cmd410/hfurl
+License: LGPL-2.1-only
+Keywords: url,parse
+Author: Crystal Melting Dot
+Author-email: stresspassing@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/cmd410/hfurl
+Description-Content-Type: text/markdown
+
+<h1>HFURL - Human-friendly URL</h1>
+
+This is a tiny python library that provides parsing for human-firendly.
+Completely disregarding RFC it correctly parses url with no schema
+(eg. `example.com` is equivalent to `https://example.com/`).
+
+Useful when reading input URL from user, who as we al know, often omit schema.
+
+## Usage
+
+```python
+from hfurl import parse_url
+
+url = parse_url("example.com:443/about")
+assert url.host == "example.com"
+```
+
