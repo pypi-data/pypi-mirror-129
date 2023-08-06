@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: chronograph
+Version: 1.0.1
+Summary: Chronograph is a simple stopwatch / chronometer / chronograph for timing Python code.
+Home-page: https://github.com/computron/chronograph
+Author: Anubhav Jain
+Author-email: anubhavster@gmail.com
+License: MIT
+Description: ===========
+        Chronograph
+        ===========
+        
+        Chronograph is a feature-packed timer/stopwatch/chronometer that makes it simple to time Python code and functions. Features include:
+        
+        * support for named Chronographs and labeled splits
+        * reporting
+        * multiple verbosity levels
+        * built-in logging
+        * JSON-compatible output data, including timestamps of start/stop
+        * custom exceptions if desired
+        * pain-free global management of multiple Chronographs
+        * function decorators
+        * support of with() syntax
+        * cast to float gives total time
+        * unit tested
+        
+        For examples on usage and further docs, see the offical docs at <http://pythonhosted.org/chronograph/>
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
