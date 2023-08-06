@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+yqdata/__init__.py
+yqdata/__main__.py
+yqdata/basic.py
+yqdata/concept.py
+yqdata.egg-info/PKG-INFO
+yqdata.egg-info/SOURCES.txt
+yqdata.egg-info/dependency_links.txt
+yqdata.egg-info/entry_points.txt
+yqdata.egg-info/requires.txt
+yqdata.egg-info/top_level.txt
