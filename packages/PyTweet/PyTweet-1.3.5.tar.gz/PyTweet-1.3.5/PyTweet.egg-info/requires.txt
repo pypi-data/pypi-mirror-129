@@ -1,0 +1,6 @@
+requests
+requests_oauthlib
+python-dateutil
+
+[docs]
+sphinx>=4.0.2
