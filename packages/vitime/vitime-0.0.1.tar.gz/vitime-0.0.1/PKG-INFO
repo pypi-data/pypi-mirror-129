@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vitime
+Version: 0.0.1
+Summary: VITime app for storing and displaying VIT timetabe
+Home-page: https://github.com/Dhruv9449/VITime-CLI
+Author: Dhruv Shah
+Author-email: dhruvshahrds@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/Dhruv9449/VITime-CLI
+Project-URL: Bug Tracker, https://github.com/Dhruv9449/VITime-CLI/issues
+Description: 
+        #VITime
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
