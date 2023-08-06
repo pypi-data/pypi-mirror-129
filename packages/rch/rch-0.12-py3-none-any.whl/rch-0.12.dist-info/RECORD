@@ -1,0 +1,11 @@
+rch/__init__.py,sha256=oYbh7gcn6aFv4BfpihCMYHR2gbKq6YvYz2ayZymKzmI,129
+rch/arrays.py,sha256=JVhPVr_WFB8XzZQ6Qm_lSAFmFnfhnrvFAwt-03jCnyQ,7962
+rch/df.py,sha256=ZPNAlaNOinNby9IsrrcZrw9h9sNtW6g5Zu8zV_ej2VE,1982
+rch/eng.py,sha256=VUysuYObEW8p7Xzpba3cGSmKM6ANHzRnS-UdO-eHX2s,5707
+rch/sudoku.py,sha256=thgwRgA3xhv7iUriBClk88eV1J2dqdXKIbEUfh3NvV8,6863
+rch/web.py,sha256=ii9qIJe16upBBlHjvfd1y5iD2g2N_6rsBSwrFSfyM0I,4549
+rch-0.12.dist-info/LICENSE,sha256=i3mTHuRz5VOS8v2zRyrP5wMFViP_xme2v6LtfvMo_EA,1688
+rch-0.12.dist-info/METADATA,sha256=Tn8NA9am_RB21dU-ZQfF6Ye5PWfGx50MGFWlOJVgJf8,1040
+rch-0.12.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+rch-0.12.dist-info/top_level.txt,sha256=U5HjO7qbOY5Jk_Sy6dLsmJj9S1kB_CALe7el_HSpn_Q,4
+rch-0.12.dist-info/RECORD,,
