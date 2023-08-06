@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/vpack/__init__.py
+src/vpack/breakpt.py
+src/vpack/reload.py
+src/vpack/sigview.py
+src/vpack/utils.py
+src/vpack.egg-info/PKG-INFO
+src/vpack.egg-info/SOURCES.txt
+src/vpack.egg-info/dependency_links.txt
+src/vpack.egg-info/requires.txt
+src/vpack.egg-info/top_level.txt
