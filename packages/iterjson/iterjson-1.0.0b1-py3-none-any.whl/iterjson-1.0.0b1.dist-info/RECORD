@@ -1,0 +1,8 @@
+iterjson/__init__.py,sha256=z1NWyR4E4kBU2DMRQaWBrJLw08Ar_c8uRyocBYaJP2E,116
+iterjson/common.py,sha256=bVD7xKx_DVVOvdjX-ruyMSgBHXA_URXZAvyw5pQOxq8,188
+iterjson/reader.py,sha256=u6YLxsVNjxP0smu_9Yvtv7XGDDog5lBm63RsaCfGC4A,2239
+iterjson/values.py,sha256=P8-jORmjONW9OZwma6so4UKjDmHYmcq5m5Ox0Fo2tGo,7962
+iterjson-1.0.0b1.dist-info/METADATA,sha256=L3A-4Gg4felYaLzpk86D4IuJ3V6lDiaAZSOrql3axhQ,490
+iterjson-1.0.0b1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+iterjson-1.0.0b1.dist-info/top_level.txt,sha256=h0fo3fcObCEthv6v7GUE5V7ltQBxCyooP-py7urkeWc,9
+iterjson-1.0.0b1.dist-info/RECORD,,
