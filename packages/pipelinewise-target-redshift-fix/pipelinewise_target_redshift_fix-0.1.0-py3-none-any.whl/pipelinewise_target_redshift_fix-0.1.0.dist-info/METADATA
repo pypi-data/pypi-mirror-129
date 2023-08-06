@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pipelinewise-target-redshift-fix
+Version: 0.1.0
+Summary: A example Python package
+Home-page: https://github.com/Atif8Ted/pipelinewise-target-redshift
+Author: Atif Imam
+Author-email: mohd.atifimam@hotmail.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: pipelinewise-singer-python (==1.*)
+Requires-Dist: boto3 (==1.12.39)
+Requires-Dist: psycopg2-binary (==2.8.5)
+Requires-Dist: inflection (==0.4.0)
+Requires-Dist: joblib (==0.16.0)
+Provides-Extra: test
+Requires-Dist: pylint (==2.4.2) ; extra == 'test'
+Requires-Dist: pytest (==5.3.0) ; extra == 'test'
+Requires-Dist: mock (==3.0.5) ; extra == 'test'
+Requires-Dist: coverage (==4.5.4) ; extra == 'test'
+
+UNKNOWN
+
