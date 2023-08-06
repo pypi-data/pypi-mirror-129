@@ -1,0 +1,8 @@
+hackhttp2/__init__.py,sha256=gwWUw_vBdj6yuELD8i1MEZgViqAWPMdYyvPLsqy2pPo,50
+hackhttp2/hackhttp.py,sha256=iRG_2UmrtyLF0FWHcR7C35KWu9rAQ7gvKgiL-_157zE,6744
+hackhttp2/utils/__init__.py,sha256=7d-EZR285qLVI2RHnVeNzuu3kWM8kA6lpgivILKvvVw,51
+hackhttp2/utils/utils.py,sha256=ulboUJhPkLLFn45id6uvCsCLCHc4XBoVT8KYX2679PA,619
+hackhttp2-0.0.45.dist-info/METADATA,sha256=UrqhlHCpKfLfYiwHoh-AHfpyqJC_7z-qO-TiQu0fvGM,2179
+hackhttp2-0.0.45.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hackhttp2-0.0.45.dist-info/top_level.txt,sha256=cw38TOJVFOhyHUACKftgGE0n5UF2FzBJ5474gNkkPpM,10
+hackhttp2-0.0.45.dist-info/RECORD,,
