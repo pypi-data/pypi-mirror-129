@@ -1,0 +1,352 @@
+---
+# EXAMPLE OF A CONFIGURATION FILE
+# A very simple Population Dynamics model with infections
+
+#   _____                           _
+#  / ____|                         | |
+# | |  __  ___ _ __   ___ _ __ __ _| |
+# | | |_ |/ _ \ '_ \ / _ \ '__/ _` | |
+# | |__| |  __/ | | |  __/ | | (_| | |
+#  \_____|\___|_| |_|\___|_|  \__,_|_|
+
+#  _____        __                           _   _
+# |_   _|      / _|                         | | (_)
+#   | |  _ __ | |_ ___  _ __ _ __ ___   __ _| |_ _  ___  _ __
+#   | | | '_ \|  _/ _ \| '__| '_ ` _ \ / _` | __| |/ _ \| '_ \
+#  _| |_| | | | || (_) | |  | | | | | | (_| | |_| | (_) | | | |
+# |_____|_| |_|_| \___/|_|  |_| |_| |_|\__,_|\__|_|\___/|_| |_|
+
+
+# NAME OF THE DISEASE
+model_name: Quickstart
+
+# info:
+#   pathogen: any
+
+# preferred modules for symbolic computing
+modules:
+  - math
+  - numpy
+  - numpy.random
+
+#  _______ _
+# |__   __(_)
+#    | |   _ _ __ ___   ___
+#    | |  | | '_ ` _ \ / _ \
+#    | |  | | | | | | |  __/
+#    |_|  |_|_| |_| |_|\___|
+
+
+# TIME INFORMATION
+time_info:
+  time_unit: days
+  delta_t: 7
+  origin: 'January 1'
+  total_duration: '2*365'
+  calendars:
+    quarantines:
+      period: {days: 365}
+      events:
+        quarantine_period: {begin: 'April 1', end: 'September 1'}
+
+#  _                    _
+# | |                  | |
+# | |     _____   _____| |___
+# | |    / _ \ \ / / _ \ / __|
+# | |___|  __/\ V /  __/ \__ \
+# |______\___| \_/ \___|_|___/
+
+
+# LEVELS OF AGENTS
+levels:
+  individuals:
+    desc: level of individuals
+    module: emulsion.examples.quickstart
+    class_name: Animal
+  herd:
+    desc: level of the herd
+    module: emulsion.examples.quickstart
+    class_name: Herd
+    contains:
+      - individuals
+    aggregation_type: hybrid
+
+
+
+#  _____
+# |  __ \
+# | |__) | __ ___   ___ ___  ___ ___  ___  ___
+# |  ___/ '__/ _ \ / __/ _ \/ __/ __|/ _ \/ __|
+# | |   | | | (_) | (_|  __/\__ \__ \  __/\__ \
+# |_|   |_|  \___/ \___\___||___/___/\___||___/
+
+
+
+# LIST OF PROCESSES (IN ORDER)
+processes:
+  herd:
+    - lifecycle
+    - infection
+    - mortality
+
+
+#   _____
+#  / ____|
+# | |  __ _ __ ___  _   _ _ __  ___
+# | | |_ | '__/ _ \| | | | '_ \/ __|
+# | |__| | | | (_) | |_| | |_) \__ \
+#  \_____|_|  \___/ \__,_| .__/|___/
+#                        | |
+#                        |_|
+
+# DESCRIPTION OF COMPARTMENTS ASSOCIATED WITH PROCESSES WHICH ARE NOT
+# BASED ON METHODS:
+grouping:
+  herd:
+    infection:
+      machine_name: health_state
+      key_variables: [health_state]
+      # compart_manager:
+      #   module: emulsion.examples.quickstart
+      #   class_name: ExampleGroupManager
+      # compart_class:
+      #   module: emulsion.examples.quickstart
+      #   class_name: ExampleAdaptiveView
+    lifecycle:
+      machine_name: life_cycle
+      key_variables: [life_cycle, is_adult]
+      # compart_manager:
+      #   module: emulsion.agent.managers
+      #   class_name: GroupManager
+      # compart_class:
+      #   module: emulsion.agent.views
+      #   class_name: AdaptiveView
+
+#   _____ _        _         __  __            _     _
+#  / ____| |      | |       |  \/  |          | |   (_)
+# | (___ | |_ __ _| |_ ___  | \  / | __ _  ___| |__  _ _ __   ___  ___
+#  \___ \| __/ _` | __/ _ \ | |\/| |/ _` |/ __| '_ \| | '_ \ / _ \/ __|
+#  ____) | || (_| | ||  __/ | |  | | (_| | (__| | | | | | | |  __/\__ \
+# |_____/ \__\__,_|\__\___| |_|  |_|\__,_|\___|_| |_|_|_| |_|\___||___/
+
+# DESCRIPTION OF THE STATE MACHINES INVOLVED IN THE MODEL
+state_machines:
+  life_cycle:
+    desc: Life cycle of animals
+    states:
+      - P:
+          name: Pregnant
+          desc: state for gestating animals
+          fillcolor: green
+          duration: gestation_duration
+      - NP:
+          name: NonPregnant
+          desc: state for empty animals
+          fillcolor: cyan
+          duration: delay_before_new_gestation
+    transitions:
+      - {from: NP, to: P, cond: is_adult, rate: reproduction_rate}
+      - from: P
+        to: NP
+        amount-all-but: 0
+        on_cross:
+          - action: produce_offspring
+            d_params:
+              proba_infection: 'is_sick*proba_vertical_transmission'
+          # - increase: total_N
+          #   rate: 1
+
+  health_state:
+    desc: Evolution of health states
+    states:
+      - M:
+          name: Maternal protection
+          desc: 'animal protected by maternal antibodies'
+          fillcolor: pink
+          duration: adult_age
+      - S:
+          name: Susceptible
+          desc: 'suceptible of becoming infectious'
+      - E:
+          name: Exposed
+          desc: 'already infected but not yet able to transmit the disease'
+          fillcolor: orange
+          duration: incubation_duration
+      - I:
+          name: Infectious
+          desc: 'sick and able to transmit the disease'
+          fillcolor: red
+      - R:
+          name: Resistant
+          desc: 'healthy again and resistant to infection'
+          fillcolor: limegreen
+      - Q:
+          name: Quarantine
+          desc: 'sick animals that are put aside for a while'
+          fillcolor: blue
+          duration: quarantine_duration
+    transitions:
+      - {from: M, to: S, rate: epsilon}
+      - {from: S, to: E, rate: f}
+      - {from: E, to: I, rate: alpha}
+      - {from: I, to: R, rate: gamma}
+      - {from: I, to: Q, rate: detection_rate, when: 'quarantine_period'}
+      - {from: R, to: S, rate: delta}
+      - {from: Q, to: R, amount-all-but: 0}
+
+#  _____                               _
+# |  __ \                             | |
+# | |__) |_ _ _ __ __ _ _ __ ___   ___| |_ ___ _ __ ___
+# |  ___/ _` | '__/ _` | '_ ` _ \ / _ \ __/ _ \ '__/ __|
+# | |  | (_| | | | (_| | | | | | |  __/ ||  __/ |  \__ \
+# |_|   \__,_|_|  \__,_|_| |_| |_|\___|\__\___|_|  |___/
+
+parameters:
+  initial_herd_size:
+    desc: initial number of animals in the herd
+    value: 100
+  initial_infected:
+    desc: initial number of infected animals in the herd
+    value: 10
+  adult_age:
+    desc: minimal age required to produce offspring (days)
+    value: '365*2'
+  gestation_duration:
+    desc: duration of the gestation (in days)
+    value: '30*8'
+  delay_before_new_gestation:
+    desc: minimum time to wait before new pregnancy can start
+    value: '30*3'
+  reproduction_rate:
+    desc: reproduction rate of the animals
+    value: 0.05
+  mortality_proba_healthy:
+    desc: mortality probability for healthy animals
+    value: 0.01
+  mortality_proba_sick:
+    desc: mortality probability for sick animals (E / I / Q)
+    value: 0.02
+  proba_vertical_transmission:
+    desc: probability that the offspring of an infected animal (E/ I /Q) becomes Infectious
+    value: 0.3
+  adult_age:
+    desc: age when individuals become adults (days)
+    value: 30
+  epsilon:
+    desc: maternal antibodies loss rate
+    value: 0.04
+  incubation_duration:
+    desc: minimum duration of the exposed state
+    value: 10
+  alpha:
+    desc: rate for E->I transition
+    value: 0.3
+  beta:
+    desc: contamination rate per sick individual
+    value: 0.1
+  gamma:
+    desc: recovery rate
+    value: 0.01
+#    value: 0.05
+  f:
+    desc: contamination function
+    value: 'beta * total_I / total_N'
+  delta:
+    desc: resistance loss rate
+    value: 0.01
+  quarantine_duration:
+    desc: duration of the quarantine (days)
+    value: 30
+  quarantine_size:
+    desc: number of animals that can be put simultaneously in the quarantine area
+    value: 20
+  detection_rate:
+    desc: 'rate at which animals are detected sick (falls to 0 if
+    quarantine zone is full)
+    '
+    value: '0.01*room_in_quarantine'
+
+#   _____ _        _
+#  / ____| |      | |
+# | (___ | |_ __ _| |_ _____   ____ _ _ __ ___
+#  \___ \| __/ _` | __/ _ \ \ / / _` | '__/ __|
+#  ____) | || (_| | ||  __/\ V / (_| | |  \__ \
+# |_____/ \__\__,_|\__\___| \_/ \__,_|_|  |___/
+
+
+statevars:
+  age:
+    desc: age of the animal
+  is_sick:
+    desc: 1 if the animal is infected (E/ I / Q), 0 otherwise
+  total_I:
+    desc: number of individuals in health state I
+  total_N:
+    desc: number of individuals in the population
+  total_Q:
+    desc: number of animals in quarantine zone
+  room_in_quarantine:
+    desc: 1 if number of animals in quarantine < quarantine_size, 0 otherwise
+  is_adult:
+    desc: True if the animal is an adult, False otherwise
+
+
+#               _   _
+#     /\       | | (_)
+#    /  \   ___| |_ _  ___  _ __  ___
+#   / /\ \ / __| __| |/ _ \| '_ \/ __|
+#  / ____ \ (__| |_| | (_) | | | \__ \
+# /_/    \_\___|\__|_|\___/|_| |_|___/
+
+
+actions:
+  produce_offspring:
+    desc: create a new animal with an infection probability
+
+#   ____        _               _
+#  / __ \      | |             | |
+# | |  | |_   _| |_ _ __  _   _| |_ ___
+# | |  | | | | | __| '_ \| | | | __/ __|
+# | |__| | |_| | |_| |_) | |_| | |_\__ \
+#  \____/ \__,_|\__| .__/ \__,_|\__|___/
+#                  | |
+#                  |_|
+
+outputs:
+  type: csv # database
+  database_information:
+    database: Quickstart
+    dialect: mysql
+    driver: mysqldb
+    server_name: localhost # 10.0.26.250
+    username: EMuLSion
+    password: 'EMuLSion'
+    # port: '' # 3306
+  herd:
+    period: 1
+
+#  _____           _        _
+# |  __ \         | |      | |
+# | |__) | __ ___ | |_ ___ | |_ _   _ _ __   ___  ___
+# |  ___/ '__/ _ \| __/ _ \| __| | | | '_ \ / _ \/ __|
+# | |   | | | (_) | || (_) | |_| |_| | |_) |  __/\__ \
+# |_|   |_|  \___/ \__\___/ \__|\__, | .__/ \___||___/
+#                                __/ | |
+#                               |___/|_|
+
+prototypes:
+  individuals:
+    - protected_newborn:
+        health_state: M
+        life_cycle: NP
+        age: 0
+    - infected_newborn:
+        health_state: I
+        life_cycle: NP
+        age: 0
+    - default:
+        health_state: S
+        life_cycle: random
+    - infected:
+        health_state: I
+...

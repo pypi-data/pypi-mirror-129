@@ -1,0 +1,13 @@
+include README.md
+include LICENSE.txt
+
+include doxygen.config
+recursive-include doc *.html
+
+include config/quickstart.yaml
+recursive-include config/tutorial/ *.yaml
+
+include scripts/emulsion.tx
+include scripts/quickstart.*
+include scripts/view-metamodel.sh
+include scripts/check-model.sh
