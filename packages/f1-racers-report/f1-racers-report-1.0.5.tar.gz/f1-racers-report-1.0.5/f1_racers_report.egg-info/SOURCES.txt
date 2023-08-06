@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+f1_racers_report.egg-info/PKG-INFO
+f1_racers_report.egg-info/SOURCES.txt
+f1_racers_report.egg-info/dependency_links.txt
+f1_racers_report.egg-info/requires.txt
+f1_racers_report.egg-info/top_level.txt
+racers_report/__init__.py
+racers_report/__main__.py
+racers_report/report_generator.py
+racers_report/data/abbreviations.txt
+racers_report/data/end.log
+racers_report/data/start.log
