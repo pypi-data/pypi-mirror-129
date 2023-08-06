@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: sphinx-github-role
+Version: 0.1b3
+Summary: sphinx-github-role
+Author-email: Juan Luis Cano Rodríguez <hello@juanlu.space>
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Utilities
+Requires-Dist: furo ; extra == "dev"
+Requires-Dist: hypothesis ; extra == "dev"
+Requires-Dist: myst-parser ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pytest-mypy ; extra == "dev"
+Requires-Dist: sphinx ; extra == "dev"
+Requires-Dist: furo ; extra == "doc"
+Requires-Dist: myst-parser ; extra == "doc"
+Requires-Dist: sphinx~=4.3.0 ; extra == "doc"
+Project-URL: Homepage, http://www.sphinx-doc.org/
+Provides-Extra: dev
+Provides-Extra: doc
+
+# sphinx-github-role
+
+[![Documentation Status](https://readthedocs.org/projects/sphinx-github-role/badge/?version=latest)](https://sphinx-github-role.readthedocs.io/en/latest/?badge=latest)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+A `github` role for Sphinx.
+
+## Usage
+
+### Basic usage
+
+MyST:
+
+```{code-block} md
+:caption: index.md
+See {github}`astrojuanlu/sphinx-github-role#1`.
+```
+
+reStructuredText:
+
+```{code-block} rst
+:caption: index.rst
+See :github:`astrojuanlu/sphinx-github-role#1`.
+```
+
+### Configuring a default organization and project
+
+The extension accepts a configuration `github_default_org_project`
+that can be a tuple `("default_org", "default_project")`
+to save some typing. For example, with this configuration:
+
+```{code-block} python
+:caption: conf.py
+github_default_org_project = ("astrojuanlu", None)
+```
+
+you can type this:
+
+```{code-block} md
+:caption: index.md
+See {github}`sphinx-github-role#1`.
+```
+
+and with this configuration:
+
+```{code-block} python
+:caption: conf.py
+github_default_org_project = ("astrojuanlu", "sphinx-github-role")
+```
+
+you only need to type this:
+
+```{code-block} md
+:caption: index.md
+See {github}`#1`.
+```
+
+### Customizing link text
+
+You can also customize the link text, by wrapping the target in angle brackets:
+
+```{code-block} md
+:caption: index.md
+See {github}`this issue <#1>`.
+```
+
+## Contribute
+
+Feel free to open an issue to report problems or suggest new features!
+
