@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "color-alpa"
+version = "0.0.6"
+description = "Test skeleton project for displaying ANSI color"
+authors = ["Albert Pang <alpaalpa@mac.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/alpaalpa/color"
+packages = [
+    { include = "color"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
