@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: allmaker
+Version: 0.1.1
+Summary: Generates and sorts __all__ list.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: directoryhandler
+
+UNKNOWN
+
+
