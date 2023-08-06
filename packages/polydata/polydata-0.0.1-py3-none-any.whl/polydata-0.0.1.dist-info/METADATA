@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: polydata
+Version: 0.0.1
+Summary: A package to build and manage polygonal data
+Home-page: https://github.com/dewloosh/polydata
+Author: dewloosh
+Author-email: dewloosh@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dewloosh/polydata/archive/refs/tags/0_0_1.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: comtypes
+Requires-Dist: pywin32
+
+# polydata
+A package to build and manage polygonal data
+
+
