@@ -1,0 +1,7 @@
+README.md
+setup.py
+nlputils_py.egg-info/PKG-INFO
+nlputils_py.egg-info/SOURCES.txt
+nlputils_py.egg-info/dependency_links.txt
+nlputils_py.egg-info/requires.txt
+nlputils_py.egg-info/top_level.txt
