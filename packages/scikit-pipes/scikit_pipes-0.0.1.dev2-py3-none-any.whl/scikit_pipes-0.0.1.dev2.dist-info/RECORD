@@ -1,0 +1,12 @@
+skpipes/__init__.py,sha256=BW9SiQyS_PJaaO_jNCrkS5AdO-C0BCgzY1PTwMJ8pEA,126
+skpipes/_version.py,sha256=UpxBY40tZa2i6N3JDfnKhtxRCjx8JgiJa6dTKNEdGJI,27
+skpipes/pipeline.py,sha256=r1vXsT0y1N1Yx-MlnVc_8eOTIPpJcsyzi3cgrB7bmjY,3506
+skpipes/config/__init__.py,sha256=UOmz5Qw4qet-fIJJ658dhfvB4jCa5rH_sFNVgqEAIWk,215
+skpipes/config/categorical.py,sha256=WzTXurDHJv1OWM50C_O6G3u2HM58khlHruBwaj2nf2U,668
+skpipes/config/numerical.py,sha256=z0vf8mJKApftF9KMuzlaMcx8iVVdNWBqXnQW3cL0hVo,2019
+skpipes/config/preprocessing.py,sha256=TkZ1BIlVlhb0PZDZi5UY5gQeHsOAmKi61CjQOg7kpE4,491
+scikit_pipes-0.0.1.dev2.dist-info/LICENSE,sha256=4vvcKmvTVbGGgnpruxukVHyzss6SzUHrFx81cS9Fe30,1092
+scikit_pipes-0.0.1.dev2.dist-info/METADATA,sha256=A7D10jVbw03gaZvkygv5S84u7MWzQuPKDxi_Jy3zkf0,4275
+scikit_pipes-0.0.1.dev2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+scikit_pipes-0.0.1.dev2.dist-info/top_level.txt,sha256=WQLakf06lqjVsWPvAijQko9GL0UGZlfZHwfTWHu0Irg,8
+scikit_pipes-0.0.1.dev2.dist-info/RECORD,,
