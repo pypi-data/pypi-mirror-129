@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "aio-cosmos"
+version = "0.2.4"
+description = "Ayncio Client for Azure Cosmos DB"
+authors = ["Grant McDonald <calmseasdev@gmail.com>"]
+keywords = ["azure","cosmos","ayncio","aio","nosql"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/calmseas/aio-cosmos"
+repository = "https://github.com/calmseas/aio-cosmos"
+include = [
+    "LICENSE"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp = {version = "^3.8.0", extras = ['speedups']}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-asyncio = "^0.16.0"
+azure-cosmos = "^4.2.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
