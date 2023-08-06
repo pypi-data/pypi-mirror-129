@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mbf-comparisons
+Version: 0.1
+Summary: Add a short description here!
+Home-page: https://pyscaffold.org/
+Author: Florian Finkernagel
+Author-email: finkernagel@imt.uni-marburg.de
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Dist: matplotlib-venn
+Requires-Dist: mbf-genomics
+Requires-Dist: mbf-qualitycontrol
+Requires-Dist: mbf-r
+Requires-Dist: plotnine
+Requires-Dist: sklearn
+Requires-Dist: statsmodels
+Requires-Dist: venn
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+UNKNOWN
+
+

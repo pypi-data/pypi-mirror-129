@@ -1,0 +1,11 @@
+mbf_comparisons/__init__.py,sha256=srW-FvB3WEVH9Yyme_Y_yqAaU3OFaAzUz0mY9mOv6N4,476
+mbf_comparisons/annotator.py,sha256=KVTFg4BnlSBJo2Zs5w2zV3Vl9Xz-yhcRr2zvC1x6c5Q,24138
+mbf_comparisons/comparisons.py,sha256=oELTUdDcnszJSFSS-TYncC9ZCtmWTJTpBH7Mxdo7Szg,16607
+mbf_comparisons/methods.py,sha256=A2R2D5QaB3UJN5TIn7rmT-J7gPBUQrZyIb-uSdhgGx8,41778
+mbf_comparisons/venn.py,sha256=sbiqDtG3pWdmiMmg5CYgwemzy8r_VTlfdZ9csUt2-bo,1386
+mbf_comparisons-0.1.dist-info/AUTHORS.rst,sha256=cSBy6yEDPSUKe4eVD0ZCiVuxZe5Um9YQYv-SUwSpsh0,95
+mbf_comparisons-0.1.dist-info/LICENSE.txt,sha256=c92tQwfZ4VVWjxlw6AERgzrSnzviw9aOVnrLv0eaj0U,1086
+mbf_comparisons-0.1.dist-info/METADATA,sha256=ESOMY-NfJ3SIwb2O0ilRmUTpim_KF3-jntGm6HxhdTQ,650
+mbf_comparisons-0.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+mbf_comparisons-0.1.dist-info/top_level.txt,sha256=rY6t44ia33OTemA5Mb2lwaObd4Czr-K4hM1eImswNnI,16
+mbf_comparisons-0.1.dist-info/RECORD,,
