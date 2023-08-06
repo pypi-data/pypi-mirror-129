@@ -1,0 +1,12 @@
+djangopyetl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangopyetl/admin.py,sha256=OQ6tcfv8UW0EAepNpSJ4rjjghK-YxG7QqyBdutTtpj8,1598
+djangopyetl/asgi.py,sha256=4AYcvC4r2okiwSO21Ake8NJ22k3emzyJV-qU6Gl0VR8,399
+djangopyetl/helpers.py,sha256=dDI0j-dfU8zjG3Y2JimsjKLWQ47sauZIYbRaY8XchA4,6230
+djangopyetl/settings.py,sha256=VWaOr07_xCOFPwaV33xCx1i2nKheedyNkTTc9ixCHOY,3238
+djangopyetl/tests.py,sha256=ggDnqKQZRHHb55FcDJcWgPtl-A59RVVjNJ3z22T5VRk,3285
+djangopyetl/urls.py,sha256=RG2bxdAnk7kEznIDESyDI4lSqiboEbelEJCXAyb5vE4,747
+djangopyetl/wsgi.py,sha256=wb_drRXXrPokj60yLDcV78JLF_FyyUxdZb-ShCCIy08,399
+djangopyetl-0.1.5.dist-info/LICENSE,sha256=mWHmYL55xUMthw2rBWIPNYr6IWq8KJVArL9TUXw7mCg,1093
+djangopyetl-0.1.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+djangopyetl-0.1.5.dist-info/METADATA,sha256=8pKt6gOc06TOmEC5JP2AcTWThotkXfnVJa98s_CN55Q,601
+djangopyetl-0.1.5.dist-info/RECORD,,
