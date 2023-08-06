@@ -1,0 +1,9 @@
+numpy
+tqdm
+gym
+imageio
+stable_baselines3
+opencv_python
+matplotlib
+dataclasses
+Pillow
