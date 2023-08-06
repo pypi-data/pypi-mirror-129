@@ -1,0 +1,13 @@
+kvaser/__about__.py,sha256=TfcOAmUAuo_PQ8LaJNCTFhgBOUu8Tfz_Fu5ewbmbvsw,594
+kvaser/__init__.py,sha256=fBMOejDvUE4GgNjCVMlyssbz2OKAmoR9114swWzAeq8,181
+kvaser/__main__.py,sha256=wzdQmxZFcVH0-1CFNxmUYiRbFGyqDFWiZacWS5KXnDo,105
+kvaser/__utils__.py,sha256=SCYPRobFa8XUBzdNANUVYAlJv0AwVyEclWMKOQFu_Cg,437
+kvaser/blob_storage.py,sha256=Wt-aAIfL9V--LofbxM9K1BjOEkiynfkct346WklGrz8,6729
+kvaser/data.py,sha256=bbkG_QJEU9i1Ev2MQFb1JrhR3MJMgeZVewmvPN69LaU,1252
+kvaser/data/d.csv.gz,sha256=oIJciGDOsNzKwoHDmOpT00lkgVYjMBQU1jo1komUGMA,18689
+kvaser/data/surgunit.csv.gz,sha256=yMHCt-MCQOJsxraiyvKzJOB6Ez8D7X36BCb9noML8A4,572
+kvaser-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kvaser-0.0.7.dist-info/METADATA,sha256=gEnigINvOUKQ6CgPSTQ-Cj0_R5xrzSw9ZuEC1F9ZagQ,811
+kvaser-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+kvaser-0.0.7.dist-info/top_level.txt,sha256=QM8DHsWwki7dw__6SkNwVTfLv1E8OjhLMDyRR1OCpqY,7
+kvaser-0.0.7.dist-info/RECORD,,
