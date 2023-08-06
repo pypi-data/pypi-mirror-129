@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: django-entries
+Version: 0.1.5
+Summary: Entries is a helper Django app with CRUD functions based on htmx.
+License: MIT
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (>=3.2,<4.0)
+Requires-Dist: Markdown (>=3.3.6,<4.0.0)
+Requires-Dist: bleach (>=4.1.0,<5.0.0)
+Requires-Dist: django-crispy-forms (>=1.13.0,<2.0.0)
+Requires-Dist: django-extensions (==3.1.5)
+Requires-Dist: markdownify (>=0.10.0,<0.11.0)
+Requires-Dist: types-Markdown (>=3.3.8,<4.0.0)
+Requires-Dist: types-bleach (>=4.1.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Entries
+
+## Overview
+
+Entries is a Django app that has basic create-read-update-delete functionality for a model that `Entry` consisting of the following fields: `title`, `excerpt`,`content` and `author`.
+
+The [templates/base.html](./entries/templates/base.html) provides a light set of tools:
+
+1. `starter.css` [stylesheet](./entries/static/css/starter.css) for some defaults
+2. `pylon` 0.1.1 for `<hstack>` and `<vstack>` layouts
+3. `htmx` 1.6.1 for html-over-the-wire functionality
+4. `hyperscript` 0.9 for client-side reactivity
+5. `simplemde` a simple text editor that accepts markdown
+
+## Quickstart
+
+```python
+# in project_folder/settings.py
+INSTALLED_APPS = [
+    ...,
+    'crispy_forms',  # crispy_forms at least > v1.13
+    'entries' # new
+]
+
+# in project_folder/urls.py
+from django.urls import path, include # new
+urlpatterns = [
+    ...,
+    path('entry/', include('entries.urls')) # new
+]
+```
+
+Add to database:
+
+```zsh
+.venv> python manage.py migrate # enter virtual environment
+```
+
