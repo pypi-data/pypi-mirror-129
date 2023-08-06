@@ -1,0 +1,14 @@
+odoo/addons/account_mail_autosubscribe/README.rst,sha256=2NP-80TdBsLRwq26VIbIg8jcw9KfOegC908s6ZyxtWI,3221
+odoo/addons/account_mail_autosubscribe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/account_mail_autosubscribe/__manifest__.py,sha256=bj8MBKeUvgFwKYoeizK1rqdL8r8y08IFCHXithzTgBE,670
+odoo/addons/account_mail_autosubscribe/data/mail_autosubscribe.xml,sha256=td79l5vnatz798-AynqqaC2mGgKeL1uwLrJF3MBIqic,450
+odoo/addons/account_mail_autosubscribe/i18n/account_mail_autosubscribe.pot,sha256=AyzPzY6fvZoAIdVCppv0SiPLoR_D-HBQlYffHd1jWNE,341
+odoo/addons/account_mail_autosubscribe/readme/CONFIGURE.rst,sha256=v9YPu33h9YL6eBddxnuHWt1I8ZUvinY3dY9ERB6AJOQ,69
+odoo/addons/account_mail_autosubscribe/readme/CONTRIBUTORS.rst,sha256=gtt_CJZMb9UOMbjtoQqndgjUtwH7p5L99Hpy-6yJDLs,98
+odoo/addons/account_mail_autosubscribe/readme/DESCRIPTION.rst,sha256=G-b70uqTO-gZHq4Tyqe9Jsh4vKYJtmc-_0KU6bAC8K4,109
+odoo/addons/account_mail_autosubscribe/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_mail_autosubscribe/static/description/index.html,sha256=RMNRwR5GC7ZuPKiNmZf-Km8W7kXRheTvYQ-trKn7KjU,12634
+odoo14_addon_account_mail_autosubscribe-14.0.1.0.1.dev3.dist-info/METADATA,sha256=wYwJ2e7gpWR3skxDi65sUKMcnDuwMbSFq4FQTqNXjZU,3866
+odoo14_addon_account_mail_autosubscribe-14.0.1.0.1.dev3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+odoo14_addon_account_mail_autosubscribe-14.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_account_mail_autosubscribe-14.0.1.0.1.dev3.dist-info/RECORD,,
