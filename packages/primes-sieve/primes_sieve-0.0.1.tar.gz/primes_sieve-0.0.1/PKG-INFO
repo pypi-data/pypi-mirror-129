@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: primes_sieve
+Version: 0.0.1
+Summary: A sample Python project with some functionality
+Home-page: https://github.com/frootin/primes_sieve
+Author: Nathalia B
+Author-email: natalyxxxgo@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/frootin/primes_sieve/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This is a sample python project for finding prime numbers less than N (N defined by user).
+
+The main function impelements the sieve of Eratosphenes algorithm and returns list of prime numbers. It's quite optimized, though not intended for real-life projects use. Module sieve.py supports command-line interface and can be run as separate program. The program is looped, so enter "stop" when you're done.
+

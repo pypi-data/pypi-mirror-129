@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+source/primes_sieve.egg-info/PKG-INFO
+source/primes_sieve.egg-info/SOURCES.txt
+source/primes_sieve.egg-info/dependency_links.txt
+source/primes_sieve.egg-info/top_level.txt

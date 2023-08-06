@@ -1,0 +1,3 @@
+This is a sample python project for finding prime numbers less than N (N defined by user).
+
+The main function impelements the sieve of Eratosphenes algorithm and returns list of prime numbers. It's quite optimized, though not intended for real-life projects use. Module sieve.py supports command-line interface and can be run as separate program. The program is looped, so enter "stop" when you're done.
