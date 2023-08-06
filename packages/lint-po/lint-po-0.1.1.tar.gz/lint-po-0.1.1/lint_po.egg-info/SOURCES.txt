@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/lint-po
+lint_po.egg-info/PKG-INFO
+lint_po.egg-info/SOURCES.txt
+lint_po.egg-info/dependency_links.txt
+lint_po.egg-info/top_level.txt
