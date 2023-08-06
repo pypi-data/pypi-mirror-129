@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pylegacy
+Version: 0.1.0a2
+Summary: Backports for abandoned Python versions
+Home-page: https://github.com/pylegacy/pylegacy
+Maintainer: Víctor Molina García
+Maintainer-email: molinav@users.noreply.github.com
+License: Python Software Foundation License
+Project-URL: Bug Tracker, https://github.com/pylegacy/pylegacy/issues
+Project-URL: Source, https://github.com/pylegacy/pylegacy
+Keywords: compatibility,backports,legacy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.6, !=3.0.*, !=3.1.*, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: unittest2 ; extra == 'dev'
+Requires-Dist: flake8 (<3.0,>=2.6) ; (python_version == "2.6") and extra == 'dev'
+Requires-Dist: pytest (<3.3,>=3.2) ; (python_version == "2.6") and extra == 'dev'
+Requires-Dist: pytest-cov (<2.6,>=2.5) ; (python_version == "2.6") and extra == 'dev'
+Requires-Dist: flake8 (<3.9,>=2.6) ; (python_version == "2.7") and extra == 'dev'
+Requires-Dist: astroid (<1.7,>=1.6) ; (python_version == "2.7") and extra == 'dev'
+Requires-Dist: pylint (<2.0,>=1.9) ; (python_version == "2.7") and extra == 'dev'
+Requires-Dist: pytest (<5.0,>=3.2) ; (python_version == "2.7") and extra == 'dev'
+Requires-Dist: pytest-cov (<2.11,>=2.5) ; (python_version == "2.7") and extra == 'dev'
+Requires-Dist: flake8 (<3.0,>=2.6) ; (python_version == "3.2") and extra == 'dev'
+Requires-Dist: pytest (<3.0,>=2.9) ; (python_version == "3.2") and extra == 'dev'
+Requires-Dist: coverage (<4.0,>=3.7) ; (python_version == "3.2") and extra == 'dev'
+Requires-Dist: pytest-cov (<2.6,>=2.5) ; (python_version == "3.2") and extra == 'dev'
+Requires-Dist: flake8 (<3.0,>=2.6) ; (python_version == "3.3") and extra == 'dev'
+Requires-Dist: pytest (<3.3,>=3.2) ; (python_version == "3.3") and extra == 'dev'
+Requires-Dist: pytest-cov (<2.6,>=2.5) ; (python_version == "3.3") and extra == 'dev'
+Requires-Dist: pytest (<5.0,>=3.2) ; (python_version == "3.4") and extra == 'dev'
+Requires-Dist: pytest-cov (<2.9,>=2.5) ; (python_version == "3.4") and extra == 'dev'
+Requires-Dist: flake8 (<3.9,>=2.6) ; (python_version >= "3.4") and extra == 'dev'
+Requires-Dist: astroid (<2.5,>=1.6) ; (python_version >= "3.5") and extra == 'dev'
+Requires-Dist: pylint (<2.7,>=1.9) ; (python_version >= "3.5") and extra == 'dev'
+Requires-Dist: pytest (<6.2,>=3.2) ; (python_version >= "3.5") and extra == 'dev'
+Requires-Dist: pytest-cov (<2.11,>=2.5) ; (python_version >= "3.5") and extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: six (<1.16,>=1.10) ; (python_version >= "3.5") and extra == 'doc'
+Requires-Dist: sphinx (<3.4,>=3.0) ; (python_version >= "3.5") and extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (<0.6,>=0.5) ; (python_version >= "3.5") and extra == 'doc'
+
+# pylegacy
+
+
