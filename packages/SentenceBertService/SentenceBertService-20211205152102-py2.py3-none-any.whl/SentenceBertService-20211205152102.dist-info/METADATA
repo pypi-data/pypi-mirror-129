@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: SentenceBertService
+Version: 20211205152102
+Summary: BentoML generated model module
+Home-page: https://github.com/bentoml/BentoML
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: bentoml (==0.13.1)
+Requires-Dist: torch (==1.10.0)
+Requires-Dist: tkitbentomlframeworksexpand (==0.0.0.216386886)
+
+# Generated BentoService bundle - SentenceBertService:20211205152102_F586DE
+
+This is a ML Service bundle created with BentoML, it is not recommended to edit
+code or files contained in this directory. Instead, edit the code that uses BentoML
+to create this bundle, and save a new BentoService bundle.
+
+SentenceBertService 接口
+
