@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lgtv-rs232
+Version: 0.1.0
+Summary: LG RS-232 TV client.
+Home-page: UNKNOWN
+Author: Dawid Rashid
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pyserial
+
+UNKNOWN
+
