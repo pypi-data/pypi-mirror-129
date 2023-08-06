@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting started" href="quick-start.html" />
+    <link rel="prev" title="About GeophPy" href="about.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GeophPy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-pip">Using pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-from-sources">Building from sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uninstallation">Uninstallation</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<span id="chap-install-geophpy"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>A Python (3.x) installation is necessary to install the <strong class="program">GeophPy</strong> package.</p>
+<div class="section" id="using-pip">
+<h2>Using pip<a class="headerlink" href="#using-pip" title="Permalink to this headline">¶</a></h2>
+<p>You can install <strong class="program">GeophPy</strong> directly from the <a class="reference external" href="https://pypi.org/project/GeophPy/">PyPI</a> repository using <code class="docutils literal notranslate"><span class="pre">pip</span></code>.</p>
+<p>First, make sure you have an up-to-date version of <code class="docutils literal notranslate"><span class="pre">pip</span></code> using the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="ow">or</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
+</pre></div>
+</div>
+<p>Then, install, upgrade (or uninstall) <strong class="program">GeophPy</strong> directly from <a class="reference external" href="https://pypi.org/project/GeophPy/">PyPI</a> repository using <code class="docutils literal notranslate"><span class="pre">pip</span></code> with these commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="n">pip</span> <span class="n">install</span> <span class="n">geophpy</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">geophpy</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">pip</span> <span class="n">uninstall</span>  <span class="n">geophpy</span>
+</pre></div>
+</div>
+<p>You can also download the zip file “GeophPy-vx.y” from the <a class="reference external" href="https://pypi.org/project/GeophPy/">PyPI</a> repository, and from the download folder use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="n">pip</span> <span class="n">install</span> <span class="n">GeophPy</span><span class="o">-</span><span class="n">vx</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">zip</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-from-sources">
+<h2>Building from sources<a class="headerlink" href="#building-from-sources" title="Permalink to this headline">¶</a></h2>
+<p>Download the zip file “GeophPy-vx.y” and unzip it.
+Go to the unzipped folder and run the install script with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="ow">or</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p><strong class="program">GeophPy</strong> depends on the following Python packages:</p>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>numpy</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SciPy</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>matplotlib</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>netCDF4</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Pillow</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>PySide</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>pyshp</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>simplekml</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>utm</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Sphinx</p></td>
+<td><p>1.4.3 (or greater)</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Failure on <strong class="program">Windows</strong></p>
+<p><strong class="program">GeophPy</strong> uses others Python modules and packages that should be automatically installed.
+However, the installation of these modules may failed on <strong class="program">Windows</strong> (in the absence of a C++ compiler for instance).</p>
+<p>They can be installed independently using the useful website: <a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a>.
+This website provides many popular scientific Python packages precompiled for <strong class="program">Windows</strong> distributions.</p>
+<p>To install a package independently:</p>
+<ol class="arabic">
+<li><p>Download the precompiled package sources corresponding to your Python version and <strong class="program">Windows</strong> distribution (SomePackage-vx.y-cp3x-cp3xm_winxx.whl);</p>
+<img alt="_images/figInstallGeophPyPackages.png" src="_images/figInstallGeophPyPackages.png" style="height: 4cm;" />
+</li>
+<li><p>In download folder, use a command prompt and install the package using <code class="docutils literal notranslate"><span class="pre">pip</span></code> with the name of the downloaded archive:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="n">SomePackage</span><span class="o">-</span><span class="n">vx</span><span class="o">.</span><span class="n">y</span><span class="o">-</span><span class="n">cp3x</span><span class="o">-</span><span class="n">cp3xm_winxx</span><span class="o">.</span><span class="n">whl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="ow">or</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="n">SomePackage</span><span class="o">-</span><span class="n">vx</span><span class="o">.</span><span class="n">y</span><span class="o">-</span><span class="n">cp3x</span><span class="o">-</span><span class="n">cp3xm_winxx</span><span class="o">.</span><span class="n">whl</span>
+</pre></div>
+</div>
+</li>
+<li><p>Repeat the process for all packages which installation failed before re-installing <strong class="program">GeophPy</strong>.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="uninstallation">
+<h2>Uninstallation<a class="headerlink" href="#uninstallation" title="Permalink to this headline">¶</a></h2>
+<p>The Python package can simply be uninstalled using <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">uninstall</span> <span class="n">geophpy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="ow">or</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">uninstall</span> <span class="n">geophpy</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quick-start.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="about.html" class="btn btn-neutral float-left" title="About GeophPy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

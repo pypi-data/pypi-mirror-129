@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>geophpy.plotting.destriping &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="../../../_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>geophpy.plotting.destriping</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for geophpy.plotting.destriping</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    geophpy.plotting.destrip</span>
+<span class="sd">    ------------------------</span>
+
+<span class="sd">    Destriping Mean Cross-Track Plot Management module.</span>
+
+<span class="sd">    :copyright: Copyright 2017-2019 Lionel Darras, Quentin Vitale and contributors, see AUTHORS.</span>
+<span class="sd">    :license: GNU GPL v3.</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">geophpy.processing.general</span> <span class="k">as</span> <span class="nn">genprocessing</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<div class="viewcode-block" id="plot_mean_track"><a class="viewcode-back" href="../../../api.html#geophpy.plotting.destriping.plot_mean_track">[docs]</a><span class="k">def</span> <span class="nf">plot_mean_track</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                    <span class="n">Nprof</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="n">setmin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">,</span>
+                    <span class="n">reference</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s1">&#39;mono&#39;</span><span class="p">,</span> <span class="n">Ndeg</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">plotflag</span><span class="o">=</span><span class="s1">&#39;raw&#39;</span><span class="p">,</span>
+                    <span class="n">dpi</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Plotting the mean cross-track (mean of each profile).</span>
+
+<span class="sd">    cf. :func:`~geophpy.dataset.DataSet.meantrack_plot`</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">if</span> <span class="n">fig</span> <span class="ow">is</span> <span class="kc">None</span> <span class="p">:</span>                      <span class="c1"># if first display</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>                  <span class="c1"># creates the figure</span>
+    <span class="k">else</span> <span class="p">:</span>                                  <span class="c1"># if not first display</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">clf</span><span class="p">()</span>                           <span class="c1"># clears figure</span>
+
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+    <span class="c1"># Dataset copy before destriping ###########################################</span>
+    <span class="n">DatasetDstp</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">DatasetDstp</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">setmin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">setnan</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">Z</span>    <span class="o">=</span>  <span class="n">DatasetDstp</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+    <span class="n">cols</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">Z</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    
+    <span class="c1"># Dataset statistics before destriping #####################################</span>
+    <span class="c1"># Mean and standard deviation</span>
+    <span class="k">if</span> <span class="n">reference</span> <span class="o">==</span> <span class="s1">&#39;mean&#39;</span><span class="p">:</span>
+        <span class="c1"># Per profile</span>
+        <span class="n">ZMOY</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ZSTD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanstd</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># Survey Global values</span>
+        <span class="n">MOY</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span>
+        <span class="n">STD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanstd</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span>
+
+    <span class="c1"># Median and interquartile range</span>
+    <span class="k">elif</span> <span class="n">reference</span> <span class="o">==</span> <span class="s1">&#39;median&#39;</span><span class="p">:</span>
+        <span class="c1"># Per profile</span>
+        <span class="n">ZMOY</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmedian</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">q75_i</span><span class="p">,</span> <span class="n">q25_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanpercentile</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="p">[</span><span class="mi">75</span><span class="p">,</span><span class="mi">25</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ZSTD</span> <span class="o">=</span> <span class="n">q75_i</span> <span class="o">-</span> <span class="n">q25_i</span>
+        <span class="c1"># or directly</span>
+        <span class="c1"># ZSTD = np.subtract(*np.nanpercentile(Z, [75,25], axis=0, keepdims=True))</span>
+
+        <span class="c1"># Survey Global values</span>
+        <span class="n">MOY</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmedian</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span>
+        <span class="n">STD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="p">[</span><span class="mi">75</span><span class="p">,</span> <span class="mi">25</span><span class="p">]))</span>
+
+    <span class="c1"># Data destriping ##########################################################</span>
+    <span class="c1"># Constant destriping</span>
+    <span class="k">if</span> <span class="n">Ndeg</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">genprocessing</span><span class="o">.</span><span class="n">destripecon</span><span class="p">(</span><span class="n">DatasetDstp</span><span class="p">,</span> <span class="n">Nprof</span><span class="o">=</span><span class="n">Nprof</span><span class="p">,</span> <span class="n">setmin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">reference</span><span class="o">=</span><span class="n">reference</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Curve destriping</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">genprocessing</span><span class="o">.</span><span class="n">destripecub</span><span class="p">(</span><span class="n">DatasetDstp</span><span class="p">,</span> <span class="n">Nprof</span><span class="o">=</span><span class="n">Nprof</span><span class="p">,</span> <span class="n">setmin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">Ndeg</span><span class="o">=</span><span class="n">Ndeg</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Reference mean and std dev ###############################################</span>
+    <span class="c1"># Moments of the global map</span>
+    <span class="k">if</span> <span class="n">Nprof</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span><span class="p">:</span>
+            <span class="n">MOYR</span> <span class="o">=</span> <span class="n">MOY</span> <span class="o">+</span> <span class="mi">0</span><span class="o">*</span><span class="n">ZMOY</span>
+            <span class="n">STDR</span> <span class="o">=</span> <span class="n">STD</span> <span class="o">+</span> <span class="mi">0</span><span class="o">*</span><span class="n">ZSTD</span>
+
+    <span class="c1"># Moments fo Nprof=0 profile</span>
+    <span class="k">elif</span> <span class="n">Nprof</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+        <span class="n">MOYR</span> <span class="o">=</span> <span class="n">ZMOY</span>
+        <span class="n">STDR</span> <span class="o">=</span> <span class="n">ZSTD</span>
+
+    <span class="c1"># Moments on Nprof profile</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">MOYR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">ZMOY</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">STDR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">ZSTD</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+        <span class="n">kp2</span>  <span class="o">=</span> <span class="n">Nprof</span> <span class="o">//</span> <span class="mi">2</span>
+        <span class="c1"># Mean of Nprof cols centered the profile</span>
+        <span class="k">if</span> <span class="n">reference</span> <span class="o">==</span> <span class="s1">&#39;mean&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">jc</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
+                <span class="n">jc1</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">jc</span><span class="o">-</span><span class="n">kp2</span><span class="p">)</span>
+                <span class="n">jc2</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">Z</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">jc</span><span class="o">+</span><span class="n">kp2</span><span class="p">)</span>
+                <span class="n">MOYR</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">jc</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">Z</span><span class="p">[:,</span><span class="n">jc1</span><span class="p">:</span><span class="n">jc2</span><span class="p">])</span>
+                <span class="n">STDR</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">jc</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanstd</span><span class="p">(</span><span class="n">Z</span><span class="p">[:,</span><span class="n">jc1</span><span class="p">:</span><span class="n">jc2</span><span class="p">])</span>
+
+        <span class="k">elif</span> <span class="n">reference</span> <span class="o">==</span> <span class="s1">&#39;median&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">jc</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
+                <span class="n">jc1</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">jc</span><span class="o">-</span><span class="n">kp2</span><span class="p">)</span>
+                <span class="n">jc2</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">Z</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">jc</span><span class="o">+</span><span class="n">kp2</span><span class="p">)</span>
+                <span class="n">MOYR</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">jc</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmedian</span><span class="p">(</span><span class="n">Z</span><span class="p">[:,</span><span class="n">jc1</span><span class="p">:</span><span class="n">jc2</span><span class="p">])</span>
+                <span class="n">STDR</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="n">jc</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">Z</span><span class="p">[:,</span><span class="n">jc1</span><span class="p">:</span><span class="n">jc2</span><span class="p">],</span> <span class="p">[</span><span class="mi">75</span><span class="p">,</span> <span class="mi">25</span><span class="p">]))</span>
+
+    <span class="c1"># Data after destriping ##########################################</span>
+    <span class="n">Zdsp</span>    <span class="o">=</span> <span class="n">DatasetDstp</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+
+    <span class="c1"># Mean and standard deviation</span>
+    <span class="k">if</span> <span class="n">reference</span> <span class="o">==</span> <span class="s1">&#39;mean&#39;</span><span class="p">:</span>
+        <span class="n">ZMOYdsp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">Zdsp</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ZSTDdsp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanstd</span><span class="p">(</span><span class="n">Zdsp</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># Median and interquartile range</span>
+    <span class="k">elif</span> <span class="n">reference</span> <span class="o">==</span> <span class="s1">&#39;median&#39;</span><span class="p">:</span>
+        <span class="n">ZMOYdsp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmedian</span><span class="p">(</span><span class="n">Zdsp</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">ZSTDdsp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">nanpercentile</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="p">[</span><span class="mi">75</span><span class="p">,</span><span class="mi">25</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
+    <span class="c1"># Build the image ################################################</span>
+    <span class="n">GlobalRefLabel</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;Global&#39;</span><span class="p">,</span> <span class="n">reference</span><span class="p">])</span>
+    <span class="n">RefLabel</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;Reference&#39;</span><span class="p">,</span> <span class="n">reference</span><span class="p">])</span>
+
+    <span class="c1"># Plot raw data</span>
+    <span class="k">if</span> <span class="n">plotflag</span><span class="o">==</span><span class="s1">&#39;raw&#39;</span> <span class="ow">or</span> <span class="n">plotflag</span><span class="o">==</span><span class="s1">&#39;both&#39;</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">ZMOY</span><span class="o">.</span><span class="n">size</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">ZMOY</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;bo--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">markerfacecolor</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Original&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">ZMOY</span><span class="o">.</span><span class="n">size</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="n">MOY</span><span class="p">,</span> <span class="n">MOY</span><span class="p">],</span> <span class="s1">&#39;k--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">GlobalRefLabel</span><span class="p">)</span>
+
+    <span class="c1"># Plot destriped data</span>
+    <span class="k">if</span> <span class="n">plotflag</span><span class="o">==</span><span class="s1">&#39;destriped&#39;</span> <span class="ow">or</span> <span class="n">plotflag</span><span class="o">==</span><span class="s1">&#39;both&#39;</span><span class="p">:</span>
+        <span class="n">xdsp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">ZMOYdsp</span><span class="o">.</span><span class="n">size</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">ydsp</span> <span class="o">=</span> <span class="n">ZMOYdsp</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+        <span class="n">xref</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">MOYR</span><span class="o">.</span><span class="n">size</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">yref</span> <span class="o">=</span> <span class="n">MOYR</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xdsp</span><span class="p">,</span> <span class="n">ydsp</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Destriped&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xref</span><span class="p">,</span> <span class="n">yref</span><span class="p">,</span> <span class="s1">&#39;go--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">RefLabel</span><span class="p">)</span>
+    
+    <span class="c1"># Axis labels</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Mean cross-track profile&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Profile number&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Value&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Upper center legend</span>
+    <span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
+    <span class="c1">#ax.legend(frameon=False, loc=9, ncol=3, mode=&#39;expand&#39;)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">ncol</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Saving into a file #############################################</span>
+    <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+       <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fig</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

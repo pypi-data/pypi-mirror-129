@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Geographic Positionning &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using a GUI" href="gui.html" />
+    <link rel="prev" title="Magnetic Processing" href="mag-proc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Geographic Positionning</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/geopos.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="geographic-positionning">
+<span id="chap-geopos-geophpy"></span><h1>Geographic Positionning<a class="headerlink" href="#geographic-positionning" title="Permalink to this headline">¶</a></h1>
+<p>All geographic position information are manage via a <a class="reference internal" href="api.html#geophpy.geoposset.GeoPosSet" title="geophpy.geoposset.GeoPosSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoPosSet</span></code></a> class.</p>
+<p>You can open a file containing the geographic coordinates of the geophysical survey corresponding to a <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object from both :</p>
+<ul class="simple">
+<li><p>an ascii file** (<em>.csv</em> for instance)</p></li>
+<li><p>or a shapefile (<em>.shp</em>)</p></li>
+</ul>
+<p><strong>Reading positions from file</strong></p>
+<p>To open your a <a class="reference internal" href="api.html#geophpy.geoposset.GeoPosSet" title="geophpy.geoposset.GeoPosSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoPosSet</span></code></a> from a file (ASCII or shapefile) use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.geoposset</span> <span class="kn">import</span> <span class="n">GeoPosSet</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># file type determined from extension</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span> <span class="o">=</span> <span class="n">GeoPosSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s1">&#39;GCPs.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># file type forced manually</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span> <span class="o">=</span> <span class="n">GeoPosSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s1">&#39;GCPs.shp&#39;</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="s1">&#39;shapefile&#39;</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Retrieve position</strong></p>
+<p>Retrieve list of Ground Control Points via:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gcp_list</span> <span class="o">=</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># or</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gcp_list</span> <span class="o">=</span> <span class="n">gpos</span><span class="o">.</span><span class="n">GCPs</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">gcp_list</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">32.52</span><span class="p">,</span> <span class="mf">34.70</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">32.52</span><span class="p">,</span> <span class="mf">34.70</span><span class="p">]]</span>  <span class="c1"># with [num, x or lon, y or lat]</span>
+</pre></div>
+</div>
+<p><strong>Plot GCPs</strong></p>
+<p>Plot the Ground Control Points:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">gpos</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">long_label</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/figGps1.png" class="align-center" src="_images/figGps1.png" style="width: 50%;" />
+<p><strong>Saving GCPs</strong></p>
+<p>Ground Control Points can be saved as an ascii file or a kml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># saving as an ascii file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span><span class="o">.</span><span class="n">to_ascii</span><span class="p">(</span><span class="s2">&quot;MyGCPs.dat&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To be saved as a kml file, the coordinates must be converted into lat,long first.
+If the original geographic system is UTM you can directly do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Converting UTM to WGS84</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geophpy.geoposset</span> <span class="k">as</span> <span class="nn">pset</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">num</span><span class="p">,</span> <span class="n">east</span><span class="p">,</span> <span class="n">north</span><span class="p">,</span> <span class="n">xlocal</span><span class="p">,</span> <span class="n">ylocal</span> <span class="o">=</span> <span class="n">gpos</span><span class="o">.</span><span class="n">GCPs</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lt</span><span class="p">,</span> <span class="n">lg</span> <span class="o">=</span> <span class="n">pset</span><span class="o">.</span><span class="n">utm_to_wgs84</span><span class="p">(</span><span class="n">east</span><span class="p">,</span> <span class="n">north</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span><span class="s1">&#39;T&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gcp_wgs84</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">num</span><span class="p">,</span> <span class="n">xlocal</span><span class="p">,</span> <span class="n">ylocal</span><span class="p">,</span> <span class="n">lt</span><span class="p">,</span> <span class="n">lg</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># saving as kml</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos_conv</span> <span class="o">=</span> <span class="n">pset</span><span class="o">.</span><span class="n">GeoPosSet</span><span class="p">(</span><span class="n">refsystem</span><span class="o">=</span><span class="s1">&#39;WGS84&#39;</span><span class="p">,</span> <span class="n">points_list</span><span class="o">=</span><span class="n">gcp_wgs84</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span><span class="o">.</span><span class="n">to_kml</span><span class="p">(</span><span class="s2">&quot;ConvGCPs.kml&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="_images/figGps2.png" class="align-center" src="_images/figGps2.png" style="width: 50%;" />
+<p><strong>Dataset georeferencing</strong></p>
+<p>Dataset georeferencing is possible with at less 4 points.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Georeferencing ungridded values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">setgeoref</span><span class="p">(</span><span class="s1">&#39;UTM&#39;</span><span class="p">,</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Georeferencing gridded values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">x_step</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y_step</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">setgeoref</span><span class="p">(</span><span class="s1">&#39;UTM&#39;</span><span class="p">,</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Plotting georeferenced data position (example for ungridded values)</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geophpy.dataset</span> <span class="k">as</span> <span class="nn">dset</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geophpy.geoposset</span> <span class="k">as</span> <span class="nn">pset</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading files</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">success</span><span class="p">,</span> <span class="n">dataset</span> <span class="o">=</span> <span class="n">dset</span><span class="o">.</span><span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s1">&#39;Mag_ex1.dat&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">success</span><span class="p">,</span> <span class="n">gpos</span> <span class="o">=</span> <span class="n">pset</span><span class="o">.</span><span class="n">GeoPosSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s1">&#39;GPS_ex1.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Displaying GCps</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">long_label</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id1">
+<img alt="_images/figGeorefGCPs.png" src="_images/figGeorefGCPs.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 85 </span><span class="caption-text">Georeferencing - Ground Control Points.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Georeferencing</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">setgeoref</span><span class="p">(</span><span class="n">gpos</span><span class="o">.</span><span class="n">refsystem</span><span class="p">,</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Displaying in local system</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">box</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">get_boundingbox</span><span class="p">())</span>  <span class="c1"># bounding box corners</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_xyvalues</span><span class="p">()</span>  <span class="c1"># data sample position</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">box_gcp</span> <span class="o">=</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># georef bounding box corners</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">east</span><span class="p">,</span> <span class="n">north</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_georef_xyvalues</span><span class="p">()</span> <span class="c1"># data sample georef position</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;r.&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span> <span class="c1"># or east, north</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">box</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">box</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;bo&#39;</span><span class="p">)</span> <span class="c1"># or box_gcp.T[0], box_gcp.T[1]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># adding GCPs label</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">point</span> <span class="ow">in</span>  <span class="n">box</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">strg</span> <span class="o">=</span> <span class="s1">&#39;(</span><span class="si">%s</span><span class="s1">, </span><span class="si">%s</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">dx</span><span class="p">,</span> <span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">dy</span><span class="p">,</span> <span class="n">strg</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>             <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span><span class="n">ec</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 51%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id2">
+<img alt="_images/figGeorefLocalSystem.png" src="_images/figGeorefLocalSystem.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 86 </span><span class="caption-text">Georeferencing - Dataset in local system.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id3">
+<img alt="_images/figGeorefRefSystem.png" src="_images/figGeorefRefSystem.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 87 </span><span class="caption-text">Georeferencing - Dataset in geographic system.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>With the data set georeferenced, it is possible to export the dataset as a kml file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_kml</span><span class="p">(</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="s1">&#39;gray_r&#39;</span><span class="p">,</span> <span class="s2">&quot;prospection.kml&quot;</span><span class="p">,</span>
+<span class="go">    cmmin=-10, cmmax=10, dpi=600)</span>
+</pre></div>
+</div>
+<img alt="_images/figGeoref1.png" class="align-center" src="_images/figGeoref1.png" style="width: 50%;" />
+<p>Exporting the data set as a raster in a SIG application (as ArcGis, QGis, Grass, …) is possible with severals picture file format (‘jpg’, ‘png’, ‘tiff’):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_raster</span><span class="p">(</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="s1">&#39;gray_r&#39;</span><span class="p">,</span> <span class="s2">&quot;prospection.png&quot;</span><span class="p">,</span>
+<span class="go">    cmmin=-10, cmmax=10, dpi=600)</span>
+</pre></div>
+</div>
+<img alt="_images/figGeoref2.png" class="align-center" src="_images/figGeoref2.png" style="width: 50%;" />
+<p>A world file containing positioning informations of the raster is created (‘jgw’ for JPG, ‘pgw’ dor.png, and ‘tfw’ for TIFF picture format) with:</p>
+<blockquote>
+<div><p>Line 1: A: pixel size in the x-direction in map units/pixel</p>
+<p>Line 2: D: rotation about y-axis</p>
+<p>Line 3: B: rotation about x-axis</p>
+<p>Line 4: E: pixel size in the y-direction in map units, almost always negative[3]</p>
+<p>Line 5: C: x-coordinate of the center of the upper left pixel</p>
+<p>Line 6: F: y-coordinate of the center of the upper left pixel</p>
+</div></blockquote>
+<p>Example:</p>
+<blockquote>
+<div><p>0.0062202177595</p>
+<p>-0.0190627320737</p>
+<p>0.0131914192417</p>
+<p>0.00860610262817</p>
+<p>660197.8178</p>
+<p>3599813.97056</p>
+</div></blockquote>
+<p><strong>ASCII GCPs file format</strong></p>
+<blockquote>
+<div><p>If the <cite>geographic reference system</cite> is known, it must be written on the first line.
+The other lines contain the <cite>point number</cite> followed by its <cite>GPS coordinates</cite> (<cite>Longitude</cite> and <cite>Latitude</cite> or <cite>Easting</cite> and <cite>Northing</cite>)
+and eventually the corresponding local <cite>X</cite>, <cite>Y</cite> -coordinates.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># WGS84 file without local coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># (delimiter is tabulation)</span>
+<span class="go">WGS84</span>
+<span class="go">1   66.84617533     37.74956917</span>
+<span class="go">2   66.84649517     37.7489535</span>
+<span class="go">3   66.8472475      37.74972867</span>
+<span class="go">4   66.84689417     37.7491385</span>
+<span class="go">5   66.84691867     37.7491025</span>
+<span class="gp">...</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># UTM file can also contain the corresponding local coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># (delimiter is tabulation)</span>
+<span class="go">UTM</span>
+<span class="go">1   745038.191      4656005.727     150     0</span>
+<span class="go">2   745068.172      4656045.663     150     50</span>
+<span class="go">3   745028.43       4656076.057     100     50</span>
+<span class="go">4   744988.466      4656105.978     50      50</span>
+<span class="go">5   744998.428      4656036.093     100     0</span>
+<span class="gp">...</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># UTM file with zone letter and number</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># (delimiter is tabulation)</span>
+<span class="go">UTM         L       32</span>
+<span class="go">1   745038.191      4656005.727     150     0</span>
+<span class="go">2   745068.172      4656045.663     150     50</span>
+<span class="go">3   745028.43       4656076.057     100     50</span>
+<span class="go">4   744988.466      4656105.978     50      50</span>
+<span class="go">5   744998.428      4656036.093     100     0</span>
+<span class="gp">...</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Unknown geographic system with missing local position</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># (delimiter is &quot;;&quot;)</span>
+<span class="go">1;745038.191;4656005.727;150;0</span>
+<span class="go">2;745068.172;4656045.663;150;50</span>
+<span class="go">3;745028.43;4656076.057;;        # missing local position</span>
+<span class="go">4;744988.466;4656105.978;50;50</span>
+<span class="go">5;744998.428;4656036.093;100;0</span>
+<span class="gp">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gui.html" class="btn btn-neutral float-right" title="Using a GUI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mag-proc.html" class="btn btn-neutral float-left" title="Magnetic Processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

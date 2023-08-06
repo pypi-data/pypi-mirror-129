@@ -1,0 +1,1071 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Magnetic Processing &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Geographic Positionning" href="geopos.html" />
+    <link rel="prev" title="General Processing" href="gen-proc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen-proc.html">General Processing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Magnetic Processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-consideration">General consideration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#spectral-domain">Spectral domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#magnetic-field">Magnetic field</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#logarithmic-transformation">Logarithmic transformation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#principle">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pole-reduction">Pole reduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#algorithm">Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#continuation">Continuation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#analytic-signal">Analytic signal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#euler-deconvolution">Euler deconvolution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sensor-configuration-conversion">Sensor configuration conversion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id27">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32">Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#equivalent-susceptibility">Equivalent Susceptibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id34">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id36">Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id37">Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Magnetic Processing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/mag-proc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="magnetic-processing">
+<span id="chap-mag-proc-geophpy"></span><h1>Magnetic Processing<a class="headerlink" href="#magnetic-processing" title="Permalink to this headline">¶</a></h1>
+<p>All the available processing techniques specific to magnetic surveys can be apply to a dataset through a simple command line of the form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">ProcessingTechnique</span><span class="p">(</span><span class="n">option1</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">option2</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">option3</span><span class="o">=</span><span class="s1">&#39;relative&#39;</span><span class="p">,</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This section describes the different available processing specific to magnetic survey data.</p>
+<div class="section" id="general-consideration">
+<span id="chap-mag-proc-genconsider-geophpy"></span><h2>General consideration<a class="headerlink" href="#general-consideration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="spectral-domain">
+<h3>Spectral domain<a class="headerlink" href="#spectral-domain" title="Permalink to this headline">¶</a></h3>
+<p>As most of the computation are done in the spectral domain, classic pre-processing and post-processing operations are automatically performed:</p>
+<p><em>Filling gaps</em></p>
+<p>To use the Fast Fourier Transform algorithm, the dataset must not contain gaps or ‘NaN’ (Not A Number) values.
+If the data set grid is not interpolated and contains NaNs, the blanks will be automatically filled using profile by profile linear interpolation prior to the Fourier Transform.
+After the data filtering, the gaps will be automatically unfilled using NaNs.</p>
+<p><em>Apodization</em></p>
+<p>To limit Gibbs phenomenon at jump discontinuities, the dataset edges are extended and then smoothed using a cosine window.
+The factor of apodization (0, 5, 10, 15, 20 or 25%) gives the dataset extension size.
+Values in the extension will be attenuated using a cosine:</p>
+<img alt="_images/figApodisation.png" src="_images/figApodisation.png" />
+<p>After processing, only the filtered values in the original dataset extension are kept so that the original data size is respected.</p>
+<p><em>Directional derivatives computation</em></p>
+<p>The nth directional derivatives of the a potential field are computed in the spectral domain using <a class="reference internal" href="references.html#blak96" id="id1"><span>[BLAK96]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/fffb98e95ca7396776ddf5516a7b1466c94f2920.png" alt="\mathcal{F} \left[ \frac{\partial^n T}{\partial x^n} \right] = (ik_x)^n \mathcal{F} \left[ T \right],
+\mathcal{F} \left[ \frac{\partial^n T}{\partial y^n} \right] = (ik_y)^n \mathcal{F} \left[ T \right],
+\mathcal{F} \left[ \frac{\partial^n T}{\partial z^n} \right] = |k|^n \mathcal{F} \left[ T \right]."/></p>
+</div></div>
+<div class="section" id="magnetic-field">
+<h3>Magnetic field<a class="headerlink" href="#magnetic-field" title="Permalink to this headline">¶</a></h3>
+<p><em>System of coordinates</em></p>
+<div class="figure align-center" id="id38">
+<img alt="_images/figAnglesRepresentation.png" src="_images/figAnglesRepresentation.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 62 </span><span class="caption-text">Reduction to the Pole - Magnetic inclination (<img class="math" src="_images/math/015755a22b6219b345c36a9a47b091dc56007486.png" alt="I"/>), declination (<img class="math" src="_images/math/0fcab9067b50b87e868c4fd70f213a086addb964.png" alt="D"/>) and azimuth (<img class="math" src="_images/math/8a87f04e7d7cca18343c084cceca5237fae62491.png" alt="\theta"/>) definition.</span><a class="headerlink" href="#id38" title="Permalink to this image">¶</a></p>
+</div>
+<p><em>Ambient field vector components</em></p>
+<p>Vector components</p>
+<div class="math">
+<p><img src="_images/math/0e3d976abbef4224332160f389d212c65ea1f919.png" alt="B_x &amp;= |B| \cdot f_x\\
+B_y &amp;= |B| \cdot f_y\\
+B_z &amp;= |B| \cdot f_z"/></p>
+</div><p>where are <img class="math" src="_images/math/70bb5ef4c79011a4d6027c4c5583f823a9095347.png" alt="f = (f_x, f_y, f_z)"/> is the unit-vector in the direction of the ambient field defined as:</p>
+<div class="math">
+<p><img src="_images/math/156c063f15787feb17d9727e39487b67c3057d65.png" alt="f_x &amp;=  \cos(I) \cos(\phi)\\
+f_y &amp;= \cos(I) \sin(\phi) \\
+f_z &amp;= \sin(I)"/></p>
+</div></div>
+</div>
+<div class="section" id="logarithmic-transformation">
+<h2>Logarithmic transformation<a class="headerlink" href="#logarithmic-transformation" title="Permalink to this headline">¶</a></h2>
+<p>The logarithmic transformation is contrast enhancement filter.</p>
+<p>Originally used for geological magnetic data, it enhances information present in the data at low-amplitude values while preserving the relative amplitude information via logarithmic transformation procedure <a class="reference internal" href="references.html#mpbl01" id="id2"><span>[MPBL01]</span></a>.</p>
+<p><strong>Filter applications:</strong> <em>(magnetic) contrast enhancement</em></p>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">logtransform</span><span class="p">(</span><span class="n">multfactor</span><span class="o">=</span><span class="mf">1e3</span><span class="p">,</span> <span class="n">setnan</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id39">
+<img alt="_images/figMagLogtransfrom1.png" src="_images/figMagLogtransfrom1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 63 </span><span class="caption-text">Log Transform - Raw dataset.</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id40">
+<img alt="_images/figMagLogtransfrom2.png" src="_images/figMagLogtransfrom2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 64 </span><span class="caption-text">Log Transform - Filtered dataset.</span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id41">
+<img alt="_images/figMagLogtransfromHist1.png" src="_images/figMagLogtransfromHist1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 65 </span><span class="caption-text">Log Transform - Raw dataset histogram.</span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id42">
+<img alt="_images/figMagLogtransfromHist2.png" src="_images/figMagLogtransfromHist2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 66 </span><span class="caption-text">Log Transform - Filtered dataset  histogram.</span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="principle">
+<h3>Principle<a class="headerlink" href="#principle" title="Permalink to this headline">¶</a></h3>
+<p>Contrast in magnetic susceptibility and magnetic remanence are the physical rock properties that controls magnetic anomalies, as well as the geometry and the position of the source body.</p>
+<p>Magnetic mineral content variation and borehole magnetic susceptibility are know to be best represented by a log-normal distribution.
+Assuming a that a similar distribution can represent lithologies on magnetic anomaly maps, then log transformation of the magnetic data should serve to normalize the distribution and highlight features having common amplitude.</p>
+<p>The log-normal transformation of magnetic data <img class="math" src="_images/math/5b7752c757e0b691a80ab8227eadb8a8389dc58a.png" alt="f"/> is defined as <a class="reference internal" href="references.html#mpbl01" id="id3"><span>[MPBL01]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/89d1bf2c727f73e919b4da330f6a1066a34e6d10.png" alt="\mathcal{F}\{f\} = \left\{
+   \begin{array}{ccc}
+       -\log_{10} (-f) &amp; \mbox{for} &amp; f &lt;-1 \\
+       \log_{10} (f) &amp; \mbox{for} &amp; f &gt;1 \\
+            0         &amp; \mbox{for} &amp; -1&lt; f &gt;1 \\
+   \end{array}
+\right."/></p>
+</div><p>A multiplying factor (<code class="docutils literal notranslate"><span class="pre">multfactor</span></code>) can be used to increase/decrease the number of data that falls into the condition <img class="math" src="_images/math/da75c5e971c334869513915878ae31ef7f48a2b3.png" alt="-1&lt; f &gt;1"/>, i.e. the number of data that are nulled.</p>
+</div>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>multfactor</p></th>
+<td><p>Multiplying factor that can be used to increase/decrease the number of data that falls into the condition [-1&lt; f &gt;1].</p></td>
+<td><p>float</p></td>
+<td><p>x5, x10, x20, x100…</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setnan</p></th>
+<td><p>Flag to replace values by NaNs instead of zeros.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>Flag to apply filter on the ungridded data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="pole-reduction">
+<span id="chap-mag-proc-rdp-geophpy"></span><h2>Pole reduction<a class="headerlink" href="#pole-reduction" title="Permalink to this headline">¶</a></h2>
+<p>Classic reduction to the pole.</p>
+<p>The reduction to the magnetic pole is a way to facilitate magnetic data interpretation and comparison.
+It simulates the anomaly that would be measured at the north magnetic pole (inclination of the magnetic field is maximum, i.e. vertical) <a class="reference internal" href="references.html#blak96" id="id4"><span>[BLAK96]</span></a>.</p>
+<p><strong>Filter applications:</strong> <em>(magnetic) ease anomaly interpretation</em></p>
+<div class="section" id="id5">
+<h3>Examples<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">polereduction</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">inclination</span><span class="o">=</span><span class="mi">65</span><span class="p">,</span> <span class="n">declination</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">azimuth</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Principle<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Due to the dipolar nature of the geomagnetic field, magnetic anomalies (if not located at the magnetic poles) are asymmetric with a geometry that depends on the ambient magnetic field inclination (<img class="math" src="_images/math/015755a22b6219b345c36a9a47b091dc56007486.png" alt="I"/>).</p>
+<p>The filter symmetrize the anomalies and place them directly above the source.
+In other words, the reduction to the pole simulates the anomaly that would be measured at the north magnetic pole.
+A similar processing (reduction to the equator) is used when data are recored at low magnetic inclinations.</p>
+<p>The computation is done in the spectral (frequency) domain using Fast Fourier Transform.
+For magnetization and ambient field uniform throughout the study area the transformation is given in the spectral domain by <a class="reference internal" href="references.html#blak96" id="id7"><span>[BLAK96]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/bcc63f84a6e7777977dd8110f050469158ab59b6.png" alt="\mathcal{F}_{RTP} = \mathcal{F}_{TF} \cdot \mathcal{F}"/></p>
+</div><p>where <img class="math" src="_images/math/cd59cb473d749526f95e9ad80f873029e8185f52.png" alt="\mathcal{F}_{RTP}"/> is the Fourier Transform of the anomaly reduced to the pole,
+<img class="math" src="_images/math/93f00ce133eb59c5dd1b296ccb2c320013ca018b.png" alt="\mathcal{F}_{TF}"/> is the Fourier Transform of the measured <cite>total field</cite> anomaly and
+<img class="math" src="_images/math/1c407cadee66a3a40c25f2119e3a8c44f681beb2.png" alt="\mathcal{F}"/> is the pole reduction operator defined as:</p>
+<div class="math">
+<p><img src="_images/math/08d81e87044a505cec8fe9729417bb19b86c8add.png" alt="\mathcal{F}_{m,f}\{k_x, k_y\} = \frac{|k|^2}{
+    a_1 k_x^2
+    + a_2 k_y^2
+    + a_3 k_x k_y
+    + i |k| (b1 k_x + b2 k_y)}, |k| \ne 0"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="_images/math/35487fdaa6a0f6a931c6a801ff253fa145ad42a1.png" alt="a_1 &amp;= m_z f_z - m_x f_x, \\
+a_2 &amp;= m_z f_z - m_y f_y, \\
+a_3 &amp;= -m_y f_x - m_x f_y, \\
+b_1 &amp;= m_x f_z + m_z f_x, \\
+b_2 &amp;= m_y f_z + m_z f_y, \\"/></p>
+</div><p>where <img class="math" src="_images/math/4a3b2388e4ff576d972ff29c8d074cc5949fa218.png" alt="m=(m_x, m_y, m_z)"/> is the unit-vector in the direction of the total magnetization (remanant + induced) of the source;
+<img class="math" src="_images/math/70bb5ef4c79011a4d6027c4c5583f823a9095347.png" alt="f = (f_x, f_y, f_z)"/> is the unit-vector in the direction of the ambient field;
+<img class="math" src="_images/math/ebb4ca6de3a8171ebe3f6dce4e7c58b3ccf40d84.png" alt="|k| = \sqrt{k_x^2 + k_y^2}"/> is the radial wavenumber and
+<img class="math" src="_images/math/dd0e5d9b7f5db2ce4081948acf7301aac2141fbe.png" alt="k_x"/> and <img class="math" src="_images/math/b0f9e558be99db329bb3c4c3df9ccf08b74f3bf1.png" alt="k_y"/> are the wavenumber in the x and y-direction respectively.</p>
+<p>The remanent magnetization of the source is usually small compared to the induced magnetization and can be neglected.
+The total magnetization is hence purely inductive so <img class="math" src="_images/math/a444403ada28b55a5046f0ebbbe7ef7818be4dca.png" alt="m=(m_x, m_y, m_z) = f = (f_x, f_y, f_z)"/> and the previous equation simplifies in:</p>
+<div class="math">
+<p><img src="_images/math/cca59e68ff532dd0ee5789404d0d836da181a9d9.png" alt="\mathcal{F}_{f}\{k_x, k_y\} = \frac{|k|^2}{
+    \left[ |k| f_z
+    + i( k_x f_x + k_y f_y ) \right]^2}, |k| \ne 0"/></p>
+</div><p>By default, the remanent magnetization is neglected in the filter (<code class="docutils literal notranslate"><span class="pre">incl_mag=None</span></code>, <code class="docutils literal notranslate"><span class="pre">decl_mag=None</span></code>).</p>
+</div>
+<div class="section" id="algorithm">
+<h3>Algorithm<a class="headerlink" href="#algorithm" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id43">
+<img alt="_images/figAlgoPoleReduction.png" src="_images/figAlgoPoleReduction.png" />
+<p class="caption"><span class="caption-number">Fig. 67 </span><span class="caption-text">Reduction to the Pole - Reduction to the Pole Algorithm.</span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<p>Reduction to the Pole algorithm where
+<img class="math" src="_images/math/dd0e5d9b7f5db2ce4081948acf7301aac2141fbe.png" alt="k_x"/> and <img class="math" src="_images/math/b0f9e558be99db329bb3c4c3df9ccf08b74f3bf1.png" alt="k_y"/> are the wavenumbers corresponding to the x and y-direction respectively;
+<img class="math" src="_images/math/015755a22b6219b345c36a9a47b091dc56007486.png" alt="I"/> is the ambient magnetic field inclination;
+<img class="math" src="_images/math/0fcab9067b50b87e868c4fd70f213a086addb964.png" alt="D"/> is the ambient magnetic field declination;
+<img class="math" src="_images/math/fffd2357ee88a9c50ba9e831ed64c39c73d54a07.png" alt="\phi"/> is the survey x-axis azimuth.</p>
+</div>
+</div>
+<p>See <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a> for the definition of filling gaps and apodization methods.</p>
+</div>
+<div class="section" id="id8">
+<h3>Parameters<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>apod</p></th>
+<td><p>Apodization factor (in %), to limit Gibbs phenomenon at jump discontinuities.</p></td>
+<td><p>float</p></td>
+<td><p>0, 5, 10, 20, 25, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>inclination</p></th>
+<td><p>Magnetic inclination (<img class="math" src="_images/math/015755a22b6219b345c36a9a47b091dc56007486.png" alt="I"/>, in degree). The angle between the horizontal plane and the ambient magnetic field vector (positive downward).</p></td>
+<td><p>float</p></td>
+<td><p>65, 45 …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>declination</p></th>
+<td><p>Magnetic declination (<img class="math" src="_images/math/0fcab9067b50b87e868c4fd70f213a086addb964.png" alt="D"/>, in degree). The angle between the geographic (‘true’) North and Magnetic North (the horizontal projection of the ambient magnetic field vector, positive eastward).</p></td>
+<td><p>float</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>azimuth</p></th>
+<td><p>Survey profiles azimuth (<img class="math" src="_images/math/fffd2357ee88a9c50ba9e831ed64c39c73d54a07.png" alt="\phi"/>, in degree). The angle between the profile direction and the Geographic North (positive east of north).</p></td>
+<td><p>float</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>magazimuth</p></th>
+<td><p>Survey profiles magnetic azimuth (<img class="math" src="_images/math/a17f031afacc3319d51da3f5354610cb907e4083.png" alt="\alpha=D-\phi"/>, in degree). The angle between the profile direction and the Magnetic North (positive east of north).</p></td>
+<td><p>float</p></td>
+<td><p>0, 10, 30…, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="continuation">
+<span id="chap-mag-proc-continu-geophpy"></span><h2>Continuation<a class="headerlink" href="#continuation" title="Permalink to this headline">¶</a></h2>
+<p>Upward or downward continuation of potential field data (magnetic or gravimetric).</p>
+<p>The filter computes the data that would be measured at an upper (<cite>upward continuation</cite>) or lower (<cite>downward continuation</cite>) survey altitude.
+The computation is done in the spectral (frequency) domain using the Fast Fourier Transform  <a class="reference internal" href="references.html#blak96" id="id9"><span>[BLAK96]</span></a>.</p>
+<p><strong>Filter applications:</strong> <em>(magnetic) ease anomaly interpretation, background removal, data smoothing, merging surveys at different altitudes</em></p>
+<div class="section" id="id10">
+<h3>Examples<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">continuation</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">configuration</span><span class="o">=</span><span class="s1">&#39;TotalField&#39;</span><span class="p">,</span> <span class="n">distance</span><span class="o">=+</span><span class="mf">0.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id45">
+<img alt="_images/figMagContinuation1.png" src="_images/figMagContinuation1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">Continuation - Raw dataset.</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id46">
+<img alt="_images/figMagContinuation2.png" src="_images/figMagContinuation2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 70 </span><span class="caption-text">Continuation - Filtered dataset.</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id47">
+<img alt="_images/figMagContinuationHist1.png" src="_images/figMagContinuationHist1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 71 </span><span class="caption-text">Continuation - Raw dataset histogram.</span><a class="headerlink" href="#id47" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id48">
+<img alt="_images/figMagContinuationHist2.png" src="_images/figMagContinuationHist2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 72 </span><span class="caption-text">Continuation - Filtered dataset  histogram.</span><a class="headerlink" href="#id48" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h3>Principle<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>The (upward or downward) continuation transforms the potential field measured at one altitude to the field that would be measured at another altitude,
+farther (<cite>upward continuation</cite>) or closer (<cite>downward continuation</cite>) from the magnetic sources.</p>
+<p>Assuming that all the magnetic sources are located below the observation surface,
+the continuation at a new observation altitude <img class="math" src="_images/math/8d051150f8669295ecdbe92367941012175a824d.png" alt="z"/>
+of a survey acquired at an original altitude <img class="math" src="_images/math/b7dd8acc0d0af36b58c42bc14eeeca05c6286fba.png" alt="z_0"/>
+is given in the spectral domain by <a class="reference internal" href="references.html#blak96" id="id12"><span>[BLAK96]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/e36bd189131b8a271d7a8c408d45a5fdb7437206.png" alt="\mathcal{F}_{\Delta z,k} = \mathcal{F}_{TF} \cdot e^{-\Delta z |k|}"/></p>
+</div><p>where:</p>
+<ul class="simple">
+<li><p><img class="math" src="_images/math/93f00ce133eb59c5dd1b296ccb2c320013ca018b.png" alt="\mathcal{F}_{TF}"/> is the Fourier Transform of the measured data at the original altitude of observation <img class="math" src="_images/math/b7dd8acc0d0af36b58c42bc14eeeca05c6286fba.png" alt="z_0"/>;</p></li>
+<li><p><img class="math" src="_images/math/6b024760e2626536ab81ded6a3120c0c9359e7d9.png" alt="\mathcal{F}_{\Delta z,k}"/> is the Fourier Transform of the anomaly at the new altitude of observation <img class="math" src="_images/math/02d41247d5e5627cde200e2b4084c8320cc7bfb7.png" alt="z = z_0 - \Delta z"/>;</p></li>
+<li><p><img class="math" src="_images/math/ba7790ff5c1e624c0d095caac68fcae3bc7ac4f1.png" alt="\Delta z = z_0 - z"/> is the altitude increase between the original and new altitude of observation;</p></li>
+<li><p><img class="math" src="_images/math/ebb4ca6de3a8171ebe3f6dce4e7c58b3ccf40d84.png" alt="|k| = \sqrt{k_x^2 + k_y^2}"/> is the radial wavenumber where <img class="math" src="_images/math/dd0e5d9b7f5db2ce4081948acf7301aac2141fbe.png" alt="k_x"/> and <img class="math" src="_images/math/b0f9e558be99db329bb3c4c3df9ccf08b74f3bf1.png" alt="k_y"/> are the wavenumber in the x and y-direction respectively.</p></li>
+</ul>
+<p>The given  altitude increase (<img class="math" src="_images/math/f52e428a596299d136f6a197f954d730669c0253.png" alt="\Delta z"/>) is an algebraic value:</p>
+<ul class="simple">
+<li><p>If <img class="math" src="_images/math/6f12fd9626d7c2a54dee203d24a58e2b0b30947d.png" alt="\Delta z&gt;0"/>, the new altitude of observation is above the original altitude: the operation is an <cite>upward continuation</cite>;</p></li>
+<li><p>if <img class="math" src="_images/math/fe5d777fb4152a0c3f3c3b9aac1507d49a3b43a3.png" alt="\Delta z&lt;0"/>, the new altitude of observation is below the original altitude: the operation is a <cite>downward continuation</cite>.</p></li>
+</ul>
+<p>If the sensor configuration is in total-field vertical gradient, the data can be transformed to total-field data (<code class="docutils literal notranslate"><span class="pre">totalfieldconversionflag=True</span></code>) using <img class="math" src="_images/math/98b4c18bff1a247184851fab0a262ab04bacade5.png" alt="\bigg( 1-e^{\Delta s|k|} \bigg)^{-1}"/> (see <a class="reference internal" href="#chap-mag-proc-magconfigconv-geophpy"><span class="std std-ref">Sensor configuration conversion</span></a>).</p>
+<p>The <cite>upward continuation</cite> attenuates anomalies with respect to the wavelength in way that accentuates anomalies caused by deep sources and  attenuates at the anomalies caused by shallow sources.
+It is hence a smoothing operator.</p>
+<p>The <cite>downward continuation</cite> accentuates the shallowest components. It reduces spread of anomalies and corrects anomalies coalescences.
+It is useful to discriminates the number of body source at the origin of a one big anomaly.
+It is an unsmoothing operator that is instable as small changes in the data can cause large and unrealistic variations so it is to be used with caution.
+Low-pass filtering before the <cite>downward continuation</cite> can be a solution to increase the filter stability.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Algorithm unstability</p>
+<p>Unlike the <cite>upward continuation</cite>, the <cite>downward continuation</cite> is unstable process as it is an unsmoothing process that
+tends to accentuate small changes in the shallow components. So “Any errors present and perhaps undetected in the measured data
+may appear in the calculated field as large and unrealistic variations.” <a class="reference internal" href="references.html#blak96" id="id13"><span>[BLAK96]</span></a></p>
+</div>
+</div>
+<div class="section" id="id14">
+<h3>Algorithm<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id49">
+<img alt="_images/figAlgoContinuation.png" src="_images/figAlgoContinuation.png" />
+<p class="caption"><span class="caption-number">Fig. 73 </span><span class="caption-text">Continuation - Continuation Algorithm.</span><a class="headerlink" href="#id49" title="Permalink to this image">¶</a></p>
+</div>
+<p>See <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a> for the definition of filling gaps and apodization methods.</p>
+</div>
+<div class="section" id="id15">
+<h3>Parameters<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>apod</p></th>
+<td><p>Apodization factor (%), to limit Gibbs phenomenon at jump discontinuities.</p></td>
+<td><p>float</p></td>
+<td><p>0, 5, 10, 20, 25, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>distance</p></th>
+<td><p>Continuation distance (in m). Positive for upward continuation and negative for downward continuation.</p></td>
+<td><p>float</p></td>
+<td><p>0.5, 2, 10, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>totalfieldconversionflag</p></th>
+<td><p>Flag to proceed to the conversion to total-field data after continuation</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>separation</p></th>
+<td><p>Sensor separation if <code class="docutils literal notranslate"><span class="pre">totalfieldconversionflag</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></td>
+<td><p>float</p></td>
+<td><p>0.7, 1, …</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="analytic-signal">
+<h2>Analytic signal<a class="headerlink" href="#analytic-signal" title="Permalink to this headline">¶</a></h2>
+<p>Computes the 3-D Analytic Signal.</p>
+<p>The Analytic Signal (also known as the total gradient magnitude or energy envelope) is a way to ease magnetic source characterization independently from the direction of its magnetization.</p>
+<p><strong>Filter applications:</strong> <em>magnetic source depth estimation</em></p>
+<div class="section" id="id16">
+<h3>Examples<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">analyticsignal</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id51">
+<img alt="_images/figMagAnalyticSignal1.png" src="_images/figMagAnalyticSignal1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 75 </span><span class="caption-text">Analytic Signal - Raw dataset.</span><a class="headerlink" href="#id51" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id52">
+<img alt="_images/figMagAnalyticSignal2.png" src="_images/figMagAnalyticSignal2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 76 </span><span class="caption-text">Analytic Signal - Filtered dataset.</span><a class="headerlink" href="#id52" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id53">
+<img alt="_images/figMagAnalyticSignalHist1.png" src="_images/figMagAnalyticSignalHist1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 77 </span><span class="caption-text">Analytic Signal - Raw dataset histogram.</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id54">
+<img alt="_images/figMagAnalyticSignalHist2.png" src="_images/figMagAnalyticSignalHist2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 78 </span><span class="caption-text">Analytic Signal - Filtered dataset  histogram.</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id17">
+<h3>Principle<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>For a magnetization and an ambient field uniform throughout the study area, the amplitude of the analytic signal (or total gradient magnitude or energy envelope) of a <strong>potential field</strong> anomaly <img class="math" src="_images/math/e8dea8254118f111b5fb20895b03528c17566f06.png" alt="T"/> is given by <a class="reference internal" href="references.html#rovp92" id="id18"><span>[RoVP92]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/3fe14e8bbc4a2723f18bb1237003ba13dd3e0fc1.png" alt="|A(x, y, z)| = \sqrt{ \left( \frac{\partial T}{\partial x} \right)^2
+                 + \left( \frac{\partial T}{\partial y} \right)^2
+                 + \left( \frac{\partial T}{\partial z} \right)^2 }"/></p>
+</div><p>The directional derivatives are computes in the spectral domain (see <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a>) and transformed back to the spatial domain using an inverse Fourier Transform to computed the analytic signal amplitude.</p>
+</div>
+<div class="section" id="id19">
+<h3>Algorithm<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id55">
+<img alt="_images/figAlgoAnalyticSignal.png" src="_images/figAlgoAnalyticSignal.png" />
+<p class="caption"><span class="caption-number">Fig. 79 </span><span class="caption-text">Analytic Signal - Analytic Signal Algorithm.</span><a class="headerlink" href="#id55" title="Permalink to this image">¶</a></p>
+</div>
+<p>See <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a> for the definition of filling gaps and apodization methods.</p>
+</div>
+<div class="section" id="id20">
+<h3>Parameters<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>apod</p></th>
+<td><p>Apodization factor (%), to limit Gibbs phenomenon at jump discontinuities.</p></td>
+<td><p>float</p></td>
+<td><p>0, 5, 10, 20, 25, …</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="euler-deconvolution">
+<h2>Euler deconvolution<a class="headerlink" href="#euler-deconvolution" title="Permalink to this headline">¶</a></h2>
+<p>Classic Euler deconvolution.</p>
+<p>Euler deconvolution is a method to estimate the depth of magnetic sources that do not required reduced-to-the-pole data.</p>
+<div class="section" id="id21">
+<h3>Examples<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p><strong>Manual target picking</strong></p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">target_extents</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">15</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">25</span><span class="p">],</span> <span class="p">[</span><span class="mi">35</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">15</span><span class="p">]]</span>  <span class="c1"># [[xmin, xmax, ymin, xmax],...]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">eulerdeconvolution</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">structind</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="n">target_extents</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id57">
+<img alt="_images/figMagEulerDeconvolution1.png" src="_images/figMagEulerDeconvolution1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 81 </span><span class="caption-text">Euler Deconvolution - Manual target picking.</span><a class="headerlink" href="#id57" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id58">
+<img alt="_images/figMagEulerDeconvolutionDepth1.png" src="_images/figMagEulerDeconvolutionDepth1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 82 </span><span class="caption-text">Euler Deconvolution - Manual target picking</span><a class="headerlink" href="#id58" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Sliding window target picking</strong></p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Sliding window of xstep*xstep samples</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">eulerdeconvolution</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">structind</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">xstep</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id59">
+<img alt="_images/figMagEulerDeconvolution2.png" src="_images/figMagEulerDeconvolution2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 83 </span><span class="caption-text">Euler Deconvolution - Manual target picking.</span><a class="headerlink" href="#id59" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id60">
+<img alt="_images/figMagEulerDeconvolutionDepth2.png" src="_images/figMagEulerDeconvolutionDepth2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 84 </span><span class="caption-text">Euler Deconvolution - Manual target picking</span><a class="headerlink" href="#id60" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Displaying results</strong></p>
+<blockquote>
+<div><p>The <code class="xref py py-meth docutils literal notranslate"><span class="pre">eulerdeconvolution()</span></code> method returns the results of the Euler deconvolution as a list containing
+the source position, the associated structural index, the residual of the least-square estimation and the used dataset sub-window extent:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="go">[20.078, 17.80, 0.99, 3, 0.94343, 15.0, 25.0, 10.0, 25.0]</span>
+</pre></div>
+</div>
+<p>The sub-window extents and source positions can be display onto the dataset using the following commands sequence:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Importing the sub-window-to-rectangle conversion tool</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geophpy.plotting.plot</span> <span class="k">as</span> <span class="nn">gplt</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Extracting source positions and sub-windows extents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sources</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">results</span><span class="p">)[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">window_extents</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">results</span><span class="p">)[:,</span><span class="mi">5</span><span class="p">:]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Converting sub-windows extents to rectangles</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rects</span> <span class="o">=</span> <span class="n">gplt</span><span class="o">.</span><span class="n">extents2rectangles</span><span class="p">(</span><span class="n">window_extents</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Plotting results</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="n">rects</span><span class="o">=</span><span class="n">rects</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="n">sources</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id22">
+<h3>Principle<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<p>Euler deconvolution is a method to estimate position and depth of magnetic sources.
+It is based on the assumption that magnetic field <cite>is homogeneous of degree N</cite>,
+so that the total magnetic field and its originating magnetic source are related by the following equation <a class="reference internal" href="references.html#ragm90" id="id23"><span>[RAGM90]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/e37c2be669338cb26d2ac0667f6a96bbb929c007.png" alt="N(B-T) = (x - x_0) \frac{\partial T}{\partial x}
+   + (y - y_0) \frac{\partial T}{\partial y}
+   + (z - z_0) \frac{\partial T}{\partial z}"/></p>
+</div><p>where
+<img class="math" src="_images/math/928a288cbfb08b9f25122095f5309c1a86a79923.png" alt="(x_0, y_0, z_0)"/> is the position of a source;
+<img class="math" src="_images/math/e8dea8254118f111b5fb20895b03528c17566f06.png" alt="T"/> is the total-field detected at <img class="math" src="_images/math/7bc9b1d09f06174302e9375ccd7d6bf2f26b5fc4.png" alt="(x, y, z)"/>;
+<img class="math" src="_images/math/4bc3e94a67870b41b7c20179693e889251e2c136.png" alt="B"/> is the regional value of the field and
+<img class="math" src="_images/math/3bfb3a64189a14b2704f4610827762d5e3145114.png" alt="N"/> is a non-negative integer known as the structural index (or degree of homogeneity).</p>
+<p>For a set of <img class="math" src="_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png" alt="n"/> observation points of the total-field, the equation can be reformulated as a linear system of equations and expressed in matrix form as:</p>
+<div class="math">
+<p><img src="_images/math/844edb5b85b93a21e77320a828d117d5dddb5d29.png" alt="&amp;\begin{pmatrix}
+   \frac{\partial T_1}{\partial x}  &amp; \frac{\partial T_1}{\partial y} &amp; \frac{\partial T_1}{\partial z} &amp;  N\\
+               \vdots            &amp;              \vdots             &amp;              \vdots         &amp;  \vdots \\
+   \frac{\partial T_i}{\partial x}  &amp; \frac{\partial T_i}{\partial y} &amp; \frac{\partial T_i}{\partial z} &amp;  N\\
+               \vdots            &amp;              \vdots             &amp;              \vdots         &amp;  \vdots \\
+   \frac{\partial T_n}{\partial x}  &amp; \frac{\partial T_n}{\partial y} &amp; \frac{\partial T_n}{\partial z} &amp;  N\\
+   \end{pmatrix}
+\begin{pmatrix}
+   x_0 \\
+   y_0 \\
+   z_0 \\
+    B
+\end{pmatrix}
+=
+\begin{pmatrix}
+   x_1 \frac{\partial T_1}{\partial x}
+      + y_1 \frac{\partial T_1}{\partial y}
+      + z_1 \frac{\partial T_1}{\partial z}
+      + NT_1 \\
+   \vdots \\
+   x_n \frac{\partial T_i}{\partial x}
+      + y_i \frac{\partial T_i}{\partial y}
+      + z_i  \frac{\partial T_i}{\partial z}
+      + NT_i \\
+   \vdots \\
+   x_n \frac{\partial T_n}{\partial x}
+      + y_n \frac{\partial T_n}{\partial y}
+      + z_n  \frac{\partial T_n}{\partial z}
+      + NT_n
+\end{pmatrix} \\
+&amp;i = 1,...,n"/></p>
+</div><p>where <img class="math" src="_images/math/0bb598a4189dc27eebfbb3f11261e0b193ce94d5.png" alt="T_i = T(x_i, y_i, z_i)"/> is the <cite>ith</cite> observation of the total-field anomaly at the coordinates <img class="math" src="_images/math/502e03896a955369181147b1603c7a73d571ecbf.png" alt="(x_i, y_i, z_i)"/>.</p>
+<p>This system of has the form <img class="math" src="_images/math/461c4c898757e0920a4799d34192669d0f0b5383.png" alt="\mathbf{A}\mathbf{x}=\mathbf{b}"/> and can be solved in least-square sense in the overdetermined case,
+leading to least-square estimates of <img class="math" src="_images/math/98e5233ce65e07d2baeeab46f7633f42f6d5253d.png" alt="(x_0, y_0, z_0, B)"/>.</p>
+<p><em>Directional derivatives computation</em></p>
+<p>The directional derivatives are computes in the spectral domain (see <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a>) and transformed back to the spatial domain using an inverse Fourier Transform.</p>
+<p><em>Structural Index (SI)</em></p>
+<p>The structural index is a measure of the rate of change with distance of a field.
+It is an integer value that depends on the source model geometry and is “not a tuning parameter” <a class="reference internal" href="references.html#reew14" id="id24"><span>[ReEW14]</span></a>.
+Valid structural index values are referenced in the following table.</p>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p>Source Model</p></th>
+<th class="head"></th>
+<th class="head"><p>SI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Point, sphere</p></td>
+<td></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p>Line, cylinder, thin bed fault</p></td>
+<td></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Thin sheet edge, thin sill, thin dike</p></td>
+<td></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Contact of infinite depth extent</p></td>
+<td></td>
+<td><p>0</p></td>
+</tr>
+</tbody>
+</table>
+<p>A wrong value of the SI will lead to errors in the depth estimation of the source: a too high value will yield over-estimated depths and vice versa.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Structural Index estimation</p>
+<p>Although it is not recommended, the structural index can be estimated in least-square sense as a parameter of the linear system by setting <code class="docutils literal notranslate"><span class="pre">structind=None</span></code>.</p>
+<p>For now, this estimation may results in non-realistic (non integer) values for the structural index. In the future it will be constrained to select only allowed (integer) values.</p>
+</div>
+<p><em>Set of observation points</em></p>
+<p>The set of observation points can be:</p>
+<ul class="simple">
+<li><p>specified manually by giving a set of windows extent (xmin, xmax, ymin and xmax for each window of interest),</p></li>
+<li><p>or automatically by using a sliding windows of a given size (<code class="docutils literal notranslate"><span class="pre">xstep</span></code> * <code class="docutils literal notranslate"><span class="pre">ystep</span></code>).</p></li>
+</ul>
+</div>
+<div class="section" id="id25">
+<h3>Algorithm<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>… TBD …</p>
+<p>See <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a> for the definition of filling gaps and apodization methods.</p>
+</div>
+<div class="section" id="id26">
+<h3>Parameters<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>apod</p></th>
+<td><p>Apodization factor (%), to limit Gibbs phenomenon at jump discontinuities.</p></td>
+<td><p>float</p></td>
+<td><p>0, 5, 10, 20, 25, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>structuind</p></th>
+<td><p>Structural Index, depends on the source geometry.</p></td>
+<td><p>int</p></td>
+<td><p>0, 1, 2, 3 or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>windows</p></th>
+<td><p>List containing the satial extent of each sub-window to be considered for the deconvolution</p></td>
+<td><p>list (of float)</p></td>
+<td><p>[15,25,10,25], [35,42,8,15], …] or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>xstep</p></th>
+<td><p>Size, in number of sample, of the sub-windows in the x-direction. Only if <code class="docutils literal notranslate"><span class="pre">windows=None</span></code>.</p></td>
+<td><p>float</p></td>
+<td><p>10, 33, … or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>ystep</p></th>
+<td><p>Size, in number of sample, of the sub-windows in the y-direction. Only if <code class="docutils literal notranslate"><span class="pre">windows=None</span></code>.</p></td>
+<td><p>float</p></td>
+<td><p>10, 33, … or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="sensor-configuration-conversion">
+<span id="chap-mag-proc-magconfigconv-geophpy"></span><h2>Sensor configuration conversion<a class="headerlink" href="#sensor-configuration-conversion" title="Permalink to this headline">¶</a></h2>
+<p>Conversion between the different sensor’s configurations.</p>
+<p>Magnetic data are all derived from the same potential and thereby contains in the same information, making theoretical conversion from one sensor configuration to another is possible.</p>
+<div class="section" id="id27">
+<h3>Examples<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id28">
+<h3>Principle<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<p>Du to the “potential field nature” of the magnetic field, the same information is theoretically contained in the measure of the total-field anomaly, the total-field gradient and the vertical component of the anomaly.
+Conversion from one sensor configuration to another is theoretically possible even in practice the (inevitable) measurement noise can make it difficult.</p>
+<p><em>Sensor’s configurations</em></p>
+<p>Different sensor’s configurations exist to conduct magnetic surveys. Three most commonly used are the <em>total-field</em>, the <em>total-field vertical gradient</em> and the <em>fluxgate</em> sensor’s configurations :</p>
+<ul class="simple">
+<li><p><strong>Total-field magnetometers</strong> measure the magnitude of the total magnetic field regardless of the magnetic vector direction. They give a <em>scalar measure</em> of the total strength of an ambient magnetic field at any given point and are hence sometimes referred to as <em>scalar magnetometers</em> <a class="reference internal" href="references.html#asga08" id="id29"><span>[AsGA08]</span></a>.</p></li>
+<li><p><strong>Total-field gradiometers</strong> simply refers to <em>total-field magnetometers</em> in <em>vertical gradient configuration</em>, <em>i.e</em> two total-field sensors one on top of the other.</p></li>
+<li><p><strong>Fluxgate magnetometers</strong> measure the component of the ambient magnetic field in a particular direction (the sensor’s axis only) and are hence sometimes referred to as <em>vector magnetometers</em> <a class="reference internal" href="references.html#asga08" id="id30"><span>[AsGA08]</span></a>. <em>Fluxgate gradiometers</em> are composed of two sensors one on top of the other and measure directly the difference of the vertical component of the ambient magnetic field.</p></li>
+</ul>
+<p><em>Conversion between configurations</em></p>
+<p>A simple linear transformation combining a <a class="reference internal" href="#chap-mag-proc-continu-geophpy"><span class="std std-ref">Continuation</span></a> and a subtraction allow the conversion between the different sensor’s configuration.
+For an ambient field uniform throughout the study area the transformation of the different sensor’s configurations is defined in the spectral domain by <a class="reference internal" href="references.html#tadd97" id="id31"><span>[TaDD97]</span></a>:</p>
+<dl>
+<dt><strong>Total-field and total-field vertical gradient</strong></dt><dd><p>Conversion of a measure obtained using a <em>total-field magnetometer</em> to the measure that would be obtained using a <em>total-field magnetometer in vertical gradient configuration</em> (i.e. with two sensors, one on top of the ohers) is defined in the spectral domain as:</p>
+<div class="math">
+<p><img src="_images/math/36fab9ecc052248e154bf5efc3c63f7bfc46a9cb.png" alt="e^{-\Delta h |k|} - e^{-(\Delta h+\Delta s) |k|}"/></p>
+</div><p>The reverse transformation (from total-field vertical gradient to total-field) can simply be computed using the inverse expression:</p>
+<div class="math">
+<p><img src="_images/math/c24cf4ca6823b7be570ffc4401d9c0a72ba31d7c.png" alt="\Big( e^{-\Delta h |k|} - e^{-(\Delta h+\Delta s) |k|} \Big)^{-1}"/></p>
+</div></dd>
+<dt><strong>Total-field vertical gradient and fluxgate</strong></dt><dd><p>Conversion of a measure obtained using a <em>total-field magnetometer in vertical gradient configuration</em> to the measure that would be obtained using a <em>fluxgate gradiometer</em> is defined in the spectral domain as:</p>
+<div class="math">
+<p><img src="_images/math/3976a05cdd25d2f008d991e2912ce1ce700105dd.png" alt="\frac{|k|}{ |k| f_y + i(k_x f_x + k_y f_y) }"/></p>
+</div><p>The reverse transformation (from fluxgate vertical gradient to total-field vertical gradient) can simply be computed using the inverse expression:</p>
+<div class="math">
+<p><img src="_images/math/e742945d0e34e176295595755892dad8c61ef1f7.png" alt="\bigg( \frac{|k|}{ |k| f_y + i(k_x f_x + k_y f_y) } \bigg)^{-1}"/></p>
+</div></dd>
+<dt><strong>Total-field and fluxgate</strong></dt><dd><p>Conversion of a measure obtained using a <em>total-field magnetometer</em> to the measure that would be obtained using a <em>fluxgate gradiometer</em> is defined in the spectral domain as the combination of the previous transformation :</p>
+<div class="math">
+<p><img src="_images/math/9f02e16b350b4ae023a1c7db63036f4a71a0a484.png" alt="\Big( e^{-\Delta h |k|} - e^{-(\Delta h+\Delta s) |k|} \Big)
+\cdot
+\frac{|k|}{
+           |k| f_y + i(k_x f_x + k_y f_y)
+           }"/></p>
+</div><p>The reverse transformation (from fluxgate vertical gradient to total-field) can simply be computed using the inverse expression:</p>
+<div class="math">
+<p><img src="_images/math/df4727dcf01c61fd8f6a8f03fe3e04a793a6464f.png" alt="\Bigg(
+      \Big( e^{-\Delta h |k|} - e^{-(\Delta h+\Delta s) |k|} \Big)
+      \cdot
+      \frac{|k|}{
+                |k| f_y + i(k_x f_x + k_y f_y)
+                }
+\Bigg)^{-1}"/></p>
+</div></dd>
+</dl>
+<p>Where</p>
+<ul class="simple">
+<li><p><img class="math" src="_images/math/852b8ffc2553dfa818c2e131e468d82d26f1af1e.png" alt="\Delta h"/> is the difference of altitude between the bottom sensors in the initial and final configuration;</p></li>
+<li><p><img class="math" src="_images/math/82f8146372613edd07fa9be8b9227bdde1c42ac4.png" alt="\Delta s"/> is the difference of altitude between top and bottom sensors in gradient configuration;</p></li>
+<li><p><img class="math" src="_images/math/ebb4ca6de3a8171ebe3f6dce4e7c58b3ccf40d84.png" alt="|k| = \sqrt{k_x^2 + k_y^2}"/> is the radial wavenumber with <img class="math" src="_images/math/dd0e5d9b7f5db2ce4081948acf7301aac2141fbe.png" alt="k_x"/> and <img class="math" src="_images/math/b0f9e558be99db329bb3c4c3df9ccf08b74f3bf1.png" alt="k_y"/> are the wavenumbers in the x and y-direction respectively;</p></li>
+<li><p><img class="math" src="_images/math/015755a22b6219b345c36a9a47b091dc56007486.png" alt="I"/> is the ambient magnetic field inclination;</p></li>
+<li><p><img class="math" src="_images/math/0fcab9067b50b87e868c4fd70f213a086addb964.png" alt="D"/> is the ambient magnetic field declination;</p></li>
+<li><p><img class="math" src="_images/math/fffd2357ee88a9c50ba9e831ed64c39c73d54a07.png" alt="\phi"/> is the survey x-axis azimuth;</p></li>
+<li><p><img class="math" src="_images/math/afb7eec13373ddea15443f37b48ed4af6755d6f5.png" alt="f_x = \cos(I) \cdot cos(D-\phi)"/> is the unit-vector in the x-direction of the ambient field;</p></li>
+<li><p><img class="math" src="_images/math/7bc9e7d46107947c351ec7988964baed1d317d59.png" alt="f_y = \cos(I) \cdot sin(D-\phi)"/> is the unit-vector in the y-direction of the ambient field;</p></li>
+<li><p><img class="math" src="_images/math/7e053b841ad9bb209f8026550cfbfd14c43d8fcb.png" alt="f_z = \sin(I)"/> is the unit-vector in the z-direction of the ambient field.</p></li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h3>Algorithm<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a> for the definition of filling gaps and apodization methods.</p>
+</div>
+<div class="section" id="id33">
+<h3>Parameters<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="equivalent-susceptibility">
+<h2>Equivalent Susceptibility<a class="headerlink" href="#equivalent-susceptibility" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id34">
+<h3>Examples<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<p>… TBD …</p>
+</div>
+<div class="section" id="id35">
+<h3>Principle<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<p>… TBD …</p>
+</div>
+<div class="section" id="id36">
+<h3>Algorithm<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<p>… TBD …</p>
+<p>See <a class="reference internal" href="#chap-mag-proc-genconsider-geophpy"><span class="std std-ref">General consideration</span></a> for the definition of filling gaps and apodization methods.</p>
+</div>
+<div class="section" id="id37">
+<h3>Parameters<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<p>… TBD …</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="geopos.html" class="btn btn-neutral float-right" title="Geographic Positionning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gen-proc.html" class="btn btn-neutral float-left" title="General Processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

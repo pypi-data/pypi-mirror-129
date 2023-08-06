@@ -1,0 +1,758 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting started &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plotting functions" href="plot-fun.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-overview">DataSet overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opening-files">Opening files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset-operation">Dataset operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-dataset">Saving DataSet</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/quick-start.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<span id="chap-quick-start-geophpy"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quick-start">
+<h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>First, import the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class from the <a class="reference internal" href="api.html#module-geophpy.dataset" title="geophpy.dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">dataset</span></code></a> module using the <code class="docutils literal notranslate"><span class="pre">import</span></code> command at the top of your script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.dataset</span> <span class="kn">import</span> <span class="n">DataSet</span>
+</pre></div>
+</div>
+<p>You can a so import the complete dataset module content using (not recommended for script readability):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.dataset</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p><strong>Reading data from files</strong></p>
+<blockquote>
+<div><p>Read your data from an ASCII delimiter-separated values files using the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.from_file" title="geophpy.dataset.DataSet.from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_file()</span></code></a> method from the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening data from an ascii file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;test.dat&quot;</span><span class="p">],</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+<span class="go">x_colnum=1, y_colnum=2, z_colnum=5)</span>
+</pre></div>
+</div>
+<p>If not provided, the file format will be estimated from the file extension and the first three columns will be considered as the data (X, Y and Z respectively).</p>
+<p>You can optionally give the file delimiter, the number of header lines to skip and the header lines that contains the different field names.</p>
+</div></blockquote>
+<p><strong>Displaying the dataset</strong></p>
+<blockquote>
+<div><p>Display your raw data as a scatter plot or interpolate it to display 2-D surface plot:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Raw data scatter plot</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;2D-SCATTER&#39;</span><span class="p">,</span> <span class="n">cmmin</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Raw data surface plot</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>  <span class="c1"># or &#39;none&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="n">cmmin</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id1">
+<img alt="_images/figQuickStartScatterPlot.png" src="_images/figQuickStartScatterPlot.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Quick Start - Raw dataset scatter plot.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id2">
+<img alt="_images/figQuickStartSurfacePlot.png" src="_images/figQuickStartSurfacePlot.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Quick Start - Raw dataset surface plot.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>You can also display the position of the measurement points in a plot or directly onto the 2-D surface plot:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Data point position (postmap plot)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;2D-POSTMAP&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Data point position onto the 2-D surface</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="n">pointsdisplay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id3">
+<img alt="_images/figQuickStartPostmap.png" src="_images/figQuickStartPostmap.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Quick Start - Raw dataset postmap plot.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id4">
+<img alt="_images/figQuickStartSurfacePlotPoints.png" src="_images/figQuickStartSurfacePlotPoints.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Quick Start - Raw dataset surface plot with data points.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="plot-fun.html#chap-plot-fun-geophpy"><span class="std std-ref">Plotting functions</span></a> for the complete list of available plot possibilities.</p>
+</div></blockquote>
+<p><strong>General processing</strong></p>
+<blockquote>
+<div><p>Use the available processing (despike, destaggering, destriping etc.) to filter your <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset destaggering</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">festoonfilt</span><span class="p">(</span><span class="n">corrmin</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">setmin</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset destriping</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">destripecon</span><span class="p">(</span><span class="n">Nprof</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="n">setmin</span><span class="o">=-</span><span class="mi">20</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id5">
+<img alt="_images/figQuickStartFestoonfilter.png" src="_images/figQuickStartFestoonfilter.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Quick Start - Dataset destaggering.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id6">
+<img alt="_images/figQuickStartDestrip.png" src="_images/figQuickStartDestrip.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Quick Start - Dataset destriping.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="gen-proc.html#chap-gen-proc-geophpy"><span class="std std-ref">General Processing</span></a> for the complete list of available processing.</p>
+</div></blockquote>
+<p><strong>Method-specific processing</strong></p>
+<blockquote>
+<div><p>Use the method-specific available processing (for magnetic survey for instance):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset reduction to the pole</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">polereduction</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="mag-proc.html#chap-mag-proc-geophpy"><span class="std std-ref">Magnetic Processing</span></a> for the complete list of available magnetic-survey-specific processing.</p>
+</div></blockquote>
+<p><strong>Saving data in a file</strong></p>
+<blockquote>
+<div><p>Save your data to a file using the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.to_file" title="geophpy.dataset.DataSet.to_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_file()</span></code></a> method from the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Saving to a NetCDF file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&quot;save.nc&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;My Processed Data&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Saving to a Surfer Grid file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&quot;save.grd&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Saving to an ascii file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s2">&quot;save.dat&quot;</span><span class="p">,</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you only processed the gridded <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> (<code class="xref py py-attr docutils literal notranslate"><span class="pre">valfilt=False</span></code>),
+use the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.sample" title="geophpy.dataset.DataSet.sample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sample()</span></code></a> method to re-sample the gridded dataset at the original dataset value positions.
+Otherwise you will be saving the imported raw data value.</p>
+</div>
+</div></blockquote>
+<p><strong>Georeferencing grid nodes</strong></p>
+<blockquote>
+<div><p>Georeference your data using Ground Control Points (survey nodes known in both local and geographic coordinate systems).
+Use the <code class="xref py py-meth docutils literal notranslate"><span class="pre">setgeoref()</span></code> from the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading GCPs file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">geophpy.geoposset</span> <span class="k">as</span> <span class="nn">pset</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span> <span class="o">=</span> <span class="n">pset</span><span class="o">.</span><span class="n">GeoPosSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">(</span><span class="s2">&quot;GCPs.csv&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gpos</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">long_label</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Georeferencing ungridded values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">setgeoref</span><span class="p">(</span><span class="s1">&#39;UTM&#39;</span><span class="p">,</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Georeferencing gridded values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">x_step</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y_step</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">setgeoref</span><span class="p">(</span><span class="s1">&#39;UTM&#39;</span><span class="p">,</span> <span class="n">gpos</span><span class="o">.</span><span class="n">points_list</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 30%" />
+<col style="width: 34%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center">
+<img alt="_images/figGeorefLocalSystem.png" src="_images/figGeorefLocalSystem.png" style="height: 4cm;" />
+</div>
+</td>
+<td><div class="figure align-center">
+<img alt="_images/figGeorefGCPs.png" src="_images/figGeorefGCPs.png" style="height: 4cm;" />
+</div>
+</td>
+<td><div class="figure align-center">
+<img alt="_images/figGeorefRefSystem.png" src="_images/figGeorefRefSystem.png" style="height: 4cm;" />
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="dataset-overview">
+<h2>DataSet overview<a class="headerlink" href="#dataset-overview" title="Permalink to this headline">¶</a></h2>
+<p>All imported data are stored into a <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class that contains the different plotting and processing methods.</p>
+<p>The <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class is composed of 3 objects:</p>
+<p><strong>DataSet.info</strong></p>
+<blockquote>
+<div><p>The <a class="reference internal" href="api.html#geophpy.dataset.Info" title="geophpy.dataset.Info"><code class="xref py py-class docutils literal notranslate"><span class="pre">Info</span></code></a> class that contains the informations about the dataset:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.x_min" title="geophpy.dataset.Info.x_min"><code class="xref py py-attr docutils literal notranslate"><span class="pre">x_min</span></code></a> = minimal x coordinate of the data set.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.x_max" title="geophpy.dataset.Info.x_max"><code class="xref py py-attr docutils literal notranslate"><span class="pre">x_max</span></code></a> = maximal x coordinate of the data set.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.y_min" title="geophpy.dataset.Info.y_min"><code class="xref py py-attr docutils literal notranslate"><span class="pre">y_min</span></code></a> = minimal y coordinate of the data set.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.y_max" title="geophpy.dataset.Info.y_max"><code class="xref py py-attr docutils literal notranslate"><span class="pre">y_max</span></code></a> = maximal y coordinate of the data set.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.z_min" title="geophpy.dataset.Info.z_min"><code class="xref py py-attr docutils literal notranslate"><span class="pre">z_min</span></code></a> = minimal z value of the data set.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.z_max" title="geophpy.dataset.Info.z_max"><code class="xref py py-attr docutils literal notranslate"><span class="pre">z_max</span></code></a> = maximal z value of the data set.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.x_gridding_delta" title="geophpy.dataset.Info.x_gridding_delta"><code class="xref py py-attr docutils literal notranslate"><span class="pre">x_gridding_delta</span></code></a> = delta between 2 x values in the interpolated image grid.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.y_gridding_delta" title="geophpy.dataset.Info.y_gridding_delta"><code class="xref py py-attr docutils literal notranslate"><span class="pre">y_gridding_delta</span></code></a> = delta between 2 y values in the interpolated image grid.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Info.gridding_interpolation" title="geophpy.dataset.Info.gridding_interpolation"><code class="xref py py-attr docutils literal notranslate"><span class="pre">gridding_interpolation</span></code></a> = interpolation name used for the building of the image grid.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>DataSet.data</strong></p>
+<blockquote>
+<div><p>The <a class="reference internal" href="api.html#geophpy.dataset.Data" title="geophpy.dataset.Data"><code class="xref py py-class docutils literal notranslate"><span class="pre">Data</span></code></a> class that contains:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Data.fields" title="geophpy.dataset.Data.fields"><code class="xref py py-attr docutils literal notranslate"><span class="pre">fields</span></code></a> = the names of the fields (columns): [‘X’, ‘Y’, ‘Z’].</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Data.values" title="geophpy.dataset.Data.values"><code class="xref py py-attr docutils literal notranslate"><span class="pre">values</span></code></a> = 2D array of raw values before interpolation (array with (x, y, z) values).</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Data.z_image" title="geophpy.dataset.Data.z_image"><code class="xref py py-attr docutils literal notranslate"><span class="pre">z_image</span></code></a> = 2D array of the current gridded data values.</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Data.easting_image" title="geophpy.dataset.Data.easting_image"><code class="xref py py-attr docutils literal notranslate"><span class="pre">easting_image</span></code></a> = None    # easting grid (to use with z_image)</p></li>
+<li><p><a class="reference internal" href="api.html#geophpy.dataset.Data.northing_image" title="geophpy.dataset.Data.northing_image"><code class="xref py py-attr docutils literal notranslate"><span class="pre">northing_image</span></code></a> = None   # northing grid(to use with z_image)</p></li>
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">easting</span></code> = None    # easting array (to use with values)</p></li>
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">northing</span></code> = None   # northing array (to use with values)</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="xref py py-attr docutils literal notranslate"><span class="pre">z_image</span></code> object is NOT AUTOMATICALLY BUILT after opening a file but by explicitly using the gridding interpolation method <a class="reference internal" href="api.html#geophpy.dataset.DataSet.interpolate" title="geophpy.dataset.DataSet.interpolate"><code class="xref py py-meth docutils literal notranslate"><span class="pre">interpolate()</span></code></a>.
+See <a class="reference internal" href="#datasetoperation"><span class="std std-ref">Dataset operation</span></a> for details.</p>
+</div>
+<p><strong>DataSet.georef</strong></p>
+<blockquote>
+<div><p>The <a class="reference internal" href="api.html#geophpy.dataset.GeoRefSystem" title="geophpy.dataset.GeoRefSystem"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoRefSystem</span></code></a> class object contains:</p>
+<ul class="simple">
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">active</span></code> = A flag for the georeferencing status.</p></li>
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">refsystem</span></code> = The georeferencing system (‘UTM’, ‘WGS84’, …).</p></li>
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">utm_zoneletter</span></code> = The optional UTM letter.</p></li>
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">utm_zonenumber</span></code> = The optional UTM zone number.</p></li>
+<li><p><code class="xref py py-attr docutils literal notranslate"><span class="pre">points_list</span></code> = the list of the Ground Control Points coordinates in both the local and georeferenced system.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="opening-files">
+<h2>Opening files<a class="headerlink" href="#opening-files" title="Permalink to this headline">¶</a></h2>
+<p>All the reading possibilities are available through the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.from_file" title="geophpy.dataset.DataSet.from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_file()</span></code></a> method of the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class.</p>
+<p><strong class="program">GeophPy</strong> manages different types of files. You can obtain the list of accepted file formats with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.dataset</span> <span class="kn">import</span> <span class="n">fileformat_getlist</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fileformat_getlist</span><span class="p">()</span>
+<span class="go">[&#39;ascii&#39;, &#39;netcdf&#39;, &#39;surfer&#39;]</span>
+</pre></div>
+</div>
+<p>The file format is automatically recognized from the file extension using an internal dictionary:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.dataset</span> <span class="kn">import</span> <span class="n">format_chooser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">format_chooser</span>
+<span class="go">{&#39;.cdf&#39;: &#39;netcdf&#39;, &#39;.nc&#39;: &#39;netcdf&#39;,</span>
+<span class="go">&#39;.grd&#39;: &#39;surfer&#39;,</span>
+<span class="go">&#39;.xyz&#39;: &#39;ascii&#39;, &#39;.csv&#39;: &#39;ascii&#39;, &#39;.txt&#39;: &#39;ascii&#39;, &#39;.dat&#39;: &#39;ascii&#39;}</span>
+</pre></div>
+</div>
+<p>If the file format is not in the dictionary or is not properly recognized from the extension, it can be forced to a specific format using the <code class="docutils literal notranslate"><span class="pre">fileformat</span></code> keyword of the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.from_file" title="geophpy.dataset.DataSet.from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_file()</span></code></a> method.</p>
+<p><strong>ASCII files</strong></p>
+<blockquote>
+<div><p>You can open comma-separated values (CSV) files, or any other delimiter-separated values files,
+by indicating the number and type of the columns of interest for the dataset to be processed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening a &quot;.dat&quot; file from Geometrics Magnetometer G-858</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">## (format &#39;ascii&#39; with delimiter &#39; &#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;test.dat&quot;</span><span class="p">],</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+<span class="go">delimiter=&#39; &#39;, z_colnum=5)</span>
+</pre></div>
+</div>
+<p>Geometrics Magnetometer G-858 <em>.dat</em> file example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span>          <span class="n">X</span>           <span class="n">Y</span>     <span class="n">TOP_RDG</span>  <span class="n">BOTTOM_RDG</span>    <span class="n">VRT_GRAD</span>
+<span class="gp">&gt;&gt;&gt; </span>     <span class="mf">50.000</span>       <span class="mf">0.059</span>   <span class="mf">46406.028</span>   <span class="mf">46390.698</span>     <span class="o">-</span><span class="mf">23.585</span>
+<span class="gp">&gt;&gt;&gt; </span>     <span class="mf">50.000</span>       <span class="mf">0.178</span>   <span class="mf">46407.275</span>   <span class="mf">46394.028</span>     <span class="o">-</span><span class="mf">20.380</span>
+<span class="gp">&gt;&gt;&gt; </span>     <span class="mf">50.000</span>       <span class="mf">0.296</span>   <span class="mf">46409.165</span>   <span class="mf">46397.987</span>     <span class="o">-</span><span class="mf">17.197</span>
+<span class="gp">&gt;&gt;&gt; </span>     <span class="o">...</span>          <span class="o">...</span>     <span class="o">...</span>         <span class="o">...</span>           <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening an *.xyz* file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">## (column titles on the first line,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">## X, Y and data values on the others lines,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">## separated by a delimiter)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;test.xyz&quot;</span><span class="p">],</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+<span class="go">delimiter=&#39;\t&#39;, fields_row=1)</span>
+</pre></div>
+</div>
+<p><em>.xyz</em> file examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span>      <span class="n">Y</span>      <span class="n">Z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span>      <span class="mi">0</span>      <span class="mf">0.34</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span>      <span class="mi">1</span>      <span class="o">-</span><span class="mf">0.21</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span>      <span class="mi">2</span>      <span class="mf">2.45</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>    <span class="o">...</span>    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.34</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.21</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">2.45</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span><span class="p">,</span><span class="o">...</span><span class="p">,</span><span class="o">...</span>
+</pre></div>
+</div>
+<p>You can also specify the number of header lines to skip or the specific columns for x, y and values:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Number of header lines to skip</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;test.txt&quot;</span><span class="p">],</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+<span class="go">delimiter=&#39;,&#39;, skip_rows=4)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Specific x, y and value column numbers</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;test.txt&quot;</span><span class="p">],</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+<span class="go">delimiter=&#39;,&#39;, x_colnum=xcol, y_colnum=ycol, z_colnum=zcol)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If unspecified, the <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> is estimated directly from the file content and the <code class="docutils literal notranslate"><span class="pre">fileformat</span></code> is determined from the file extension.</p>
+</div>
+</div></blockquote>
+<p><strong>Surfer Grid files</strong></p>
+<blockquote>
+<div><p><strong class="program">GeophPy</strong> manages Golden Software <strong class="program">Surfer</strong> Grid files (Surfer 7 binary grids, Surfer 6 binary grids and Surfer 6 ASCII grids).
+The grid type is automatically determined from the <cite>.grd</cite> file.
+To open a Surfer Grid simply use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening a Surfer Grid file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;test.grd&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>NetCDF files</strong></p>
+<blockquote>
+<div><p>Previously processed dataset are by default save in NetCDF format (<em>.nc</em>). To open previously processed datasets, simply use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening previously processed dataset (.nc)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;dataset1.nc&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Concatenating Multiple files</strong></p>
+<blockquote>
+<div><p>It is possible to build a dataset from a concatenation of severals ASCII files of the same format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening several selected files</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;file1.dat&quot;</span><span class="p">,</span><span class="s2">&quot;file2.dat&quot;</span><span class="p">],</span>
+<span class="go">              format=&#39;ascii&#39;, delimiter=&#39; &#39;, z_colnum = 5)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Opening all files beginning by &quot;file&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span> <span class="o">=</span> <span class="n">DataSet</span><span class="o">.</span><span class="n">from_file</span><span class="p">([</span><span class="s2">&quot;file*.dat&quot;</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span>
+<span class="go">              delimiter=&#39; &#39;, z_colnum = 5)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When reading multiple files directly using the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.from_file" title="geophpy.dataset.DataSet.from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_file()</span></code></a> method, no edge-matching method are used so the original limits of the datasets in the mosaic maybe highly visible.</p>
+</div>
+</div></blockquote>
+<p><strong>Checking files compatibility</strong></p>
+<blockquote>
+<div><p>Opening several files to build a data set needs to make sure that all files selected are in the same format.</p>
+<p>It’s possible to check it by reading the headers of each files:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">compatibility</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">columns_nb</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">fileslist</span> <span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>   <span class="n">col_nb</span><span class="p">,</span> <span class="n">rows</span> <span class="o">=</span> <span class="n">getlinesfrom_file</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>   <span class="k">if</span> <span class="p">((</span><span class="n">columns_nb</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">col_nb</span> <span class="o">!=</span> <span class="n">columns_nb</span><span class="p">))</span> <span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>       <span class="n">compatibility</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="gp">&gt;&gt;&gt; </span>       <span class="k">break</span>
+<span class="gp">&gt;&gt;&gt; </span>   <span class="k">else</span> <span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>       <span class="n">columns_nb</span> <span class="o">=</span> <span class="n">col_nb</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="dataset-operation">
+<span id="chap-dataset-op-geophpy"></span><span id="datasetoperation"></span><h2>Dataset operation<a class="headerlink" href="#dataset-operation" title="Permalink to this headline">¶</a></h2>
+<p>Besides actual <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> processing, basic <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> operations (geometrical transformation, math operations, interpolation etc.) are available through simple commands.</p>
+<p><strong>Duplicating dataset</strong></p>
+<blockquote>
+<div><p>Duplicate a <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> before processing it to save the raw data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rawdataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Dataset interpolation</strong></p>
+<blockquote>
+<div><p>Interpolate the data value with severals gridding interpolation methods (‘none’, ‘nearest’, ‘linear’, ‘cubic’) to build the dataset <code class="xref py py-obj docutils literal notranslate"><span class="pre">z_image</span></code> object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">interpolation</span><span class="o">=</span><span class="s2">&quot;none&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id7">
+<img alt="_images/figCarto2.png" src="_images/figCarto2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Quick Start - Dataset interpolation (‘none’)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div></blockquote>
+<p><strong>Retrieving grid coordinates</strong></p>
+<blockquote>
+<div><p>The <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> grid (<code class="xref py py-obj docutils literal notranslate"><span class="pre">z_image</span></code>) coordinate vectors and matrices can be retrieved with the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Grid coordinate matrices</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_xgrid</span><span class="p">()</span>  <span class="c1"># x-coordinate matrix</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_ygrid</span><span class="p">()</span>  <span class="c1"># x-coordinate matrix</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_xygrid</span><span class="p">()</span>  <span class="c1"># both x and y-coordinate matrices</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Grid coordinate vectors</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_xvect</span><span class="p">()</span>  <span class="c1"># x-coordinate vector</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_yvect</span><span class="p">()</span>  <span class="c1"># y-coordinate vector</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_xyvect</span><span class="p">()</span>  <span class="c1"># both x and y-coordinate vectors</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_gridextent</span><span class="p">()</span>  <span class="c1"># xmin, xmax, ymin, ymax</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_gridcorners</span><span class="p">()</span> <span class="c1"># corners x and y-coordinates</span>
+</pre></div>
+</div>
+<p>The <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> ungridded values (<code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code>) can be retrieved with the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Data sample coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_xvalues</span><span class="p">()</span>  <span class="c1"># x-coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_yvalues</span><span class="p">()</span>  <span class="c1"># y-coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_yvalues</span><span class="p">()</span>  <span class="c1"># x, y-coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_values</span><span class="p">()</span>  <span class="c1"># data values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_xyzvalues</span><span class="p">()</span>  <span class="c1"># both x, y-coordinates and data values</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Bounding box</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">get_boundingbox</span><span class="p">()</span> <span class="c1"># corners coordinates (equivalent get_gridcorners() for a gridded dataset)</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div></blockquote>
+<p><strong>Basic math operations</strong></p>
+<blockquote>
+<div><p>You can add or multiply the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> values by a constant with the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset addition/subtraction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">zimfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">val</span><span class="o">=-</span><span class="mi">14</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">zimfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset multiplication/division</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">times</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">zimfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">val</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">30</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">zimfilt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div></blockquote>
+<p><strong>Basic geometrical operations</strong></p>
+<blockquote>
+<div><p>You can translate or rotate the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> with the following commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset translation</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">shiftx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">shifty</span><span class="o">=-</span><span class="mi">19</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Dataset rotation</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">angle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="s1">&#39;BL&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div></blockquote>
+</div>
+<div class="section" id="saving-dataset">
+<h2>Saving DataSet<a class="headerlink" href="#saving-dataset" title="Permalink to this headline">¶</a></h2>
+<p>You can save the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> in different a file formats using the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.to_file" title="geophpy.dataset.DataSet.to_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">to_file()</span></code></a> method of the <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> class.</p>
+<p>For the time being, only three formats are available. The list of the available file formats can be obtained with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.dataset</span> <span class="kn">import</span> <span class="n">fileformat_getlist</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fileformat_getlist</span><span class="p">()</span>
+<span class="go">[&#39;ascii&#39;, &#39;netcdf&#39;, &#39;surfer&#39;]</span>
+</pre></div>
+</div>
+<p>When saving a file, the file format is automatically recognized from the file extension using an internal dictionary:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">geophpy.dataset</span> <span class="kn">import</span> <span class="n">format_chooser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">format_chooser</span>
+<span class="go">{&#39;.cdf&#39;: &#39;netcdf&#39;, &#39;.nc&#39;: &#39;netcdf&#39;,</span>
+<span class="go">&#39;.grd&#39;: &#39;surfer&#39;,</span>
+<span class="go">&#39;.xyz&#39;: &#39;ascii&#39;, &#39;.csv&#39;: &#39;ascii&#39;, &#39;.txt&#39;: &#39;ascii&#39;, &#39;.dat&#39;: &#39;ascii&#39;}</span>
+</pre></div>
+</div>
+<p>If the file format is not in the dictionary or is not properly recognized from the extension, it can be forced to a specific format using the <code class="docutils literal notranslate"><span class="pre">fileformat</span></code> keyword of the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.from_file" title="geophpy.dataset.DataSet.from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_file()</span></code></a> method.</p>
+<p><strong>NetCDF files</strong></p>
+<blockquote>
+<div><p>Saving your data in NetCDF file format allow the conservation of the gridded dataset, the dataset values and the georeferencing system.
+An optional description can be added using the <code class="docutils literal notranslate"><span class="pre">description</span></code> keyword.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.nc&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.nc&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;My dataset example&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.extension&#39;</span><span class="p">,</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;netcdf&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Surfer Grid files</strong></p>
+<blockquote>
+<div><p>Saving your data in Surfer Grid format only conserves the gridded dataset.
+The different available grid types can be obtained using the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gridtype_getlist</span><span class="p">()</span>
+<span class="go">[&#39;surfer7bin&#39;, &#39;surfer6bin&#39;, &#39;surfer6ascii&#39;]</span>
+</pre></div>
+</div>
+<p>By default, the Surfer 7 binary grid type is used but you can use the <code class="docutils literal notranslate"><span class="pre">gridtype</span></code> keyword of the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.from_file" title="geophpy.dataset.DataSet.from_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">from_file()</span></code></a> method to choose another grid type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.grd&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.extension&#39;</span><span class="p">,</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;surfer&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.grd&#39;</span><span class="p">,</span> <span class="n">gridtype</span><span class="o">=</span><span class="s1">&#39;surfer6ascii&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p><strong>Ascii files</strong></p>
+<blockquote>
+<div><p>Saving your data in Surfer Grid format only conserves the dataset (ungridded) values.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.csv&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;save.extension&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">fileformat</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you only processed the gridded dataset (<code class="docutils literal notranslate"><span class="pre">valfilt=False</span></code>),
+use the <a class="reference internal" href="api.html#geophpy.dataset.DataSet.sample" title="geophpy.dataset.DataSet.sample"><code class="xref py py-meth docutils literal notranslate"><span class="pre">sample()</span></code></a> method to re-sample the gridded <a class="reference internal" href="api.html#geophpy.dataset.DataSet" title="geophpy.dataset.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> at the original value positions.
+Otherwise you will be saving the imported raw data value.</p>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plot-fun.html" class="btn btn-neutral float-right" title="Plotting functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

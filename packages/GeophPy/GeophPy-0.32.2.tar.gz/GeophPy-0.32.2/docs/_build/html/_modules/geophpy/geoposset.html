@@ -1,0 +1,1009 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>geophpy.geoposset &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="../../_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>geophpy.geoposset</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for geophpy.geoposset</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    geophpy.geoposset</span>
+<span class="sd">    -----------------</span>
+
+<span class="sd">    Module for the management of Geographic Positioning Sets.</span>
+
+<span class="sd">    This module provides a number of tools, including the</span>
+<span class="sd">    :class:`~geophpy.geoposset.GeoPosSet` class,</span>
+<span class="sd">    to dealing with Geographic Positioning Sets (or Ground Control Points).</span>
+
+<span class="sd">    :copyright: Copyright 2014-2019 Lionel Darras, Philippe Marty, Quentin Vitale and contributors, see AUTHORS.</span>
+<span class="sd">    :license: GNU GPL v3.</span>
+
+<span class="sd">    Conversion</span>
+<span class="sd">    ----------</span>
+<span class="sd">    - `utm_to_wgs84` -- Convert UTM to lat, long coordinates.</span>
+<span class="sd">    - `wgs84_to_utm` -- Convert lat, long to UTM coordinates.</span>
+
+<span class="sd">    Saving</span>
+<span class="sd">    ------</span>
+<span class="sd">    - `save` -- Save GCPs to an ascii file.</span>
+<span class="sd">    - `to_kml` -- Save GCPs to a kml file.</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="c1"># import glob  # to manage severals files thanks to &quot;*.&quot; extension</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="kn">import</span> <span class="nn">shapefile</span>   <span class="c1"># pyshp package for reading and writing shapefiles</span>
+<span class="kn">import</span> <span class="nn">utm</span> <span class="c1"># utm and wgs84 conversion</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">geophpy.geopositioning.kml</span> <span class="k">as</span> <span class="nn">kml</span>
+<span class="kn">import</span> <span class="nn">geophpy.filesmanaging.files</span> <span class="k">as</span> <span class="nn">iofiles</span>
+<span class="kn">import</span> <span class="nn">geophpy.misc.utils</span> <span class="k">as</span> <span class="nn">utils</span>
+
+
+
+
+
+<span class="c1">#-----------------------------------------------------------------------------#</span>
+<span class="c1"># Module&#39;s parameters definition                                              #</span>
+<span class="c1">#-----------------------------------------------------------------------------#</span>
+
+<span class="c1">###</span>
+<span class="c1">##</span>
+<span class="c1"># ... TODO ...</span>
+<span class="c1"># use pyproj to manage other coordinate system and re-projection ?</span>
+<span class="c1">##</span>
+<span class="c1">###</span>
+
+<span class="c1"># Display parameters</span>
+<span class="n">POINT_PARAMS</span> <span class="o">=</span> <span class="s1">&#39;bo&#39;</span>
+
+<span class="c1"># available reference systems</span>
+<span class="n">REFSYSTEM_LIST</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;UTM&#39;</span><span class="p">,</span> <span class="s1">&#39;WGS84&#39;</span><span class="p">]</span>
+
+<span class="c1"># UTM system limits</span>
+<span class="n">UTM_MINLETTER</span> <span class="o">=</span> <span class="s1">&#39;E&#39;</span>
+<span class="n">UTM_MINNUMBER</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">UTM_MAXLETTER</span> <span class="o">=</span> <span class="s1">&#39;X&#39;</span>
+<span class="n">UTM_MAXNUMBER</span> <span class="o">=</span> <span class="mi">60</span>
+
+<span class="c1"># file types read</span>
+<span class="n">FILETYPE_LIST</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;shapefile&#39;</span><span class="p">]</span>  <span class="c1"># list of file types available</span>
+
+<span class="n">format_chooser</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;.dat&quot;</span> <span class="p">:</span> <span class="s2">&quot;ascii&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.txt&quot;</span> <span class="p">:</span> <span class="s2">&quot;ascii&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.csv&quot;</span> <span class="p">:</span> <span class="s2">&quot;ascii&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;.shp&quot;</span> <span class="p">:</span> <span class="s2">&quot;shapefile&quot;</span>
+    <span class="p">}</span>
+
+<span class="c1">#-----------------------------------------------------------------------------#</span>
+<span class="c1"># Geographic Positioning Set Object                                           #</span>
+<span class="c1">#-----------------------------------------------------------------------------#</span>
+<div class="viewcode-block" id="GeoPosSet"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.GeoPosSet">[docs]</a><span class="k">class</span> <span class="nc">GeoPosSet</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39; Class to manage geographic positioning set.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    refsystem : :obj:`str` or :obj:`None`, opt</span>
+<span class="sd">        Geographic reference system (&#39;UTM&#39;, &#39;WGS84&#39;, ...).</span>
+
+<span class="sd">    utm_zoneletter : str, opt</span>
+<span class="sd">        Utm zone letter for &#39;UTM&#39; `refsystem` (E -&gt; X).</span>
+
+<span class="sd">    utm_zonenumber : int, opt</span>
+<span class="sd">        Utm zone number for &#39;UTM&#39; `refsystem` (1 -&gt; 60).</span>
+
+<span class="sd">    points_list : :obj:`list` of :obj:`scalar`, opt</span>
+<span class="sd">        List of Ground Control Points:</span>
+<span class="sd">        &gt;&gt;&gt; [[lat1, lon1, x1, y1], [lat2, lon2, x2, y2], ...]</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1">###</span>
+    <span class="c1">##</span>
+    <span class="c1">### Change arguments order to more logic</span>
+    <span class="c1"># points_list, refsystem, utm_letter and utm_number</span>
+    <span class="c1">##</span>
+    <span class="c1">###</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">refsystem</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">utm_letter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">utm_number</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">points_list</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">refsystem</span> <span class="o">=</span> <span class="n">refsystem</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">utm_letter</span> <span class="o">=</span> <span class="n">utm_letter</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">utm_number</span> <span class="o">=</span> <span class="n">utm_number</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">points_list</span> <span class="o">=</span> <span class="n">points_list</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">:</span><span class="se">\n</span><span class="s1"> Geographic system: </span><span class="si">%s</span><span class="se">\n</span><span class="s1"> GCPs: </span><span class="si">%s</span><span class="s1"> points&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+                                                                  <span class="bp">self</span><span class="o">.</span><span class="n">refsystem</span><span class="p">,</span>
+                                                                  <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="p">))</span>
+
+
+<span class="c1">##    ###</span>
+<span class="c1">##    ##</span>
+<span class="c1">##    # To Be Implemented</span>
+<span class="c1">##    @classmethod</span>
+<span class="c1">##    def from_ascii_file(cls, filenameslist):</span>
+<span class="c1">##        pass</span>
+<span class="c1">##</span>
+<span class="c1">##    @classmethod</span>
+<span class="c1">##    def from_shape_file(cls, filenameslist):</span>
+<span class="c1">##        pass</span>
+<span class="c1">##    #</span>
+<span class="c1">##    ##</span>
+<span class="c1">##    ###</span>
+
+<div class="viewcode-block" id="GeoPosSet.from_ascii_file"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.GeoPosSet.from_ascii_file">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_ascii_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filenames</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39; Build a :class:`geophpy.geoposdet.GeoPosSet` object from one or several ascii files.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filenames : :obj:`str` or :obj:`list` of :obj:`str`</span>
+<span class="sd">            Names of files to be read.</span>
+
+<span class="sd">        delimiter : :obj:`str` or ``None``</span>
+<span class="sd">            The ASCII file delimiter. If ``None`` (by default),</span>
+<span class="sd">            the delimiter will be sniffed from the file itself.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        :class:`~geophpy.geoposset.GeoPosSet` object (possibly empty).</span>
+
+<span class="sd">        succes : ``bool``</span>
+<span class="sd">            ``True`` if build was successful, ``False`` otherwise.</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="c1"># Attributes initialization</span>
+        <span class="n">refsystem</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">utm_letter</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">utm_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">points_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">point_num</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># Type checking &amp; extending file names list</span>
+        <span class="c1">## takes of cases with a star operator : [&#39;GPS_ex2.dat&#39;, &#39;*.csv&#39;]</span>
+        <span class="n">full_filelist</span> <span class="o">=</span> <span class="n">iofiles</span><span class="o">.</span><span class="n">extent_file_list</span><span class="p">(</span><span class="n">filenames</span><span class="p">)</span>
+
+        <span class="c1"># Reading files</span>
+        <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">full_filelist</span><span class="p">:</span>
+
+            <span class="c1"># If file exists</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+
+                <span class="c1"># Sniffing delimiter</span>
+                <span class="c1">## passing 1st line (=refsystem)</span>
+                <span class="k">if</span> <span class="n">delimiter</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">delimiter</span> <span class="o">=</span> <span class="n">iofiles</span><span class="o">.</span><span class="n">sniff_delimiter</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">skiplines</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+                <span class="c1"># Reading csv file</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
+                    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="n">delimiter</span><span class="p">)</span>
+
+                    <span class="c1"># Dealing with the 1st line (refsystem) ####################</span>
+
+                    <span class="c1"># refsytem + info (could be [&#39;UTM&#39;, &#39;32&#39;, &#39;N&#39;])</span>
+                    <span class="n">fullrefsystem</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="fm">__next__</span><span class="p">()</span>
+                    <span class="c1"># only refsytem</span>
+                    <span class="n">ref_system</span> <span class="o">=</span> <span class="n">fullrefsystem</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+                    <span class="c1"># UTM</span>
+                    <span class="k">if</span> <span class="n">ref_system</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;UTM&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+                        <span class="n">refsystem</span> <span class="o">=</span> <span class="n">ref_system</span>
+
+                        <span class="k">try</span><span class="p">:</span>
+                            <span class="c1"># Valid UTM zone letter</span>
+                            <span class="n">utm_zoneletter</span> <span class="o">=</span> <span class="n">fullrefsystem</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="n">isvalid_utm_letter</span><span class="p">(</span><span class="n">utm_zoneletter</span><span class="p">):</span>
+                                <span class="n">utm_letter</span> <span class="o">=</span> <span class="n">utm_zoneletter</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+                            <span class="c1"># Valid UTM zone number</span>
+                            <span class="n">utm_zonenumber</span> <span class="o">=</span> <span class="n">fullrefsystem</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                            <span class="k">if</span> <span class="n">isvalid_utm_number</span><span class="p">(</span><span class="n">utm_zonenumber</span><span class="p">):</span>
+                                <span class="n">utm_number</span> <span class="o">=</span> <span class="n">utm_zonenumber</span>
+
+                        <span class="k">except</span><span class="p">:</span>
+                            <span class="k">pass</span>
+
+                    <span class="c1"># WGS84</span>
+                    <span class="k">elif</span> <span class="n">ref_system</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;WGS84&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+                        <span class="n">refsystem</span> <span class="o">=</span> <span class="n">ref_system</span>
+
+                    <span class="c1"># Unkwnown system or just points</span>
+                    <span class="k">else</span><span class="p">:</span>
+
+                        <span class="c1"># Unkwnown refsystem</span>
+                        <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">fullrefsystem</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                            <span class="n">refsystem</span> <span class="o">=</span> <span class="n">ref_system</span>
+
+                        <span class="c1"># Just points</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">row</span> <span class="o">=</span> <span class="n">fullrefsystem</span>
+                            <span class="k">try</span><span class="p">:</span>
+                                <span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+                            <span class="k">except</span><span class="p">:</span>
+                                <span class="n">x</span> <span class="o">=</span> <span class="kc">None</span>
+                            <span class="k">try</span><span class="p">:</span>
+                                <span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+                            <span class="k">except</span><span class="p">:</span>
+                                <span class="n">y</span> <span class="o">=</span> <span class="kc">None</span>
+                            <span class="k">try</span><span class="p">:</span>
+                                <span class="c1">###</span>
+                                <span class="c1">##</span>
+                                <span class="c1"># Why ask for point num in file format if not used here ????</span>
+                                <span class="c1">##</span>
+                                <span class="c1">###</span>
+                                <span class="n">points_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">point_num</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+                                <span class="n">point_num</span> <span class="o">+=</span> <span class="mi">1</span>
+                            <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+                                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File Read Error (&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;: &quot;</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+                                <span class="n">success</span> <span class="o">=</span> <span class="kc">False</span>
+
+                    <span class="c1"># Reading data points ######################################</span>
+                    <span class="c1"># num, east, north, y, x</span>
+                    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+                        <span class="k">try</span><span class="p">:</span>
+                            <span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="k">except</span><span class="p">:</span>
+                            <span class="n">x</span> <span class="o">=</span> <span class="kc">None</span>
+                        <span class="k">try</span><span class="p">:</span>
+                            <span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+                        <span class="k">except</span><span class="p">:</span>
+                            <span class="n">y</span> <span class="o">=</span> <span class="kc">None</span>
+                        <span class="k">try</span><span class="p">:</span>
+                            <span class="n">points_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">point_num</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span>
+                            <span class="n">point_num</span> <span class="o">+=</span> <span class="mi">1</span>
+                        <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File Read Error (&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;: &quot;</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+                            <span class="n">success</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># No points read</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">points_list</span><span class="p">:</span>  <span class="c1"># empty sequence are False</span>
+            <span class="n">points_list</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="n">success</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="c1"># Conversion to np.array</span>
+        <span class="n">points_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>  <span class="c1"># trick to convert np.array in good format</span>
+        <span class="n">points_list</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">points_list</span><span class="p">)</span>
+        <span class="n">points_list</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">points_list</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># to delete last row added</span>
+
+        <span class="k">return</span> <span class="n">success</span><span class="p">,</span> <span class="bp">cls</span><span class="p">(</span><span class="n">refsystem</span><span class="p">,</span> <span class="n">utm_letter</span><span class="p">,</span> <span class="n">utm_number</span><span class="p">,</span> <span class="n">points_list</span><span class="p">)</span></div>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_shape_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filenames</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39; Build a :class:`geophpy.geoposdet.GeoPosSet` object from one or several shape files.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filenames : :obj:`str` or :obj:`list` of :obj:`str`</span>
+<span class="sd">            Names of files to be read.</span>
+
+<span class="sd">        delimiter : :obj:`str` or ``None``</span>
+<span class="sd">            The ASCII file delimiter. If ``None`` (by default),</span>
+<span class="sd">            the delimiter will be sniffed from the file itself.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        :class:`~geophpy.geoposset.GeoPosSet` object (possibly empty).</span>
+
+<span class="sd">        succes : bool</span>
+<span class="sd">            ``True`` if build was successful, ``False`` otherwise.</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="c1"># Attributes initialization</span>
+        <span class="n">refsystem</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">utm_letter</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">utm_number</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">points_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">point_num</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="c1"># Type checking &amp; extending file names list</span>
+        <span class="c1">## takes of cases with a star operator : [&#39;GPS_ex2.dat&#39;, &#39;*.csv&#39;]</span>
+        <span class="n">full_filelist</span> <span class="o">=</span> <span class="n">iofiles</span><span class="o">.</span><span class="n">extent_file_list</span><span class="p">(</span><span class="n">filenames</span><span class="p">)</span>
+
+        <span class="c1"># Reading shapefile</span>
+        <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">full_filelist</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">sf</span> <span class="o">=</span> <span class="n">shapefile</span><span class="o">.</span><span class="n">Reader</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+                <span class="n">shapes</span> <span class="o">=</span> <span class="n">sf</span><span class="o">.</span><span class="n">shapes</span><span class="p">()</span>
+
+                <span class="c1"># for each shape in the file</span>
+                <span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">shapes</span><span class="p">:</span>
+                    <span class="n">valid_point</span> <span class="o">=</span> <span class="p">(</span><span class="n">shape</span><span class="o">.</span><span class="n">shapeType</span> <span class="o">==</span> <span class="n">shapefile</span><span class="o">.</span><span class="n">POINT</span>
+                                   <span class="ow">or</span> <span class="n">shape</span><span class="o">.</span><span class="n">shapeType</span> <span class="o">==</span> <span class="n">shapefile</span><span class="o">.</span><span class="n">POINTZ</span>
+                                   <span class="ow">or</span> <span class="n">shape</span><span class="o">.</span><span class="n">shapeType</span> <span class="o">==</span> <span class="n">shapefile</span><span class="o">.</span><span class="n">POINTM</span><span class="p">)</span>
+
+                    <span class="k">if</span> <span class="n">valid_point</span><span class="p">:</span>
+                        <span class="n">points_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">point_num</span><span class="p">,</span> <span class="n">shape</span><span class="o">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                            <span class="n">shape</span><span class="o">.</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+                                            <span class="kc">None</span><span class="p">,</span>
+                                            <span class="kc">None</span>
+                                            <span class="p">])</span>
+                        <span class="n">point_num</span> <span class="o">=</span> <span class="n">point_num</span> <span class="o">+</span> <span class="mi">1</span>
+
+            <span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File Read Error (&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+                <span class="n">success</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">break</span>
+
+        <span class="c1"># Conversion to np.array</span>
+        <span class="n">points_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>  <span class="c1"># trick to convert np.array in good format</span>
+        <span class="n">points_list</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">points_list</span><span class="p">)</span>
+        <span class="n">points_list</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">points_list</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># to delete last row added</span>
+
+        <span class="k">return</span> <span class="n">success</span><span class="p">,</span> <span class="bp">cls</span><span class="p">(</span><span class="n">refsystem</span><span class="p">,</span> <span class="n">utm_letter</span><span class="p">,</span> <span class="n">utm_number</span><span class="p">,</span> <span class="n">points_list</span><span class="p">)</span>
+
+<div class="viewcode-block" id="GeoPosSet.from_file"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.GeoPosSet.from_file">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">from_file</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">filenames</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Build a :class:`~geophpy.geoposdet.GeoPosSet` object from one or several files.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filenames : ``str`` or ``list`` of ``str``</span>
+<span class="sd">            Names of files to be read.</span>
+
+<span class="sd">        filetype : {&#39;ascii&#39;, &#39;shapefile&#39;, ``None``}</span>
+<span class="sd">            Type of the files to read. Id ``None`` (default), the file type</span>
+<span class="sd">            will be determined from the file extension.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        :class:`~geophpy.geoposset.GeoPosSet` object (possibly empty).</span>
+
+<span class="sd">        succes : bool</span>
+<span class="sd">            ``True`` if build was successful, ``False`` otherwise.</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">read_func_chooser</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;ascii&#39;</span> <span class="p">:</span><span class="bp">cls</span><span class="o">.</span><span class="n">from_ascii_file</span><span class="p">,</span>
+                             <span class="s1">&#39;shape&#39;</span> <span class="p">:</span> <span class="bp">cls</span><span class="o">.</span><span class="n">from_shape_file</span><span class="p">}</span>
+
+        <span class="c1"># type checking</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">filenames</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">filenames</span> <span class="o">=</span> <span class="p">[</span><span class="n">filenames</span><span class="p">]</span>
+
+        <span class="c1"># Type from file extension</span>
+        <span class="k">if</span> <span class="n">filetype</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">file_ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">])[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">filetype</span> <span class="o">=</span> <span class="n">format_chooser</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">file_ext</span><span class="p">,</span> <span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">read_func_chooser</span><span class="p">[</span><span class="n">filetype</span><span class="p">](</span><span class="n">filenames</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="GeoPosSet.to_ascii"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.GeoPosSet.to_ascii">[docs]</a>    <span class="k">def</span> <span class="nf">to_ascii</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39; Save :class:`~geophpy.geoposset.GeoPosSet` points list to an ascii file.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename: ``str``</span>
+<span class="sd">            Name of the ascii file to save in.</span>
+
+<span class="sd">        delimiter: ``str``, opt</span>
+<span class="sd">            Delimiter to use.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        success: ``bool``</span>
+<span class="sd">            ``True`` if a file was saved.</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="c1"># Writing reference system</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">refsystem</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+            <span class="c1"># UTM</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">refsystem</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;UTM&#39;</span><span class="p">:</span>
+                <span class="c1"># UTM;N;31</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="c1"># Valid UTM zone letter</span>
+                    <span class="k">if</span> <span class="n">isvalid_utm_letter</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">utm_zoneletter</span><span class="p">):</span>
+                        <span class="n">utm_letter</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">utm_zoneletter</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+                    <span class="c1"># Valid UTM zone number</span>
+                    <span class="k">if</span> <span class="n">isvalid_utm_number</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">utm_zonenumber</span><span class="p">):</span>
+                        <span class="n">utm_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">utm_zonenumber</span>
+
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="n">utm_letter</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+                    <span class="n">utm_number</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+                <span class="n">refsystem</span> <span class="o">=</span> <span class="n">delimiter</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;UTM&#39;</span> <span class="o">+</span> <span class="n">utm_letter</span> <span class="o">+</span> <span class="n">utm_number</span><span class="p">)</span>
+
+            <span class="c1"># Other</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">refsystem</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">refsystem</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+        <span class="c1"># No refsystem</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">refsystem</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+        <span class="c1"># Writting GCPs</span>
+        <span class="n">arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">points_list</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%g</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="n">delimiter</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">refsystem</span><span class="p">,</span> <span class="n">comments</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+        <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1">##        try:</span>
+<span class="c1">##            with open(filename, &#39;w&#39;, newline=&#39;&#39;) as csvfile:</span>
+<span class="c1">##                writer = csv.writer(csvfile, delimiter=delimiter)</span>
+<span class="c1">##</span>
+<span class="c1">##                # Reference system (1st row)</span>
+<span class="c1">##                if self.refsystem is not None:</span>
+<span class="c1">##                    # UTM</span>
+<span class="c1">##                    if &#39;UTM&#39;.lower() == self.refsystem.lower():</span>
+<span class="c1">##                        # UTM;N;31</span>
+<span class="c1">##                        refsystem = [self.refsystem.upper(),</span>
+<span class="c1">##                                     self.utm_letter.upper(),</span>
+<span class="c1">##                                     self.utm_number]</span>
+<span class="c1">##                    # Other</span>
+<span class="c1">##                    else:</span>
+<span class="c1">##                        refsystem = [self.refsystem.upper()]</span>
+<span class="c1">##                        print(refsystem)</span>
+<span class="c1">##</span>
+<span class="c1">##                    writer.writerow(refsystem)</span>
+<span class="c1">##</span>
+<span class="c1">##                # No refsystem</span>
+<span class="c1">##                else:</span>
+<span class="c1">##                    pass</span>
+<span class="c1">##                # Points list</span>
+<span class="c1">##                writer.writerows(self.points_list)</span>
+<span class="c1">##</span>
+<span class="c1">##        except:</span>
+<span class="c1">##            success = False</span>
+
+<span class="c1">##        ResultFile = csv.writer(open(filename,&quot;w&quot;, newline=&#39;&#39;), delimiter=&#39;;&#39;)</span>
+<span class="c1">##        # writes the first line of the file with reference system (&#39;UTM&#39;, &#39;WGS84&#39;, ...)</span>
+<span class="c1">##        fullrefsystem = [self.refsystem]</span>
+<span class="c1">##        # if &#39;UTM&#39; ref system, writes the second and third lines with UTM zone letter and number</span>
+<span class="c1">##        if (self.refsystem == &#39;UTM&#39;):</span>
+<span class="c1">##            fullrefsystem = [self.refsystem, self.utm_letter, self.utm_number]</span>
+<span class="c1">##        else :</span>
+<span class="c1">##            fullrefsystem = [self.refsystem]</span>
+<span class="c1">##</span>
+<span class="c1">##        ResultFile.writerow(fullrefsystem)</span>
+<span class="c1">##        # writes points list in the file.</span>
+<span class="c1">##        ResultFile.writerows(self.points_list)</span>
+
+        <span class="k">return</span> <span class="n">success</span></div>
+
+<div class="viewcode-block" id="GeoPosSet.plot"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.GeoPosSet.plot">[docs]</a>    <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+             <span class="n">i_xmin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">i_xmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">i_ymin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">i_ymax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">long_label</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39; Display GCPs.</span>
+
+<span class="sd">        Plots the GCPs using the point number as label.</span>
+<span class="sd">        To save the plot, use the ``picturefilename`` option.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename : ``str`` or ``None``</span>
+<span class="sd">            Name of the file to save the picture.</span>
+<span class="sd">            If ``None``, no picture is saved.</span>
+
+<span class="sd">        dpi : ``int``</span>
+<span class="sd">            &#39;dot per inch&#39; definition for the picture file if filename is not None.</span>
+
+<span class="sd">        transparent : ``bool``</span>
+<span class="sd">            if True, picture display points not plotted as transparents</span>
+
+<span class="sd">        i_xmin : x minimal value to display, None by default</span>
+
+<span class="sd">        i_xmax : x maximal value to display, None by default</span>
+
+<span class="sd">        i_ymin : y minimal value to display, None by default</span>
+
+<span class="sd">        i_ymax : y maximal value to display, None by default</span>
+
+<span class="sd">        long_label : bool</span>
+<span class="sd">            Flag to display both point number and local coordinates.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        success: True if no error</span>
+
+<span class="sd">        fig: ``Figure`` object</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>                                  <span class="c1"># creation of the empty figure</span>
+
+        <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">point</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">POINT_PARAMS</span><span class="p">)</span>
+            <span class="c1">###</span>
+            <span class="c1"># Complete label plot</span>
+            <span class="k">if</span> <span class="n">long_label</span><span class="p">:</span>
+                <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span>
+                <span class="n">label_box_opts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">fc</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">point</span><span class="o">.</span><span class="n">size</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+                    <span class="n">strg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%s</span><span class="s1">, </span><span class="si">%s</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">point</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">point</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">strg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%s</span><span class="s1">, </span><span class="si">%s</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">)</span>
+                <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dx</span><span class="p">,</span> <span class="n">point</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">dy</span><span class="p">,</span> <span class="n">strg</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">label_box_opts</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dx</span><span class="p">,</span> <span class="n">point</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">dy</span><span class="p">,</span> <span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">bbox</span><span class="o">=</span><span class="n">label_box_opts</span><span class="p">)</span>
+
+        <span class="n">xmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">xmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">ymin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">success</span><span class="p">:</span>
+            <span class="c1"># for each x or y limit not configured in input, initialisation of the value with the limits of points displayed</span>
+            <span class="n">nolimits</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">if</span> <span class="n">i_xmin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">i_xmin</span> <span class="o">=</span> <span class="n">xmin</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nolimits</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">i_xmax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">i_xmax</span> <span class="o">=</span> <span class="n">xmax</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nolimits</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">i_ymin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">i_ymin</span> <span class="o">=</span> <span class="n">ymin</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nolimits</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">i_ymax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">i_ymax</span> <span class="o">=</span> <span class="n">ymax</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">nolimits</span> <span class="o">=</span> <span class="kc">False</span>
+
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">nolimits</span><span class="p">:</span>   <span class="c1"># sets the axis limits</span>
+                <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="n">i_xmin</span><span class="p">,</span> <span class="n">i_xmax</span><span class="p">,</span> <span class="n">i_ymin</span><span class="p">,</span> <span class="n">i_ymax</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>                                      <span class="c1"># gets the axis limits</span>
+                <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">()</span>
+
+            <span class="c1"># to have the same scale in X and Y axis</span>
+            <span class="n">dy</span> <span class="o">=</span> <span class="n">ymax</span> <span class="o">-</span> <span class="n">ymin</span>
+            <span class="n">dx</span> <span class="o">=</span> <span class="n">xmax</span> <span class="o">-</span> <span class="n">xmin</span>
+            <span class="k">if</span> <span class="n">dy</span> <span class="o">&gt;</span> <span class="n">dx</span><span class="p">:</span>
+                <span class="n">xmax</span> <span class="o">=</span> <span class="n">xmin</span> <span class="o">+</span> <span class="n">dy</span>
+            <span class="k">elif</span> <span class="n">dx</span> <span class="o">&gt;</span> <span class="n">dy</span><span class="p">:</span>
+                <span class="n">ymax</span> <span class="o">=</span> <span class="n">ymin</span> <span class="o">+</span> <span class="n">dx</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">])</span>
+
+            <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">ticklabel_format</span><span class="p">(</span><span class="n">useOffset</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="c1"># Forcing equal x and Y</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">success</span><span class="p">,</span> <span class="n">fig</span></div>
+
+<div class="viewcode-block" id="GeoPosSet.to_kml"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.GeoPosSet.to_kml">[docs]</a>    <span class="k">def</span> <span class="nf">to_kml</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Save :class:`~geophpy.geoposset.GeoPosSet` points list to a kml file.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        filename: ``str``</span>
+<span class="sd">            Name for the kml file to save in.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        success: ``bool``</span>
+<span class="sd">            ``True`` if a file was saved.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1"># by default</span>
+        <span class="n">kml</span><span class="o">.</span><span class="n">geoposset_to_kmlfile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">points_list</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">success</span></div>
+    
+    <span class="k">def</span> <span class="nf">GCPs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39; Returns the list of ground control Points. &#39;&#39;&#39;</span>
+
+        <span class="k">return</span>  <span class="bp">self</span><span class="o">.</span><span class="n">points_list</span></div>
+
+<span class="c1">#-----------------------------------------------------------------------------#</span>
+<span class="c1"># General Geographic Positioning Set Environments functions                   #</span>
+<span class="c1">#-----------------------------------------------------------------------------#</span>
+<div class="viewcode-block" id="refsys_getlist"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.refsys_getlist">[docs]</a><span class="k">def</span> <span class="nf">refsys_getlist</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; List of available geographic reference system. &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">REFSYSTEM_LIST</span></div>
+
+
+<div class="viewcode-block" id="filetype_getlist"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.filetype_getlist">[docs]</a><span class="k">def</span> <span class="nf">filetype_getlist</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; List read file types, &#39;ascii&#39;, &#39;shapefile&#39;, ... &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">FILETYPE_LIST</span></div>
+
+<span class="c1">###</span>
+<span class="c1">##</span>
+<span class="c1"># ... MOVE TO ... Should we move those general routines to geopositionning.general</span>
+<span class="c1">##</span>
+<span class="c1">###</span>
+<div class="viewcode-block" id="utm_to_wgs84"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.utm_to_wgs84">[docs]</a><span class="k">def</span> <span class="nf">utm_to_wgs84</span><span class="p">(</span><span class="n">easting</span><span class="p">,</span> <span class="n">northing</span><span class="p">,</span> <span class="n">zonenumber</span><span class="p">,</span> <span class="n">zoneletter</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Conversion from UTM to WGS84 coordinates (lat, lon).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    easting : ``scalar``</span>
+<span class="sd">        Easting UTM coordinate.</span>
+
+<span class="sd">    northing : ``scalar``</span>
+<span class="sd">        Northing UTM coordinate.</span>
+
+<span class="sd">    zonenumber : ``int``</span>
+<span class="sd">        UTM zone number.</span>
+
+<span class="sd">    zoneletter: ``str``</span>
+<span class="sd">        UTM zone letter.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    latitude : ``scalar``</span>
+<span class="sd">        WGS84 latitude coordinate.</span>
+
+<span class="sd">    longitude : ``scalar``</span>
+<span class="sd">        WGS84 longitude coordinate.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">### Making it work on list too</span>
+    <span class="n">easting</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_sequence</span><span class="p">(</span><span class="n">easting</span><span class="p">)</span>
+    <span class="n">northing</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_sequence</span><span class="p">(</span><span class="n">northing</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">easting</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">northing</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Easting and Norting should be same size but&#39;</span>
+              <span class="s1">&#39;but (</span><span class="si">%s</span><span class="s1"> and </span><span class="si">%s</span><span class="s1">) encountered&#39;</span> <span class="o">%</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">easting</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">northing</span><span class="p">))</span>
+              <span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">rank</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">easting</span><span class="p">)</span>
+    <span class="n">zonenumber</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_normalize_sequence</span><span class="p">(</span><span class="n">zonenumber</span><span class="p">,</span> <span class="n">rank</span><span class="p">)</span>
+    <span class="n">zoneletter</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_normalize_sequence</span><span class="p">(</span><span class="n">zoneletter</span><span class="p">,</span> <span class="n">rank</span><span class="p">)</span>
+
+    <span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rank</span><span class="p">):</span>
+        <span class="n">lat</span><span class="p">,</span> <span class="n">long</span> <span class="o">=</span> <span class="n">utm</span><span class="o">.</span><span class="n">to_latlon</span><span class="p">(</span><span class="n">easting</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                  <span class="n">northing</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                  <span class="n">zonenumber</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                                  <span class="n">zoneletter</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">latitude</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lat</span><span class="p">)</span>
+        <span class="n">longitude</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">long</span><span class="p">)</span>
+
+    <span class="c1"># Single value</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+
+        <span class="k">return</span> <span class="n">latitude</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">longitude</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span></div>
+    <span class="c1">###</span>
+<span class="c1">#    return utm.to_latlon(easting, northing, zonenumber, zoneletter)</span>
+
+
+<div class="viewcode-block" id="wgs84_to_utm"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.wgs84_to_utm">[docs]</a><span class="k">def</span> <span class="nf">wgs84_to_utm</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Conversion from WGS84 to UTM coordinates.</span>
+
+<span class="sd">    works on list</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    latitude : ``scalar``</span>
+<span class="sd">        WGS84 latitude coordinate.</span>
+
+<span class="sd">    longitude : ``scalar``</span>
+<span class="sd">        WGS84 longitude coordinate.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    easting : ``scalar``</span>
+<span class="sd">        Easting UTM coordinate.</span>
+
+<span class="sd">    northing : ``scalar``</span>
+<span class="sd">        Northing UTM coordinate.</span>
+
+<span class="sd">    zonenumber : ``int``</span>
+<span class="sd">        UTM zone number.</span>
+
+<span class="sd">    zoneletter: ``str``</span>
+<span class="sd">        UTM zone letter.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">### Making it work on list too</span>
+    <span class="n">latitude</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_sequence</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span>
+    <span class="n">longitude</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">make_sequence</span><span class="p">(</span><span class="n">longitude</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">latitude</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">longitude</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Latitude and Longitude should be same size but&#39;</span>
+              <span class="s1">&#39;but (</span><span class="si">%s</span><span class="s1"> and </span><span class="si">%s</span><span class="s1">) encountered&#39;</span> <span class="o">%</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">latitude</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">longitude</span><span class="p">))</span>
+              <span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="n">easting</span><span class="p">,</span> <span class="n">northing</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">letter</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">lat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">latitude</span><span class="p">):</span>
+        <span class="c1">#lat = latitude[i]</span>
+        <span class="n">long</span> <span class="o">=</span> <span class="n">longitude</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">east</span><span class="p">,</span> <span class="n">north</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">let</span> <span class="o">=</span> <span class="n">utm</span><span class="o">.</span><span class="n">from_latlon</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">)</span>
+        <span class="n">easting</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">east</span><span class="p">)</span>
+        <span class="n">northing</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">north</span><span class="p">)</span>
+        <span class="n">number</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+        <span class="n">letter</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">let</span><span class="p">)</span>
+
+    <span class="c1"># Single value</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">easting</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">easting</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">northing</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">number</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">letter</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">easting</span><span class="p">,</span> <span class="n">northing</span><span class="p">,</span> <span class="n">number</span><span class="p">,</span> <span class="n">letter</span></div>
+    <span class="c1">###</span>
+
+    <span class="c1">#return utm.from_latlon(latitude, longitude)</span>
+
+
+<div class="viewcode-block" id="utm_getzonelimits"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.utm_getzonelimits">[docs]</a><span class="k">def</span> <span class="nf">utm_getzonelimits</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; UTM coordinates system min and max numbers and letters.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+
+<span class="sd">    min_number : ``int``</span>
+<span class="sd">        Minimal number of the UTM zone (1).</span>
+
+<span class="sd">    min_letter : ``str``</span>
+<span class="sd">        Minimal letter of the UTM zone (E).</span>
+
+<span class="sd">    max_number : ``int``</span>
+<span class="sd">        Maximal number of the UTM zone (60).</span>
+
+<span class="sd">    max letter : ``str``</span>
+<span class="sd">        Maximal letter of the UTM zone (X).</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">UTM_MINNUMBER</span><span class="p">,</span> <span class="n">UTM_MINLETTER</span><span class="p">,</span> <span class="n">UTM_MAXNUMBER</span><span class="p">,</span> <span class="n">UTM_MAXLETTER</span></div>
+
+
+<div class="viewcode-block" id="isvalid_utm_letter"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.isvalid_utm_letter">[docs]</a><span class="k">def</span> <span class="nf">isvalid_utm_letter</span><span class="p">(</span><span class="n">strg</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Check validity of an UTM zone letter. &#39;&#39;&#39;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">strg</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">strg</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">strg</span><span class="p">)</span>
+
+    <span class="n">valid</span> <span class="o">=</span> <span class="p">(</span><span class="n">strg</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>
+             <span class="ow">and</span> <span class="n">strg</span> <span class="o">&gt;=</span> <span class="n">UTM_MINLETTER</span>
+             <span class="ow">and</span> <span class="n">strg</span> <span class="o">&lt;=</span> <span class="n">UTM_MAXLETTER</span>
+             <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">valid</span></div>
+
+
+<div class="viewcode-block" id="isvalid_utm_number"><a class="viewcode-back" href="../../api.html#geophpy.geoposset.isvalid_utm_number">[docs]</a><span class="k">def</span> <span class="nf">isvalid_utm_number</span><span class="p">(</span><span class="n">strg</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Check validity of an UTM zone number. &#39;&#39;&#39;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">strg</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">strg</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">strg</span><span class="p">)</span>
+
+    <span class="n">valid</span> <span class="o">=</span> <span class="p">(</span><span class="n">strg</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>
+             <span class="ow">and</span> <span class="nb">float</span><span class="p">(</span><span class="n">strg</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">UTM_MINNUMBER</span>
+             <span class="ow">and</span> <span class="nb">float</span><span class="p">(</span><span class="n">strg</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">UTM_MAXNUMBER</span>
+             <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">valid</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

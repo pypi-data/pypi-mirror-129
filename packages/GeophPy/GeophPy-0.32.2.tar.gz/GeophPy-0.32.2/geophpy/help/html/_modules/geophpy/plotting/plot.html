@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>geophpy.plotting.plot &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="../../../_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>geophpy.plotting.plot</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for geophpy.plotting.plot</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    geophpy.plotting.plot</span>
+<span class="sd">    ---------------------</span>
+
+<span class="sd">    Module regrouping map plotting functions.</span>
+
+<span class="sd">    :copyright: Copyright 2014-2020 L. Darras, P. Marty, Q. Vitale and contributors, see AUTHORS.</span>
+<span class="sd">    :license: GNU GPL v3.</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1">#import geophpy.plotting.plot2D as plot2D</span>
+<span class="kn">import</span> <span class="nn">geophpy.plotting.plot3D</span> <span class="k">as</span> <span class="nn">plot3D</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+
+<span class="kn">from</span> <span class="nn">geophpy.plotting.plot2D</span> <span class="kn">import</span> <span class="p">(</span><span class="n">plot_surface</span><span class="p">,</span>
+                                     <span class="n">plot_contour</span><span class="p">,</span>
+                                     <span class="n">plot_contourf</span><span class="p">,</span>
+                                     <span class="n">plot_scatter</span><span class="p">,</span>
+                                     <span class="n">plot_postmap</span><span class="p">)</span>
+
+<span class="c1">#from geophpy.plotting.plot2D import UNFILLED_MARKERS</span>
+
+<span class="c1"># list of plot types available</span>
+<span class="n">plottype_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2D-SCATTER&#39;</span><span class="p">,</span> <span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="s1">&#39;2D-CONTOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;2D-CONTOURF&#39;</span><span class="p">,</span> <span class="s1">&#39;2D-POSTMAP&#39;</span><span class="p">]</span>
+
+<span class="c1"># list of interpolations available</span>
+<span class="n">interpolation_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="s1">&#39;nearest&#39;</span><span class="p">,</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span> <span class="s1">&#39;bicubic&#39;</span><span class="p">,</span> <span class="s1">&#39;spline16&#39;</span><span class="p">,</span> <span class="s1">&#39;sinc&#39;</span><span class="p">]</span>
+
+<span class="c1"># list of picture format files available</span>
+<span class="n">pictureformat_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.eps&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.pdf&#39;</span><span class="p">,</span> <span class="s1">&#39;.pgf&#39;</span><span class="p">,</span> <span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.ps&#39;</span><span class="p">,</span> <span class="s1">&#39;.raw&#39;</span><span class="p">,</span> <span class="s1">&#39;.rgba&#39;</span><span class="p">,</span> <span class="s1">&#39;.svg&#39;</span><span class="p">,</span> <span class="s1">&#39;.svgz&#39;</span><span class="p">,</span> <span class="s1">&#39;.tif&#39;</span><span class="p">,</span> <span class="s1">&#39;.tiff&#39;</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">gettypelist</span><span class="p">():</span>
+   <span class="sd">&#39;&#39;&#39; Return the list of available plot types. &#39;&#39;&#39;</span>
+
+   <span class="k">return</span> <span class="n">plottype_list</span>
+
+
+<span class="k">def</span> <span class="nf">getinterpolationlist</span><span class="p">():</span>
+   <span class="sd">&#39;&#39;&#39; Return the list of available interpolations for data display. &#39;&#39;&#39;</span>
+
+   <span class="k">return</span> <span class="n">interpolation_list</span>
+
+
+<span class="k">def</span> <span class="nf">getpictureformatlist</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39; Return the list of available picture format. &#39;&#39;&#39;</span>
+
+    <span class="k">return</span> <span class="n">pictureformat_list</span>
+
+
+<div class="viewcode-block" id="plot"><a class="viewcode-back" href="../../../api.html#geophpy.plotting.plot.plot">[docs]</a><span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">plottype</span><span class="p">,</span> <span class="n">cmapname</span><span class="p">,</span> <span class="n">creversed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cmmin</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;bilinear&#39;</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cmapdisplay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">labeldisplay</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">pointsdisplay</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">rects</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Dataset display.</span>
+
+<span class="sd">    cf. `:meth:`~geophpy.dataset.DataSet.plot`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">ret</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">success</span> <span class="o">=</span> <span class="n">ispictureformat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">success</span><span class="p">:</span>
+        <span class="c1"># 2D-SURFACE</span>
+        <span class="k">if</span> <span class="n">plottype</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">,</span> <span class="s1">&#39;SURFACE&#39;</span><span class="p">,</span> <span class="s1">&#39;SURF&#39;</span><span class="p">,</span> <span class="s1">&#39;SF&#39;</span><span class="p">]:</span>
+
+            <span class="c1"># ### display options</span>
+            <span class="c1"># filename = kwargs.get(&#39;filename&#39;, None)</span>
+            <span class="c1"># axisdisplay = kwargs.get(&#39;axisdisplay&#39;, True)</span>
+            <span class="c1"># cmapdisplay = kwargs.get(&#39;cmapdisplay&#39;, True)</span>
+            <span class="c1"># dpi = kwargs.get(&#39;dpi&#39;, 600)</span>
+            <span class="c1"># transparent = kwargs.get(&#39;transparent&#39;, True)</span>
+
+            <span class="c1"># dataset,</span>
+            <span class="c1"># cmapname,</span>
+            <span class="c1"># creversed = kwargs.get(&#39;creversed&#39;, False)</span>
+            <span class="c1"># fig = kwargs.get(&#39;fig&#39;, None)</span>
+            <span class="c1"># filename = kwargs.get(&#39;filename&#39;, None)</span>
+            <span class="c1"># cmmin = kwargs.get(&#39;cmmin&#39;, None)</span>
+            <span class="c1"># cmmax = kwargs.get(&#39;cmmax&#39;, None)</span>
+            <span class="c1"># interpolation = kwargs.get(&#39;interpolation&#39;, &#39;bilinear&#39;)</span>
+            <span class="c1"># cmapdisplay = kwargs.get(&#39;cmapdisplay&#39;, True)</span>
+            <span class="c1"># axisdisplay = kwargs.get(&#39;axisdisplay&#39;, True)</span>
+            <span class="c1"># labeldisplay = kwargs.get(&#39;labeldisplay&#39;, False)</span>
+            <span class="c1"># pointsdisplay = kwargs.get(&#39;pointsdisplay&#39;, False)</span>
+            <span class="c1"># dpi = kwargs.get(&#39;dpi&#39;, None)</span>
+            <span class="c1"># transparent = kwargs.get(&#39;transparent&#39;, False)</span>
+            <span class="c1"># logscale = kwargs.get(&#39;logscale&#39;, False)</span>
+            <span class="c1"># rects = kwargs.get(&#39;rects&#39;, None)</span>
+            <span class="c1"># points = kwargs.get(&#39;points&#39;, None)</span>
+            <span class="c1"># marker = kwargs.get(&#39;marker&#39;, &#39;+&#39;)</span>
+            <span class="c1"># markersize = kwargs.get(&#39;markersize&#39;, None)</span>
+
+            <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plot_surface</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">cmapname</span><span class="p">,</span>
+                                            <span class="n">creversed</span><span class="o">=</span><span class="n">creversed</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+                                            <span class="n">cmmin</span><span class="o">=</span><span class="n">cmmin</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="n">cmmax</span><span class="p">,</span>
+                                            <span class="n">interpolation</span><span class="o">=</span><span class="n">interpolation</span><span class="p">,</span>
+                                            <span class="n">cmapdisplay</span><span class="o">=</span><span class="n">cmapdisplay</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="o">=</span><span class="n">axisdisplay</span><span class="p">,</span>
+                                            <span class="n">labeldisplay</span><span class="o">=</span><span class="n">labeldisplay</span><span class="p">,</span> <span class="n">pointsdisplay</span><span class="o">=</span><span class="n">pointsdisplay</span><span class="p">,</span>
+                                            <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">,</span>
+                                            <span class="n">logscale</span><span class="o">=</span><span class="n">logscale</span><span class="p">,</span> <span class="n">rects</span><span class="o">=</span><span class="n">rects</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="n">points</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">)</span>
+
+        <span class="c1"># 2D-CONTOUR</span>
+        <span class="k">elif</span> <span class="n">plottype</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;2D-CONTOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;CONTOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;CONT&#39;</span><span class="p">,</span> <span class="s1">&#39;CT&#39;</span><span class="p">]:</span>
+            <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plot_contour</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">cmapname</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="n">levels</span><span class="p">,</span> <span class="n">creversed</span><span class="o">=</span><span class="n">creversed</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">cmmin</span><span class="o">=</span><span class="n">cmmin</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="n">cmmax</span><span class="p">,</span> <span class="n">cmapdisplay</span><span class="o">=</span><span class="n">cmapdisplay</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="o">=</span><span class="n">axisdisplay</span><span class="p">,</span> <span class="n">labeldisplay</span><span class="o">=</span><span class="n">labeldisplay</span><span class="p">,</span> <span class="n">pointsdisplay</span><span class="o">=</span><span class="n">pointsdisplay</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="n">logscale</span><span class="p">,</span> <span class="n">rects</span><span class="o">=</span><span class="n">rects</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="n">points</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">)</span>
+
+        <span class="c1"># 2D-CONTOUR (Filled)</span>
+        <span class="k">elif</span> <span class="n">plottype</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;2D-CONTOURF&#39;</span><span class="p">,</span> <span class="s1">&#39;CONTOURF&#39;</span><span class="p">,</span> <span class="s1">&#39;CONTF&#39;</span><span class="p">,</span> <span class="s1">&#39;CF&#39;</span><span class="p">]:</span>
+            <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plot_contourf</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">cmapname</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="n">levels</span><span class="p">,</span> <span class="n">creversed</span><span class="o">=</span><span class="n">creversed</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">cmmin</span><span class="o">=</span><span class="n">cmmin</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="n">cmmax</span><span class="p">,</span> <span class="n">cmapdisplay</span><span class="o">=</span><span class="n">cmapdisplay</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="o">=</span><span class="n">axisdisplay</span><span class="p">,</span> <span class="n">labeldisplay</span><span class="o">=</span><span class="n">labeldisplay</span><span class="p">,</span> <span class="n">pointsdisplay</span><span class="o">=</span><span class="n">pointsdisplay</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="n">logscale</span><span class="p">,</span> <span class="n">rects</span><span class="o">=</span><span class="n">rects</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="n">points</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">)</span>
+
+        <span class="c1"># 2D-SCATTER</span>
+        <span class="k">elif</span> <span class="n">plottype</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;2D-SCATTER&#39;</span><span class="p">,</span> <span class="s1">&#39;SCATTER&#39;</span><span class="p">,</span> <span class="s1">&#39;SCAT&#39;</span><span class="p">,</span> <span class="s1">&#39;SC&#39;</span><span class="p">]:</span>
+            <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plot_scatter</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">cmapname</span><span class="p">,</span> <span class="n">creversed</span><span class="o">=</span><span class="n">creversed</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">cmmin</span><span class="o">=</span><span class="n">cmmin</span><span class="p">,</span> <span class="n">cmmax</span><span class="o">=</span><span class="n">cmmax</span><span class="p">,</span> <span class="n">cmapdisplay</span><span class="o">=</span><span class="n">cmapdisplay</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="o">=</span><span class="n">axisdisplay</span><span class="p">,</span> <span class="n">labeldisplay</span><span class="o">=</span><span class="n">labeldisplay</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="n">logscale</span><span class="p">,</span> <span class="n">rects</span><span class="o">=</span><span class="n">rects</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="n">markersize</span><span class="p">)</span>
+
+        <span class="c1"># 2D-POSTMAP</span>
+        <span class="k">elif</span> <span class="n">plottype</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;2D-POSTMAP&#39;</span><span class="p">,</span> <span class="s1">&#39;POSTMAP&#39;</span><span class="p">,</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span> <span class="s1">&#39;PM&#39;</span><span class="p">]:</span>
+            <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plot_postmap</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">fig</span><span class="o">=</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="o">=</span><span class="n">axisdisplay</span><span class="p">,</span> <span class="n">labeldisplay</span><span class="o">=</span><span class="n">labeldisplay</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="n">transparent</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="n">markersize</span><span class="p">)</span>
+
+        <span class="c1"># &#39;3D-SURFACE&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span> <span class="o">=</span> <span class="n">plot3D</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">cmapname</span><span class="p">,</span> <span class="n">creversed</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">cmmin</span><span class="p">,</span> <span class="n">cmmax</span><span class="p">,</span> <span class="n">cmapdisplay</span><span class="p">,</span> <span class="n">axisdisplay</span><span class="p">,</span> <span class="n">dpi</span><span class="p">,</span> <span class="n">transparent</span><span class="p">,</span> <span class="n">logscale</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">cmap</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">fig</span><span class="p">,</span> <span class="n">cmap</span></div>
+
+
+<span class="k">def</span> <span class="nf">completewithnan</span><span class="p">(</span><span class="n">dataset</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   completes a data set with nan values in empty space</span>
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="n">lbegin</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="n">nanpoints</span><span class="o">=</span><span class="p">[]</span>
+
+   <span class="n">x</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+   <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">)):</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">x</span><span class="p">):</span>
+         <span class="c1"># treats the previous profile</span>
+         <span class="n">lend</span> <span class="o">=</span> <span class="n">l</span>
+         <span class="n">delta_y</span> <span class="o">=</span> <span class="n">_profile_mindelta_get</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">lbegin</span><span class="p">:</span><span class="n">lend</span><span class="p">])</span>
+         <span class="n">_profile_completewithnan</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">lbegin</span><span class="p">:</span><span class="n">lend</span><span class="p">],</span><span class="n">delta_y</span><span class="p">,</span><span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_min</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_max</span><span class="p">,</span> <span class="n">nanpoints</span><span class="p">)</span>
+         <span class="n">lbegin</span> <span class="o">=</span> <span class="n">l</span>
+         <span class="c1"># if the previous profile is not next, adds nan profiles to avoid linearisations on the plot</span>
+         <span class="k">if</span> <span class="p">((</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_mindelta</span><span class="p">):</span>
+            <span class="c1"># nan profile created just after the previous profile</span>
+            <span class="n">_profile_createwithnan</span><span class="p">(</span><span class="n">nanpoints</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_mindelta</span><span class="o">/</span><span class="mi">10</span><span class="p">),</span><span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_min</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_max</span><span class="p">)</span>
+            <span class="c1"># nan profile created just before the current profile</span>
+            <span class="n">_profile_createwithnan</span><span class="p">(</span><span class="n">nanpoints</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_mindelta</span><span class="o">/</span><span class="mi">10</span><span class="p">),</span><span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_min</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_max</span><span class="p">)</span>
+         <span class="n">x</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+   <span class="c1"># treats the last profile</span>
+   <span class="n">delta_y</span> <span class="o">=</span> <span class="n">_profile_mindelta_get</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">lbegin</span><span class="p">:])</span>
+   <span class="n">_profile_completewithnan</span><span class="p">(</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">lbegin</span><span class="p">:],</span><span class="n">delta_y</span><span class="p">,</span><span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_min</span><span class="p">,</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_max</span><span class="p">,</span> <span class="n">nanpoints</span><span class="p">)</span>
+
+   <span class="c1"># adds the nan points to the values array</span>
+                                                            <span class="c1"># converts in a numpy array, sorted by column 0 then by column 1.</span>
+   <span class="k">try</span><span class="p">:</span>
+      <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">nanpoints</span><span class="p">)),</span> <span class="n">key</span><span class="o">=</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
+   <span class="k">except</span><span class="p">:</span>
+      <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">ispictureformat</span><span class="p">(</span><span class="n">picturefilename</span><span class="p">):</span>
+   <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">   Detects if the picture format is available</span>
+<span class="sd">   &#39;&#39;&#39;</span>
+   <span class="n">splitedfilename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">picturefilename</span><span class="p">)</span>
+   <span class="n">extension</span> <span class="o">=</span> <span class="p">(</span><span class="n">splitedfilename</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+   <span class="n">ispictureformat</span> <span class="o">=</span> <span class="kc">False</span>
+   <span class="k">for</span> <span class="n">ext</span> <span class="ow">in</span> <span class="n">pictureformat_list</span><span class="p">:</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">extension</span> <span class="o">==</span> <span class="n">ext</span><span class="p">):</span>
+         <span class="n">ispictureformat</span> <span class="o">=</span> <span class="kc">True</span>
+         <span class="k">break</span>
+
+   <span class="k">return</span> <span class="n">ispictureformat</span>
+
+
+<span class="k">def</span> <span class="nf">_profile_completewithnan</span><span class="p">(</span><span class="n">profile</span><span class="p">,</span><span class="n">delta_y</span><span class="p">,</span><span class="n">dataset_ymin</span><span class="p">,</span> <span class="n">dataset_ymax</span><span class="p">,</span> <span class="n">nanpoints</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   completes a profile with nan value in empty space</span>
+<span class="sd">   &quot;&quot;&quot;</span>
+   <span class="n">coef</span> <span class="o">=</span> <span class="mi">20</span>
+
+   <span class="k">if</span> <span class="p">(</span><span class="n">dataset_ymin</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">):</span>             <span class="c1"># if ymin is not equal to None</span>
+      <span class="n">profile</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataset_ymin</span>        <span class="c1"># normalizes all begins of profiles with the same value</span>
+
+   <span class="n">yprev</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>                  <span class="c1"># initialises previous y</span>
+   <span class="n">valprev</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>                <span class="c1"># initialises previous value</span>
+
+   <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">profile</span><span class="p">:</span>                      <span class="c1"># for each point in the profile</span>
+      <span class="n">y</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>                            <span class="c1"># y is the column 1 value</span>
+      <span class="k">if</span> <span class="p">(((</span><span class="n">y</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">coef</span><span class="o">*</span><span class="n">delta_y</span><span class="p">)</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">valprev</span><span class="p">)):</span>
+         <span class="n">yn</span> <span class="o">=</span> <span class="n">yprev</span> <span class="o">+</span> <span class="p">((</span><span class="n">y</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span><span class="o">/</span><span class="mi">1000</span><span class="p">)</span>
+         <span class="k">while</span> <span class="p">(</span><span class="n">yn</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">):</span>
+            <span class="n">nanpoints</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">yn</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">])</span>
+            <span class="n">yn</span> <span class="o">=</span> <span class="n">yn</span> <span class="o">+</span> <span class="p">((</span><span class="n">y</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+         <span class="n">nanpoints</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span> <span class="o">-</span> <span class="p">((</span><span class="n">y</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span><span class="o">/</span><span class="mi">1000</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">])</span>
+      <span class="n">yprev</span> <span class="o">=</span> <span class="n">y</span>                           <span class="c1"># saves the y value as the previous for profile to be</span>
+      <span class="n">valprev</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>                      <span class="c1"># saves the value as the previous for profile to be</span>
+
+   <span class="c1"># treats the last point of profile</span>
+   <span class="k">if</span> <span class="p">((</span><span class="n">dataset_ymax</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">coef</span><span class="o">*</span><span class="n">delta_y</span><span class="p">):</span>
+      <span class="n">y</span> <span class="o">=</span> <span class="n">yprev</span> <span class="o">+</span> <span class="p">((</span><span class="n">dataset_ymax</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span><span class="o">/</span><span class="mi">1000</span><span class="p">)</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;</span> <span class="n">dataset_ymax</span><span class="p">):</span>
+         <span class="n">nanpoints</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">])</span>
+         <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="p">((</span><span class="n">dataset_ymax</span><span class="o">-</span><span class="n">yprev</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+
+
+
+<span class="k">def</span> <span class="nf">_profile_createwithnan</span><span class="p">(</span><span class="n">nanpoints</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span><span class="n">dataset_ymin</span><span class="p">,</span> <span class="n">dataset_ymax</span><span class="p">):</span>
+   <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">   creates a profile with nan values</span>
+<span class="sd">   &quot;&quot;&quot;</span>
+
+   <span class="k">if</span> <span class="p">((</span><span class="n">dataset_ymin</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">dataset_ymax</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">)):</span>
+      <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">dataset_ymin</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">dataset_ymax</span><span class="p">)):</span>
+         <span class="n">nanpoints</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">])</span>
+
+
+<span class="k">def</span> <span class="nf">_profile_mindelta_get</span><span class="p">(</span><span class="n">profile</span><span class="p">):</span>
+   <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">   Get Minimal Delta between 2 values in a same profile.</span>
+<span class="sd">   &#39;&#39;&#39;</span>
+   <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="n">deltamin</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="k">while</span> <span class="p">(</span><span class="n">deltamin</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+      <span class="n">deltamin</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">profile</span><span class="p">[</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">profile</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+      <span class="n">l</span> <span class="o">=</span> <span class="n">l</span><span class="o">+</span><span class="mi">1</span>
+
+   <span class="n">yprev</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+   <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">profile</span><span class="p">[</span><span class="n">l</span><span class="o">+</span><span class="mi">1</span><span class="p">:]:</span>
+      <span class="n">delta</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">yprev</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">delta</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">delta</span> <span class="o">&lt;</span> <span class="n">deltamin</span><span class="p">)):</span>
+         <span class="n">deltamin</span> <span class="o">=</span> <span class="n">delta</span>
+
+   <span class="k">return</span> <span class="n">deltamin</span>
+
+
+<span class="k">def</span> <span class="nf">coord2rec</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Convert rectangle extent coordinates to bottom left corner,</span>
+<span class="sd">    width and height coordinates.</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">ymin</span><span class="p">,</span><span class="n">ymax</span><span class="p">)</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">xmax</span><span class="o">-</span><span class="n">xmin</span><span class="p">)</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">ymax</span><span class="o">-</span><span class="n">ymin</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="extents2rectangles"><a class="viewcode-back" href="../../../api.html#geophpy.plotting.plot.extents2rectangles">[docs]</a><span class="k">def</span> <span class="nf">extents2rectangles</span><span class="p">(</span><span class="n">extentlist</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Convert a list of rectangle extent coordinates to a list of</span>
+<span class="sd">    bottom left corner width and height coordinates.</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">rectanglelist</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">extent</span> <span class="ow">in</span> <span class="n">extentlist</span><span class="p">:</span>
+       <span class="n">rectanglelist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">coord2rec</span><span class="p">(</span><span class="o">*</span><span class="n">extent</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">rectanglelist</span></div>
+
+
+<span class="k">def</span> <span class="nf">_init_figure</span><span class="p">(</span><span class="n">fig</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Clear the given figure or return a new one and initialize an ax. &#39;&#39;&#39;</span>
+
+    <span class="c1"># First display</span>
+    <span class="k">if</span> <span class="n">fig</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+        <span class="c1">#fig = Figure()</span>
+        <span class="c1">#FigureCanvas(fig)</span>
+
+    <span class="c1"># Existing display</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">fig</span><span class="o">.</span><span class="n">number</span><span class="p">,</span> <span class="n">clear</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="c1">#fig.clf()</span>
+
+    <span class="c1"># Axes initialization</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

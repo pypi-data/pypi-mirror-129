@@ -1,0 +1,1894 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>geophpy.processing.magnetism &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="../../../_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gen-proc.html">General Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>geophpy.processing.magnetism</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for geophpy.processing.magnetism</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    geophpy.processing.magnetism</span>
+<span class="sd">    ----------------------------</span>
+
+<span class="sd">    DataSet Object general magnetism processing routines.</span>
+
+<span class="sd">    :copyright: Copyright 2014-2019 Lionel Darras, Philippe Marty, Quentin Vitale and contributors, see AUTHORS.</span>
+<span class="sd">    :license: GNU GPL v3.</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="c1">#from scipy.linalg import lu_solve, lu_factor</span>
+<span class="c1">#from geophpy.operation.general import *</span>
+<span class="kn">import</span> <span class="nn">geophpy.operation.general</span> <span class="k">as</span> <span class="nn">genop</span>
+
+
+<span class="c1">#------------------------------------------------------------------------------#</span>
+<span class="c1"># User defined parameters                                                      #</span>
+<span class="c1">#------------------------------------------------------------------------------#</span>
+<span class="c1"># list of available magnetic survey configuraiton</span>
+<span class="c1">#prosptechlist = [&quot;Magnetic field&quot;, &quot;Magnetic field gradient&quot;, &quot;Vertical component gradient&quot;]</span>
+<span class="n">sensorconfiglist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;TotalField&quot;</span><span class="p">,</span> <span class="s2">&quot;TotalFieldGradient&quot;</span><span class="p">,</span> <span class="s2">&quot;Fluxgate&quot;</span><span class="p">]</span>
+<span class="n">structuralindexlist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-1&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="logtransform"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.logtransform">[docs]</a><span class="k">def</span> <span class="nf">logtransform</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">multfactor</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">setnan</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">valfilt</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Apply a logarihtmic transformation to the dataset.</span>
+
+<span class="sd">    cf. :meth:`~geophpy.dataset.DataSet.logtransform`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">##   # Calculation of lines and columns numbers</span>
+<span class="c1">##   ny = len(val)</span>
+<span class="c1">##   nx = len(val[0])</span>
+<span class="c1">##   </span>
+<span class="c1">##   for ix in range(nx):                                        # for each column</span>
+<span class="c1">##      for iy in range(ny):                                     # for each line</span>
+<span class="c1">##         if (val[iy][ix] != np.nan) :                          # if valid value</span>
+<span class="c1">##            val[iy][ix] = val[iy][ix] * multfactor             # multiplying</span>
+<span class="c1">##</span>
+<span class="c1">##   for ix in range(nx):                                        # for each column</span>
+<span class="c1">##      for iy in range(ny):                                     # for each line</span>
+<span class="c1">##         if ((val[iy][ix] != np.nan) and (val[iy][ix] &lt; -1)):</span>
+<span class="c1">##            val[iy][ix] = -np.log10(-val[iy][ix])</span>
+<span class="c1">##</span>
+<span class="c1">##   for ix in range(nx):                                        # for each column</span>
+<span class="c1">##      for iy in range(ny):                                     # for each line</span>
+<span class="c1">##         if ((val[iy][ix] != np.nan) and (val[iy][ix] &gt; 1)):</span>
+<span class="c1">##            val[iy][ix] = np.log10(val[iy][ix])</span>
+<span class="c1">##</span>
+<span class="c1">##   for ix in range(nx):                                        # for each column</span>
+<span class="c1">##      for iy in range(ny):                                     # for each line</span>
+<span class="c1">##         if ((val[iy][ix] != np.nan) and (val[iy][ix] &gt; -1) and (val[iy][ix] &lt; 1)) :</span>
+<span class="c1">##            val[iy][ix] = np.nan</span>
+
+    <span class="c1"># Value to replace data between -1 and 1 ###################################</span>
+    <span class="k">if</span> <span class="n">setnan</span><span class="p">:</span>
+        <span class="n">replace_val</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">replace_val</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># Filter values ...TBD... ##################################################</span>
+    <span class="k">if</span> <span class="n">valfilt</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+    <span class="c1"># Filter zimage ############################################################</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span><span class="o">*</span><span class="n">multfactor</span>
+        <span class="n">indx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">val</span><span class="o">&lt;-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">val</span><span class="p">[</span><span class="n">indx</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="o">-</span><span class="n">val</span><span class="p">[</span><span class="n">indx</span><span class="p">])</span>
+
+        <span class="n">indx</span> <span class="o">=</span> <span class="n">val</span><span class="o">&gt;</span><span class="mi">1</span>
+        <span class="n">val</span><span class="p">[</span><span class="n">indx</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="n">indx</span><span class="p">])</span> 
+
+        <span class="n">condition</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">val</span><span class="o">&gt;-</span><span class="mi">1</span><span class="p">,</span> <span class="n">val</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">indx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">condition</span><span class="p">)</span>
+        <span class="n">val</span><span class="p">[</span><span class="n">indx</span><span class="p">]</span> <span class="o">=</span> <span class="n">replace_val</span>
+
+        <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span> <span class="o">=</span> <span class="n">val</span>
+
+    <span class="k">return</span> <span class="n">dataset</span></div>
+
+
+<div class="viewcode-block" id="polereduction"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.polereduction">[docs]</a><span class="k">def</span> <span class="nf">polereduction</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">inclination</span><span class="o">=</span><span class="mi">65</span><span class="p">,</span> <span class="n">declination</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">azimuth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                  <span class="n">magazimuth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">incl_magn</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">decl_magn</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Dataset Reduction to the magnetic Pole.</span>
+
+<span class="sd">    cf. :meth:`~geophpy.dataset.DataSet.polereduction`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">## Original code has been re-implemented in a less fortranic way</span>
+<span class="c1">## and source remanent magnetization option has been added</span>
+<span class="c1">##</span>
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">##   val = dataset.data.z_image</span>
+<span class="c1">##</span>
+<span class="c1">##   # Calculation of lines and columns numbers</span>
+<span class="c1">##   ny = len(val)</span>
+<span class="c1">##   nx = len(val[0])</span>
+<span class="c1">##   # Calculation of total values number</span>
+<span class="c1">##   nt = nx * ny</span>
+<span class="c1">##</span>
+<span class="c1">##   nan_indexes = np.isnan(val)                                 # searches the &#39;nan&#39; indexes in the initial array</span>
+<span class="c1">##   if(np.isnan(val).any()):                                    # if at least 1 &#39;nan&#39; is detected in the array,</span>
+<span class="c1">##      </span>
+<span class="c1">##      x = np.linspace(dataset.info.x_min, dataset.info.x_max, nx, endpoint=True)</span>
+<span class="c1">##      y = np.linspace(dataset.info.y_min, dataset.info.y_max, ny, endpoint=True)</span>
+<span class="c1">##      _fillnanvalues(x, y, val.T)                              # fills the &#39;nan&#39; values by interpolated values</span>
+<span class="c1">##</span>
+<span class="c1">##   if (apod &gt; 0):</span>
+<span class="c1">##      apodisation2d(val, apod)</span>
+<span class="c1">##</span>
+<span class="c1">##   # Meaning calculation</span>
+<span class="c1">##   mean = val.mean()</span>
+<span class="c1">##</span>
+<span class="c1">##   # complex conversion, val[][] -&gt; cval[][]</span>
+<span class="c1">##   cval = np.array(val, dtype=complex)</span>
+<span class="c1">##</span>
+<span class="c1">##   # fast fourier series calculation</span>
+<span class="c1">##   cvalfft = np.fft.fft2(cval)</span>
+<span class="c1">##</span>
+<span class="c1">##   # filter application</span>
+<span class="c1">##   # deg-&gt;rad angle conversions</span>
+<span class="c1">##   rinc = (inclineangle*np.pi)/180 # inclination in radians</span>
+<span class="c1">##   ralpha = (alphaangle*np.pi)/180  # alpha angle in radians</span>
+<span class="c1">##</span>
+<span class="c1">##   cosu = np.absolute(np.cos(rinc) * np.cos(ralpha))</span>
+<span class="c1">##   cosv = np.absolute(np.cos(rinc) * np.sin(ralpha))</span>
+<span class="c1">##   cosz = np.sin(rinc)</span>
+<span class="c1">##</span>
+<span class="c1">##   deltax = dataset.info.x_gridding_delta</span>
+<span class="c1">##   deltay = dataset.info.y_gridding_delta</span>
+<span class="c1">##</span>
+<span class="c1">##   for ix in range(nx):                                        # for each column</span>
+<span class="c1">##      for iy in range(ny):                                     # for each line</span>
+<span class="c1">##         if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##            cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##            cz = np.sqrt(np.square(cu) + np.square(cv))</span>
+<span class="c1">##            cred = complex(cz*cosz, cu*cosu + cv*cosv)</span>
+<span class="c1">##            cvalfft[iy][ix] = ((cvalfft[iy][ix] * np.square(cz))/np.square(cred))</span>
+<span class="c1">##</span>
+<span class="c1">##   # FFT inversion</span>
+<span class="c1">##   icvalfft = np.fft.ifft2(cvalfft)</span>
+<span class="c1">##   val = icvalfft.real + mean                                  # real part added to mean calculation</span>
+<span class="c1">##</span>
+<span class="c1">##   val[nan_indexes] = np.nan                                   # set the initial &#39;nan&#39; values, as in the initial array</span>
+<span class="c1">##</span>
+<span class="c1">##   dataset.data.z_image = val                                  # to get the &#39;z_image&#39; array in (x,y) format.</span>
+
+    <span class="n">val</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+
+    <span class="c1"># Transformation to sprectral Domain #######################################</span>
+    <span class="c1"># Apodization before FT</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">apod</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">genop</span><span class="o">.</span><span class="n">apodisation2d</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">apod</span><span class="p">)</span>
+
+    <span class="c1"># Filling NaNs</span>
+    <span class="n">valnan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">nan_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">valnan</span><span class="p">)</span>  <span class="c1"># index of NaNs in the original dataset</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">fillnanvalues</span><span class="p">(</span><span class="n">valnan</span><span class="p">,</span> <span class="n">indexout</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Filled dataset</span>
+
+    <span class="c1"># De-meaning</span>
+    <span class="n">valmean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">valfill</span><span class="o">-</span><span class="n">valmean</span>
+
+    <span class="c1"># Fourier Transform computation</span>
+    <span class="n">valTF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">valfill</span><span class="p">)</span>  <span class="c1"># Frequency domain</span>
+
+    <span class="c1"># Wavenumbers computation</span>
+    <span class="n">ny</span><span class="p">,</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">dx</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_gridding_delta</span>
+    <span class="n">dy</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_gridding_delta</span>
+
+    <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">wavenumber</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>  <span class="c1"># x, y-directed wavenumber matrices</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># radial wavenumber matrix</span>
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+
+    <span class="c1"># Magnetic azimuth #########################################################</span>
+    <span class="c1">## The angle between the survey profile direction and the ambient magnetic</span>
+    <span class="c1">## field is phi = declination-azimuth.</span>
+    <span class="c1">## if the given angle is directly the angle between the ambient magnetic</span>
+    <span class="c1">## field the survey direction (phi), we assume</span>
+    <span class="c1">## declinaison = 0 so -phi = azimuth</span>
+    <span class="k">if</span> <span class="n">magazimuth</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># ambient field</span>
+        <span class="n">phi</span> <span class="o">=</span> <span class="n">magazimuth</span>  <span class="c1"># given azimuth is magnetic azimuth</span>
+        <span class="n">declination</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># declination is set to 0 for the _dircos routine</span>
+        <span class="n">azimuth</span>  <span class="o">=</span> <span class="o">-</span><span class="n">phi</span>
+
+    <span class="c1"># Reduction to the Pole Operator ###########################################</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">ny</span><span class="p">,</span> <span class="n">nx</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+    <span class="c1"># Neglecting source remanent magnetization</span>
+    <span class="k">if</span> <span class="n">incl_magn</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">decl_magn</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+
+        <span class="c1"># Ambient field unit-vector components</span>
+        <span class="n">fx</span><span class="p">,</span> <span class="n">fy</span> <span class="p">,</span><span class="n">fz</span> <span class="o">=</span> <span class="n">_dircos</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">)</span>
+
+        <span class="c1"># RTP operator</span>
+        <span class="c1"># Simplified form of Blakely 1996, eq12.31, p331, for mx=fx, my=fy and mz=mz</span>
+        <span class="n">F</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span> <span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">fz</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="p">(</span><span class="n">kx</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">fx</span> <span class="o">+</span> <span class="n">ky</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">fy</span><span class="p">)</span> <span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="c1"># With sourceremanent magnetization</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Ambient field and total magnetization unit-vectors components</span>
+        <span class="n">fx</span><span class="p">,</span> <span class="n">fy</span> <span class="p">,</span><span class="n">fz</span> <span class="o">=</span> <span class="n">_dircos</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">)</span>
+        <span class="n">mx</span><span class="p">,</span> <span class="n">my</span> <span class="p">,</span><span class="n">mz</span> <span class="o">=</span> <span class="n">_dircos</span><span class="p">(</span><span class="n">incl_magn</span><span class="p">,</span> <span class="n">decl_magn</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">)</span>
+
+        <span class="c1"># RTP operator  [Blakely 1996, eq12.31, p331]</span>
+        <span class="n">a1</span> <span class="o">=</span> <span class="n">mz</span><span class="o">*</span><span class="n">fz</span> <span class="o">-</span> <span class="n">mx</span><span class="o">*</span><span class="n">fx</span>
+        <span class="n">a2</span> <span class="o">=</span> <span class="n">mz</span><span class="o">*</span><span class="n">fz</span> <span class="o">-</span> <span class="n">my</span><span class="o">*</span><span class="n">fy</span>
+        <span class="n">a3</span> <span class="o">=</span> <span class="o">-</span><span class="n">my</span><span class="o">*</span><span class="n">fx</span> <span class="o">-</span> <span class="n">mx</span><span class="o">*</span><span class="n">fy</span>
+        <span class="n">b1</span> <span class="o">=</span> <span class="n">mx</span><span class="o">*</span><span class="n">fz</span> <span class="o">+</span> <span class="n">mz</span><span class="o">*</span><span class="n">fx</span>
+        <span class="n">b2</span> <span class="o">=</span> <span class="n">my</span><span class="o">*</span><span class="n">fz</span> <span class="o">+</span> <span class="n">mz</span><span class="o">*</span><span class="n">fy</span>
+
+        <span class="n">F</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="n">a1</span><span class="o">*</span><span class="n">kx</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+                              <span class="o">+</span> <span class="n">a2</span><span class="o">*</span><span class="n">ky</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+                              <span class="o">+</span> <span class="n">a3</span><span class="o">*</span><span class="n">kx</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">ky</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span>
+                              <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">b1</span><span class="o">*</span><span class="n">kx</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">+</span> <span class="n">b2</span><span class="o">*</span><span class="n">ky</span><span class="p">[</span><span class="n">indk</span><span class="p">])</span> <span class="p">)</span>
+
+    <span class="c1"># Applying filter###########################################################</span>
+    <span class="n">valTF_filt</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="n">F</span>
+
+    <span class="c1"># Transformation nack to spatial domain ####################################</span>
+    <span class="n">valfilt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">valTF_filt</span><span class="p">)</span>  <span class="c1"># Spatial domain</span>
+    <span class="n">valfilt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">valfilt</span><span class="p">)</span> <span class="o">+</span> <span class="n">valmean</span>  <span class="c1"># Re-meaning</span>
+    <span class="n">valfilt</span><span class="p">[</span><span class="n">nan_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>  <span class="c1"># unfilled dataset</span>
+
+    <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span> <span class="o">=</span> <span class="n">valfilt</span>
+
+    <span class="k">return</span> <span class="n">dataset</span></div>
+
+
+<div class="viewcode-block" id="continuation"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.continuation">[docs]</a><span class="k">def</span> <span class="nf">continuation</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">distance</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">totalfieldconversionflag</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">separation</span><span class="o">=</span><span class="mf">0.7</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Dataset continuation (upward/downward).</span>
+
+<span class="sd">    cf. :meth:`~geophpy.dataset.DataSet.continuation`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">## Original code has been re-implemented in a less fortranic way</span>
+<span class="c1">##</span>
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">##   val = dataset.data.z_image</span>
+<span class="c1">##</span>
+<span class="c1">##   # Calculation of lines and columns numbers</span>
+<span class="c1">##   ny = len(val)</span>
+<span class="c1">##   nx = len(val[0])</span>
+<span class="c1">##   # Calculation of total values number</span>
+<span class="c1">##   nt = nx * ny</span>
+<span class="c1">##</span>
+<span class="c1">##   nan_indexes = np.isnan(val)                                 # searches the &#39;nan&#39; indexes in the initial array</span>
+<span class="c1">##   if(np.isnan(val).any()):                                    # if at least 1 &#39;nan&#39; is detected in the array,</span>
+<span class="c1">##      </span>
+<span class="c1">##      x = np.linspace(dataset.info.x_min, dataset.info.x_max, nx, endpoint=True)</span>
+<span class="c1">##      y = np.linspace(dataset.info.y_min, dataset.info.y_max, ny, endpoint=True)</span>
+<span class="c1">##      _fillnanvalues(x, y, val.T)                                # fills the &#39;nan&#39; values by interpolated values</span>
+<span class="c1">##</span>
+<span class="c1">##   if (apod &gt; 0):</span>
+<span class="c1">##      apodisation2d(val, apod)</span>
+<span class="c1">##</span>
+<span class="c1">##   dz = downsensoraltitude - upsensoraltitude     </span>
+<span class="c1">##   zp = - continuationvalue + downsensoraltitude</span>
+<span class="c1">##</span>
+<span class="c1">##   # complex conversion, val[][] -&gt; cval[][]</span>
+<span class="c1">##   cval = np.array(val, dtype=complex)</span>
+<span class="c1">##</span>
+<span class="c1">##   # fast fourier series calculation</span>
+<span class="c1">##   cvalfft = np.fft.fft2(cval)</span>
+<span class="c1">##</span>
+<span class="c1">##   deltax = dataset.info.x_gridding_delta</span>
+<span class="c1">##   deltay = dataset.info.y_gridding_delta</span>
+<span class="c1">##</span>
+<span class="c1">##   for ix in range(nx):                                        # for each column</span>
+<span class="c1">##      for iy in range(ny):                                     # for each line</span>
+<span class="c1">##         if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##            cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##            cz = np.sqrt(np.square(cu) + np.square(cv)) * (2. * np.pi)</span>
+<span class="c1">##            if (continuationflag == True):</span>
+<span class="c1">##               ce = np.exp(zp * cz)</span>
+<span class="c1">##               cvalfft[iy][ix] = (cvalfft[iy][ix] * complex(ce, 0.))</span>
+<span class="c1">##            if (prosptech == prosptechlist[1]):                # if prospection technic is magnetic field gradient</span>
+<span class="c1">##               cdz = 1. - np.exp(dz * cz)</span>
+<span class="c1">##               cvalfft[iy][ix] = (cvalfft[iy][ix] / complex(cdz, 0.))</span>
+<span class="c1">##</span>
+<span class="c1">##   # FFT inversion</span>
+<span class="c1">##   icvalfft = np.fft.ifft2(cvalfft)</span>
+<span class="c1">##   val = icvalfft.real</span>
+<span class="c1">##</span>
+<span class="c1">##   val[nan_indexes] = np.nan                                   # set the initial &#39;nan&#39; values, as in the initial array</span>
+<span class="c1">##</span>
+<span class="c1">##   dataset.data.z_image = val                                  # to get the &#39;z_image&#39; array in (x,y) format.</span>
+
+    <span class="n">val</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+
+    <span class="c1"># Transformation to sprectral Domain #######################################</span>
+    <span class="c1"># Apodization before FT</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">apod</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">genop</span><span class="o">.</span><span class="n">apodisation2d</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">apod</span><span class="p">)</span>
+
+    <span class="c1"># Filling NaNs</span>
+    <span class="n">valnan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">nan_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">valnan</span><span class="p">)</span>  <span class="c1"># index of NaNs in the original dataset</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">fillnanvalues</span><span class="p">(</span><span class="n">valnan</span><span class="p">,</span> <span class="n">indexout</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Filled dataset</span>
+
+<span class="c1">##    # De-meaning</span>
+<span class="c1">##    valmean = np.nanmean(val)</span>
+<span class="c1">##    valfill = valfill-valmean</span>
+
+    <span class="c1"># Fourier Transform computation</span>
+    <span class="n">valTF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">valfill</span><span class="p">)</span>  <span class="c1"># Frequency domain</span>
+
+    <span class="c1"># Wavenumbers computation</span>
+    <span class="n">ny</span><span class="p">,</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">dx</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_gridding_delta</span>
+    <span class="n">dy</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_gridding_delta</span>
+
+    <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">wavenumber</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>  <span class="c1"># x, y-directed wavenumber matrices</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># radial wavenumber matrix</span>
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+
+    <span class="c1"># Continuation #############################################################</span>
+    <span class="n">dh</span> <span class="o">=</span> <span class="n">distance</span>  <span class="c1"># continuation distance</span>
+    <span class="n">valTF_filt</span> <span class="o">=</span> <span class="n">valTF</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">dh</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>  <span class="c1">#  [Blakely 1996, eq12.8, p317]</span>
+    <span class="c1"># equivalent to</span>
+    <span class="c1"># valTF_filt = valTF * _continu(dh, k, direction=&#39;auto&#39;)</span>
+
+    <span class="c1"># Magnetic total-field gradient survey #####################################</span>
+    <span class="c1">###</span>
+    <span class="c1">##</span>
+    <span class="c1">#...TBD... ??</span>
+    <span class="c1"># Should we keep the conversion ??</span>
+    <span class="c1">#  habit in wumap to convert in tota-field but continuation applies</span>
+    <span class="c1">#  on gardient data to.</span>
+    <span class="c1">#  It is recomanded convert in toal-field for donwnward continuation though</span>
+    <span class="c1">#  [Tabbagh 1999]</span>
+    <span class="c1">##</span>
+    <span class="c1">###</span>
+    <span class="k">if</span> <span class="n">totalfieldconversionflag</span><span class="p">:</span>
+        <span class="n">ds</span> <span class="o">=</span> <span class="n">separation</span>  <span class="c1"># sensor&#39;s separation</span>
+        <span class="n">valTF_filt</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="n">valTF_filt</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span> <span class="mf">1.</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">ds</span> <span class="o">*</span> <span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">])</span> <span class="p">)</span>  <span class="c1">#  conversion from gradient to total-field</span>
+      <span class="c1"># equivalent to</span>
+      <span class="c1"># valTF_filt = valTF * _grad_to_field(ds, k)      </span>
+
+    <span class="c1"># Transformation back to spatial domain ####################################</span>
+    <span class="n">valfilt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">valTF_filt</span><span class="p">)</span>  <span class="c1"># Spatial domain</span>
+    <span class="n">valfilt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">valfilt</span><span class="p">)</span> <span class="c1">#+ valmean  # Re-meaning</span>
+    <span class="n">valfilt</span><span class="p">[</span><span class="n">nan_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>  <span class="c1"># unfilled dataset</span>
+
+    <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span> <span class="o">=</span> <span class="n">valfilt</span>
+
+    <span class="k">return</span> <span class="n">dataset</span></div>
+
+
+<div class="viewcode-block" id="eulerdeconvolution"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.eulerdeconvolution">[docs]</a><span class="k">def</span> <span class="nf">eulerdeconvolution</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">structind</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">windows</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">xstep</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ystep</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Classic Euler deconvolution.</span>
+
+<span class="sd">    cf. :meth:`~geophpy.dataset.DataSet.eulerdeconvolution`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">## Original code has been re-implemented in a less fortranic way</span>
+<span class="c1">##</span>
+<span class="c1">##########</span>
+<span class="c1">##   val = dataset.data.z_image</span>
+<span class="c1">##</span>
+<span class="c1">##   # Calculation of lines and columns numbers</span>
+<span class="c1">##   ny = len(val)</span>
+<span class="c1">##   nx = len(val[0])</span>
+<span class="c1">##   # Calculation of total values number</span>
+<span class="c1">##   nt = nx * ny</span>
+<span class="c1">##</span>
+<span class="c1">##   x = np.linspace(dataset.info.x_min, dataset.info.x_max, nx, endpoint=True)</span>
+<span class="c1">##   y = np.linspace(dataset.info.y_min, dataset.info.y_max, ny, endpoint=True)</span>
+<span class="c1">##</span>
+<span class="c1">##   nan_indexes = np.isnan(val)                                 # searches the &#39;nan&#39; indexes in the initial array</span>
+<span class="c1">##   if(np.isnan(val).any()):                                    # if at least 1 &#39;nan&#39; is detected in the array,     </span>
+<span class="c1">##      _fillnanvalues(x, y, val.T)                                # fills the &#39;nan&#39; values by interpolated values</span>
+<span class="c1">##</span>
+<span class="c1">##   if (apod &gt; 0):</span>
+<span class="c1">##      apodisation2d(val, apod)</span>
+<span class="c1">##</span>
+<span class="c1">##   # complex conversion, val[][] -&gt; cval[][]</span>
+<span class="c1">##   cval = np.array(val, dtype=complex)</span>
+<span class="c1">##   val = cval.real</span>
+<span class="c1">##</span>
+<span class="c1">##   deltax = dataset.info.x_gridding_delta</span>
+<span class="c1">##   deltay = dataset.info.y_gridding_delta</span>
+<span class="c1">##</span>
+<span class="c1">##   # fast fourier series calculation</span>
+<span class="c1">##   cvalfft = np.fft.fft2(cval)</span>
+<span class="c1">##   cvalfftdx = np.array(np.zeros((ny,nx)), dtype=complex)</span>
+<span class="c1">##   cvalfftdy = np.array(np.zeros((ny,nx)), dtype=complex)</span>
+<span class="c1">##   cvalfftdz = np.array(np.zeros((ny,nx)), dtype=complex)</span>
+<span class="c1">##</span>
+<span class="c1">##   # derivations calculation</span>
+<span class="c1">##   for iy in range(ny):                                        # for each column</span>
+<span class="c1">##      for ix in range(nx):                                     # for each line</span>
+<span class="c1">##         if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##            cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##            cz = np.sqrt(np.square(cu) + np.square(cv))</span>
+<span class="c1">##            # x derivation </span>
+<span class="c1">##            cvalfftdx[iy][ix] = cvalfft[iy][ix]*complex(0., cu*np.pi*2.)</span>
+<span class="c1">##            # y derivation </span>
+<span class="c1">##            cvalfftdy[iy][ix] = cvalfft[iy][ix]*complex(0., cv*np.pi*2.)</span>
+<span class="c1">##            # z derivation </span>
+<span class="c1">##            cvalfftdz[iy][ix] = cvalfft[iy][ix]*cz*np.pi*2.</span>
+<span class="c1">##         else:</span>
+<span class="c1">##            cvalfftdx[0][0] = complex(0., 0.)</span>
+<span class="c1">##            cvalfftdy[0][0] = complex(0., 0.)</span>
+<span class="c1">##            cvalfftdz[0][0] = complex(0., 0.)</span>
+<span class="c1">##</span>
+<span class="c1">##   # FFT inversion</span>
+<span class="c1">##   valdx = (np.fft.ifft2(cvalfftdx)).real</span>
+<span class="c1">##   valdy = (np.fft.ifft2(cvalfftdy)).real</span>
+<span class="c1">##   valdz = (np.fft.ifft2(cvalfftdz)).real</span>
+<span class="c1">##</span>
+<span class="c1">##   ixmin, xnearestmin = _searchnearest(x, xmin)</span>
+<span class="c1">##   ixmax, xnearestmax = _searchnearest(x, xmax)</span>
+<span class="c1">##   </span>
+<span class="c1">##   iymin, ynearestmin = _searchnearest(y, ymin)</span>
+<span class="c1">##   iymax, ynearestmax = _searchnearest(y, ymax)</span>
+<span class="c1">##</span>
+<span class="c1">##   if ((nflag == 0) or (nvalue==0)):   # automatic calculation structural index</span>
+<span class="c1">##                                       # 4 unknowns equation to solve</span>
+<span class="c1">##      b = np.zeros(4)</span>
+<span class="c1">##      A = np.zeros((4,4))</span>
+<span class="c1">##      print(&#39;Estimated SI&#39;)</span>
+<span class="c1">##      for l in range(iymin, iymax+1):</span>
+<span class="c1">##         for c in range(ixmin, ixmax+1):</span>
+<span class="c1">##            coef = x[c] * valdx[l][c] + y[l] * valdy[l][c]</span>
+<span class="c1">##            b[0] += coef * val[l][c]</span>
+<span class="c1">##            b[1] += coef * valdx[l][c]</span>
+<span class="c1">##            b[2] += coef * valdy[l][c]</span>
+<span class="c1">##            b[3] += coef * valdz[l][c]</span>
+<span class="c1">##</span>
+<span class="c1">##            A[0][0] += np.square(val[l][c])</span>
+<span class="c1">##            A[0][1] += val[l][c] * valdx[l][c]</span>
+<span class="c1">##            A[0][2] += val[l][c] * valdy[l][c]</span>
+<span class="c1">##            A[0][3] += val[l][c] * valdz[l][c]</span>
+<span class="c1">##            A[1][1] += np.square(valdx[l][c])</span>
+<span class="c1">##            A[1][2] += valdx[l][c] * valdy[l][c]</span>
+<span class="c1">##            A[1][3] += valdx[l][c] * valdz[l][c]</span>
+<span class="c1">##            A[2][2] += np.square(valdy[l][c])</span>
+<span class="c1">##            A[2][3] += valdy[l][c] * valdz[l][c]</span>
+<span class="c1">##            A[3][3] += np.square(valdz[l][c])</span>
+<span class="c1">##</span>
+<span class="c1">##      # symmetry</span>
+<span class="c1">##      A[1][0] = A[0][1]</span>
+<span class="c1">##      A[2][0] = A[0][2]</span>
+<span class="c1">##      A[3][0] = A[0][3]</span>
+<span class="c1">##      A[2][1] = A[1][2]</span>
+<span class="c1">##      A[3][1] = A[1][3]</span>
+<span class="c1">##      A[3][2] = A[2][3]</span>
+<span class="c1">##</span>
+<span class="c1">##      x = _gaussresolution(A, b)</span>
+<span class="c1">##      nvalue = -x[0]</span>
+<span class="c1">##      xpt = x[1]</span>
+<span class="c1">##      ypt = x[2]</span>
+<span class="c1">##      depth = x[3]</span>
+<span class="c1">##      </span>
+<span class="c1">##   else :                              # fixed structural index</span>
+<span class="c1">##                                       # 3 unknowns equation to solve</span>
+<span class="c1">##      b = np.zeros(3)</span>
+<span class="c1">##      A = np.zeros((3,3))</span>
+<span class="c1">##      print(&#39;Fixed SI&#39;)</span>
+<span class="c1">##      count= 0</span>
+<span class="c1">##      for l in range(iymin, iymax+1):</span>
+<span class="c1">##         for c in range(ixmin, ixmax+1):</span>
+<span class="c1">##            coef = nvalue * val[l][c] + x[c] * valdx[l][c] + y[l] * valdy[l][c]</span>
+<span class="c1">##            count += 1</span>
+<span class="c1">##            b[0] += coef * valdx[l][c]</span>
+<span class="c1">##            b[1] += coef * valdy[l][c]</span>
+<span class="c1">##            b[2] += coef * valdz[l][c]</span>
+<span class="c1">##</span>
+<span class="c1">##            A[0][0] += np.square(valdx[l][c])</span>
+<span class="c1">##            A[0][1] += valdx[l][c] * valdy[l][c]</span>
+<span class="c1">##            A[0][2] += valdx[l][c] * valdz[l][c]</span>
+<span class="c1">##            A[1][1] += np.square(valdy[l][c])</span>
+<span class="c1">##            A[1][2] += valdy[l][c] * valdz[l][c]</span>
+<span class="c1">##            A[2][2] += np.square(valdz[l][c])</span>
+<span class="c1">##</span>
+<span class="c1">##      # symmetry</span>
+<span class="c1">##      A[1][0] = A[0][1]</span>
+<span class="c1">##      A[2][0] = A[0][2]</span>
+<span class="c1">##      A[2][1] = A[1][2]</span>
+<span class="c1">##</span>
+<span class="c1">##      x = _gaussresolution(A, b)</span>
+<span class="c1">##      xpt = x[0]</span>
+<span class="c1">##      ypt = x[1]</span>
+<span class="c1">##      depth = x[2]</span>
+
+    <span class="n">val</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+
+    <span class="c1"># Transformation to sprectral Domain #######################################</span>
+    <span class="c1"># Apodization before FT</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">apod</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">genop</span><span class="o">.</span><span class="n">apodisation2d</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">apod</span><span class="p">)</span>
+
+    <span class="c1"># Filling NaNs</span>
+    <span class="n">valnan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">nan_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">valnan</span><span class="p">)</span>  <span class="c1"># index of NaNs in the original dataset</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">fillnanvalues</span><span class="p">(</span><span class="n">valnan</span><span class="p">,</span> <span class="n">indexout</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Filled dataset</span>
+
+<span class="c1">##    # De-meaning</span>
+<span class="c1">##    valmean = np.nanmean(val)</span>
+<span class="c1">##    valfill = valfill-valmean</span>
+
+    <span class="c1"># Fourier Transform computation</span>
+    <span class="n">valTF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">valfill</span><span class="p">)</span>  <span class="c1"># Frequency domain</span>
+
+    <span class="c1"># Wavenumbers computation</span>
+    <span class="n">ny</span><span class="p">,</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">dx</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_gridding_delta</span>
+    <span class="n">dy</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_gridding_delta</span>
+
+    <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">wavenumber</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>  <span class="c1"># x, y-directed wavenumber matrices</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># radial wavenumber matrix</span>
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index of valid k for the RTP</span>
+
+    <span class="c1"># Spatial derivatives in the frequency domain ##############################</span>
+    <span class="c1"># ... TBD...</span>
+    <span class="c1">## Use spatial computation fo the horizontal derivatices</span>
+    <span class="c1">## to limit noise as suggested by [Cooper 2002] ?</span>
+    <span class="n">dval_dxTF</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">kx</span>  <span class="c1"># x-directed gradient [Blakely 1996, eq12.15, p324]</span>
+    <span class="n">dval_dyTF</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">ky</span>  <span class="c1"># y-directed gradient [Blakely 1996, eq12.16, p324]</span>
+    <span class="n">dval_dzTF</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="n">k</span>  <span class="c1">#  vertical gradient [Blakely 1996, eq12.13, p323]</span>
+
+    <span class="c1"># Potential field derivatives in the spatial domain ########################</span>
+    <span class="n">dval_dx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">dval_dxTF</span><span class="p">))</span>
+    <span class="n">dval_dy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">dval_dyTF</span><span class="p">))</span>
+    <span class="n">dval_dz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">dval_dzTF</span><span class="p">))</span>
+
+    <span class="c1"># Data sub-set creation ####################################################</span>
+    <span class="c1"># Grid coordinates</span>
+    <span class="n">xvect</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_xvect</span><span class="p">()</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>  <span class="c1"># x- coordinates vect</span>
+    <span class="n">yvect</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_yvect</span><span class="p">()</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>  <span class="c1"># y- coordinates vect</span>
+    <span class="n">xgrid</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_xgrid</span><span class="p">()</span>  <span class="c1"># x-grid coordinates vect</span>
+    <span class="n">ygrid</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">get_ygrid</span><span class="p">()</span>  <span class="c1"># y-grid coordinates vect</span>
+
+    <span class="c1"># Creating a 2-D sliding window over the datset grid</span>
+    <span class="k">if</span> <span class="n">windows</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">xstep</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">ystep</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">xstep</span> <span class="o">=</span> <span class="mi">7</span>
+            <span class="n">ystep</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">xstep</span><span class="o">*</span><span class="n">dx</span><span class="o">/</span><span class="n">dy</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">xstep</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">ystep</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">xstep</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">ystep</span><span class="o">*</span><span class="n">dy</span><span class="o">/</span><span class="n">dx</span><span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">xstep</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">ystep</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">ystep</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">xstep</span><span class="o">*</span><span class="n">dx</span><span class="o">/</span><span class="n">dy</span><span class="p">)</span>
+
+        <span class="c1"># x windows extent</span>
+        <span class="n">xbounds</span> <span class="o">=</span> <span class="n">xvect</span><span class="p">[::</span><span class="n">xstep</span><span class="p">]</span>
+        <span class="n">xmins</span> <span class="o">=</span> <span class="n">xbounds</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">xmaxs</span> <span class="o">=</span> <span class="n">xbounds</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+        <span class="c1"># y windows extent</span>
+        <span class="n">ybounds</span> <span class="o">=</span> <span class="n">yvect</span><span class="p">[::</span><span class="n">ystep</span><span class="p">]</span>
+        <span class="n">ymins</span> <span class="o">=</span> <span class="n">ybounds</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">ymaxs</span> <span class="o">=</span> <span class="n">ybounds</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+        <span class="c1"># Extending windows to dataset max spatial extent</span>
+        <span class="c1">## result in an smaller window extent at the dataset border</span>
+        <span class="k">if</span> <span class="n">xmaxs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">!=</span><span class="n">xvect</span><span class="o">.</span><span class="n">max</span><span class="p">():</span>
+            <span class="n">xmins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xmins</span><span class="p">,</span> <span class="n">xmaxs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">xmaxs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xmaxs</span><span class="p">,</span> <span class="n">xvect</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="n">ymaxs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">!=</span><span class="n">yvect</span><span class="o">.</span><span class="n">max</span><span class="p">():</span>
+            <span class="n">ymins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ymins</span><span class="p">,</span> <span class="n">ymaxs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">ymaxs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ymaxs</span><span class="p">,</span> <span class="n">yvect</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+
+        <span class="c1"># windows extent</span>
+        <span class="n">windows</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">xmins</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">idy</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ymins</span><span class="p">):</span>
+                <span class="n">windows</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">xmins</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">xmaxs</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">ymins</span><span class="p">[</span><span class="n">idy</span><span class="p">],</span> <span class="n">ymaxs</span><span class="p">[</span><span class="n">idy</span><span class="p">]])</span>
+
+    <span class="c1"># Euler&#39;s deconvolution ####################################################</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">windows</span><span class="p">)</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span><span class="mi">1</span><span class="p">:</span>  <span class="c1"># Unique window provided</span>
+        <span class="n">windows</span> <span class="o">=</span> <span class="p">[</span><span class="n">windows</span><span class="p">]</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">extent</span> <span class="ow">in</span> <span class="n">windows</span><span class="p">:</span>
+        <span class="c1"># Current spatial sub-window</span>
+        <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span> <span class="o">=</span> <span class="n">extent</span> 
+
+        <span class="n">indx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">xgrid</span><span class="o">&lt;=</span><span class="n">xmax</span><span class="p">,</span> <span class="n">xgrid</span><span class="o">&gt;=</span><span class="n">xmin</span><span class="p">)</span>
+        <span class="n">indy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">ygrid</span><span class="o">&lt;=</span><span class="n">ymax</span><span class="p">,</span> <span class="n">ygrid</span><span class="o">&gt;=</span><span class="n">ymin</span><span class="p">)</span>
+        <span class="n">indval</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">indx</span><span class="p">,</span> <span class="n">indy</span><span class="p">)</span>
+
+        <span class="n">xi</span> <span class="o">=</span> <span class="n">xgrid</span><span class="p">[</span><span class="n">indval</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">yi</span> <span class="o">=</span> <span class="n">ygrid</span><span class="p">[</span><span class="n">indval</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">zi</span> <span class="o">=</span> <span class="mi">0</span><span class="o">*</span><span class="n">xi</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">vali</span> <span class="o">=</span> <span class="n">valfill</span><span class="p">[</span><span class="n">indval</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+        <span class="n">dvdxi</span> <span class="o">=</span> <span class="n">dval_dx</span><span class="p">[</span><span class="n">indval</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">dvdyi</span> <span class="o">=</span> <span class="n">dval_dy</span><span class="p">[</span><span class="n">indval</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">dvdzi</span> <span class="o">=</span> <span class="n">dval_dz</span><span class="p">[</span><span class="n">indval</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+
+        <span class="c1"># Estimated Structural Index</span>
+        <span class="k">if</span> <span class="n">structind</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">structind</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+            <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">dvdxi</span><span class="p">,</span> <span class="n">dvdyi</span><span class="p">,</span> <span class="n">dvdzi</span><span class="p">,</span> <span class="o">-</span><span class="n">vali</span><span class="p">))</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">xi</span><span class="o">*</span><span class="n">dvdxi</span> <span class="o">+</span> <span class="n">yi</span><span class="o">*</span><span class="n">dvdyi</span> <span class="o">+</span> <span class="n">zi</span><span class="o">*</span><span class="n">dvdzi</span>
+
+            <span class="n">X</span><span class="p">,</span> <span class="n">residuals</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+            <span class="n">residuals</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">residuals</span><span class="p">)</span> 
+            <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">N</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">X</span><span class="p">]</span> 
+
+        <span class="c1"># Fixed Structural Index</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">N</span> <span class="o">=</span> <span class="n">structind</span>
+            <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">dvdxi</span><span class="p">,</span> <span class="n">dvdyi</span><span class="p">,</span> <span class="n">dvdzi</span><span class="p">))</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">xi</span><span class="o">*</span><span class="n">dvdxi</span> <span class="o">+</span> <span class="n">yi</span><span class="o">*</span><span class="n">dvdyi</span> <span class="o">+</span> <span class="n">zi</span><span class="o">*</span><span class="n">dvdzi</span> <span class="o">+</span> <span class="n">N</span><span class="o">*</span><span class="n">vali</span>
+
+            <span class="n">X</span><span class="p">,</span> <span class="n">residuals</span><span class="p">,</span> <span class="n">rank</span><span class="p">,</span> <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">rcond</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+            <span class="n">residuals</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">residuals</span><span class="p">)</span>
+            <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">z0</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">X</span><span class="p">]</span> 
+
+        <span class="c1"># Storing results</span>
+        <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">residuals</span><span class="p">,</span>
+                        <span class="n">xi</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">xi</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">yi</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">yi</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+
+    <span class="k">return</span> <span class="n">results</span></div>
+
+
+<span class="k">def</span> <span class="nf">_searchnearest</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Return the index of the nearest value of val in array the value itself. &#39;&#39;&#39;</span>
+
+    <span class="c1"># 1-D arrays</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">array</span> <span class="o">-</span> <span class="n">value</span><span class="p">))</span><span class="o">.</span><span class="n">argmin</span><span class="p">()</span>
+
+    <span class="c1"># 2-D arrays</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">idx</span><span class="p">,</span> <span class="n">array</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+
+<span class="c1">##def _searchnearest(array, val):</span>
+<span class="c1">##   &#39;&#39;&#39;</span>
+<span class="c1">##   Search the nearset value of val, in the array</span>
+<span class="c1">##</span>
+<span class="c1">##   Parameters :</span>
+<span class="c1">##</span>
+<span class="c1">##   :array:  1D array ordered to find the nearest value of val</span>
+<span class="c1">##</span>
+<span class="c1">##   :val: value to find</span>
+<span class="c1">##</span>
+<span class="c1">##   Returns :</span>
+<span class="c1">##</span>
+<span class="c1">##   :index: index in the array of the nearest value found</span>
+<span class="c1">##</span>
+<span class="c1">##   :valnearest: value of the nearest value found</span>
+<span class="c1">##</span>
+<span class="c1">##   &#39;&#39;&#39;</span>
+<span class="c1">##   n = len(array)</span>
+<span class="c1">##   for i in range(n):</span>
+<span class="c1">##      gap = abs(val-array[i])</span>
+<span class="c1">##      if ((i==0) or (gap&lt;mingap)):</span>
+<span class="c1">##         mingap = gap</span>
+<span class="c1">##         index = i</span>
+<span class="c1">##   return index, array[index]            </span>
+      
+<span class="c1">##def _gaussresolution(A, b):</span>
+<span class="c1">##   &#39;&#39;&#39; Solve Ax=b equation using Gauss pivot and LU factorisation. &#39;&#39;&#39;</span>
+<span class="c1">##</span>
+<span class="c1">##   n=len(A)</span>
+<span class="c1">##   # gauss pivot calculation</span>
+<span class="c1">##   for i1 in range(n-1):</span>
+<span class="c1">##      # find the partial pivot</span>
+<span class="c1">##      l=i1      </span>
+<span class="c1">##      xam = np.absolute(A[i1][i1])</span>
+<span class="c1">##      for j in range(i1+1,n):</span>
+<span class="c1">##         x = np.absolute(A[j][i1])</span>
+<span class="c1">##         if (x&gt;xam):</span>
+<span class="c1">##            xam = x</span>
+<span class="c1">##            l=j</span>
+<span class="c1">##</span>
+<span class="c1">##      # set pivot at its place, swapping pivot and current lines</span>
+<span class="c1">##      if (l&gt;i1):</span>
+<span class="c1">##         aux = b[l]</span>
+<span class="c1">##         b[l] = b[i1]</span>
+<span class="c1">##         b[i1] = aux</span>
+<span class="c1">##         for j in range(n):</span>
+<span class="c1">##            aux = A[l][j]</span>
+<span class="c1">##            A[l][j] = A[i1][j]</span>
+<span class="c1">##            A[i1][j] = aux</span>
+<span class="c1">##</span>
+<span class="c1">##   # solves Ax=b using LU factorisation</span>
+<span class="c1">##   x = lu_solve(lu_factor(A), b)</span>
+<span class="c1">##</span>
+<span class="c1">##   return x</span>
+
+
+
+<div class="viewcode-block" id="analyticsignal"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.analyticsignal">[docs]</a><span class="k">def</span> <span class="nf">analyticsignal</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Dataset Analytic Signal.</span>
+
+<span class="sd">    cf. :meth:`~geophpy.dataset.DataSet.analyticsignal`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">## Original code has been re-implemented in a less fortranic way</span>
+<span class="c1">##</span>
+<span class="c1">##########</span>
+<span class="c1">##    val = dataset.data.z_image</span>
+<span class="c1">##</span>
+<span class="c1">##    # Calculation of lines and columns numbers</span>
+<span class="c1">##    ny = len(val)</span>
+<span class="c1">##    nx = len(val[0])</span>
+<span class="c1">##    # Calculation of total values number</span>
+<span class="c1">##    nt = nx * ny</span>
+<span class="c1">##</span>
+<span class="c1">##    nan_indexes = np.isnan(val)                                 # searches the &#39;nan&#39; indexes in the initial array</span>
+<span class="c1">##    if(np.isnan(val).any()):                                    # if at least 1 &#39;nan&#39; is detected in the array,</span>
+<span class="c1">##      </span>
+<span class="c1">##       x = np.linspace(dataset.info.x_min, dataset.info.x_max, nx, endpoint=True)</span>
+<span class="c1">##       y = np.linspace(dataset.info.y_min, dataset.info.y_max, ny, endpoint=True)</span>
+<span class="c1">##       _fillnanvalues(x, y, val.T)                              # fills the &#39;nan&#39; values by interpolated values</span>
+<span class="c1">##</span>
+<span class="c1">##    if (apod &gt; 0):</span>
+<span class="c1">##       apodisation2d(val, apod)</span>
+<span class="c1">##</span>
+<span class="c1">##    # complex conversion, val[][] -&gt; cval[][]</span>
+<span class="c1">##    cval = np.array(val, dtype=complex)</span>
+<span class="c1">##</span>
+<span class="c1">##    deltax = dataset.info.x_gridding_delta</span>
+<span class="c1">##    deltay = dataset.info.y_gridding_delta</span>
+<span class="c1">##</span>
+<span class="c1">##    # fast fourier series calculation</span>
+<span class="c1">##    cvalfft = np.fft.fft2(cval)</span>
+<span class="c1">##    cvalfftdx = np.fft.fft2(cval)</span>
+<span class="c1">##    cvalfftdy = np.fft.fft2(cval)</span>
+<span class="c1">##    cvalfftdz = np.fft.fft2(cval)</span>
+<span class="c1">##</span>
+<span class="c1">##    # dx derivations calculation</span>
+<span class="c1">##    cvalfftdx[0][0] = complex(0., 0.)</span>
+<span class="c1">##    for ix in range(nx):                                        # for each column</span>
+<span class="c1">##       for iy in range(ny):                                     # for each line</span>
+<span class="c1">##          if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##             cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##             # x derivation </span>
+<span class="c1">##             cvalfftdx[iy][ix] = cvalfft[iy][ix]*complex(0., cu*np.pi*2)</span>
+<span class="c1">##         </span>
+<span class="c1">##    # FFT inversion</span>
+<span class="c1">##    icvalfft = np.fft.ifft2(cvalfftdx)</span>
+<span class="c1">##    val = np.square(icvalfft.real)</span>
+<span class="c1">##</span>
+<span class="c1">##    # dy derivations calculation</span>
+<span class="c1">##    cvalfftdy[0][0] = complex(0., 0.)</span>
+<span class="c1">##    for ix in range(nx):                                        # for each column</span>
+<span class="c1">##       for iy in range(ny):                                     # for each line</span>
+<span class="c1">##          if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##             cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##             # y derivation </span>
+<span class="c1">##             cvalfftdy[iy][ix] = cvalfft[iy][ix]*complex(0., cv*np.pi*2)</span>
+<span class="c1">##         </span>
+<span class="c1">##    # FFT inversion</span>
+<span class="c1">##    icvalfft = np.fft.ifft2(cvalfftdy)</span>
+<span class="c1">##    val = val + np.square(icvalfft.real)</span>
+<span class="c1">##</span>
+<span class="c1">##    # dz derivations calculation</span>
+<span class="c1">##    cvalfftdz[0][0] = complex(0., 0.)</span>
+<span class="c1">##    for ix in range(nx):                                        # for each column</span>
+<span class="c1">##       for iy in range(ny):                                     # for each line</span>
+<span class="c1">##          if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##             cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##             cz = np.sqrt(np.square(cu) + np.square(cv))</span>
+<span class="c1">##             # z derivation </span>
+<span class="c1">##             cvalfftdz[iy][ix] = cvalfft[iy][ix]*cz*np.pi*2</span>
+<span class="c1">##         </span>
+<span class="c1">##    # FFT inversion</span>
+<span class="c1">##    icvalfft = np.fft.ifft2(cvalfftdz)</span>
+<span class="c1">##    val = np.sqrt(val + np.square(icvalfft.real))</span>
+<span class="c1">##</span>
+<span class="c1">##    val[nan_indexes] = np.nan                                   # set the initial &#39;nan&#39; values, as in the initial array</span>
+<span class="c1">##</span>
+<span class="c1">##    dataset.data.z_image = val                                  # to get the &#39;z_image&#39; array in (x,y) format.</span>
+
+    <span class="n">val</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+
+    <span class="c1"># Transformation to sprectral Domain #######################################</span>
+    <span class="c1"># Apodization before FT</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">apod</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">genop</span><span class="o">.</span><span class="n">apodisation2d</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">apod</span><span class="p">)</span>
+
+    <span class="c1"># Filling NaNs</span>
+    <span class="n">valnan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">nan_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">valnan</span><span class="p">)</span>  <span class="c1"># index of NaNs in the original dataset</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">fillnanvalues</span><span class="p">(</span><span class="n">valnan</span><span class="p">,</span> <span class="n">indexout</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Filled dataset</span>
+
+    <span class="c1"># De-meaning</span>
+    <span class="n">valmean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">valfill</span><span class="o">-</span><span class="n">valmean</span>
+
+    <span class="c1"># Fourier Transform computation</span>
+    <span class="n">valTF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">valfill</span><span class="p">)</span>  <span class="c1"># Frequency domain</span>
+
+    <span class="c1"># Wavenumbers computation</span>
+    <span class="n">ny</span><span class="p">,</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">dx</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_gridding_delta</span>
+    <span class="n">dy</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_gridding_delta</span>
+
+    <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">wavenumber</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>  <span class="c1"># x, y-directed wavenumber matrices</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># radial wavenumber matrix</span>
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index of valid k for the RTP</span>
+
+    <span class="c1"># Spatial derivatives in the frequency domain ##############################</span>
+    <span class="c1">#</span>
+    <span class="c1"># ... TBD ... make functions for deriv_x, _y, _z of order n of a potential field ?</span>
+    <span class="c1"># </span>
+    <span class="c1"># x-directed 1st derivative</span>
+    <span class="n">dval_dxTF</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">kx</span>  <span class="c1"># x-directed gradient [Blakely 1996, eq12.15, p324]</span>
+    <span class="c1"># y-directed 1st derivative</span>
+    <span class="n">dval_dyTF</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">ky</span>  <span class="c1"># y-directed gradient [Blakely 1996, eq12.16, p324]</span>
+    <span class="c1"># vertical 1st derivative</span>
+    <span class="n">dval_dzTF</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="n">k</span>  <span class="c1">#  vertical gradient [Blakely 1996, eq12.13, p323]</span>
+
+    <span class="c1"># Potential field derivatives in the spatial domain ########################</span>
+    <span class="n">dval_dx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">dval_dxTF</span><span class="p">))</span>
+    <span class="n">dval_dy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">dval_dyTF</span><span class="p">))</span>
+    <span class="n">dval_dz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">dval_dzTF</span><span class="p">))</span>
+
+    <span class="c1"># Analytic signal amplitude in the spatial domain ##########################</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span> <span class="n">dval_dx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">dval_dy</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">dval_dz</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Unfilling dataset ########################################################</span>
+    <span class="n">A</span><span class="p">[</span><span class="n">nan_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+    <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span> <span class="o">=</span> <span class="n">A</span>
+
+    <span class="k">return</span> <span class="n">dataset</span></div>
+
+
+<div class="viewcode-block" id="magconfigconversion"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.magconfigconversion">[docs]</a><span class="k">def</span> <span class="nf">magconfigconversion</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">fromconfig</span><span class="p">,</span> <span class="n">toconfig</span><span class="p">,</span> <span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">FromBottomSensorAlt</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">FromTopSensorAlt</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">ToBottomSensorAlt</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">ToTopSensorAlt</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">inclination</span><span class="o">=</span><span class="mi">65</span><span class="p">,</span> <span class="n">declination</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">azimuth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">magazimuth</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Conversion between the different sensors configurations.</span>
+
+<span class="sd">    cf. :meth:`~geophpy.dataset.DataSet.magconfigconversion`</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">##########</span>
+<span class="c1">##</span>
+<span class="c1">## Original code has been re-implemented in a less fortranic way</span>
+<span class="c1">##</span>
+<span class="c1">############</span>
+<span class="c1">##   </span>
+<span class="c1">##   case, sense = _definecaseandsense(prosptechused, prosptechsim)</span>
+<span class="c1">##</span>
+<span class="c1">##   if ((case != None) and (sense != None)):</span>
+<span class="c1">##</span>
+<span class="c1">##      val = dataset.data.z_image</span>
+<span class="c1">##</span>
+<span class="c1">##      # Calculation of lines and columns numbers</span>
+<span class="c1">##      ny = len(val)</span>
+<span class="c1">##      nx = len(val[0])</span>
+<span class="c1">##      # Calculation of total values number</span>
+<span class="c1">##      nt = nx * ny</span>
+<span class="c1">##</span>
+<span class="c1">##      nan_indexes = np.isnan(val)                                 # searches the &#39;nan&#39; indexes in the initial array</span>
+<span class="c1">##      if(np.isnan(val).any()):                                    # if at least 1 &#39;nan&#39; is detected in the array,</span>
+<span class="c1">##      </span>
+<span class="c1">##         x = np.linspace(dataset.info.x_min, dataset.info.x_max, nx, endpoint=True)</span>
+<span class="c1">##         y = np.linspace(dataset.info.y_min, dataset.info.y_max, ny, endpoint=True)</span>
+<span class="c1">##         _fillnanvalues(x, y, val.T)                              # fills the &#39;nan&#39; values by interpolated values</span>
+<span class="c1">##</span>
+<span class="c1">##      if (apod &gt; 0):</span>
+<span class="c1">##         apodisation2d(val, apod)</span>
+<span class="c1">##</span>
+<span class="c1">##      # complex conversion, val[][] -&gt; cval[][]</span>
+<span class="c1">##      cval = np.array(val, dtype=complex)</span>
+<span class="c1">##</span>
+<span class="c1">##      deltax = dataset.info.x_gridding_delta</span>
+<span class="c1">##      deltay = dataset.info.y_gridding_delta</span>
+<span class="c1">##</span>
+<span class="c1">##      # fast fourier series calculation</span>
+<span class="c1">##      cvalfft = np.fft.fft2(cval)</span>
+<span class="c1">##</span>
+<span class="c1">##      if (case &gt;= 2):</span>
+<span class="c1">##         # deg-&gt;rad angle conversions</span>
+<span class="c1">##         rinc = (inclineangle*np.pi)/180 # inclination in radians</span>
+<span class="c1">##         ralpha = (alphaangle*np.pi)/180  # alpha angle in radians</span>
+<span class="c1">##         cosu = np.absolute(np.cos(rinc) * np.cos(ralpha))</span>
+<span class="c1">##         cosv = np.absolute(np.cos(rinc) * np.sin(ralpha))</span>
+<span class="c1">##         cosz = np.sin(rinc)</span>
+<span class="c1">##</span>
+<span class="c1">##      for ix in range(nx):                                        # for each column</span>
+<span class="c1">##         for iy in range(ny):                                     # for each line</span>
+<span class="c1">##            if ((ix != 0) or (iy != 0)):                          # if not first point of array</span>
+<span class="c1">##               cu, cv = _freq(ix, iy, deltax, deltay, nx, ny)     # complex u and v calculation</span>
+<span class="c1">##               cz = np.sqrt(np.square(cu) + np.square(cv))</span>
+<span class="c1">##</span>
+<span class="c1">##               if (case == 1):</span>
+<span class="c1">##                  c1 = (downsensoraltsim - downsensoraltused)*2.*np.pi*cz</span>
+<span class="c1">##                  c2 = (upsensoraltsim - downsensoraltsim)*2.*np.pi*cz</span>
+<span class="c1">##                  c = np.exp(-c1) - np.exp(-c2)</span>
+<span class="c1">##               elif (case == 2):</span>
+<span class="c1">##                  c1 = (downsensoraltsim - downsensoraltused)*2.*np.pi*cz</span>
+<span class="c1">##                  c2 = (upsensoraltsim - downsensoraltsim)*2.*np.pi*cz</span>
+<span class="c1">##                  cred = complex(cz*cosz, cu*cosu + cv*cosv)</span>
+<span class="c1">##                  c = ((np.exp(-c1) - np.exp(-c2))*cz)/cred</span>
+<span class="c1">##               else :                  # case = 3</span>
+<span class="c1">##                  cred = complex(cz*cosz, cu*cosu + cv*cosv)</span>
+<span class="c1">##                  c = cz/cred</span>
+<span class="c1">##                  </span>
+<span class="c1">##               if (sense == 0):</span>
+<span class="c1">##                  coef = c</span>
+<span class="c1">##               else:</span>
+<span class="c1">##                  coef = 1./c</span>
+<span class="c1">##</span>
+<span class="c1">##               cvalfft[iy][ix] = cvalfft[iy][ix] * coef</span>
+<span class="c1">##               </span>
+<span class="c1">##      # FFT inversion</span>
+<span class="c1">##      icvalfft = np.fft.ifft2(cvalfft)</span>
+<span class="c1">##      val = icvalfft.real</span>
+<span class="c1">##</span>
+<span class="c1">##      val[nan_indexes] = np.nan                                   # set the initial &#39;nan&#39; values, as in the initial array</span>
+<span class="c1">##   </span>
+<span class="c1">##      dataset.data.z_image = val                                  # to get the &#39;z_image&#39; array in (x,y) format.</span>
+
+    <span class="n">val</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span>
+
+    <span class="c1"># Transformation to sprectral Domain #######################################</span>
+    <span class="c1"># Apodization before FT</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">apod</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="n">genop</span><span class="o">.</span><span class="n">apodisation2d</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">apod</span><span class="p">)</span>
+
+    <span class="c1"># Filling NaNs</span>
+    <span class="n">valnan</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="n">nan_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">valnan</span><span class="p">)</span>  <span class="c1"># index of NaNs in the original dataset</span>
+    <span class="n">valfill</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">fillnanvalues</span><span class="p">(</span><span class="n">valnan</span><span class="p">,</span> <span class="n">indexout</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Filled dataset</span>
+
+<span class="c1">##    # De-meaning</span>
+<span class="c1">##    valmean = np.nanmean(val)</span>
+<span class="c1">##    valfill = valfill-valmean</span>
+
+    <span class="c1"># Fourier Transform computation</span>
+    <span class="n">valTF</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">valfill</span><span class="p">)</span>  <span class="c1"># Frequency domain</span>
+
+    <span class="c1"># Magnetic azimuth #########################################################</span>
+    <span class="c1">## The angle between the survey profile direction and the ambient magnetic</span>
+    <span class="c1">## field is phi = declination-azimuth.</span>
+    <span class="c1">## if the given angle is directly the angle between the ambient magnetic</span>
+    <span class="c1">## field the survey direction (phi), we assume</span>
+    <span class="c1">## declinaison = 0 so -phi = azimuth</span>
+    <span class="k">if</span> <span class="n">magazimuth</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># ambient field</span>
+        <span class="n">phi</span> <span class="o">=</span> <span class="n">magazimuth</span>  <span class="c1"># given azimuth is magnetic azimuth</span>
+        <span class="n">declination</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">azimuth</span>  <span class="o">=</span> <span class="o">-</span><span class="n">phi</span>
+
+    <span class="c1"># Wavenumbers computation  #################################################</span>
+    <span class="n">ny</span><span class="p">,</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">val</span><span class="o">.</span><span class="n">shape</span>
+    <span class="n">dx</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">x_gridding_delta</span>
+    <span class="n">dy</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">info</span><span class="o">.</span><span class="n">y_gridding_delta</span>
+
+    <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span> <span class="o">=</span> <span class="n">genop</span><span class="o">.</span><span class="n">wavenumber</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dy</span><span class="p">)</span>  <span class="c1"># x, y-directed wavenumber matrices</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># radial wavenumber matrix</span>
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+
+    <span class="c1"># Configuration transformation ###############################################</span>
+    <span class="c1">###</span>
+    <span class="c1"># ...TBD... use a dictionnary to choose the convertion method ?</span>
+    <span class="c1">#</span>
+    <span class="c1"># _gradmagfield_conversion_chooser(config_in, config_out)</span>
+    <span class="c1">#</span>
+    <span class="c1">###</span>
+    <span class="c1"># Total-field to total-field vertical gradient</span>
+    <span class="k">if</span> <span class="n">fromconfig</span><span class="o">==</span><span class="s1">&#39;TotalField&#39;</span> <span class="ow">and</span> <span class="n">toconfig</span><span class="o">==</span><span class="s1">&#39;TotalFieldGradient&#39;</span><span class="p">:</span>
+        <span class="n">z0</span> <span class="o">=</span> <span class="n">FromBottomSensorAlt</span>
+        <span class="n">znew</span> <span class="o">=</span> <span class="n">ToBottomSensorAlt</span> 
+        <span class="n">separation</span> <span class="o">=</span> <span class="n">ToTopSensorAlt</span> <span class="o">-</span> <span class="n">ToBottomSensorAlt</span>
+        
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_field_to_grad</span><span class="p">(</span><span class="n">separation</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)</span>
+
+    <span class="c1"># Total-field vertical gradient to total-field </span>
+    <span class="k">elif</span> <span class="n">fromconfig</span><span class="o">==</span><span class="s1">&#39;TotalFieldGradient&#39;</span> <span class="ow">and</span> <span class="n">toconfig</span><span class="o">==</span><span class="s1">&#39;TotalField&#39;</span><span class="p">:</span>
+        <span class="n">z0</span> <span class="o">=</span> <span class="n">FromBottomSensorAlt</span>
+        <span class="n">znew</span> <span class="o">=</span> <span class="n">ToBottomSensorAlt</span>
+        <span class="n">separation</span> <span class="o">=</span> <span class="n">FromTopSensorAlt</span> <span class="o">-</span> <span class="n">FromBottomSensorAlt</span>
+
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_grad_to_field</span><span class="p">(</span><span class="n">separation</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)</span>
+
+    <span class="c1"># Total-field vertical gradient to fluxgate</span>
+    <span class="k">elif</span> <span class="n">fromconfig</span><span class="o">==</span><span class="s1">&#39;TotalFieldGradient&#39;</span> <span class="ow">and</span> <span class="n">toconfig</span><span class="o">==</span><span class="s1">&#39;Fluxgate&#39;</span><span class="p">:</span>
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_grad_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">)</span>
+
+    <span class="c1"># Fluxgate to total-field vertical gradient</span>
+    <span class="k">elif</span> <span class="n">fromconfig</span><span class="o">==</span><span class="s1">&#39;Fluxgate&#39;</span> <span class="ow">and</span> <span class="n">toconfig</span><span class="o">==</span><span class="s1">&#39;TotalFieldGradient&#39;</span><span class="p">:</span>
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_fluxgate_to_grad</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">)</span>
+
+    <span class="c1"># Total-field to fluxgate</span>
+    <span class="k">elif</span> <span class="n">fromconfig</span><span class="o">==</span><span class="s1">&#39;TotalField&#39;</span> <span class="ow">and</span> <span class="n">toconfig</span><span class="o">==</span><span class="s1">&#39;Fluxgate&#39;</span><span class="p">:</span>
+        <span class="n">z0</span> <span class="o">=</span> <span class="n">FromBottomSensorAlt</span>
+        <span class="n">znew</span> <span class="o">=</span> <span class="n">ToBottomSensorAlt</span> 
+        <span class="n">separation</span> <span class="o">=</span> <span class="n">ToTopSensorAlt</span> <span class="o">-</span> <span class="n">ToBottomSensorAlt</span>
+
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_field_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">separation</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)</span>
+
+    <span class="c1"># Fluxgate to total-field</span>
+    <span class="k">elif</span> <span class="n">fromconfig</span><span class="o">==</span><span class="s1">&#39;Fluxgate&#39;</span> <span class="ow">and</span> <span class="n">toconfig</span><span class="o">==</span><span class="s1">&#39;TotalField&#39;</span><span class="p">:</span>
+        <span class="n">z0</span> <span class="o">=</span> <span class="n">FromBottomSensorAlt</span>
+        <span class="n">znew</span> <span class="o">=</span> <span class="n">ToBottomSensorAlt</span>
+        <span class="n">separation</span> <span class="o">=</span> <span class="n">FromTopSensorAlt</span> <span class="o">-</span> <span class="n">FromBottomSensorAlt</span>
+
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_fluxgate_to_field</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">separation</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)</span>
+
+    <span class="c1"># Unknown configuration conversion</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">F</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="c1"># Error unknown conversion</span>
+
+    <span class="c1"># Applying filter###########################################################</span>
+    <span class="n">valTF_filt</span> <span class="o">=</span> <span class="n">valTF</span><span class="o">*</span><span class="n">F</span>
+
+    <span class="c1"># Transformation nack to spatial domain ####################################</span>
+    <span class="n">valfilt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">valTF_filt</span><span class="p">)</span>  <span class="c1"># Spatial domain</span>
+    <span class="n">valfilt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">valfilt</span><span class="p">)</span> <span class="c1">#+ valmean  # Re-meaning</span>
+    <span class="n">valfilt</span><span class="p">[</span><span class="n">nan_idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>  <span class="c1"># unfilled dataset</span>
+
+    <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span> <span class="o">=</span> <span class="n">valfilt</span>
+
+    <span class="k">return</span> <span class="n">dataset</span></div>
+
+
+<span class="c1">##def _definecaseandsense( prosptechused, prosptechsim):</span>
+<span class="c1">##   &#39;&#39;&#39;</span>
+<span class="c1">##   define case and sense of conversion</span>
+<span class="c1">##   case 1 = &quot;Magnetic field&quot; &lt;-&gt; &quot;Magnetic field gradient&quot;</span>
+<span class="c1">##   case 2 = &quot;Magnetic field&quot; &lt;-&gt; &quot;Vertical component gradient&quot;</span>
+<span class="c1">##   case 3 = &quot;Magnetic field gradient&quot; &lt;-&gt; &quot;Vertical component gradient&quot;</span>
+<span class="c1">##   &#39;&#39;&#39;</span>
+<span class="c1">##</span>
+<span class="c1">##   case = None</span>
+<span class="c1">##   sense = None</span>
+<span class="c1">##   if ((prosptechused == prosptechlist[0]) and (prosptechsim == prosptechlist[1])) :</span>
+<span class="c1">##      case = 1</span>
+<span class="c1">##      sense = 0</span>
+<span class="c1">##   elif ((prosptechused == prosptechlist[0]) and (prosptechsim == prosptechlist[2])) :</span>
+<span class="c1">##      case = 2</span>
+<span class="c1">##      sense = 0</span>
+<span class="c1">##   elif ((prosptechused == prosptechlist[1]) and (prosptechsim == prosptechlist[0])) :</span>
+<span class="c1">##      case = 1</span>
+<span class="c1">##      sense = 1</span>
+<span class="c1">##   elif ((prosptechused == prosptechlist[1]) and (prosptechsim == prosptechlist[2])) :</span>
+<span class="c1">##      case = 3</span>
+<span class="c1">##      sense = 0</span>
+<span class="c1">##   elif ((prosptechused == prosptechlist[2]) and (prosptechsim == prosptechlist[0])) :</span>
+<span class="c1">##      case = 2</span>
+<span class="c1">##      sense = 1</span>
+<span class="c1">##   elif ((prosptechused == prosptechlist[2]) and (prosptechsim == prosptechlist[1])) :</span>
+<span class="c1">##      case = 3</span>
+<span class="c1">##      sense = 1</span>
+<span class="c1">##</span>
+<span class="c1">##   return case, sense</span>
+
+
+<span class="c1">##def _gradmagfield_conversion_chooser(config_in, config_out):</span>
+<span class="c1">##    &#39;&#39;&#39;</span>
+<span class="c1">##    Return the appropriate configuration converter.</span>
+<span class="c1">##</span>
+<span class="c1">##    Parameters</span>
+<span class="c1">##    ----------</span>
+<span class="c1">##</span>
+<span class="c1">##    config_in, config_out : str, {&quot;TotalField&quot;, &quot;FieldGradient&quot;, &quot;VerticalComponentGradient&quot;} (list from getsensorconfiglist())</span>
+<span class="c1">##        Input and ouput magnetic survey configuration.</span>
+<span class="c1">##</span>
+<span class="c1">##    &#39;&#39;&#39;</span>
+<span class="c1">##</span>
+<span class="c1">##    # Checking for unvalid survey configuration</span>
+<span class="c1">##    valid_config = &#39;, &#39;.join(getsensorconfiglist())</span>
+<span class="c1">##    for config in [config_in, config_out]:</span>
+<span class="c1">##        if config not in getsensorconfiglist():</span>
+<span class="c1">##            raise ValueError((&#39;Invalid survey configuration encountered. &#39;</span>
+<span class="c1">##                              &#39;Valid survey configurations are %s, &#39;</span>
+<span class="c1">##                              &#39;but %s encountered&#39;) %(valid_config, config)</span>
+<span class="c1">##                             )</span>
+<span class="c1">##</span>
+<span class="c1">##    # Converter chooser definition</span>
+<span class="c1">##    config_chooser = {</span>
+<span class="c1">##        &#39;TotalField&#39;         : &#39;Field&#39;,</span>
+<span class="c1">##        &#39;TotalFieldGradient&#39; : &#39;Grad&#39;,</span>
+<span class="c1">##        &#39;Fluxgate&#39;           : &#39;Fluxgate&#39;,</span>
+<span class="c1">##        }</span>
+<span class="c1">##</span>
+<span class="c1">##    converter_chooser ={</span>
+<span class="c1">##        &#39;FieldToGrad&#39;     : _field_to_grad,</span>
+<span class="c1">##        &#39;GradToField&#39;     : _grad_to_field,</span>
+<span class="c1">##        &#39;FieldToFluxgate&#39; : _field_to_fluxgate,</span>
+<span class="c1">##        &#39;FluxgateToField&#39; : _vertical_to_field,</span>
+<span class="c1">##        &#39;GradToFluxgate&#39;  : _grad_to_fluxgate,</span>
+<span class="c1">##        &#39;FluxgateToGrad&#39;  : _fluxgate_to_grad,</span>
+<span class="c1">##        }</span>
+<span class="c1">##</span>
+<span class="c1">##    # Choosing input configuration</span>
+<span class="c1">##    FromConfig = config_chooser[config_in]</span>
+<span class="c1">##    ToConfig = config_chooser[config_out]</span>
+<span class="c1">##    conversion_type = &#39;&#39;.join([FromConfig,&#39;To&#39;,ToConfig])</span>
+<span class="c1">##</span>
+<span class="c1">##    return converter_chooser[conversion_type]</span>
+
+
+<div class="viewcode-block" id="susceptibility"><a class="viewcode-back" href="../../../api.html#geophpy.processing.magnetism.susceptibility">[docs]</a><span class="k">def</span> <span class="nf">susceptibility</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">prosptech</span><span class="p">,</span> <span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">downsensoraltitude</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span> <span class="n">upsensoraltitude</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">calculationdepth</span><span class="o">=</span><span class="mf">.0</span><span class="p">,</span> <span class="n">stratumthickness</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">inclineangle</span> <span class="o">=</span> <span class="mi">65</span><span class="p">,</span> <span class="n">alphaangle</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+   <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">   Dataset magnetic susceptibilty of the equivalent stratum.</span>
+
+<span class="sd">   cf. :meth:`~geophpy.dataset.DataSet.susceptibility`</span>
+
+<span class="sd">   &#39;&#39;&#39;</span>
+
+<span class="c1">##   val = dataset.data.z_image</span>
+<span class="c1">##   </span>
+<span class="c1">##   # Calculation of lines and columns numbers</span>
+<span class="c1">##   ny = len(val)</span>
+<span class="c1">##   nx = len(val[0])</span>
+<span class="c1">##   # Calculation of total values number</span>
+<span class="c1">##   nt = nx * ny</span>
+<span class="c1">##</span>
+<span class="c1">##   nan_indexes = np.isnan(val)                                 # searches the &#39;nan&#39; indexes in the initial array</span>
+<span class="c1">##   if(np.isnan(val).any()):                                    # if at least 1 &#39;nan&#39; is detected in the array,</span>
+<span class="c1">##      </span>
+<span class="c1">##      x = np.linspace(dataset.info.x_min, dataset.info.x_max, nx, endpoint=True)</span>
+<span class="c1">##      y = np.linspace(dataset.info.y_min, dataset.info.y_max, ny, endpoint=True)</span>
+<span class="c1">##      _fillnanvalues(x, y, val.T)                                # fills the &#39;nan&#39; values by interpolated values</span>
+<span class="c1">##</span>
+<span class="c1">##   if (apod &gt; 0):</span>
+<span class="c1">##      genop.apodisation2d(val, apod)</span>
+<span class="c1">##</span>
+<span class="c1">##   # complex conversion, val[][] -&gt; cval[][]</span>
+<span class="c1">##   coef = 1./(400.*np.pi)</span>
+<span class="c1">##   cval = np.array(val*coef, dtype=complex)</span>
+<span class="c1">##</span>
+<span class="c1">##   # fast fourier series calculation</span>
+<span class="c1">##   cvalfft = np.fft.fft2(cval)</span>
+<span class="c1">##</span>
+<span class="c1">##   # filter application</span>
+<span class="c1">##   # deg-&gt;rad angle conversions</span>
+<span class="c1">##   rinc = (inclineangle*np.pi)/180 # inclination in radians</span>
+<span class="c1">##   ralpha = (alphaangle*np.pi)/180  # alpha angle in radians</span>
+<span class="c1">##</span>
+<span class="c1">##   cosu = np.absolute(np.cos(rinc) * np.cos(ralpha))</span>
+<span class="c1">##   cosv = np.absolute(np.cos(rinc) * np.sin(ralpha))</span>
+<span class="c1">##   cosz = np.sin(rinc)</span>
+<span class="c1">##</span>
+<span class="c1">##   dz = downsensoraltitude - upsensoraltitude</span>
+<span class="c1">##   zp = calculationdepth + downsensoraltitude</span>
+<span class="c1">##   </span>
+<span class="c1">##   deltax = dataset.info.x_gridding_delta</span>
+<span class="c1">##   deltay = dataset.info.y_gridding_delta</span>
+<span class="c1">##</span>
+<span class="c1">##   if (inclineangle == 0):</span>
+<span class="c1">##      teta = np.pi/2</span>
+<span class="c1">##   elif (inclineangle == 90) :    # pi/2</span>
+<span class="c1">##      teta = np.pi</span>
+<span class="c1">##   else :</span>
+<span class="c1">##      teta = np.pi + np.arctan(-2/np.tan(rinc))</span>
+
+   <span class="c1"># Field Module, medium field along I inclination calcultation if bipolar field</span>
+   <span class="n">FM</span> <span class="o">=</span> <span class="mf">14.722</span> <span class="o">*</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">teta</span><span class="p">))</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">teta</span><span class="p">))))</span>
+
+   <span class="n">cvalfft</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+   <span class="k">for</span> <span class="n">ix</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nx</span><span class="p">):</span>                                        <span class="c1"># for each column</span>
+      <span class="k">for</span> <span class="n">iy</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ny</span><span class="p">):</span>                                     <span class="c1"># for each line</span>
+         <span class="k">if</span> <span class="p">((</span><span class="n">ix</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">iy</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)):</span>                          <span class="c1"># if not first point of array</span>
+            <span class="n">cu</span><span class="p">,</span> <span class="n">cv</span> <span class="o">=</span> <span class="n">_freq</span><span class="p">(</span><span class="n">ix</span><span class="p">,</span> <span class="n">iy</span><span class="p">,</span> <span class="n">deltax</span><span class="p">,</span> <span class="n">deltay</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">)</span>     <span class="c1"># complex u and v calculation</span>
+            <span class="c1"># continuation</span>
+            <span class="n">cz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">cu</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">cv</span><span class="p">))</span>
+            <span class="n">cvalfft</span><span class="p">[</span><span class="n">iy</span><span class="p">][</span><span class="n">ix</span><span class="p">]</span> <span class="o">=</span> <span class="n">cvalfft</span><span class="p">[</span><span class="n">iy</span><span class="p">][</span><span class="n">ix</span><span class="p">]</span> <span class="o">*</span> <span class="nb">complex</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">cz</span><span class="o">*</span><span class="n">zp</span><span class="p">),</span> <span class="mf">0.</span><span class="p">)</span>
+            <span class="c1"># pole reduction with potential calculation(and not with field as standard pole reduction)</span>
+            <span class="n">cred</span> <span class="o">=</span> <span class="nb">complex</span><span class="p">(</span><span class="n">cz</span><span class="o">*</span><span class="n">cosz</span><span class="p">,</span> <span class="n">cu</span><span class="o">*</span><span class="n">cosu</span> <span class="o">+</span> <span class="n">cv</span><span class="o">*</span><span class="n">cosv</span><span class="p">)</span>
+            <span class="n">cvalfft</span><span class="p">[</span><span class="n">iy</span><span class="p">][</span><span class="n">ix</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">cvalfft</span><span class="p">[</span><span class="n">iy</span><span class="p">][</span><span class="n">ix</span><span class="p">]</span> <span class="o">*</span> <span class="nb">complex</span><span class="p">(</span><span class="n">cz</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">cred</span><span class="p">))</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">prosptech</span> <span class="o">==</span> <span class="n">prosptechlist</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>                         <span class="c1"># if prospection technic is magnetic field gradient</span>
+               <span class="n">cvalfft</span><span class="p">[</span><span class="n">iy</span><span class="p">][</span><span class="n">ix</span><span class="p">]</span> <span class="o">=</span> <span class="n">cvalfft</span><span class="p">[</span><span class="n">iy</span><span class="p">][</span><span class="n">ix</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">dz</span><span class="o">*</span><span class="n">cz</span><span class="p">))</span>         
+
+   <span class="c1"># FFT inversion</span>
+   <span class="n">icvalfft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft2</span><span class="p">(</span><span class="n">cvalfft</span><span class="p">)</span>
+
+   <span class="c1"># Equivalent stratum thickness</span>
+   <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="n">icvalfft</span><span class="o">.</span><span class="n">real</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mi">100000</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">FM</span><span class="o">*</span><span class="n">stratumthickness</span><span class="p">)</span>         <span class="c1"># 100000 because susceptibiliy in 10^-5 SI</span>
+
+   <span class="n">val</span><span class="p">[</span><span class="n">nan_indexes</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>                                   <span class="c1"># set the initial &#39;nan&#39; values, as in the initial array</span>
+
+   <span class="n">dataset</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">z_image</span> <span class="o">=</span> <span class="n">val</span>                                  <span class="c1"># to get the &#39;z_image&#39; array in (x,y) format.</span></div>
+
+
+
+<span class="k">def</span> <span class="nf">getsensorconfiglist</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39; Returns the list of available magnetic sensor configurations. &#39;&#39;&#39;</span>
+
+    <span class="k">return</span> <span class="n">sensorconfiglist</span>
+
+<span class="k">def</span> <span class="nf">getstructuralindexlist</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39; Returns the list of available tructural index for Euler deconvolution. &#39;&#39;&#39;</span>
+
+    <span class="k">return</span> <span class="n">structuralindexlist</span>
+
+<span class="c1">##def getprosptechlist():</span>
+<span class="c1">##   &#39;&#39;&#39;</span>
+<span class="c1">##   Get list of prospection technicals availables</span>
+<span class="c1">##</span>
+<span class="c1">##   Returns : list of prospection technicals</span>
+<span class="c1">##   </span>
+<span class="c1">##   &#39;&#39;&#39;</span>
+<span class="c1">##</span>
+<span class="c1">##   return prosptechlist</span>
+
+
+<span class="k">def</span> <span class="nf">_continu</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&#39;&#39;&#39; Upward/Downward continuation operator in the spectral domain.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    z : float</span>
+<span class="sd">        The continuation distance.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }.</span>
+
+<span class="sd">    direction : str {&#39;auto&#39;, &#39;up&#39;, &#39;down&#39;}, optional</span>
+<span class="sd">        Direction of the continuation. If &#39;auto&#39;, the direction is determined</span>
+<span class="sd">        from the continuation distance sign (if z&gt;0, &#39;up&#39;; if z&lt;0, &#39;down&#39;).</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">if</span> <span class="n">direction</span><span class="o">==</span><span class="s1">&#39;auto&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">z</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;up&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="s1">&#39;down&#39;</span>
+
+    <span class="n">dir_selector</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;up&#39;</span><span class="p">:</span> <span class="n">_contiup</span><span class="p">,</span> <span class="s1">&#39;down&#39;</span><span class="p">:</span> <span class="n">_contidwn</span><span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">dir_selector</span><span class="p">[</span><span class="n">direction</span><span class="p">](</span><span class="n">z</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_contiup</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&#39;&#39;&#39; Upward continuation operator in the spectral domain.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    z : float</span>
+<span class="sd">        The continuation distance.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }`.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">dz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">dz</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>  <span class="c1"># [Blakely 1996, eq12.8, p317]</span>
+
+
+<span class="k">def</span> <span class="nf">_contidwn</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&#39;&#39;&#39; Downward continuation operator in the spectral domain.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    z : float</span>
+<span class="sd">        The continuation distance.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }`.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">dz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">+</span><span class="n">dz</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>  <span class="c1"># [Blakely 1996, p320]</span>
+
+
+<span class="k">def</span> <span class="nf">_field_to_grad</span><span class="p">(</span><span class="n">separation</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&#39;&#39;&#39; Total-field to gradient operator.</span>
+
+<span class="sd">    Total-field magnitude to vertical gradient of the total-field magnitude</span>
+<span class="sd">    operator in the spectral domain.</span>
+
+<span class="sd">    The vertical gradient of the total-field (magnitude) is a simple subtraction of two</span>
+<span class="sd">    total-field (magnitude) measures at two different heights.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    separation : float</span>
+<span class="sd">        Top-Bottom sensors separation.</span>
+<span class="sd">        If **separation &gt; 0**, the classic **bottom-top** gradient operator is returned. </span>
+<span class="sd">        If **separation &lt; 0**, the **top-bottom** gradient operator is returned.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }`.</span>
+<span class="sd">        </span>
+<span class="sd">    z0 : float</span>
+<span class="sd">        Bottom sensor altitude.</span>
+<span class="sd">        </span>
+<span class="sd">    znew : float</span>
+<span class="sd">        Bottom sensor new wanted altitude for the gradient.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    F :  array</span>
+<span class="sd">        The total-field to gradient operator in the spectral domain.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    If current and new survey altitudes are given, the vertical gradient of the</span>
+<span class="sd">    total-field is computed using three simple steps:</span>
+
+<span class="sd">    1. simulation of the bottom sensor total-field to the new altitude</span>
+<span class="sd">    by continuation;</span>
+<span class="sd">    2. simulation of the top sensor total-field to the new altitude + separation</span>
+<span class="sd">    by continuation;</span>
+<span class="sd">    3. subtraction of the simulated top and bottom sensor total-field.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    _grad_to_field, _grad_to_fluxgate, _fluxgate_to_grad, _field_to_fluxgate, _fluxgate_to_field</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1"># top-bottom sensor separation</span>
+    <span class="n">ds</span> <span class="o">=</span> <span class="n">separation</span>
+
+    <span class="c1"># Changes in altitude ######################################################</span>
+    <span class="k">if</span> <span class="n">z0</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">znew</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># Bottom sensor distance to new altitude</span>
+        <span class="n">dh</span> <span class="o">=</span> <span class="n">znew</span><span class="o">-</span><span class="n">z0</span>
+
+        <span class="c1"># bottom sensor at new altitude - top sensor (with new altitude)</span>
+        <span class="n">F</span> <span class="o">=</span> <span class="n">_continu</span><span class="p">(</span><span class="n">dh</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="o">-</span> <span class="n">_continu</span><span class="p">(</span><span class="n">dh</span><span class="o">+</span><span class="n">ds</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+
+    <span class="c1"># No changes in altitude ###################################################</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># bottom sensor - top sensor</span>
+        <span class="n">F</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">_continu</span><span class="p">(</span><span class="n">dz</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">F</span>
+
+
+<span class="k">def</span> <span class="nf">_grad_to_field</span><span class="p">(</span><span class="n">separation</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sa">r</span><span class="sd">&#39;&#39;&#39; Gradient to total-field operator.</span>
+
+<span class="sd">    Vertical gradient of the total-filed magnitude to</span>
+<span class="sd">    magnitude of the total-field operator in the spectral domain.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    separation : float</span>
+<span class="sd">        Sensor separation.</span>
+<span class="sd">        If **separation &gt; 0**, the classic **bottom-top** gradient operator is returned. </span>
+<span class="sd">        If **separation &lt; 0**, the **top-bottom** gradient operator is returned.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }`.</span>
+<span class="sd">        </span>
+<span class="sd">    z0 : float</span>
+<span class="sd">        Bottom sensor altitude.</span>
+<span class="sd">        </span>
+<span class="sd">    znew : float</span>
+<span class="sd">        Bottom sensor new wanted altitude for the gradient.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    F :  array</span>
+<span class="sd">        The gradient to total-field operator in the spectral domain.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    _field_to_grad, grad_to_fluxgate, _fluxgate_to_grad, _field_to_fluxgate, _fluxgate_to_field</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+    <span class="n">F</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="n">_field_to_grad</span><span class="p">(</span><span class="n">separation</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)[</span><span class="n">indk</span><span class="p">]</span> <span class="p">)</span><span class="o">**-</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">F</span>
+
+
+<span class="k">def</span> <span class="nf">_grad_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Gradient to fluxgate operator.</span>
+
+<span class="sd">    Vertical gradient of the total-filed magnitude to fluxgate</span>
+<span class="sd">    (gradient of the vertical component of the field) operator</span>
+<span class="sd">    in the spectral domain.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    inclination : float,</span>
+<span class="sd">        Inclination in degrees positive below horizontal.</span>
+
+<span class="sd">    declination : float,</span>
+<span class="sd">        Declination in degrees positive east of geographic north.</span>
+<span class="sd">        </span>
+<span class="sd">    azimuth : float,</span>
+<span class="sd">        Azimuth of x axis in degrees positive east of north.</span>
+
+<span class="sd">    kx, ky : array_like</span>
+<span class="sd">        The wavenumbers coordinates in the x and y-directions.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    F :  array</span>
+<span class="sd">        The gradient to fluxgate operator in the spectral domain.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    </span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    _fluxgate_to_grad, _field_to_grad, _grad_to_field, _field_to_fluxgate, _fluxgate_to_field</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1"># Unit-vector components of the ambient field</span>
+    <span class="n">fx</span><span class="p">,</span> <span class="n">fy</span><span class="p">,</span> <span class="n">fz</span> <span class="o">=</span> <span class="n">_dircos</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">)</span>
+
+    <span class="c1"># Radial wavenumber matrix</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+
+    <span class="c1"># RTP operator for the anomaly of the vertical component</span>
+    <span class="c1"># from [Tabbagh et al 1997]</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+    <span class="n">F</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span> <span class="n">k</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">fz</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="p">(</span><span class="n">kx</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">fx</span> <span class="o">+</span> <span class="n">ky</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span><span class="o">*</span><span class="n">fy</span><span class="p">)</span> <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">F</span>
+
+
+<span class="k">def</span> <span class="nf">_fluxgate_to_grad</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Fluxgate to gradient operator.</span>
+
+<span class="sd">    Fluxgate (gradient of the vertical component of the field) to </span>
+<span class="sd">    vertical gradient of the total-filed magnitude operator </span>
+<span class="sd">    in the spectral domain.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    inclination : float,</span>
+<span class="sd">        Inclination in degrees positive below horizontal.</span>
+
+<span class="sd">    declination : float,</span>
+<span class="sd">        Declination in degrees positive east of geographic north.</span>
+<span class="sd">        </span>
+<span class="sd">    azimuth : float,</span>
+<span class="sd">        Azimuth of x axis in degrees positive east of north.</span>
+
+<span class="sd">    kx, ky : array_like</span>
+<span class="sd">        The wavenumbers coordinates in the x and y-directions.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    F :  array</span>
+<span class="sd">        The fluxgate to gradient operator in the spectral domain.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    _grad_to_fluxgate, _field_to_grad, _grad_to_field, _field_to_fluxgate, _fluxgate_to_field</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+    <span class="n">F</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="n">_grad_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">)[</span><span class="n">indk</span><span class="p">]</span> <span class="p">)</span><span class="o">**-</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">F</span>
+
+
+<span class="k">def</span> <span class="nf">_field_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">separation</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Total-field to fluxgate operator.</span>
+
+<span class="sd">    Total-field magnitude to fluxgate (gradient of the vertical</span>
+<span class="sd">    component of the field) operator in the spectral domain. </span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    inclination : float,</span>
+<span class="sd">        Inclination in degrees positive below horizontal.</span>
+
+<span class="sd">    declination : float,</span>
+<span class="sd">        Declination in degrees positive east of geographic north.</span>
+<span class="sd">        </span>
+<span class="sd">    azimuth : float,</span>
+<span class="sd">        Azimuth of x axis in degrees positive east of north.</span>
+
+<span class="sd">    kx, ky : array_like</span>
+<span class="sd">        The wavenumbers coordinates in the x and y-directions.</span>
+
+<span class="sd">    separation : float</span>
+<span class="sd">        Sensor separation.</span>
+<span class="sd">        If **separation &gt; 0**, the classic **bottom-top** gradient operator is returned. </span>
+<span class="sd">        If **separation &lt; 0**, the **top-bottom** gradient operator is returned.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }`.</span>
+<span class="sd">        </span>
+<span class="sd">    z0 : float</span>
+<span class="sd">        Bottom sensor altitude.</span>
+<span class="sd">        </span>
+<span class="sd">    znew : float</span>
+<span class="sd">        Bottom sensor new wanted altitude for the gradient.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    F :  array</span>
+<span class="sd">        The field to fluxgate operator in the spectral domain.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    _fluxgate_to_field, _field_to_grad, _grad_to_field, _grad_to_fluxgate, _fluxgate_to_grad</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1"># Radial wavenumber matrix</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">kx</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">ky</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Field to Grad Conversion</span>
+    <span class="n">F_field_grad</span> <span class="o">=</span> <span class="n">_field_to_grad</span><span class="p">(</span><span class="n">separation</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)</span>
+
+    <span class="c1"># Grad to Fluxgate Conversion</span>
+    <span class="n">F_grad_flux</span> <span class="o">=</span> <span class="n">_grad_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">)</span>
+
+    <span class="c1"># Field to Fluxgate Conversion</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">F_field_grad</span> <span class="o">*</span> <span class="n">F_grad_flux</span>
+
+    <span class="k">return</span> <span class="n">F</span>
+
+
+<span class="k">def</span> <span class="nf">_fluxgate_to_field</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">separation</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Fluxgate to total-field operator.</span>
+
+<span class="sd">    Fluxgate (gradient of the vertical component of the field) to</span>
+<span class="sd">    total-field operator in the spectral domain. </span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    inclination : float,</span>
+<span class="sd">        Inclination in degrees positive below horizontal.</span>
+
+<span class="sd">    declination : float,</span>
+<span class="sd">        Declination in degrees positive east of geographic north.</span>
+<span class="sd">        </span>
+<span class="sd">    azimuth : float,</span>
+<span class="sd">        Azimuth of x axis in degrees positive east of north.</span>
+
+<span class="sd">    kx, ky : array_like</span>
+<span class="sd">        The wavenumbers coordinates in the x and y-directions.</span>
+
+<span class="sd">    separation : float</span>
+<span class="sd">        Sensor separation.</span>
+<span class="sd">        If **separation &gt; 0**, the classic **bottom-top** gradient operator is returned. </span>
+<span class="sd">        If **separation &lt; 0**, the **top-bottom** gradient operator is returned.</span>
+
+<span class="sd">    k : array</span>
+<span class="sd">        The radial wavenumber (:math:`k = \sqrt{k_x^2 + k_y^2 }`.</span>
+<span class="sd">        </span>
+<span class="sd">    z0 : float</span>
+<span class="sd">        Bottom sensor altitude.</span>
+<span class="sd">        </span>
+<span class="sd">    znew : float</span>
+<span class="sd">        Bottom sensor new wanted altitude for the gradient.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    F :  array</span>
+<span class="sd">        The fluxgate to field operator in the spectral domain.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    _field_to_fluxgate, _field_to_grad, _grad_to_field, _grad_to_fluxgate, _fluxgate_to_grad</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">indk</span> <span class="o">=</span> <span class="n">k</span><span class="o">!=</span><span class="mi">0</span>  <span class="c1"># index k valid for the RTP</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">complex</span><span class="p">)</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="p">(</span> <span class="n">_grad_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">)</span> <span class="p">)</span><span class="o">**-</span><span class="mi">1</span>
+    
+    <span class="n">F</span><span class="p">[</span><span class="n">indk</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="n">_field_to_fluxgate</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">separation</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="n">z0</span><span class="p">,</span> <span class="n">znew</span><span class="o">=</span><span class="n">znew</span><span class="p">)[</span><span class="n">indk</span><span class="p">]</span> <span class="p">)</span><span class="o">**-</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">F</span>
+
+
+<span class="k">def</span> <span class="nf">_dircos</span><span class="p">(</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Computes the direction cosines (unit-vector components) from</span>
+<span class="sd">    inclination, declination and azimuth.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    inclination : float,</span>
+<span class="sd">        Inclination in degrees positive below horizontal.</span>
+
+<span class="sd">    declination : float,</span>
+<span class="sd">        Declination in degrees positive east of geographic north.</span>
+<span class="sd">        </span>
+<span class="sd">    azimuth : float,</span>
+<span class="sd">        Azimuth of x axis in degrees positive east of north.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    vx, vy, vz : array_like,</span>
+<span class="sd">        The three unit-vector components.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    This function is a direct adaptation from the Subroutine B.9.</span>
+<span class="sd">    &quot;Subroutine to calculate the three direction cosines of a vector from</span>
+<span class="sd">    its inclination and declination&quot; in (Blakely, 96)[#]_.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [#] Blakely R. J. 1996.</span>
+<span class="sd">        Potential Theory in Gravity and Magnetic Applications. </span>
+<span class="sd">        Appendix B, p381. </span>
+<span class="sd">        Cambridge University Press.</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1"># Conversion of angles to radians</span>
+    <span class="n">incl</span><span class="p">,</span> <span class="n">decl</span><span class="p">,</span> <span class="n">azim</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">deg2rad</span><span class="p">([</span><span class="n">inclination</span><span class="p">,</span> <span class="n">declination</span><span class="p">,</span> <span class="n">azimuth</span><span class="p">])</span>
+
+    <span class="c1"># Unit-vector components calculation</span>
+    <span class="n">vx</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">incl</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">decl</span><span class="o">-</span><span class="n">azim</span><span class="p">)</span>  <span class="c1"># x-direction cosine</span>
+    <span class="n">vy</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">incl</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">decl</span><span class="o">-</span><span class="n">azim</span><span class="p">)</span>  <span class="c1"># y-direction cosine</span>
+    <span class="n">vz</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">incl</span><span class="p">)</span>  <span class="c1"># z-direction cosine</span>
+
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">,</span> <span class="n">vz</span><span class="p">])</span>
+
+
+<span class="k">def</span> <span class="nf">_freq</span><span class="p">(</span><span class="n">ix</span><span class="p">,</span> <span class="n">iy</span><span class="p">,</span> <span class="n">deltax</span><span class="p">,</span> <span class="n">deltay</span><span class="p">,</span> <span class="n">nc</span><span class="p">,</span> <span class="n">nl</span><span class="p">):</span>
+   <span class="sd">&#39;&#39;&#39; Calculation of spatial frequencies u and v. &#39;&#39;&#39;</span>
+   <span class="n">nyd</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">nl</span><span class="o">/</span><span class="mi">2</span>
+   <span class="n">nxd</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">nc</span><span class="o">/</span><span class="mi">2</span>
+
+   <span class="k">if</span> <span class="p">(</span><span class="n">iy</span> <span class="o">&lt;</span> <span class="n">nyd</span><span class="p">):</span>
+      <span class="n">cv</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">iy</span><span class="p">))</span><span class="o">/</span><span class="p">((</span><span class="n">nl</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">deltay</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">cv</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">iy</span><span class="o">-</span><span class="n">nl</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">nl</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">deltay</span><span class="p">)</span>
+
+   <span class="k">if</span> <span class="p">(</span><span class="n">ix</span> <span class="o">&lt;</span> <span class="n">nxd</span><span class="p">):</span>
+      <span class="n">cu</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">ix</span><span class="p">))</span><span class="o">/</span><span class="p">((</span><span class="n">nc</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">deltax</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">cu</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ix</span><span class="o">-</span><span class="n">nc</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">nc</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">deltax</span><span class="p">)</span>
+
+   <span class="k">return</span> <span class="n">cu</span><span class="p">,</span> <span class="n">cv</span>
+
+
+<span class="k">def</span> <span class="nf">_fillnanvalues</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="n">yi</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
+   <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">   Fills the &#39;nan&#39; values by interpolated values using simple spline interpolation method !</span>
+<span class="sd">   &#39;&#39;&#39;</span>
+   <span class="k">for</span> <span class="n">profile</span> <span class="ow">in</span> <span class="n">val</span><span class="p">:</span>                                         <span class="c1"># for each profile,</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span><span class="o">.</span><span class="n">any</span><span class="p">()):</span>                            <span class="c1"># if one &#39;nan&#39; at least in the profile, does the completion</span>
+         <span class="n">nan_indexes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
+         <span class="n">data_indexes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_not</span><span class="p">(</span><span class="n">nan_indexes</span><span class="p">)</span>
+         <span class="n">valid_data</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="n">data_indexes</span><span class="p">]</span>
+         <span class="n">interpolated</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">nan_indexes</span><span class="o">.</span><span class="n">nonzero</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">data_indexes</span><span class="o">.</span><span class="n">nonzero</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="n">valid_data</span><span class="p">)</span>   
+         <span class="n">profile</span><span class="p">[</span><span class="n">nan_indexes</span><span class="p">]</span> <span class="o">=</span> <span class="n">interpolated</span>
+      
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

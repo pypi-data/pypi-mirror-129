@@ -1,0 +1,1383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>General Processing &mdash; GeophPy 0.32.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Magnetic Processing" href="mag-proc.html" />
+    <link rel="prev" title="Plotting functions" href="plot-fun.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeophPy
+          
+
+          
+            
+            <img src="_static/geophpy-square.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.32.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General informations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GeophPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Getting started</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature overview</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="plot-fun.html">Plotting functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">General Processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#peak-filtering">Peak filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#principle">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#thresholding">Thresholding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#median-filtering">Median filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#festoon-filtering">Festoon filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#detrending">Detrending</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regional-trend-filtering">Regional trend filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#wallis-filtering">Wallis filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ploughing-filtering">Ploughing filtering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#zero-mean-traversing">Zero-Mean Traversing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#constant-destriping">Constant destriping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id27">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#curve-destriping">Curve destriping</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mag-proc.html">Magnetic Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geopos.html">Geographic Positionning</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">Using a GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="feedback.html">Feedback &amp; Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GeophPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>General Processing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/gen-proc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="general-processing">
+<span id="chap-gen-proc-geophpy"></span><h1>General Processing<a class="headerlink" href="#general-processing" title="Permalink to this headline">¶</a></h1>
+<p>All the available processing techniques can be apply to a dataset through a simple command line of the form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">ProcessingTechnique</span><span class="p">(</span><span class="n">option1</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">option2</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">option3</span><span class="o">=</span><span class="s1">&#39;relative&#39;</span><span class="p">,</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The available <cite>general processing</cite> techniques (i.e. not specific to a particular geophysical method) are listed in the sections below.</p>
+<div class="section" id="peak-filtering">
+<h2>Peak filtering<a class="headerlink" href="#peak-filtering" title="Permalink to this headline">¶</a></h2>
+<p>Replace peaks in the dataset.</p>
+<p>Peaks are detected using an <em>Hampel filter</em> or a <em>decision-theoretic median filter</em> and replaced by either NaNs or the local median value.</p>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>replacing peaks using an <em>Hampel filter</em> to detect outliers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Peaks are replaced by local median</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">peakfilt</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;hampel&#39;</span><span class="p">,</span> <span class="n">halfwidth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># or by NaNs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">peakfilt</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;hampel&#39;</span><span class="p">,</span> <span class="n">halfwidth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">setnan</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p>replacing peaks using <em>decision-theoretic median filter</em>  to detect outliers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The threshold is a percentage of the local median value</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">peakfilt</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="n">halfwidth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">.05</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;relative&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># or a in raw unit</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">peakfilt</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="n">halfwidth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;absolute&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="principle">
+<h3>Principle<a class="headerlink" href="#principle" title="Permalink to this headline">¶</a></h3>
+<p>A centered 1-D window is slided along a flattened version of the dataset and determines if the central element of the moving window is an outlier (peak) and has to be replaced.</p>
+<p>To dertermine outliers, the median of the elements in the moving window is computed and used as a reference value.
+If the deviation of the central element of the window to the local median is above a threshold, the central value is replaced by the local median (or NaNs depending on the filter configuration <code class="docutils literal notranslate"><span class="pre">setnan={True|False}</span></code>).
+Two different filters are implemented to dertermine outliers (a median filter and an Hampel filter).</p>
+<p><em>Threshold value</em></p>
+<p>For the median filter, the <em>threshold</em> can be defined as a percentage of the local median (<code class="docutils literal notranslate"><span class="pre">mode='relative'</span></code>) or directly in raw units (<code class="docutils literal notranslate"><span class="pre">mode='absolute'</span></code>).</p>
+<p>For the Hampel filter, the higher the value of the <em>threshold</em> is, the less the filter will be selective.
+A threshold value of 0 is equivalent to a <em>standard median filter</em> (each element replaced by the value of the local median).</p>
+<p><em>Filters definition</em></p>
+<p>For <img class="math" src="_images/math/f54cbdb1804f870cc506a84471efe8bd8c07b6bd.png" alt="f_{k}"/> the central element of a moving window <img class="math" src="_images/math/ebc449fb1ccd90315014856ea60eec888e4b36f5.png" alt="\{ f_{k-K}, ..., f_{k}, ..., f_{k+K}\}"/> of half-with <img class="math" src="_images/math/52ddc0cde6d632f631533173562fe3ca375b1f32.png" alt="K"/>  and of local median <img class="math" src="_images/math/cc05af708592f6c4026fb0573b23bcaff9f8a67c.png" alt="f^{\dagger} = \mbox{median}\{f_{k-K}, ..., f_{k}, ..., f_{k+K}\}"/></p>
+<dl>
+<dt>The Hampel filter is defined as <a class="reference internal" href="references.html#pega16" id="id1"><span>[PeGa16]</span></a> :</dt><dd><div class="math">
+<p><img src="_images/math/9818e31efc3a74348858b8e0347c2c52c41a28db.png" alt="\mathcal{H}_{K,t}\{f_k\} =
+\begin{cases}
+f^{\dagger} &amp; \mbox{if } |f_{k} - f^{\dagger}| &gt; t \cdot Sk, \\
+f_{k} &amp; \mbox{otherwise},
+\end{cases}"/></p>
+</div><div class="math">
+<p><img src="_images/math/c87f86585dff807ade2f822f143774ef6e672234.png" alt="Sk = 1.4826 \cdot \mbox{median}\{|f_{k-K} - f^{\dagger}|, ..., |f_{k} - f^{\dagger}|, ..., |f_{k+K} - f^{\dagger}|\}"/></p>
+</div></dd>
+<dt>The (decision-theoretic) median filter is defined as:</dt><dd><div class="math">
+<p><img src="_images/math/c18af1a427fa0912bd983f2d47cf50f1d423a0b3.png" alt="\mathcal{M}_{K,t}\{f_k\} =
+\begin{cases}
+f^{\dagger} &amp; \mbox{if } |f_{k} - f^{\dagger}| &gt; t, \\
+f_{k} &amp; \mbox{otherwise},
+\end{cases}"/></p>
+</div></dd>
+</dl>
+<p>where is <img class="math" src="_images/math/907a4add6d5db5b7f197f7924f1371b8ac404fe6.png" alt="t"/> the filter threshold.</p>
+</div>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>method</p></th>
+<td><p>Type of the <cite>decision-theoretic filter</cite> used to determine outliers.</p></td>
+<td><p>str</p></td>
+<td><p>‘median’, ‘hampel’</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>halfwidth</p></th>
+<td><p>Filter half-width</p></td>
+<td><p>int</p></td>
+<td><p>5, 10 20, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>threshold</p></th>
+<td><p>Filter threshold parameter. If t=0 and method=’hampel’, it is equal to a <cite>standard median filter</cite>.</p></td>
+<td><p>int</p></td>
+<td><p>0, 1, 2, 3, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>mode</p></th>
+<td><p>Median filter mode. If ‘relative’, the threshold is a percentage of the local median value. If ‘absolute’, the threshold is a value.</p></td>
+<td><p>str</p></td>
+<td><p>‘relative’, ‘absolute’`</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>setnan</p></th>
+<td><p>Flag to replace outliers by NaNs instead of the local median.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the ungridded data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="thresholding">
+<h2>Thresholding<a class="headerlink" href="#thresholding" title="Permalink to this headline">¶</a></h2>
+<p>Dataset thresholding in a given interval.</p>
+<div class="section" id="id2">
+<h3>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Replacing out of range values by lower and upper bounds</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">setmin</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id32">
+<img alt="_images/figThreshold2.png" src="_images/figThreshold2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Peak filter - Min, max thresholding - dataset.</span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id33">
+<img alt="_images/figThresholdHisto2.png" src="_images/figThresholdHisto2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Peak filter - Min, max thresholding - histogram.</span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># by NaNs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">setmin</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">setnan</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id34">
+<img alt="_images/figThreshold3.png" src="_images/figThreshold3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Thresholding - NaN thresholding - dataset.</span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id35">
+<img alt="_images/figThresholdHisto4.png" src="_images/figThresholdHisto4.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 29 </span><span class="caption-text">Thresholding - NaN thresholding - histogram.</span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># or by each profile&#39;s median</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">threshold</span><span class="p">(</span><span class="n">setmin</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">setmax</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">setmed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id36">
+<img alt="_images/figThreshold4.png" src="_images/figThreshold4.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Thresholding - Median thresholding - dataset.</span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id37">
+<img alt="_images/figThresholdHisto4.png" src="_images/figThresholdHisto4.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">Thresholding - Median thresholding - histogram.</span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h3>Principle<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Each value of the dataset are compared to the given interval bounds.
+Depending on the filter configuration, values outside of the interval will be replaced by the interval bounds (<code class="docutils literal notranslate"><span class="pre">setmin=valmin</span></code>, <code class="docutils literal notranslate"><span class="pre">setmax=valmax</span></code>),
+NaNs (<code class="docutils literal notranslate"><span class="pre">setnan=True</span></code>),
+or the profile’s median (<code class="docutils literal notranslate"><span class="pre">setmed=True</span></code>).</p>
+</div>
+<div class="section" id="id4">
+<h3>Parameters<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>setmin</p></th>
+<td><p>Minimal interval value. All values lower than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> will be replaced by <code class="docutils literal notranslate"><span class="pre">setmin</span></code> (if both <code class="docutils literal notranslate"><span class="pre">setmed</span></code> and <code class="docutils literal notranslate"><span class="pre">setnan</span></code> are <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></td>
+<td><p>float</p></td>
+<td><p>-5, 10, 42.5, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setmax</p></th>
+<td><p>Maximal interval value. All values lower than <code class="docutils literal notranslate"><span class="pre">setmax</span></code> will be replaced by <code class="docutils literal notranslate"><span class="pre">setmax</span></code> (if both <code class="docutils literal notranslate"><span class="pre">setmed</span></code> and <code class="docutils literal notranslate"><span class="pre">setnan</span></code> are <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></td>
+<td><p>float</p></td>
+<td><p>-5, 10, 42.5, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>setmed</p></th>
+<td><p>Flag to replace out of bound data by the profile’s median.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setnan</p></th>
+<td><p>Flag to replace out of bound data by NaNs.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>Flag to apply filter on the ungridded data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="median-filtering">
+<h2>Median filtering<a class="headerlink" href="#median-filtering" title="Permalink to this headline">¶</a></h2>
+<p>Apply a median filter (<em>decision-theoretic</em> or <em>standard</em>) to the dataset.</p>
+<div class="section" id="id5">
+<h3>Examples<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># No threshold : standard median filter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">medianfilt</span><span class="p">(</span><span class="n">nx</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">ny</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id38">
+<img alt="_images/figMedianFilter1.png" src="_images/figMedianFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">Median filter - Raw dataset (no threshold).</span><a class="headerlink" href="#id38" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id39">
+<img alt="_images/figMedianFilter2.png" src="_images/figMedianFilter2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Median filter - Filtered dataset (no threshold).</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Threshold in raw unit : decision-theoretic median filter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">medianfilt</span><span class="p">(</span><span class="n">nx</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">ny</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">gap</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 52%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id40">
+<img alt="_images/figMedianFilter1.png" src="_images/figMedianFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Median filter - Raw dataset (threshold in raw unit).</span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id41">
+<img alt="_images/figMedianFilter3.png" src="_images/figMedianFilter3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 35 </span><span class="caption-text">Median filter - Filtered dataset (threshold in raw unit).</span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h3>Principle<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>“Median filtering is a non linear process useful in reducing impulsive, or salt-and-pepper noise” <a class="reference internal" href="references.html#limj90" id="id7"><span>[LimJ90]</span></a>.
+It is capable of smoothing a few out of bounds pixels while preserving image’s discontinuities without affecting the other pixels.</p>
+<p>For each pixel in the dataset, the local median of the (<strong>nx</strong> x <strong>ny</strong>) neighboring points is calculated.</p>
+<img alt="_images/figMedianFilter.png" class="align-center" src="_images/figMedianFilter.png" style="height: 5cm;" />
+<p>A threshold value is defined and if the deviation from the local median is higher than this threshold, then the center pixel value is replaced by the local median value.
+The threshold deviation from the local median can be defined:</p>
+<ul class="simple">
+<li><p>in percentage (<code class="docutils literal notranslate"><span class="pre">percent=10</span></code>) or raw units (<code class="docutils literal notranslate"><span class="pre">gap=5</span></code>),</p></li>
+<li><p>if no threshold is given, all pixels are replaced by their local medians (<em>standard median filter</em>).</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Parameters<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>nx</p></th>
+<td><p>Size, in number of sample, of the filer in the x-direction.</p></td>
+<td><p>int</p></td>
+<td><p>5, 10, 25, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>ny</p></th>
+<td><p>Size, in number of sample, of the filer in the y-direction.</p></td>
+<td><p>int</p></td>
+<td><p>5, 10, 25, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>percent</p></th>
+<td><p>Threshold deviation (in percents) to the local median value (for absolute field measurements).</p></td>
+<td><p>float</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>gap</p></th>
+<td><p>Threshold deviation (in raw units) to the median value (for relative anomaly measurements).</p></td>
+<td><p>float</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the ungridded data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="festoon-filtering">
+<span id="chap-gen-proc-festoon-geophpy"></span><h2>Festoon filtering<a class="headerlink" href="#festoon-filtering" title="Permalink to this headline">¶</a></h2>
+<p>Dataset destaggering.</p>
+<p>The festoon filter is a destaggering filter that reduces the positioning error along the survey profiles that result in a festoon-like effect.
+An <em>optimum shift</em> is estimated based on the correlation of a particular profile and the mean of its two neighboring profiles.</p>
+<p>This filter needs to be done as an early step in the processing flow as it needs to be done preferably before interpolation (or with no interpolation in the x-axis).</p>
+<p><strong>Filter applications:</strong> <em>data destaggering</em></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The correlation map computation needs a regular grid WITHOUT interpolation between profiles (i.e. the x-axis direction).
+The correlation is done between each even profiles number and the mean of its two nearest neighbors.
+In the case of an interpolation in the x-axis, an interpolated (even) profile will be equal (or quasi-equal) to the mean of its two nearest neighbors.
+The computed map will be close to an auto-correlation map, resulting in a null shift optimum shift.</p>
+</div>
+<div class="section" id="id9">
+<h3>Examples<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Gridding data without interpolation</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Uniform shift</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">festoonfilt</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;Crosscorr&#39;</span><span class="p">,</span> <span class="n">uniformshift</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id42">
+<img alt="_images/figFestoonFilter1.png" src="_images/figFestoonFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">Destaggering - Raw dataset (uniform shift).</span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id43">
+<img alt="_images/figFestoonFilter2.png" src="_images/figFestoonFilter2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 37 </span><span class="caption-text">Destaggering - Filtered dataset (uniform shift).</span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Non uniform shift</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">festoonfilt</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;Crosscorr&#39;</span><span class="p">,</span> <span class="n">uniformshift</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id44">
+<img alt="_images/figFestoonFilter1.png" src="_images/figFestoonFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 38 </span><span class="caption-text">Destaggering - Raw dataset (non uniform shift).</span><a class="headerlink" href="#id44" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id45">
+<img alt="_images/figFestoonFilter3.png" src="_images/figFestoonFilter3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 39 </span><span class="caption-text">Destaggering - Filtered dataset (non uniform shift).</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h3>Principle<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>For every even profiles (columns) in the dataset, an optimum shift is estimated based on the correlation of the profile and the mean of its two nearest neighbors.
+For each possible shift, a correlation map is hence computed and used to estimate the optimum shift (max of correlation).</p>
+<p>The optimum shift can be set to be uniform throughout the map (<code class="docutils literal notranslate"><span class="pre">uniformshift=True</span></code>) or different for each profile (<code class="docutils literal notranslate"><span class="pre">uniformshift=False</span></code>).
+If the shift is set uniform, the mean correlation profile is used as correlation map.</p>
+<p>At the top and bottom edges of the correlation map (high shift values), high correlation values can arrise from low sample correlation calculation.
+To prevent those high correlation values to drag the best shift estimation, a limitation is set to only consider correlation with at least 50% overlap between profiles.
+Similarly, a minimum correlation value (<code class="docutils literal notranslate"><span class="pre">corrmin</span></code>) can be defined to prevent profile’s shift if the correlation is too low.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Correaltion map</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">correlation_plotmap</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Correaltion profile</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">correlation_plotsum</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id46">
+<img alt="_images/figFestoonFilterCorrMap.png" src="_images/figFestoonFilterCorrMap.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Destaggering - Correlation map.</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id47">
+<img alt="_images/figFestoonFilterCorrSum.png" src="_images/figFestoonFilterCorrSum.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 41 </span><span class="caption-text">Destaggering - Mean correlation profile.</span><a class="headerlink" href="#id47" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h3>Parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>method</p></th>
+<td><p>Correlation method to use to compute the correlation coefficient in the correlation map.</p></td>
+<td><p>str</p></td>
+<td><p>‘Crosscorr’, ‘Pearson’, ‘Spearman’ or ‘Kendall’</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>shift</p></th>
+<td><p>Optional shift value (in pixels) to apply to the dataset profiles. If shit=0, the shift will be determined for each profile by correlation with neighbors.
+If shift is a vector each value in shift will be applied to its corresponding even profile.
+In that case shift must have the same size as the number of even profiles.</p></td>
+<td><p>int or array of int</p></td>
+<td><p>3, 5, 10, [2, 3, 4, …, 3, 4] or 0</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>corrmin</p></th>
+<td><p>Minimum correlation coefficient value to allow shifting.</p></td>
+<td><p>float (in the range [0-1])</p></td>
+<td><p>0.6, 0.8</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>uniformshift</p></th>
+<td><p>Flag to use a uniform shift on the map or a different one for each profile.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>setmin</p></th>
+<td><p>Data values lower than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> are ignored.</p></td>
+<td><p>float</p></td>
+<td><p>12, 44.5, …, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setmax</p></th>
+<td><p>Data values higher than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> are ignored.</p></td>
+<td><p>float</p></td>
+<td><p>12, 44.5, …, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the ungridded data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="detrending">
+<h2>Detrending<a class="headerlink" href="#detrending" title="Permalink to this headline">¶</a></h2>
+<p>… To Be Developed …</p>
+<p>Subtracting a polynomial fit for each profile in the dataset.</p>
+</div>
+<div class="section" id="regional-trend-filtering">
+<h2>Regional trend filtering<a class="headerlink" href="#regional-trend-filtering" title="Permalink to this headline">¶</a></h2>
+<p>… To Be Developed …</p>
+<p>Remove the background (or regional response) from a dataset to highlight the sub-surface features of interest.</p>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Principle<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id13">
+<h3>Parameters<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="wallis-filtering">
+<h2>Wallis filtering<a class="headerlink" href="#wallis-filtering" title="Permalink to this headline">¶</a></h2>
+<p>The Wallis filter is a locally adaptative contrast enhancement filter.</p>
+<p>Based on the local statistical properties of sub-window in the image,
+it adjusts brightness values (grayscale image) in the local window so that the local mean and standard deviation match target values.</p>
+<p><strong>Filter applications:</strong> <em>contrast enhancement</em></p>
+<div class="section" id="id14">
+<h3>Examples<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">wallisfilt</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id48">
+<img alt="_images/figWallisFilter1.png" src="_images/figWallisFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 42 </span><span class="caption-text">Wallis Filter - Raw dataset.</span><a class="headerlink" href="#id48" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id49">
+<img alt="_images/figWallisFilter2.png" src="_images/figWallisFilter2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 43 </span><span class="caption-text">Wallis Filter - Filtered dataset.</span><a class="headerlink" href="#id49" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id15">
+<h3>Principle<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>A window of size (<strong>nx</strong>, <strong>ny</strong>) is slided along the image and at each pixel the Wallis operator is calculated.
+The Wallis operator is defined as  <a class="reference internal" href="references.html#sthh90" id="id16"><span>[STHH90]</span></a>:</p>
+<div class="math">
+<p><img src="_images/math/dee07739939a9d44809580ac4d34493cdd03fb7e.png" alt="\frac{A \sigma_d}{A \sigma_{(x,y)} + \sigma_d} [f_{(x,y)} - m_{(x,y)}] + \alpha m_d + (1 - \alpha)m_{(x,y)}"/></p>
+</div><dl class="simple">
+<dt>where:</dt><dd><ul class="simple">
+<li><p><img class="math" src="_images/math/211284f68205c3e66773eaf026f32a0acdd3dfb3.png" alt="A"/> is the amplification factor for contrast,</p></li>
+<li><p><img class="math" src="_images/math/41df5ec41dc53eea53b87fdd7d3a724da6f6f0d2.png" alt="\sigma_d"/> is the target standard deviation,</p></li>
+<li><p><img class="math" src="_images/math/5ae3d33e5dbac225c6e279616bcd927d116ecc3a.png" alt="\sigma_{(x,y)}"/> is the standard deviation in the current window,</p></li>
+<li><p><img class="math" src="_images/math/fd16dafaed1249f80a65cef9cf416158c242e2b2.png" alt="f_{(x,y)}"/> is the center pixel of the current window,</p></li>
+<li><p><img class="math" src="_images/math/f27217b18ac14c5b77c58ed906ff54f048a5310c.png" alt="m_{(x,y)}"/> is the mean of the current window,</p></li>
+<li><p><img class="math" src="_images/math/2f5aa019312e1bbc969deab8dca8b00f76025404.png" alt="\alpha"/> is the edge factor (controlling portion of the observed mean, and brightness locally to reduce or increase the total range),</p></li>
+<li><p><img class="math" src="_images/math/92f0e8d41e16b77a63db3f7403341735ab24d293.png" alt="m_d"/> is the target mean.</p></li>
+</ul>
+</dd>
+</dl>
+<p>As the Wallis filter is design for grayscale image, the data are internally converted to brightness level before applying the filter.
+The conversion is based on the minimum and maximum value in the dataset and uses 256 levels (from 0 to 255).
+The filtered brightness level are converted back to data afterwards.</p>
+<p>A quite large window is recommended to ensure algorithm stability.</p>
+</div>
+<div class="section" id="id17">
+<h3>Parameters<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>nx</p></th>
+<td><p>Size, in number of sample, of the filer in the x-direction.</p></td>
+<td><p>int</p></td>
+<td><p>5, 10, 25, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>ny</p></th>
+<td><p>Size, in number of sample, of the filer in the y-direction.</p></td>
+<td><p>int</p></td>
+<td><p>5, 10, 25, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>targmean</p></th>
+<td><p>The target standard deviation (in gray level).</p></td>
+<td><p>int</p></td>
+<td><p>125</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setgain</p></th>
+<td><p>Amplification factor for contrast.</p></td>
+<td><p>int</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>limitstdev</p></th>
+<td><p>imitation on the window standard deviation to prevent too high gain value if data are dispersed.</p></td>
+<td><p>int</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>edgefactor</p></th>
+<td><p>Brightness forcing factor (<img class="math" src="_images/math/2f5aa019312e1bbc969deab8dca8b00f76025404.png" alt="\alpha"/>), controls ratio of edge to background intensities.</p></td>
+<td><p>float (in the range of [0,1])</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the scattered data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="ploughing-filtering">
+<h2>Ploughing filtering<a class="headerlink" href="#ploughing-filtering" title="Permalink to this headline">¶</a></h2>
+<p>Directional filter.</p>
+<p>Apply a directional filter to reduce agricultural ploughing effect in the dataset (or any other directional feature).</p>
+<div class="section" id="id18">
+<h3>Examples<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">ploughfilt</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">azimuth</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id50">
+<img alt="_images/figPloughFilter1.png" src="_images/figPloughFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 44 </span><span class="caption-text">Plough Filter - Raw dataset.</span><a class="headerlink" href="#id50" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id51">
+<img alt="_images/figPloughFilter2.png" src="_images/figPloughFilter2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 45 </span><span class="caption-text">Plough Filter - Filtered dataset.</span><a class="headerlink" href="#id51" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Raw dataset spectral plot</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">spectral_plotmap</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;magnitude&#39;</span><span class="p">,</span> <span class="n">logscale</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot_directional_filter</span><span class="p">(</span><span class="n">apod</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">azimuth</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id52">
+<img alt="_images/figPloughFilter3.png" src="_images/figPloughFilter3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 46 </span><span class="caption-text">Plough Filter - Raw magnitude spectrum.</span><a class="headerlink" href="#id52" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id53">
+<img alt="_images/figPloughFilter4.png" src="_images/figPloughFilter4.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 47 </span><span class="caption-text">Plough Filter - Directional filter.</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id19">
+<h3>Principle<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>The directional feature in the dataset is filtered in the spectral domain using the combination (<img class="math" src="_images/math/1c407cadee66a3a40c25f2119e3a8c44f681beb2.png" alt="\mathcal{F}"/>) of
+a <em>gaussian low-pass filter</em> of order 2 (<img class="math" src="_images/math/c3184725e5a38d491950161f38c95816f0ac8ffc.png" alt="\mathcal{F}_{GLP}"/>) and
+a <em>gaussian directional filter</em> (<img class="math" src="_images/math/be917b960a85d0859fbeb808f51f04d28613b6b5.png" alt="\mathcal{F}_{DIR}"/>) defined as <a class="reference internal" href="references.html#tabb01" id="id20"><span>[TABB01]</span></a> :</p>
+<div class="math">
+<p><img src="_images/math/31fbe335cf328082e43011db946110d07558d17a.png" alt="\mathcal{F}(\rho, \theta, f_c) &amp;= \mathcal{F}_{GLP}(\rho, f_c) \ast \mathcal{F}_{DIR}(\rho, \theta) \\
+
+                               &amp;= e^{-(\rho / f_c)^2}          \ast ( 1-e^{-\rho^2 / \tan(\theta-\theta_0)^n} )"/></p>
+</div><dl class="simple">
+<dt>where:</dt><dd><ul class="simple">
+<li><p><img class="math" src="_images/math/27dc86f9f1b1c3435b2403a869b5870c582facea.png" alt="\rho"/> and <img class="math" src="_images/math/8a87f04e7d7cca18343c084cceca5237fae62491.png" alt="\theta"/> are the current point polar coordinates,</p></li>
+<li><p><img class="math" src="_images/math/f3c754ede5a325f045a10fe57b2f387ad53341c4.png" alt="f_c"/> is the gaussian low-pass filter cutoff frequency,</p></li>
+<li><p><img class="math" src="_images/math/ba1cef6e9ca8250c441a34424440e3e151cd81c9.png" alt="\theta_0"/> is the directional filter’s azimuth,</p></li>
+<li><p><img class="math" src="_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png" alt="n"/> is the parameter that controls the filter width.</p></li>
+</ul>
+</dd>
+</dl>
+<p>The filter’s width is determined by the value of <img class="math" src="_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png" alt="n"/> (<a class="reference internal" href="#figploughfiltn-2"><span class="std std-numref">Fig. 48</span></a>, <a class="reference internal" href="#figploughfiltn-3"><span class="std std-numref">Fig. 49</span></a> and <a class="reference internal" href="#figploughfiltn-4"><span class="std std-numref">Fig. 50</span></a>) and
+the <em>gaussian low-pass filter</em> component is neglected if no cutoff frequency is defined (<code class="docutils literal notranslate"><span class="pre">cutoff=None</span></code>, see <a class="reference internal" href="#figploughfiltfc-none"><span class="std std-numref">Fig. 51</span></a>)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot_directional_filter</span><span class="p">(</span><span class="n">azimuth</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot_directional_filter</span><span class="p">(</span><span class="n">azimuth</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id54">
+<span id="figploughfiltn-2"></span><img alt="_images/figPloughFilter5.png" src="_images/figPloughFilter5.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 48 </span><span class="caption-text">Plough Filter - Directional Filter (<strong>n=2</strong>)</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id55">
+<span id="figploughfiltn-3"></span><img alt="_images/figPloughFilter6.png" src="_images/figPloughFilter6.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 49 </span><span class="caption-text">Plough Filter - Directional Filter (<strong>n=3</strong>)</span><a class="headerlink" href="#id55" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot_directional_filter</span><span class="p">(</span><span class="n">azimuth</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot_directional_filter</span><span class="p">(</span><span class="n">azimuth</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id56">
+<span id="figploughfiltn-4"></span><img alt="_images/figPloughFilter7.png" src="_images/figPloughFilter7.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 50 </span><span class="caption-text">Plough Filter - Directional Filter (<strong>n=4</strong>)</span><a class="headerlink" href="#id56" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id57">
+<span id="figploughfiltfc-none"></span><img alt="_images/figPloughFilter8.png" src="_images/figPloughFilter8.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 51 </span><span class="caption-text">Plough Filter - Pure directional filter (<strong>fc=None</strong>)</span><a class="headerlink" href="#id57" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id21">
+<h3>Parameters<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>apod</p></th>
+<td><p>Apodization factor (%), to limit Gibbs phenomenon at jump discontinuities.</p></td>
+<td><p>float</p></td>
+<td><p>0, 5, 10, 20, 25, …</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>azimuth</p></th>
+<td><p>Filter azimuth in degree.</p></td>
+<td><p>float</p></td>
+<td><p>0, 10, 33.25, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>cutoff</p></th>
+<td><p>cutoff spatial frequency (in number of sample).</p></td>
+<td><p>int</p></td>
+<td><p>5, 10, 100, … or <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>width</p></th>
+<td><p>ilter width parameter.</p></td>
+<td><p>int</p></td>
+<td><p>2, 3, 4, …</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the scattered data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="zero-mean-traversing">
+<h2>Zero-Mean Traversing<a class="headerlink" href="#zero-mean-traversing" title="Permalink to this headline">¶</a></h2>
+<p>Subtracts the mean (or median) of each traverse (profile) in the dataset.</p>
+<p><strong>Filter applications:</strong> <em>(magnetic) probe compensation, data destriping, edge matching…</em></p>
+<div class="section" id="id22">
+<h3>Examples<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Raw data display</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">plottype</span><span class="o">=</span><span class="s1">&#39;2D-SURFACE&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">histo_plot</span><span class="p">(</span><span class="n">cmapdisplay</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">coloredhisto</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 45%" />
+<col style="width: 55%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id58">
+<img alt="_images/figZeroMeanFilter1.png" src="_images/figZeroMeanFilter1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 52 </span><span class="caption-text">Zero-mean traverse - Raw dataset.</span><a class="headerlink" href="#id58" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id59">
+<img alt="_images/figZeroMeanFilterHisto1.png" src="_images/figZeroMeanFilterHisto1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 53 </span><span class="caption-text">Zero-mean traverse - Raw  histogram.</span><a class="headerlink" href="#id59" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Zero-Mean Traverse data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">zeromeanprofile</span><span class="p">(</span><span class="n">setvar</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 46%" />
+<col style="width: 54%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id60">
+<img alt="_images/figZeroMeanFilter2.png" src="_images/figZeroMeanFilter2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 54 </span><span class="caption-text">Zero-mean traverse - Filtered dataset (zero-mean).</span><a class="headerlink" href="#id60" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id61">
+<img alt="_images/figZeroMeanFilterHisto2.png" src="_images/figZeroMeanFilterHisto2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 55 </span><span class="caption-text">Zero-mean traverse - Filtered histogram  (zero-mean).</span><a class="headerlink" href="#id61" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Zero-Median Traverse data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">zeromeanprofile</span><span class="p">(</span><span class="n">setvar</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id62">
+<img alt="_images/figZeroMeanFilter3.png" src="_images/figZeroMeanFilter3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 56 </span><span class="caption-text">Zero-mean traverse - Filtered dataset (zero-median).</span><a class="headerlink" href="#id62" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id63">
+<img alt="_images/figZeroMeanFilterHisto3.png" src="_images/figZeroMeanFilterHisto3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 57 </span><span class="caption-text">Zero-mean traverse - Filtered histogram  (zero-median).</span><a class="headerlink" href="#id63" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id23">
+<h3>Principle<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<p>For each traverse (profile) in the dataset, the mean (or median) is calculated and subtracted, leading to a zero-mean (or zero-median) survey <a class="reference internal" href="references.html#asga08" id="id24"><span>[AsGA08]</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This filter is strictly equivalent to the constant destriping filter in configuration <em>‘mono’</em> sensor, using <em>‘additive’</em> destriping method and <em>Nprof=0</em>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">zeromeanprofile</span><span class="p">(</span><span class="n">setvar</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">destripecon</span><span class="p">(</span><span class="n">Nprof</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s1">&#39;mono&#39;</span><span class="p">,</span> <span class="n">reference</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id25">
+<h3>Parameters<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>setvar</p></th>
+<td><p>Profile’s statistical property be subtracted from each profile.</p></td>
+<td><p>str</p></td>
+<td><p>‘mean’ or ‘median’</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setmin</p></th>
+<td><p>Data values lower than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> are ignored.</p></td>
+<td><p>float</p></td>
+<td><p>12, 44.5, …, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>setmax</p></th>
+<td><p>Data values higher than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> are ignored.</p></td>
+<td><p>float</p></td>
+<td><p>12, 44.5, …, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the scattered data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="constant-destriping">
+<span id="chap-gen-proc-destipcon-geophpy"></span><h2>Constant destriping<a class="headerlink" href="#constant-destriping" title="Permalink to this headline">¶</a></h2>
+<p>Remove the strip noise effect from the dataset.</p>
+<p>The strip noise effect arises from profile-to-profile differences in sensor height, orientation, drift or sensitivity (multi-sensors array).
+Constant destriping is done using Moment Matching method <a class="reference internal" href="references.html#gacs00" id="id26"><span>[GaCs00]</span></a>.</p>
+<p><strong>Filter applications:</strong> <em>(magnetic) probe compensation, data destriping, edge matching…</em></p>
+<div class="section" id="id27">
+<h3>Examples<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">destripecon</span><span class="p">(</span><span class="n">Nprof</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id64">
+<img alt="_images/figDestriping1.png" src="_images/figDestriping1.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 58 </span><span class="caption-text">Destriping - Raw dataset.</span><a class="headerlink" href="#id64" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id65">
+<img alt="_images/figDestriping2.png" src="_images/figDestriping2.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 59 </span><span class="caption-text">Destriping - Filtered dataset.</span><a class="headerlink" href="#id65" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id28">
+<h3>Principle<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
+<p>In constant destriping, a linear relationship is assumed between profile-to-profile offset (means) and gain (standard deviation).
+The statistical moments (mean <img class="math" src="_images/math/e1aaac0305e1b00c3c08173dd3e8402b6320c110.png" alt="m_i"/> and standard deviation <img class="math" src="_images/math/e08876b8d4da4e902c0c1f892d0cd3181c9cf25e.png" alt="\sigma_i"/>) of each profile in the dataset are computed and matched to reference values.</p>
+<p><strong>Reference values</strong></p>
+<blockquote>
+<div><p>Typical reference values are:</p>
+<ul class="simple">
+<li><p>the mean (<img class="math" src="_images/math/92f0e8d41e16b77a63db3f7403341735ab24d293.png" alt="m_d"/>) and standard deviation (<img class="math" src="_images/math/41df5ec41dc53eea53b87fdd7d3a724da6f6f0d2.png" alt="\sigma_d"/>) of the <img class="math" src="_images/math/3bfb3a64189a14b2704f4610827762d5e3145114.png" alt="N"/> neighboring profiles (<code class="docutils literal notranslate"><span class="pre">Nprof=4</span></code>),</p></li>
+<li><p>the mean and standard deviation of the global dataset (<code class="docutils literal notranslate"><span class="pre">Nprof='all'</span></code>),</p></li>
+<li><p>the mean and standard deviation of each profiles (<code class="docutils literal notranslate"><span class="pre">Nprof=0</span></code>, zero-mean traverse),</p></li>
+<li><p>alternatively, one can use the median and interquartile range instead of mean and standard deviation (<code class="docutils literal notranslate"><span class="pre">reference='median'</span></code>).</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Additive vs multiplicative destriping</strong></p>
+<blockquote>
+<div><p>The corrected value can be calculated by</p>
+<ul>
+<li><p>an additive relation (<code class="docutils literal notranslate"><span class="pre">method='additive'</span></code>) <a class="reference internal" href="references.html#riji06" id="id29"><span>[RiJi06]</span></a>, <a class="reference internal" href="references.html#scho07" id="id30"><span>[Scho07]</span></a>:</p>
+<blockquote>
+<div><div class="math">
+<p><img src="_images/math/53754b9e7249bdf2f254452cec63773323837ff2.png" alt="f_{corr} = (f - m_i) \frac{\sigma_d}{\sigma_i} + m_d"/></p>
+</div></div></blockquote>
+</li>
+<li><p>or a multiplicative relation (<code class="docutils literal notranslate"><span class="pre">method='multiplicative'</span></code>):</p>
+<blockquote>
+<div><div class="math">
+<p><img src="_images/math/14532d97a0eb76084855f26f97aca4b8a2b31924.png" alt="f_{corr} = f \frac{\sigma_d}{\sigma_i} \frac{m_d}{m_i}"/></p>
+</div></div></blockquote>
+</li>
+</ul>
+<p>where
+<img class="math" src="_images/math/b8f6b6155672073f0d09caf6c59fc616b22475b1.png" alt="f_{corr}"/> is the corrected value,
+<img class="math" src="_images/math/41df5ec41dc53eea53b87fdd7d3a724da6f6f0d2.png" alt="\sigma_d"/> is the reference standard deviation,
+<img class="math" src="_images/math/e08876b8d4da4e902c0c1f892d0cd3181c9cf25e.png" alt="\sigma_i"/> is the current profile standard deviation,
+<img class="math" src="_images/math/5b7752c757e0b691a80ab8227eadb8a8389dc58a.png" alt="f"/> is the current value,
+<img class="math" src="_images/math/e1aaac0305e1b00c3c08173dd3e8402b6320c110.png" alt="m_i"/> is the current profile and
+<img class="math" src="_images/math/92f0e8d41e16b77a63db3f7403341735ab24d293.png" alt="m_d"/> is the reference mean.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ground surveys (unlike remote sensing) often demonstrate profile-to-profile offsets but rarely gain changes so that only matching profiles mean (or median) is usually appropriate (<code class="docutils literal notranslate"><span class="pre">configuration='mono'</span></code>):</p>
+<div class="math">
+<p><img src="_images/math/aac75a672d42cff60bab6714bc477af1b04422ce.png" alt="f_{corr} = f - m_i + m_d"/></p>
+</div><p>This is similar to the zero-mean filter, with the difference that the profile mean (or median) is set to a reference value instead of zero.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Nprof</span></code> is set to zero for the reference computation, this is strictly equivalent to the zero-mean filter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">destripecon</span><span class="p">(</span><span class="n">Nprof</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s1">&#39;mono&#39;</span><span class="p">,</span> <span class="n">reference</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Strictly equals to</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">zeromeanprofile</span><span class="p">(</span><span class="n">setvar</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p><em>Summary of the destiping configurations</em></p>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Configuration / Method</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">'additive'</span></code></p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">'multiplicative'</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p><code class="docutils literal notranslate"><span class="pre">'mono'</span></code></p></th>
+<td><p><img class="math" src="_images/math/86829cad998d52a7945f62ac765a1e121cde334c.png" alt="f_{corr} = f - m_i + m_d"/></p></td>
+<td><p><img class="math" src="_images/math/c41cee0ba8cde82257fa7b90e1f2b4c7e1d41726.png" alt="f_{corr} = f \frac{m_d}{m_i}"/></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p><code class="docutils literal notranslate"><span class="pre">'multi'</span></code></p></th>
+<td><p><img class="math" src="_images/math/367924941a26eaed7edff0b3f12ee24944d8a8c8.png" alt="f_{corr} = (f - m_i) \frac{\sigma_d}{\sigma_i} + m_d"/></p></td>
+<td><p><img class="math" src="_images/math/c45322f9a5c7956a71680dbd02aea4558d641081.png" alt="f_{corr} = f \frac{\sigma_d}{\sigma_i} \frac{m_d}{m_i}"/></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Mean cross-track profile display</strong></p>
+<blockquote>
+<div><p>The data mean cross-track profile before and after destriping can be displayed as follow:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">meantrack_plot</span><span class="p">(</span><span class="n">Nprof</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">,</span> <span class="n">reference</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="n">plotflag</span><span class="o">=</span><span class="s1">&#39;raw&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dataset</span><span class="o">.</span><span class="n">meantrack_plot</span><span class="p">(</span><span class="n">Nprof</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;additive&#39;</span><span class="p">,</span> <span class="n">reference</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="n">plotflag</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><div class="figure align-center" id="id66">
+<img alt="_images/figDestriping3.png" src="_images/figDestriping3.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 60 </span><span class="caption-text">Destriping - mean cross-track profile (before).</span><a class="headerlink" href="#id66" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+<td><div class="figure align-center" id="id67">
+<img alt="_images/figDestriping4.png" src="_images/figDestriping4.png" style="height: 6cm;" />
+<p class="caption"><span class="caption-number">Fig. 61 </span><span class="caption-text">Destriping - mean cross-track (after).</span><a class="headerlink" href="#id67" title="Permalink to this image">¶</a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="id31">
+<h3>Parameters<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head stub"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><th class="stub"><p>Nprof</p></th>
+<td><p>Number of neighboring profiles used to compute the the reference values.</p></td>
+<td><p>int or ‘all’</p></td>
+<td><p>0, 4 ,… or ‘all’</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>setmin</p></th>
+<td><p>Data values lower than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> are ignored.</p></td>
+<td><p>float</p></td>
+<td><p>12, 44.5, …, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>setmax</p></th>
+<td><p>Data values higher than <code class="docutils literal notranslate"><span class="pre">setmin</span></code> are ignored.</p></td>
+<td><p>float</p></td>
+<td><p>12, 44.5, …, <code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>method</p></th>
+<td><p>Destriping methode.</p></td>
+<td><p>str</p></td>
+<td><p>‘additive’ or ‘multiplicative’</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>reference</p></th>
+<td><p>References used for destriping.</p></td>
+<td><p>str</p></td>
+<td><p>‘mean’ or ‘median’</p></td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>config</p></th>
+<td><p>Sensors configuration.</p></td>
+<td><p>str</p></td>
+<td><p>‘mono’ or ‘multi’</p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>valfilt</p></th>
+<td><p>[For future implementation] Flag to apply filter on the scattered data values rather than on the gridded data.</p></td>
+<td><p>bool</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>See <a class="reference internal" href="api.html#chap-hlvl-api-geophpy"><span class="std std-ref">High level API</span></a> for calling details.</p>
+</div>
+</div>
+<div class="section" id="curve-destriping">
+<h2>Curve destriping<a class="headerlink" href="#curve-destriping" title="Permalink to this headline">¶</a></h2>
+<p>… To Be Developed …</p>
+<p>Remove from the dataset the strip noise effect by fitting and subtracting a MEAN polynomial curve to each profile on the dataset.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mag-proc.html" class="btn btn-neutral float-right" title="Magnetic Processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="plot-fun.html" class="btn btn-neutral float-left" title="Plotting functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2014-2019, Lionel Darras, Quentin Vitale
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
