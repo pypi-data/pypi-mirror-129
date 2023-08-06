@@ -1,0 +1,9 @@
+netCDF4
+ipyleaflet
+ipywidgets
+ipython
+geojson
+pymetalink
+fiona
+rasterio
+rioxarray
