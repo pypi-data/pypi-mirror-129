@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: collegra
+Version: 0.1.0
+Summary: Collaborative Learning Graphs
+Author: Bob Kraft
+Author-email: bkraft4257@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pytest (>=6.2.5,<7.0.0)
+Requires-Dist: pytest-cov (>=3.0.0,<4.0.0)
