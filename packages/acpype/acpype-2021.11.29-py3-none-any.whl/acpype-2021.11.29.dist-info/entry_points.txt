@@ -1,0 +1,3 @@
+[console_scripts]
+acpype = acpype_lib.acpype:init_main
+
