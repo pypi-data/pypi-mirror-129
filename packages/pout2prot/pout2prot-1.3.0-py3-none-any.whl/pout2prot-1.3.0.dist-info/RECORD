@@ -1,0 +1,12 @@
+pout2prot/Analyzer.py,sha256=uAtu6cBKzKacBFC-F8I-ma5E_35gtOKtqjqECtesg9I,1063
+pout2prot/OccamsRazorPreprocessor.py,sha256=OA8aov-pZiZrpljE1yFvJwaE-QCfnFYGA-sn_IaExfg,10079
+pout2prot/OutputWriter.py,sha256=ZyhEkfsF5jkmdsqFnFIMDMHce1BBtHmNWSrVYIiq2ZQ,6549
+pout2prot/Parser.py,sha256=fKTmB8Ow85BkU2DWKQ36HIdTL3gJqTZ8radT5Kpa3wI,5638
+pout2prot/ProteinGrouping.py,sha256=d_flasiG_QFGNpA3oUURTts9SiQ8h6HkdXcYRfLl94k,2939
+pout2prot/ProteinSubGrouping.py,sha256=iTYx8rPfjxUSNkYaFeSPcz7EPMx_2VoF82nkis9G1e4,3355
+pout2prot/main.py,sha256=K47YUygywvDHQIoktumtlk60rvkD4fvIX6KwrXia9f4,3111
+pout2prot-1.3.0.dist-info/METADATA,sha256=cFCqoFz9SHGh0Zjz56hf331inHw6mQgaNsbcoJCCUp8,1655
+pout2prot-1.3.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pout2prot-1.3.0.dist-info/entry_points.txt,sha256=SUFqpJYiCXcmefgeNd-d15TFEqLnmLrdvFZciK54Jno,51
+pout2prot-1.3.0.dist-info/top_level.txt,sha256=hajIsiBhxQ7kNmoAbXy69Dts8Z3Qewn-TRSa6uJjbv8,10
+pout2prot-1.3.0.dist-info/RECORD,,
