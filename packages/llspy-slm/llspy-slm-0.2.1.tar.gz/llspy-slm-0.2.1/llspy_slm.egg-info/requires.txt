@@ -1,0 +1,13 @@
+numpy
+scipy
+pillow
+qtpy
+
+[:python_version < "3.10"]
+numba
+
+[tests]
+pytest
+pytest-qt
+pyqt5
+pytest-cov
