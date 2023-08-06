@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xiaoai
+Version: 0.1.0
+Summary: 小爱音箱非官方SDK。
+Home-page: https://github.com/long2ice/xiaoai
+License: Apache-2.0
+Keywords: xiaoai,xiaomi
+Author: long2ice
+Author-email: long2ice@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx
+Project-URL: Documentation, https://github.com/long2ice/xiaoai
+Project-URL: Repository, https://github.com/long2ice/xiaoai.git
+Description-Content-Type: text/markdown
+
+# xiaoai
+
+小爱音箱非官方SDK。
+
