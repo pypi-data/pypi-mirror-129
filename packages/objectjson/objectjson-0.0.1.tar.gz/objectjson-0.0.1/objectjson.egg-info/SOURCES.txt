@@ -1,0 +1,8 @@
+jsoneer.py
+objectjson.py
+setup.py
+objectjson.egg-info/PKG-INFO
+objectjson.egg-info/SOURCES.txt
+objectjson.egg-info/dependency_links.txt
+objectjson.egg-info/entry_points.txt
+objectjson.egg-info/top_level.txt
