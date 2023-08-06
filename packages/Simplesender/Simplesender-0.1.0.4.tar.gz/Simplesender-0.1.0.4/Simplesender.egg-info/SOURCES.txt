@@ -1,0 +1,7 @@
+setup.py
+Simplesender/Simplesender.py
+Simplesender/__init__.py
+Simplesender.egg-info/PKG-INFO
+Simplesender.egg-info/SOURCES.txt
+Simplesender.egg-info/dependency_links.txt
+Simplesender.egg-info/top_level.txt
