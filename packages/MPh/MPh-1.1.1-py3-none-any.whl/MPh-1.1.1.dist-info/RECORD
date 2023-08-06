@@ -1,0 +1,14 @@
+mph/__init__.py,sha256=bV0oH0OBa3FxbFhvhz_fsN8MPyAnQgyM4R6U0IJk9DI,410
+mph/client.py,sha256=-r6F01gEl1CHjo0Kc-WZyjncfO6MQ6Nn_sZffSOJxiQ,20346
+mph/config.py,sha256=XgJ4tvodPOi1HMUhNMzu2CIC9ecbP30jYbha1nq1fTo,4580
+mph/discovery.py,sha256=0aKl9Bjboy8dg0Fhlxeep2uoCOgCP47lH1ZO54xEYOQ,15646
+mph/meta.py,sha256=CcftF7cWr_jptliFgHHNV43tU5pkntybdDXUbwcyKDc,235
+mph/model.py,sha256=-fX_SbaO3i2nbrCqXju3YONAX0TE62wh8w4D73RBjhw,41098
+mph/node.py,sha256=5E3_3kEDBNCDBgxWnmVED5AiZQ9WAjX-jsrGIC0X25I,37218
+mph/server.py,sha256=2XPjT84xD0LJzuSifChLR2HFAO_YX3OExIEROGHDRUg,7161
+mph/session.py,sha256=BrT8qhhklFfrKaCf6mie454OD2pKEhLpnfP7jA1Y3Iw,6809
+mph/tags.json,sha256=Gi_0Yr3AI_LrGRPwAQX5wSRL0ZwBUFT7Cgg3x8klHS8,210320
+MPh-1.1.1.dist-info/license.txt,sha256=NTbuW4CPu2i6gti7skvKgVdMUILszoUp7hILXUvwEUs,1093
+MPh-1.1.1.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+MPh-1.1.1.dist-info/METADATA,sha256=DZFy0WDQRec0KkU4xco3YJk-dP5NG-F94jgD_Z31LtQ,2727
+MPh-1.1.1.dist-info/RECORD,,
