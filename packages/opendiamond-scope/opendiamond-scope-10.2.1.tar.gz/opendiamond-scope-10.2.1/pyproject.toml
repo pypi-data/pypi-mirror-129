@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2021 Carnegie Mellon University
+# SPDX-License-Identifier: CC0-1.0
+
+[tool.poetry]
+name = "opendiamond-scope"
+version = "10.2.1"
+description = "OpenDiamond scope manipulation library and tools"
+readme = "README.md"
+authors = [
+    "Carnegie Mellon University <diamond@cs.cmu.edu>",
+    "Benjamin Gilbert <bgilbert@cs.cmu.edu>",
+    "Jan Harkes <jaharkes@cs.cmu.edu>",
+    "Ziqiang Feng <zf@cs.cmu.edu>",
+]
+license = "EPL-1.0"
+homepage = "https://diamond.cs.cmu.edu"
+repository = "https://github.com/cmusatyalab/opendiamond-scope"
+
+packages = [
+    { include = "opendiamond" },
+]
+include = [
+    { path = "LICENSES", format = "sdist" },
+    { path = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6.1,<4.0"
+python-dateutil = ">=1.5"
+click = "^8.0.3"
+cryptography = "^35.0.0"
+importlib-metadata = {version = "^4.8.1", python = "< 3.8"}
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.15.0"
+pytest = "^5.2"
+nox = "^2021.10.1"
+nox-poetry = "^0.8.6"
+bump2version = "^1.0.1"
+
+[tool.poetry.scripts]
+opendiamond-scope = 'opendiamond.scope.cli:cli'
+cookiecutter = 'opendiamond.scope.cli_generate:generate'
+diamond-newscope = 'opendiamond.scope.cli_import:import_'
+
+[tool.poetry.plugins."opendiamond.cli_plugins"]
+scope = 'opendiamond.scope.cli:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

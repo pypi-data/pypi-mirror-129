@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: opendiamond-scope
+Version: 10.2.1
+Summary: OpenDiamond scope manipulation library and tools
+Home-page: https://diamond.cs.cmu.edu
+License: EPL-1.0
+Author: Carnegie Mellon University
+Author-email: diamond@cs.cmu.edu
+Requires-Python: >=3.6.1,<4.0
+Classifier: License :: OSI Approved :: Eclipse Public License 1.0 (EPL-1.0)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Requires-Dist: cryptography (>=35.0.0,<36.0.0)
+Requires-Dist: importlib-metadata (>=4.8.1,<5.0.0); python_version < "3.8"
+Requires-Dist: python-dateutil (>=1.5)
+Project-URL: Repository, https://github.com/cmusatyalab/opendiamond-scope
+Description-Content-Type: text/markdown
+
+# OpenDiamond-scope
+
+Library and tools for manipulating OpenDiamond search scopes.
+
+
+# To install the latest release from PyPI
+
+    pipx install opendiamond-scope          # or
+    pip install --user opendiamond-scope
+
+
+# Building from source
+
+For development, a consistent development environment is managed with poetry.
+If you are developing locally it is recommended to set up pre-commit git hooks.
+
+    poetry install
+    poetry run pre-commit install   # optional
+
+The code can then be run from the managed environment.
+
+    poetry run opendiamond-scope -h
+
+Running of tests and release tagging is done with nox, which should already be
+installed in the development environment at this point.
+
+    # run tests against different installed python interpreters
+    poetry run nox
+
+    # release version tagging (and publishing) are handled by a nox script
+    poetry run nox -s release -- [major/minor/patch]
+
