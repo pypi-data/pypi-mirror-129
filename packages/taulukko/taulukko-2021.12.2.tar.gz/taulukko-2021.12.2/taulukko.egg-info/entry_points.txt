@@ -1,0 +1,3 @@
+[console_scripts]
+taulukko = taulukko.cli:app
+
