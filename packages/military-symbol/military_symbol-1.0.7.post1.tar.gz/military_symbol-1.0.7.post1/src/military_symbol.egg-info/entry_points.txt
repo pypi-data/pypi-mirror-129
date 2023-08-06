@@ -1,0 +1,3 @@
+[console_scripts]
+military_symbol = military_symbol.command_line:command_line_main
+
