@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+asyncns/asyncns.egg-info/PKG-INFO
+asyncns/asyncns.egg-info/SOURCES.txt
+asyncns/asyncns.egg-info/dependency_links.txt
+asyncns/asyncns.egg-info/top_level.txt
