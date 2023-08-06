@@ -1,0 +1,9 @@
+djangomockingbird/__init__.py,sha256=I0j-9wipAeq2hh47HDVdLm-p-sKDMjnmwDCV0YpqAbA,96
+djangomockingbird/make_mocks.py,sha256=zXlS3iPl0mANgpQvrR6oZ9MuQ-T7VZtTX0I1hgdGc8g,2624
+djangomockingbird/queryset.py,sha256=vU0H82jrVA_psvDwmJhptLFORq6OjlB82ytyUBTZpYQ,6353
+djangomockingbird/queryset_utils.py,sha256=t0nfHARoSlQMqbS7G1iyXRB5xh49WEsrHE7FII9p2hY,1209
+djangomockingbird/utils.py,sha256=gtDkEoc93XHbpgL5_vYqKQ83_33BJQQ_VnZm1UirO1Q,2102
+djangomockingbird-1.0.5.dist-info/LICENSE,sha256=fJxQ1fKlrV_nHQwlS6Jekj5tun6nKCpoGj93lN2T-1M,1070
+djangomockingbird-1.0.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+djangomockingbird-1.0.5.dist-info/METADATA,sha256=QWh_oq8eVEaQSBejjXa2_E_KqvlBF7QK9GvZc2k3PPI,4970
+djangomockingbird-1.0.5.dist-info/RECORD,,
