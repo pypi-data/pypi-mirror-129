@@ -1,0 +1,3 @@
+GitPython
+Django>=2.2
+wheel
