@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: secmind
+Version: 1.1
+Summary: secmind library
+Home-page: https://github.com/x86arm
+Author: Godzilla.Y
+Author-email: xphook@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+pip install secmind
+
