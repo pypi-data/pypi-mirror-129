@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/crawlabpy/__init__.py
+src/crawlabpy/datapool.py
+src/crawlabpy/encoder.py
+src/crawlabpy/utils.py
+src/crawlabpy.egg-info/PKG-INFO
+src/crawlabpy.egg-info/SOURCES.txt
+src/crawlabpy.egg-info/dependency_links.txt
+src/crawlabpy.egg-info/top_level.txt
