@@ -1,0 +1,10 @@
+ppydb/__init__.py,sha256=SQR3CQCJ1QepUHX9gNeFHIcdufgUGYwEriWXyHJ9m7w,211
+ppydb/constraints.py,sha256=yJgMVdnLg1PLcNzcCCILX42saYr4ruyV4P12tJlIU8U,153
+ppydb/datatypes.py,sha256=4lmC1UL1oP26cuwCNRJ5d0R1_JKlM8u2pgInWdSzaKk,138
+ppydb/schema.py,sha256=vf4ZgJ36B2_bEyoNW1AZR4idJeHzE7NiG2UNFgmJra4,235
+ppydb/table.py,sha256=-V0uetBX1ABcWJ2hAtLQWTNWnNp7QG7jY_Ow48YOgDo,158
+PPyDB-0.0.1.dist-info/LICENSE,sha256=7UOVKpaYQN_s8szjnz8zEXBHZsGNN1BkE4yF7sFVhlQ,1068
+PPyDB-0.0.1.dist-info/METADATA,sha256=OkxKUzij5CJq4asPYufPuWWWibl34C7kxUd1mA-g9LM,401
+PPyDB-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PPyDB-0.0.1.dist-info/top_level.txt,sha256=GmjknmAjwNa3N3oqg0_RBSVck9wPKh9yPZ0nGugk6Rg,6
+PPyDB-0.0.1.dist-info/RECORD,,
