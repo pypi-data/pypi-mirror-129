@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zdpapi_router"
+version = "1.0.0"
+description = "快速开发后端API的路由组件，支持自动生成CRUD接口"
+authors = ["张大鹏 <lxgzhw@163.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/zhangdapeng520/zdpapi_router"
+repository = "https://github.com/zhangdapeng520/zdpapi_router"
+documentation = "https://github.com/zhangdapeng520/zdpapi_router"
+keywords = ["zapi", "router", "crud", "async", "zhangdapeng"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+zdpapi = "^0.1.0"
+zdpapi-mysql = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
