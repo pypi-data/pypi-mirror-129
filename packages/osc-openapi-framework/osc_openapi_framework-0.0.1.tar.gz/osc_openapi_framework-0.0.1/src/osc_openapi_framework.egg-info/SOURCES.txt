@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/osc_openapi_framework/__init__.py
+src/osc_openapi_framework/analyzer.py
+src/osc_openapi_framework/builder.py
+src/osc_openapi_framework/parser.py
+src/osc_openapi_framework/schema.py
+src/osc_openapi_framework.egg-info/PKG-INFO
+src/osc_openapi_framework.egg-info/SOURCES.txt
+src/osc_openapi_framework.egg-info/dependency_links.txt
+src/osc_openapi_framework.egg-info/requires.txt
+src/osc_openapi_framework.egg-info/top_level.txt
