@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pdx-lib
+Version: 0.0.1
+Summary: Library to speed up common scripting tasks at PSU
+Home-page: https://github.com/mikegostomski/pdx
+Author: Mike Gostomski
+Author-email: mjg@pdx.edu
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cx-Oracle
+Requires-Dist: gitpython
+Requires-Dist: pycryptodome
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+Library specifically for my custom-built development scripts at PSU. 
+
+
