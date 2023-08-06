@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: ivy-builder
+Version: 1.1.7
+Summary: Build custom Ivy training tasks with clear, hierarchical and robust user specifications.
+Home-page: https://ivy-dl.org/builder
+Author: Ivy Team
+Author-email: ivydl.team@gmail.com
+License: Apache 2.0
+Project-URL: Docs, https://ivy-dl.org/builder/
+Project-URL: Source, https://github.com/ivy-dl/builder
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+
+
+
+**Build custom Ivy training tasks with clear, hierarchical and robust user specifications.**
+
+
+
+**Ivy Libraries**
+
+There are a host of derived libraries written in Ivy, in the areas of mechanics, 3D vision, robotics, gym environments,
+neural memory, pre-trained models + implementations, and builder tools with trainers, data loaders and more. Click on
+the icons below to learn more!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Citation
+--------
+
+::
+
+    @article{lenton2021ivy,
+      title={Ivy: Templated Deep Learning for Inter-Framework Portability},
+      author={Lenton, Daniel and Pardo, Fabio and Falck, Fabian and James, Stephen and Clark, Ronald},
+      journal={arXiv preprint arXiv:2102.02886},
+      year={2021}
+    }
+
