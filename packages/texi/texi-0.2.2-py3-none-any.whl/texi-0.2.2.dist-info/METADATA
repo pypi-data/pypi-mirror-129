@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: texi
+Version: 0.2.2
+Summary: Text processing toolbox.
+Author: Yevgnen Koh
+Author-email: wherejoystarts@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: pyahocorasick
+Requires-Dist: pycarton
+Requires-Dist: pytorch-crf
+Requires-Dist: pytorch-ignite
+Requires-Dist: torch
+Requires-Dist: transformers
