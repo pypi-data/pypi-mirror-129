@@ -1,0 +1,3 @@
+django<4.0,>=2.0
+unicms-template-italia
+unicms-unical-storage-handler
