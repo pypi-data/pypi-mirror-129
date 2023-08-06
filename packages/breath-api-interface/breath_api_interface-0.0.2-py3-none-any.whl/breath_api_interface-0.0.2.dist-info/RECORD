@@ -1,0 +1,11 @@
+breath_api_interface/__init__.py,sha256=00ERYaAQow7QttymodXuqphsBWk_ClF4PxHJJah34bk,124
+breath_api_interface/proxy.py,sha256=ji6YHr1f1Urgznys1dnkpn-_HX_O81_AyWorpWXWJUE,1723
+breath_api_interface/queue.py,sha256=-8l_tXm76VjBbZlzaJqTaYti9W3MAO42OWjeMavri9s,3728
+breath_api_interface/request.py,sha256=UsBm3ppaCCQa0xkfE8Lp9iFlKUKsD3R6St1ukFdAKeM,1674
+breath_api_interface/service_interface/__init__.py,sha256=4nGG-bqUDA_3EfVB0fzniWHyUiqOpr1RTMZ901keCh0,28
+breath_api_interface/service_interface/service.py,sha256=mBDFkg9UegyYYtt-c1jeTbNRYJgatvIUvkg81Lf1Hoc,1836
+breath_api_interface-0.0.2.dist-info/LICENSE,sha256=EiSfR4nspPnZVrzatL0XMFJCnIV_O1X8pzuGW3sud4A,1056
+breath_api_interface-0.0.2.dist-info/METADATA,sha256=5BmJS4mpLKjxTYKGclh0QY00ZtZLAKhtE8xTf9k3fXo,844
+breath_api_interface-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+breath_api_interface-0.0.2.dist-info/top_level.txt,sha256=h5epdK_Ue5VyicOQS7bgF0GsmzbZTyZ23T15S9hbb6A,21
+breath_api_interface-0.0.2.dist-info/RECORD,,
