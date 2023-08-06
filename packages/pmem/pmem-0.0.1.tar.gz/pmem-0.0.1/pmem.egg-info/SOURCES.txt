@@ -1,0 +1,6 @@
+setup.py
+pmem.egg-info/PKG-INFO
+pmem.egg-info/SOURCES.txt
+pmem.egg-info/dependency_links.txt
+pmem.egg-info/not-zip-safe
+pmem.egg-info/top_level.txt

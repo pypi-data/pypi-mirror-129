@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pmem
+Version: 0.0.1
+Summary: pmem
+Home-page: https://github.com/pypiname/pmem
+Author: pypiname
+Author-email: pypiname@007.pub
+License: LGPL v3
+Description: pmem
+Keywords: pmem
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
