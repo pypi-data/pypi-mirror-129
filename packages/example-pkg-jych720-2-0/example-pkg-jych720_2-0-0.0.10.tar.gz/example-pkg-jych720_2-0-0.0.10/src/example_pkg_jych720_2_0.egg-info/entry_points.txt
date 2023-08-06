@@ -1,0 +1,3 @@
+[console_scripts]
+hellow-world = timmins.aaa:hello_world [pretty-printer]
+
