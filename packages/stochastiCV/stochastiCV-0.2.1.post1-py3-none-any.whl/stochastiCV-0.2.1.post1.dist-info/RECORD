@@ -1,0 +1,10 @@
+stochastiCV/__init__.py,sha256=o239hOFOZQ3StPtSCxFjV3unhp_i93l__FtI0bPjC6g,276
+stochastiCV/_utils.py,sha256=PQCyiEnFFdjX0IM5sMrsg0ngMqn4rw4v2FklZW2x8Ck,9126
+stochastiCV/kfolds.py,sha256=rsEKRNzKmjaGlzNK701VZ21VQEZOXvTxjiRYCNb3PAg,11460
+stochastiCV/straight.py,sha256=39ZzcaY5Ph80E_NnUiWHqmaUlQYzhnEBW3IKPBTM2_o,6742
+stochastiCV/subsample.py,sha256=f6C-qeWmZfP4o0tPPMWnw2YpEhpOmOP7KY7SeJF-4cs,10673
+stochastiCV-0.2.1.post1.dist-info/LICENSE,sha256=r5heWzSYDl1a8QzTzT8MnSYiFnzUNCF5OVL8oVIJ4Xk,1525
+stochastiCV-0.2.1.post1.dist-info/METADATA,sha256=xFOc7LKIew7OpxuP8bOnTf9yGGqnS57VTOrwJeTfuJQ,10333
+stochastiCV-0.2.1.post1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+stochastiCV-0.2.1.post1.dist-info/top_level.txt,sha256=8bAmqh_dd3g4T6cmkUn5aZTsZwIsPukG05sYJdmHZrs,12
+stochastiCV-0.2.1.post1.dist-info/RECORD,,
