@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pykeyatome
+Version: 1.1.1
+Summary: A simple API for key atome electricity consumption
+Home-page: https://github.com/jugla/pyKeyAtome
+License: MIT
+Author: jugla
+Requires-Python: >=3.7.0,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: fake-useragent (>=0.1.11,<0.2.0)
+Requires-Dist: requests (>=2.22.0,<3.0.0)
+Requires-Dist: simplejson (>=3.16.0,<4.0.0)
+Project-URL: Repository, https://github.com/jugla/pyKeyAtome
+Description-Content-Type: text/markdown
+
+# KeyAtome PyPi
+![GitHub release](https://img.shields.io/github/release/jugla/pyKeyAtome)
+
+Get your energy consumption data from Atome, a Linky-compatible device made by Total/Direct-Energie.
+
+### Installing
+
+```
+pip install pykeyatome
+```
+
+
+## Running the tests
+The tox configuration is already included.
+Simply launch:
+```
+$ tox
+```
+
+(Do not forget to 'pip install tox' if you do not have it.)
+Tests are written in the tests directory.
+tests/data folder contains samples of Atome API for tests purposes.
+
+
+## Side notes
+
+This project is based on reverse engineering of Atome IOS APP performed by BaQs.
+
+
+## Contributing
+
+Any contribution is welcome, considering the number of features the API provides, there is room for improvement!
+
+## Acknowledgments
+
+* Thanks to k20human for the original inspiration with https://github.com/k20human/domoticz-atome
+* This project is a fork of https://github.com/BaQs/pyAtome (seems to be unmaintained)
+
+## Changelog
+
+### 1.0.0 first release
+
