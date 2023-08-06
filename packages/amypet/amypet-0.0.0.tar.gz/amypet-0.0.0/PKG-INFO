@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: amypet
+Version: 0.0.0
+Summary: Amyloid imaging to prevent Alzheimer's Disease
+Home-page: https://amypad.eu
+Maintainer: Casper da Costa-Luis
+Maintainer-email: casper.dcl@physics.org
+License: MPL 2.0
+Project-URL: Documentation, https://github.com/AMYPAD/amypet/#amypet
+Project-URL: Repository, https://github.com/AMYPAD/amypet
+Project-URL: Changelog, https://github.com/AMYPAD/amypet/releases
+Description: |Logo|
+        
+        AMYPET
+        ======
+        
+        Amyloid imaging to prevent Alzheimer's Disease.
+        
+        
+        Install
+        -------
+        
+        Choose one of the following:
+        
+        .. code:: sh
+        
+            pip install amypet  # command line interface (CLI) version
+            pip install amypet[gui]  # CLI and graphical user interface (GUI) version
+        
+        
+        Usage
+        -----
+        
+        .. code:: sh
+        
+            amypet --help  # CLI version
+            amypet.gui     # GUI version
+        
+        
+        .. |Logo| image:: https://amypad.eu/wp-content/themes/AMYPAD/images/AMYPAD_Logo.jpg
+           :target: https://amypad.eu
+        
+Keywords: pet,alzheimers
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Utilities
+Provides: amypet
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: niftypet
+Provides-Extra: gui
+Provides-Extra: dev

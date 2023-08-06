@@ -1,0 +1,15 @@
+.gitignore
+LICENCE.md
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+amypet/__init__.py
+amypet/_dist_ver.py
+amypet.egg-info/PKG-INFO
+amypet.egg-info/SOURCES.txt
+amypet.egg-info/dependency_links.txt
+amypet.egg-info/entry_points.txt
+amypet.egg-info/not-zip-safe
+amypet.egg-info/requires.txt
+amypet.egg-info/top_level.txt
