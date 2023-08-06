@@ -1,0 +1,17 @@
+sync_dl/__init__.py,sha256=LG06il4ID7EGUz4Fa7iV3OOTTdWmSV1EJLz8dh1CVBY,1102
+sync_dl/cli.py,sha256=frpRzqBs2rM7BX4sC425Wl0PWyVuryIVHmGvHm0gqpE,14390
+sync_dl/commands.py,sha256=UbSOEENVgcazgn6f6pILwRA8-bMhrLBM10jbbu3_eag,22291
+sync_dl/config.py,sha256=hk_Xmj8hpBO2MCQyRI1mw3Jy8WEg_QnCB7YaVHlmFkM,1997
+sync_dl/helpers.py,sha256=vM0rG4YrYojFWtymDe_U7K2ak0jaRSo7CWH_-xeKk4E,6129
+sync_dl/plManagement.py,sha256=YgRMOzTL4wrD0Ni-PBIfQIJwV58as7fWjwfJdAXfGdg,7724
+sync_dl/ytdlWrappers.py,sha256=5GgVT4QHx0zTthR0PSUomeBlE16rOfFH0F5PitZfkdo,3638
+sync_dl/timestamps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sync_dl/timestamps/scraping.py,sha256=hpQCyv3Zgplxvfa-zKtulBXKLKU8RUJmtY2yhtM8dF8,6307
+sync_dl/timestamps/timestamps.py,sha256=R-TsHNoTp45wxCoD_W3hpHqTSxtPVE60I8WKp0lKH_k,3758
+sync_dl-2.1.0.data/scripts/sync-dl,sha256=yNRWou5dVV9sWPDy5qBs5PrM5UcFWR7Wm4AMfiHTUVY,76
+sync_dl-2.1.0.dist-info/LICENCE,sha256=PQ26oIz5SuWOaAz9Wqns4Jw_dsMn_-rxqCbelzCE6mA,1072
+sync_dl-2.1.0.dist-info/METADATA,sha256=ZTdlkOJxVlA-wivoL3-fLZ5-3HjWrOsApl-ziMs0j2c,6027
+sync_dl-2.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sync_dl-2.1.0.dist-info/entry_points.txt,sha256=iNLHswFCfvh33s5OSxSlxWXQgdSsY2_-LTqvHzlb6cM,42
+sync_dl-2.1.0.dist-info/top_level.txt,sha256=EY1cyIHBLNz4lnpANbUtCC_A8sygjJe3Ih9E-2mBMZU,8
+sync_dl-2.1.0.dist-info/RECORD,,
