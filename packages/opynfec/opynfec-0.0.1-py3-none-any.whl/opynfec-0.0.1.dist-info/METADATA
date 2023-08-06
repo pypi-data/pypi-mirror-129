@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: opynfec
+Version: 0.0.1
+Summary: A wrapper for the openFEC API
+Home-page: https://github.com/marco-team/opynfec
+Author: Ryan Crisanti
+Author-email: rcrisanti@me.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/marco-team/opynfec/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib (>="1.26.6")
+Requires-Dist: requests (>="2.26.0")
+
+# opynfec
+Python wrapper for OpenFEC API
+
+***This product uses the openFEC API but is not endorsed or certified by the Federal Election Commission (FEC).***
+
+
