@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ICS-VSBIO
+Version: 0.5.1
+Summary: Python package to help users read and write Intrepid's vsb files
+Home-page: https://github.com/intrepidcs/ICS_VSBIO
+Author: Zaid Nackasha
+Author-email: support@intrepidcs.com
+License: UNKNOWN
+Download-URL: https://github.com/intrepidcs/ICS_VSBIO/archive/0.5.1.tar.gz
+Platform: x86_64
+
+UNKNOWN
+
