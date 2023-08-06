@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        jais=jais.__main__:cli
+    

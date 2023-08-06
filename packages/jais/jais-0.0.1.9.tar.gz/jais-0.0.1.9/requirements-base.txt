@@ -1,0 +1,9 @@
+sphinx
+click
+pyfiglet
+pytest
+furo
+ruamel.yaml
+easydict
+coloredlogs
+rich
