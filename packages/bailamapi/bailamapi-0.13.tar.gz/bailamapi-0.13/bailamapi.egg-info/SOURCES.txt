@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bailamapi/__init__.py
+bailamapi/bailam_api.py
+bailamapi/json_to_table.py
+bailamapi/typestools.py
+bailamapi.egg-info/PKG-INFO
+bailamapi.egg-info/SOURCES.txt
+bailamapi.egg-info/dependency_links.txt
+bailamapi.egg-info/not-zip-safe
+bailamapi.egg-info/requires.txt
+bailamapi.egg-info/top_level.txt
