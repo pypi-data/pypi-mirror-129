@@ -1,0 +1,17 @@
+README.md
+setup.py
+sen2classification/__init__.py
+sen2classification/alcc.py
+sen2classification/bands.py
+sen2classification/exceptions.py
+sen2classification/gb_classification.py
+sen2classification/helpers.py
+sen2classification/land_cover_classification.py
+sen2classification/metas.py
+sen2classification/product.py
+sen2classification/spectral_index.py
+sen2classification.egg-info/PKG-INFO
+sen2classification.egg-info/SOURCES.txt
+sen2classification.egg-info/dependency_links.txt
+sen2classification.egg-info/requires.txt
+sen2classification.egg-info/top_level.txt
