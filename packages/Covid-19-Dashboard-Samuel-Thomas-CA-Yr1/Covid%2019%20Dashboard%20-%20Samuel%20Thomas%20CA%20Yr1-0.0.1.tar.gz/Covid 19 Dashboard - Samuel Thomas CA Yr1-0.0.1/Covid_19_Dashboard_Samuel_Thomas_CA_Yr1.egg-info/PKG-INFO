@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: Covid-19-Dashboard-Samuel-Thomas-CA-Yr1
+Version: 0.0.1
+Summary: A module to create and communicate with a covid 19 flask dashboard
+Home-page: https://pypi.org/project/Covid 19 Dashboard - Samuel Thomas CA Yr1/
+Author: Samuel Thomas
+Author-email: scct201@exeter.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >-3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+INTRUCTIONS FOR COVID 19 DASHBOARD
+##################################
+
+# INTRODUCTION
+
+This program creates a COVID 19 dashboard with up-to-date information of current covid levels and relevant news on the status of the pandemic.
+The numeric data shown on the dashboard will be the total 7 day cases in your selected area along with a seperate amount for your country,
+the current hostpital addmissions and the total number of deaths in you country. On the right-hand side of the dashbaord will be a widget containing the
+latest news that relates to COVID 19; and on the left and lower centre will be a scheduling widget for you to create update schedules so that the data shown on
+the dashboard will update periodically.
+
+# PREREQUISITES:
+- Python 3.6 and above 
+
+# MODULE INSTALLS FOR PROGRAM:
+
+- In the command terminal run these commands
+- pip install Flask
+- pip install uk-covid19
+- pip install newsapi-python
+
+#USING THE DASHBOARD
+
+~ EXECUTING CODE:
+            In order to execute the code you must execute the covid_data_interface.py file and then go to http://127.0.0.1:5000/
+
+~ LOCATION:
+            Inorder to change the location used in the program and see relevant data to your locattion, you must edit the value for the key 'Location' in the config.json file.
+            Once changed the appropriate data will appear after a restarting of the server (run code again).  
+~ NEWS WIDGET:
+            The news widget allows you the user to permenantly remove news articles that you know longer want to see. once removed they will be stored in the config file for you
+            to allow back in or view if you remain interested in that article.
+            To remove an article click the 'X' icon of the article you want removed and it will immediatly and permenantly be deleted.
+~ SCHEDULES WIDGET:
+            The schedules widget allows for updates to the dashboards data to be scheduled. Within this there are 5 components.
+            1 - Setting a time for your schedule; by clicking on the time entry field you can select a time for the future using the scroll wheel style provided
+            2 - Choosing a name for you schedule; by clicking on the name entry field and typing in the schedules name
+            3 - Selecting repeat; a schedule has the abilty to repeat itself so that is occurs 24hours ahead of the previous one. Select this option by ticking its box or not
+            4 - Update covid data; a schedule can be selected to update the covid 19 data on the dashbaord by selecting the tick box provided
+            5 - Upodate news data; a schedule can be selected to update the news data on the dashboard by selecting the tick box provided
+            \*NOTE - You can select both news and covid to be updated
+
+#APPENDIX 
+
+~ COVID 19 MODULE: 
+            link :   https://publichealthengland.github.io/coronavirus-dashboard-api-python-sdk/pages/getting_started.html
+~ NEWS API MODULE: 
+            link :  https://newsapi.org/docs/get-started
+            
+
+
