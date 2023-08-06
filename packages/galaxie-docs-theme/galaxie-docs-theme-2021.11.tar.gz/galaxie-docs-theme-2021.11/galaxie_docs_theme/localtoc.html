@@ -1,0 +1,20 @@
+{#
+    basic/localtoc.html
+    ~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: local table of contents.
+
+    :copyright: Copyright 2007-2021 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+{% set tocNav = toc
+| replace("<li>", "")
+| replace("</li>", "")
+| replace("<ul>", "<nav class='nav flex-column'>")
+| replace("</ul>", "</nav>")
+| replace("<a", "<a class='nav-link' ")%}
+{%- if display_toc %}
+
+  <h3><a href="{{ pathto(root_doc)|e }}">{{ _('Table of Contents') }}</a></h3>
+  {{ tocNav }}
+{%- endif %}

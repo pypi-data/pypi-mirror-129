@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: galaxie-docs-theme
+Version: 2021.11
+Summary: The Sphinx theme for the Galaxie docs and related projects
+Home-page: https://gitlab.com/rtnp/galaxie-docs-theme/
+Author: Tuxa
+Author-email: tuxa@rtnp.org
+License: GPLv3+
+Download-URL: https://pypi.org/project/galaxie-docs-theme
+Project-URL: Read the Docs, https://galaxie-docs-theme.readthedocs.io
+Project-URL: GitLab, https://gitlab.com/rtnp/galaxie-docs-theme
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.rst
+
+.. title:: Galaxie Docs Theme
+
+==================
+Galaxie Docs Theme
+==================
+.. code:: text
+
+                  ________        __                 __
+                 /  _____/_____  |  | _____  ___  __|__| ____
+                /   \  ___\__  \ |  | \__  \ \  \/  /  |/ __ \
+                \    \_\  \/ __ \|  |__/ __ \_>    <|  \  ___/_
+                 \________(______/____(______/__/\__\__|\_____/
+
+* Actual Homepage : https://gitlab.com/rtnp/galaxie-docs-theme
+* Documentation : https://galaxie-docs-theme.readthedocs.io
+
+The Project
+-----------
+*Galaxie Docs* Theme is *Sphinx* theme , dedicated to ultra low device.
+The theme is optimised for TTY Browser like *links2*, *lynx*, *elinks*, etc...
+
+In case of outage, each octet can be counted, then you should consider low profile computer or tools.
+
+If you searching a nice and ultra featured theme, clearly that theme is not for you.
+If you thing about low profile computer can be the future of the humanity, you are on the good place.
+
+The Mission
+-----------
+* Provide a Theme for text based browser
+* Permit to ultra low computer to read online pages
+* Easily installable with *pip*
+* Coupled with *Sphinx* have capability to manage a web portal for low profile computer's
+* Permit text based logo system
+
+Features
+--------
+* Each char is count
+* Simple HTML
+* Minimal JavaScript (Without that it will be better)
+* Minimal CSS (Without that it will be better)
+
+Contribute
+----------
+* Issue Tracker: https://gitlab.com/rtnp/galaxie-docs-theme/issues
+* Source Code: https://gitlab.com/rtnp/galaxie-docs-theme
+
+Our collaboration model is the Collective Code Construction Contract (C4): https://rfc.zeromq.org/spec:22/C4/
+
+
+License
+-------
+GNU GENERAL PUBLIC LICENSE Version 3
+
+
+See the LICENCE_
+
+.. _LICENCE: https://gitlab.com/rtnp/galaxie-docs-theme/blob/master/LICENSE.rst
+
+All contributions to the project source code ("patches") SHALL use the same license as the project.
+
+

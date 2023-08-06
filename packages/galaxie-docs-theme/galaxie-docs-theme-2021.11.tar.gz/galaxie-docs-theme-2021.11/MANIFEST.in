@@ -1,0 +1,2 @@
+include LICENSE.rst README.rst
+recursive-include galaxie_docs_theme *.*

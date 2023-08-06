@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+galaxie_docs_theme = galaxie_docs_theme
+
