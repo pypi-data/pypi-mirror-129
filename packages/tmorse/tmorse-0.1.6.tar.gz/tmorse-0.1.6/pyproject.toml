@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tmorse"
+version = "0.1.6"
+description = "Blinking Morse code on Thinkpad LEDs"
+authors = ["Mahyar Mahdavi <Mahyar@Mahyar24.com>"]
+license = "GPLv3"
+homepage = "https://github.com/mahyar24/TMorse/"
+repository = "https://github.com/mahyar24/TMorse/"
+readme = "README.md"
+exclude = ["pics/"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+mypy = "^0.910"
+pylint = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+tmorse = "tmorse.__main__:run"
