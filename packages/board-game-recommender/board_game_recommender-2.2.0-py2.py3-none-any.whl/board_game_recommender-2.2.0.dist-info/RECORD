@@ -1,0 +1,11 @@
+board_game_recommender/__init__.py,sha256=3_Sa7oqT7esRz98YIu_dJp3mxfKg3lmUY09sWqFewoE,175
+board_game_recommender/__main__.py,sha256=8BoRmWGeezus3u85te2WiQRt4d7EYioyZ3Kdlmb0CjE,5081
+board_game_recommender/__version__.py,sha256=vPJ24Ak3wJaNVC1clpz2PYhX7_j4U8674S25ylcId7c,103
+board_game_recommender/recommend.py,sha256=dGUKhLYVK1tZQ1Ig361dO8_13WG_xCHdlv-bHTSbOjE,30263
+board_game_recommender/trust.py,sha256=_JIm-faMKf7f3vOdN59v_X-FHn673R5PuZ7yUq8goyo,2101
+board_game_recommender/utils.py,sha256=Pn1F3bYo55AyCgkUMTUah8Jwn1vB3BySNrCKH_1C2Rk,3792
+board_game_recommender-2.2.0.dist-info/LICENSE,sha256=WcYkIFKvE2InORAE70AfXkBoQqXLLRsXETBDkNkwxNc,1072
+board_game_recommender-2.2.0.dist-info/METADATA,sha256=M7lMCpmXfQV3RjvgQX2VZ5Tv6TtTz0fO_D5jEZ8J7y4,4164
+board_game_recommender-2.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+board_game_recommender-2.2.0.dist-info/top_level.txt,sha256=jKIazzF16Ebf6__Rw9SdytOFlfhyKQ0drGyjTT-GX8k,23
+board_game_recommender-2.2.0.dist-info/RECORD,,
