@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+tanshicheng.egg-info/PKG-INFO
+tanshicheng.egg-info/SOURCES.txt
+tanshicheng.egg-info/dependency_links.txt
+tanshicheng.egg-info/entry_points.txt
+tanshicheng.egg-info/top_level.txt
+tsc-auto/__init__.py
+tsc-auto/main.py
+tsc-auto/set_gpu.py
