@@ -1,0 +1,10 @@
+api/__init__.py,sha256=rn-ATQJRTZXrSuVvY_Qe6omklCWN3xGP3ZDDzwsnLn0,170
+api/artifact.py,sha256=mbAnhPcvRC0u7RqwoU52BmYkvEBWah0j1FxEHep6fVE,1664
+api/azure_utils.py,sha256=IU1J7vUbLI1V048Hnk-BlbFK16dzobLOpV05p-uAbbg,4881
+api/generator.py,sha256=IqgxriB0Dmc7iIkvSuXUD1aW_VkIZT-uhKGz_JRT9qs,6588
+api/rest_api.py,sha256=-f8U5RT2VlT36vexDl8hNSH47vjagUWMM6IwPCrJ0fE,3853
+api/ui_app.py,sha256=mXvkW2ujvp_LMiu_YZC7N5NHOiqFuk8pwpTMRiuQZp0,8589
+api_automation_kit-0.7.0.dist-info/METADATA,sha256=cwOkCpsJJ7hsxvZZCt-irW_5_KWdHLXjr0VWKq8Z7PM,7654
+api_automation_kit-0.7.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+api_automation_kit-0.7.0.dist-info/top_level.txt,sha256=0XF5TFwfelCuuPcFarhKT7zW-9WUsZmb3a790D78BZE,4
+api_automation_kit-0.7.0.dist-info/RECORD,,
