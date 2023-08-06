@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "zdpapi"
+version = "0.1.0"
+description = "基于异步的快速开发RESTFUL API的极速后端框架"
+authors = ["张大鹏 <lxgzhw@163.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/zhangdapeng520/zapi"
+repository = "https://github.com/zhangdapeng520/zapi"
+documentation = "https://github.com/zhangdapeng520/zapi"
+keywords = ["zapi", "restful", "async", "zhangdapeng"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydantic = "^1.8.2"
+uvicorn = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

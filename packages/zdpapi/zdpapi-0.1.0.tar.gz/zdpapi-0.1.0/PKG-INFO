@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zdpapi
+Version: 0.1.0
+Summary: 基于异步的快速开发RESTFUL API的极速后端框架
+Home-page: https://github.com/zhangdapeng520/zapi
+License: MIT
+Keywords: zapi,restful,async,zhangdapeng
+Author: 张大鹏
+Author-email: lxgzhw@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Requires-Dist: uvicorn (>=0.15.0,<0.16.0)
+Project-URL: Documentation, https://github.com/zhangdapeng520/zapi
+Project-URL: Repository, https://github.com/zhangdapeng520/zapi
+Description-Content-Type: text/markdown
+
+# zapi
+基于异步的快速开发RESTFUL API的极速后端框架
+
+安装方式：
