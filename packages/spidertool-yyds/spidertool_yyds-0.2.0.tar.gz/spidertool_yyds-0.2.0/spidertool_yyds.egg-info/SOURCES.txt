@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+core/__init__.py
+core/spidertool_yyds.py
+spidertool_yyds.egg-info/PKG-INFO
+spidertool_yyds.egg-info/SOURCES.txt
+spidertool_yyds.egg-info/dependency_links.txt
+spidertool_yyds.egg-info/top_level.txt
