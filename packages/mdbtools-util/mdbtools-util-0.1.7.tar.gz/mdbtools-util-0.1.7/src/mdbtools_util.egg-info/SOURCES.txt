@@ -1,0 +1,13 @@
+AUTHORS.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/mdbtools_util/__init__.py
+src/mdbtools_util/util.py
+src/mdbtools_util.egg-info/PKG-INFO
+src/mdbtools_util.egg-info/SOURCES.txt
+src/mdbtools_util.egg-info/dependency_links.txt
+src/mdbtools_util.egg-info/not-zip-safe
+src/mdbtools_util.egg-info/top_level.txt
+tests/test_mdbtools_util.py
