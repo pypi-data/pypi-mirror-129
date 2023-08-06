@@ -1,0 +1,11 @@
+cbm_cpp.cp38-win_amd64.pyd,sha256=1f3evJrlfdv7t0Upu-7kK5yz8pgI-RTX-43q8dyW1EU,196096
+cbm/CBM.py,sha256=TF_LIpoexRDCU8Zsvr0QPdLpa06mtJHT2gBmr0_WJW8,14146
+cbm/__init__.py,sha256=lRGyV15H31B9gst4gBIp0zxAszN7GrEkXUzuatQ9MTY,168
+cbm/_version.py,sha256=7ZqJTjzr7Dz_Qzys1WT-7lm3xWVaq5TolHNYrpi6nuE,98
+cyclicbm-0.0.9.data/headers/cbm.h,sha256=qZvpL49x08NtvGwLXi8T4aYW7KyF-DwLqSVSQ1qsiKM,8231
+cyclicbm-0.0.9.data/headers/pycbm.h,sha256=XYhubjNAYWXp-9x86_NGulGpAHh-rw03ZeU4CDNIMh4,1144
+cyclicbm-0.0.9.dist-info/LICENSE,sha256=mQaUD2Gx8LUz-n2ZuvVReLKAj74RPqUd-_rYVyzNXys,1162
+cyclicbm-0.0.9.dist-info/METADATA,sha256=7Y93FQIlbVnj-4xRUDvkxu0zxRiYmTM0K-ayWQ6tLcs,5318
+cyclicbm-0.0.9.dist-info/WHEEL,sha256=P24hRDQapckAvHvgBBzlH5uw6rQ_oZQtKbG6drGrqOM,100
+cyclicbm-0.0.9.dist-info/top_level.txt,sha256=D2-Q9u2pPMv4Y7ZL8nI0LYKDj9RtSBN8Jk7dQ4Mp_qM,12
+cyclicbm-0.0.9.dist-info/RECORD,,
