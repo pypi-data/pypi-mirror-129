@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: exhaust
+Version: 1.0.0
+Summary: The exhaust package
+Author-email: Maik Riechert <maik.riechert@arcor.de>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Source, https://github.com/letmaik/exhaust
