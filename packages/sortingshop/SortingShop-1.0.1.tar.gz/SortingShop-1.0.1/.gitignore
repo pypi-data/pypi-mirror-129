@@ -1,0 +1,15 @@
+ppy
+src/sortingshop/exiftool-src/*
+
+# Python
+__pycache__
+/dist
+*.egg-info
+.eggs
+/build
+/venv
+
+# Vim
+*.sw[op]
+Session.vim
+tags
