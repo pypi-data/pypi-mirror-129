@@ -1,0 +1,3 @@
+[console_scripts]
+mvnx = mvnx:main
+
