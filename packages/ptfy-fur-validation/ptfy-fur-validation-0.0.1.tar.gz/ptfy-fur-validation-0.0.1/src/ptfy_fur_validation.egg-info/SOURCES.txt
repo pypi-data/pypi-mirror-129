@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fur_validation/__init__.py
+src/fur_validation/core.py
+src/fur_validation/logger/__init__.py
+src/fur_validation/logger/core.py
+src/fur_validation/validator/__init__.py
+src/fur_validation/validator/core.py
+src/ptfy_fur_validation.egg-info/PKG-INFO
+src/ptfy_fur_validation.egg-info/SOURCES.txt
+src/ptfy_fur_validation.egg-info/dependency_links.txt
+src/ptfy_fur_validation.egg-info/requires.txt
+src/ptfy_fur_validation.egg-info/top_level.txt
