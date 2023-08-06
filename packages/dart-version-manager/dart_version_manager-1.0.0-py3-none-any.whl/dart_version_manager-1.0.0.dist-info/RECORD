@@ -1,0 +1,16 @@
+dart_version_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dart_version_manager/__main__.py,sha256=z_E3u4IU1lDgTEE2otYxLVjdFvImbT-jR0983hKcDks,67
+dart_version_manager/commands/__init__.py,sha256=mMHOClqi-BgCL0g2zn-pfhBRflshleJr0pXtPtgK43s,457
+dart_version_manager/commands/build_command.py,sha256=HRseEBEuQo6sJgzLe947sSrPVpLANyjhJKtxuN0R4j4,2224
+dart_version_manager/commands/major_command.py,sha256=Ea3YV1lhkOZDIrLeWNsu60FmA2jV4o_wYxa863e3qWI,2409
+dart_version_manager/commands/minor_command.py,sha256=IRMDOT7hAOE5TTMqpHFLYxAvgEQNJYWcMOk88v9jqQc,2409
+dart_version_manager/commands/patch_command.py,sha256=1MyTIpGlllew63CbMT2YYjfcoQtpeANx-Evptiwd49Q,2376
+dart_version_manager/commands/pre_release_command.py,sha256=dIYqYJLeTudQ1mQ-0CHGYYOC_LrbIQg-cH3pEIG-QQI,2314
+dart_version_manager/core.py,sha256=MnlBzUtN3maDS77Es_0cAcScNrkPDVBPrkPR1AzUZ5I,5585
+dart_version_manager/main.py,sha256=gRMnHEt58kdC1j-bnSOCh2UJtskCwVhrLVCbR1gZjvA,2390
+dart_version_manager/utils.py,sha256=LdG7f2XdyP6dHEEVT2Fo5t2cgEMFgSa2nbQ-GDEHEt4,326
+dart_version_manager-1.0.0.dist-info/entry_points.txt,sha256=giE-sJJBr7gx4kYfj1bPPZX-eN2YXauxBWTtTF9sfgc,53
+dart_version_manager-1.0.0.dist-info/LICENSE,sha256=_CSRv1z49s55CAmWoSt5W0eB49re1cF2UXuJQ_nT56g,1084
+dart_version_manager-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+dart_version_manager-1.0.0.dist-info/METADATA,sha256=q6jUv-yQqpgwgbPWO75i3fBLrjgfvYm_Yfwm2N0e9Ms,10888
+dart_version_manager-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+dvm=dart_version_manager.main:app
+
