@@ -1,0 +1,4 @@
+setuptools
+wheel
+asgiref==3.4.1
+pytz==2021.3

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MakeDjango
+Version: 1.0.2
+Summary: simple command line tool for start project
+Home-page: https://github.com/MahanBi/MakeDjango.git
+Author: Mahan Bakhshi
+Author-email: dirtymbgamer@gmail.com
+Maintainer: Mahan Bakhshi
+Maintainer-email: dirtymbgamer@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/MahanBi/MakeDjango/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<img alt="AppVeyor" src="https://badgen.net/badge/build/on%20development/green"> [![star this repo](https://githubbadges.com/star.svg?user=MahanBi&repo=MakeDjango&style=default)](https://github.com/MahanBi/MakeDjango) [![fork this repo](https://githubbadges.com/fork.svg?user=MahanBi&repo=MakeDjango&style=default)](https://github.com/MahanBi/MakeDjango/fork)
+# MakeDjango
+
+MakeDjango: simple command line tool for start project
+
+
