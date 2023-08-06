@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: paradoxapi
+Version: 1.0.1.1
+Summary: Paradox Quantitative Data API
+Home-page: https://www.paradoxasset.com
+Author: Paradox FINANCIAL GROUP LTD.
+Author-email: 1013359736@qq.com
+License: Apache License 2.0
+Keywords: Paradox Stock Quant Data API
+Platform: UNKNOWN
+
+
+    Paradox Quantitative Data API is provided.
+    The correspondingly market data and trading is supported in A market.
+    see details in https://www.paradoxasset.com
+
+
