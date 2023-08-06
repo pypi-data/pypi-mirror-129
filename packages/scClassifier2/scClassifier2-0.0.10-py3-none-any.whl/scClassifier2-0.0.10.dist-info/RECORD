@@ -1,0 +1,13 @@
+scClassifier2/__init__.py,sha256=DtojjFVq-ystGqaCzbDUTuGR5nvlFbZiiOuFqPZVaRs,38
+scClassifier2/scClassifier2.py,sha256=WFq4cACNceen1UhZxPkTqiGsljmdbGc54jqMk5ZaFeQ,28011
+scClassifier2/utils/__init__.py,sha256=VfIw4rcBiCcShcqXK485APXw1k1_6yo7gUn14mlVDn8,72
+scClassifier2/utils/custom_mlp.py,sha256=jlHqUMIFa-mYub9elf_ecwcfRo3Cz9gX351y5OQRRB4,7298
+scClassifier2/utils/mnist_cached.py,sha256=8LdQcb49prs9CbfiLToOkH-TDF7fEC2TvscugW8LwgA,8858
+scClassifier2/utils/scdata_cached.py,sha256=nSiy2ZsKCl4laPXZaVCkSKYWUQsxY8xSn_zHr_f9uec,5486
+scClassifier2/utils/vae_plots.py,sha256=Rdz0Ud9jfsybGbft2vAuseXIoRrVNu7Lgv8TpDujeJk,3292
+scClassifier2-0.0.10.dist-info/LICENSE.txt,sha256=oEwf2oslStACvFh-UU8YdYfJNuApRlPAaBExDlXW5lQ,1092
+scClassifier2-0.0.10.dist-info/METADATA,sha256=RmPxTpHZwo0z2fzuWJsLKOX-GpARyWquTkxclhDKO04,2245
+scClassifier2-0.0.10.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+scClassifier2-0.0.10.dist-info/entry_points.txt,sha256=2y9ZgfipEsCzO_9RV1XKrsHzINg4I6VuDRjv3Mr5XSU,67
+scClassifier2-0.0.10.dist-info/top_level.txt,sha256=4fAjG-Q9jSPC2JzoLuz1LvjJ_UH1p6hz7j-kGL5Ns-I,14
+scClassifier2-0.0.10.dist-info/RECORD,,
