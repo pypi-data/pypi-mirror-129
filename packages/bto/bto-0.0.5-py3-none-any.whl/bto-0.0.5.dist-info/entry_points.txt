@@ -1,0 +1,3 @@
+[console_scripts]
+bto = bto.__main__:main
+
