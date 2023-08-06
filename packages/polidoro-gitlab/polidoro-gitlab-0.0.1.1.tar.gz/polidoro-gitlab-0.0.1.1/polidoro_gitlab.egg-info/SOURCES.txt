@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+polidoro_gitlab/__init__.py
+polidoro_gitlab/gitlab.py
+polidoro_gitlab.egg-info/PKG-INFO
+polidoro_gitlab.egg-info/SOURCES.txt
+polidoro_gitlab.egg-info/dependency_links.txt
+polidoro_gitlab.egg-info/not-zip-safe
+polidoro_gitlab.egg-info/requires.txt
+polidoro_gitlab.egg-info/top_level.txt
