@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scsampler
+Version: 0.0.1
+Summary: A package for diverse subsampling in single-cell data
+Home-page: https://github.com/SONGDONGYUAN1994/scsampler
+Author: Dongyuan Song
+Author-email: dongyuansong@ucla.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# scSampler
+`scSampler` is a Python pacakge for fast divese subsampling cells in large scale single-cell datasets.
+
+
