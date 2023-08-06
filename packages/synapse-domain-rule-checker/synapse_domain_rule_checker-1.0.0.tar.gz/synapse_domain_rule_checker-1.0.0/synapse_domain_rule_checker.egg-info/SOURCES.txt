@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+synapse_domain_rule_checker.egg-info/PKG-INFO
+synapse_domain_rule_checker.egg-info/SOURCES.txt
+synapse_domain_rule_checker.egg-info/dependency_links.txt
+synapse_domain_rule_checker.egg-info/requires.txt
+synapse_domain_rule_checker.egg-info/top_level.txt
