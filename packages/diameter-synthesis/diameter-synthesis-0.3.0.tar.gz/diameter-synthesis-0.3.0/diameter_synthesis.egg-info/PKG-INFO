@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: diameter-synthesis
+Version: 0.3.0
+Summary: Diametrize cells
+Home-page: https://github.com/BlueBrain/diameter-synthesis
+Author: Blue Brain Project, EPFL
+License: GPLv3
+Project-URL: Tracker, https://github.com/BlueBrain/diameter-synthesis/issues
+Project-URL: Source, https://github.com/BlueBrain/diameter-synthesis
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Provides-Extra: docs
+Provides-Extra: plot
+Provides-Extra: test
