@@ -1,0 +1,3 @@
+[console_scripts]
+hkis = hkis:main
+
