@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pointless_db/__init__.py
+pointless_db.egg-info/PKG-INFO
+pointless_db.egg-info/SOURCES.txt
+pointless_db.egg-info/dependency_links.txt
+pointless_db.egg-info/not-zip-safe
+pointless_db.egg-info/top_level.txt
