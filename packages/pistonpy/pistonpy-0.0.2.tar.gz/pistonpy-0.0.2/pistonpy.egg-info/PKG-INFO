@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pistonpy
+Version: 0.0.2
+Summary: An unofficial wrapper for Engineer Man's Piston API
+Home-page: https://github.com/AaalbatrossGuy/pistonpy
+Author: AalbatrossGuy
+Author-email: thexcelsiorisback@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pistonpy
+An unofficial wrapper for Engineer Man's Piston API
+
+Docs coming soon...
+
+
