@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: xautic
+Version: 1.0.0
+Summary: xautic: live reloading with Python.
+Home-page: https://github.com/xames3/xautic/
+Author: Akshay Mestry (XAMES3)
+Author-email: xa@mes3.in
+License: MIT
+Project-URL: Changelog, https://github.com/xames3/xautic
+Project-URL: Source, https://github.com/xames3/xautic
+Project-URL: Tracker, https://github.com/xames3/xautic/issues
+Keywords: live-reloading
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+UNKNOWN
+

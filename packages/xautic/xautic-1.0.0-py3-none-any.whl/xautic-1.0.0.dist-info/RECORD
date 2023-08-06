@@ -1,0 +1,12 @@
+_xautic/__init__.py,sha256=1DBzDiNwB627sOVwuAJKbM8spAd-6Svt9LqYgdwslKI,122
+_xautic/_version.py,sha256=ZPMWI4TFCgLx7qx0Qsbz784sNzn3WZKXq8kgCvIUa9s,302
+_xautic/main.py,sha256=YG-np937QvVwSoRX9nU5eaSnUYO_iY3TqGPKsboaPI8,9332
+_xautic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_xautic/utils.py,sha256=AZ3JlZ3JIFZnW7BHIOvZ2aNuWoSyQyEPaF0yMnocYXs,7101
+xautic/__init__.py,sha256=9PZXaBFd2IG4t1lEdfCsLxGJ2tiiTilNnwfeMVC4_DA,370
+xautic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xautic-1.0.0.dist-info/LICENSE,sha256=uy98Zi0IzLYWORpVli3bdxIMcs3VFdwmQDMKHXmrkBQ,1122
+xautic-1.0.0.dist-info/METADATA,sha256=F_trRKj2TcY9Gbq6TUudEnYH5ljm807uMdRNtOcu6Zo,1344
+xautic-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+xautic-1.0.0.dist-info/top_level.txt,sha256=whZ56W9Ahq6o434E309dD6bLyzj1coWOySlxI04v1wI,15
+xautic-1.0.0.dist-info/RECORD,,
