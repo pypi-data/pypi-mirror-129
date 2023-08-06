@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "zdpapi_mysql"
+version = "1.0.0"
+description = "基于异步的快速操作MySQL的组件"
+authors = ["张大鹏 <lxgzhw@163.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/zhangdapeng520/zdpapi_mysql"
+repository = "https://github.com/zhangdapeng520/zdpapi_mysql"
+documentation = "https://github.com/zhangdapeng520/zdpapi_mysql"
+keywords = ["zapi", "mysql", "async", "zhangdapeng"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
