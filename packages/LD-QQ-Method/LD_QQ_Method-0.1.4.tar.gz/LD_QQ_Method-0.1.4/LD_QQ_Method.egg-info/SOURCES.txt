@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+LD_QQ_Method/LD_QQ_Method.py
+LD_QQ_Method/__init__.py
+LD_QQ_Method/__version__.py
+LD_QQ_Method.egg-info/PKG-INFO
+LD_QQ_Method.egg-info/SOURCES.txt
+LD_QQ_Method.egg-info/dependency_links.txt
+LD_QQ_Method.egg-info/top_level.txt
