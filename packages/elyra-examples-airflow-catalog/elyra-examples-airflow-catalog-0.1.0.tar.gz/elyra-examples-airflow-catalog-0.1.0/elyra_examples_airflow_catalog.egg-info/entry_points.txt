@@ -1,0 +1,6 @@
+[elyra.component.catalog_types]
+elyra-airflow-examples-catalog = airflow_examples_connector.examples_connector:ExamplesCatalogConnector
+
+[metadata.schemas_providers]
+airflow-examples-catalog-schema = airflow_examples_connector.examples_schema_provider:ExamplesSchemasProvider
+
