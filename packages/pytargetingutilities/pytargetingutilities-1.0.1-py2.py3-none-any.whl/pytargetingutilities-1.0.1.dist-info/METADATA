@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pytargetingutilities
+Version: 1.0.1
+Summary: Base lib for aws operations and more
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: Slash Gordon
+Author-email: slash.gordon.dev@gmail.com
+License: MIT
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: s3transfer
+Requires-Dist: cryptography
+Requires-Dist: graypy
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+[![Release Build](https://github.com/emetriq/pytargetingutilities/actions/workflows/release.yaml/badge.svg)](https://github.com/emetriq/pytargetingutilities/actions/workflows/release.yaml)
+# pytargetingutilities
+
+AWS boilerplate code for python applications.
+
+## install
+
+Install latest package
+`pip install pytargetingutilities`
+
+Copy latest package to workspace:
+`pip download --no-deps pytargetingutilities`
+
+
+
