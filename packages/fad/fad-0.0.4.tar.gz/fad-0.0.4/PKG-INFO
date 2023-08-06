@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: fad
+Version: 0.0.4
+Summary: Download an album of photos from facebook
+Home-page: https://github.com/wuallanx/facebook-album-downloader
+Author: Allan Wu
+Author-email: wuallanx@gmail.com
+License: GNU GPLv3
+Project-URL: Bug Tracker, https://github.com/wuallanx/facebook-album-downloader/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align="center">Facebook Album Downloader - FAD</h1>
+<a href="#">
+  <div align="center">
+    <img src="https://raw.githubusercontent.com/wuallanx/facebook-album-downloader/main/media/fad.png" alt="FAD Logo" />
+  </div>
+</a>
+<h3 align="center">Download all photos of an album with one-line command</h3>
+
+<hr>
+
+<p align="center">
+  A command-line interface application that you can use to download an album
+  (of a page, a group or an user) from Facebook (on new version since Sep 2020)
+</p>
+
+<hr>
+
+<h3 align="center">Completely FREE for all purposes</h3>
+
+<hr>
+
+### ✨ FEATURES
+- **🚀 Fast**: You can download an facebook album of 500 photos in a few 
+minutes. If you have a stable network, you can reduce the timeout option to make
+it run faster.
+- **📦 Minimal**: FAD runs on Firefox driver in headless mode (without
+GUI). In terms of memory and CPU utilizatioon, Firefox is far better and
+utilizes few resources compare with Chromium browsers.
+- **🐶 Easy To Use**: FAD read its arguments from the command line. If you
+are not familiar with CLI (command-line interface), you can create a JSON
+configuration file. You can use FAD without programming knowledge.
+
+<hr>
+
+### ⚔️ INSTALLATION
+
+#### ✈️ Prerequisites
+- Install Python 3.9+
+- Download latest [geckodriver](https://github.com/mozilla/geckodriver/releases)
+from the releases page (Linux, MacOS & Windows) and extract excecutable file to
+`$HOME/.local/bin/geckodriver` (on Windows File Explorer, create a directory named
+`.local.`, with a dot at the end of the directory's name)
+- Install **Firefox Browser** if you need to run the script with Debug Mode enabled.
+
+#### 🔧 Install FAD
+To install **Facebook Album Downloader (FAD)**, run:
+
+```bash
+pip install fad
+```
+
+To *completely remove* FAD, just remove Python (if you want) and executable
+driver. Finally, just run:
+
+```bash
+pip uninstall fad
+```
+
+<hr>
+
+### 🎮 USAGE
+You can run FAD script from command line or use a configuration file formatted
+in JSON.
+
+<br>
+
+**Method 1**: Download an album from command line
+
+Run `fad -h` or see [Configurations.md](https://github.com/wuallanx/facebook-album-downloader/blob/main/doc/Configurations.md)
+before following the instructions to configure your download options.
+
+<br>
+
+**Method 2**: Use a configuration file formatted in JSON
+
+The default configuration file located `$HOME/.config/fad/config.json`, you can
+create a new configuration file following an [Example Config File](https://github.com/wuallanx/facebook-album-downloader/blob/main/doc/config.example.json)
+or see [Configurations.md](https://github.com/wuallanx/facebook-album-downloader/blob/main/doc/Configurations.md).
+Run `fad` to run the script with default configuration file.
+
+If you want to use a *external* configuration file, run 
+`fad -C <path_to_config_file>`.
+
+<hr>
+
+### 🤔 FAQ
+
+**1. Can FAD download videos?**
+
+The answer is NO.
+
+FAD uses Selenium & Python to crawl photos. And it only accepts the url of an 
+album of photos.
+
+**2. What is an facebook album URL?**
+
+An facebook album is a HTML page that contains a grid of photos.
+
+**3. How to get url of an album?**
+
+To get the url of an album, watch this Youtube video and follow the instructions.
+
+**4. Will I paid for a premium plan or something to use FAD in the future?**
+
+No and never. This application is completely free to use, FOREVER. 
+
+<hr>
+
+### 📝 LICENSE
+Copyright © 2021, Allan Wu
+
+This project is [GNU GPLv3](https://github.com/wuallanx/facebook-album-downloader/blob/main/LICENSE) license.
+
+<hr>
+
+### 📮 CONTACT
+- Author: Allan Wu (Dang Minh Ngo)
+- Email: wuallanx@gmail.com
+- Github: https://github.com/wuallanx
+
+

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fad/__init__.py
+src/fad/__main__.py
+src/fad/constants.py
+src/fad/scraper.py
+src/fad/utils.py
+src/fad.egg-info/PKG-INFO
+src/fad.egg-info/SOURCES.txt
+src/fad.egg-info/dependency_links.txt
+src/fad.egg-info/entry_points.txt
+src/fad.egg-info/requires.txt
+src/fad.egg-info/top_level.txt
