@@ -1,0 +1,15 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/dict_parse.py,sha256=zUC5QoebbxrvbZ7M4YCUNsQ07yX8Grskvmi0SKcYU6I,5051
+client/main.py,sha256=ZHLR2OGXs-YhuVxtdftyDomrkA0Z_LE9XuyzW9A782k,4866
+objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+objects/food.py,sha256=MpFjknWmzQtGfyCWfKn6wgbCNKKqpOuJdJs4FxhCyl0,2640
+objects/nutrient_dict.py,sha256=votBFR4ibQVlNtSkwg2ILULEYjDQGvJQc0gd8oH-2W0,6451
+service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+service/food.py,sha256=eEmT2lCz4zupaf2Dmlpc9OnjaUz9rv94oGaBIi0JefM,473
+service/report.py,sha256=c-e-UyRUDgcVWy3DctALt005a-SDlMbEUW7Im1-cOFE,1761
+service/search.py,sha256=olBJsK8YB9OY1RoZhnUl-khSpVSCsRZfiwCLY2z-qag,1135
+nomsapi-0.1.3.dist-info/LICENSE,sha256=_p3LPmSXSPIsNdPyQpt_QpT3V7q9JIWFmOU3kk_fX9I,1069
+nomsapi-0.1.3.dist-info/METADATA,sha256=6VHc6EAu18MD7NgJwF0-UZbUjTcOi_wHki45w_KjgjI,10526
+nomsapi-0.1.3.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+nomsapi-0.1.3.dist-info/top_level.txt,sha256=5hn3eu2UbRHyt-7Bn4XG4bWkH-o8RtaGHFUFasTuTbo,23
+nomsapi-0.1.3.dist-info/RECORD,,
