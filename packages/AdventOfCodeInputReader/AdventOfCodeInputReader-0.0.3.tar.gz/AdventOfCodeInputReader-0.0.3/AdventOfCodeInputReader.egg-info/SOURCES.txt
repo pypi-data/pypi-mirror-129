@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+AdventOfCodeInputReader/__init__.py
+AdventOfCodeInputReader.egg-info/PKG-INFO
+AdventOfCodeInputReader.egg-info/SOURCES.txt
+AdventOfCodeInputReader.egg-info/dependency_links.txt
+AdventOfCodeInputReader.egg-info/requires.txt
+AdventOfCodeInputReader.egg-info/top_level.txt
