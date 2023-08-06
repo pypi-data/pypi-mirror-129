@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+agility/__init__.py
+agility/analysis.py
+agility/minimiser.py
+agility/plotting.py
+agility.egg-info/PKG-INFO
+agility.egg-info/SOURCES.txt
+agility.egg-info/dependency_links.txt
+agility.egg-info/not-zip-safe
+agility.egg-info/requires.txt
+agility.egg-info/top_level.txt
