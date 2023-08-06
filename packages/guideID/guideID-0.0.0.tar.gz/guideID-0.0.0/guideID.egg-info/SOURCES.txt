@@ -1,0 +1,9 @@
+.gitignore
+README.md
+setup.py
+.github/workflows/pypi_release.yml
+guideID/__init__.py
+guideID.egg-info/PKG-INFO
+guideID.egg-info/SOURCES.txt
+guideID.egg-info/dependency_links.txt
+guideID.egg-info/top_level.txt
