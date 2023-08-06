@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: ai-api-client-sdk
+Version: 1.13.0
+Summary: SAP AI API Client SDK
+Home-page: https://www.sap.com/
+Author: SAP SE
+License: SAP DEVELOPER LICENSE AGREEMENT
+Project-URL: Documentation, https://help.sap.com/viewer/1439973835364062afb7f606e35f6b6a/CLOUD/en-US
+Keywords: SAP AI API Client SDK
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows Server 2008
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: 
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyhumps (~=1.6.1)
+Requires-Dist: requests (~=2.25.1)
+
+# AI API Client SDK
+Client SDK for AI API. This repo creates the ai_api_client_sdk library. Everything in ai_api_client_sdk folder will be
+packaged in the library.
+
+The main client class is the [AIAPIV2Client](ai_api_client_sdk/ai_api_v2_client.py). Each instance of AIAPIV2Client
+has resource clients as properties. The resource client implementations can be found in folder [resource_clients](ai_api_client_sdk/resource_clients).
+The resources, response types etc. are represented by model classes. These can be found in folder [models](ai_api_client_sdk/models).
+
+## Usage
+The user can use the library by creating an instance of AIAPIV2Client class. There are some required and optional
+parameters for the constructor of AIAPIV2Client class:
+- base_url (string) (required): The base URL of AI API. (i.e. https://api.ai.nonexistingcluster.com/v2/lm)
+- token_creator (optional) (Callable): This should be a function which returns a token for authorization. Either this
+                                       function or auth_url, client_id and client_secret should be provided.
+- auth_url: URL for creating the authorization token (i.e. https://blabla.authentication.sap.hana.ondemand.com/oauth/token)
+- client_id (optional): clientid for xsuaa authentication
+- client_secret(optional): clientsecret for xsuaa authentication
+- resource_group (string) (optional): if provided, this will be used as default resource group id for requests to the AI API.
+                                      The user can still provide resource_group with every request to the AI API,
+                                      and that will override this one.
+
+The AIAPIV2Client will have a property per resource (each one is an instance of a resource_client):
+- artifact (an instance of [ArtifactClient](ai_api_client_sdk/resource_clients/artifact_client.py))
+- configuration (an instance of [ConfigurationClient](ai_api_client_sdk/resource_clients/configuration_client.py))
+- deployment (an instance of [DeploymentClient](ai_api_client_sdk/resource_clients/deployment_client.py))
+- executable (an instance of [ExecutableClient](ai_api_client_sdk/resource_clients/executable_client.py))
+- execution (an instance of [ExecutionClient](ai_api_client_sdk/resource_clients/execution_client.py))
+- healthz (an instance of [HealthzClient](ai_api_client_sdk/resource_clients/healthz_client.py))
+- metrics (an instance of [MetricsClient](ai_api_client_sdk/resource_clients/metrics_client.py))
+- scenario (an instance of [ScenarioClient](ai_api_client_sdk/resource_clients/scenario_client.py))
+
+Each resource client has these functions (if supported for that resource) to send requests to the AI API:
+- create(*args, **kwargs): creates a resource
+- delete(*args, **kwargs): deletes a resource
+- get(*args, **kwargs): gets a single resource
+- modify(*args, **kwargs): patches a resource
+- query(*args, **kwargs): queries multiple resources
+
+Example:
+```python
+from ai_api_client_sdk.ai_api_v2_client import AIAPIV2Client
+
+ai_api_v2_client = AIAPIV2Client(
+    base_url="<BASE_URL>",
+    auth_url="<AUTH_URL>",
+    client_id="<CLIENT_ID>",
+    client_secret="<CLIENT_SECRET>",
+    resource_group="<RESOURCE_GROUP_ID>"
+)
+
+scenario = ai_api_v2_client.scenario.get(scenario_id="<SCENARIO_ID>")
+```
+
+## Tests
+The [unit tests](tests) are simply python unit tests. They can be run via nosetests or directly from IDE.
+
+The [integration_tests](integration_tests) are also python tests. They run against intwdf cluster. But they need
+resource group provisioned/deprovisioned before/after running them. If they are triggered via nosetsts the setUpModule()
+and tearDownModule() functions in corresponding [\_\_init__.py](integration_tests/__init__.py) are properly discovered and called.
+However when running the integration tests from IDE, those are functions cannot be discovered. Therefore when running
+from local via IDE, the provisioning/deprovisioning should be done somewhere else. You can do so, by simple uncommenting
+the corresponding lines in setUpClass() and tearDownClass() functions in [AIAPIV2ClientE2ETestBase](integration_tests/ai_api_v2_client_e2e_test_base.py) class.
+
