@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+myodev/__init__.py
+myodev.egg-info/PKG-INFO
+myodev.egg-info/SOURCES.txt
+myodev.egg-info/dependency_links.txt
+myodev.egg-info/top_level.txt
