@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+alpdataneuron/__init__.py
+alpdataneuron/config.py
+alpdataneuron/config_variables.py
+alpdataneuron/prediction.py
+alpdataneuron.egg-info/PKG-INFO
+alpdataneuron.egg-info/SOURCES.txt
+alpdataneuron.egg-info/dependency_links.txt
+alpdataneuron.egg-info/requires.txt
+alpdataneuron.egg-info/top_level.txt
