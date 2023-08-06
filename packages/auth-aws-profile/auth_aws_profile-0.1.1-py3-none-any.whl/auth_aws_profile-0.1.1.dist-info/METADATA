@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: auth-aws-profile
+Version: 0.1.1
+Summary: Updates the configured MFA credentials for AWS services.
+Author: kdico
+Author-email: 6wng7f78m@mozmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.20.15,<2.0.0)
