@@ -1,0 +1,5 @@
+arviz
+h5py
+matplotlib
+numpy
+pymc3
