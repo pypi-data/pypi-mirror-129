@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    syborg=syborg:main
+    systemd-gtk-ask-password-agent=password_agent:main
+    

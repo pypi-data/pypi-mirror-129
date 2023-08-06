@@ -1,0 +1,12 @@
+password_agent.py,sha256=uxqghSM0Y70fndgoY8Ap-FeTeoMvMm2eN5ArzNSpKF0,6276
+syborg.py,sha256=5i5KuAmaaAMn6RPxAVoPgZN6FfwoQdAJbVbllU9PPqE,11620
+syborg-1.0.0.data/data/share/syborg/syborg-backup@.service,sha256=VcNvUEGsL4WbuFOj5cZZy6Koc-YVTji2hHObhXdfZa4,97
+syborg-1.0.0.data/data/share/syborg/syborg-backup@.timer,sha256=dCo-v6STMJVzRfhxkaqEs-XeM4xe4JSVyMZfviB7Qms,333
+syborg-1.0.0.data/data/share/syborg/syborg-example.cfg,sha256=7IpKnOoTLCVfVotT6_6Fq1oNNc-ONONagiXXFAV2nl4,7772
+syborg-1.0.0.data/data/share/syborg/systemd-gtk-ask-password-agent.desktop,sha256=eWU6EhTWrerRACTRn4K-pObMvTAWuZePyHiWtGLv2YA,160
+syborg-1.0.0.dist-info/LICENSE,sha256=UaIlb7FxHIHqgvvz53ps_EwtvgVb24isdUoNzBAvGiw,1073
+syborg-1.0.0.dist-info/METADATA,sha256=WeDpQntjw6-dSqBxFT1BFltzZVVYjt8RzMTr094aBNM,370
+syborg-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+syborg-1.0.0.dist-info/entry_points.txt,sha256=_XeEBeBEgV4p3bxVQJE1MPSqPHfA1fId8_a7-wEwAE4,105
+syborg-1.0.0.dist-info/top_level.txt,sha256=udy-exhUdYEgFkqnRMPyxVBo1bAYoBWbQz00kQQxkGE,22
+syborg-1.0.0.dist-info/RECORD,,
