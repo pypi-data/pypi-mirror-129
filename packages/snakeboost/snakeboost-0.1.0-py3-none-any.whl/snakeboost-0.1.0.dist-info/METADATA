@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: snakeboost
+Version: 0.1.0
+Summary: Utility functions to turbocharge your snakemake workflows. Virtualenvs, tarfiles, and more.
+License: MIT
+Keywords: snakemake,workflow,data science,utility,helpers
+Author: Peter Van Dyken
+Author-email: pvandyk2@uwo.ca
+Requires-Python: >=3.8,<3.11
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: attr (>=0.3.1,<0.4.0)
