@@ -1,0 +1,10 @@
+four_letter_config/__init__.py,sha256=MevfnslwUTwedzmBCRdc1bPQYdfufwg-Mf6BvL9jqXs,90
+four_letter_config/__main__.py,sha256=xWA8VqNW1Sd78DgtpWYmSwuaxsbWvhxVyLXPRKjST34,133
+four_letter_config/cli.py,sha256=16XdAolgHBaSYDVKn0i0K38CEhw45kcyNiZchaH-hck,5634
+four_letter_config/file_handler.py,sha256=--xssvC6XbSzdBZ8xuJAmQ82HHJ7e8lnF91twfsJRPU,3595
+four_letter_config-0.2.0.dist-info/LICENSE,sha256=9UTqjKqVwoTtS9ckihwC8gAnamYFMvyBpXV7xVrb7Ow,1075
+four_letter_config-0.2.0.dist-info/METADATA,sha256=6r6aQJ_SjjCejKfGk7hmBkR7Sv2MB7kVCOmCirZmHDw,2445
+four_letter_config-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+four_letter_config-0.2.0.dist-info/entry_points.txt,sha256=tLnX9jPJkUr53sxhuYP2SCeSyJDD1UzarZJFzKD6COM,68
+four_letter_config-0.2.0.dist-info/top_level.txt,sha256=urfwM1LRqEJdSlSxTVpsvoq_7lg4FUECJgo78U4pNhs,19
+four_letter_config-0.2.0.dist-info/RECORD,,

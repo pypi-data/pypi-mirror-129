@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: four-letter-config
+Version: 0.2.0
+Summary: Handling of JSON and YAML configuraton files
+Home-page: https://gitlab.com/blackstream-x/four-letter-config
+Author: Rainer Schwarzbach
+Author-email: undisclosed@example.com
+License: UNKNOWN
+Project-URL: Documentation, https://blackstream-x.gitlab.io/four-letter-config
+Project-URL: Source, https://gitlab.com/blackstream-x/four-letter-config
+Project-URL: Tracker, https://gitlab.com/blackstream-x/four-letter-config/-/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML (>=6.0)
+
+# Four letter config
+
+“conf is just a four letter word”
+
+Tiny package providing a module to handle four letter (JSON, YAML) files
+for configuration, and a CLI to convert between these two file formats.
+
+## Requirements
+
+[PyYAML](https://pypi.org/project/PyYAML/)
+
+
+## Installation
+
+```
+pip install four-letter-config
+```
+
+Installation in a virtual environment or with the `--user` oprtion is recommended.
+
+
+## Usage
+
+### Compare two files
+
+```
+python -m four_letter_config compare [ --diff ] <file_1> <file_2>
+```
+
+Each file may be a JSON or YAML file. The contents are sorted and compared.
+
+Use the `--diff` option to get an output similar to that of the **diff** program.
+
+### Translate JSON to YAML or vice versa
+
+```
+python -m four_letter_config compare [ --overwrite ] <file_1> <file_2>
+```
+
+Writes the contents from file_1 to file_2.
+
+Use the `--overwrite` option to overwrite an existing file.
+
+### Module Usage
+
+Please refer to the reference documentation [in this repository](./docs/reference.md)
+or [on GitLab Pages](https://blackstream-x.gitlab.io/four-letter-config/reference/).
+
+
+## Issues, feature requests
+
+Please open an issue [here](https://gitlab.com/blackstream-x/four-letter-config/-/issues)
+if you found a bug or have a feature suggestion.
+
+
