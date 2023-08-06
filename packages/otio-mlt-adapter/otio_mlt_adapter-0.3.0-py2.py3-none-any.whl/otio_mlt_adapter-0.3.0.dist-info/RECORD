@@ -1,0 +1,10 @@
+otio_mlt_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otio_mlt_adapter/plugin_manifest.json,sha256=2K0ULF6eKiv1eBEZFCXjtqdFuDO2iglDWIbuXX1bJmQ,289
+otio_mlt_adapter/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otio_mlt_adapter/adapters/mlt_xml.py,sha256=DcG9uIPmqWKrjUPhlkiRcwmBRIL6gdpx_Wq7pM6rw-w,19579
+otio_mlt_adapter-0.3.0.dist-info/LICENSE.txt,sha256=KvHH-P25EF6hQnGY6j7ylzvC76jdOC9K3CLVpjRkVq8,1077
+otio_mlt_adapter-0.3.0.dist-info/METADATA,sha256=T49X7pbZoHEcGQh00y0ZlGBI0Pm4cD0MP5C-TtMwfDE,4642
+otio_mlt_adapter-0.3.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+otio_mlt_adapter-0.3.0.dist-info/entry_points.txt,sha256=Ov2u28B5aUFjBciIp9hl_0ExRMD5uYZTpi3zVXjqBi8,62
+otio_mlt_adapter-0.3.0.dist-info/top_level.txt,sha256=xJE3v1yn60vYNEL0EsvefyDJ-LEQN_KB8fyFvUC4-gk,17
+otio_mlt_adapter-0.3.0.dist-info/RECORD,,
