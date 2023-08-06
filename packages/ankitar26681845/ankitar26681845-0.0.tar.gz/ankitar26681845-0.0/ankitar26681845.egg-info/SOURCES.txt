@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+ankitar26681845/Binomialdistribution.py
+ankitar26681845/Gaussiandistribution.py
+ankitar26681845/Generaldistribution.py
+ankitar26681845/__init__.py
+ankitar26681845.egg-info/PKG-INFO
+ankitar26681845.egg-info/SOURCES.txt
+ankitar26681845.egg-info/dependency_links.txt
+ankitar26681845.egg-info/not-zip-safe
+ankitar26681845.egg-info/top_level.txt
