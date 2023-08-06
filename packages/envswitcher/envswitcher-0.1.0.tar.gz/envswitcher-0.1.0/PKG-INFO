@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: envswitcher
+Version: 0.1.0
+Summary: Switch between envfiles
+Author: Jack Reilly
+Author-email: jackdreilly@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer[all] (<0.4)
+Description-Content-Type: text/markdown
+
+# envswitcher
+
