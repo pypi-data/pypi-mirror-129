@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: waitress-fastlisten
+Version: 1.0.0rc1
+Summary: Fast listen on port as a wrapper for waitress WSGI server.
+Home-page: https://github.com/plone/waitress_fastlisten
+Author: The Plone Community and Jens Klein
+Author-email: tech@kleinundpartner.at
+License: ZPL 2.1
+Keywords: waitress wgi
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: setuptools
+Requires-Dist: waitress
+
+==============================================
+A fast listen implementation for Waitress WSGI
+==============================================
+
+This tiny package allows the waitress WSGI server to immediatly pre-bind to a port and listen to it.
+It waits then for the app to start up and passes then requests further.
+
+
+Usage
+=====
+
+In your paste based WSGI configuration in ``[server:main]`` set:
+
+- ``paste-server-factory`` to ``waitress_fastlisten:main``
+- ``use`` to ``egg:plone.recipe.zope2instance#main``
+- ``fast-listen`` to ``HOST:PORT``
+
+Do *not* set "listen =".
+
+Example:
+
+.. code-block:: INI
+
+    [server:main]
+    paste.server_factory = plone.recipe.zope2instance:main
+    use = egg:plone.recipe.zope2instance#main
+    fast-listen = 0.0.0.0:8080
+
+Changelog
+=========
+
+1.0.0rc1 (2021-12-04)
+---------------------
+
+- Isolated code from ``plone.recipe.zope2instance``.
+  [jensens]
+
+
