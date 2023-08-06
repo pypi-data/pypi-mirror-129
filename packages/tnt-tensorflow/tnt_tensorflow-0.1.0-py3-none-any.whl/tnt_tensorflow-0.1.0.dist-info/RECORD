@@ -1,0 +1,9 @@
+tnt/__init__.py,sha256=sGZR4eqneV7jHrusBvARyFDqfzHnplY8LOSxxvWod04,54
+tnt/attention.py,sha256=LIpgSYF6XaIMQs7f3I4f9z4Gw7HRUuGWUaOQq2zXJhc,1513
+tnt/tnt.py,sha256=YnUexZzqoVTNjep8Q0iEUqoLaRCJUUkSgH2lmBrVlXg,7039
+tnt/version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+tnt_tensorflow-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tnt_tensorflow-0.1.0.dist-info/METADATA,sha256=FFLU7E7qeoExZscMYZ5jhJQ26HLQFRB6vn9RJg2Um2I,5759
+tnt_tensorflow-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+tnt_tensorflow-0.1.0.dist-info/top_level.txt,sha256=Qj95SMVWbd9S5yUWuZSxs54bndOVYL3ajIig7U2zBVo,4
+tnt_tensorflow-0.1.0.dist-info/RECORD,,
