@@ -1,0 +1,13 @@
+_runtime.abi3.so,sha256=JDAyeiS0rbCZgo56GE0OSk1_JlRi9ItkNMlnnwGa4U4,79632
+koi/decode.py,sha256=6n8kBR_S1K4k1PsIn1p9wuuzRBWecFxqmwwGHKWSqp8,1813
+koi/utils.py,sha256=iNwoIDbDK7102cKv2azdF_rW1mMX1LuRZidfCaoN6Eo,1660
+koi/build.py,sha256=0LSiZnLWL69gGNx0qOqGiSAyV46cSJnam4TkSJyzHU8,412
+koi/lstm.py,sha256=mZQQU2XhWRc6l49B9xJ9LMXjxh3ga_IqmyLjXlhyVRQ,6502
+koi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koi/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koi/test/test_lstm.py,sha256=-MQPpQfhnCzpW2dqm6zSiWAtH3KnjMKMHoe6gB7BYgg,1865
+koi_cuda102.libs/lib-0a07f124.so,sha256=G5shG_QlglGudJCG5Fl9_Z_Td4B9SBocw-Mop_MoB-M,1108008
+koi_cuda102-0.0.4.dist-info/WHEEL,sha256=CdtYEWrHtc5X47KcSSxmzTgyODOCt-se2tHGP9gLcoc,150
+koi_cuda102-0.0.4.dist-info/METADATA,sha256=UAt_rSMn88D_NSjV_UOBEOkIAbh9KYREBayxt9D8lmM,195
+koi_cuda102-0.0.4.dist-info/RECORD,,
+koi_cuda102-0.0.4.dist-info/top_level.txt,sha256=G_aqyhurAJEhUB19YCePG0t59TIfhxKZcVW38RddyWA,13
