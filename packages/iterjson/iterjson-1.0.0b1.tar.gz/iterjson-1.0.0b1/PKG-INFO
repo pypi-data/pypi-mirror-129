@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: iterjson
+Version: 1.0.0b1
+Summary: Library for parsing JSON without loading the whole document into memory
+Home-page: https://github.com/Gaming32/iterjson
+Author: Gaming32
+Author-email: gaming32i64@gmail.com
+License: License :: OSI Approved :: MIT License
+Project-URL: Source, https://github.com/Gaming32/iterjson/tree/main/py
+Project-URL: Tracker, https://github.com/Gaming32/iterjson/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

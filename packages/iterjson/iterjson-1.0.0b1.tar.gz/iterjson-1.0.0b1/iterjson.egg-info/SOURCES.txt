@@ -1,0 +1,9 @@
+setup.py
+iterjson/__init__.py
+iterjson/common.py
+iterjson/reader.py
+iterjson/values.py
+iterjson.egg-info/PKG-INFO
+iterjson.egg-info/SOURCES.txt
+iterjson.egg-info/dependency_links.txt
+iterjson.egg-info/top_level.txt
