@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+reuters/ric.egg-info/PKG-INFO
+reuters/ric.egg-info/SOURCES.txt
+reuters/ric.egg-info/dependency_links.txt
+reuters/ric.egg-info/top_level.txt
