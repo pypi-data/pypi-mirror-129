@@ -1,0 +1,3 @@
+[console_scripts]
+composer = composer.cli.launcher:main
+
