@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rawio
+Version: 0.0.2
+Summary: RAW and raster image IO.
+Home-page: https://github.com/hdkai/Raw-IO
+Author: Yusuf Olokoba
+Author-email: hi@hdk.ai
+License: Apache License 2.0
+Project-URL: Documentation, https://docs.hdk.ai/rawio
+Project-URL: Source, https://github.com/hdkai/Raw-IO
+Description: # RawIO
+        RAW and raster image IO.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
