@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "project": "CR-Sparse",
+    "project_url": "https://github.com/carnotresearch/cr-sparse",
+    "repo": ".",
+    "environment_type": "conda",
+    "env_dir": ".asv/env",
+    "results_dir": ".asv/results",
+    "html_dir": ".asv/html"
+}
