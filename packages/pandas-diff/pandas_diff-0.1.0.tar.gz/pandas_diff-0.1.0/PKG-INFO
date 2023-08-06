@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pandas_diff
+Version: 0.1.0
+Summary: Python utility to extract differences between two pandas dataframes.
+Home-page: https://github.com/jaimevalero/pandas_diff
+Author: Jaime Valero
+Author-email: jaimevalero78@gmail.com
+License: MIT license
+Keywords: pandas_diff
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===========
+Pandas Diff
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/pandas_diff.svg
+        :target: https://pypi.python.org/pypi/pandas_diff
+
+.. image:: https://readthedocs.org/projects/pandas-diff/badge/?version=latest
+        :target: https://pandas-diff.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Python utility to extract differences between two pandas dataframes.
+
+
+
+* Free software: MIT license
+* Documentation: https://pandas-diff.readthedocs.io.
+
+
+Features
+--------
+
+* Support for stand alone app
+
+
+
+=======
+History
+=======
+
+0.1.0 (2021-12-02)
+------------------
+
+* First release on PyPI.
+
+
