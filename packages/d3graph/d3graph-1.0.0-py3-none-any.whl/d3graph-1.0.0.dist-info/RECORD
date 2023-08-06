@@ -1,0 +1,14 @@
+d3graph/__init__.py,sha256=L4KKZEwn5yLiNX5BS16-Jbq7T0lES0r3A4Aj6NvodCg,3185
+d3graph/adjmat_vec.py,sha256=kso18h9Pcncfs6Z1oJj0npK9tMum1AvgQ49Om-cSfFU,3509
+d3graph/d3graph.py,sha256=quq_YAOhAlWH80Gg7LKocKmtQ8LKS2L69IUisXUf0Wc,23038
+d3graph/examples.py,sha256=hBdLXWVhde_riyVUFJgjc3hNaZQi9uaFF8LqgBdSjtI,5068
+d3graph/d3js/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+d3graph/d3js/d3.v3.js,sha256=rp6r3Tm8TrU5Bbon0raj6lbhZRR2gdmJXHEtbRQyZHg,347498
+d3graph/d3js/d3graphscript.js,sha256=HK_zgxmFznsiUDBeYHTYAIvlxDk96MKJrvmbMRzfuow,7255
+d3graph/d3js/index.html.j2,sha256=zzR-2t5gU5TGk4Ca0Hj0svVeI6WT_YtjTswDrbRG8zg,1143
+d3graph/d3js/style.css,sha256=RctbI4yFh4uDYTGo6JhxbVZ11HN5UIVAZJLAMWouG-c,275
+d3graph-1.0.0.dist-info/LICENSE,sha256=Eeb1zoUFRrEKWNIQ1WPWf5GFF3EKIsGnc2QM5elBAZQ,1231
+d3graph-1.0.0.dist-info/METADATA,sha256=E0sSaDfnK80e2xvISAOFPGqlsMiQb7YspIDP0NqSXMk,11427
+d3graph-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+d3graph-1.0.0.dist-info/top_level.txt,sha256=HZF8s625eXBM7Q4MJVgknxkot4HcCTxa4dhTJ8Y-ihc,8
+d3graph-1.0.0.dist-info/RECORD,,
