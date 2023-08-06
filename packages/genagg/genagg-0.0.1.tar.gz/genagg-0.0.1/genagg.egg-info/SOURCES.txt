@@ -1,0 +1,13 @@
+README.md
+setup.py
+genagg/AggGNN.py
+genagg/GenAgg.py
+genagg/GenAggSparse.py
+genagg/MLP.py
+genagg/__init__.py
+genagg/sanity.py
+genagg.egg-info/PKG-INFO
+genagg.egg-info/SOURCES.txt
+genagg.egg-info/dependency_links.txt
+genagg.egg-info/requires.txt
+genagg.egg-info/top_level.txt
