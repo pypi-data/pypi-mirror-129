@@ -1,0 +1,14 @@
+setup.py
+ViNeSeg.egg-info/PKG-INFO
+ViNeSeg.egg-info/SOURCES.txt
+ViNeSeg.egg-info/dependency_links.txt
+ViNeSeg.egg-info/requires.txt
+ViNeSeg.egg-info/top_level.txt
+vineseg/__init__.py
+vineseg/__main__.py
+vineseg/app.py
+vineseg/label_file.py
+vineseg/logger.py
+vineseg/setup.py
+vineseg/shape.py
+vineseg/testing.py
