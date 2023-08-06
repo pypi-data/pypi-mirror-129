@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: sphinx-imgur
+Version: 3.0.0
+Summary: Embed Imgur images and albums in Sphinx documents/pages.
+License: BSD-2-Clause
+Author: Robpol86
+Author-email: robpol86@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Plugins
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Software Development :: Documentation
+Provides-Extra: docs
+Requires-Dist: sphinx
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: sphinx-notfound-page; extra == "docs"
+Requires-Dist: sphinx-panels; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinxext-opengraph; extra == "docs"
+Requires-Dist: toml; extra == "docs"
+Project-URL: documentation, https://sphinx-imgur.readthedocs.io
+Project-URL: repository, https://github.com/Robpol86/sphinx-imgur
+Description-Content-Type: text/markdown
+
+# sphinx-imgur
+
+Embed [Imgur](https://imgur.com) images and albums in Sphinx documents/pages.
+
+* Python 3.6, 3.7, 3.8, and 3.9 supported on Linux, macOS, and Windows.
+
+📖 Full documentation: https://sphinx-imgur.readthedocs.io
+
+[![Github-CI][github-ci]][github-link]
+[![Coverage Status][codecov-badge]][codecov-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+[![Code style: black][black-badge]][black-link]
+[![PyPI][pypi-badge]][pypi-link]
+[![PyPI Downloads][pypi-dl-badge]][pypi-dl-link]
+
+[github-ci]: https://github.com/Robpol86/sphinx-imgur/actions/workflows/ci.yml/badge.svg?branch=main
+[github-link]: https://github.com/Robpol86/sphinx-imgur/actions/workflows/ci.yml
+[codecov-badge]: https://codecov.io/gh/Robpol86/sphinx-imgur/branch/main/graph/badge.svg
+[codecov-link]: https://codecov.io/gh/Robpol86/sphinx-imgur
+[rtd-badge]: https://readthedocs.org/projects/sphinx-imgur/badge/?version=latest
+[rtd-link]: https://sphinx-imgur.readthedocs.io/en/latest/?badge=latest
+[black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
+[black-link]: https://github.com/ambv/black
+[pypi-badge]: https://img.shields.io/pypi/v/sphinx-imgur.svg
+[pypi-link]: https://pypi.org/project/sphinx-imgur
+[pypi-dl-badge]: https://img.shields.io/pypi/dw/sphinx-imgur?label=pypi%20downloads
+[pypi-dl-link]: https://pypistats.org/packages/sphinx-imgur
+
+## Quickstart
+
+To install run the following:
+
+```bash
+pip install sphinx-imgur
+```
+
+To use in Sphinx simply add to your `conf.py`:
+
+```python
+extensions = ["sphinx_imgur.imgur"]
+```
+
+And in your Sphinx documents:
+
+```rst
+.. imgur:: 611EovQ
+```
+
+Or to use Imgur's embed feature with an album:
+
+```rst
+.. imgur-embed:: a/9YZHA
+```
+
