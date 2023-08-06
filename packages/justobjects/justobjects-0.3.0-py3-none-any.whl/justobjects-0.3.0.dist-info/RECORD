@@ -1,0 +1,16 @@
+justobjects/__init__.py,sha256=7kvY-sMDf9qBtOotqfu2z7gXQnWCMmU0PpkFvacJlpE,1484
+justobjects/decorators.py,sha256=uz9QR0n7WbU5D4nxbgrnMCTguekKJjThNcebi1sSNwI,12182
+justobjects/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+justobjects/schemas.py,sha256=bI6vgNKBJYxgiAf0uvb4rUH2MPETiNlW9yCUx58gRV8,9253
+justobjects/transforms.py,sha256=_WklETYbpJ6cID99zJS2DPsZH9gVC0zdVz-3a2h8mrk,3356
+justobjects/types.py,sha256=9hBDbffo0J8jA1kFgAUewMcfisYB-1q11rUInxz3H_g,15691
+justobjects/typings.py,sha256=5rzzCk-dQgUPXFIfqqzS8_UDpFeFlIYYp7aBDKwnG-w,845
+justobjects/validation.py,sha256=atijT3HS9EknET6XjCezEEtv1Jyx0ag11HCEi1CZV_Q,3006
+justobjects/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+justobjects/plugins/jomypy.py,sha256=I9o3H6agY1VkxNceu8CaiyrcL-RhO1W2MYpRzYZj5pI,1709
+justobjects-0.3.0.dist-info/LICENSE,sha256=gZMud_70zsMG2lTK99TSId_Q9vttohTHEuNsuVrEeQY,10108
+justobjects-0.3.0.dist-info/METADATA,sha256=z63aG5ZqSm_yqiGnzg8k-p-QUEWal6e0970yuMPqXI0,4206
+justobjects-0.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+justobjects-0.3.0.dist-info/top_level.txt,sha256=HemaXYJyAZ5WfghyrPyihU0e7hHWN6j0TA1ZXHeNNHw,12
+justobjects-0.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+justobjects-0.3.0.dist-info/RECORD,,
