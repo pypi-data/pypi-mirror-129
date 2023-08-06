@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+fastapi_signals/__init__.py
+fastapi_signals/handler.py
+fastapi_signals/main.py
+fastapi_signals/middleware.py
+fastapi_signals.egg-info/PKG-INFO
+fastapi_signals.egg-info/SOURCES.txt
+fastapi_signals.egg-info/dependency_links.txt
+fastapi_signals.egg-info/requires.txt
+fastapi_signals.egg-info/top_level.txt
