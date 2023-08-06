@@ -1,0 +1,8 @@
+docutils
+pygments
+readme_renderer
+
+[syntax]
+
+[test]
+mock
