@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: viking
+Version: 0.0.4
+Summary: A converter from RobotLog CSV to a basic Instruction set
+Home-page: https://github.com/FRC6854
+Author: FRC6854 Robotics
+Author-email: frc6854@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio (==3.4.3)
+Requires-Dist: bleach (==4.1.0)
+Requires-Dist: certifi (==2021.10.8)
+Requires-Dist: charset-normalizer (==2.0.8)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: docutils (==0.18.1)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.8.2)
+Requires-Dist: keyring (==23.3.0)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pkginfo (==1.8.1)
+Requires-Dist: Pygments (==2.10.0)
+Requires-Dist: pyparsing (==3.0.6)
+Requires-Dist: readme-renderer (==30.0)
+Requires-Dist: reflectdb (==0.2)
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.5.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tqdm (==4.62.3)
+Requires-Dist: twine (==3.6.0)
+Requires-Dist: urllib3 (==1.26.7)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.6.0)
+
+# VIKING Instructions
+Eventual System to branch off from CSV to a new Instruction System. 
+
+# Install
+## Easy way
+Pip will be used for installing all requirements, just do `pip install viking`.  
+Then you can run the script by doing
+```
+user@computer ~ % python3
+from viking import main
+main()
+```
+## Full CLI
+First, clone the repo. Then run
+`pip install -r requirements.txt`. After you are done then simply do `python3 -m viking`
+
+
