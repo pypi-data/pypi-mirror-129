@@ -1,0 +1,5 @@
+numpy
+jieba
+requests
+zipfile36
+spacy-pkuseg
