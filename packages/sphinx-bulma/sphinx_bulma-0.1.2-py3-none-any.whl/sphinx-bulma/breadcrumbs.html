@@ -1,0 +1,49 @@
+{%- set suffix = page_source_suffix -%}
+
+{%- block breadcrumbs_aside -%}
+  <div class="breadcrumb-aside">
+  {%- if hasdoc(pagename) -%}
+    {%- if theme_display_git and not is_search_page %}
+      <a href="https://{{ theme_git_host|default("github.com") }}/{{ theme_git_user }}/{{ theme_git_repo }}/{{ theme_git_blob|default("blob") }}/{{ theme_git_version }}{{ pagename }}{{ suffix }}">
+        <span class="icon is-small">
+          <i class="icon-{{ theme_git_icon|default("git") }}" aria-hidden="true"></i>
+        </span>
+        <span>{{ theme_git_desc }}</span>
+      </a>
+    {%- elif show_source and has_source and sourcename %}
+      <a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">
+        <span class="icon is-small">
+          <i class="icon-doc" aria-hidden="true"></i>
+        </span>
+        <span>{{ _('View page source') }}</span>
+      </a>
+    {%- endif %}
+  {%- endif %}
+  </div>
+{%- endblock %}
+
+{%- block breadcrumbs %}
+  <ul>
+    <li>
+      <a href="{{ pathto(root_doc) }}">
+        <span class="icon is-small">
+          <i class="icon-home" aria-hidden="true"></i>
+        </span>
+        <span>{{ _('Docs') }}</span>
+      </a>
+    </li>
+    {% for doc in parents -%}
+    <li>
+      <a href="{{ doc.link|e }}">
+        <span class="icon is-small">
+          <i class="icon-doc-text-inv" aria-hidden="true"></i>
+        </span>
+        <span>{{ doc.title }}</span>
+      </a>
+    </li>
+    {% endfor -%}
+    <li class="is-active">
+      <a href="#" aria-current="page">{{ title }}</a>
+    </li>
+  </ul>
+{%- endblock %}

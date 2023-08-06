@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{# METADATA #}
+{% set is_search_page = 'true' %}
+{% set title = _('Search') %}
+{% block extrahead %}
+  {{ super() }}
+  <script type="text/javascript" src="{{ pathto('_static/searchtools.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto('_static/language_data.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto('searchindex.js', 1) }}" defer></script>
+{% endblock %}
+
+{# BODY #}
+{% block body %}
+  <h1 id="search-documentation">{{ _('Search') }}</h1>
+
+  {% block searchtext %}
+    <div class="notification is-info">
+      {% trans %}Searching for multiple words only shows matches that contain all words.{% endtrans %}
+    </div>
+  {% endblock %}
+  
+  {% block searchresults %}
+    {% if search_performed %}
+      <h2>{{ _('Search Results') }}</h2>
+      {% if not search_results %}
+        <p>{{ _('Your search did not match any documents. Please make sure that all words are spelled correctly and that you have selected enough categories.') }}</p>
+      {% endif %}
+    {% endif %}
+
+    <div id="search-results"></div>
+  {% endblock %}
+{% endblock %}

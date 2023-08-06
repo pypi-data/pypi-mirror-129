@@ -1,0 +1,18 @@
+{%- set url_search = pathto('search') %}
+{%- if url_search == '#' %}
+  {%- set url_search = '' %}
+{%- endif %}
+
+{%- if builder != 'singlehtml' %}
+  <form class="field is-align-self-flex-end has-addons" action="{{ url_search }}" method="get">
+    <div class="control has-icons-right">
+      <input class="input is-small" type="text" name="q" placeholder="Search">
+      <span class="icon is-small is-right">
+        <i class="icon-search"></i>
+      </span>
+    </div>
+    <div class="control">
+      <button type="submit" class="button is-small is-primary">{{ _('Go') }}</button>
+    </div>
+  </form>
+{%- endif %}
