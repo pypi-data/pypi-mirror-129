@@ -1,0 +1,9 @@
+-r base.txt
+
+black
+ipdb
+ipython
+isort
+numpy==1.17.3
+pre-commit
+pytest-cov==3.0.0
