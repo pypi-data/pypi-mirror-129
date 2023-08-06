@@ -1,0 +1,17 @@
+beautifulsoup4
+tinydb
+pandas
+tqdm
+stanza
+sklearn
+eli5
+matplotlib
+graphviz
+openpyxl
+penman
+networkx
+rank_bm25
+streamlit
+streamlit-aggrid
+scikit-criteria
+tuw-nlp
