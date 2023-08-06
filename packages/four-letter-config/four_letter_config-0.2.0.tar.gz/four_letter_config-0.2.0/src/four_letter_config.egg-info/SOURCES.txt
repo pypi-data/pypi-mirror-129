@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/four_letter_config/__init__.py
+src/four_letter_config/__main__.py
+src/four_letter_config/cli.py
+src/four_letter_config/file_handler.py
+src/four_letter_config.egg-info/PKG-INFO
+src/four_letter_config.egg-info/SOURCES.txt
+src/four_letter_config.egg-info/dependency_links.txt
+src/four_letter_config.egg-info/entry_points.txt
+src/four_letter_config.egg-info/requires.txt
+src/four_letter_config.egg-info/top_level.txt

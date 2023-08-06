@@ -1,0 +1,3 @@
+[console_scripts]
+four_letter_config = four_letter_config.cli:main
+
