@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: bixr
+Version: 0.0.1
+Summary: Banca d'Italia eXchange Rates
+Home-page: https://github.com/riccz/bixr
+Author: Riccardo Zanol
+Author-email: rz@riccza.nl
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/riccz/bixr/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: pandas
+License-File: LICENSE
+
+Banca d'Italia Exchange Rates
+=============================
+
+This is a Python library to access the REST API at ...
+
+
+All dates are in CET/CEST
+Data is only available for (Italian) workdays
+Rates can be Base/quote (C) or quote/base (I) see `exchangeConventionCode`
+Ranges include both extremes
+
+There are two APIs:
+
+- LLAPI: low level API that maps directly to REST calls, and returns the JSON response as-is.
+- API: higher level API that handles pandas datetime types and returns pandas DataFrames.
+
+

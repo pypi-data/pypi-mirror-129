@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/bixr/__init__.py
+src/bixr/api.py
+src/bixr/llapi.py
+src/bixr.egg-info/PKG-INFO
+src/bixr.egg-info/SOURCES.txt
+src/bixr.egg-info/dependency_links.txt
+src/bixr.egg-info/requires.txt
+src/bixr.egg-info/top_level.txt
