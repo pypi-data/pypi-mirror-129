@@ -1,0 +1,5 @@
+haesleinhuepf-pyqode.core
+jedi
+pycodestyle
+pyflakes
+docutils
