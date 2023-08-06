@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: compliance-trestle-fedramp
+Version: 0.2.0
+Summary: Trestle plugin for FedRAMP validation and format conversion
+Home-page: https://github.com/IBM/compliance-trestle-fedramp
+Author: IBM
+Author-email: chris.butler@au1.ibm.com
+License: Apache Software License v2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# compliance-trestle-fedramp
+
+A plugin for [compliance-trestle](https://github.com/IBM/compliance-trestle) to provide functionality specifically for FedRAMP.
+
+Currently a work in progress please see the compliance-trestle project for more details.
+
+
