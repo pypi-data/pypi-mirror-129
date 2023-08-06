@@ -1,0 +1,12 @@
+README.md
+setup.py
+PyWebValidators/__init__.py
+PyWebValidators/fileValidators.py
+PyWebValidators/miscValidators.py
+PyWebValidators/textValidators.py
+PyWebValidators.egg-info/PKG-INFO
+PyWebValidators.egg-info/SOURCES.txt
+PyWebValidators.egg-info/dependency_links.txt
+PyWebValidators.egg-info/top_level.txt
+tests/__init__.py
+tests/test_validators.py
