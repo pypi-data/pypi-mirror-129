@@ -1,0 +1,8 @@
+time_tracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+time_tracker/log.py,sha256=BUxqcmOMzxsWusiz8eTkHj-nH7y4iYShJWQIoHYJoiA,2739
+time_tracker/main.py,sha256=RJPwJu_ZF8qQMr3TLl--5ObJs6d2tx6eQaq2WPvOycA,4826
+time_tracker-0.2.0.dist-info/entry_points.txt,sha256=7vm32w3vT6m6SuK77nnf5Fx5UGOg_kxQzspxSz1Z8Io,44
+time_tracker-0.2.0.dist-info/LICENSE,sha256=_n7j0xa_rFg61Z_OxkOi59a4FuyZ_0lpLipXL_kx5dw,1069
+time_tracker-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+time_tracker-0.2.0.dist-info/METADATA,sha256=dXoDkV5VRxN2QUvDTocBPyizl3NrtqyUL7BMlgW3F90,1673
+time_tracker-0.2.0.dist-info/RECORD,,
