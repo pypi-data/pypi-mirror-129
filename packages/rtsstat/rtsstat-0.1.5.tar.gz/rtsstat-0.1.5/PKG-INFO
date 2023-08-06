@@ -1,0 +1,134 @@
+Metadata-Version: 1.2
+Name: rtsstat
+Version: 0.1.5
+Summary: rtsstat. A mlf-core based .
+Home-page: https://github.com/waseju/rtsstat
+Author: Julian Wanner
+Author-email: jwgithub@mailbox.org
+License: MIT
+Description: =======
+        rtsstat
+        =======
+        
+        .. image:: https://github.com/waseju/rtsstat/workflows/Build%20rtsstat%20Package/badge.svg
+                :target: https://github.com/waseju/rtsstat/workflows/Build%20rtsstat%20Package/badge.svg
+                :alt: Github Workflow Build rtsstat Status
+        
+        .. image:: https://github.com/waseju/rtsstat/workflows/Run%20rtsstat%20Tox%20Test%20Suite/badge.svg
+                :target: https://github.com/waseju/rtsstat/workflows/Run%20rtsstat%20Tox%20Test%20Suite/badge.svg
+                :alt: Github Workflow Tests Status
+        
+        .. image:: https://img.shields.io/pypi/v/rtsstat.svg
+                :target: https://pypi.python.org/pypi/rtsstat
+                :alt: PyPI Status
+        
+        
+        .. image:: https://readthedocs.org/projects/rtsstat/badge/?version=latest
+                :target: https://rtsstat.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://flat.badgen.net/dependabot/thepracticaldev/dev.to?icon=dependabot
+                :target: https://flat.badgen.net/dependabot/thepracticaldev/dev.to?icon=dependabot
+                :alt: Dependabot Enabled
+        
+        
+        rtsstat. A mlf-core based .
+        
+        
+        * Free software: MIT
+        * Documentation: https://rtsstat.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with mlf-core_ using cookiecutter_.
+        
+        .. _mlf-core: https://mlf-core.com
+        .. _cookiecutter: https://github.com/audreyr/cookiecutter
+        
+        
+        ==========
+        Changelog
+        ==========
+        
+        This project adheres to `Semantic Versioning <https://semver.org/>`_.
+        
+        
+        0.1.5 (2021-12-03)
+        ------------------
+        
+        **Added**
+        
+        **Fixed**
+        
+        **Dependencies**
+        
+        **Deprecated**
+        
+        
+        0.1.4 (2021-12-02)
+        ------------------
+        
+        **Added**
+        
+        **Fixed**
+        
+        **Dependencies**
+        
+        **Deprecated**
+        
+        
+        0.1.2 (2021-11-29)
+        ------------------
+        
+        **Added**
+        
+        **Fixed**
+        
+        **Dependencies**
+        
+        **Deprecated**
+        
+        
+        0.1.1 (2021-11-29)
+        ------------------
+        
+        **Added**
+        
+        **Fixed**
+        
+        **Dependencies**
+        
+        **Deprecated**
+        
+        
+        0.1.0 (2021-11-23)
+        ------------------
+        
+        **Added**
+        
+        * Created the project using mlf-core
+        
+        **Fixed**
+        
+        **Dependencies**
+        
+        **Deprecated**
+        
+Keywords: rtsstat
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
