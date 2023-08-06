@@ -1,0 +1,9 @@
+angr
+capstone
+r2pipe
+claripy
+IPython
+timeout_decorator
+pwntools
+tox
+tqdm
