@@ -1,0 +1,19 @@
+.venv*
+.vscode
+**/__pycache__
+build
+dist
+image2ascii.egg-info
+config.ini
+/*.jpg
+/*.png
+**/*.xcf
+*.csv
+**/notes.txt
+/shelf*
+/image2ascii_db*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
