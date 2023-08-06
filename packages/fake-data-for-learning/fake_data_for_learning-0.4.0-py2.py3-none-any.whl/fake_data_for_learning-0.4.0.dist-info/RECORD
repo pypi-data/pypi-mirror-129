@@ -1,0 +1,10 @@
+fake_data_for_learning/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fake_data_for_learning/contingency_tables.py,sha256=Q4yulFp9ETh5Q8CpqSi9k2Pfbrr6UGhiNQB09h5vQ0w,2343
+fake_data_for_learning/fake_data_for_learning.py,sha256=XFkjCC3YfIiX76u3RtNoQoQrH03Y1fqPlw4KZ7SuVx0,15086
+fake_data_for_learning/probability_polytopes.py,sha256=9cr0nuY-LkFi-RP8qaYurrRWZNBysFWb1raNo48FV5M,13482
+fake_data_for_learning/utils.py,sha256=Z8C75WxNKUsxKExWOrtq6jXHP4Cw-LgcN68sKC9yxS8,895
+fake_data_for_learning-0.4.0.dist-info/LICENSE,sha256=pcO-G36Llzb26X41l1Qo-7cpkUah4QJJBbloekifdWY,1074
+fake_data_for_learning-0.4.0.dist-info/METADATA,sha256=lPthnGuYbeG__sNqBu5vOlLHrhDgbWm_NYbTtzCck60,1964
+fake_data_for_learning-0.4.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+fake_data_for_learning-0.4.0.dist-info/top_level.txt,sha256=v9pT6vOX22BWqEM4pSTaFSv2irs9S_xogl90v33Af7w,23
+fake_data_for_learning-0.4.0.dist-info/RECORD,,
