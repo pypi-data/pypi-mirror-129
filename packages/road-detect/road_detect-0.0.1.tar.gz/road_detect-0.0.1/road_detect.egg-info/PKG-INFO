@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: road-detect
+Version: 0.0.1
+Summary: A demo for road detect.
+Home-page: UNKNOWN
+Author: zhang1992wen1023
+Author-email: 591603256@qq.com
+License: UNKNOWN
+Keywords: detect
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+https://blog.csdn.net/weixin_31938031/article/details/112666758
+This is a simple road detect example package. You can use to write your content.
+
