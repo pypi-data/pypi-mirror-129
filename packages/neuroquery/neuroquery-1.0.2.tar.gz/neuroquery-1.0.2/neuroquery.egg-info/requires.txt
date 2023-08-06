@@ -1,0 +1,8 @@
+nilearn
+sklearn
+pandas
+regex
+numpy
+scipy
+lxml
+requests
