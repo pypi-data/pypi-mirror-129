@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: s2stools
+Version: 0.0.1
+Summary: My first Python package
+Home-page: UNKNOWN
+Author: Jonas Spaeth
+Author-email: aac@example.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: xarray
+
+My first Python package with a slightly longer description
+
+
