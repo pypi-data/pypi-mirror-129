@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xled_plus.egg-info/PKG-INFO
+xled_plus.egg-info/SOURCES.txt
+xled_plus.egg-info/dependency_links.txt
+xled_plus.egg-info/requires.txt
+xled_plus.egg-info/top_level.txt
