@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: plotly-resampler
+Version: 0.2.0
+Summary: Visualizing large time series with plotly
+Author: Jonas Van Der Donckt
+Requires-Python: >=3.7,<3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dash (>=2.0.0,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=0.13.1,<0.14.0)
+Requires-Dist: jupyter-dash (>=0.4.0,<0.5.0)
+Requires-Dist: lttbc (>=0.2.0,<0.3.0)
+Requires-Dist: orjson (>=3.6.4,<4.0.0)
+Requires-Dist: plotly (>=5.3.1,<6.0.0)
+Requires-Dist: trace-updater (>=0.0.3,<0.0.4)
