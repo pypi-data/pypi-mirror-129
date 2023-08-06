@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: autorandr-rofi
+Version: 0.1.0
+Summary: A Rofi script for autorandr
+Author-email: Paul Hoffmann <phfn@phfn.de>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: python-rofi-phfn >= 1.0.3
+Project-URL: Home, https://phfn.de
+Project-URL: Source, https://github.com/phfn/autorandr-rofi

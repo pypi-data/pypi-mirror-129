@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "autorandr-rofi"
+authors = [{name = "Paul Hoffmann", email = "phfn@phfn.de"}]
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+dynamic = ["version", "description"]
+dependencies = [
+  'python-rofi-phfn >= 1.0.3'
+]
+[project.scripts]
+autorandr-rofi = "autorandr_rofi:main"
+
+[tool.flit.module]
+name = "autorandr_rofi"
+
+[project.urls]
+Source = "https://github.com/phfn/autorandr-rofi"
+Home = "https://phfn.de"
