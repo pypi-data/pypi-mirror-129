@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fpfs
+Version: 2.0.1
+Summary: FPFS shear estimator
+Home-page: UNKNOWN
+Author: Xiangchong Li et al.
+Author-email: mr.superonion@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
