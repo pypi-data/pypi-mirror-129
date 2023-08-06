@@ -1,0 +1,310 @@
+CHANGES
+=======
+
+16.4.0
+------
+
+* Prepare the final stable/ussuri release
+* Set fixture paths for unit tests
+* Add support for the interface parameter in authtoken middleware
+* Allow configuration of limit of batch size for exirer
+* Add CentOS8 to nodesets
+* Use common class to manage apache service in beaker job
+* Switch to Ussuri
+* Update TOX\_CONSTRAINTS\_FILE for stable/ussuri
+* Update .gitreview for stable/ussuri
+
+16.3.0
+------
+
+* Prepare Ussuri RC1
+
+16.2.1
+------
+
+* Prepare Ussuri M3 again
+* Resolve duplicated requirement names in metadata
+
+16.2.0
+------
+
+* Prepare Ussuri M3
+* Expect python3 client package in CentOS8
+* Update mysql module to <11.0.0
+* Add CentOS 8 and Puppet 6 in metadata
+* Deprecate min\_pool\_size option
+* Remove idle\_timeout option
+* [ussuri][goal] Cleanup for python 2.7 drop
+
+16.1.0
+------
+
+* Prepare Ussuri M2
+* Fix stdlib version in metadata
+
+16.0.0
+------
+
+* Prepare Ussuri M1
+* Convert all class usage to relative names
+* Update master for stable/train
+
+15.4.0
+------
+
+* Update the constraints url
+* Prepare Train RC1
+* Add support to configure service\_token\_roles in authtoken middleware
+* Prepare Train M4
+
+15.2.0
+------
+
+* Remove deprecated pki related options
+* Bump the openstackdocstheme extension to 1.20
+* Sync Sphinx requirement
+* Prepare Train M3
+
+15.1.0
+------
+
+* Manage oslo\_middleware/max\_request\_body\_size
+* Prepare Train M2
+
+15.0.0
+------
+
+* Deprecate idle\_timeout option
+* Move to opendev
+* Fix Repository
+* Replace git.openstack.org with opendev.org/openstack
+* OpenDev Migration Patch
+* Add Beaker-Rspec to the table of contents
+* Bump version for the start of Train
+* Update master for stable/stein
+
+14.4.0
+------
+
+* Prepare Stein RC1
+
+14.3.0
+------
+
+* Prepare Stein M3
+* Add release note about Ubuntu py3 upgrade
+* Use validate\_legacy
+* Service\_token\_roles\_required missing in the server config file
+* Use puppet 4 compatible mysql functions
+* Remove Ubuntu Xenial from metadata.json
+* Fix lint issue
+* Remove redundantly tested code
+* Inherit pyvers from openstacklib::defaults
+* Modify puppet version 4 to 5
+
+14.2.0
+------
+
+* Prepare Stein M2
+* Fix editorial problem
+* Fix service\_type annotation
+* Cleanup documentation
+* Fix module structure
+* Install python3-pankoclient for Fedora And RedHat > 7
+* Change openstack-dev to openstack-discuss
+* Dont include logging in init class by default
+* Remove auth\_uri
+* Convert to rspec-puppet-facts
+* Deprecate pki related options
+
+14.1.0
+------
+
+* Prepare Stein M1
+* Fix stdlib version in metadata
+* Update min tox version to 2.0
+* Dissuade .gitignore references to personal tools
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Bump version for the start of Stein
+* Add the missing 'Table of Contents'
+* Update reno for stable/rocky
+* Remove PE requirement from metadata.json
+
+13.3.0
+------
+
+* Restart API also when run with Apache
+* Prepare Rocky RC1
+* Fix the smoke testing link
+* Reorganize that 'Release Notes' in README
+* Remove the unnecessary \_
+* Prepare Rocky M3
+* Fix OS versions in metadata
+* Add the project source code repository in README
+* modulesync: sync and add nodepool-bionic for beaker
+* Fix inifile version in metadata
+* Debian release is 9 in metadata
+* Add release note link in README
+* Fix annotations
+* fix tox python3 overrides
+
+13.1.0
+------
+
+* Prepare a new Rocky release
+* Replace port 35357 with 5000 for "auth\_url"
+* neat: missing : in $::os\_service\_default
+* fix error url
+
+13.0.0
+------
+
+* Prepare Rocky M1
+* Missing deps for config.pp unit test
+* Debian is using python3-pankoclient
+* Update .gitignore
+* Update LICENSE
+* Deprecate auth\_uri option
+* Remove deprecated ensure\_package option
+* Remove deprecated keystone authtoken revocation\_cache\_time option
+* Use the pbr generated wsgi binary file located in binary folder
+* Add pool\_timeout option
+* oslo middleware: check puppet resource instead of actual config in spec
+* Switch acceptance test to use integration classes
+* Add 'openstack-db' tag to db-sync Exec resource
+* Drop all qpid related explanations
+* Panko api wsgi changed path for Ubuntu
+* Follow the new PTI for document build
+* Update reno for stable/queens
+
+12.3.0
+------
+
+* Prepare for official Queens release
+* Load puppet-openstack\_spec\_helper locally during tests
+* Add Panko expirer class
+* Add event\_time\_to\_live for panko config
+* Zuul: Remove project name
+
+12.2.0
+------
+
+* Prepare for Queens Milestone 3
+* Remove pinned versions from test-requirements.txt
+* Add use\_journal option for logging configuration
+* Add group to policy management
+* Run puppet-openstack-beaker-jobs
+
+12.1.0
+------
+
+* Prepare for Queens Milestone 2
+* Expose use\_json logging option
+
+12.0.0
+------
+
+* Add Puppet package to bindep, for module build
+* Switch to Zuul v3 testing
+* allow to specify drivername for postgres
+* Prepare for Queens Milestone 1
+* apache wsgi: Exchange defaults for workers and threads
+* Configure \*\_domain\_name to Default by default
+* Allow setting log files for apache vhost
+* add parameter to overwrite/add wsgi process options
+* Update to the latest address in README
+* Update openstackdocstheme to latest version
+* Deprecate revocation\_cache\_time option
+* Use Python to compute release notes version
+* Update versions for Queens cycle
+* Update reno for stable/pike
+
+11.3.0
+------
+
+* Prepare for official Pike release
+* Update reno>=2.5.0
+* Bump modules to next minor with -dev
+* Add panko client install support
+* Update openstackdocstheme>=1.16.0
+* Fix filename of api\_paste.ini
+
+11.2.0
+------
+
+* Drop -dev version for Pike M3
+* Update URLs in documents according to document migration
+* Fix unit tests
+* changed author
+* Fix openstackdocstheme
+* Switch from oslosphinx to openstackdocstheme
+* Add environment variable
+* Bump version for Pike M3 Dev
+* Update global requirements
+* Use proper resource collector syntax for httpd service
+* Fix the default port for Panko API
+
+11.1.0
+------
+
+* Drop -dev in preparation for Pike M2
+* Fix unit test
+* oslo policy: check puppet resource instead of actual config in spec
+* Update tox configuration
+* Set debug to true
+* Add deprecation warning to api
+* Bump modules to next minor with -dev
+* Add storage related params
+* oslo db: check puppet resource instead of actual config in spec
+
+11.0.0
+------
+
+* Drop -dev for release prep
+* oslo log: check puppet resource instead of actual config in spec
+* Remove explicit log file for panko
+* Update test-requirements.txt
+* Add unit test for init.pp
+* Add bindep support
+* Fix typo
+* Inconsistent package\_ensure parameter name
+* Prepare Pike metadata
+* Set the user and domain name to default
+* Update reno for stable/ocata
+
+10.3.0
+------
+
+* Prepare ocata-rc1 release
+
+10.2.0
+------
+
+* Add oslo::db to dependency chain
+* Prepare 10.2.0 release
+* Allow python-memcache install from authtoken class
+* Remove signing\_dir option
+* Pin reno version to reno>=0.1.1,!=2.0.0
+* Add customization for wsgi process display name
+* Add test for sync
+* Fix the case statement
+* Use sync\_db option to sync database
+* Add hooks for external install & svc management
+* Show team and repo badges on README
+* Fix puppet-lint warning - More than 140 chars
+* Add requirements in metadata.json file
+* Add enable\_proxy\_headers\_parsing option
+* Add test for policy
+* Add support for db\_max\_retries param
+* Fix documentation for log\_dir parameter
+* Change worker defaults to ::os\_workers
+* Add basic structure for ReNo
+* Move rspec-puppet-facts to spec helper
+* Added retries for db\_sync
+* Implement Panko Api service
+* Add api\_paste type/provider for Panko
+* Set panko api service and package params
+* Update panko::auth classes to configure auth settings
+* puppet-panko: Initial commit
+* Added .gitreview
