@@ -1,0 +1,7 @@
+Change Log
+==========
+
+1.5.1 (02/12/2021)
+-------------------
+- Usage Updated
+- Documentation Updated
