@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Random_Jij_FCC.egg-info/PKG-INFO
+src/Random_Jij_FCC.egg-info/SOURCES.txt
+src/Random_Jij_FCC.egg-info/dependency_links.txt
+src/Random_Jij_FCC.egg-info/top_level.txt
+src/package/__init__.py
+src/package/main_v1.py
