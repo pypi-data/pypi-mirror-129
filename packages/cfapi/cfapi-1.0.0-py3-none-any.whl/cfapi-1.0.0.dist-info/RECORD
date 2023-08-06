@@ -1,0 +1,11 @@
+cfapi/__init__.py,sha256=4QNzuAsPecASF-BaTTH33j4gzdpSatAlfsXcdLSpEy8,172
+cfapi/base.py,sha256=CNL6VZw9CXvLJkVmbwdA96qYr8vLgbt_MByDTmR2W9E,2040
+cfapi/contest.py,sha256=XoL1oJpWRRHr_SR3X3nAC1xe5TPHWn5YeTWK5mHOB6M,1538
+cfapi/exceptions.py,sha256=0eGQKLIz711fGbDrx1bebDMionCwkvfpj3b4pnp78-8,446
+cfapi/funcs.py,sha256=72WaypvDroo4VFuqAjJR2n6eoQJZuBTnxx1Undn4_yE,452
+cfapi/problem.py,sha256=3kPVXvkHDMb3yAWMxPDT44MGUBsGPAvd01ORgnl1Pzs,5186
+cfapi/profile.py,sha256=MC987QMFYL4H9gDRagLOsBRdtzYgk2LMwG2Kgc90RVE,820
+cfapi-1.0.0.dist-info/METADATA,sha256=IuvezbqSt7m90CP9S-4uyc19qTwAfftLJqBxO9gEwjs,924
+cfapi-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cfapi-1.0.0.dist-info/top_level.txt,sha256=u52-LKnLii1DhFf2SR-OFty2Yi8VT4OrSh8E5lUacG0,6
+cfapi-1.0.0.dist-info/RECORD,,
