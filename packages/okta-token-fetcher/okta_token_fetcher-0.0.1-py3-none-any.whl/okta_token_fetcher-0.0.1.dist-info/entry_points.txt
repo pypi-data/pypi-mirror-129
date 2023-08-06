@@ -1,0 +1,3 @@
+[console_scripts]
+okta-fetch = okta_token_fetcher:run_from_shell
+
