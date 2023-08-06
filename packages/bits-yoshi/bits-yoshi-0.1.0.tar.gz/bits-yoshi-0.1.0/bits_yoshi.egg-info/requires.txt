@@ -1,0 +1,6 @@
+cffi
+numpy
+matplotlib
+logzero
+pyfastx>=0.8.4
+edlib
