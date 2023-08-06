@@ -1,0 +1,3 @@
+boto
+kinto<15
+pyramid_storage>=0.1.0
