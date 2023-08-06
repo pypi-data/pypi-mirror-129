@@ -1,0 +1,7 @@
+setup.py
+pyprocessbar/__init__.py
+pyprocessbar.egg-info/PKG-INFO
+pyprocessbar.egg-info/SOURCES.txt
+pyprocessbar.egg-info/dependency_links.txt
+pyprocessbar.egg-info/requires.txt
+pyprocessbar.egg-info/top_level.txt
