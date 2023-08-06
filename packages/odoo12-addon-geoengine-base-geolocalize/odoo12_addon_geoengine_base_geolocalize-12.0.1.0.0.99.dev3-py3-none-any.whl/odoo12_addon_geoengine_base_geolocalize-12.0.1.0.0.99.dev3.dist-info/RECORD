@@ -1,0 +1,14 @@
+odoo/addons/geoengine_base_geolocalize/README.rst,sha256=bF83lEreSqLXz1cnFgZp2ZFYbODzZ0C8nZmemPqqLO8,1694
+odoo/addons/geoengine_base_geolocalize/__init__.py,sha256=yKFLGL71W3Jixi2z8S4aNS0bhslgZnx9YcJXhqqQ69w,956
+odoo/addons/geoengine_base_geolocalize/__manifest__.py,sha256=Slmo3HCF3HuA3gyWqT-W4xBWIzqEUOHkfAGKizk6bU4,625
+odoo/addons/geoengine_base_geolocalize/i18n/geoengine_base_geolocalize.pot,sha256=SM7wXmkQCAIndV_csQTTLISbxkQ6qFvSj9suBIGuc_U,781
+odoo/addons/geoengine_base_geolocalize/models/__init__.py,sha256=g-Dp2ZwN6oB4CqdQfgRInNSzdMWAVQg1vjWL7S-ZODM,26
+odoo/addons/geoengine_base_geolocalize/models/res_partner.py,sha256=KO_3oX2lZZcV_TTGoddVt4vWgOnEWeTnDygr8uimytA,1462
+odoo/addons/geoengine_base_geolocalize/static/description/icon.png,sha256=MjNOxsPPJOCT6XNcqyRBqlmfAMJ8rfg4Nht2FKpVE2k,130328
+odoo/addons/geoengine_base_geolocalize/tests/__init__.py,sha256=f6sHWZEcmiDFN2jtCEsxjgO56y0eXpVjhpDoYVdfdDE,37
+odoo/addons/geoengine_base_geolocalize/tests/test_geoengine_partner.py,sha256=YNNrQSBhhEU5CkrY3qbiz86iNOh6oYhRaC_Jzwcd52o,1678
+odoo/addons/geoengine_base_geolocalize/views/res_partner_view.xml,sha256=aPUmNRtKy0KRNStnVyOqLRxPJC8CahUlyKtQ8jtaSy8,656
+odoo12_addon_geoengine_base_geolocalize-12.0.1.0.0.99.dev3.dist-info/METADATA,sha256=WwmaZSN5uUsecs6kYWZdc5-rdeWJZVWrlDY4UoGN9HY,2336
+odoo12_addon_geoengine_base_geolocalize-12.0.1.0.0.99.dev3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+odoo12_addon_geoengine_base_geolocalize-12.0.1.0.0.99.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_geoengine_base_geolocalize-12.0.1.0.0.99.dev3.dist-info/RECORD,,
