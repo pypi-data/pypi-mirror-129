@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ivy-builder
+Version: 1.1.6
+Summary: Build custom Ivy training tasks with clear, hierarchical and robust user specifications.
+Requires-Dist: ivy-core
+
+Home-page: https://ivy-dl.org/ivy
+Author: Ivy Team
+Author-email: ivydl.team@gmail.com
+License: Apache 2.0
+Project-URL: Docs, https://ivy-dl.org/builder/
+Project-URL: Source, https://github.com/ivy-dl/builder
+Description: Build custom Ivy training tasks with clear, hierarchical and robust user specifications.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
