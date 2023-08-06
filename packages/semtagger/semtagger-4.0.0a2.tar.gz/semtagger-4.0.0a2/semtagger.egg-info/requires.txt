@@ -1,0 +1,9 @@
+libwapiti
+dill
+pymorphy2
+
+[all]
+pyperclip
+
+[clipboard]
+pyperclip
