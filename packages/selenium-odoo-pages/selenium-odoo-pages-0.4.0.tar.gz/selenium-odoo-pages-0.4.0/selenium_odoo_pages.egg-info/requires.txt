@@ -1,0 +1,4 @@
+selenium<4
+selenium-configurator
+python-dotenv
+pytest-bdd
