@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyfqmr
+Version: 0.1.0
+Summary: cython wrapper around C++ library for fast triangular mesh reduction
+Home-page: https://github.com/Kramer84/pyfqmr-Fast-quadric-Mesh-Reduction
+Author: kramer84
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+License-File: LICENSE
+
+UNKNOWN
+
