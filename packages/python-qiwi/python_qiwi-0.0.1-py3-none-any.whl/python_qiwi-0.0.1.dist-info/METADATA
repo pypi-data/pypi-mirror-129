@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: python-qiwi
+Version: 0.0.1
+Summary: library for easy work with qiwi wallet
+Home-page: https://github.com/lev007-ops/python-qiwi
+Author: Lev
+Author-email: lev_bariakh@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-qiwi
+## **RU** vercion
+### Р‘РёР»РёРѕС‚РµРєР° python-qiwi РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ СѓРґРѕР±РЅРѕР№ СЂР°Р±РѕС‚С‹ СЃ api QIWI РєРѕС€РµР»СЊРєР°
+____
+
+### РЈСЃС‚Р°РЅРѕРІРєР°:
+```pip install python-qiwi```
+
+### РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° wallet:
+```python
+import python_qiwi
+phone = '+79021234567' # РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅ
+token = 'token' # С‚РѕРєРµРЅ РїРѕР»СѓС‡РµРЅРЅС‹Р№ РЅР° СЃР°Р№С‚Рµ https://qiwi.com/api
+wallet = python_qiwi.qiwi_wallet(phone, token)
+```
+### РџРѕР»СѓС‡РµРЅРёРµ Р±Р°Р»Р°РЅСЃР° РєРѕС€РµР»СЊРєР°
+```python
+
+```
+
+
