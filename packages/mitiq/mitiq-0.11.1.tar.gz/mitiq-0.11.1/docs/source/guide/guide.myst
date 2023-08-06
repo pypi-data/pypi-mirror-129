@@ -1,0 +1,15 @@
+# Users Guide
+
+```{toctree}
+---
+maxdepth: 2
+---
+guide-overview.rst
+guide-getting-started.rst
+guide-executors.rst
+guide-observables.myst
+guide-zne.rst
+guide-pec.rst
+guide-cdr.rst
+guide-error-mitigation.rst
+```

@@ -1,0 +1,49 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-type: "all"
+    ignore:
+      # Ignore patch releases in "supported frontend/backend" packages.
+      - dependency-name: "cirq"
+        update-types: ["version-update:semver-patch"]
+      - dependency-name: "*qiskit*"
+        update-types: ["version-update:semver-patch"]
+      - dependency-name: "amazon-braket-sdk"
+        update-types: ["version-update:semver-patch"]
+      - dependency-name: "pyquil"
+        update-types: ["version-update:semver-patch"]
+      - dependency-name: "*pennylane*"
+        update-types: ["version-update:semver-patch"]
+      # Ignore minor and patch releases in other dev requirements.
+      - dependency-name: "*pytest*"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: "flake8"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: "black"
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: "mypy"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: "*sphinx*"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: "myst*"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+      - dependency-name: "jupytext"
+        update-types: ["version-update:semver-minor", "version-update:semver-patch"]
+    # Allow up to 10 open pull requests for pip dependencies
+    open-pull-requests-limit: 10
+    labels:
+      - "infrastructure"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every weekday
+      interval: "daily"
