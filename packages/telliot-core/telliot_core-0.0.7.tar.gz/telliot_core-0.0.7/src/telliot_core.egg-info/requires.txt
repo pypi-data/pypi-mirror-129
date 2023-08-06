@@ -1,0 +1,6 @@
+click
+PyYAML
+requests
+web3
+clamfig
+atom==0.7.0
