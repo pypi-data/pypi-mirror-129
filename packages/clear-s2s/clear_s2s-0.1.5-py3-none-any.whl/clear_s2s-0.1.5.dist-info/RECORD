@@ -1,0 +1,12 @@
+clear_s2s/APIHandler.py,sha256=hxYSeW8TbDbbiA72yolQWfvG3KaxU2hFiZo5fjcV8GM,4287
+clear_s2s/CLEAR/templates/BusinessSearchRequest.xml,sha256=3E02G1crdYkjO2tAk5QF0S0j8aQ8dEnZUibAQDEzLQQ,3546
+clear_s2s/CLEAR/templates/CompanyQuickAnalysisFlagRequest.xml,sha256=7Ahiz_bqeYQysmxM7oKLYyllTtbZfahbRCRb_s9vlYk,3525
+clear_s2s/CLEAR/templates/EIDVPersonSearch.xml,sha256=9ybwnJbmTNDEFpk9Qixv6N7fvs88kHfeWRkJpKq-gGM,2525
+clear_s2s/CLEAR/templates/PersonQuickAnalysisFlagRequest.xml,sha256=1z1lJQqVnEiSNTM8-NPmnDtislExDdTkUfjhUHVEe7U,5938
+clear_s2s/CLEAR/templates/PersonSearchRequest.xml,sha256=WQIrzY2ZkNrvl-rblZy60pQGKdlFpjjQWPCg8kuJNvU,3093
+clear_s2s/CLEAR/templates/WebAndSocialMediaSearchRequest.xml,sha256=rRycI1qkQmMVTh4y85tIxPhp8Abv-jeUQXD_vVCGGFA,1857
+clear_s2s/exceptions.py,sha256=tBI3YOi71kCugyIaXr8SUFytpCQWlU9yZ3rpgzt_bq0,99
+clear_s2s/ThomsonReuters.py,sha256=MEJFdM9Urff6Oo5ufzNRIudPulO6oD1X1fWRwXtZcmQ,2640
+clear_s2s-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+clear_s2s-0.1.5.dist-info/METADATA,sha256=TEHsekik8jEJ4B4weT7JueK3we6ADXH_AufbFHeVHgg,566
+clear_s2s-0.1.5.dist-info/RECORD,,
