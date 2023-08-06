@@ -1,0 +1,7 @@
+README.md
+setup.py
+pathimp/__init__.py
+pathimp.egg-info/PKG-INFO
+pathimp.egg-info/SOURCES.txt
+pathimp.egg-info/dependency_links.txt
+pathimp.egg-info/top_level.txt
