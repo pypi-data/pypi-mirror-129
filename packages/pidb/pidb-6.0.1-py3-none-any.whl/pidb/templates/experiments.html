@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end, card_link_by_title, paginate %}
+
+{% block content %}
+
+<h1>Experiments Overview</h1>
+<div align="right">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Task Templates</a>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{url_for('web.web_experiments')}}">-</a>
+      {% for template in finding_templates %}
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="{{url_for('web.web_experiments_template', template=template.task_template)}}">{{template.task_template}}</a>
+      {% endfor %}
+  </div>
+</div>
+
+
+
+{{ collapse_card_start("Experiments", show=True, data_count=experiments.total) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Experiment</th>
+          <th>Subject</th>
+          <th>Scan date</th>
+        
+          {% for label in labels %}
+             <th>{{label.label_text}}</th>
+          {% endfor %}
+
+        </tr>
+        </thead>
+        <tbody>
+          {% for experiment in experiments.items %}
+          <tr>
+            <td>
+              <a href="{{url_for('web.web_experiment', id=experiment.experiment_id) }}">
+                {{experiment.experiment_id}}
+              </a>
+            </td>
+
+            {% for subject in subjects %}
+              {% if experiment.subject_id == subject.subject_id %}
+              <td>{{subject.study_id}}</td>
+              {% endif %} 
+           {% endfor %}
+
+            <td>{{experiment.date}}</td>
+
+            {% for label in labels %}
+                {%set count = [] %}
+
+                {% for finding in findings %}
+                   {% if experiment.experiment_id == finding.experiment_id and finding.label_id == label.label_id %}
+                      {% if count.append(1) %}{% endif %} 
+                   {% endif %} 
+                {% endfor %}
+                <td>{{count|sum()}}</td>
+            {% endfor %} 
+          </tr>
+
+          {% endfor %}
+        </tbody>
+      </table>
+
+{% if template %}
+  {{ paginate(experiments, "web.web_experiments_template", template=template) }}
+{%else%}
+  {{ paginate(experiments, "web.web_experiments") }}
+{%endif%}
+
+{{ collapse_card_end("Experiments") }}
+
+<div align="right">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">download csv</a>
+  <div class="dropdown-menu">
+      <a class="dropdown-item" href="{{url_for('web.getCSV')}}">overview</a>
+      {% for label in labels %}
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="{{url_for('web.getCSV_finding', id=label.label_id)}}">{{label.label_text}}</a>
+      {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
