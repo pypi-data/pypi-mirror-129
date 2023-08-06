@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/augwrap/__init__.py
+src/augwrap/augmentations.py
+src/augwrap/data.py
+src/augwrap/kelvin_table.json
+src/augwrap/transforms.py
+src/augwrap.egg-info/PKG-INFO
+src/augwrap.egg-info/SOURCES.txt
+src/augwrap.egg-info/dependency_links.txt
+src/augwrap.egg-info/top_level.txt
+src/augwrap/utils/__init__.py
+src/augwrap/utils/chart.py
