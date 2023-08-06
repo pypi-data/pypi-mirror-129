@@ -1,0 +1,6 @@
+afsql/mysql.py,sha256=rnYgcGV5QIH0xJOovIT1-CcGYRWyuN8S6Ma4-Jg_g-Y,5601
+afsql/psycopg2.py,sha256=1fYxX2FJgnYqPk_liu7iX92UlV3jEwrZWWx7fe3Sbag,3664
+afsql/pyneo4j.py,sha256=Xb4mAqMX5NwbWE2UypHVqKbAGbD8uGUOxSTiiwUKYb0,5146
+afsql-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+afsql-0.2.0.dist-info/METADATA,sha256=bT8NnByiqarQEMenYyVg2c8CMh4PjO3xaoZwq_aeGj0,671
+afsql-0.2.0.dist-info/RECORD,,
