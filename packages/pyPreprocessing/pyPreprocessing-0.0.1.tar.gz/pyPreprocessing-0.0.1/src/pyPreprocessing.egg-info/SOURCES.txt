@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pyPreprocessing/__init__.py
+src/pyPreprocessing/baseline_correction.py
+src/pyPreprocessing/smoothing.py
+src/pyPreprocessing/transform.py
+src/pyPreprocessing.egg-info/PKG-INFO
+src/pyPreprocessing.egg-info/SOURCES.txt
+src/pyPreprocessing.egg-info/dependency_links.txt
+src/pyPreprocessing.egg-info/requires.txt
+src/pyPreprocessing.egg-info/top_level.txt
