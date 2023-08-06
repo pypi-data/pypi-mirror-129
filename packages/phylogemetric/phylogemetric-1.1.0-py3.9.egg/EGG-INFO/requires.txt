@@ -1,0 +1,10 @@
+python-nexus
+
+[dev]
+wheel
+twine
+
+[test]
+pytest>=5
+pytest-cov
+coverage>=4.2
