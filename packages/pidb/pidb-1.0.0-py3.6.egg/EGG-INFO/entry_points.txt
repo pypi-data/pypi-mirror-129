@@ -1,0 +1,13 @@
+[console_scripts]
+pidb-add-task = pidb.__main__:add_task
+pidb-add-template = pidb.__main__:add_template
+pidb-add-user = pidb.__main__:add_user
+pidb-config = pidb.__main__:config_from_file
+pidb-db-clean = pidb.__main__:db_clean
+pidb-db-init = pidb.__main__:db_init
+pidb-db-reload = pidb.__main__:reload_data
+pidb-manager = pidb.__main__:flask_manager
+pidb-test-taskgroup = pidb.__main__:create_random_test_taskgroup
+pidb-test-tasks = pidb.__main__:create_random_test_tasks
+pidb-update-template = pidb.__main__:update_template
+

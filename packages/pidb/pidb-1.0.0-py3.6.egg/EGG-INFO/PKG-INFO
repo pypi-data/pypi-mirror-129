@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: pidb
+Version: 1.0.0
+Summary: Population Imaging Database (pidb) is a tool for collecting derived data in population imaging studies.
+Home-page: https://gitlab.com/radiology/population-imaging/population-imaging-database
+Author: H.C. Achterberg, M. Koek, A. Versteeg, T. Phil
+Author-email: h.achterberg@erasmusmc.nl, m.koek@erasmusmc.nl, a.versteeg@erasmusmc.nl, t.phil@erasmusmc.nl
+License: LICENSE
+Project-URL: Documentation, https://population-imaging-database.readthedocs.io
+Project-URL: Code, https://gitlab.com/radiology/population-imaging/population-imaging-database
+Project-URL: Issue tracker, https://gitlab.com/radiology/population-imaging/population-imaging-database/issues
+Description: # Population Imaging Database
+        
+        The population imaging database where the per sample results from a population imaging study can be stored for aggregation.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Utilities
+Requires-Python: !=2.*,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*

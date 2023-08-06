@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% from "_macros.html" import collapse_card_start, collapse_card_end, card_link_by_title %}
+
+{% block content %}
+
+<h1>Experiment {{experiment.experiment_id}} </h1>
+
+{{ collapse_card_start("Experiment resources", show=True) }}
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>XNAT resource id</th>
+          <th>URL</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for resource in resources %}
+        <tr>
+          <td>{{resource.xnatresource_id}}</td>
+          <td>{{resource.url}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+{{ collapse_card_end("Experiment resources") }}
+
+{% endblock %}
