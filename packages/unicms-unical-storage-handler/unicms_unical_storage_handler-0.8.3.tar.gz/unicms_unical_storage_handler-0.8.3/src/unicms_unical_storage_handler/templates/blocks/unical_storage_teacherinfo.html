@@ -1,0 +1,218 @@
+{% load static %}
+
+{% load i18n %}
+
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% include "includes/unical_storage_loading.html" %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_allowed_website request.get_host as host %}
+
+{% random_id uid as id %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_STRUCTURE_VIEW_PREFIX_PATH" as structures_prefix %}
+{% settings_value "CMS_STORAGE_LABORATORY_API" as laboratories_api %}
+{% settings_value "CMS_STORAGE_RESEARCH_GROUP_API" as research_groups_api %}
+{% settings_value "CMS_STORAGE_BASE_RESEARCH_LINE_API" as base_research_lines_api %}
+{% settings_value "CMS_STORAGE_APPLIED_RESEARCH_LINE_API" as applied_research_lines_api %}
+{% settings_value "TEACHER_INFO_NOT_SHOW" as fields_to_hide %}
+
+
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length">
+        <div class="row">
+            <div class="col-12 col-lg-2 d-flex">
+                <svg class="m-auto icon icon-xl icon-muted">
+                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-user"></use>
+                </svg>
+            </div>
+            <div class="col-12 col-lg-10 my-3 my-lg-0">
+                <h1 class="lighter">
+                    [[ item.TeacherLastName ]] [[ item.TeacherFirstName ]]
+                </h1>
+                <h3 class="lighter">
+                    [[ item.TeacherRoleDescription ]]
+                </h3>
+            </div>
+        </div>
+        <hr class="my-4 bordeaux-unical-bg">
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <tbody>
+                    <tr v-for="(value, name) in item" v-if="value && !fields_to_not_show.includes(name) && value != ''">
+                        <td>[[ labels[name] ]]</td>
+                        <td v-if="typeof value === 'object'">
+                            <ul v-if="name == 'TeacherFunctions'">
+                                <li v-for="subvalue in value">
+                                    <span style="white-space: pre-line;">
+                                        [[ subvalue.TeacherRole]] -
+                                    </span>
+                                    <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ structures_prefix }}/' + [[ subvalue.StructureId ]] +'/'">
+                                        [[ subvalue.StructureName]]
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul v-else>
+                                <li v-for="v in value">
+                                    <span style="white-space: pre-line;">
+                                        [[ v ]]
+                                    </span>
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else-if="typeof value === 'array'">
+                            <ul>
+                                <li v-for="subvalue in value">
+                                    [[ subvalue ]]
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else>
+                            <a v-if="name == 'TeacherDepartmentName'"
+                               :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ structures_prefix }}/' + [[ item.TeacherDepartmentCod ]] +'/'">
+                                [[ item.TeacherDepartmentName ]]
+                            </a>
+                            <span v-else style="white-space: pre-line;">
+                                [[ value ]]
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CV -->
+        <div id="{{ id }}_collapse-1-lft"
+             class="collapse-div collapse-left-icon"
+             role="tablist"
+             v-if="item.TeacherCVFull">
+            <div class="collapse-header" id="{{ id }}_heading-cvfull-lft">
+                <button data-toggle="collapse"
+                        data-target="#{{ id }}_collapse-cvfull-lft"
+                        aria-expanded="false"
+                        aria-controls="{{ id }}_collapse-cvfull-lft">
+                    {% trans "Curriculum vitae" %}
+                </button>
+            </div>
+            <div id="{{ id }}_collapse-cvfull-lft"
+                 class="collapse"
+                 role="tabpanel"
+                 aria-labelledby="{{ id }}_heading-cvfull-lft">
+                <div class="mt-3">
+                    <div style="white-space: pre-line;">
+                        [[ item.TeacherCVFull ]]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+</div>
+
+<!-- Laboratories -->
+{% with laboratories_api|add:"?teacher="|add:code|add:"&lang="|add:LANGUAGE_CODE as laboratories_url %}
+{% include "blocks/collapse/unical_storage_collapse_laboratory_list_without_filters.html" with url=laboratories_url uid=id|add:"_1" teacher_id=code %}
+{% endwith %}
+
+<!-- teacher's activities -->
+<div id="{{ id }}_collapse-3-lft" class="collapse-div collapse-left-icon" role="tablist">
+    <div class="collapse-header" id="{{ id }}_heading-activities-lft">
+        <button data-toggle="collapse"
+                data-target="#{{ id }}_collapse-activities-lft"
+                aria-expanded="false"
+                aria-controls="{{ id }}_collapse-activities-lft">
+            {% trans "Teachings" %}
+        </button>
+    </div>
+    <div id="{{ id }}_collapse-activities-lft"
+         class="collapse"
+         role="tabpanel"
+         aria-labelledby="{{ id }}_heading-activities-lft">
+        <div class="mt-3">
+            {% clean_url url as cleaned_url %}
+            {% with cleaned_url|add:"/studyactivities/" as studyactivities_url %}
+            {% include "blocks/unical_storage_teacherstudyactivities.html" with url=studyactivities_url uid=id|add:"_2" %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+<!-- Publications -->
+<div id="{{ id }}_collapse-4-lft" class="collapse-div collapse-left-icon" role="tablist">
+    <div class="collapse-header" id="{{ id }}_heading-publications-lft">
+        <button data-toggle="collapse"
+                data-target="#{{ id }}_collapse-publications-lft"
+                aria-expanded="false"
+                aria-controls="{{ id }}_collapse-publications-lft">
+            {% trans "Publications" %}
+        </button>
+    </div>
+    <div id="{{ id }}_collapse-publications-lft"
+         class="collapse"
+         role="tabpanel"
+         aria-labelledby="{{ id }}_heading-publications-lft">
+        <div class="mt-3">
+            {% clean_url url as cleaned_url %}
+            {% with cleaned_url|add:"/publications/" as publications_url %}
+            {% include "blocks/unical_storage_publications_list.html" with url=publications_url uid=id|add:"_3" %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+<!-- Research groups -->
+{% with research_groups_api|add:"?teacher="|add:code|add:"&lang="|add:LANGUAGE_CODE as research_groups_url %}
+{% include "blocks/collapse/unical_storage_collapse_research_group_list.html" with url=research_groups_url uid=id|add:"_4" %}
+{% endwith %}
+
+<!-- Applied research lines -->
+{% with applied_research_lines_api|add:"?teacher="|add:code|add:"&lang="|add:LANGUAGE_CODE as applied_research_lines_url %}
+{% include "blocks/collapse/unical_storage_collapse_research_line_applied_list.html" with url=applied_research_lines_url uid=id|add:"_5" %}
+{% endwith %}
+
+<!-- Base research lines -->
+{% with base_research_lines_api|add:"?teacher="|add:code|add:"&lang="|add:LANGUAGE_CODE as base_research_lines_url %}
+{% include "blocks/collapse/unical_storage_collapse_research_line_base_list.html" with url=base_research_lines_url uid=id|add:"_6" %}
+{% endwith %}
+
+<script>
+    var {{ id }} = new Vue({
+        el: '[id="{{ id }}"]',
+        data() {
+            return {
+                item: {},
+                labels: {},
+                url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+                is_loading: true,
+                loader_source: '{{ url }}',
+                fields_to_not_show: {{ fields_to_hide|safe }}
+            }
+        },
+        mounted() {
+            this.CallURL();
+        },
+        methods: {
+            CallURL() {
+                axios
+                    .get(this.url)
+                    .then(response => {
+                        this.item = response.data.results;
+                        this.labels = response.data.labels;
+                        this.is_loading = false
+                    })
+            }
+        }
+    })
+</script>

@@ -1,0 +1,23 @@
+{% load i18n %}
+
+<script>
+Vue.component('loading-icon', {
+    props: {
+        loader_source: {
+           type: String,
+           default: ''
+        },
+    },
+    template: `
+        <div>
+            <div class="alert row p-3 mx-0" role="alert">
+                <div class="mr-2 progress-spinner progress-spinner-double size-sm progress-spinner-active">
+                    <div class="progress-spinner-inner"></div>
+                    <div class="progress-spinner-inner"></div>
+                </div>
+                <div class="col-11">{% trans "Loading data from" %} <b>[[ loader_source ]]</b> ...</div>
+            </div>
+        </div>
+    `
+});
+</script>

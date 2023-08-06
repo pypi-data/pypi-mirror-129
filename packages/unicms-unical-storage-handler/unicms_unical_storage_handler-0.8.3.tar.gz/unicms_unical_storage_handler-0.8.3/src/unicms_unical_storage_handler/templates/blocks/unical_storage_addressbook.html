@@ -1,0 +1,340 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_ADDRESSBOOK_VIEW_PREFIX_PATH" as addressbook_prefix %}
+
+{% block storage_block_top %}
+{% include "blocks/includes/unical_storage_check.html" %}
+{% endblock storage_block_top %}
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+
+                            {% include "includes/unical_storage_search_input.html" with id=id %}
+
+                            <div class="form-group">
+
+                                <!-- Structure and Role -->
+                                <div class="row">
+
+                                    {% block filters %}
+
+                                    {% block structure_type_filter %}
+                                    <div class="col-sm">
+
+                                        <loading-icon
+                                            v-if="is_loading_structure_type"
+                                            :loader_source="loader_source_structure_types">
+                                        </loading-icon>
+
+                                        <div v-else>
+                                            <label for="{{ id }}_structure_input">
+                                                {% trans "Structure type" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_structure_type_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_structure_type_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                    <option value="">- {% trans 'Choose an option' %} -</option>
+                                                    <option v-for="item in structure_type_filter"
+                                                            :value="item.StructureTypeCOD"
+                                                            :selected="item.StructureTypeCOD == selected_structuretypes"
+                                                            v-if="allowed_structure_types.length==0 || allowed_structure_types.includes(item.StructureTypeCOD)">
+                                                            <!-- v-if="allowed_structures.includes(item.StructureTypeCOD)"> -->
+                                                        [[ item.StructureTypeName ]]
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endblock structure_type_filter %}
+
+                                    <div class="col-sm" v-if="structure_id_filter.length">
+
+                                        <loading-icon
+                                            v-if="is_loading_structure_id"
+                                            :loader_source="loader_source_structures">
+                                        </loading-icon>
+
+                                        <div v-else>
+                                            <label for="{{ id }}_structure_input">
+                                                {% trans "Structure" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_structure_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_structure_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                    <option value="">- {% trans 'Choose an option' %} -</option>
+                                                    <option v-for="item in structure_id_filter"
+                                                            :value="item.StructureCod"
+                                                            :selected="item.StructureCod == selected_structureid"
+                                                            v-if="allowed_structure_id.length==0 || allowed_structure_id.includes(item.StructureCod)">
+                                                        [[ item.StructureName ]]
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm">
+
+                                        <loading-icon
+                                            v-if="is_loading_roles"
+                                            :loader_source="loader_source_roles">
+                                        </loading-icon>
+
+                                        <div v-else>
+                                            <label for="{{ id }}_role_input">
+                                                {% trans "Role" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_role_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_role_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                    <option value="">- {% trans 'Choose an option' %} -</option>
+                                                    <option v-for="item in roles_filter"
+                                                            :value="item.Role"
+                                                            :selected="item.Role == selected_roles"
+                                                            v-if="allowed_roles.length==0 || allowed_roles.includes(item.Role)">
+                                                        [[ item.RoleDescription ]]
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {% endblock filters %}
+                                </div>
+
+                                <!-- End Structure and Role -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div v-else>
+            <div class="row mb-3" v-for="item in items.results">
+                <div class="col-12">
+                    <!--start card-->
+                    <div class="card-wrapper pb-0">
+                        <div class="card no-after" style="border:1px solid #b71918">
+                            <div class="card-body">
+                                <h4>
+                                    <a class="no-color" :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ item.ID ]] +'/'">
+                                        [[ item.Name ]]
+                                    </a>
+                                </h4>
+                                <div class="row">
+                                    <div class="col-12 col-md-auto">
+                                        <small>
+                                            [[ labels['RoleDescription'] ]] >
+                                            <b>[[ item.RoleDescription ]]</b>
+                                        </small>
+                                    </div>
+                                    <div class="col-12 col-md-auto">
+                                        <small>
+                                            [[ labels['Structure'] ]] >
+                                            <b>[[ item.Structure ]]</b>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+{% block storage_block_bottom %}
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock storage_block_bottom %}
+
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters(keyword=null, value=null) {
+
+    let dict = {}
+
+    if (keyword)
+        dict[keyword] = value
+
+    // search
+    let search = document.getElementById('{{ id }}_search')
+    if (search && search.value) dict['search'] = search.value
+
+    // structure id
+    let structure_id = document.getElementById('{{ id }}_structure_input')
+    if (structure_id && structure_id.value) dict['structuretree'] = structure_id.value
+
+    {% block structure_filter_input %}
+    // structure type
+    let structure_type = document.getElementById('{{ id }}_structure_type_input')
+    if (structure_type && structure_type.value) dict['structuretypes'] = structure_type.value
+    {% endblock structure_filter_input %}
+
+    // role
+    let role = document.getElementById('{{ id }}_role_input').value
+    if (role && role.value) dict['role'] = role.value
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% settings_value "CMS_STORAGE_STRUCTUREFILTER_API" as structuresfilter_api %}
+{% settings_value "CMS_STORAGE_STRUCTURETYPES_API" as structuretypes_api %}
+{% settings_value "CMS_STORAGE_ROLES_API" as roles_api %}
+{% settings_value "INITIAL_STRUCTURE_FATHER" as root_structure %}
+
+search_dict: {},
+
+selected_structureid: this.getItemFromSession("{{ id }}", 'structuretree'),
+selected_structuretypes: this.getItemFromSession("{{ id }}", 'structuretypes'),
+selected_roles: this.getItemFromSession("{{ id }}", 'role'),
+selected_search: this.getItemFromSession("{{ id }}", 'search'),
+
+is_loading_structure_id: true,
+is_loading_structure_type: true,
+is_loading_roles: true,
+
+loader_source_structures: '{{ structuresfilter_api }}?lang={{ LANGUAGE_CODE }}',
+loader_source_structure_types: '{{ structuretypes_api }}?lang={{ LANGUAGE_CODE }}',
+loader_source_roles: '{{ roles_api }}?lang={{ LANGUAGE_CODE }}',
+
+allowed_structure_id: [],
+allowed_structure_types: [],
+allowed_roles: [],
+
+roles_filter: [],
+structure_id_filter: [],
+structure_type_filter: [],
+
+structure_type_filter_string: '',
+structure_father_filter: '{% firstof structure_id root_structure %}'
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+
+    // if url if pre-filtered resize select field
+    // this allows to auto generate select options according to URL get filters!
+    let params = new URLSearchParams(this.url.split('?')[1]);
+
+    let get_roles = params.get("role")
+    if (get_roles != null){
+        let get_roles_list = get_roles.split(',')
+        this.allowed_roles = get_roles_list
+    }
+
+    if (params.get("father") != null)
+        this.structure_father_filter = params.get("father")
+
+    this.structure_type_filter_string = params.get("structuretypes")
+    let get_structure_types = params.get("structuretypes")
+
+    if (get_structure_types != null){
+        let get_structure_types_list = get_structure_types.split(',')
+        this.allowed_structure_types = get_structure_types_list
+    }
+
+    let get_structure_id = params.get("structure")
+    if (get_structure_id != null){
+        let get_structure_id_list = get_structure_id.split(',')
+        this.allowed_structure_id = get_structure_id_list
+    }
+
+    {% block call_structure_on_mounted %}
+        this.callStructures();
+        this.callStructureTypes();
+    {% endblock call_structure_on_mounted %}
+
+    this.callRoles();
+
+    this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+{% endblock extra_mounted %}
+
+{% block extra_methods %}
+
+{% block structure_call_method %}
+
+callStructures() {
+    let source = this.loader_source_structures
+    if (this.structure_type_filter_string)
+        source += '&type='+this.structure_type_filter_string
+
+    if(this.structure_father_filter)
+        source += '&father='+this.structure_father_filter
+
+    axios
+        .get(source)
+        .then(response => {
+            this.structure_id_filter = response.data.results;
+            this.is_loading_structure_id = false
+        })
+},
+callStructureTypes() {
+    axios
+        .get(this.loader_source_structure_types)
+        .then(response => {
+            this.structure_type_filter = response.data.results;
+            this.is_loading_structure_type = false
+        })
+},
+{% endblock structure_call_method %}
+
+callRoles() {
+    axios
+        .get(this.loader_source_roles)
+        .then(response => {
+            this.roles_filter = response.data.results;
+            this.is_loading_roles = false
+        })
+},
+{% endblock extra_methods %}
+</script>
+

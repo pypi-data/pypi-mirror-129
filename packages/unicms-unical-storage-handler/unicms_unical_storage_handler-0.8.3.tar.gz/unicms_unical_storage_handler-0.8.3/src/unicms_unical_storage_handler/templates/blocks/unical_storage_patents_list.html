@@ -1,0 +1,215 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_PATENTS_VIEW_PREFIX_PATH" as patents_prefix %}
+{% settings_value "CMS_STORAGE_THEACHER_VIEW_PREFIX_PATH" as teacher_prefix %}
+
+{% block storage_block_top %}
+{% include "blocks/includes/unical_storage_check.html" %}
+{% endblock storage_block_top %}
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+
+                            {% include "includes/unical_storage_search_input.html" with id=id %}
+
+                            <div class="form-group">
+                                <!-- Areas & Department -->
+
+                                <div class="row">
+
+                                    <div class="col-sm">
+                                        <loading-icon
+                                            v-if="is_loading_techareas"
+                                            :loader_source="loader_source_techareas">
+                                        </loading-icon>
+                                        <div v-else>
+                                            <label for="{{ id }}_techarea_input">
+                                                {% trans "Tech Area" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_techarea_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_techarea_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                  <option value="">- {% trans 'Choose an option' %} -</option>
+                                                  <option v-for="item in techareas"
+                                                          :value="item.TechAreaId"
+                                                          :selected="item.TechAreaId == selected_techarea">
+                                                      [[ item.TechAreaDescription ]]
+                                                  </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div v-else>
+            <div class="row mb-3" v-for="item in items.results">
+                <div class="col-12">
+                    <!--start card-->
+                    <div class="card-wrapper pb-0">
+                        <div class="card no-after" style="border:1px solid #b71918">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-1 mb-3 mb-lg-0" v-if="item.PatentImage">
+                                        <img :src="gooleDriveImage(item.PatentImage)" class="w-100"/>
+                                    </div>
+                                    <div class="col">
+                                        <b>[[ item.PatentTitle ]]</b>
+                                        <p>
+                                            <small>
+                                                [[ item.PatentAbstract ]]
+                                            </small>
+                                        </p>
+                                        <p v-if="item.PatentInventors.length">
+                                            <small>
+                                                <span v-for="(inventor, index) in item.PatentInventors">
+                                                    <a v-if="inventor.AuthorId" :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ teacher_prefix }}/' + [[ inventor.AuthorId ]] +'/'">
+                                                        [[ inventor.AuthorName ]]
+                                                    </a>
+                                                    <span v-else>[[ inventor.AuthorName ]]</span>
+                                                    <span v-if="index < item.PatentInventors.length -1">
+                                                    ,&nbsp;
+                                                    </span>
+                                                </span>
+                                            </small>
+                                        </p>
+                                        <p>
+                                            <small>
+                                                [[ labels['PatentUniqueId'] ]] >
+                                                <b>[[ item.PatentUniqueId ]]</b>
+                                            </small>
+                                            <br>
+                                            <small>
+                                                [[ labels['PatentAreaDescription'] ]] >
+                                                <b>[[ item.PatentAreaDescription ]]</b>
+                                            </small>
+                                        </p>
+                                        <a :href="item.PatentUrlKnowledgeShare" v-if="item.PatentUrlKnowledgeShare">
+                                            <small>
+                                                <svg class="m-auto icon-sm icon">
+                                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-link"></use>
+                                                </svg> [[ labels.PatentUrlKnowledgeShare ]]
+                                            </small>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+            </div>
+
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+{% block storage_block_bottom %}
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock storage_block_bottom %}
+
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters(keyword=null, value=null) {
+
+    let dict = {}
+
+    if (keyword)
+        dict[keyword] = value
+
+
+    // search
+    let search = document.getElementById('{{ id }}_search')
+    if (search && search.value) dict['search'] = search.value
+
+    // tech area
+    let techarea = document.getElementById('{{ id }}_techarea_input')
+    if (techarea && techarea.value) dict['techarea'] = techarea.value
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+{% settings_value "CMS_STORAGE_TECHAREAS_API" as techareas_api %}
+
+search_dict: {},
+techareas: [],
+
+is_loading_techareas: true,
+
+loader_source_techareas: '{{ techareas_api }}?lang={{ LANGUAGE_CODE }}',
+
+selected_search: this.getItemFromSession("{{ id }}", 'search'),
+selected_techarea: this.getItemFromSession("{{ id }}", 'techarea'),
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+
+this.callTechAreas();
+
+{% endblock extra_mounted %}
+
+{% block extra_methods %}
+    callTechAreas() {
+        axios
+            .get(this.loader_source_techareas)
+            .then(response => {
+                this.techareas = response.data.results;
+                this.is_loading_techareas = false
+            })
+    },
+    gooleDriveImage(path) {
+        let id = path.match("https://drive.google.com/file/d/(.*)/view")[1]
+        if (path && id) {
+            return 'https://drive.google.com/uc?export=view&id=' + id
+        }
+        return ''
+    }
+{% endblock extra_methods %}
+</script>

@@ -1,0 +1,13 @@
+{% extends "blocks/unical_storage_structure_list.html" %}
+
+{% load i18n %}
+
+
+{% block storage_block_top %}
+{% trans "Organization" as title %}
+{% include "blocks/collapse/includes/unical_storage_collapse_top.html" with title=title %}
+{% endblock storage_block_top %}
+
+{% block storage_block_bottom %}
+{% include "blocks/collapse/includes/unical_storage_collapse_bottom.html" %}
+{% endblock storage_block_bottom %}

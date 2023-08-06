@@ -1,0 +1,197 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_SPINOFF_VIEW_PREFIX_PATH" as spinoff_prefix %}
+
+{% block storage_block_top %}
+{% include "blocks/includes/unical_storage_check.html" %}
+{% endblock storage_block_top %}
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+                            {% include "includes/unical_storage_search_input.html" with id=id %}
+
+                            <div class="form-group">
+                                <!-- Areas & Department -->
+
+                                <div class="row">
+
+                                    <div class="col-sm">
+                                        <div>
+                                            <label for="{{ id }}_area_input">
+                                                {% trans "Spin-off" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_spinoff_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_spinoff_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                    <option value="">- {% trans 'Choose an option' %} -</option>
+                                                    <option value="1"
+                                                          :selected="selected_spinoff.includes(1)">
+                                                        {% trans "Yes" %}
+                                                    </option>
+                                                    <option value="0"
+                                                          :selected="selected_spinoff.includes(0)">
+                                                        {% trans "No" %}
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div>
+                                            <label for="{{ id }}_area_input">
+                                                {% trans "Startup" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_startup_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_startup_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                    <option value="">- {% trans 'Choose an option' %} -</option>
+                                                    <option value="1"
+                                                          :selected="selected_startup.includes(1)">
+                                                        {% trans "Yes" %}
+                                                    </option>
+                                                    <option value="0"
+                                                          :selected="selected_startup.includes(0)">
+                                                        {% trans "No" %}
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div v-else>
+            <div class="row mb-3" v-for="item in items.results">
+                <div class="col-12">
+                    <!--start card-->
+                    <div class="card-wrapper pb-0">
+                        <div class="card no-after" style="border:1px solid #b71918">
+                            <div class="card-body">
+                                <h4>
+                                    <a class="no-color" :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ spinoff_prefix }}/' + [[ item.SpinoffId ]] +'/'">
+                                        [[ item.SpinoffAgencyName ]]
+                                    </a>
+                                </h4>
+                                <div class="row">
+                                    <div class="col-12 col-md-auto">
+                                        <small v-if="item.IsSpinoff">
+                                            {% trans "Spin-off" %}
+                                        </small>
+                                        <small v-if="item.IsSpinoff && item.IsStartup">
+                                        /
+                                        </small>
+                                        <small v-if="item.IsStartup">
+                                            {% trans "Startup" %}
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-auto">
+                                        <small>
+                                            [[ item.SpinoffDescription ]]
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+{% block storage_block_bottom %}
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock storage_block_bottom %}
+
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters(keyword=null, value=null) {
+
+    let dict = {}
+
+    if (keyword)
+        dict[keyword] = value
+
+    // search
+    let search = document.getElementById('{{ id }}_search')
+    if (search && search.value) dict['search'] = search.value
+
+    // spinoff
+    let spinoff = document.getElementById('{{ id }}_spinoff_input')
+    if (spinoff && spinoff.value) dict['spinoff'] = spinoff.value
+
+    // startup
+    let startup = document.getElementById('{{ id }}_startup_input')
+    if (startup && startup.value) dict['startup'] = startup.value
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+search_dict: {},
+
+loader_source_types: '{{ types_api }}?lang={{ LANGUAGE_CODE }}',
+
+selected_search: this.getItemFromSession("{{ id }}", 'search'),
+selected_spinoff: this.getItemFromSession("{{ id }}", 'spinoff') || '',
+selected_startup: this.getItemFromSession("{{ id }}", 'startup') || ''
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+{% endblock extra_mounted %}
+
+{% block extra_methods %}
+{% endblock extra_methods %}
+</script>

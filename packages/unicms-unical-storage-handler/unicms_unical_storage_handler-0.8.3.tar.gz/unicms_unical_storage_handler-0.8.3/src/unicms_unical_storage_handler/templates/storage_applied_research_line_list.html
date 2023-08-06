@@ -1,0 +1,33 @@
+{% extends this_string_will_be_replaced %}
+
+{% load i18n %}
+{% load static %}
+
+<!-- load custom template tags -->
+{% load unicms_carousels %}
+{% load unicms_contexts %}
+{% load unicms_menus %}
+{% load unicms_templates %}
+{% load unicms_pages %}
+{% load unicms_publications %}
+
+<!-- SEO  -->
+{% block page_title %}Research groups{% endblock page_title %}
+{% block page_meta_description %}{% endblock page_meta_description %}
+{% block page_meta_keywords %}{% endblock page_meta_keywords %}
+
+{% block container %}
+{% breadcrumbs webpath=webpath leaf=handler %}
+
+<div class="container">
+    <div class="col-12 py-5 bd-content">
+        {% block centered_container %}
+            <h1 class="lighter mb-4">{% trans "Applied research lines" %}</h1>
+            <hr class="my-4 bordeaux-unical-bg">
+            {% include "blocks/unical_storage_research_line_list.html" with url=url uid="id_1" %}
+        {% endblock %}
+    </div>
+</div>
+
+{% endblock container %}
+

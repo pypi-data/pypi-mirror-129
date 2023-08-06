@@ -1,0 +1,49 @@
+{% extends "blocks/unical_storage_laboratory_list.html" %}
+
+{% block filter_infrastructure %}
+{% endblock filter_infrastructure %}
+
+{% block filter_infrastructure_script %}
+{% endblock filter_infrastructure_script %}
+
+{% block laboratory_call_method %}
+callAreas() {
+    axios
+        .get(this.loader_source_areas)
+        .then(response => {
+            this.areas = response.data.results;
+            this.is_loading_areas = false
+        })
+},
+callScopes() {
+    axios
+        .get(this.loader_source_scopes)
+        .then(response => {
+            this.scopes = response.data.results;
+            this.is_loading_scopes = false
+        })
+},
+callDepartments() {
+    axios
+        .get(this.loader_source_departments)
+        .then(response => {
+            this.departments = response.data.results;
+            this.is_loading_departments = false
+        })
+},
+callERC1List(params) {
+    axios
+        .get(this.loader_source_erc1)
+        .then(response => {
+            this.erc1_list = response.data.results;
+            this.is_loading_erc1 = false
+        })
+},
+{% endblock laboratory_call_method %}
+
+{% block call_laboratory_on_mounted %}
+this.callAreas();
+this.callDepartments();
+this.callERC1List();
+this.callScopes();
+{% endblock call_laboratory_on_mounted %}
