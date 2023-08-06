@@ -1,0 +1,5 @@
+fastapi_healthcheck_sqlalchemy/__init__.py,sha256=IBy9WL-DyPnZsywfWGbWHFraduFLKtSYslZsFfnJqck,42
+fastapi_healthcheck_sqlalchemy/service.py,sha256=oN5IIRZ01yGO_9GfiyXKY-vV9gZPskfVfqi3Y0LvMBs,946
+fastapi_healthcheck_sqlalchemy-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+fastapi_healthcheck_sqlalchemy-0.1.0.dist-info/METADATA,sha256=eOyo1eWQGgrCHhChpl3-OGZcOqtbR06LNgK-KNtH0cg,2012
+fastapi_healthcheck_sqlalchemy-0.1.0.dist-info/RECORD,,
