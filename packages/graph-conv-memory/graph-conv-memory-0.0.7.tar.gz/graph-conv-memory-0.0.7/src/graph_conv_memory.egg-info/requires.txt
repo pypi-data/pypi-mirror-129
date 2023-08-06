@@ -1,0 +1,4 @@
+torch
+torch_geometric>=1.7.0
+sparsemax
+torchtyping
