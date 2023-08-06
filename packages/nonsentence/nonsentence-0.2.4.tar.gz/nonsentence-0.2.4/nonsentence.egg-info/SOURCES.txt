@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+nonsentence/nonsentence.py
+nonsentence.egg-info/PKG-INFO
+nonsentence.egg-info/SOURCES.txt
+nonsentence.egg-info/dependency_links.txt
+nonsentence.egg-info/top_level.txt

@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nonsentence
+Version: 0.2.4
+Summary: A Python module that generates customisable nonsense sentences.
+Home-page: https://github.com/Omnitheorist/nonsentence
+Author: Jonathan Davis
+Author-email: davisjonathan380@gmail.com
+License: MIT
+Download-URL: https://github.com/Omnitheorist/nonsentence/archive/refs/tags/v0.2.tar.gz
+Description: # nonsentence
+        A Python function / module that generates nonsense sentences under the scheme vowel-consonsant-vowel, with customisable sentence and word length.
+        
+        ## Usage
+        Install from PyPi:
+        `pip install nonsentence`
+        ```py
+        import nonsentence
+        nonsentence.newSentence(minSentenceLength, maxSentenceLength, minWordLength, maxWordLength)
+        ```
+        ### Example
+        ```py
+        >>> nonsentence.newSentence(5, 20, 3, 10)
+        'xeratihut lux qihaci def zevepehot piroqihuc tegot wejijiquh tet gaza piqitadu.'
+        ```
+        
+Keywords: nonsense,sentence,generator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
