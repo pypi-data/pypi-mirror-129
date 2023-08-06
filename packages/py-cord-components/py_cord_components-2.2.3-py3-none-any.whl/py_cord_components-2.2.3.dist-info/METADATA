@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: py-cord-components
+Version: 2.2.3
+Summary: An unofficial library for py-cord components.
+Home-page: https://github.com/spacedev-official/py-cord-components
+Author: SpaceDev
+Author-email: support@spacedev.space
+License: MIT License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: py-cord
+Requires-Dist: aiohttp
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Requires-Dist: sphinx ; extra == 'lint'
+Requires-Dist: sphinx-rtd-theme ; extra == 'lint'
+Provides-Extra: readthedocs
+Requires-Dist: sphinx ; extra == 'readthedocs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'readthedocs'
+
+<div align="center">
+    <a href="https://pypi.org/project/py-cord-components"><img src="https://raw.githubusercontent.com/spacedev-official/py-cord-components/master/.github/logo.png" alt="py-cord-components logo" height="128" style="border-radius: 50%"></a>
+    <h1>py-cord-components</h1>
+</div>
+<div align="center">
+        <a href="https://www.codefactor.io/repository/github/spacedev-official/py-cord-components"><img src="https://www.codefactor.io/repository/github/spacedev-official/py-cord-components/badge" alt="CodeFactor" /></a>
+        <a href="https://discord.gg/294KSUxcz2"><img alt="Discord" src="https://img.shields.io/discord/847729860881154078?logo=discord&style=flat-square"></a>
+        <a href="https://pepy.tech/project/py-cord-components"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/v/py-cord-components?style=flat-squareh"></a>
+        <a href="https://pypi.org/project/py-cord-components/"><img src="https://pepy.tech/badge/py-cord-components/month" /></a>
+        <a href=""><img src="https://img.shields.io/pypi/l/py-cord-components?style=flat-square" /></a>
+</div>
+<p align="center">
+    <h3>An unofficial third party library of py-cord for discord components.</h3>
+</p>
+
+## Welcome!
+
+Discord components are cool, but discord.py will support it on version 2.0. It
+is hard to recreate, so we made a third-party library for using components such as
+buttons or selects!
+
+This project is open source ⭐.
+
+Also, there is an [official discord server](https://discord.gg/294KSUxcz2), so
+if you have any questions, feel free to ask it on this server.
+
+## Features
+
+- You can use message components and handle component interactions easily!
+- Third-party of py-cord.
+
+## Docs
+
+- [Gitbook version](https://devkiki7000.gitbook.io/discord-components) (Up to
+  date)
+- [Wiki Version](https://github.com/spacedev-official/py-cord-components/wiki)
+  (Up to date)
+
+## Install
+
+```sh
+# GitHub (Develop)
+pip install --upgrade git+https://github.com/spacedev-official/py-cord-components.git
+
+# Pypi (Current)
+pip install --upgrade py-cord-components
+```
+
+## Example
+
+You can see many examples
+[here](https://github.com/spacedev-official/py-cord-components/tree/master/examples).
+
+## License
+
+This project is under the MIT License.
+
+## Repos using PycordComponents
+ * [PycordPaginator](https://pypi.org/project/PycordPaginator)
+
+## How-to use
+ * Every discord.py, discord, DiscordComponent, discord_components mention should be changed to<br />
+ py-cord, pycord, PycordComponent, py_cord_component
+
+
