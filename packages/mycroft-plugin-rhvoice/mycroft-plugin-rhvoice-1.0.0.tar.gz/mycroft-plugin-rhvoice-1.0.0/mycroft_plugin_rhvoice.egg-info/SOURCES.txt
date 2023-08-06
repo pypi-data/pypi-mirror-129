@@ -1,0 +1,9 @@
+README.md
+setup.py
+mycroft_plugin_rhvoice/__init__.py
+mycroft_plugin_rhvoice.egg-info/PKG-INFO
+mycroft_plugin_rhvoice.egg-info/SOURCES.txt
+mycroft_plugin_rhvoice.egg-info/dependency_links.txt
+mycroft_plugin_rhvoice.egg-info/entry_points.txt
+mycroft_plugin_rhvoice.egg-info/top_level.txt
+mycroft_plugin_rhvoice.egg-info/zip-safe

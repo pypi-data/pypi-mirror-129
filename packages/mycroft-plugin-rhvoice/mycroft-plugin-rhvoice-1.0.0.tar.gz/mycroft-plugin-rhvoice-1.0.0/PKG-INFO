@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: mycroft-plugin-rhvoice
+Version: 1.0.0
+Summary: RHVoice TTS plugin for Mycroft
+Home-page: https://github.com/putnik/mycroft-plugin-rhvoice
+Author: Sergey Leschina
+Author-email: mail@putnik.tech
+License: Apache-2.0
+Description: # RHVoice TTS plugin for Mycroft
+        
+        ## Installation
+        Install RVHVoice for your system (see [compiling instructions](https://github.com/RHVoice/RHVoice/blob/master/doc/en/index.md#compiling-instructions)):
+        ```bash
+        sudo apt-get install scons libspeechd-dev
+        git clone --recurse-submodules https://github.com/RHVoice/RHVoice.git ~/RHVoice
+        cd ~/RHVoice
+        scons
+        sudo scons install
+        sudo ldconfig
+        ```
+        
+        Install plugin via pip:
+        ```bash
+        mycroft-pip install mycroft-plugin-rhvoice
+        ```
+        
+        ## Configuration
+        Edit `mycroft.conf` (`mycroft-config edit user`):
+        
+        Basic config:
+        ```json
+        {
+          "tts": {
+            "module": "rhvoice"
+          }
+        }
+        ```
+        
+        Extended config (with default values):
+        ```json
+        {
+          "tts": {
+            "module": "rhvoice",
+            "rhvoice": {
+              "voice": "aleksandr-hq",
+              "rate": 24000
+            }
+          }
+        }
+        ```
+        
+        - `voice`: see [rhvoice.org](https://rhvoice.org/languages/)
+        - `rate`: 24000, 16000, 8000, etc
+        
+Keywords: mycroft plugin tts rhvoice
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
