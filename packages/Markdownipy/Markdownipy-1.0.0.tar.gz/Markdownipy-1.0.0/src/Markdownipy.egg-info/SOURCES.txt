@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/Markdownipy.egg-info/PKG-INFO
+src/Markdownipy.egg-info/SOURCES.txt
+src/Markdownipy.egg-info/dependency_links.txt
+src/Markdownipy.egg-info/top_level.txt
+src/markdownipy/__init__.py
+src/markdownipy/markdownipy.py
