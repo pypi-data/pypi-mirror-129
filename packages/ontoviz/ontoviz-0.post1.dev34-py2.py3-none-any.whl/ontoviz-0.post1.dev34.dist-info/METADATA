@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: ontoviz
+Version: 0.post1.dev34
+Summary: UNKNOWN
+Home-page: https://github.com/WWU-AMM/ontoviz
+Author: René Fritze
+Author-email: rene.fritze@wwu.de
+License: BSD license
+Keywords: ontoviz
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: rdflib (<7.0.0,>=6.0.0)
+Requires-Dist: graphviz (==0.17)
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: matplotlib
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: pytest-runner (>=2.9)
+Requires-Dist: packaging
+Provides-Extra: ci
+Requires-Dist: pytest ; extra == 'ci'
+Requires-Dist: pytest-cov ; extra == 'ci'
+Requires-Dist: pytest-xdist ; extra == 'ci'
+Requires-Dist: check-manifest ; extra == 'ci'
+Requires-Dist: black ; extra == 'ci'
+Requires-Dist: pre-commit ; extra == 'ci'
+Requires-Dist: autopep8 ; extra == 'ci'
+Requires-Dist: pytest-pycharm ; extra == 'ci'
+Requires-Dist: readme-renderer[md] ; extra == 'ci'
+Requires-Dist: rstcheck ; extra == 'ci'
+Requires-Dist: codecov ; extra == 'ci'
+Requires-Dist: twine ; extra == 'ci'
+Requires-Dist: pytest-memprof ; extra == 'ci'
+Requires-Dist: pytest-regressions ; extra == 'ci'
+Requires-Dist: pytest-datadir ; extra == 'ci'
+Requires-Dist: pytest-timeout ; extra == 'ci'
+Requires-Dist: docutils ; extra == 'ci'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: python-slugify ; extra == 'docs'
+Requires-Dist: myst-nb (>=0.14) ; extra == 'docs'
+Requires-Dist: sphinx-autoapi (>=1.8) ; extra == 'docs'
+Requires-Dist: rdflib (<7.0.0,>=6.0.0) ; extra == 'docs'
+Requires-Dist: graphviz (==0.17) ; extra == 'docs'
+Requires-Dist: typer ; extra == 'docs'
+Requires-Dist: rich ; extra == 'docs'
+Requires-Dist: matplotlib ; extra == 'docs'
+Requires-Dist: setuptools ; extra == 'docs'
+Requires-Dist: wheel ; extra == 'docs'
+Requires-Dist: pytest-runner (>=2.9) ; extra == 'docs'
+Requires-Dist: packaging ; extra == 'docs'
+Provides-Extra: full
+Requires-Dist: pytest ; extra == 'full'
+Requires-Dist: pytest-cov ; extra == 'full'
+Requires-Dist: pytest-xdist ; extra == 'full'
+Requires-Dist: check-manifest ; extra == 'full'
+Requires-Dist: black ; extra == 'full'
+Requires-Dist: pre-commit ; extra == 'full'
+Requires-Dist: autopep8 ; extra == 'full'
+Requires-Dist: pytest-pycharm ; extra == 'full'
+Requires-Dist: readme-renderer[md] ; extra == 'full'
+Requires-Dist: rstcheck ; extra == 'full'
+Requires-Dist: codecov ; extra == 'full'
+Requires-Dist: twine ; extra == 'full'
+Requires-Dist: pytest-memprof ; extra == 'full'
+Requires-Dist: pytest-regressions ; extra == 'full'
+Requires-Dist: pytest-datadir ; extra == 'full'
+Requires-Dist: pytest-timeout ; extra == 'full'
+Requires-Dist: docutils ; extra == 'full'
+Requires-Dist: sphinx ; extra == 'full'
+Requires-Dist: python-slugify ; extra == 'full'
+Requires-Dist: myst-nb (>=0.14) ; extra == 'full'
+Requires-Dist: sphinx-autoapi (>=1.8) ; extra == 'full'
+Requires-Dist: rdflib (<7.0.0,>=6.0.0) ; extra == 'full'
+Requires-Dist: graphviz (==0.17) ; extra == 'full'
+Requires-Dist: typer ; extra == 'full'
+Requires-Dist: rich ; extra == 'full'
+Requires-Dist: matplotlib ; extra == 'full'
+Requires-Dist: setuptools ; extra == 'full'
+Requires-Dist: wheel ; extra == 'full'
+Requires-Dist: pytest-runner (>=2.9) ; extra == 'full'
+Requires-Dist: packaging ; extra == 'full'
+
+To be converted from README.org
+
+
