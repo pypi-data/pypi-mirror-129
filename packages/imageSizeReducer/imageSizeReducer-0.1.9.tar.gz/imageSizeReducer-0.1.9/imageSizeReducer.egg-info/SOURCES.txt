@@ -1,0 +1,9 @@
+README.md
+setup.py
+imageSizeReducer/__init__.py
+imageSizeReducer/imageSizeReducer.py
+imageSizeReducer.egg-info/PKG-INFO
+imageSizeReducer.egg-info/SOURCES.txt
+imageSizeReducer.egg-info/dependency_links.txt
+imageSizeReducer.egg-info/requires.txt
+imageSizeReducer.egg-info/top_level.txt
