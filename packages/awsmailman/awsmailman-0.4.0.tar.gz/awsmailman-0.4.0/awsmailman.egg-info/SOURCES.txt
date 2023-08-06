@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+awsmailman/__init__.py
+awsmailman/mailman.py
+awsmailman.egg-info/PKG-INFO
+awsmailman.egg-info/SOURCES.txt
+awsmailman.egg-info/dependency_links.txt
+awsmailman.egg-info/entry_points.txt
+awsmailman.egg-info/requires.txt
+awsmailman.egg-info/top_level.txt
