@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: MyTT
+Version: 2.9.3
+Summary: Mini Python library with most stock market indicators
+Home-page: https://github.com/mpquant/MyTT
+Author: mpquant
+Author-email: mpsoft163@163.com
+License: MIT Licence
+Description: MyTT是您量化工具箱里的瑞士军刀，精炼而高效，它将通达信,同花顺,文华麦语言等指标公式indicators,最简移植到Python中,核心库单个文件，仅百行代码,实现和转换同花顺通达信所有常见指标MACD,RSI,BOLL,ATR,KDJ,CCI,PSY等,全部基于numpy和pandas的函数封装，简洁且高性能，能非常方便的应用在各自股票股市技术分析，股票自动程序化交易,数字货币BTC等量化等领域
+Keywords: pip,MyTT,indicators
+Platform: any
