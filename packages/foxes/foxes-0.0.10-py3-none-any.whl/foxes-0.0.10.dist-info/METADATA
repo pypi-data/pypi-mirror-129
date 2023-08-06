@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: foxes
+Version: 0.0.10
+Summary: Farm Optimization and eXtended yield Evaluation Software
+Home-page: https://github.com/iwesJONAS/foxes
+Author: Jonas Schmidt
+Author-email: jonas.schmidt@iwes.fraunhofer.de
+License: MIT
+Project-URL: Bug Tracker, https://github.com/jonasIWES/foxes/issues
+Keywords: Wind farm,Wake modelling,Wind farm optimization
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# FOXES
+## Farm Optimization and eXtended yield Evaluation Software
+
+### _...under construction, code will follow soon..._
+
+
+
