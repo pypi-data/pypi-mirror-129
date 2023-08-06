@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lockattrs/__init__.py
+src/lockattrs/decorators.py
+src/lockattrs.egg-info/PKG-INFO
+src/lockattrs.egg-info/SOURCES.txt
+src/lockattrs.egg-info/dependency_links.txt
+src/lockattrs.egg-info/top_level.txt
