@@ -1,0 +1,15 @@
+docker: ghcr.io/autamus/adios2
+url: https://github.com/orgs/autamus/packages/container/package/adios2
+maintainer: '@vsoch'
+description: The Adaptable Input Output System version 2, developed in the Exascale
+  Computing Program
+latest:
+  2.7.1: sha256:018af469c365949037b66c296884d2314cc06f734b476db53bb2268f67e6dd01
+tags:
+  2.7.1: sha256:018af469c365949037b66c296884d2314cc06f734b476db53bb2268f67e6dd01
+aliases:
+  adios2-config: /opt/view/bin/adios2-config
+  adios2_deactivate_bp: /opt/view/bin/adios2_deactivate_bp
+  adios2_iotest: /opt/view/bin/adios2_iotest
+  adios2_reorganize: /opt/view/bin/adios2_reorganize
+  adios2_reorganize_mpi: /opt/view/bin/adios2_reorganize_mpi
