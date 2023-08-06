@@ -1,0 +1,59 @@
+# Spliced
+
+[![GitHub actions status](https://github.com/buildsi/spliced/workflows/spliced/badge.svg?branch=main)](https://github.com/buildsi/spliced/actions?query=branch%3Amain+workflow%3Aspliced)
+
+Spliced is software for performing or emulating splices, meaning subbing in one version of a library
+for another, and predicting (through many avenues) whether it will work or not. A few concepts of
+interest:
+
+ - A **package** is a primarily library that we want to cut (or splice) up.
+ - A **spliced out** library is a dependency or linked library that we are removing.
+ - A **spliced in** library is a dependency or linked library that we want to sub in.
+ 
+Note that [spack](https://github.com/spack/spack) is required to be on your path
+given that you are running a spack matrix build, otherwise don't worry. If spack
+is not found you will be issued an instruction to install it.
+
+```bash
+$ git clone --depth 1 https://github.com/spack/spack
+$ source spack/share/spack/setup-env.sh
+```
+ 
+## Usage
+
+**under development!** proper docs coming soon.
+ 
+## Development
+
+### 1. Creating a container base
+
+Typically, a container base should have the dependencies that you need to run your
+splice. E.g., if you want to use the libabigial splicer, libabigail should
+be installed. We provide a set of automated builds for containers to provide the software 
+needed [here](docker) (e.g., including libabigail, spack, and symbolator) so you can use this container set,
+or if you choose, bootstrap these containers for your own customization. Note that for these containers:
+
+ - we provide several os bases - the default of the spliced execuable is ubuntu 20.04, and you can change this with `--container`
+ - the containers are flagged with [spack labels](https://github.com/spack/label-schema) for `org.spack.compilers` to be discovered by the tool. If you don't provide labels, all compilers in the container will be used.
+ - it's assumed you have software you need in the container, or use our container bases as testing CI bases and install there on the fly.
+ 
+If you want to use the default containers provided by spliced, you shouldn't need to worry about this.
+If you have any questions, don't hesitate to open an issue.
+ 
+## License
+
+Spack is distributed under the terms of both the MIT license and the
+Apache License (Version 2.0). Users may choose either license, at their
+option.
+
+All new contributions must be made under both the MIT and Apache-2.0
+licenses.
+
+See [LICENSE-MIT](https://github.com/spack/spack/blob/develop/LICENSE-MIT),
+[LICENSE-APACHE](https://github.com/spack/spack/blob/develop/LICENSE-APACHE),
+[COPYRIGHT](https://github.com/spack/spack/blob/develop/COPYRIGHT), and
+[NOTICE](https://github.com/spack/spack/blob/develop/NOTICE) for details.
+
+SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+LLNL-CODE-811652

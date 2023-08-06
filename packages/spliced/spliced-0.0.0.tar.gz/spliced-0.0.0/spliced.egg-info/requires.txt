@@ -1,0 +1,9 @@
+pyaml
+requests
+jsonschema
+
+[all]
+pyaml
+requests
+jsonschema
+pytest>=4.6.2
