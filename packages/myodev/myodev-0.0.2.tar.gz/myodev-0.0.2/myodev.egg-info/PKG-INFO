@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: myodev
+Version: 0.0.2
+Summary: A set of tools to reproduce MyoDev signal processing and ML.
+Home-page: https://github.com/MyoDev-app/myodev-package
+Author: Itokiana Rafidinarivo
+Author-email: rafidinarivo.study@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/MyoDev-app/myodev-package/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+![PyPi publish](https://github.com/MyoDev-app/myodev-package/actions/workflows/python-publish.yml/badge.svg)
+
+In progress...
+
+# Installation
+...
+
+# Development
+...
+
+# Project
+...
+
+
