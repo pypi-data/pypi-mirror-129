@@ -1,0 +1,8 @@
+README.md
+setup.py
+uberduckapi/__init__.py
+uberduckapi.egg-info/PKG-INFO
+uberduckapi.egg-info/SOURCES.txt
+uberduckapi.egg-info/dependency_links.txt
+uberduckapi.egg-info/requires.txt
+uberduckapi.egg-info/top_level.txt
