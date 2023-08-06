@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rpi-thermo-chick
+Version: 1.0.14
+Summary: Raspbery Pi - Thermostat 🔥 for chicken 🐔
+Home-page: UNKNOWN
+Author: Thomas Vincent
+Author-email: vrince@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: click (==8.0.3)
+Requires-Dist: fastapi (==0.70.0)
+Requires-Dist: uvicorn[standard] (==0.15.0)
+
+UNKNOWN
+
+
