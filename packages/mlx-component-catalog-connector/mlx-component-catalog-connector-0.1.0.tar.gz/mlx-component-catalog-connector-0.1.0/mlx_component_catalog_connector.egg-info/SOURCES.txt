@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mlx_catalog_connector/__init__.py
+mlx_catalog_connector/_version.py
+mlx_catalog_connector/mlx-catalog.json
+mlx_catalog_connector/mlx_component_catalog_connector.py
+mlx_catalog_connector/mlx_schema_provider.py
+mlx_component_catalog_connector.egg-info/PKG-INFO
+mlx_component_catalog_connector.egg-info/SOURCES.txt
+mlx_component_catalog_connector.egg-info/dependency_links.txt
+mlx_component_catalog_connector.egg-info/entry_points.txt
+mlx_component_catalog_connector.egg-info/requires.txt
+mlx_component_catalog_connector.egg-info/top_level.txt
