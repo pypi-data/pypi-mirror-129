@@ -1,0 +1,9 @@
+LICENSE,sha256=AcTwWednDVNMiPG-xN2O1K0mo8IZKVrRBsuFDr1tLRA,1071
+aio_cosmos/__init__.py,sha256=_nGfn6l-kSEj8ivoWXX1KPYK8oAypMTXtSRSPB8YTg4,60
+aio_cosmos/auth.py,sha256=8N4eYpvrLVN5HvmVGtuQauTkyMtesXXQLGMaL7GW2d0,2911
+aio_cosmos/client.py,sha256=cGs_osFoqoioe0GNnwz3Y-EkhLGyz_rdeQQ3DIAm1Oo,15738
+aio_cosmos/http_constants.py,sha256=rEqu6x1S1f_NxP4EZEiA1czWRHLvOcejCl9e87a51tI,13439
+aio_cosmos-0.2.4.dist-info/LICENSE,sha256=AcTwWednDVNMiPG-xN2O1K0mo8IZKVrRBsuFDr1tLRA,1071
+aio_cosmos-0.2.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+aio_cosmos-0.2.4.dist-info/METADATA,sha256=k30nbYVhINpuH9_ZXUn-3cLLZN4fJYiMjKUevopUC7Y,5248
+aio_cosmos-0.2.4.dist-info/RECORD,,
