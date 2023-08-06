@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: cert_validate
+Version: 0.0.1
+Summary: A small function that gets the expiration date of a certificate of a domain
+Home-page: https://github.com/greatbody/cert-validate
+Author: greatbody
+Author-email: sunruicode@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/greatbody/cert-validate/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Cert Validate
+
+A tool library that helps you get the validate date of a domain's certification.
+
+# Development
+## Development dependence tools
+
+> Tool you need to build package
+
+```bash
+python3 -m pip install setuptools
+```
+
+> Tool you need to publish your package to PyPI
+
+```bash
+python3 -m pip install --upgrade twine
+```
+
+## Build the package
+
+Run this command at the root folder of this project.
+
+```bash
+python3 -m build
+```
+
+## Development accounts
+
+You will need account in PyPI to publish your packages.
+
+> Registe a test account for your test use
+
+You definitely would like to avoid situation where your first published version is not usable, use this test PyPI is a good way.
+
+https://test.pypi.org/account/register/
+
+> Registe a offical PyPI account
+
+When it comes to the time when you need to offically release your package, you will need an PyPI account.
+
+https://pypi.org/account/register/
+
+## Create token of testpypi to publish your package
+
+Goto https://test.pypi.org/manage/account/token/ generate a token
+
+Create a $HOME/.pypirc file with this content
+
+```
+[testpypi]
+username = __token__
+password = [token generated]
+```
+
+## Publish your package to test
+
+```bash
+python3 -m twine upload --repository testpypi dist/*
+```
+
+## Create token of pypi to publish your package for publish release
+
+Goto https://pypi.org/manage/account/token/ generate a token
+
+Create/Insert into $HOME/.pypirc file with this content
+
+```
+[pypi]
+username = __token__
+password = [token generated]
+```
+
+
