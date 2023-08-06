@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: minimalist
+Version: 0.1.0
+Summary: 
+Author: Mehrdad Yazdani
+Author-email: myazdani@gmail.com
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.4.0,<9.0.0)
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
