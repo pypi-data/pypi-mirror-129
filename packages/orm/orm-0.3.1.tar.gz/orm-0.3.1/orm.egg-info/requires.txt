@@ -1,0 +1,14 @@
+databases~=0.5
+typesystem==0.3.1
+
+[mysql]
+aiomysql
+
+[postgresql]
+asyncpg
+
+[postgresql+aiopg]
+aiopg
+
+[sqlite]
+aiosqlite
