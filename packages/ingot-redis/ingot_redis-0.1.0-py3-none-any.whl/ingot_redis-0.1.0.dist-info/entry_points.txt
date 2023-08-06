@@ -1,0 +1,3 @@
+[console_scripts]
+ingot-redis-cli = ingot_redis.scripts.ingot_redis:main
+
