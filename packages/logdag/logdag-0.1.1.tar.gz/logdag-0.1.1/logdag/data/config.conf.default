@@ -1,0 +1,249 @@
+
+
+[general]
+
+# Fetching term of RRD data for DB
+evdb_whole_term = 2112-09-01 00:00:00, 2112-10-01 00:00:00
+
+# Length of unit terms to generate evdb
+evdb_unit_term = 24h
+evdb_unit_diff = 24h
+evdb_binsize = 1m
+# if convolve_radius is x, convolve window size is 2x+1
+evdb_convolve_radius = 2
+
+evdb_args_fn = evdb_args
+
+# Processing log output path (not dataset but log of this system)
+# If empty, output log on stderr
+logging = auto.log
+
+
+# [rrd, ]
+log_source = amulog
+snmp_source = rrd
+
+# [influx, sql]
+evdb = sql
+
+# amulog host_alias filename
+host_alias_filename =
+
+
+[database_amulog]
+# amulog config path
+source_conf = amulog.conf
+
+# one of [ltgid, ltid]
+event_gid = ltgid
+
+use_anonymize_mapping = false
+
+# "anonymized" if amulog db specified in database_amulog.source_conf is anonymized
+# "original" if amulog db specified in database_amulog.source_conf is not anonymized (differ from logdag input)
+given_amulog_database = anonymized
+
+
+[database_rrd]
+
+rows = 1
+cf = MAX
+correct_roundup = true
+
+# binsize: used for correct_roundup
+binsize = 60
+
+
+[database_influx]
+
+host = localhost
+port = 8086
+username = root
+passwd = root
+log_dbname = log
+snmp_dbname = snmp
+snmp_source_dbname = snmp
+batch_size = 1000
+protocol = line
+
+
+[database_sql]
+# Database management system to use
+# [sqlite3, mysql] is available
+# mysql : Require MySQL for PYTHON (MySQLdb) package
+database = sqlite3
+
+# timeseries database for sqlite3
+sqlite3_filename = logdag.db
+
+# Database hostname for mysql
+mysql_host = localhost
+
+# Database name for mysql
+mysql_log_dbname = log
+mysql_snmp_dbname = snmp
+
+# Mysql username
+mysql_user = test
+
+# Mysql user password
+mysql_passwd = test
+
+
+[filter]
+# Filters for log events
+
+# Actions to apply for periodic events
+# [sizetest, filter_periodic, remove_periodic, remove_corr, remove_linear]
+# are available
+rules = sizetest, filter_periodic, remove_linear
+
+# Required event appearance for preprocessing
+# set more than 3
+pre_count = 5
+pre_term = 6h
+
+# threshold for fourier analysis
+fourier_sample_rule = 1d_10s, 7d_1m
+fourier_th_spec = 0.4
+fourier_th_eval = 0.1
+fourier_th_restore = 0.5
+fourier_peak_order = 200
+
+# threshold for continuous distribution dt filter
+linear_sample_rule = 1d_10s
+linear_count = 10
+linear_th = 0.5
+
+# parameters for method corr
+corr_sample_rule = 1d_10s
+corr_th = 0.5
+corr_diff = 1h, 1d
+
+
+[dag]
+
+# Fetching term for estimating dag
+whole_term = 2112-09-01 00:00:00, 2112-10-01 00:00:00
+
+# data sources for dag estimation input
+# [log, snmp] are available
+source = log
+
+# used features in snmp data source
+# if empty, all features are used
+snmp_features =
+
+# Target areas of DAG construction
+# If "all" given, use whole hosts as 1 area named "all"
+# If "each" given, define each host as 1 area named with hostname
+# For example:
+# area = core, area1, area2, area3
+area = all
+area_def = 
+
+# Length of unit terms to construct DAG
+unit_term = 30h
+
+# Length of time difference of unit terms
+unit_diff = 24h
+
+# Method to generate conditional-independence test input
+# [sequential, slide, radius]
+ci_bin_method = sequential
+
+# Bin size of discrete data for conditional-independence test
+ci_bin_size = 1m
+
+# Distance between each bin in discrete data for conditional-independence test
+# If ci_bin_method is sequential,
+# this option is ignored (using same as ci_bin_size).
+ci_bin_diff = 1m
+
+# Method to estimate conditional independency
+# [fisherz, fisherz_bin, gsq, gsq_rlib] is available
+ci_func = gsq
+
+# Method to estimate causal DAG
+# pc in default, and lingam (LiNGAM-fast) is also available
+cause_algorithm = pc
+
+# Method to estimate skeleton in PC algorithm
+# default : original-PC algorithm, fast but not accurate in sparse data
+# stable : stable-PC algorithm, result is order-independent of input data
+skeleton_method = stable
+
+# Maximum depth of conditional independence
+# if -1, no limit is set
+skeleton_depth = -1
+
+# Threshold of p-value for conditional independence test
+skeleton_threshold = 0.01
+
+# for debugging
+skeleton_verbose = false
+
+# merge event nodes that have completely same values
+merge_syncevent = false
+merge_syncevent_rules = host, group
+
+# Argument manager file
+# default: args_<config_filename>
+args_fn = args
+
+# Event definition data (unused in current version, for compatibility)
+# If empty, dag.output_dir is used with filename extended
+evmap_dir =
+
+# Found DAG object data
+output_dir = pc_output
+output_dag_format = pickle
+
+# Check dag file and pass if already exists
+pass_dag_exists = false
+
+# values for event detail output
+event_detail_head = 5
+event_detail_foot = 5
+event_detail_cache = true
+
+
+[prior_knowledge]
+# List of methods to define prior knowledge
+# [topology, multi-topology]
+methods =
+
+# Specify if using "topology"
+# network file: networkx graph file in json format
+single_network_file = def_topology.json
+
+# Specify if using "multi-topology"
+multi_network_file = l2:l2.json, l3:l3.json
+# group name is same as that of lt_label in amulog
+multi_network_group = interface:l2, network:l2, egp:l3, igp:l3, vpn:l3
+
+# For DAG import
+# apply_rule: [prune, force, prune+force, prune-unconnected]
+import_config =
+import_apply_rule = prune
+import_allow_reverse = true
+
+
+[lingam]
+algorithm = ica
+lower_limit = 0.01
+ica_max_iter = 1000
+
+
+[cdt]
+category = independence
+algorithm = glasso
+max_iteration = 2000
+tolerance = 0.0001
+use_deconvolution = true
+deconvolution_algorithm = aracne
+
+
+[eval]
+path = eval_data
+
