@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: uptwine
+Version: 0.0.9
+Summary: Auto package uploader to pypi with twine
+Home-page: https://github.com/joacomonsalvo/uptwine
+Author: Joaco Monsalvo
+Author-email: joacomonsalvo.contact@protonmail.com
+License: UNKNOWN
+Keywords: python,pypi,uptwine,twine
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: twine (~=3.4.2)
+Requires-Dist: wheel (~=0.37.0)
+
+# uptwine
+
+uptwine is an auto package uploader to pypi with twine.
+
+
