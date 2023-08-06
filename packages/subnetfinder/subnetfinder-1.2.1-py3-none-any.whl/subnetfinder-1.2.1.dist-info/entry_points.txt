@@ -1,0 +1,6 @@
+[console_scripts]
+subnetfinder = subnetfinder.__main__:main
+
+[subnetfinder]
+ProcessSubnets = subnetfinder.subnetfinder:ProcessSubnets
+
