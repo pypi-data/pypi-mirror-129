@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: iambcodes
+Version: 0.0.5
+Summary: Functions for processing of Biolog data.
+Home-page: UNKNOWN
+Author: Ulf Liebal
+Author-email: ulf.liebal@rwth-aachen.de
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: biolog
+Platform: UNKNOWN
+Requires-Python: >=3.6
