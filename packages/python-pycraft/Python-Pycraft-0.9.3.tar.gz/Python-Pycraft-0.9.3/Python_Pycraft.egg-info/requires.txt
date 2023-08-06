@@ -1,0 +1,13 @@
+Pillow
+Pygame
+PyOpenGL
+PyOpenGL-Accelerate
+Numpy
+PyAutoGUI
+Psutil
+PyWaveFront
+Py-Cpuinfo
+Gputil
+Tabulate
+Moderngl
+Moderngl-window
