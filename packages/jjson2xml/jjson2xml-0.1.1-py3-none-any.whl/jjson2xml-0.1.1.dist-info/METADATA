@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: jjson2xml
+Version: 0.1.1
+Summary: Json to XML converter
+Home-page: https://github.com/bcn-dev/jjson2xml.git
+Author: Wilson Silva
+Author-email: wilson.silva@bcn.cv
+License: MIT
+Project-URL: Bug Tracker, https://github.com/bcn-dev/jjson2xml/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# jjson2xml - Json to XML
+
+Json to XML
+
+Install `jjson2xml` on your system using : 
+
+```
+pip install jjson2xml
+```
+
+
