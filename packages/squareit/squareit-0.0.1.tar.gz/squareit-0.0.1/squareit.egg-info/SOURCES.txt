@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+squareit.egg-info/PKG-INFO
+squareit.egg-info/SOURCES.txt
+squareit.egg-info/dependency_links.txt
+squareit.egg-info/top_level.txt

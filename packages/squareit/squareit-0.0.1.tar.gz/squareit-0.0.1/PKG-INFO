@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: squareit
+Version: 0.0.1
+Summary: Package should be used to square a number.
+Home-page: UNKNOWN
+Author: Ajit Kulkarni
+Author-email: <ajitkulkarni932002@gnamil.com>
+License: UNKNOWN
+Keywords: python,unitlength,length,distances,diameters,meters
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
