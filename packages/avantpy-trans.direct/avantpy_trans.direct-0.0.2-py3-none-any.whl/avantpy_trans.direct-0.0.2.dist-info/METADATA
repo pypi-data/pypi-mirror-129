@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: avantpy-trans.direct
+Version: 0.0.2
+Summary: avantpy translations
+Author: Phil Weir
+Author-email: phil.t.weir@googlemail.com
+Requires-Python: >=3.6.5,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=6.0,<7.0)
