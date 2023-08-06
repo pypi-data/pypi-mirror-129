@@ -1,0 +1,5 @@
+[console_scripts]
+libmineshaft-console = libmineshaft.shell:run
+libms-console = libmineshaft.shell:run
+ms-console = libmineshaft.shell:run
+
