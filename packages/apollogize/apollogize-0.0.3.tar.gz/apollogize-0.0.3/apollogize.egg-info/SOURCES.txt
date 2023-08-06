@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+apollogize/__init__.py
+apollogize/apollogize.py
+apollogize.egg-info/PKG-INFO
+apollogize.egg-info/SOURCES.txt
+apollogize.egg-info/dependency_links.txt
+apollogize.egg-info/entry_points.txt
+apollogize.egg-info/requires.txt
+apollogize.egg-info/top_level.txt

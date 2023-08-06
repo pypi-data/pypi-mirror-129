@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: apollogize
+Version: 0.0.3
+Summary: Apollogize is a command line tool which assists the employers who forgot to check-in and check-out in Apollo app.
+Home-page: https://github.com/zacfeng/Apollogize
+Author: Zac Chien
+Author-email: fengying0709@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Apollogize
+Apollogize is a command line tool which assists the employers who forgot to check-in and check-out in Apollo HR app.
+
+## Installation
+It's available on pypi, simply use pip to install Apollogize package.
+```bash
+pip install apollogize
+```
+
+## Contribution
+```bash
+python -m virtualenv venv
+pip install --user virtualenv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r pip-requirements.txt
+```
+
+## License
+Licensed under the GPLv3 license.
+
