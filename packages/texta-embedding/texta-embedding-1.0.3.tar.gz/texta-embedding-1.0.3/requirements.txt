@@ -1,0 +1,4 @@
+gensim==4.1.*
+joblib
+pytest
+texta-tools==2.*
