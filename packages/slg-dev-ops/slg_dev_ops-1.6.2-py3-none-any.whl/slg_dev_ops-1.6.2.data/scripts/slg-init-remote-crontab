@@ -1,0 +1,28 @@
+#!python
+import subprocess
+import os
+import argparse
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+
+    # argument groups can have their tickers combined (ie -su)
+    bools = parser.add_argument_group()
+
+    # integer value
+    parser.add_argument('-u', '--username', default='steven', type=str,
+                        help="Username of the crontab's owner")
+
+    args = parser.parse_args()
+
+    return args
+
+
+if __name__ == '__main__':
+    args = get_arguments()
+    print(args)
+
+    username = args.username
+    top_line = f"PATH=/home/{username}/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin:/home/{username}/bin"
+    subprocess.run(f'( echo "{top_line}"; crontab -u {username} -l ) | crontab -u {username} -', shell=True)
+    print('Success. Check your crontab with `crontab -e` to check result')
