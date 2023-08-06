@@ -1,0 +1,16 @@
+torusengine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torusengine/camera.py,sha256=viEKUcADiK5rfMZxNtDa1hbos7halLYvmKXSx9IqvKs,3853
+torusengine/light.py,sha256=E3Fi12Ujlz4RKWFfdadcWW7YEpCxv4NxdpDpPojrMnU,1181
+torusengine/move.py,sha256=D2IFreL1HkvVpw3zTp-QFRO9LrFVLrYEOn1gdrRrYBI,228
+torusengine/plane.py,sha256=elA_yvyEPX5UAvgU2bEfjk5BH6UK_mwuL9o_JQe4Joo,2127
+torusengine/scene.py,sha256=rCIyNItFgAaQs3UULvlXwdZ4wi1qB_Ye5-X7cef84Kc,3072
+torusengine/status.py,sha256=RkutWeWTibiUEhnJmNe5b6zVpDAnwquQQFHqd7IlgJI,298
+torusengine/utils.py,sha256=s9BNrYQ2oRpaliXAYi-9DEQW4emavejH4rucCiipkWs,1680
+torusengine/objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torusengine/objects/sphere.py,sha256=a_DspaK7HvmU1WyzXrv2Oqvb5a3taIcPv6Yx66qhTP8,1079
+torusengine/objects/torus.py,sha256=HpnM9TJrhsGiSdOIf1aX9k0qgEay2QrZfWWRUe5mdQQ,1130
+torus_engine-1.1.4.dist-info/LICENSE,sha256=7sx8ItfIbJ6FJVjFZ0dHor79a2WSQzR9ilgbYXqTB7k,1073
+torus_engine-1.1.4.dist-info/METADATA,sha256=LqarAYdrPLNi8NDV6czLM4jRS6aRq1arhIP45DGGA9U,3102
+torus_engine-1.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+torus_engine-1.1.4.dist-info/top_level.txt,sha256=JKhPZTQDhI5xGk_pY6N2JK6N32uY8lg24WVBcjsUR9E,12
+torus_engine-1.1.4.dist-info/RECORD,,
