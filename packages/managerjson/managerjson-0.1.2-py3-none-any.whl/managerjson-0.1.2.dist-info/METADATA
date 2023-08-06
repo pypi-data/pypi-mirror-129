@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: managerjson
+Version: 0.1.2
+Summary: Package to handle complex jsons.
+Home-page: https://gitlab.com/osstorres/managerjson
+Author: Osiel Torres
+Author-email: osieltorresdev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# managerjson
+
+[![PyPI version](https://badge.fury.io/py/widget-periodictable.svg)](https://badge.fury.io/py/widget-periodictable)
+[![codecov](https://codecov.io/gh/dojo/widgets/branch/master/graph/badge.svg)](https://codecov.io/gh/dojo/widgets)
+
+## Getting started
+
+From PYPI
+```
+❯ pipenv install managerjson
+```
+
+from the source
+```
+❯  git clone https://gitlab.com/osstorres/jsonmanager.git
+❯  cd managerjson
+❯  python3 setup.py install
+```
+## How to object
+
+
+```
+from managerjson import JsonObject
+
+objects = JsonObject(
+{
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters": {
+        "batter": [
+            {"id": "1001", "type": "Regular"},
+            {"id": "1002", "type": "Chocolate"},
+            {"id": "1003", "type": "Blueberry"},
+            {"id": "1004", "type": "Devil's Food"},
+        ]
+    },
+    "topping": [
+        {"id": "5001", "type": "None"},
+        {"id": "5002", "type": "Glazed"},
+        {"id": "5005", "type": "Sugar"},
+        {"id": "5007", "type": "Powdered Sugar"},
+        {"id": "5006", "type": "Chocolate with Sprinkles"},
+        {"id": "5003", "type": "Chocolate"},
+        {"id": "5004", "type": "Maple"},
+    ],
+}
+)
+
+```
+
+You can access
+```
+❯  print(objects.id)
+❯  0001
+
+❯  print(objects.topping)
+❯  [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5007', 'type': 'Powdered Sugar'}, {'id': '5006', 'type': 'Chocolate with Sprinkles'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]
+
+❯  print(objects.batters.batter)
+❯  [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}, {'id': '1003', 'type': 'Blueberry'}, {'id': '1004', 'type': "Devil's Food"}]
+
+❯  print(objects.keys())
+❯  dict_keys(['id', 'type', 'name', 'ppu', 'batters', 'topping'])
+
+❯  print(objects.json)
+❯  {'id': '0001', 'type': 'donut', 'name': 'Cake', 'ppu': 0.55, 'batters': {'batter': [{'id': '1001', 'type': 'Regular'}, {'id': '1002', 'type': 'Chocolate'}, {'id': '1003', 'type': 'Blueberry'}, {'id': '1004', 'type': "Devil's Food"}]}, 'topping': [{'id': '5001', 'type': 'None'}, {'id': '5002', 'type': 'Glazed'}, {'id': '5005', 'type': 'Sugar'}, {'id': '5007', 'type': 'Powdered Sugar'}, {'id': '5006', 'type': 'Chocolate with Sprinkles'}, {'id': '5003', 'type': 'Chocolate'}, {'id': '5004', 'type': 'Maple'}]}
+
+
+```
+
+## How to flat
+
+```
+from managerjson import flatjson
+
+flatjson(
+{
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters": {
+        "batter": [
+            {"id": "1001", "type": "Regular"},
+            {"id": "1002", "type": "Chocolate"},
+            {"id": "1003", "type": "Blueberry"},
+            {"id": "1004", "type": "Devil's Food"},
+        ]
+    },
+    "topping": [
+        {"id": "5001", "type": "None"},
+        {"id": "5002", "type": "Glazed"},
+        {"id": "5005", "type": "Sugar"},
+        {"id": "5007", "type": "Powdered Sugar"},
+        {"id": "5006", "type": "Chocolate with Sprinkles"},
+        {"id": "5003", "type": "Chocolate"},
+        {"id": "5004", "type": "Maple"},
+    ],
+}
+)
+
+```
+The result
+```
+{
+    "id": "0001",
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+    "batters_batter_0_id": "1001",
+    "batters_batter_0_type": "Regular",
+    "batters_batter_1_id": "1002",
+    "batters_batter_1_type": "Chocolate",
+    "batters_batter_2_id": "1003",
+    "batters_batter_2_type": "Blueberry",
+    "batters_batter_3_id": "1004",
+    "batters_batter_3_type": "Devils Food",
+    "topping_0_id": "5001",
+    "topping_0_type": "None",
+    "topping_1_id": "5002",
+    "topping_1_type": "Glazed",
+    "topping_2_id": "5005",
+    "topping_2_type": "Sugar",
+    "topping_3_id": "5007",
+    "topping_3_type": "Powdered Sugar",
+    "topping_4_id": "5006",
+    "topping_4_type": "Chocolate with Sprinkles",
+    "topping_5_id": "5003",
+    "topping_5_type": "Chocolate",
+    "topping_6_id": "5004",
+    "topping_6_type": "Maple"
+}
+```
+
+
