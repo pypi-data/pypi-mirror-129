@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+unitgen/__init__.py
+unitgen/args_checker_parser.py
+unitgen/test_files_generator.py
+unitgen/unitgen.py
+unitgen.egg-info/PKG-INFO
+unitgen.egg-info/SOURCES.txt
+unitgen.egg-info/dependency_links.txt
+unitgen.egg-info/entry_points.txt
+unitgen.egg-info/not-zip-safe
+unitgen.egg-info/requires.txt
+unitgen.egg-info/top_level.txt

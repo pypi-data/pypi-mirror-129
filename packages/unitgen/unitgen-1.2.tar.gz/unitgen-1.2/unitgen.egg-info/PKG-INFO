@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: unitgen
+Version: 1.2
+Summary: Generate unit tests boilerplate code
+Home-page: https://github.com/susmitpy/unitgen
+Author: Susmit Rajeev Vengurlekar
+Author-email: susmit.py@gmail.com
+License: GPL
+Download-URL: https://github.com/susmitpy/unitgen/archive/refs/tags/v_1.2.tar.gz
+Description: # unitgen
+        
+        Generate unit tests boilerplate code
+        
+        This is a simple tool to generate boilerplate code for unit tests. It is for those developers who are not able to follow TDD (Test Driven Development) for few methods and want to write unit tests for them after writing the actual code.
+        
+        All the test files are generated in a folder named "tests" if it does not exist.
+        
+        Example:
+        examples/calci.py
+        ```python
+        import math
+        
+        class Calci:
+            def __init__(self):
+                print("Calci class created")
+        
+            def add(self, a, b=0):
+                c = a + b
+                return c
+        
+            def sub(self, a, b):
+                return a - b
+        
+        
+        class StringCalci:
+            def concat(self, a, b):
+                return a + b
+        
+            def repeat(self, a, b):
+                return a * b
+        ```
+        
+        Run unitgen from command line:
+        ```bash
+        # View how to use unitgen
+        unitgen
+        
+        # all files under examples directory are processed
+        unitgen examples
+        
+        # Files calci.py and pay_handler.py are processed
+        unitgen examples/calci.py examples/pay_handler.py
+        ```
+        
+        Generated result:
+        tests/test_calci.py
+        ```python
+        
+        from unittest import TestCase
+        from examples.calci import Calci, StringCalci
+        
+        
+        class TestCalci(TestCase):
+            def setUp(self):
+                """ Set up objects for each test """
+                
+                self.calci = Calci()
+            
+            
+            def test___init__(self):
+                """ Test initialiser """
+                self.obj = Calci()
+            
+            
+            
+            def test_add(self):
+                
+                a = None
+                b = None
+                actual_result = self.calci.add(a, b)
+                expected_result = None
+                self.assertEqual(actual_result, expected_result)
+            
+            
+            
+            def test_sub(self):
+                
+                a = None
+                b = None
+                actual_result = self.calci.sub(a, b)
+                expected_result = None
+                self.assertEqual(actual_result, expected_result)
+            
+            
+            def tearDown(self):
+                """ Destroy objects after each test """
+        
+        class TestStringCalci(TestCase):
+            def setUp(self):
+                """ Set up objects for each test """
+                
+                self.string_calci = StringCalci()
+            
+            
+            def test_concat(self):
+                
+                a = None
+                b = None
+                actual_result = self.string_calci.concat(a, b)
+                expected_result = None
+                self.assertEqual(actual_result, expected_result)
+            
+            def test_repeat(self):
+                
+                a = None
+                b = None
+                actual_result = self.string_calci.repeat(a, b)
+                expected_result = None
+                self.assertEqual(actual_result, expected_result)
+            
+            
+            def tearDown(self):
+                """ Destroy objects after each test """
+        ```
+        
+        Enjoy!
+        
+        My Github profile: [susmitpy](https://www.github.com/susmitpy)
+        
+        My Linkedin profile: [susmit vengurlekar](https://www.linkedin.com/in/susmit-vengurlekar/)
+        
+        My Medium profile: [susmit.py](https://medium.com/@susmit.py)
+Keywords: generate unit tests,generate tests,tests generator,boilerplate generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable 
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
