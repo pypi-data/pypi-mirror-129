@@ -1,0 +1,3 @@
+pytest
+regex
+nltk>=3.5
