@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/spdata.egg-info/PKG-INFO
+src/spdata.egg-info/SOURCES.txt
+src/spdata.egg-info/dependency_links.txt
+src/spdata.egg-info/requires.txt
+src/spdata.egg-info/top_level.txt

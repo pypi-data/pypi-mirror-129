@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: spdata
+Version: 0.0.1
+Summary: A collection of tools to handle sparse data
+Home-page: https://github.com/dewloosh/spdata
+Author: dewloosh
+Author-email: dewloosh@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dewloosh/spdata/archive/refs/tags/0_0_1.zip
+Description: # spdata
+        A collection of tools to handle sparse data
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
