@@ -1,0 +1,7 @@
+setup.py
+verifypacks/__init__.py
+verifypacks/library_verifier.py
+verifypacks.egg-info/PKG-INFO
+verifypacks.egg-info/SOURCES.txt
+verifypacks.egg-info/dependency_links.txt
+verifypacks.egg-info/top_level.txt

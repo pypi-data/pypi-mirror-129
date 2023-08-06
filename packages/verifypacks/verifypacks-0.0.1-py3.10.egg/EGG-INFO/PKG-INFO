@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: verifypacks
+Version: 0.0.1
+Summary: this library verifies if python libraries are up to date
+Home-page: UNKNOWN
+Author: Kaio Marques
+License: UNKNOWN
+Platform: UNKNOWN
+Requires: piprot
+
+UNKNOWN
+
