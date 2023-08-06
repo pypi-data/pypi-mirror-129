@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: xcommand
+Version: 0.2
+Summary: 个人常用命令行工具合集
+Home-page: UNKNOWN
+Author: 二炜
+Author-email: 1174543101@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: PyMuPDF
+Requires-Dist: img2pdf
+Requires-Dist: pywin32
+
+## 快速开始
+
+### 安装
+
+```shell
+pip install xcommand
+```
+
+### 使用
+
+#### xreport
+
+```shell
+xreport --help
+>>>Usage: xreport [OPTIONS] COMMAND [ARGS]...
+
+  报告相关工具，可极大提高出报告或其他模板式word文档的效率
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  genrpt  根据word模板自动读取excel中指定数据生成报告文档
+```
+
+```shell
+xreport genrpt --help
+>>>Usage: xreport genrpt [OPTIONS]
+
+  根据word模板自动读取excel中指定数据生成报告文档
+
+Options:
+  -t, --template FILE  必要参数，指定word模板文件地址
+  -f, --file FILE      指定excel数据文件地址，与-d参数必须二选一
+  -d, --dir DIRECTORY  指定excel数据文件夹地址，与-f参数必须二选一，此模式下最终的word输出文档名与excel数据文件名一致
+  -o, --out PATH       指定word输出文件或文件夹地址。当选择-f参数时，默认为“./out.docx”；当选择-
+                       d参数时，默认为“./out/”
+  -h, --hide           隐藏运行过程中office软件窗口
+  --help               Show this message and exit.
+```
+
+#### xpdf
+
+```shell
+xpdf --help
+>>>Usage: xpdf [OPTIONS] COMMAND [ARGS]...
+
+  快速合并或拆分pdf文件
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  toimg  将单个pdf文件的每一页导出为图片
+  topdf  将指定图片及指定文件夹中图片合并为一个pdf文件，文件夹中图片顺序按照文件名升序排列
+```
+
+```shell
+xpdf toimg --help
+>>>Usage: xpdf toimg [OPTIONS] PATH
+
+  将单个pdf文件的每一页导出为图片
+
+Options:
+  -o, --out PATH           指定图片输出文件夹地址  [default: out/]
+  -s, --scale FLOAT        指定输出图片的缩放比例  [default: 2]
+  -p, --prefix TEXT        每张图片的文件名前缀
+  -f, --format [jpeg|png]  每张图片的文件格式  [default: jpeg]
+  --help                   Show this message and exit.
+```
+
+```shell
+xpdf topdf --help
+>>>Usage: xpdf topdf [OPTIONS] PATH...
+
+  将指定图片及指定文件夹中图片合并为一个pdf文件，文件夹中图片顺序按照文件名升序排列
+
+Options:
+  -o, --out PATH               指定pdf输出文件地址  [default: out.pdf]
+  -s, --size [A3|A4|A5|B4|B5]  指定pdf输出文件每一页的固定尺寸  [default: A4]
+  -r, --reverse                反转页面的长和高，配合“--size”使用，添加该参数后页面为横向
+  -f, --free                   自由尺寸，添加该参数后“--size”和“--reverse”无效，每一页保持源图片的形状和尺
+                               寸
+  --help                       Show this message and exit.
+```
+
+
+

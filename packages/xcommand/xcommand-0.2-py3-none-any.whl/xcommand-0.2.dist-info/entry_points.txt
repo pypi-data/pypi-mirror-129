@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        xreport=xcommand.report:cli
+        xpdf=xcommand.pdf:cli
+    
