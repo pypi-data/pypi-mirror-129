@@ -1,0 +1,10 @@
+iwopy/VERSION,sha256=_FaeeBkDknivYaJFOETy28B4ek36p0MzJLn9rQYIrgU,7
+iwopy/__init__.py,sha256=9rEJxV6zMK0RXWAClHq0PTg-1qKxJKbSqovXKSSEOFQ,39
+iwopy/flib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iwopy/flib/test1.py,sha256=Xe0wXacbBuPBEMIRhfok5N8AbTUEoYNAE2PtN9YcGKk,98
+iwopy-0.0.1.data/scripts/test-iwopy,sha256=ZKsSyUcTEVLsIndrRGYnycrppgK-CvuRl4E2u4L_biE,105
+iwopy-0.0.1.dist-info/LICENSE,sha256=sw5R9x7YiaESz--wct2pp-gEY_aBiJlnEMnoPHzU0m4,1075
+iwopy-0.0.1.dist-info/METADATA,sha256=0lPGy4GYzMsB7sQWY9ZxZEA82x8IoF19BgzROJIDT40,729
+iwopy-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+iwopy-0.0.1.dist-info/top_level.txt,sha256=51KNQr27ur_u9xKpuDl7GQiBINPKGOqMaMM63kFNzQE,6
+iwopy-0.0.1.dist-info/RECORD,,

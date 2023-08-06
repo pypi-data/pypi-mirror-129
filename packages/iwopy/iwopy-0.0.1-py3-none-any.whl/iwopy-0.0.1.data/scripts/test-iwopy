@@ -1,0 +1,6 @@
+#!python
+print("hey there, this is the first hello from iwopy!")
+
+from iwopy import test_fun
+test_fun()
+
