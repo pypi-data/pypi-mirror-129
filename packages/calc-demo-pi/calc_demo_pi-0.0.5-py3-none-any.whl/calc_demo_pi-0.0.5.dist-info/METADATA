@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: calc-demo-pi
+Version: 0.0.5
+Summary: Breve descripción
+Home-page: https://gitlab/publish
+Author: mfermin
+Author-email: email@ib.edu.ar
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#Cmd Packaging libs in python
+
+# to upgrade tools 
+> python3 -m pip install --user --upgrade setuptools wheel
+> python3 -m pip install --user --upgrade twine
+
+
+#to upload library:
+>cd $folder_lib_name
+
+>python3 setup.py sdist bdist_wheel	#Genera los archivos para subir a www.pypi.org
+>twine upload dist/* 			#Sube los archivos para distribución, previo configurar una cuenta en www.pypi.org 
+
+
+#to install de library
+pip install $lib_name			#se descarga en este caso se creo la demo para el proy integrador: calc_demo_pi
+
+
+#using lib: (eg: ipython)
+In [1]: from calc_demo_pi.Chebychev import func    #se importa la bibl 
+In [2]: func.run()				   #corre una funcion print.
+
+
+Out[2]: 'Successful!'
+
+
+
