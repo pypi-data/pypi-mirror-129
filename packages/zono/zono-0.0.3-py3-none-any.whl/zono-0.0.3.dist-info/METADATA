@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zono
+Version: 0.0.3
+Summary: A general purpose with a wide range of features
+Home-page: UNKNOWN
+Author: KisAwesome
+Author-email: cool676rock@gmail.com
+License: UNKNOWN
+Keywords: python,Cryptography,vlc,audio,songs,cli,framework,thread pools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: cryptography
+Requires-Dist: mutagen
+Requires-Dist: python-vlc
+
+A package with cryptography,audio playback,thread workers and a command line application framework
+
+
