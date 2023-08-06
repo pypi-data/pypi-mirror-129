@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: relycomply-client
+Version: 0.2.0
+Summary: A python client for the RelyComply platform
+Author: James Saunders
+Author-email: james@relycomply.com
+Requires-Python: >=3.8,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3
+Requires-Dist: dryenv
+Requires-Dist: gql (==3.0.0a1)
+Requires-Dist: littleutils
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
