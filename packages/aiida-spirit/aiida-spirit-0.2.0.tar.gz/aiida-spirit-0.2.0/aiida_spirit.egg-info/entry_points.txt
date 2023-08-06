@@ -1,0 +1,6 @@
+[aiida.calculations]
+spirit = aiida_spirit.calculations:SpiritCalculation
+
+[aiida.parsers]
+spirit = aiida_spirit.parsers:SpiritParser
+
