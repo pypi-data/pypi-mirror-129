@@ -1,0 +1,10 @@
+README.md
+setup.py
+pytrellis/__init__.py
+pytrellis/_create_empty_dict.py
+pytrellis/_flexible_multilevel_mkdir.py
+pytrellis.egg-info/PKG-INFO
+pytrellis.egg-info/SOURCES.txt
+pytrellis.egg-info/dependency_links.txt
+pytrellis.egg-info/requires.txt
+pytrellis.egg-info/top_level.txt
