@@ -1,0 +1,11 @@
+pyserial>=3
+numpy
+scipy
+imageio
+tabulate
+dask
+xarray
+zarr
+qtpy
+napari
+scikit-image>=0.17
