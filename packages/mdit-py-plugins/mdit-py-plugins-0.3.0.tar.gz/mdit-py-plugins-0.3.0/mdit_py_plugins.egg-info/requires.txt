@@ -1,0 +1,14 @@
+markdown-it-py<3.0.0,>=1.0.0
+
+[code_style]
+pre-commit==2.6
+
+[rtd]
+myst-parser~=0.14.0
+sphinx-book-theme~=0.1.0
+
+[testing]
+coverage
+pytest<4,>=3.6
+pytest-cov
+pytest-regressions
