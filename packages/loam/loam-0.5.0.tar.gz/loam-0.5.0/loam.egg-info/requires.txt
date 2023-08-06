@@ -1,0 +1,2 @@
+setuptools_scm>=6.2
+toml>=0.10.2
