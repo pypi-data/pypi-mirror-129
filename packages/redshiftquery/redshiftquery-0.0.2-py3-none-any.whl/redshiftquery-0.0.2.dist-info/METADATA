@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: redshiftquery
+Version: 0.0.2
+Summary: Tools for querying redshift
+Home-page: https://github.com/StephenBoyer/RedshiftTools
+Author: Stephen Boyer
+Author-email: Stephen.B.Boyer@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Amazon Connect Tools
+
+These tools are intended to be used to connect and query **one** redshift instance and **one** database.  
+
+## Requirements:
+
+This package is dependant upon [keyring](https://pypi.org/project/keyring/) for keeping credentials secure for connecting to your desired Redshift instance. 
+
+## Instructions:
+
+1. Installation:
+
+```
+pip install redshiftquery
+```
+
+2. Setup:
+
+Next you will need to setup the [keyring](https://pypi.org/project/keyring/) Login information unique to your redshift database.
+
+You will need to store a 'Host', 'Database', 'Username', and 'Password' by running the following in python once:
+
+```py
+import keyring
+keyring.set_password('Redshift', 'Host', 'Your Host Server')
+keyring.set_password('Redshift', 'Database', 'Your Database')
+keyring.set_password('Redshift', 'Username', 'Your Username')
+keyring.set_password('Redshift', 'Password', 'Your Password')
+```
+
+*note that the strings used here are case sensitive*
+
+Copy this exactly but replace Your Host Server, Your Databas, Your Username, and Your Password with your actual login credentials. This will be stored in your OS. 
+
+You can check that it was set up properly by executing keyring's get_password function, for example to check your Username was set up correctly:
+
+```py
+keyring.get_password('RedShift', 'Username')
+```
+
+
+
