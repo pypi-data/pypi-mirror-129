@@ -1,0 +1,11 @@
+exceptions_hog/__init__.py,sha256=KkALg6whoNhVE2SbaXLzoGJQh7oBmEuzjaV0Hw6sZCE,72
+exceptions_hog/exceptions.py,sha256=yWKbz_X2DACSO3lz9KasK1a1TBieGOEQcZlkXr0xa4w,1023
+exceptions_hog/handler.py,sha256=7ybbooYNP31vbZ1YFRvwZg1EZx7JZWhvJpHycBHbdFM,10319
+exceptions_hog/settings.py,sha256=9sknRTzMcR7ZLXhzOprP4uVGJGDVnX1M9oFRLj1ckDU,596
+exceptions_hog/utils.py,sha256=JtMEdZ6YKarj5kbVk5QAynntyKkmBxEytSe5pJyuGtI,409
+exceptions_hog/version.py,sha256=uGMOkBGHtVAL2Z8V4395sSsdygq_P6LjjJZp0Fx6aus,51
+drf_exceptions_hog-0.1.0.dist-info/LICENSE,sha256=wx5rvwlGJuT_TUF6pwa0vnipyBAeLZxZ1KXtAOafft4,1070
+drf_exceptions_hog-0.1.0.dist-info/METADATA,sha256=7XNEqBRPaR3eUuTp7TNES4-ZUp93FtfOZe_7QIXbNJo,8084
+drf_exceptions_hog-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drf_exceptions_hog-0.1.0.dist-info/top_level.txt,sha256=-2e5rqpEa6LLRYAwUaEXA6r2Xc1gEJ_Ds_oUiaQ6fRI,15
+drf_exceptions_hog-0.1.0.dist-info/RECORD,,
