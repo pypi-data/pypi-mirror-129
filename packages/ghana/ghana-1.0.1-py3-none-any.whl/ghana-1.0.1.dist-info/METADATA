@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ghana
+Version: 1.0.1
+Summary: The List Of Ghanian Country data!
+Home-page: https://github.com/Victorspy-web/ghana
+Author: VED
+Author-email: dicksonsmart0711@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+# GHANIAN COUNTRIES INFORMATIONS
+
+## Step 1: Install The Package Via Pip
+
+#### Via Pip
+```python
+ pip3 install ghana
+```
+
+
+## Step 2: Initialize
+```python
+#IMPORT 
+import ghana
+
+```
+
+### Getting data
+```python
+# Using the print() function to print the data out
+
+print(ghana.country_data)
+
+print(ghana.regions)
+
+print(ghana.capitals)
+```
+
+### Getting clip art
+```python
+# Initialize clip art function
+
+ghana.region_art()
+ghana.capital_art()
+ghana.ghana_art()
+```
+
