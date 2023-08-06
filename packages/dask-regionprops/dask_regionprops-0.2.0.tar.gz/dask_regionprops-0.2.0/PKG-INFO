@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dask_regionprops
+Version: 0.2.0
+Summary: Compute region properties using dask delayed and dataframe
+Home-page: https://github.com/jrussell25/dask-regionprops
+Author: John Russell
+Author-email: johncrussell25@gmail.com
+License: BSD-3-Clause
+Project-URL: Source Code, https://github.com/jrussell25/dask-regionprops
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: testing
+License-File: LICENSE
+
+# dask-regionprops
+
+[![License](https://img.shields.io/pypi/l/dask-regionprops.svg?color=green)](https://github.com/jrussell25/dask-regionprops/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/dask-regionprops.svg?color=green)](https://pypi.org/project/dask-regionprops)
+[![Python Version](https://img.shields.io/pypi/pyversions/dask-regionprops.svg?color=green)](https://python.org)
+[![CI](https://github.com/jrussell25/dask-regionprops/actions/workflows/ci.yml/badge.svg)](https://github.com/jrussell25/dask-regionprops/actions)
+[![codecov](https://codecov.io/gh/jrussell25/dask-regionprops/branch/master/graph/badge.svg)](https://codecov.io/gh/jrussell25/dask-regionprops)
+
+Compute region properties using dask delayed and dataframe
+
+
