@@ -1,0 +1,9 @@
+fastapi_authz/__init__.py,sha256=zQaHbJ42zIO6RGc9TVmkm6qkeI_PouqquhugSl83aR8,40
+fastapi_authz/middleware.py,sha256=tCxn0puNAArbl6usMTn0yXr3ioPkTY-K5yHj_pTpKJ4,1927
+fastapi_authz-0.1.0.data/data/README.md,sha256=zbBXHlv_4omLfnA01j63dy8KSg0f4qPeISsc7sWueUk,4635
+fastapi_authz-0.1.0.data/data/requirements.txt,sha256=DsGVg5M5Cx00XhZDHY0GJ2aeTvP_U1rv3Dvf6I6nXoA,15
+fastapi_authz-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastapi_authz-0.1.0.dist-info/METADATA,sha256=c1rmZbpAnThc-EsGQLWWxB7SImN4ZoAcZoQ1Ts-_lWY,5690
+fastapi_authz-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+fastapi_authz-0.1.0.dist-info/top_level.txt,sha256=8WEiXuK_t1DLEVzdT7QUVEstvuLmbyDaJZ5kRrxDcw0,14
+fastapi_authz-0.1.0.dist-info/RECORD,,
