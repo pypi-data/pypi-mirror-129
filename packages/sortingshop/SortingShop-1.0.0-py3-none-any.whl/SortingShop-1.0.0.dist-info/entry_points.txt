@@ -1,0 +1,4 @@
+[console_scripts]
+SortingShop = sortingshop.sortingshop:main
+sortingshop = sortingshop.sortingshop:main
+
