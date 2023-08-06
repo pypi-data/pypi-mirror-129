@@ -1,0 +1,4 @@
+[console_scripts]
+vpsinit = vps.__init__:main
+vpsstatus = vps.vpsstatus:entrance
+
