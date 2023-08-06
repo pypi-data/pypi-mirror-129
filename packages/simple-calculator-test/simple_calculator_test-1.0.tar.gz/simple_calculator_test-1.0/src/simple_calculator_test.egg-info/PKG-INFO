@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: simple-calculator-test
+Version: 1.0
+Summary: Caculator for addition and subtraction
+Home-page: UNKNOWN
+Author: Author
+Author-email: email@gmail.com
+License: UNKNOWN
+Description: # An Illustrative Python Package
+        
+        This minimum package is used to show the very basic configurations of packaging a Python project. To be specific, addition and subtraction operations are implemented for illustration.
+        
+        This project mainly follows the instructions on:
+        - https://packaging.python.org/tutorials/packaging-projects/
+        - https://www.freecodecamp.org/news/build-your-first-python-package/
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
