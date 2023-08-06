@@ -1,0 +1,8 @@
+LICENSE.txt
+README.txt
+setup.py
+colego/__init__.py
+colego.egg-info/PKG-INFO
+colego.egg-info/SOURCES.txt
+colego.egg-info/dependency_links.txt
+colego.egg-info/top_level.txt
