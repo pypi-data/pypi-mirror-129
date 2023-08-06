@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ivy-demo-utils
+Version: 1.1.9
+Summary: Ivy Demo Utils provides a set of utilities for creating visual demos for Ivy libraries.
+Home-page: UNKNOWN
+Author: Ivy Team
+Author-email: ivydl.team@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/x-rst
+License-File: LICENCE
+Requires-Dist: open3d
+
+.. image:: https://github.com/ivy-dl/demo-utils/blob/master/docs/partial_source/logos/logo.png?raw=true
+   :width: 100%
+
+
+
+**A set of utilities for creating visual demos for Ivy libraries.**
+
+|
+| **Supported Frameworks:**
+
+
+
+.. image:: https://github.com/ivy-dl/ivy-dl.github.io/blob/master/img/externally_linked/logos/supported/frameworks.png?raw=true
+   :width: 100%
+
+**Ivy Libraries**
+
+There are a host of derived libraries written in Ivy, in the areas of mechanics, 3D vision, robotics, gym environments,
+neural memory, pre-trained models + implementations, and builder tools with trainers, data loaders and more. Click on
+the icons below to learn more!
+
+
+
+.. image:: https://github.com/ivy-dl/ivy-dl.github.io/blob/master/img/externally_linked/ivy_libraries.png?raw=true
+   :width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+Citation
+--------
+
+::
+
+    @article{lenton2021ivy,
+      title={Ivy: Unified Machine Learning for Inter-Framework Portability},
+      author={Lenton, Daniel and Pardo, Fabio and Falck, Fabian and James, Stephen and Clark, Ronald},
+      journal={arXiv preprint arXiv:2102.02886},
+      year={2021}
+    }
+
