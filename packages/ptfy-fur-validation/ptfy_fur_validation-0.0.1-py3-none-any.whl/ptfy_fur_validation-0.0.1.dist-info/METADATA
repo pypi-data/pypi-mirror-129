@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ptfy-fur-validation
+Version: 0.0.1
+Summary: A package responsible for securing the communication between systems
+Home-page: https://github.com/pantherify/python-utils/tree/main/fur_validation
+Author: Pantherify
+Author-email: pypi@pantherify.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: colorama
+Requires-Dist: coloredlogs
+
+# fur-validation
+
+## About
+Fur validation is a package to help on validation/authorization of event based messages
+using uuidv5 namespace secret.
+
+It manages to create different keys each time, but those keys, are based on a static secret. Hense, it makes the authentication secure by not using the same keys each time. 
+
