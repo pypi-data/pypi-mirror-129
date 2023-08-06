@@ -1,0 +1,8 @@
+setup.py
+Pri_Matrix_algebra/__init__.py
+Pri_Matrix_algebra/matrixp.py
+Pri_Matrix_algebra.egg-info/PKG-INFO
+Pri_Matrix_algebra.egg-info/SOURCES.txt
+Pri_Matrix_algebra.egg-info/dependency_links.txt
+Pri_Matrix_algebra.egg-info/not-zip-safe
+Pri_Matrix_algebra.egg-info/top_level.txt
