@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: aicore-nb-tools
+Version: 0.0.4
+Summary: Create a notebook with questions for AiCore students
+Home-page: UNKNOWN
+Author: Ivan Ying
+License: UNKNOWN
+Description: # Teaching Tools
+        
+        Run `python generate_notebook.py` in your terminal and let the magic happen
+        
+        The script connects to an S3 bucket with the questions. Those questions are stored usign the lesson id, and in order to get those ids, it connects to an RDS to make a query to check it.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
