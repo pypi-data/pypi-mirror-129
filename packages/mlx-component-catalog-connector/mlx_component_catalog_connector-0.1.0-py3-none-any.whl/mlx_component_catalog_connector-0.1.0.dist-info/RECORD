@@ -1,0 +1,10 @@
+mlx_catalog_connector/__init__.py,sha256=VCxxSnRjcxRiQKMRcGFq8c7R6eDKx0cWUgWrcbeNa6E,582
+mlx_catalog_connector/_version.py,sha256=Ziy_EqEaB6nBnhOkbpXWPqeEJPHaO1H3mjH0LB8Gk7I,604
+mlx_catalog_connector/mlx-catalog.json,sha256=-S4dkfbP_1HqFQCm6kK92uMetDX7iqnS41FcoXO0mbY,2971
+mlx_catalog_connector/mlx_component_catalog_connector.py,sha256=xRCTpXrvs9XkFbWq_FPwlKCH8jjdJN67gAbOdLEj1Rk,7551
+mlx_catalog_connector/mlx_schema_provider.py,sha256=u6NDP2kHpOOm5ia1iwDmlL2c4UOWYyAmSHcvM2qbWP0,1732
+mlx_component_catalog_connector-0.1.0.dist-info/METADATA,sha256=cGn-VlBbis61jFieO-Eqc7BK8QZvK4KfEajQS5DOTTQ,1091
+mlx_component_catalog_connector-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mlx_component_catalog_connector-0.1.0.dist-info/entry_points.txt,sha256=ZWv1fIa0HXbBicc_XIZBf6qEdxcbiX0dxYlwo-FeUqs,242
+mlx_component_catalog_connector-0.1.0.dist-info/top_level.txt,sha256=EDN-8yNW4ehIfFBZsNhK3xBz8JrhdVv4Nsczo1FNBrw,22
+mlx_component_catalog_connector-0.1.0.dist-info/RECORD,,

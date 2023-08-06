@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mlx-component-catalog-connector
+Version: 0.1.0
+Summary: Elyra component catalog connector for the Machine Learning Exchange
+Home-page: https://github.com/elyra-ai/examples/tree/master/component-catalog-connectors/mlx-connector
+Author: Elyra Maintainers
+Author-email: UNKNOWN
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests
+
+
+Elyra component catalog connector for the Machine Learning Exchange
+
+
