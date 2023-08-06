@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: shannon-fano
+Version: 0.1.1
+Summary: Shannon Fano Encoding library
+Home-page: UNKNOWN
+Author: Saksham Madan
+Author-email: example@email.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: Pillow
+
+# Shannon Fano
+A small practice library created as a project to encode an image.
+### Installation
+```
+pip install shannon-fano
+```
+### How to use this?
+This library returns the shannon fano code words of the image.
+```
+from shannon_fano import Shannon_fano_encoding
+
+# enter the image name as <name of the image.extension>
+
+image_name = Shannon_fano_encoding(input("Enter the Filename:"))
+print(image_name.encode())
+```
+
+
