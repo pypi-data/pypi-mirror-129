@@ -1,0 +1,10 @@
+saagieapi/__init__.py,sha256=Z_AfmqD17qJyrH1w5nKevQyIOzLEI4MuIoLFP_iwBXM,173
+saagieapi/manager/__init__.py,sha256=4_uVVBhWQu-A6LUQBjVopeDTsdhSX7d1lQDscHfEmIU,84
+saagieapi/manager/saagie_api_manager.py,sha256=SD4z0aRKNf268W-J-q0c1RXj488qP_5HN5WNWfgjlrA,17593
+saagieapi/projects/__init__.py,sha256=z5WZ4S-TeCVrsPJnGOzIsJCrNclP3Syd2jIiDOlV7Kc,62
+saagieapi/projects/auth.py,sha256=yRYDfIAFofqUdglcU9U35kUdFJOPt-L63h7tpakmbII,968
+saagieapi/projects/gql_template.py,sha256=ySmJts0VmsyF0gtVYiM14OxJbtWlM4mqR2rCqF0l9Lo,11076
+saagieapi/projects/saagie_api.py,sha256=EvfYF5HrhQN1z9spe8qBv57Rtlhb4o9JpQb7Wej8CvM,39785
+saagieapi-0.5.5.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+saagieapi-0.5.5.dist-info/METADATA,sha256=6aU1Zz85dKW0G-YJfL3FoxUUK8dQ4MJyvSu67L5I_Iw,5436
+saagieapi-0.5.5.dist-info/RECORD,,
