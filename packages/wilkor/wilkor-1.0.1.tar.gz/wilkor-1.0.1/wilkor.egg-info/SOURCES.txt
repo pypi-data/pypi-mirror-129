@@ -1,0 +1,7 @@
+setup.py
+pakiet/__init__.py
+pakiet/dzialanie.py
+wilkor.egg-info/PKG-INFO
+wilkor.egg-info/SOURCES.txt
+wilkor.egg-info/dependency_links.txt
+wilkor.egg-info/top_level.txt
