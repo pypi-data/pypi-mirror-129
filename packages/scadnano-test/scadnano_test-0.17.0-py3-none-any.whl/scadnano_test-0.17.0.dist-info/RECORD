@@ -1,0 +1,9 @@
+scadnano/__init__.py,sha256=9nmu3cB_EkKTiLxXripmuDOHxoY3csu-icH5RS55238,109
+scadnano/modifications.py,sha256=s_kBfWZAX5wQG0gkKkfF89rnweUcviitTjAxIrWijNw,1240
+scadnano/origami_rectangle.py,sha256=EpPiSMHJ2ZtM9oht4hQC2uVkggQgQSyi4FDFDYXMi-o,29111
+scadnano/scadnano.py,sha256=a58eqIIlUH8GlrMFAamcRURbwpKpMrSQf4HLW0PQj5U,336670
+scadnano_test-0.17.0.dist-info/LICENSE.txt,sha256=NOTrR2JO1ueeZNg0cR8Td0WHNt7kXHDgLmPfGXWpZkU,1078
+scadnano_test-0.17.0.dist-info/METADATA,sha256=Gg6cyGod9gXn6BJQZnIi2rdLbOzRri3F1oQPnu7NycA,14135
+scadnano_test-0.17.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+scadnano_test-0.17.0.dist-info/top_level.txt,sha256=RR3aYTjpnwTC6BRXfcp32c25JXyzVHpXkOf0N-Aq0FU,9
+scadnano_test-0.17.0.dist-info/RECORD,,
