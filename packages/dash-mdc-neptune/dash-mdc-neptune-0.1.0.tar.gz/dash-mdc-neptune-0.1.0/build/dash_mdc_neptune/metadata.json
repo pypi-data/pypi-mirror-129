@@ -1,0 +1,144 @@
+{
+  "src/components/Box.react.js": {
+    "description": "Box component from Material UI\nhttps://mui.com/components/box/",
+    "displayName": "Box",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Can be used to render elements inside the component",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "sx": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "All Material system properties are available via the `sx prop`\nAllow additional css styles to be applied to the component",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/components/Container.react.js": {
+    "description": "Container component from Material UI\nhttps://mui.com/components/container/",
+    "displayName": "Container",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Can be used to render elements inside the component",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "maxWidth": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Maximum width boundary for the container",
+        "defaultValue": {
+          "value": "'sm'",
+          "computed": false
+        }
+      },
+      "fixed": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the container max-width will be fixed",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/components/Paper.react.js": {
+    "description": "Paper component from Material UI\nhttps://mui.com/components/paper/",
+    "displayName": "Paper",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Can be used to render elements inside the component",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "elevation": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "This number represents the elevation of the paper shadow",
+        "defaultValue": {
+          "value": "1",
+          "computed": false
+        }
+      },
+      "square": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "By default, the paper will have a border radius.\nSet this to true to generate a paper with sharp corners.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  }
+}
