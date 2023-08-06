@@ -1,0 +1,8 @@
+pyceres.cp310-win_amd64.pyd,sha256=swFpJbiJzrxdv8uIXwnLYpwnA26i4SAMxB0aEvtBC0U,1862656
+pyceres/call_obj.pyx,sha256=QD3gAzifcWzDBJTMu7Vay_10wlgi63Vy8NnQoECCW3E,896
+pyceres/pyceres.pyx,sha256=zAGU-kk44RjOZTjAI7vFeZq0x09BhGLLGm5zBEJTnM4,20227
+pyceres-0.1.0.dist-info/LICENSE,sha256=lqvigvW_kqeeqe1v6yjLxh2B8kKdl8KJiM5wD8Lt6BA,4080
+pyceres-0.1.0.dist-info/METADATA,sha256=6dcPsoNv3hnTZY6jq7eK_qazZJXOsYFDSb1b8kJWTFc,5141
+pyceres-0.1.0.dist-info/WHEEL,sha256=C6CHup2HLC2Rld8AL5u9w89MYULjdaP5k0k7SG83CcI,102
+pyceres-0.1.0.dist-info/top_level.txt,sha256=BnTgj03Yp_uH3lKR4SJMkP2dVkpTkv1tda7_I-5-SVw,8
+pyceres-0.1.0.dist-info/RECORD,,
