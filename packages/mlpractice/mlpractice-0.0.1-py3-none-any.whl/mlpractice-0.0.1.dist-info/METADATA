@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mlpractice
+Version: 0.0.1
+Summary: 
+Author: Vladislav Ushakov
+Author-email: uvd2001@mail.ru
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.21.4,<2.0.0)
+Requires-Dist: scipy (>=1.7.2,<2.0.0)
+Requires-Dist: torch (>=1.10.0,<2.0.0)
