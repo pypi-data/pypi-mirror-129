@@ -1,0 +1,9 @@
+python_web_exceptions/_400.py,sha256=xQO5uB9x3SNvqKje2uAfHjKZIG7R78EN_vBFjb2hfck,1229
+python_web_exceptions/_500.py,sha256=Wi_G1njoQbCZH8whEarY0wwmDozeagYbb9Ehi7-JpLc,748
+python_web_exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_web_exceptions/base_http_exception.py,sha256=BovxzLJu1icdSQkYjeuRt2QiwrZrRnrZDRC-ZuSn5Do,668
+python_web_exceptions-1.0.dist-info/LICENSE,sha256=Ebw803MX9nuK1Snj1cMefUU_so4_bWfj7O_MsTHAOK4,1069
+python_web_exceptions-1.0.dist-info/METADATA,sha256=9BO6jmbtbEwAKi43DEXt5WNUyKVeTj3OQRFDN0o1TU0,261
+python_web_exceptions-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_web_exceptions-1.0.dist-info/top_level.txt,sha256=PIC8wioDB3jl1mHk0Rzb2GiIc3hGipVpaARGXozg3e0,22
+python_web_exceptions-1.0.dist-info/RECORD,,
