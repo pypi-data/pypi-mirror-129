@@ -1,0 +1,16 @@
+
+[tool.black]
+line-length = 120
+
+
+
+[tool.isort]
+known_third_party = []
+profile = "black" 
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = [
+    "tests",
+    "src",
+]
