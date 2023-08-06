@@ -1,0 +1,8 @@
+wumpy/gateway/__init__.py,sha256=u6FVD3hk3-I_3EixvHQydWXP3M59U3lpJ4M6twa7GUw,651
+wumpy/gateway/errors.py,sha256=8HHjTcsbxsnqbQg9MLeP9Oi8u0QrI0Lcxi-0-ZisFp4,373
+wumpy/gateway/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wumpy/gateway/shard.py,sha256=seoxp6b7hGRmzC0zlTIflbhzl9YAsZH2ZxzUkQMNyIc,13716
+wumpy_gateway-0.1.1.dist-info/LICENSE,sha256=mTMMYe08L6i5GQwemMmj0Fn0DCSWi0epnRDntEj5yJI,1085
+wumpy_gateway-0.1.1.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+wumpy_gateway-0.1.1.dist-info/METADATA,sha256=bUxswWWfB8WJXMkU_0ChdxpCJYf4Q8u7z8l8GtaePFs,3034
+wumpy_gateway-0.1.1.dist-info/RECORD,,
