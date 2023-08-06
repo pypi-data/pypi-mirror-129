@@ -1,0 +1,15 @@
+CHANGELOG.md,sha256=_4A48HL_zlZ6g793IQQaNs3ei2-X6arU_ERFGxL4kUQ,640
+EorzeaEnv/__init__.py,sha256=sLrs3f4Gbg78bx0YwXlYhFJs0_dBeVUw_QFq_gkzgHw,286
+EorzeaEnv/Data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EorzeaEnv/Data/TerritoryWeather.py,sha256=_KyXcZvH4c1kXQHIlKWGkTgKaHPy5yHLKu_4EoXaPSc,10436
+EorzeaEnv/Data/Weather.py,sha256=JTnd2oP3QVbY3hCfYEYHJ9rd7PG_Oa46CKzv1THTbVI,19291
+EorzeaEnv/Data/WeatherRate.py,sha256=paycHlv1K3sEwrDNM7hpAxIPoIjjS8Yw5QDKlFL4eA0,8164
+EorzeaEnv/eorzea_time.py,sha256=wkFzpu366bBxBgWQmjMkHE0voBlXLForEsMQHBsiLT4,5709
+EorzeaEnv/eorzea_weather.py,sha256=PM0yryMFFcrECIGu0acClQHYIq_VLpuCmozRd6bUe54,4840
+EorzeaEnv/errors.py,sha256=1ONv3t_S55QUGTYt9YbP6Rcugu_allDUImXIynX0D44,49
+LICENSE,sha256=aJ9-Nseny9ZKLYKxG8cGP6t3Q8uRV6e2xP5QSoUQlcw,1071
+README.md,sha256=Ng96_hs0mCJ8iO4qwyQ-L9f--pG2ftz4ZHvulgJNHMY,2658
+eorzeaenv-1.5.0.dist-info/LICENSE,sha256=aJ9-Nseny9ZKLYKxG8cGP6t3Q8uRV6e2xP5QSoUQlcw,1071
+eorzeaenv-1.5.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+eorzeaenv-1.5.0.dist-info/METADATA,sha256=1NsKc_jh1m3B0qwa58rxNkSogQiTY8YVrM1YtTnQ-8E,3701
+eorzeaenv-1.5.0.dist-info/RECORD,,
