@@ -1,0 +1,9 @@
+README.md
+setup.py
+pmemkv/__init__.py
+pmemkv/kvengine.cc
+pmemkv/pmemkv.py
+pmemkv.egg-info/PKG-INFO
+pmemkv.egg-info/SOURCES.txt
+pmemkv.egg-info/dependency_links.txt
+pmemkv.egg-info/top_level.txt
