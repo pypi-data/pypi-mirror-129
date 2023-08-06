@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: maria
+Version: 0.0.7
+Summary: Atmospheric simulation
+Home-page: https://github.com/thomaswmorris/maria
+Author: Thomas Morris
+Author-email: thomasmorris@princeton.edu
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=====
+maria
+=====
+
+.. image:: https://img.shields.io/travis/tomachito/maria.svg
+        :target: https://travis-ci.org/tomachito/maria
+
+.. image:: https://img.shields.io/pypi/v/maria.svg
+        :target: https://pypi.python.org/pypi/maria
+
+
+Atmospheric simulation
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://tomachito.github.io/maria.
+
+Features
+--------
+
+* TODO
+
+
