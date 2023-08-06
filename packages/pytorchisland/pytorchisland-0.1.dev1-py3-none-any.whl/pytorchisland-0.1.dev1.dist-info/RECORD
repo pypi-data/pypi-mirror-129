@@ -1,0 +1,15 @@
+pyisland/__init__.py,sha256=jIUbrzbO7OZw1Cg0x43xVylmQl2bA5ashVrju9KXOms,21
+pytorchisland/__init__.py,sha256=jIUbrzbO7OZw1Cg0x43xVylmQl2bA5ashVrju9KXOms,21
+pytorchisland/vision/__init__.py,sha256=m22ch7-7mVn0UdmrfR4f_-jXZBzG3XSY8PEJyCIrRck,56
+pytorchisland/vision/preprocessing/__init__.py,sha256=7QFEyeNjbrtv2O3CdSP6-o-_Vh9XPO-PakkHpA-XZps,20
+pytorchisland/vision/preprocessing/image/__init__.py,sha256=qO6bJsI2CpnVs-SukZqPPyDJKfM9PcCve8ZByFoL4A4,50
+pytorchisland/vision/preprocessing/image/image.py,sha256=djHX2vQOcneaJL1waccLmnvS9Ci0MBVHZM7ouL30jIw,1198
+pytorchisland/vision/segmentation/__init__.py,sha256=JyaVNMo7T2kWv5oVGbzrJWWRW9JJrfCvy9bq_7EEpfU,22
+pytorchisland/vision/segmentation/unet/__init__.py,sha256=JDBNC4mNLdT7eUkfvvTP-7THYVDMqNV8ZxS8Es2haSI,23
+pytorchisland/vision/segmentation/unet/model.py,sha256=OCkQvmPRhXAOP4cUQtRAWybuO7E-jcLtSWZ6GmyCoFs,1166
+pytorchisland/vision/segmentation/unet/unet_parts.py,sha256=pgXwjLDhKDPXT4G9f9HU9LUSlJQ5C_sK0m5VHvZ-ueU,1539
+pytorchisland-0.1.dev1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pytorchisland-0.1.dev1.dist-info/METADATA,sha256=aEdzxKFDC6W8DIqwBqt-noIEXvDFMsiMdGVJS21uI4w,803
+pytorchisland-0.1.dev1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pytorchisland-0.1.dev1.dist-info/top_level.txt,sha256=hajzuZZwUvPNcPh8-ydEoS8ENgJkgpAmAsoJk7DQkRg,14
+pytorchisland-0.1.dev1.dist-info/RECORD,,
