@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyPreprocessing
+Version: 0.0.1
+Summary: package preprocessing of datasets, especially from spectroscopy
+Home-page: https://github.com/AlexanderSouthan/pyPreprocessing
+Author: Alexander Southan
+Author-email: alexander.southan@web.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/AlexanderSouthan/pyPreprocessing/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![build workflow](https://github.com/AlexanderSouthan/pyPreprocessing/actions/workflows/main.yml/badge.svg)](https://github.com/AlexanderSouthan/pyPreprocessing/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/AlexanderSouthan/pyPreprocessing/branch/master/graph/badge.svg?token=7GN1K2MVJ3)](https://codecov.io/gh/AlexanderSouthan/pyPreprocessing)
+
+# pyPreprocessing
+## General information
+For preprocessing of datasets like Raman spectra, infrared spectra, UV/Vis
+spectra, but also HPLC data and many other types of data, currently via
+baseline correction, smoothing, filtering, transformation, normalization and
+derivative. It relies on numpy, pandas, scipy, tqdm and scikit-learn, but also
+on https://github.com/AlexanderSouthan/pyRegression for the introduction of
+equality constraints into the polynomial baseline estimation methods, and
+https://github.com/AlexanderSouthan/little_helpers.
+
+## Documentation
+Please visit:
+https://alexandersouthan.github.io/pyPreprocessing/
+
+

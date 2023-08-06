@@ -1,0 +1,10 @@
+pyPreprocessing/__init__.py,sha256=Il5Q9ATdX8yXqVxtP_nYqUhExzxPC_qk_WXQ_4h0exg,16
+pyPreprocessing/baseline_correction.py,sha256=BOogn3JQlKm3mrT9_GdM7gekXI8xHX1EQxwAt3E0cgg,19896
+pyPreprocessing/smoothing.py,sha256=s3uLEThng0lB7B8DX2VN9aXZqMcmJfzcc3fgcJ0LkaY,15563
+pyPreprocessing/transform.py,sha256=-40p_9Skf0bZODTjR9Ycr_mC0T1zwWA6jWRGExgPuMU,3250
+pyPreprocessing-0.0.1.dist-info/LICENSE,sha256=teBFwcTAbB467bEwab3N6Q1JZaYQV07Ljh2O5j81cmY,1074
+pyPreprocessing-0.0.1.dist-info/METADATA,sha256=ZvBmsGKlmgxDpq5yRN1l_tMuFb0tmPOvhlC-W3bMCb0,1851
+pyPreprocessing-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyPreprocessing-0.0.1.dist-info/dependency_links.txt,sha256=w8jC45d5Ui3cT9uzs6JHPI6XTQEAJqiD5XAdZKJKLSY,59
+pyPreprocessing-0.0.1.dist-info/top_level.txt,sha256=0ulN9_UPMhOBJi03xGty1oujCiHL1A73E-5s2LQ4Of8,16
+pyPreprocessing-0.0.1.dist-info/RECORD,,
