@@ -1,0 +1,12 @@
+opentile/__init__.py,sha256=UgGdC91YM6idmPim7jaHRbvmFt8qIlaB-iEFcd98rTU,659
+opentile/common.py,sha256=5lyRpAaxKXgn2iMMAAqh-n7irwsZ5zm81RM5fPtqyVA,17416
+opentile/geometry.py,sha256=LW1Z4ynfQjpQxDds3S8MmRY24cje-nU9emVeQcxWUMk,14294
+opentile/interface.py,sha256=1k-Lng6St-i6jl-mg7iMZgeMR0nG74htIa0_8QCf754,2853
+opentile/jpeg.py,sha256=XptKz_slwobawdMKjTZutu0Cd7x_s4d3qRks_WUeIFU,10493
+opentile/ndpi_tiler.py,sha256=eWX8L5zv2JWelpjAexLwSUR890fxUlwfseazwOI5Nko,33309
+opentile/philips_tiff_tiler.py,sha256=yiEql2jWhOIhBvPEny4bUaMkHLGnllnKCgm9IzN1OnI,11179
+opentile/svs_tiler.py,sha256=JDhAfqzJZBo0P3QNf9uS89vyVrbEoZWwwqbXlAXDujI,10377
+opentile/turbojpeg_patch.py,sha256=5u9QsudxSFKSZTMdlv5kG82RVWpJX1v9tTMSJPrfI1A,12606
+opentile-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+opentile-0.1.1.dist-info/METADATA,sha256=Hmrfu7rdYyu0cwu-MtQzG5C_2FpNQ2HQt0Sq6UcC57Y,5087
+opentile-0.1.1.dist-info/RECORD,,
