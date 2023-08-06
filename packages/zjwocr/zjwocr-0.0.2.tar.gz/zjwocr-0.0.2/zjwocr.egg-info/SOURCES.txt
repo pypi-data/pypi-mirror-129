@@ -1,0 +1,8 @@
+README.md
+setup.py
+test/test.py
+zjwocr/test.py
+zjwocr.egg-info/PKG-INFO
+zjwocr.egg-info/SOURCES.txt
+zjwocr.egg-info/dependency_links.txt
+zjwocr.egg-info/top_level.txt
