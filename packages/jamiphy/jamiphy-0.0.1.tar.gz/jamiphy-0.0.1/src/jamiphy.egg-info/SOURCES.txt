@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jamiphy/__init__.py
+src/jamiphy/example.py
+src/jamiphy.egg-info/PKG-INFO
+src/jamiphy.egg-info/SOURCES.txt
+src/jamiphy.egg-info/dependency_links.txt
+src/jamiphy.egg-info/top_level.txt
