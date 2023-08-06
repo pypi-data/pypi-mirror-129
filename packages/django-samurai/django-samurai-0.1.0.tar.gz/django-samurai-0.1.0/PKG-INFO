@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: django-samurai
+Version: 0.1.0
+Summary: ?
+Keywords: django,rest,ninja
+Author: c4ffein
+Author-email: c4ffein.work@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Project-URL: documentation, https://github.com/c4ffein/django-samurai
+Project-URL: homepage, https://github.com/c4ffein/django-samurai
+Project-URL: repository, https://github.com/c4ffein/django-samurai
+Description-Content-Type: text/markdown
+
+# django-samurai
+🤫
+
+`poetry build -f sdist`
+`poetry publish`
+
