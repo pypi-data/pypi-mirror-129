@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+aws/__init__.py
+aws/client.py
+aws/config.py
+aws/logz.py
+aws/utils.py
+awspydk.egg-info/PKG-INFO
+awspydk.egg-info/SOURCES.txt
+awspydk.egg-info/dependency_links.txt
+awspydk.egg-info/requires.txt
+awspydk.egg-info/top_level.txt
