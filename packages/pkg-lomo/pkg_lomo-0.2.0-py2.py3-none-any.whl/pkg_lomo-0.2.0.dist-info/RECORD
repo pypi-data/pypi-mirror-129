@@ -1,0 +1,12 @@
+pkg/__init__.py,sha256=92wbuPk5TUQk_0SagSXZ5EI5d1yA8m4xXpKypsZZGbU,131
+pkg/crawler.py,sha256=IVRcAt7xcnPyUCOvtZJDdMVeapkIP1VSmQkm0iAS2do,1833
+pkg/decorator_tools.py,sha256=W4BWORfLaaN3IeqmQbrCwEZydlR7Fm8HhyC04mxuEkA,3161
+pkg/main.py,sha256=NygDtnft3fsUX7D3WdrmaI4hvxHVpkvg4k_pmA5AqXo,1099
+pkg/news.py,sha256=Zpkh88YB1tdSmN72MOvCo1ptzMHd_pQMOlM69CAzwoo,728
+tests/__init__.py,sha256=O6Ap-M-7Ur3m91m7gERoQqeW_TXmqvEF6OyQPOgkrDA,226
+tests/test.py,sha256=Q_YJnGvY8FfUCKVvufaGnRGdsTP9GiNMCY1TYasZFXQ,1637
+pkg_lomo-0.2.0.dist-info/LICENSE,sha256=mEGxIosX0QhYkwf4SoM484fCrzS_eM2QblCFTA2pZ3k,1111
+pkg_lomo-0.2.0.dist-info/METADATA,sha256=r7HUxdxxx4B__zWzzSfdNBrKRm9hB5UhkzS8OFXAkvs,1262
+pkg_lomo-0.2.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+pkg_lomo-0.2.0.dist-info/top_level.txt,sha256=JkZraqxPRrP0JkyaN7e5spSVsvfKLvPh-5d2drVY97Q,10
+pkg_lomo-0.2.0.dist-info/RECORD,,
