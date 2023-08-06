@@ -1,0 +1,5 @@
+[console_scripts]
+scoredraft_build_demo = scoredraft_editor:build_demo
+scoredraft_build_pdf = scoredraft_editor:build_pdf
+scoredraft_sys_detect = scoredraft_editor:sys_detect
+
