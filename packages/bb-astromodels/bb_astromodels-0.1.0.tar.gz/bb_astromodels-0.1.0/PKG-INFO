@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: bb_astromodels
+Version: 0.1.0
+Summary: Some additional models for astromodels
+Home-page: https://github.com/BjoernBiltzinger/bb_astromodels
+Author: Björn Biltzinger
+Author-email: bbiltzing@mpe.mpg.de
+License: GPL-2+
+Project-URL: Bug Tracker, https://github.com/BjoernBiltzinger/bb_astromodels/issues
+Project-URL: Source Code, https://github.com/BjoernBiltzinger/bb_astromodels
+Description: # bb_astromodels
+        
+        Some additional models for astromodels.
+        
+        ## Install
+        
+        git clone https://github.com/BjoernBiltzinger/bb_astromodels.git \
+        cd bb_astromodels \
+        python setup.py install or python setup.py develop 
+        
+        => \
+        ```python
+        from bb_astromodels import Absori, Integrate_Absori
+        ```
+        ## References
+        
+        The implementations in this repository depend on work done by many other people:
+        
+        ### General
+        
+        Depends on astromodels: https://github.com/threeML/astromodels \
+        Model code taken from XSPEC code: https://heasarc.gsfc.nasa.gov/xanadu/xspec/ 
+        
+        ### Models
+        
+        Absori: https://heasarc.gsfc.nasa.gov/xanadu/xspec/manual/node232.html; Magdziarz & Zdziarski (1995, MNRAS 273, 837) 
+        
+        Integrated Absori/xabs: https://var.sron.nl/SPEX-doc/manualv3.05/manualse85.html; Steenbrugge et al. (2003)
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
