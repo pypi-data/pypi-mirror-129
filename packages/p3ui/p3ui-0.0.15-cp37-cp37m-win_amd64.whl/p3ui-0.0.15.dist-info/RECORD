@@ -1,0 +1,17 @@
+p3ui/__init__.py,sha256=JBZBX9Ae3tjp3_1WNSkPaJ8PE-NrEclkjwvGF7wV-bw,138
+p3ui/_p3ui.cp37-win_amd64.pyd,sha256=2a8k9o7R5Ks0uhik2TUNdN6eSqWRwxGO8cBgG4iDdzs,3170304
+p3ui/matplotlib_surface.py,sha256=mALu8ByxZukkZ_3KKR94_S9pPSaB8N717yC9SycogKU,1173
+p3ui/matplotlib/__init__.py,sha256=Iykt8P3on7mGS1SxjNEZr20ysDX7R3fzyOmug7GcUjo,1045
+p3ui/matplotlib/_units.py,sha256=me4enchNQo8qNaaCPnAX-jditbZ6jXg-lX5kwwIoSaY,140
+p3ui/matplotlib/figure_canvas.py,sha256=ecrVfWa8yhBJ-2doQJdsoS6LKIqcFBnt_eXrQI3CQHI,2219
+p3ui/matplotlib/figure_manager.py,sha256=GqBPa3MP-4jPrBrbQBcb5P4JsQORYTp-kfOB_zWucVM,257
+p3ui/matplotlib/graphics_context.py,sha256=RdQR_QfnpBfvZoWRnIPsXlN4XVbsDzVcRXK_4H7rPmM,1485
+p3ui/matplotlib/make_font.py,sha256=rcKiCVzXUqpXLb5sC6gTn8pVwNEKwqpxHBprWo8MptU,2610
+p3ui/matplotlib/renderer.py,sha256=ponb-RgxQk_fQQECd2Op6QqinowsHcglqddPS2Xnyuw,4525
+p3ui-0.0.15.dist-info/LICENSE,sha256=xFaVQvK-NKZkRS-j-leuHX6bhvl6jw764O5V4Y7Q1Og,1082
+p3ui-0.0.15.dist-info/METADATA,sha256=PEOKGR2MFs3bV8SWaH0_PikepBqCeZgIL0G6DNA4zRs,1709
+p3ui-0.0.15.dist-info/WHEEL,sha256=OmDKD3JmZjhMu_YdpkiJDfFL1rf8n9nexhWCGhSBGVE,101
+p3ui-0.0.15.dist-info/license.py,sha256=1UiJhMIyIVK2RWRXu8jfA1LtJXt6zIjQNoBbbJoUifk,2933
+p3ui-0.0.15.dist-info/license.tmpl,sha256=rgjHIpk7efYENei72goINfOhk4F1oCgATmhnfIZkF7s,1272
+p3ui-0.0.15.dist-info/top_level.txt,sha256=lEFDG5reoMaEsDCNbaHIhCBzDF2sYv_2O1TwCBW3Jk4,5
+p3ui-0.0.15.dist-info/RECORD,,
