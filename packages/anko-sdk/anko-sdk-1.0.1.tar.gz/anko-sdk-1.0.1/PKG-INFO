@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: anko-sdk
+Version: 1.0.1
+Summary: Python SDK for https://anko-investor.com market forecasts. Signup today!
+Home-page: https://github.com/anglo-korean/anko-python-sdk
+Author: Anglo Korean
+Author-email: hello@anglo-korean.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/anglo-korean/anko-python-sdk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Anko Investor Python SDK
+
+This module provides a simple Anko Investor Forecasts gRPC Service client for python.
+
+This module does little more wrap [grpc](https://pypi.org/project/grpcio/) with retry logic and authorization wrappers.
+
+```
+$ pip install anko-sdk
+```
+
+## Usage
+
+Given a valid token from https://anko-investor.com (see: [Getting Started](https://github.com/anglo-korean/documentation#getting-started) for more information), the following example will start consuming Forecasts
+
+```python
+import os
+import socket
+
+from anko-sdk import Client
+
+c = Client(os.environ.get('ANKO_TOKEN', socket.gethostname())
+
+for forecast in c:
+    if forecast:
+        print(forecast)
+
+```
+
+(Here we use the current machine's hostname as a client identifier- this can be anything, really; it's useful to set in case you need to open a support ticket to help debug connections. It can even be an empty string).
+
+
