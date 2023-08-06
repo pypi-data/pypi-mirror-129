@@ -1,0 +1,5 @@
+recursive-exclude tests *
+include database/data_general.csv
+include database/data_heat_capacity_constant_pressure.csv
+include database/data_thermal_conductivity.csv
+include database/data_viscosity.csv
