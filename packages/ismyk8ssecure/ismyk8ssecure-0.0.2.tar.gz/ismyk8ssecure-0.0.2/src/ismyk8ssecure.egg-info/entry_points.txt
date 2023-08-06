@@ -1,0 +1,3 @@
+[console_scripts]
+ismyk8ssecure = cli.main:main
+

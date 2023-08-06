@@ -1,0 +1,5 @@
+colorama
+python-dateutil
+pyyaml
+requests
+typer
