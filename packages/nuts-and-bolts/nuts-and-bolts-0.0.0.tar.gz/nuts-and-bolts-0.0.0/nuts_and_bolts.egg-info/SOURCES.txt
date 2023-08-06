@@ -1,0 +1,6 @@
+README.md
+setup.py
+nuts_and_bolts.egg-info/PKG-INFO
+nuts_and_bolts.egg-info/SOURCES.txt
+nuts_and_bolts.egg-info/dependency_links.txt
+nuts_and_bolts.egg-info/top_level.txt
