@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+thompson/__init__.py
+thompson/examples.py
+thompson/thompson.py
+thompson.egg-info/PKG-INFO
+thompson.egg-info/SOURCES.txt
+thompson.egg-info/dependency_links.txt
+thompson.egg-info/requires.txt
+thompson.egg-info/top_level.txt
