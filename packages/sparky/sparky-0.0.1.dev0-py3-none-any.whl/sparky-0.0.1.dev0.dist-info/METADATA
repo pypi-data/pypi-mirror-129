@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sparky
+Version: 0.0.1.dev0
+Summary: Helpers for frequent work with pyspark
+Home-page: https://sparky.readthedocs.io.org
+Author: Charles Kelley
+Author-email: cksisu@gmail.com
+Maintainer: Charles Kelley
+Maintainer-email: cksisu@gmail.com
+License: BSD (3-clause)
+Download-URL: https://github.com/cksisu/sparky
+Project-URL: Bug Tracker, https://github.com/cksisu/sparky/issues
+Project-URL: Source Code, https://github.com/cksisu/sparky
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Sparky provides helper functions, classes, and methods that are useful for
+common routines done with pyspark.
+
+Sparky provides:
+- Functions for performing frequent data summarization and transformation tasks
+  in pyspark data pipelines
+- Classes and methods for common machine learning workflows using MLlib
+- Classes and methods for pyspark system configuration
+  
+All Sparky wheels distributed on PyPI are BSD 3-clause licensed.
+
+
