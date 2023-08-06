@@ -1,0 +1,15 @@
+viur_cli/__init__.py,sha256=JqO_iEX98N_QKZedOUbUmHmFIUAxNcnwYOmDQnyf2jg,124
+viur_cli/cli.py,sha256=DOkD5PzBxQBGrrB_h4E5h7Uu9ywf553aGB5gMUi29zg,4431
+viur_cli/flare.py,sha256=WMpEFEiaRsFZfZ4eqvZE-bjvenrs4hhkFhzEMEPj3lE,859
+viur_cli/gcloud.py,sha256=CkfIjQIOZk8jsV8dyPlCx6LF-kicWl7nvW5WV-Sogi8,1996
+viur_cli/local.py,sha256=csBt_8yUgSIDKSG1LFzta4zrZd4-oh0xK6PiekZ_Te8,3016
+viur_cli/vi.py,sha256=drXx217L8X8fFhRzFXQxGWrjv41mC77fuGGz8zs36IU,1069
+viur_cli/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viur_cli/scripts/flare.py,sha256=F06ULKeLVTagbhmEzFh7j11W87tvCNgL74OdtBoLxbE,10100
+viur_cli/scripts/get_pyodide.py,sha256=g-mROP7O3Iw9IfsMVdcR1YuAcKMgMYrZLr9XFjzTxxQ,4502
+viur_cli-0.5.1.dist-info/LICENSE,sha256=OJOflbmfMWpgZiu-wan_5bKF8y0qf6JaGmww2iF6ScA,1073
+viur_cli-0.5.1.dist-info/METADATA,sha256=je20364J_UA2XwH40yrndfO04QYuKYloQFtwWKFNGVU,1543
+viur_cli-0.5.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+viur_cli-0.5.1.dist-info/entry_points.txt,sha256=MkUFL5hNc_1tVwKc4boaq3jRC-0f2GCqqrnik5PaW2Q,127
+viur_cli-0.5.1.dist-info/top_level.txt,sha256=NxrPiRjER5bLHKxINRp2bVuE5n45qGXMwxXCy7TsWfA,9
+viur_cli-0.5.1.dist-info/RECORD,,
