@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yqdata
+Version: 1.0.3
+Summary: 小容量化数据平台
+Home-page: http://gitlab.intellinker.com/intellinker-prd-rong-001/jupyterhub-deploy-01
+Author: Hu Min
+Author-email: humin11@icloud.com
+License: UNKNOWN
+Description: 小容量化数据平台
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
