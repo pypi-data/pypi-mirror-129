@@ -1,0 +1,6 @@
+vatis-asr-commons==1.1.2
+requests
+PyAudio
+setuptools~=57.4.0
+numpy
+

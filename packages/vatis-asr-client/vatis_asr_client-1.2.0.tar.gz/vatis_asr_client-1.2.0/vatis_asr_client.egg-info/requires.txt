@@ -1,0 +1,10 @@
+vatis-asr-commons==1.1.2
+requests
+PyAudio
+setuptools~=57.4.0
+numpy
+
+[remote]
+python-socketio[client]==5.2.1
+
+[standalone]
