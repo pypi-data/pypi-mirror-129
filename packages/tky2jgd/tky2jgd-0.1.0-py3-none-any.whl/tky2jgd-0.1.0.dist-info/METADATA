@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tky2jgd
+Version: 0.1.0
+Summary: Python port of TKY2JGD to transform coordinates from Tokyo Datum (EPSG:4301) to JGD2000 (EPSG:4612)
+Home-page: https://github.com/shuuji3/TKY2JGD
+License: BSD-3-Clause
+Author: TAKAHASHI Shuuji
+Author-email: shuuji3@gmail.com
+Maintainer: TAKAHASHI Shuuji
+Maintainer-email: shuuji3@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/shuuji3/TKY2JGD
+Description-Content-Type: text/markdown
+
+# TKY2JGD
+
+国土地理院のTKY2JGDをPythonに移植したものです。
+
+オリジナルのTKY2JGDは<http://vldb.gsi.go.jp/sokuchi/tky2jgd/download/down.cgi>からダウンロードできます。
+
+座標変換パラメータファイル`data/TKY2JGD.par`はv2.1.1を使用しています。
+
+## Usage
+
+```
+$ python3 tky2jgd.py 36.103774791666666 140.08785504166664
+36.10696628160147 140.08457686629436
+```
+
+```
+>>> import tky2jgd
+>>> tky2jgd.load_parameter("data/TKY2JGD.par")
+>>> lat, lon = 36.103774791666666, 140.08785504166664
+>>> dB, dL = tky2jgd.bilinear(lat, lon)
+>>> lat += dB / 3600
+>>> lon += dL / 3600
+>>> print(lat, lon)
+36.10696628160147 140.08457686629436
+```
+
