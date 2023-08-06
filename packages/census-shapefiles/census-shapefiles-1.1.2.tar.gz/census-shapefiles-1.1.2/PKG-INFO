@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: census-shapefiles
+Version: 1.1.2
+Summary: Library to get census shapefiles
+Home-page: https://gitlab.com/zachperkitny/census-shapefiles
+Author: Zach Perkitny
+Author-email: zperkitny@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/zachperkitny/census-shapefiles
+Description-Content-Type: text/markdown
+
+## Census Shapefiles
+
+Library to pull shapefiles from the Census
+
+### Installation
+```
+pip install census-shapefiles
+```
+
+### Usage
+```python
+from census_shapefiles import CensusShapefiles
+
+sfs = CensusShapeFiles()
+for shapefile in sfs.city.get_shapefiles():
+    # Do something with the temp file
+```
