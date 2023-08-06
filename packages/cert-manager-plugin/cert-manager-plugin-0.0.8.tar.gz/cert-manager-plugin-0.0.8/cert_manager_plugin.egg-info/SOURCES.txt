@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+cert_manager_plugin/__init__.py
+cert_manager_plugin/consts.py
+cert_manager_plugin/plugin.py
+cert_manager_plugin.egg-info/PKG-INFO
+cert_manager_plugin.egg-info/SOURCES.txt
+cert_manager_plugin.egg-info/dependency_links.txt
+cert_manager_plugin.egg-info/requires.txt
+cert_manager_plugin.egg-info/top_level.txt

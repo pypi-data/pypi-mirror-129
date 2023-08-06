@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cert-manager-plugin
+Version: 0.0.8
+Summary: Cert-manager plugin for the kama-sdk-py
+Home-page: https://github.com/nmachine-io/kama-sdk-py
+Author: NMachine
+Author-email: xavier@nmachine.io
+License: UNKNOWN
+Description: # Cert-manager KAMA plugin
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
