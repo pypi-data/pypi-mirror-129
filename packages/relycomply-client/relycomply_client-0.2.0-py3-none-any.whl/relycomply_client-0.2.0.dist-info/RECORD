@@ -1,0 +1,9 @@
+relycomply_client/__init__.py,sha256=3-OWdkG8DD6syf0_3vjasn6BtpA6xoVxbHiZ89Rd3RQ,125
+relycomply_client/client.py,sha256=Lj2lyx52Z3zo-rpl1biaiuOAVJSH52T8REo938asRdw,3398
+relycomply_client/gql_generator.py,sha256=EGmH5VMfaCh2JJ_5z6i68hakM-ndJwD-7lzPGLsHYHM,6425
+relycomply_client/helpers.py,sha256=4dAVJoMysjtE2lD8xIBoFR1IW97VbddBPYqd2x74u9I,283
+relycomply_client/relycomply_gql_client.py,sha256=ey02rj2L_BPMKm4r1ko4A73Lv1VrmdqbyNs5a3zuAd4,5352
+relycomply_client/settings.py,sha256=X5YJdlm1B1-BeKkN-YIl8EXzazaOGFnlpc0zUu3i0uI,175
+relycomply_client-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+relycomply_client-0.2.0.dist-info/METADATA,sha256=jOJKpxSOFQNCYl3vC23vtPGN8GrVZ1NDJzf3-KG8WY4,577
+relycomply_client-0.2.0.dist-info/RECORD,,
