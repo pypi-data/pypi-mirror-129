@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+scClassifier2/__init__.py
+scClassifier2/scClassifier2.py
+scClassifier2.egg-info/PKG-INFO
+scClassifier2.egg-info/SOURCES.txt
+scClassifier2.egg-info/dependency_links.txt
+scClassifier2.egg-info/entry_points.txt
+scClassifier2.egg-info/requires.txt
+scClassifier2.egg-info/top_level.txt
+scClassifier2/utils/__init__.py
+scClassifier2/utils/custom_mlp.py
+scClassifier2/utils/mnist_cached.py
+scClassifier2/utils/scdata_cached.py
+scClassifier2/utils/vae_plots.py
