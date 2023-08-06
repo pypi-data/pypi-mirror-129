@@ -1,0 +1,11 @@
+create_tables/Dockerfile,sha256=nfMiuXlgtwiybkr7E5oI1JhlJIvLpkv0aZj_-KgGJPc,178
+create_tables/create_tables.py,sha256=MzJR0I7FGrUioYK4QFP56bjD54TcdSdFSqvud9K-b3E,505
+create_tables/models.py,sha256=UZPRKLxyvLLpVs4wqD9ArAskHO8c_KXZcCoLGXWoUKE,619
+create_tables/requirements.txt,sha256=VOECDyLerETC2Gzr5lSQFaU0tnm6zV0Kf_IpIF2juXY,34
+db_api_client/parent_cli.py,sha256=bfyXY9MSHU67GUvKSmvl912H8_Mw9eCIZsjqyJc1mxM,3426
+db_api_client/postgres_cli.py,sha256=PB-uRWtOo9dn2fafliPiGsmvAumuIg97Mo9JGwgqi4w,1222
+db_api_client/sqlite_cli.py,sha256=RLQ2V93o6-Pvl06irsdkqWoV49tAFkcp_swzq16yzR0,519
+stock_utils/stock_utils.py,sha256=vTqQ8hQjRvR5IuRyBAHjrgrn3J0zlGPCWUGRFTSXhNk,1304
+itba_cde_tpf_python_applications_fvidal90-0.4.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+itba_cde_tpf_python_applications_fvidal90-0.4.0.dist-info/METADATA,sha256=v2seyIkVNf5fmrkmHU_bbtS3yezNh6KwUHmLYmovHSE,556
+itba_cde_tpf_python_applications_fvidal90-0.4.0.dist-info/RECORD,,
