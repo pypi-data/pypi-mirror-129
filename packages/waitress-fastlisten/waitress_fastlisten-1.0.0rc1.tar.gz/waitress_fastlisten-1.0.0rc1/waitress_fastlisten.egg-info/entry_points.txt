@@ -1,0 +1,6 @@
+[paste.server_factory]
+main = waitress_fastlisten:server_factory
+
+[paste.server_runner]
+main = waitress_fastlisten:serve_waitress
+

@@ -1,0 +1,14 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+waitress_fastlisten.py
+waitress_fastlisten.egg-info/PKG-INFO
+waitress_fastlisten.egg-info/SOURCES.txt
+waitress_fastlisten.egg-info/dependency_links.txt
+waitress_fastlisten.egg-info/entry_points.txt
+waitress_fastlisten.egg-info/not-zip-safe
+waitress_fastlisten.egg-info/requires.txt
+waitress_fastlisten.egg-info/top_level.txt
