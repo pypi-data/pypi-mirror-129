@@ -1,0 +1,8 @@
+setup.py
+py_elephants/__init__.py
+py_elephants/__main__.py
+py_elephants.egg-info/PKG-INFO
+py_elephants.egg-info/SOURCES.txt
+py_elephants.egg-info/dependency_links.txt
+py_elephants.egg-info/entry_points.txt
+py_elephants.egg-info/top_level.txt
