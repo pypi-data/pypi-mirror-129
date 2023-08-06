@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyrequisite/__init__.py
+pyrequisite/_create_empty_dict.py
+pyrequisite/_flexible_multilevel_mkdir.py
+pyrequisite.egg-info/PKG-INFO
+pyrequisite.egg-info/SOURCES.txt
+pyrequisite.egg-info/dependency_links.txt
+pyrequisite.egg-info/top_level.txt
