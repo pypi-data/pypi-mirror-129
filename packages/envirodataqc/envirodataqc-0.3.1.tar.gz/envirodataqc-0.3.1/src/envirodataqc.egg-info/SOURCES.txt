@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/envirodataqc/QCconfig.py
+src/envirodataqc/__init__.py
+src/envirodataqc/dataqc.py
+src/envirodataqc/wind.py
+src/envirodataqc.egg-info/PKG-INFO
+src/envirodataqc.egg-info/SOURCES.txt
+src/envirodataqc.egg-info/dependency_links.txt
+src/envirodataqc.egg-info/requires.txt
+src/envirodataqc.egg-info/top_level.txt
