@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: test_executor
+Version: 0.0.3
+Summary: This modules allows you to execute tests in the best way possible!
+Home-page: https://github.com/idan57/test_executor
+Author: Idan Cohen
+Author-email: idan57@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
