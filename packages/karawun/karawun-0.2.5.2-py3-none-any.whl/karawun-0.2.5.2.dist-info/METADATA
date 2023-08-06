@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: karawun
+Version: 0.2.5.2
+Summary: DICOM image, segmgmentation image and fibre object converter
+Home-page: UNKNOWN
+Author: Richard Beare
+Author-email: richard.beare@mcri.edu.au
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.13.0)
+Requires-Dist: pydicom (==1.4.2)
+Requires-Dist: SimpleITK (<=2.0.2,>=1.2.0)
+
+Converts nifti files (raw and mask) and mrtrix tck files to DICOM format
+readable by Brainlab surgical planning and navigation systems.
+Tck files are converted to 3D objects that can be manipulated by Brainlab tools.
+Label images are converted to a dicom segmentation format and can also be
+manipulated as 3D objects in Brainlab
+
