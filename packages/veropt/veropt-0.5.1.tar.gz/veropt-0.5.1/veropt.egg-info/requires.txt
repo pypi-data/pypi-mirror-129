@@ -1,0 +1,17 @@
+botorch
+dill
+click
+scikit-learn==0.24.1
+scipy
+matplotlib
+numpy
+xarray
+
+[gui]
+PySide6
+
+[mpi]
+mpi4py
+
+[multi_processing_smp]
+pathos
