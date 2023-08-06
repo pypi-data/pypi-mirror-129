@@ -1,0 +1,133 @@
+{
+"UI":{
+	"flags": "I",
+	"terms":[
+		[["windows?"], "as an UI element only for an OS window"],
+		[["title[ -]bar"], "titlebar (of the OS window)"],
+		[["scroll[ -]bar"], "scrollbar"],
+		[["menu[ -]?bar"], ["menus", "header"]],
+		[["tool[ -]bar", "!-I:toolbar"], "Toolbar"],
+		[["top[ -]bar", "!-I:topbar"], "Topbar"],
+		[["side[ -]bar", "!-I:sidebar", "side[- ]?panel"], "Sidebar"],
+		[["status-?bar", "!-I:Status bar"], "status bar"],
+
+		[["text-?box", "text[ -]?area", "entry[ -](box|field)", "input[ -](box|field)"],
+			"text field"],
+		[["search ?box"], "search field"],
+		[["number input", "number button", "stepper", "spin[ -]?box"], "number field"],
+		[["slide[ -]?bar"], "slider"],
+		[["swatch", "color button", "color selector"], "color field"],
+		[["check[ -]box", "check[ -]?button", "tick[ -]?box", "toggle[ -]switch"], "checkbox"],
+		[["(the|a) switch (?!node)"], "toggle"],
+		[["ID chooser", "ID selector", "ID picker"], "data ID"],
+		[["progress-?bar"], "progress bar"],
+
+		[["drop[ -]?down", "drop[ -]?list", "pull[ -]?down"], ["pop up (menu)", "selector"]],
+		[["pop[ -]over"], "popover (comprises a panel)"],
+		[["fly[ -]?out", "dialog", "message box", "pop up box", "popper"], "pop up"],
+		[["right[ -]click menu", "contextual menu"], "context menu"],
+		[["options?[ -]?menu"], "select menu, selector"],
+		[["menu section"], "submenu"],
+		[["menu option"], "just menu"],
+		[["menu item"], "tool or the tool's name"],
+		[["tool[ -]tip"], "tooltip"],
+
+		[["list[ -]?box", "list field"], "list view"],
+		[["color band"], "color ramp"],
+		[["color[ -]?chooser"], "color picker"],
+		[["search menu"], "Menu Search"],
+		[["node graph", "node map"], "node tree"],
+		[["noodles"], "node setup"],
+		[["node wires?"], "node link"],
+		[["play[ -]head", "!-I:playhead", "time cursor"], "Playhead"],
+		[["command(?![ -]line)"], "tool (if not console command)"],
+
+		[["top header", "Info editor header"], "Topbar"],
+		[["tools? ?shelf"], "Sidebar"],
+		[["propert(ies|y) region", "properties panel"], "Sidebar"],
+		[["operator panel"], "Adjust Last Operation panel"]
+	],
+	"ignore":[
+		"checklist, check mark, tick",
+		"comb(ination|o) ?box, radio button, scale, tree view",
+		"bento, breadcrumbs, d[öo]ner, (cheese|ham)?burger, kebab, meatball, sandwich",
+		"expando, marquee, mask, slideshow, carousel, zippy, wizard"
+	]
+},
+"Editors":{
+	"flags": "",
+	"terms":[
+		[["3D-[vV]iewport"], "3D Viewport"],
+		[["3d [vV]iewport", "3[dD] viewport"], "3D Viewport"],
+		[["(?<!external )image editor"], "Image editor"],
+		[["u[vV].editor", "[uU][v] editor"], "UV editor"],
+		[["compositor", "!I:compositor editor"], "Compositor"],
+		[["(?<!r[ey]) Node [eE]ditor"], "node editor"],
+		[["texture [nN]ode [eE]ditor",
+			"[tT]exture node [eE]ditor"], "Texture Node editor"],
+		[["geometry [nN]ode [eE]ditor",
+			"[gG]eometry node [eE]ditor"], "Geometry Node editor"],
+		[["shader [eE]ditor"], "Shader editor"],
+		[["vse"], "VSE"],
+		[["sequencer", "sequence [eE]ditor"], "Sequencer"],
+		[["movie [cC]lip [eE]ditor",
+			"[mM]ovie clip [eE]ditor"], "Movie Clip editor"],
+
+		[["dope [sS]heet", "[dD]ope sheet"], "Dope Sheet"],
+		[["timeline"], "Timeline (when the editor)"],
+		[["graph [eE]ditor"], "Graph editor"],
+		[["drivers? [eE]ditor"], "Drivers editor"],
+		[["\\bnla\\b"], "NLA"],
+		[["non.?[lL]inear [Aa]nimation [eE]ditor",
+			"[nN]on.?linear [Aa]nimation [eE]ditor",
+			"[nN]on.?[lL]inear animation [eE]ditor"], "Nonlinear Animation editor"],
+
+		[["text [eE]ditor"], "Text editor"],
+		[["python [cC]onsole", "[pP]ython console"], "Python Console"],
+		[["info [eE]ditor"], "Info editor"],
+
+		[["outliner"], "Outliner"],
+		[["properties [eE]ditor"], "Properties editor"],
+		[["file [bB]rowser", "[fF]ile browser"], "File Browser"],
+		[["asset [bB]rowser", "[aA]sset browser"], "Asset Browser"],
+		[["spread[ -]?sheet"], "Spreadsheet"],
+		[["user [pP]references",
+			"[uU]ser preferences",
+			"[uU]ser [pP]reference\\b"], "Preferences"],
+
+		[["u[vV].image editor", "UV/Image editor"], "UV editor or Image editor"],
+
+		[["cycles"], "Cycles (the renderer)"],
+		[["eevee", "EEVEE"], "Eevee"],
+		[["workbench", "[wW]ork.bench"], "Workbench"],
+		[["[gG]rease pencil", "grease [pP]encil"], "Grease Pencil"],
+		[["free[sS]tyle"], "Freestyle"],
+		[["[dD]ynamic paint", "dynamic [pP]aint"], "Dynamic Paint"],
+
+		[["!I:3D View(?!port)"], "3D Viewport"],
+		[["!I:command prompt", "!I:terminal"], "console"]
+	]
+},
+"Modes":{
+	"flags": "",
+	"terms":[
+		[["object [mM]ode", "Object mode"], "Object Mode"],
+		[["edit [mM]ode", "Edit mode"], "Edit Mode"],
+		[["sculpt [mM]ode", "Sculpt mode"], "Sculpt Mode"],
+		[["vertex [pP]aint [mM]ode",
+			"[vV]ertex paint [mM]ode",
+			"[vV]ertex [pP]aint mode"], "Vertex Paint Mode"],
+		[["weight [pP]aint [mM]ode",
+			"[wW]eight paint [mM]ode",
+			"[wW]eight [pP]aint mode"], "Weight Paint Mode"],
+		[["texture [pP]aint [mM]ode",
+			"[tT]exture paint [mM]ode",
+			"[tT]exture [pP]aint mode"], "Texture Paint Mode"],
+		[["particle [pP]aint [mM]ode",
+			"[pP]article paint [mM]ode",
+			"[pP]article [pP]aint mode"], "Particle Paint Mode"],
+		[["pose [mM]ode", "Pose mode"], "Pose Mode"],
+		[["draw [mM]ode", "Draw mode"], "Draw Mode"]
+	]
+}
+}
