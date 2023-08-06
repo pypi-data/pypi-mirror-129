@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+minici/__init__.py
+minici/executors.py
+minici/minici
+minici/observers.py
+minici.egg-info/PKG-INFO
+minici.egg-info/SOURCES.txt
+minici.egg-info/dependency_links.txt
+minici.egg-info/requires.txt
+minici.egg-info/top_level.txt
