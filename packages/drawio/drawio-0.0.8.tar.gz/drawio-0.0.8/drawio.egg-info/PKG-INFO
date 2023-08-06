@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: drawio
+Version: 0.0.8
+Summary: drawio: plot networkx graphs with diagrams.net
+Home-page: https://github.com/chmduquesne/python-drawio
+Author: Christophe-Marie Duquesne
+Author-email: chmd@chmd.fr
+License: MIT
+Download-URL: https://github.com/chmduquesne/python-drawio
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# drawio
+A library to draw networkx graphs with diagrams.net
+
+
