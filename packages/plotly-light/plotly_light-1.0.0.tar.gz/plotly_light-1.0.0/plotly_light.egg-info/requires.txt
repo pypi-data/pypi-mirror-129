@@ -1,0 +1,9 @@
+ipython
+plotly>=4
+matplotlib
+matplotlib-venn
+scikit-image
+numpy
+ipynb-path
+uuid
+bits
