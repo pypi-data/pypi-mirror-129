@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: vtb-django-commands
+Version: 1.0.4
+Summary: Django commands
+Home-page: UNKNOWN
+Author: Mikhail Shutov
+Author-email: mshutov@vtb.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django :: 3.0
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: test
+
+
+`pip install vtb-django-commands`
+
+**Add to installed apps to your django project:**
+
+```python
+# settings.py
+INSTALLED_APPS = (
+    ...
+    'vtb_django_commands',
+    ...
+)
+```
+
+### Export/import схемы сервиса в авторайзер
+
+Для генерации схемы
+
+```
+python manage.py export_authorizer_schema --file "cfg.json"
+```
+
+Для загрузки схемы в авторайзер
+
+```
+python manage.py import_authorizer_schema --file "cfg.json"
+

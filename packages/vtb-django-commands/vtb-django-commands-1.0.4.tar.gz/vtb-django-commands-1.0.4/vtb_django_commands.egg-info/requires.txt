@@ -1,0 +1,10 @@
+django>=3.0.0
+djangorestframework>=3.12.2
+vtb-authorizer-utils>=0.0.17
+vtb-http-interaction>=0.1.4
+vtb-django-utils
+
+[test]
+pytest
+pytest-env
+pylint
