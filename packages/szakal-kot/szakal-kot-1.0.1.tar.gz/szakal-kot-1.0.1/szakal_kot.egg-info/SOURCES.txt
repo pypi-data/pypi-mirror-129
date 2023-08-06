@@ -1,0 +1,7 @@
+setup.py
+pakiet/__init__.py
+pakiet/dzialania.py
+szakal_kot.egg-info/PKG-INFO
+szakal_kot.egg-info/SOURCES.txt
+szakal_kot.egg-info/dependency_links.txt
+szakal_kot.egg-info/top_level.txt
