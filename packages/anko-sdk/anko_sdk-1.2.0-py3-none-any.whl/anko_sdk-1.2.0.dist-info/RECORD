@@ -1,0 +1,10 @@
+anko/__init__.py,sha256=3cycAmIsXNAlQdQ7oEcE8Zx9nCLkqyWZngmpRpRn6ds,25
+anko/anko.py,sha256=QhaM09uPg9H-3AQ0w2qDCPe3dGsuCc5OiTOA2ZKXk5Q,1433
+anko/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anko/proto/gateway_pb2.py,sha256=sr6YK7czIOD4LYI9iPMPOwOnbIohbLYayvirzqE4mqQ,12628
+anko/proto/gateway_pb2_grpc.py,sha256=tOcP5EQNgncbVLn0cpfhrh2IM5eqpKLLrqqWzD0UEYE,4190
+anko_sdk-1.2.0.dist-info/LICENCE,sha256=DW5GrIK54Tm6ZJlh8SvwgCRBpgxpvFavVZ3EW-8GwYk,1069
+anko_sdk-1.2.0.dist-info/METADATA,sha256=63oEC5jDz-cykL-uArWWNzGtrLKeBcDJPR8wBxVaCtQ,1525
+anko_sdk-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+anko_sdk-1.2.0.dist-info/top_level.txt,sha256=ZzcCrYqFOUKDerwPjzmPOBJhzz7pKRsXuuvhPu318Lc,5
+anko_sdk-1.2.0.dist-info/RECORD,,
