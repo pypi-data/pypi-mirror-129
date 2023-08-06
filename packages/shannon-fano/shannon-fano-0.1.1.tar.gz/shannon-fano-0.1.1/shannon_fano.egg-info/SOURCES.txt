@@ -1,0 +1,9 @@
+README.md
+setup.py
+shannon_fano/__init__.py
+shannon_fano/shannon_fano_encoding.py
+shannon_fano.egg-info/PKG-INFO
+shannon_fano.egg-info/SOURCES.txt
+shannon_fano.egg-info/dependency_links.txt
+shannon_fano.egg-info/requires.txt
+shannon_fano.egg-info/top_level.txt
