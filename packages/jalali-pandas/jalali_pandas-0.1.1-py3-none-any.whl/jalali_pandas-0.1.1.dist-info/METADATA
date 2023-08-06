@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jalali-pandas
+Version: 0.1.1
+Summary: A Pandas extension to make work with Jalali Date easier.
+License: BSD 3-Clause License
+Author: Mehdi Ghodsizadeh
+Author-email: mehdi.ghodsizadeh@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jdatetime (>=3.6.4,<4.0.0)
