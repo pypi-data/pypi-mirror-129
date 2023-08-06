@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/list_methods/__init__.py
+src/list_methods/main.py
+src/list_methods.egg-info/PKG-INFO
+src/list_methods.egg-info/SOURCES.txt
+src/list_methods.egg-info/dependency_links.txt
+src/list_methods.egg-info/top_level.txt
