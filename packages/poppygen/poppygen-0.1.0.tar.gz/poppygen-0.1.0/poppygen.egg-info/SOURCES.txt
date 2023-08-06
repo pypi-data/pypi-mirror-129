@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+poppygen/__init__.py
+poppygen/person.py
+poppygen/population_generator.py
+poppygen.egg-info/PKG-INFO
+poppygen.egg-info/SOURCES.txt
+poppygen.egg-info/dependency_links.txt
+poppygen.egg-info/requires.txt
+poppygen.egg-info/top_level.txt
+poppygen/datasets/__init__.py
+poppygen/datasets/process_acs.py
+poppygen/datasets/process_pums.py
+poppygen/datasets/process_safegraph_poi.py
