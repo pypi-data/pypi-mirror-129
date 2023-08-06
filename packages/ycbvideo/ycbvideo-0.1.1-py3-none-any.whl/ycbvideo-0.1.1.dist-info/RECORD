@@ -1,0 +1,11 @@
+ycbvideo/VERSION,sha256=gERzFlKfxiAU-6oEf7Z8Uaww4ygwzaNwQFNJ2NZtGWw,6
+ycbvideo/__init__.py,sha256=OStiUY0Fbd73bLkYCti-xwnKBMSU_DaxmSb0R4z4iyU,159
+ycbvideo/datatypes.py,sha256=0yvm8ezigUd1uiyvLHwnJ6CXoRZFb8R-w3YTxXO2SS4,2221
+ycbvideo/frameselection.py,sha256=YFQOpX-HwitseEqeZehNbd2YvqWi3aqlN_urYomES6k,3123
+ycbvideo/loader.py,sha256=5Qv1NlezzaNIRgSlfxSNVIlHWd29MH04z0ic8dyiUPQ,9203
+ycbvideo/utils.py,sha256=KV18H_GLa838UWSj6ftM8wxl1h8xl1IfAPcBJ_aWP6c,949
+ycbvideo-0.1.1.dist-info/LICENSE,sha256=-JwYt3PmNSOquzFyBt2AkOkVQ6UHahkWlfGiJh_PBRk,1071
+ycbvideo-0.1.1.dist-info/METADATA,sha256=AfLddToAKcSGnNAEzuPEYR6m9S4D36KUwVDLjBtgYhg,698
+ycbvideo-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ycbvideo-0.1.1.dist-info/top_level.txt,sha256=zhJ2grtjPEC2oS_tEt0XDrRqRzlNM5pPQmn-ZGapz4A,9
+ycbvideo-0.1.1.dist-info/RECORD,,
