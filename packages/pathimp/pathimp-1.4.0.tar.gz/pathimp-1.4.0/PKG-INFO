@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pathimp
+Version: 1.4.0
+Summary: Import Python modules from any file system path.
+Home-page: http://github.com/danijar/pathimp
+Author: Danijar Hafner
+Author-email: mail@danijar.com
+License: UNKNOWN
+Description: [![PyPI](https://img.shields.io/pypi/v/pathimp.svg)](https://pypi.python.org/pypi/pathimp/#history)
+        
+        # pathimp
+        
+        Import Python modules from any file system path.
+        
+        ## Installation
+        
+        ```sh
+        pip3 install pathimp
+        ```
+        
+        ## Usage
+        
+        ```python
+        import pathimp
+        
+        pathimp.import_module(
+            name='my_module',              # Name of the module directory or file.
+            path='../path/to/parent/dir',  # Path or list of paths to search.
+            notfound='error')              # Raise 'error' or 'ignore' when not found.
+        
+        import my_module
+        ```
+        
+        ## Background
+        
+        When using `import`, Python tries to find the module in `sys.path`. Additional
+        search directories can be added to `sys.path` or specified via the `PYTHONPATH`
+        environment variable. This solution works well in many cases. However, adding
+        directories to `sys.path` makes all modules inside the added directories
+        available to import. This pollution of the import path can lead to accidentally
+        importing undesired packages. The `pathimp` package allows importing packages
+        from a file system path without polluting the Python import path.
+        
+        ## Details
+        
+        After calling `pathimp.import_module()`, the module is available in
+        `sys.modules` and can be imported normally by later code. The function also
+        returns the module, allowing to use it directly without further import:
+        
+        ```python
+        import pathimp
+        my_module = pathimp.import_module('my_module', '../path/to/parent/dir')
+        ```
+        
+        If the module is not found as a directory or file under the provided path, a
+        `ModuleNotFoundError` is raied. The exception can be disable by passing the
+        `notfound='ignore'` argument:
+        
+        ```python
+        pathimp.import_module('my_module', '../path/to/parent/dir', notfound='ignore')
+        ```
+        
+        Whether the import succeeded can still be found out by looking at the return
+        value, which is either the module instance or `False` if the module was not
+        found.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
