@@ -1,0 +1,3 @@
+[flake8.extension]
+CCN = flake8_class_constants:ConstantChecker
+
