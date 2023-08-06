@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+myodev/__init__.py
+myodev.egg-info/PKG-INFO
+myodev.egg-info/SOURCES.txt
+myodev.egg-info/dependency_links.txt
+myodev.egg-info/top_level.txt
+myodev/features/__init__.py
+myodev/features/simple.py
+myodev/ml/__init__.py
+myodev/processing/__init__.py
+myodev/processing/load.py
