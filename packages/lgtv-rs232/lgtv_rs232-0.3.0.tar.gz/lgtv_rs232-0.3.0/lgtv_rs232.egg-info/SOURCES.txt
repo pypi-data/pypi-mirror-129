@@ -1,0 +1,9 @@
+README.md
+setup.py
+lgtv_rs232/connector.py
+lgtv_rs232/lgtv_rs232.py
+lgtv_rs232.egg-info/PKG-INFO
+lgtv_rs232.egg-info/SOURCES.txt
+lgtv_rs232.egg-info/dependency_links.txt
+lgtv_rs232.egg-info/requires.txt
+lgtv_rs232.egg-info/top_level.txt
