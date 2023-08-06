@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/dev.yml
+.github/workflows/python-publish.yml
+src/verstr/__init__.py
+src/verstr/_version.py
+src/verstr.egg-info/PKG-INFO
+src/verstr.egg-info/SOURCES.txt
+src/verstr.egg-info/dependency_links.txt
+src/verstr.egg-info/requires.txt
+src/verstr.egg-info/top_level.txt
+tests/test_comp.py
