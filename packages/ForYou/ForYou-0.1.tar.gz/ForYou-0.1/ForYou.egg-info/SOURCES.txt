@@ -1,0 +1,8 @@
+README.md
+setup.py
+ForYou.egg-info/PKG-INFO
+ForYou.egg-info/SOURCES.txt
+ForYou.egg-info/dependency_links.txt
+ForYou.egg-info/top_level.txt
+Modulo_love/__init__.py
+Modulo_love/my_love.py
