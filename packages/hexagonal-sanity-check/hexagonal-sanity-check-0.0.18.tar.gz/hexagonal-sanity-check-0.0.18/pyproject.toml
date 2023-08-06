@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "hexagonal-sanity-check"
+version = "0.0.18"
+description = """Hexagonal Sanity Check"""
+readme = 'README.md'
+authors = ["rfrezino <rodrigofrezino@gmail.com>"]
+packages = [{ include = "hexagonal", from = "src"}]
+keywords = ["hexagonal architecture", "onion architecture", "enforce rules"]
+exclude = ["src/hexagonal/hexagonal_config.py"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+diagrams = "^0.20.0"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+nose = "^1.3.7"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hexagonal = 'hexagonal.infrastructure.cli:main'
