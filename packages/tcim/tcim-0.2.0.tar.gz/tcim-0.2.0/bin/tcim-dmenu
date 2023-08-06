@@ -1,0 +1,15 @@
+#!/usr/bin/python
+from subprocess import Popen, PIPE
+
+from tcim import cmdlib
+
+# display dmenu
+input_string = "\n".join(str(c) for c in cmdlib.cmd_dict.values())
+process = Popen(["dmenu", "-i", "-l", "20"], stdout=PIPE, stdin=PIPE)
+output, err = process.communicate(input=input_string.encode())
+exit_code = process.wait()
+
+# execute selected command
+if exit_code == 0:
+    command = cmdlib.cmd_dict[output.decode().strip()]
+    command.exec()
