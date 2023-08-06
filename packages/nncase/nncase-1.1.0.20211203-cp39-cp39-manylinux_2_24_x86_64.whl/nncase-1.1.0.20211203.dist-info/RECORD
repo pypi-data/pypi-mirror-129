@@ -1,0 +1,17 @@
+libnncase.so,sha256=pEccEG7fsM9LmZCXTCZpKjISczMG5iXTefxSDanRdvM,17903032
+libnncase.targets.k210.so,sha256=gKxlAgfyg1VGZNvxTTb0GAr6nHcvC_Kfht4EkP9OLdw,104744
+libnncase.targets.vulkan.so,sha256=hzPBiTVo0ZTzFFsvPG_TeFMckfVUkxW24QlOE4qrGj8,79272
+libnncase.modules.vulkan.so,sha256=K0xhiZmuqdut-PqsXvT1enOaU_kWyEk_bysQErwoYHs,8752792
+libnncase.targets.cpu.so,sha256=kXD8OQEUoTT9GYygWkD4YhqZ8tbwLU0jrpN88ROicPs,41840
+_nncase.cpython-39-x86_64-linux-gnu.so,sha256=TkoZsCHEx3dfL6ux__RPOHM5O-mabjPjiDiPi5lRMrg,235304
+libnncase.modules.k210.so,sha256=SLWahoR89bGN9zdqLEjogHjNhUKT8v1wYtQn-kiQGUs,426792
+nncase-1.1.0.20211203.dist-info/METADATA,sha256=cwHYaqCCfX90-Rikpy-FcRWERljMk1N_o3AzQMePUgI,3003
+nncase-1.1.0.20211203.dist-info/top_level.txt,sha256=S_6nEOnooSRclRzthgIC297bTDVxSghNxQyc_7oNxq4,15
+nncase-1.1.0.20211203.dist-info/RECORD,,
+nncase-1.1.0.20211203.dist-info/WHEEL,sha256=wzwAVzy3SxBtj4dxwvayEaQh_8SsJVLthrKeoYGieSk,112
+nncase-1.1.0.20211203.dist-info/LICENSE,sha256=tTdrr12tvYx4LKECY4VVPqHV_33egMjqCh6wE7bWeIQ,11342
+nncase.libs/libgcc_s-a843a011.so.1,sha256=m63229qBj8w-f0UOdHi8FF7FIy3AMt10KAby4YX__ZY,556464
+nncase.libs/libstdc++-d54d9843.so.6.0.28,sha256=46QOEw3MxsHFOmoRNwHpjfnrtrwTYowqPLAkARQfhOY,2501640
+nncase/__init__.py,sha256=VbXv1ycBuBI5fjNKF9fTNxPhxyChFiV27waD1o8lPBQ,1922
+nncase/simulator.py,sha256=RUE2hzivL0zSQXWN1DW9kLxUtwZB9Mzy9LLl6d1aKbM,508
+nncase/base.py,sha256=zhkoaH2tOlT44Fd-urWLreVAGInTsJhqOXJ82J8C7M8,81
