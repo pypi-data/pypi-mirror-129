@@ -1,0 +1,11 @@
+numthreads=1000
+msin.datacolumn=DATA
+
+msout=.
+msout.datacolumn=SUBTRACTED_DATA
+
+steps=[sub]
+sub.type=predict
+sub.sourcedb=
+sub.sources=
+sub.operation=subtract
