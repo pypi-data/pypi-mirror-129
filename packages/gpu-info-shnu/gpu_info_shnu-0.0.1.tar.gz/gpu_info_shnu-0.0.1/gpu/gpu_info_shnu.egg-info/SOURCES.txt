@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gpu/gpu_info_shnu.egg-info/PKG-INFO
+gpu/gpu_info_shnu.egg-info/SOURCES.txt
+gpu/gpu_info_shnu.egg-info/dependency_links.txt
+gpu/gpu_info_shnu.egg-info/top_level.txt
