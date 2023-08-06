@@ -1,0 +1,15 @@
+# UK Tide Times
+
+Get predicted tide times for the next 7 days
+
+=> /search Find a location
+{% if menu %}
+
+---
+
+{% for item in menu %}
+=> {{ item.link }} {{ item.label }}
+{% endfor %}
+{% endif %}
+
+{% include 'footer' %}
