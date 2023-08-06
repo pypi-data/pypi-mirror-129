@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: lagrange_theorem
+Version: 1.3.2
+Summary: Decomposition of numbers into the sum of four squares
+Home-page: UNKNOWN
+Author: Dima Skorobogatov
+Author-email: dima.skorobogatov.99@mail.ru
+License: UNKNOWN
+Description: Program for decomposition number into sum of four squares
+        more info: https://ru.wikipedia.org/wiki/РўРµРѕСЂРµРјР°_Р›Р°РіСЂР°РЅР¶Р°_Рѕ_СЃСѓРјРјРµ_С‡РµС‚С‹СЂРµС…_РєРІР°РґСЂР°С‚РѕРІ
+        
+        for install use setup.py
+        
+        includes modules:
+        input_interval - sets the interval of numbers
+        calculate_numbers - decomposed numbers using Lagrange's theorem
+        
+        
+        author: Dima Skorobogatov
+        email: dima.skorobogatov.99@mail.ru
+Platform: UNKNOWN

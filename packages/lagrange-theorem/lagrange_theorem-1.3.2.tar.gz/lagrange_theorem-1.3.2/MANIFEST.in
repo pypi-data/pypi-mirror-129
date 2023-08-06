@@ -1,0 +1,4 @@
+include README.txt
+include requirements.txt
+include setup.cfg
+include lagrange_theorem/tests/*.txt
