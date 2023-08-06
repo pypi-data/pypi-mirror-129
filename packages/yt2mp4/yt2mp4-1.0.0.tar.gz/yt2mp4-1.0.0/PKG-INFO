@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: yt2mp4
+Version: 1.0.0
+Summary: Download YouTube videos as MP4 files
+Home-page: https://github.com/donno2048/yt2mp4
+Author: Elisha Hollander
+Author-email: just4now666666@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/donno2048/yt2mp4#readme
+Project-URL: Bug Reports, https://github.com/donno2048/yt2mp4/issues
+Project-URL: Source Code, https://github.com/donno2048/yt2mp4
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# yt2mp4
+
+Download YouTube videos as MP4 files
+
+## Get geckodriver
+
+### Linux (Debian)
+
+```sh
+sudo apt install firefox-geckodriver -y
+```
+
+### Other
+
+Figure it yourself
+
+## Installation
+
+### From PyPI
+
+```sh
+pip3 install yt2mp4
+```
+
+### From GitHub
+
+```sh
+pip3 install git+https://github.com/donno2048/yt2mp4
+```
+
+## Usage
+
+### In Python
+
+```py
+from yt2mp4 import download
+download("dQw4w9WgXcQ", outname='output.mp4') # dowload video from https://www.youtube.com/watch?v=dQw4w9WgXcQ and name it output.mp4
+# will also work:
+# download("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+# download("https://youtu.be/dQw4w9WgXcQ")
+```
+
+### In cmd
+
+```sh
+yt2mp4 # or python3 -m yt2mp4
+```
+
+
