@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dvc-ssh
+Version: 0.0.1a0
+Summary: AWS S3 plugin for dvc
+Home-page: http://dvc.org
+License: Apache License 2.0
+Download-URL: https://github.com/iterative/dvc-ssh
+Project-URL: Documentation, https://dvc.org/doc
+Project-URL: Source, https://github.com/iterative/dvc-ssh
+Keywords: dvc,ssh
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: gssapi
+Provides-Extra: tests
+License-File: LICENSE
+
+UNKNOWN
+
