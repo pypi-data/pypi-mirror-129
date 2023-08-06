@@ -1,0 +1,228 @@
+Metadata-Version: 2.1
+Name: series-de-tiempo-pabloatarama
+Version: 2021.12.1
+Summary: Modelos para el análisis de series de tiempo y proyecciones.
+Home-page: https://pabloatarama.com/SeriesDeTiempo/
+Author: Pablo Atarama
+Author-email: contacto@pabloatarama.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Paquete Series De Tiempo
+Versión 1.0.1
+
+Autor: Pablo Atarama [https://pabloatarama.com/](https://pabloatarama.com/)
+
+© Derechos Reservados 2021
+
+## Importar libreria
+Para importar la librería utilizamos:
+
+```python
+import SeriesDeTiempo as st
+```
+
+Pasos para utilizar la librería:
+1. Crear un objeto del tipo **Serie**.
+2. Aplicar un modelo a un objeto del tipo Serie que nos devolverá un objeto del tipo **Modelo**.
+
+## Crear una serie
+
+Para crear un objeto de tipo **Serie** (Serie de tiempo) utilizamos:
+
+```python
+serie = st.Serie(DataFrame, columna="")
+```
+
+Donde *DataFrame* es el DataFrame de la librería *pandas* donde se extraerá la data y *columna* la columna del DataFrame específica que se considerará como *yt*.
+
+## Aplicar un modelo
+
+Para usar un modelo se aplicara la respectiva función del modelo sobre el objeto de tipo **Serie**. Esto devolverá un objeto del tipo de modelo especificado. Cada función utiliza diferentes parámetros.
+
+### Modelos soportados
+
+Considerando que se creó un objeto de tipo **Serie** llamado *serie*:
+
+#### Naive
+
+```python
+serieConModelo = serie.naive()
+```
+
+#### Media movil simple
+
+```python
+serieConModelo = serie.mediaMovilSimple(longitud=3, desfasada=False)
+```
+
+- longitud: longitud de la media móvil simple, por defecto es 3.
+- desfasada: Si es desfasada o no (True o False), por defecto es False.
+
+#### Media movil doble
+
+```python
+serieConModelo = serie.mediaMovilDoble(longitud=3, desfasada=False)
+```
+
+- longitud: longitud de ambas medias móviles, por defecto es 3.
+- desfasada: Si es desfasada o no (True o False).
+
+#### Media movil ponderada
+
+```python
+serieConModelo = serie.mediaMovilPonderada(longitud, ponderaciones)
+```
+
+- ponderaciones: lista con alfas a ponderar ej: ```[alfa1, alfa2, alfa3]``` donde alfa1 > alfa2 > alfa3, etc.
+
+#### Suavización exponencial simple
+
+```python
+serieConModelo = serie.suavizacionExponencialSimple(alfa=0.5)
+```
+
+- alfa: parámetro alfa del modelo, por defecto es *0.5*.
+
+#### Media movil doble con tendencia
+
+```python
+serieConModelo = serie.mediaMovilDobleConTendencia(longitud=3)
+```
+
+- longitud: longitud de ambas medias moviles, por defecto es 3.
+
+#### Brown o suavizacion exponencial doble
+
+```python
+serieNaive = serie.brown(alfa=0.5, M1=None, M2=None)
+```
+
+- alfa: parámetro alfa del modelo, por defecto es 0.5.
+- M1: Valor inicial de Mat, por defecto es yt para t = 1.
+- M2: Valor inicial de Maat, por defecto es yt para t = 1.
+
+#### Holt
+
+```python
+serieConModelo = serie.holt(alfa=0.5, beta=0.5, M=None, T=0)
+```
+
+- alfa: parámetro alfa del modelo, por defecto es 0.5.
+- beta: parámetro beta del modelo, por defecto es 0.5.
+- M: Valor inicial de Mt, por defecto es yt para t = 1.
+- T: Valor inicial de Tt, por defecto es 0.
+
+#### Holt y Winters
+
+```python
+serieConModelo = serie.holtYWinters(metodo, alfa=0.5, beta=0.5, gamma=0.5, L=4)
+```
+
+- metodo: El metodo a utilizar "aditivo" para el metodo aditivo y "multiplicativo" para el metodo multiplicativo.
+- alfa: parámetro alfa del modelo, por defecto es 0.5.
+- beta: parámetro beta del modelo, por defecto es 0.5.
+- gamma: parámetro gamma del modelo, por defecto es 0.5.
+- L: Longitud de la estacionalidad, por defecto es 4.
+
+#### Descomposición
+
+```python
+serieConModelo = serie.descomposicion(metodo, L=12)
+```
+
+- metodo: El metodo a utilizar "aditivo" para el metodo aditivo y "multiplicativo" para el metodo multiplicativo.
+- L: Longitud de la estacionalidad, por defecto es 12.
+
+## Graficar series y modelos
+
+Para graficar cualquier tipo de objeto de serie (sea del tipo **Serie** o del tipo **Modelo**) se utiliza la función *graficar()*
+
+```python
+serie.graficar(titulo="", xlabel="", ylabel="")
+```
+
+- titulo: Título del gráfico.
+- xlabel: Título del eje x.
+- ylabel: Título del eje y.
+
+### Diagramas de cajas
+
+Se puede realizar digramas de cajas a los objetos de tipo **Serie** a lo largo del tiempo agrupando por cilos mediante:
+
+```python
+serie.cajasEstacionalidad(L=4, comienzo=1, titulo="", xlabel="", ylabel="", grilla=True)
+```
+
+- ciclo: Ciclos en que se agrupará los datos, por defecto es 4.
+- titulo: Título de la gráfica.
+- xlabel: Título del eje x.
+- ylabel: Título del eje y.
+- grilla: Grilla de gráfica (True o False), por defecto True.
+
+También se puede realizar diagramas de cajas sobre la estacionalidad mediante:
+
+```python
+serie.cajas(ciclo=4, comienzo=1, titulo="", xlabel="", ylabel="", grilla=True)
+```
+
+- ciclo: Ciclos en que se agrupará los datos, por defecto es 4.
+- titulo: Título de la gráfica.
+- xlabel: Título del eje x.
+- ylabel: Título del eje y.
+- grilla: Grilla de gráfica (True o False), por defecto True.
+
+### Residuales
+
+También es posible graficar el residual de los objetos de los modelos mediante:
+
+```python
+serieConModelo.residual.graficar(titulo="", xlabel="", ylabel="")
+```
+
+### Gráficas extras del modelo de descomposición
+
+Los modelos de descomposición tienen la peculiaridad de poseer las propiedades: tendencia y estacionalidad siendo estas también graficables mediante *graficar()*
+
+```python
+serieDescomposicion.tendencia.graficar(titulo="", xlabel="", ylabel="")
+serieDescomposicion.estacionalidad.graficar(titulo="", xlabel="", ylabel="")
+```
+
+En caso se requiera realizar una gráfica de otro tipo, todos los objetos de la librería contienen un DataFrame de pandas en su propiedad data:
+
+```python
+serie.data
+serieConModelo.data
+```
+
+## Errores de los Modelos
+
+Para consultar los errores de la aplicación de un determinado modelo que se encuentre en un objeto de ejemplo *serieConModelo* basaría con consultar su propiedad "errores":
+
+```python
+serieConModelo.errores
+```
+
+Podemos extraer el valor específico de algún error consultando las propiedades:
+
+```python
+serieConModelo.errores.mse
+serieConModelo.errores.rmse
+serieConModelo.errores.u_theil
+```
+
+## Pronósticos
+
+Para realizar un pronóstico se deberá llamar a la función *pronosticar()* y esta devolverá una copia del objeto del modelo pero con el pronóstico pedido agregado.
+
+```python
+serieConPronostico = serieConModelo.pronosticar(self, p=1, t=None)
+```
+
+- p: cantidad de periodos a pronosticar, por defecto es 1.
+- t: valor de t desde donde comenzará el pronóstico, por defecto comienza luego del último dato.
+
+
