@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyhomeworksqs/__init__.py
+pyhomeworksqs/pyhomeworksqs.py
+pyhomeworksqs.egg-info/PKG-INFO
+pyhomeworksqs.egg-info/SOURCES.txt
+pyhomeworksqs.egg-info/dependency_links.txt
+pyhomeworksqs.egg-info/top_level.txt
