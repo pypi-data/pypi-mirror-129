@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: torch-tda
+Version: 0.0.1
+Summary: Automatic differentiation for topological data analysis
+Home-page: https://github.com/CompTop/torch-tda
+Author: Brad Nelson, Yuan Luo
+Author-email: bradnelson@uchicago.edu, yuanluo@uchicago.edu
+License: MIT
+Project-URL: Documentation, https://torch-tda.readthedocs.io/en/latest/
+Keywords: topological data analysis,automatic differentiation,persistent homology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: bats-tda
+Requires-Dist: persim (>=0.3.1)
+Requires-Dist: scipy
+
+# Torch-TDA
+
+Automatic differentiation for topological data analysis. 
+
+This package provides utilities for using constructions in topological data analysis
+with automatic differentiation.  It wraps functionality from
+* [BATS](https://comptop.github.io/BATS.py) for persistent homology
+* [persim](https://persim.scikit-tda.org/en/latest/) for computations comparing persistence diagrams
+* [topologylayer](https://github.com/bruel-gabrielsson/TopologyLayer) for polynomial features of barcodes
+
+The design is inspired by and draws from [topologylayer](https://github.com/bruel-gabrielsson/TopologyLayer).  Key differences are that `torch-tda` uses `bats` for faster topological computations, and the two packages have different feature sets.
+
+Here is the [documentation and examples](https://torch-tda.readthedocs.io/en/latest/). 
+
+## Use
+
+Package installation provides a package under the `torch_tda` namespace.  Functionality is primarily under `torch_tda.nn`, which provides several PyTorch layers.
+
+```python
+import torch_tda
+```
+
+## Installation
+
+First, it is recommended to set up a conda environment
+```
+conda create -n bats
+conda activate bats
+```
+
+If you are installing `torch_tda` from the development version, please install the development version of BATS.py, install it from source.   
+
+Otherwise, you can use the latest release of BATS.py
+```
+pip install bats-tda
+```
+**Attension**: please use Linux OS to install `bats-tda` for now and the support for Mac OS will come soon. 
+
+Now, you can setup with `setup.py`
+```
+python setup.py install
+```
+
+## Documentation
+
+If you want to contribute to the documenation, you can add some jupyter notebooks to the `docs/examples` folder and then generate documentation using Sphinx
+```
+cd docs
+pip install -r requirements.txt
+make html
+xdg-open _build/html/index.html # or just open this file
+```
+
+
