@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: db-contrib-tool
+Version: 0.1.0
+Summary: The `db-contrib-tool` - MongoDB's tool for contributors.
+Author: STM team
+Author-email: dev-prod-stm@10gen.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyGithub (>=1.55,<2.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: analytics-python (>=1.4.0,<2.0.0)
+Requires-Dist: distro (>=1.6.0,<2.0.0)
+Requires-Dist: evergreen.py (>=3.3.9,<4.0.0)
+Requires-Dist: packaging (>=21.3,<22.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: structlog (>=21.2.0,<22.0.0)
