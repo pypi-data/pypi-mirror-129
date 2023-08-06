@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ubconvert
+Version: 1.2
+Summary: Time, Temperature, Speed & Distance, Volume, Weight conversion module
+License: MIT
+Author: ZennDogg, Utility_Belt Designs, Tacoma, WA
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
