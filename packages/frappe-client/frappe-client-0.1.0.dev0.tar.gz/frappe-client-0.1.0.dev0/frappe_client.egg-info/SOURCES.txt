@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+frappe_client.egg-info/PKG-INFO
+frappe_client.egg-info/SOURCES.txt
+frappe_client.egg-info/dependency_links.txt
+frappe_client.egg-info/requires.txt
+frappe_client.egg-info/top_level.txt
+frappeclient/__init__.py
+frappeclient/frappeclient.py
+frappeclient/frappeclient_tests.py
