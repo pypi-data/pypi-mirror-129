@@ -1,0 +1,11 @@
+image_fabio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_fabio/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_fabio/processing/combination.py,sha256=YXGv0zojzUx_V2i2vVBx0RsnWXqUY0B58I9KtQ9B1lE,799
+image_fabio/processing/tranformation.py,sha256=cd4FMOOE_eeyYK2C0TezekT9yPeDoAg9xLG8_gzvNmg,341
+image_fabio/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_fabio/utils/io.py,sha256=hKo68C2DqcswP3tUiik6og-EFVPVAVZUM57BN7LbV0o,199
+image_fabio/utils/plot.py,sha256=VIWuv-5kUoJcw12x6l-D1Zu6ep4cvtiZU5olREqkrlo,994
+image_fabio-0.0.2.dist-info/METADATA,sha256=XuB_DyrWtN-H-S7LwIdDbr1qDy70a8Bly-u6TQ-WBuo,862
+image_fabio-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+image_fabio-0.0.2.dist-info/top_level.txt,sha256=H7blkb_ZCooXmj_rHlw-b2nTg28WLt-XqKWTmw2NBRI,12
+image_fabio-0.0.2.dist-info/RECORD,,
