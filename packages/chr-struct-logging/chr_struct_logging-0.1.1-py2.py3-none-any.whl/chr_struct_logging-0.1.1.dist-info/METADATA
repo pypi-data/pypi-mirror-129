@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: chr-struct-logging
+Version: 0.1.1
+Summary: Structure logging for Elastic APM tracing
+Home-page: https://github.com/yordan-bautista-chr/chr_struct_logging
+Author: Yordan Bautista
+Author-email: bautyor@chrobinson.com
+License: MIT license
+Keywords: struct logging,elastic
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: structlog (==21.4.0)
+Requires-Dist: elastic-apm[flask] (~=6.5.0)
+Provides-Extra: dev
+Requires-Dist: pip (==19.2.3) ; extra == 'dev'
+Requires-Dist: bump2version (==0.5.11) ; extra == 'dev'
+Requires-Dist: wheel (==0.33.6) ; extra == 'dev'
+Requires-Dist: watchdog (==0.9.0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.8) ; extra == 'dev'
+Requires-Dist: tox (==3.14.0) ; extra == 'dev'
+Requires-Dist: coverage (==4.5.4) ; extra == 'dev'
+Requires-Dist: Sphinx (==1.8.5) ; extra == 'dev'
+Requires-Dist: twine (==1.14.0) ; extra == 'dev'
+Requires-Dist: black (==21.7b0) ; extra == 'dev'
+
+# CHR structured logging
+
+Structure logging for Elastic APM tracing
+
+
+=======
+History
+=======
+
+0.1.0 (2021-11-29)
+------------------
+
+* First release on PyPI.
+
+
