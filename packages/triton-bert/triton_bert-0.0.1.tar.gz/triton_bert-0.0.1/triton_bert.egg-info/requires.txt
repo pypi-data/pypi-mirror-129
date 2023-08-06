@@ -1,0 +1,3 @@
+tritonclient
+transformers
+more-itertools
