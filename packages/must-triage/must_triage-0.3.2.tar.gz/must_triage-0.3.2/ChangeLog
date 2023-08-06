@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.3.2
+------
+
+* Fix AttributeError on python3.6
