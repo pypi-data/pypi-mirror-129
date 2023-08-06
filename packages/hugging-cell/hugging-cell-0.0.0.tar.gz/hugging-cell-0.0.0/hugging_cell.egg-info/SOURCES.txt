@@ -1,0 +1,6 @@
+README.md
+setup.py
+hugging_cell.egg-info/PKG-INFO
+hugging_cell.egg-info/SOURCES.txt
+hugging_cell.egg-info/dependency_links.txt
+hugging_cell.egg-info/top_level.txt
