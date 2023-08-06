@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/bdkpython/__init__.py
+src/bdkpython/bdkpython.py
+src/bdkpython.egg-info/PKG-INFO
+src/bdkpython.egg-info/SOURCES.txt
+src/bdkpython.egg-info/dependency_links.txt
+src/bdkpython.egg-info/top_level.txt
