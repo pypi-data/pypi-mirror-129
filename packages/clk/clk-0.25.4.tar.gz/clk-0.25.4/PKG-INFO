@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: clk
+Version: 0.25.4
+Summary: A framework to help you have an awesome CLI
+Home-page: UNKNOWN
+Author: Samuel Loury
+Author-email: konubinixweb@gmail.com
+License: UNKNOWN
+Description: See https://clk-project.org/ or https://github.com/clk-project/clk
+Platform: UNKNOWN
+Requires-Python: >=3.8

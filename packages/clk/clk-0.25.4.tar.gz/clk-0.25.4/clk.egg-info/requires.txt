@@ -1,0 +1,17 @@
+Pygments
+appdirs
+cached-property
+click-completion>=0.5.0
+click-didyoumean
+click-log
+click<8,>=6.4
+colorama
+glob2
+humanize
+ipdb
+networkx
+pluginbase
+pydotplus
+python-dateutil
+requests
+tabulate
