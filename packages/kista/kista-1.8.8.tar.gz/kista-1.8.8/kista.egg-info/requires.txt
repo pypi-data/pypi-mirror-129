@@ -1,0 +1,3 @@
+web3==5.24
+docopt
+eth_account
