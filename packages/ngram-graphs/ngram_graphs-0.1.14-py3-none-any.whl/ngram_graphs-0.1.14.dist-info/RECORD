@@ -1,0 +1,14 @@
+ngram_graphs/Generator.py,sha256=HVMqFd1bMhRueOqMz0CswNqWiTgHoSjuEfdprHv5v4w,4219
+ngram_graphs/__init__.py,sha256=JKZHauoacHNSlsyI_pVNrd4Q83Zapsn3vzGWHKp8yXs,322
+ngram_graphs/comparison.py,sha256=mv8sRbEpK3dD7vP3U1S_Y3BunQGoG8DF_H3Cwe6CkZc,2819
+ngram_graphs/utils.py,sha256=G8v2nG2HTaURpNYqlQ8L58TyOJ7mCV_vtoWejZMsnVU,976
+ngram_graphs/TextGraph/IGraphTextGraph.py,sha256=oRn0eFs4sGINlFyT4YtUHktrpbaGr8oIKJqY8IRTk6U,1946
+ngram_graphs/TextGraph/NetworkxTextGraph.py,sha256=fYZmpdHwkgSIFy6cZrMuWH2bKoYBZIfKmFc4A-6DhrE,1804
+ngram_graphs/TextGraph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngram_graphs/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngram_graphs/tests/test_graphs.py,sha256=diYMaR1U2ppal9vwsZHOPBKixnbR8M_2zAnPT9ZqAao,1302
+ngram_graphs-0.1.14.dist-info/LICENSE.txt,sha256=jEDGXeqkjLYCZs-VqLvgkb5at7EiK3OYQhgDr5FOq0s,1063
+ngram_graphs-0.1.14.dist-info/METADATA,sha256=zrkJSiGgXsKOANweXUuOn3QYvM1kmhePaTekNXVCOaA,842
+ngram_graphs-0.1.14.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ngram_graphs-0.1.14.dist-info/top_level.txt,sha256=GZfFOlh77ea1Kp_NErYZjZWzCSif8SOucNAmf7lW3NI,13
+ngram_graphs-0.1.14.dist-info/RECORD,,
