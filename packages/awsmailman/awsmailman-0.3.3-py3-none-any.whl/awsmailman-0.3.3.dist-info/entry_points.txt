@@ -1,0 +1,3 @@
+[console_scripts]
+awsmailman = awsmailman.mailman:main
+
