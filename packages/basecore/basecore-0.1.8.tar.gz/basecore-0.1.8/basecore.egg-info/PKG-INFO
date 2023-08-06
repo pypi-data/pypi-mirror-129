@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: basecore
+Version: 0.1.8
+Summary: pack of megvii base team common used logic based on megengine
+Home-page: UNKNOWN
+Author: wangfeng02
+Author-email: wangfeng02@megvii.com
+License: UNKNOWN
+Description: # BaseCore
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
