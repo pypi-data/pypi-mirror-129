@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: uberduckapi
+Version: 0.1.1
+Summary: Python wrapper for uberduck API
+License: MIT
+Author: George
+Author-email: mazzeogeorge@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: polling (>=0.3.2,<0.4.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
