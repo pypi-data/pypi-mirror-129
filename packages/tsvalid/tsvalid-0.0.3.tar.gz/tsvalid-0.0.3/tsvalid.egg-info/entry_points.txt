@@ -1,0 +1,3 @@
+[console_scripts]
+tsvalid = tsvalid.cli:validate
+
