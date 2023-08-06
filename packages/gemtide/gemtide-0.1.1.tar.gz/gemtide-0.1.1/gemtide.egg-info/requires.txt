@@ -1,0 +1,6 @@
+jetforce
+aiohttp
+ukhotides
+jinja2
+unicode-slugify
+pyyaml

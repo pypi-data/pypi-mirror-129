@@ -1,0 +1,3 @@
+[console_scripts]
+gemtide = gemtide.__main__:main
+

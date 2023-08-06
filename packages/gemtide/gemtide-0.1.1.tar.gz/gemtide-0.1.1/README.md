@@ -1,0 +1,184 @@
+[![builds.sr.ht status](https://builds.sr.ht/~supergrizzlybear/gemtide.svg)](https://builds.sr.ht/~supergrizzlybear/gemtide?)
+
+# GemTide
+
+A Jetforce application for serving information about UK tidal events over the Gemini Protocol.
+
+[Take a look](gemini://tides.grizzlybear.site) |
+[Report a bug](https://todo.sr.ht/~supergrizzlybear/gmi-sourcehut-lists) | [Contact the author](#contact)
+
+## Built with
+
+* [Jetforce](https://github.com/michael-lazar/jetforce) - framework for writing Gemini applications
+* [UKHO Tides](https://github.com/ianByrne/PyPI-ukhotides) - client wrapper for the Admiralty UK Tidal API
+* [Jinja2](https://github.com/pallets/jinja/) - templating engine
+
+## Prerequisites
+
+* Python 3.7 or newer
+* API key for the [UK Tidal API](https://admiraltyapi.portal.azure-api.net/docs/services) from Admiralty Maritime Data Solutions Developer Portal. The Discovery subscription is free and provides current plus 6 days' worth of events. Follow the [Start up guide](https://admiraltyapi.portal.azure-api.net/docs/startup) for help.
+
+## Quick Start
+
+Create a virtual environment *(Recommended)*
+```bash
+$ mkdir /opt/gemtide
+$ python3 -m venv /opt/gemtide/venv
+$ python3 -m pip install --upgrade pip
+$ source /opt/gemtide/venv/bin/activate
+```
+
+Install gemtide package from PyPi
+```bash
+$ pip install gemtide
+```
+
+Create file `config.yaml` and add:
+```yaml
+api_key: Your UK Tidal API key
+``
+
+Run the application with a default Jetforce server
+```bash
+$ python3 -m gemtide
+```
+
+In your preferred gemini client go to `gemini://localhost`
+
+The application has the following routes:
+* `/` - index page with customisable menu
+* `/search` prompts for query input
+* `/location/name.gmi` shows tidal events for the named location in gemini text format
+* `/location/name.txt` shows tidal events for the named location in plain text format
+
+## Full Installation Guide
+
+### Required packages
+
+For Ubuntu 20.04 LTS:
+
+- `python3`
+- `python3-pip`
+- `python3-venv`
+- `python3-dev`
+- `libffi-dev`
+- `libssl-dev`
+
+For Alpine Edge:
+
+- `python3`
+- `python3-dev`
+- `libffi-dev`
+- `libc-dev`
+- `gcc`
+
+
+### Installation
+
+Create virtual environment as per "Quick Start" above, and install from PyPi.
+
+Or to install from source see "Developing" below.
+
+### Usage as a standalone server
+
+Create file `config.yaml` and add:
+```yaml
+api_key: Your UK Tidal API key (required)
+station_prefix: Customise the path/prefix of the location routes (default: "location/")
+menu: List displayed on index page (default: None)
+- link:
+  label:
+server: Options for the Jetforce server configuration
+  host: (default: "127.0.0.1")
+  port: (default: 1965)
+  hostname: (default: "localhost")
+  tls-certfile: (default: None)
+  tls-keyfile: (default: None)
+  tls-cafile: (default: None)
+  tls-capath: (default: None)
+```
+
+Start the server
+```bash
+$ python3 -m gemtide [path/to/config.yaml]
+```
+
+Or if the virtual environment is not activated
+```bash
+$ /opt/venv/gemtide/bin/gemtide [path/to/config.yaml]
+```
+
+### Usage as a custom Jetforce application
+
+See Jetforce README section on [Virtual Hosting](https://github.com/michael-lazar/jetforce/blob/master/README.md#virtual-hosting) 
+
+Single application
+```python
+from jetforce import GeminiServer
+from gemtide import GemTideApplication
+
+app = GemTideApplication(api_key, station_prefix="location/", menu=[{link: label}])
+server = GeminiServer(app)
+server.run()
+```
+
+Composite application
+```python
+from jetforce import GeminiServer, StaticDirectoryApplication
+from jetforce.app.composite import CompositeApplication
+from gemtide import GemTideApplication
+
+app_gemtide = GemTideApplication(api_key, station_prefix="location/", menu=[{link: label}])
+app_default = StaticDirectoryApplication(root_directory="/var/gemini/")
+
+app = CompositeApplication(
+    {
+        "gemtide.example.com": app_gemtide,
+        # Use a default static file server for all other domains
+        None: app_default,
+    }
+)
+```
+
+## Developing
+
+Clone the repository (read-only)
+```bash
+$ git clone https://git.sr.ht/~supergrizzlybear/gemtide
+```
+or read/write
+```bash
+$ git clone git@git.sr.ht:~supergrizzlybear/gemtide
+```
+
+Install gemtide from source
+```bash
+$ cd gemtide
+$ python3 -m pip install .
+```
+
+Install development dependencies
+```bash
+$ python3 -m pip install freezegun
+```
+
+Test
+```bash
+$ python3 test_gemtide.py
+```
+
+## License
+
+This project is licensed under the [Floodgap Free Software License](https://www.floodgap.com/software/ffsl/license.html).
+
+> The Floodgap Free Software License (FFSL) has one overriding mandate: that software
+> using it, or derivative works based on software that uses it, must be free. By free
+> we mean simply "free as in beer" -- you may put your work into open or closed source
+> packages as you see fit, whether or not you choose to release your changes or updates
+> publicly, but you must not ask any fee for it.
+
+## Contact
+
+* Email: supergrizzlybear@protonmail.com
+* Mastodon: [@supergrizzlybear@fosstodon.org](https://fosstodon.org/@supergrizzlybear)
+* Gemini: [super.grizzlybear.site](gemini://super.grizzlybear.site)
