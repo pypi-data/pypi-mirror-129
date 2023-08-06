@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bfloat16ext
+Version: 1.1.3
+Summary: Numpy bfloat16 package
+Home-page: https://github.com/shawwn/bfloat16ext
+Author: GreenWaves Technologies
+Author-email: support@greenwaves-technologies.com
+License: Apache
+Description: UNKNOWN
+Platform: UNKNOWN
