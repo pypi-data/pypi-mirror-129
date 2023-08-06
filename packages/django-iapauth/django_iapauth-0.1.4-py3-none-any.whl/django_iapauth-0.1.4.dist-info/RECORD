@@ -1,0 +1,7 @@
+iapauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iapauth/backends.py,sha256=LQD73prO68HQ2jjZb5hKICQI41S2ao1eDSC1oTCgRsg,673
+iapauth/middleware.py,sha256=u7_yJantKnwgGpZbDfbPwIipwLjDbZbcPnnEJH9MQlo,5602
+django_iapauth-0.1.4.dist-info/METADATA,sha256=mTMkHynbAR6h_uQqeNznyFHz1Xj8rUNkGVWNcMEJ4wc,1500
+django_iapauth-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_iapauth-0.1.4.dist-info/top_level.txt,sha256=u_U6UOqdttGM-yIylX1KN1o6ep7N9QysNXuyeGovDiI,8
+django_iapauth-0.1.4.dist-info/RECORD,,
