@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+datasource_contributor.egg-info/PKG-INFO
+datasource_contributor.egg-info/SOURCES.txt
+datasource_contributor.egg-info/dependency_links.txt
+datasource_contributor.egg-info/entry_points.txt
+datasource_contributor.egg-info/requires.txt
+datasource_contributor.egg-info/top_level.txt
+rommon/__init__.py
+rommon/__main__.py
+rommon/ROM/items.py
+rommon/ROM/middlewares.py
+rommon/ROM/pipelines.py
+rommon/ROM/settings.py
+rommon/ROM/spiders/__init__.py
+rommon/ROM/spiders/rom.py
