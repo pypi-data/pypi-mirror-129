@@ -1,0 +1,7 @@
+asyncio
+python-socketio
+aiohttp
+aiohttp_cors
+dict2xml
+xmltodict
+mysql-connector-python
