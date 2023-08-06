@@ -1,0 +1,10 @@
+caql/__init__.py,sha256=DPaLtuCEsGFPcwSHzoy3CE-xwDfeR_xatzTxiRYm2ko,128
+caql/classes.py,sha256=IR-zHJ4GlDJIth-SHHL46l5m3vIdZkk_xzgpwIfMFoI,5102
+caql/collapsed.py,sha256=daEsN84CFOgyUCUVokJ4KZ2a4LKbAhxaZENlBhcFqNc,1255
+caql/engine.py,sha256=pfw5vQ84omK9wAcud-ceW1tjGa3NhIr7UUZa1CH61zk,3726
+caql/errors.py,sha256=3N1Ad8atcpzWnYQ5Ze3Ip4iMMGD2sG3ECPk2MbEJx_I,79
+caql/ty.py,sha256=j_ZQEloApxCgmzaHIRpUAFTNKoUoDkG-F63FarW-7-w,798
+caql-0.8.0.dist-info/LICENSE,sha256=KRbg2bAanICbH27_8QjGDGLQaJBpUxVvSKkZtjHPccM,1066
+caql-0.8.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+caql-0.8.0.dist-info/METADATA,sha256=JHhwEC8vY42YAna2yN_iOiB9VmPlaX0IewZbKzJiXP0,492
+caql-0.8.0.dist-info/RECORD,,
