@@ -1,0 +1,6 @@
+global-exclude *test.py
+global-exclude *subject.py
+global-exclude *result.py
+
+
+

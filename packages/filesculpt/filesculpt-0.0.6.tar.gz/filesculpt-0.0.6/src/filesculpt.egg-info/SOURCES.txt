@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/fileSculpt/__init__.py
+src/fileSculpt/filesculpt.py
+src/filesculpt.egg-info/PKG-INFO
+src/filesculpt.egg-info/SOURCES.txt
+src/filesculpt.egg-info/dependency_links.txt
+src/filesculpt.egg-info/top_level.txt
