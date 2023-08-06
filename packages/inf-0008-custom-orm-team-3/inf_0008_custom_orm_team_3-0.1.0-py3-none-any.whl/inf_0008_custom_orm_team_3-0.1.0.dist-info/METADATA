@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: inf-0008-custom-orm-team-3
+Version: 0.1.0
+Summary: 
+Author: Belligraf
+Author-email: belligraf@mail.ru
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
