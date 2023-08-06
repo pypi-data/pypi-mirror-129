@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+taco_box.egg-info/PKG-INFO
+taco_box.egg-info/SOURCES.txt
+taco_box.egg-info/dependency_links.txt
+taco_box.egg-info/requires.txt
+taco_box.egg-info/top_level.txt
+tacobox/__init__.py
+tacobox/tacobox.py
