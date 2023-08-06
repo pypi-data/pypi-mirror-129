@@ -1,0 +1,8 @@
+pyproject_hooks/__init__.py,sha256=jZh3ljDv9shQ9QVjvHpt7EKVZRL-F-CgHb_DFenm4cY,129
+pyproject_hooks/wrappers.py,sha256=ZrtFPWsamMpymUv2bHop0KWEWB-ucFp_5Lt8vqz5m6c,13213
+pyproject_hooks/in_process/__init__.py,sha256=QgYV3IA4KbWzukaZoJEKLN1aPLYd-DiLziA7jTbJlW4,560
+pyproject_hooks/in_process/_in_process.py,sha256=oRfkcHtp8rDj9Mrh3q2uBfYhheXW0e5zFhLSusUxLH4,10798
+pyproject_hooks-0.1.0.dist-info/LICENSE,sha256=G4GNZ0Zw5Ld9bBGhQ5wHvOdHOSxxcRLCcNuyw4vBjP8,1114
+pyproject_hooks-0.1.0.dist-info/WHEEL,sha256=LVOPL_YDMEiGvRLgDK1hLkfhFCnTcxcAYZJtpNFses0,81
+pyproject_hooks-0.1.0.dist-info/METADATA,sha256=cYKZ8qRDsrnlG0XVvZMrWw7_LZhJDXkLRHEvnvStnVc,2217
+pyproject_hooks-0.1.0.dist-info/RECORD,,
