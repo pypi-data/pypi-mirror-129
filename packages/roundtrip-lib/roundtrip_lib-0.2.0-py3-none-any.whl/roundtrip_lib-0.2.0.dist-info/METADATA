@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: roundtrip-lib
+Version: 0.2.0
+Summary: A Python library for loading JS visualizations into jupyter notebooks.
+Home-page: https://github.com/hdc-arizona/roundtrip
+Author: Connor Scully-Allison
+Author-email: cscullyallison@email.arizona.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
