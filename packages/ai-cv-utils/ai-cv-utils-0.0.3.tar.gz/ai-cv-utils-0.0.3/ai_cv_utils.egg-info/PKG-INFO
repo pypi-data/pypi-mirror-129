@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ai-cv-utils
+Version: 0.0.3
+Summary: AI Computer Vision Utilities
+Home-page: https://github.com/gbertolani/ai-cv-utils
+Author: Gaston Alberto Bertolani
+Author-email: gbertolani.in@gmail.com
+License: AGPL3+
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AI Utils
+
+
+## TODO: write usage :)
+
+
