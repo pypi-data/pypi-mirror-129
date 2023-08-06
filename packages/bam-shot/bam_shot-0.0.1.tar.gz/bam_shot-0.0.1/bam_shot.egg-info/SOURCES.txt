@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bam_shot/__init__.py
+bam_shot/bam.py
+bam_shot/img.py
+bam_shot.egg-info/PKG-INFO
+bam_shot.egg-info/SOURCES.txt
+bam_shot.egg-info/dependency_links.txt
+bam_shot.egg-info/requires.txt
+bam_shot.egg-info/top_level.txt
+test/test.py
