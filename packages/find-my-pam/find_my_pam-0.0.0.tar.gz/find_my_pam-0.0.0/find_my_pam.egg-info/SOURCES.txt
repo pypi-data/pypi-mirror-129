@@ -1,0 +1,8 @@
+.gitignore
+README.md
+setup.py
+.github/workflows/pypi_release.yml
+find_my_pam.egg-info/PKG-INFO
+find_my_pam.egg-info/SOURCES.txt
+find_my_pam.egg-info/dependency_links.txt
+find_my_pam.egg-info/top_level.txt
