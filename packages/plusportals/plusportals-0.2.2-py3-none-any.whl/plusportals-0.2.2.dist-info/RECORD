@@ -1,0 +1,11 @@
+plusportals/__init__.py,sha256=XUC7yp8bXraGTkmEgIKGMAWyQ_cKZhmAN6CW9Rj5EEE,123
+plusportals/client.py,sha256=ytxex7YIRCtYcVbcVf3OMQcC_qdhYhH4oYO_d6DlNAo,3606
+plusportals/credentials.py,sha256=FuMNbt9GioR88tXI-T_KLmAw-yd3kTFt1AlU9UNjZgc,664
+plusportals/info.py,sha256=HmsL68awOOg_5MHxTeXiHiaTojZfL9_hByH9ZYfVnRs,1084
+plusportals/session.py,sha256=4KiJD1qzM28lBDgOHWq0QbqfEGZcA1A8VAcpN7o9J_M,4250
+plusportals/tracker.py,sha256=TeahHTa-ap2tGxr5xwlr1MMZeyqRfjG6YczM-OIxvQw,1294
+plusportals-0.2.2.dist-info/LICENSE,sha256=I5qpL0semutyFNi9J6p5_SATTTJr8u_-p195G-a2ZKM,1068
+plusportals-0.2.2.dist-info/METADATA,sha256=VaHBiP5MjR9q7u3qUMs_8qFrKwxaUe7pLcGykm9SqOQ,2938
+plusportals-0.2.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+plusportals-0.2.2.dist-info/top_level.txt,sha256=TGYyHHlfXUVCZRzMZKLCiH-pCI3_suhxad5oBkx9PHc,12
+plusportals-0.2.2.dist-info/RECORD,,
