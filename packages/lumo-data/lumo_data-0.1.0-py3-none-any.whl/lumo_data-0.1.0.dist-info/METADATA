@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lumo-data
+Version: 0.1.0
+Summary: A bunch of optimzed data-related class for replacing the original pytorch DataLoader, Dataset, etc..
+Home-page: https://github.com/pytorch-lumo/lumo_data
+Author: sailist
+Author-email: sailist@outlook.com
+License: Apache License 2.0
+Keywords: lumo loky multiprocess dataloader pytorch batch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: loky
+
+UNKNOWN
+
