@@ -1,0 +1,3 @@
+[console_scripts]
+sda_printer = sda_printer.__main__:very_cool_hi
+
