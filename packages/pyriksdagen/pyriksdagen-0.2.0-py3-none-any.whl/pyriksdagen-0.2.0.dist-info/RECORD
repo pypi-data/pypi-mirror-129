@@ -1,0 +1,12 @@
+pyriksdagen/__init__.py,sha256=Ayi9gh1vYzPtExJHyqWpwoO6chG-4OsiDQNDiC8sZFM,84
+pyriksdagen/db.py,sha256=wLUiNVUnUx8PbVTPiSYu3-axW1oZSp6dk7_2jcUb4Io,1881
+pyriksdagen/download.py,sha256=SSNjqIuWCOcZK5sVOuQ3M7amTteLwfan4XByA6AbLjs,11236
+pyriksdagen/export.py,sha256=by4wwYXbEswNPfWQ4pv8nLx1iSOP3i3zGLJ5MmMliv8,8663
+pyriksdagen/match_mp.py,sha256=1HhylE1wwcLfNBlsBW_WhrDd7h8sEXCHvg8xiVizxEI,3218
+pyriksdagen/mp.py,sha256=AUNNF12ptHW87T-uO1eVQPv2hU0foUDgyPZCEx5SPVM,11120
+pyriksdagen/refine.py,sha256=hdh3I2kW-31qLKg5jDuwFH22liA51VOFhplRDOs0lGo,13027
+pyriksdagen/segmentation.py,sha256=F9cXeITqTLctmCBJCakt8L0FPpLZhrI5FbZJk224PSk,10848
+pyriksdagen/utils.py,sha256=jAtokdgGNq_jPKlVsgffee2k9CrkPosCAktwA6kbYT4,3409
+pyriksdagen-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyriksdagen-0.2.0.dist-info/METADATA,sha256=vbhkrY20itDq6tlIt-8Hj-3n89iGnoYx6xNUyCKTLUI,2280
+pyriksdagen-0.2.0.dist-info/RECORD,,
