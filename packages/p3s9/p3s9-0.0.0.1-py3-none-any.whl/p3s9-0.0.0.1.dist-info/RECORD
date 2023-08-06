@@ -1,0 +1,13 @@
+p3s9/__init__.py,sha256=lsAhkp7FN4uAwmrxOxpTm1qgkXvin1kv04tn-cK-6Zs,20
+p3s9/prism.cp36-win_amd64.pyd,sha256=5pnLvLA6fjayEFzG9sKcWdIyOEfuQx57dQcHNEYYLxI,718336
+p3s9/prism.cp37-win_amd64.pyd,sha256=SH1SoNrZKdKaeAPDJY6daKAO4uPfwd3Qo00Nos9beWs,738304
+p3s9/prism.cp38-win_amd64.pyd,sha256=xsxMSi8XgopMUDRrupv_kIau6apC4X2KSW2A-TQ-BXA,759296
+p3s9/prism.cp39-win_amd64.pyd,sha256=hrp2tJhgobG3eg4Kx2dBgMxORCmULqKnWUiGlluXaDY,742912
+p3s9/prism.cpython-36m-x86_64-linux-gnu.so,sha256=lLYC1K1V0CwaXV5FJWZezTmQjIqfIB6VNRK8faaX81c,1210928
+p3s9/prism.cpython-37m-x86_64-linux-gnu.so,sha256=y6P8JK-4ASVhN8ExFI2D5jzpgLyK1RR_QSMuwgXXX1Y,1219248
+p3s9/prism.cpython-38-x86_64-linux-gnu.so,sha256=SPtKLOnr1H_eRQ-SzaHHu7rM97ao5ILUNwHwFT5DAB4,1243888
+p3s9/prism.cpython-39-x86_64-linux-gnu.so,sha256=B5eG50Scwwq-drZET3u3YNOn6lLCCwYsZQy7E8uccZ0,1239792
+p3s9-0.0.0.1.dist-info/METADATA,sha256=Whc-jt7xhIGcfx7_nURoTgj2Syr9O86xenXW_ZDjXS0,241
+p3s9-0.0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+p3s9-0.0.0.1.dist-info/top_level.txt,sha256=6QRo_Fehp-mivCcliChHx3nRofuxLHNlTbIHzj6fLZA,5
+p3s9-0.0.0.1.dist-info/RECORD,,
