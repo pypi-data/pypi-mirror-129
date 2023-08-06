@@ -1,0 +1,3 @@
+[console_scripts]
+asking = asking.__main__:entry
+
