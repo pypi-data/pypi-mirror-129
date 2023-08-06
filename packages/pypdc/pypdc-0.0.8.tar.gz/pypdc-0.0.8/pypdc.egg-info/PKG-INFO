@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: pypdc
+Version: 0.0.8
+Summary: Python asymptotic Partial Directed Coherence and Directed Coherence estimation package for brain connectivity analysis.
+Home-page: UNKNOWN
+Author: Koichi Sameshima
+Author-email: ksameshi@usp.br
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Brain Connectivity,PDC,iPDC,Granger Causality
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows
+Platform: Unix
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
