@@ -1,0 +1,10 @@
+detect_package/__init__.py,sha256=zIW-L9FnoO3XAAMmxOK5PFuic29DdsqCClckeIndSA0,59
+detect_package/detect.py,sha256=gFhD_icFCcu7w_jxqj-mNyr5_zUf0koQZDTTFz84dTw,8075
+detect_package/frozen_dir.py,sha256=gPvTVXgQgLHm5qBNLlU1YEHlO_jhElxMKjrwfW0azNE,337
+detect_package/model-encrypted,sha256=eQENAXJllzPSfDWBiFSjTP822AtL0P-6lS5_gAzENyA,48640
+detect_package/road-encrypted,sha256=ix5yKK9Wy1Fef_AplXQHACPz4TK6JbLuo_L9kszPXRw,32736
+road_detect-0.0.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+road_detect-0.0.1.dist-info/METADATA,sha256=WsADDoNEVVB0-TairVQOi25CrJe-4R0TmDP5a0oSNt4,780
+road_detect-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+road_detect-0.0.1.dist-info/top_level.txt,sha256=Olv9gXDUFRVowW3E4huyXky-2B6qgqOdpdr5X_X0oeI,15
+road_detect-0.0.1.dist-info/RECORD,,
