@@ -1,0 +1,11 @@
+hightea/client/__init__.py,sha256=kYF1VCNRpWgtMO6JrnqknPWps_tOXx996hGK_RwXzwU,128
+hightea/client/apiactions.py,sha256=OnkwjPjleZ-yxyCLeOkDB1SCB6iGUmWrgNwGTdvz1G4,6220
+hightea/client/app.py,sha256=l95sYL_M7hkRO-RXim6PeXcU2_q0Fm9mOz6LxuMYkNk,6502
+hightea/client/interface.py,sha256=E0HGoPvoqXwjjZMkQnzM0ndZ5XIi6EN0RprvOSdgNKs,40946
+hightea_client-0.2.0.data/scripts/app.py,sha256=l95sYL_M7hkRO-RXim6PeXcU2_q0Fm9mOz6LxuMYkNk,6502
+hightea_client-0.2.0.data/scripts/highteacli,sha256=giuGxlGnMOBwVxxQnVAMlMmWmJtU7F1qm08cA8J5vMI,6531
+hightea_client-0.2.0.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hightea_client-0.2.0.dist-info/METADATA,sha256=FYs_H2xMM17XmZIoM0zA6SZL6pLyKx1crNbXkRmN5c4,399
+hightea_client-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+hightea_client-0.2.0.dist-info/top_level.txt,sha256=bLtpxIhJVct5mIf1HCpCNm_hPBjbHkC9dMLqpMDhKTo,8
+hightea_client-0.2.0.dist-info/RECORD,,
