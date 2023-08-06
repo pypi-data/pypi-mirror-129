@@ -1,0 +1,9 @@
+canopy/__init__.py,sha256=FcNQiwS4BEYYYZhBKo4gZAZJ7NpidPJlkjh44YIpGoY,1672
+canopy/static/screen.css,sha256=aXiKn-PsqCDwe7zCxU_KHBlEO7EfXCKvFqgBbmLc-MQ,2714
+canopy/templates/__init__.py,sha256=9YYoS8DSAFadCW-m5bdKF1O0UKvtdMpxatrESSuF0eA,48
+canopy/templates/sign_in.html,sha256=-8-IzKHu2JVUG8jsKRjI8_CIGOcFNTpqSKiu3Nyaafc,507
+canopy/templates/template.html,sha256=ux31l244HBBIts2Axbgtr3a79a1_0d8H9zHR4m4Ak6c,4379
+canopy_platform-0.0.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+canopy_platform-0.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+canopy_platform-0.0.2.dist-info/METADATA,sha256=R1rGF7H9gafVp0xR2GyDjnGANFTfg2Sk99uGA90pvVg,968
+canopy_platform-0.0.2.dist-info/RECORD,,
