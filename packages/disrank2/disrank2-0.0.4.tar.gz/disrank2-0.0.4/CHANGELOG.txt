@@ -1,0 +1,22 @@
+Change Log
+===========
+
+0.0.1 (30/09/2021)
+--------------------------------
+- Release to https://pypi.com/disrank2
+
+
+0.0.2 (02/10/2021)
+--------------------------------
+- Remodeling card design
+- Minor bug fixed
+
+
+0.0.3 (02/10/2021)
+--------------------------------
+- Added some docs
+
+
+0.0.4 (30/11/2021)
+--------------------------------
+- juste changing some variables and others
