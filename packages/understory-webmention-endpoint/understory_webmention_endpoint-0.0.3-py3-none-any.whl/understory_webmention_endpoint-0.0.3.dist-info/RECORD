@@ -1,0 +1,8 @@
+understory/apps/webmention_endpoint/__init__.py,sha256=-WGY2f7uyjW5-n6ZGklndNx8WWdyg8ObtPdPZ-RXCnE,2272
+understory/apps/webmention_endpoint/templates/index.html,sha256=PM57IWNT7D1gilpVRar5KUlQpsW5ESSpJ8KsOppGYnQ,152
+understory/apps/webmention_endpoint/templates/received/index.html,sha256=wxlotmPYYNwj9axtzZKXAoTcEhoQrMOiQrzI-x-QiNI,219
+understory_webmention_endpoint-0.0.3.dist-info/entry_points.txt,sha256=76SI0unktjEv2vAVUNEENcWVv9JIB7ueagHgAo1XVlY,72
+understory_webmention_endpoint-0.0.3.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+understory_webmention_endpoint-0.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+understory_webmention_endpoint-0.0.3.dist-info/METADATA,sha256=Z4OjrYe6vXwB1MLFp8PNtp76AKZIKISRTm23Ljc9lJI,502
+understory_webmention_endpoint-0.0.3.dist-info/RECORD,,
