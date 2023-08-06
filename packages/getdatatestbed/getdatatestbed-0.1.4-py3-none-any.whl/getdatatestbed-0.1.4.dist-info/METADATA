@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: getdatatestbed
+Version: 0.1.4
+Summary: Data access for the Coastal Model Test Bed
+Home-page: UNKNOWN
+Author: Spicer Bak
+Author-email: thesser1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: netCDF4
+Requires-Dist: testbedutils
+
+# getdatatestbed
+coastal model test bed sub-repository
+The getdatatestbed repository is a way to interact with the CHL public thredds server and local FRF server to 
+interact with CHL - FRF data 
+
+
+
