@@ -1,0 +1,3 @@
+[console_scripts]
+datasource-contributor = ROM.__main__:main
+

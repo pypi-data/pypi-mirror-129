@@ -1,0 +1,15 @@
+ROM/__init__.py,sha256=BOXSANvV3Yqbqd4aWVIi1BbAvMTwnEk6esBmbjvtPg0,50
+ROM/__main__.py,sha256=lAbcJ-hWnvhJ29L5ZhruLQ_00xA32wwbmKCmtputGG4,11140
+ROM/items.py,sha256=fYLFiV1b8I7GY5r4JFceBEgRaozhrauTzgZd_aRrNvk,411
+ROM/middlewares.py,sha256=tVYfE4rIao9H2F2jDnlQsZUV8UYH4poggm1j1aB2gCc,3591
+ROM/pipelines.py,sha256=9fXeVA92nNTVwD6iobLROCof3mBCI0OzBX9TYUVs07o,1156
+ROM/settings.py,sha256=ZUvUe8ZDMHtat9hcxfDdcI7veeovjyeDKsoJqZac8yo,3158
+ROM/util.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ROM/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+ROM/spiders/rom.py,sha256=rwUmDt4eUFpVrjyYyouWJFn7bC67bRHh1Btmb8cqEEM,3329
+datasource_contributor-0.0.2.dist-info/LICENSE,sha256=Wr4wNYn1L4Hut_xSNtnYZbarp7bZxaj0yFYDgfm47z8,1051
+datasource_contributor-0.0.2.dist-info/METADATA,sha256=zTuXPi9Ua1ZU49qMR0jBkTB2WRGoPhjdfRdlLkg5v8U,1007
+datasource_contributor-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasource_contributor-0.0.2.dist-info/entry_points.txt,sha256=YscOEn_AibGnpuxkTgRCuL4NYQh8F11CAu0c6uB6osw,62
+datasource_contributor-0.0.2.dist-info/top_level.txt,sha256=ZtsAJq71XiAD6-FkcVsybav4SY1VfuSd447Td0SFYes,4
+datasource_contributor-0.0.2.dist-info/RECORD,,
