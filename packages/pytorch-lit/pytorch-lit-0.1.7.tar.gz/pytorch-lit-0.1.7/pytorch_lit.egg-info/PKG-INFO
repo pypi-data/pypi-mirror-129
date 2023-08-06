@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pytorch-lit
+Version: 0.1.7
+Summary: Lite Inference Toolkit(LIT) for PyTorch
+Home-page: https://github.com/AminRezaei0x443/PyTorch-LIT
+Author: Amin Rezaei
+Author-email: AminRezaei0x443@gmail.com
+License: MIT
+Keywords: pytorch-lit,lit,lite-inference-toolkit,pytorch
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
