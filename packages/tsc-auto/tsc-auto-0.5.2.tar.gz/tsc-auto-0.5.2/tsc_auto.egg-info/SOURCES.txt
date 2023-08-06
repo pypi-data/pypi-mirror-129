@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+setup.py
+tsc_auto/__init__.py
+tsc_auto/auto.sh
+tsc_auto/main.py
+tsc_auto/set_gpu.py
+tsc_auto.egg-info/PKG-INFO
+tsc_auto.egg-info/SOURCES.txt
+tsc_auto.egg-info/dependency_links.txt
+tsc_auto.egg-info/entry_points.txt
+tsc_auto.egg-info/top_level.txt
