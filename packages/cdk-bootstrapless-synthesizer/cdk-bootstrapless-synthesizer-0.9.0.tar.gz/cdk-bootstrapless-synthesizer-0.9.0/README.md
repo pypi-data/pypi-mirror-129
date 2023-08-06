@@ -1,0 +1,85 @@
+# cdk-bootstrapless-synthesizer
+
+[![npm version](https://img.shields.io/npm/v/cdk-bootstrapless-synthesizer)](https://www.npmjs.com/package/cdk-bootstrapless-synthesizer)
+[![PyPI](https://img.shields.io/pypi/v/cdk-bootstrapless-synthesizer)](https://pypi.org/project/cdk-bootstrapless-synthesizer)
+[![npm](https://img.shields.io/npm/dw/cdk-bootstrapless-synthesizer?label=npm%20downloads)](https://www.npmjs.com/package/cdk-bootstrapless-synthesizer)
+[![PyPI - Downloads](https://img.shields.io/pypi/dw/cdk-bootstrapless-synthesizer?label=pypi%20downloads)](https://pypi.org/project/cdk-bootstrapless-synthesizer)
+
+A bootstrapless stack synthesizer that is designated to generate templates that can be directly used by AWS CloudFormation
+
+## Usage
+
+```python
+# Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+from cdk_bootstrapless_synthesizer import BootstraplessStackSynthesizer
+
+# ...
+app = cdk.App()
+
+# You can set arguments directly
+MyStack(app, "my-stack-dev",
+    synthesizer=BootstraplessStackSynthesizer(
+        template_bucket_name="cfn-template-bucket",
+
+        file_asset_bucket_name="file-asset-bucket-${AWS::Region}",
+        file_asset_region_set=["us-west-1", "us-west-2"],
+        file_asset_prefix="file-asset-prefix/latest/",
+
+        image_asset_repository_name="your-ecr-repo-name",
+        image_asset_account_id="1234567890",
+        image_asset_tag_prefix="latest-",
+        image_asset_region_set=["us-west-1", "us-west-2"]
+    )
+)
+
+# Or by environment variables
+# export BSS_TEMPLATE_BUCKET_NAME="cfn-template-bucket"
+
+# export BSS_FILE_ASSET_BUCKET_NAME="file-asset-bucket-\${AWS::Region}"
+# export BSS_FILE_ASSET_REGION_SET="us-west-1',us-west-2"
+# export BSS_FILE_ASSET_PREFIX="file-asset-prefix/latest/"
+
+# export BSS_IMAGE_ASSET_REPOSITORY_NAME="your-ecr-repo-name"
+# export BSS_IMAGE_ASSET_ACCOUNT_ID="1234567890"
+# export BSS_IMAGE_ASSET_TAG_PREFIX="latest-"
+# export BSS_IMAGE_ASSET_REGION="us-west-1',us-west-2"
+
+MyStack(app, "my-stack-dev",
+    synthesizer=BootstraplessStackSynthesizer()
+)
+```
+
+Synth AWS CloudFormation templates, assets and upload them
+
+```shell
+$ cdk synth
+$ npx cdk-assets publish -p cdk.out/my-stack-dev.assets.json -v
+```
+
+In your template
+
+```json
+{
+  // ...
+  "MyLayer38944FA5": {
+    "Type": "AWS::Lambda::LayerVersion",
+    "Properties": {
+      "Content": {
+        "S3Bucket": {
+          "Fn::Sub": "file-asset-bucket-${AWS::Region}"
+        },
+        "S3Key": "file-asset-prefix/latest/8104f93f351dd2d4e69b0ab2ebe9ccff2309a573660bd75ca920ffd1808522e0.zip"
+      }
+    }
+  }
+  // ...
+}
+```
+
+## Sample Project
+
+See [Sample Project](./sample/README.md)
+
+## API Reference
+
+See [API Reference](./API.md) for API details.
