@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: example-pkg-andrazpolak
+Version: 0.0.5
+Summary: A small example package678
+Home-page: https://github.com/andrazpolak/pythonPackage_Pip
+Author: Andraz Polak
+Author-email: andraz.polak@gmail.com
+Maintainer: Andraz Polak
+Maintainer-email: andraz.polak@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/andrazpolak/pythonPackage_Pip/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pythonPackage_Pip
+
+test_python_package
+fksljfls
+
+fsdafenas
+
+new description
+
+
