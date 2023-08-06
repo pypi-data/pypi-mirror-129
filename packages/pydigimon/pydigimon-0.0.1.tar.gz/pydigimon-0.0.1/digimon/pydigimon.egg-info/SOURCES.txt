@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+digimon/pydigimon.egg-info/PKG-INFO
+digimon/pydigimon.egg-info/SOURCES.txt
+digimon/pydigimon.egg-info/dependency_links.txt
+digimon/pydigimon.egg-info/requires.txt
+digimon/pydigimon.egg-info/top_level.txt
