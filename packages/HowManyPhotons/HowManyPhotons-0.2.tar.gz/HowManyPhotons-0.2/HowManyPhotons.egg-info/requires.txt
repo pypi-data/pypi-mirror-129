@@ -1,0 +1,6 @@
+numpy
+astropy
+scopesim
+pyyaml
+synphot
+skycalc_ipy
