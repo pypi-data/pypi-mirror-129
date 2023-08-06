@@ -1,0 +1,76 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+ExampleDataFiles/STM_Au-111_Flat.sxm
+ExampleDataFiles/STM_Au-111_Terraced.sxm
+ExampleDataFiles/STM_TaAs2_029.sxm
+ExampleDataFiles/STM_WTip_WSe2_SL333-Set2-Crystal2_031.sxm
+ExampleDataFiles/Sample_Nanonis_IV_Spec_GrMoS2.dat
+ExampleDataFiles/Sample_Nanonis_IZ_Spec_GrMoS2.dat
+ExampleDataFiles/Sample_Renishaw_Raman_Spec_Graphene.txt
+ExampleDataFiles/WSe2--1_1.Z_mtrx
+ExampleDataFiles/WSe2_0001.mtrx
+Examples/AFM Height Hist Peak Fitting.ipynb
+Examples/Bias Spectra Heat Map.ipynb
+Examples/ExploreSTS.ipynb
+Examples/ExploreSXM.ipynb
+Examples/ExtractFromMtrx.ipynb
+Examples/ExtractJPGFromSXM.ipynb
+Examples/ExtractJPGFromSXM_Gray.ipynb
+Examples/Import and Level Image Using SPMImage Class.ipynb
+Examples/RamanAnalysis Demo.ipynb
+Examples/SPIEPy Example.ipynb
+Examples/start.ipynb
+Examples/.ipynb_checkpoints/BinaryCNNClassifer-checkpoint.py
+Examples/.ipynb_checkpoints/ExploreSTS-checkpoint.ipynb
+Examples/.ipynb_checkpoints/ExploreSXM-checkpoint.ipynb
+Examples/.ipynb_checkpoints/ExtractFromMtrx-checkpoint.ipynb
+Examples/.ipynb_checkpoints/ExtractJPGFromSXM-checkpoint.ipynb
+Examples/.ipynb_checkpoints/ExtractJPGFromSXM_Gray-checkpoint.ipynb
+Examples/.ipynb_checkpoints/Extract_STMdata-checkpoint.py
+Examples/.ipynb_checkpoints/Herringbone-Lattice_CNN-Classifier-checkpoint.ipynb
+Examples/.ipynb_checkpoints/Herringbone-Lattice_CNN_Greyscale-checkpoint.ipynb
+Examples/.ipynb_checkpoints/HerringboneClassifier-checkpoint.ipynb
+Examples/.ipynb_checkpoints/LabelStmData-checkpoint.ipynb
+Examples/.ipynb_checkpoints/LabelStmData_v2-checkpoint.ipynb
+Examples/.ipynb_checkpoints/STMImageDimensionDistribution-checkpoint.ipynb
+Examples/.ipynb_checkpoints/STS_Classifier-0-checkpoint.ipynb
+Examples/.ipynb_checkpoints/STS_Classifier-1-checkpoint.ipynb
+Examples/.ipynb_checkpoints/SampleMapVideo-checkpoint.ipynb
+Examples/.ipynb_checkpoints/test-checkpoint.mp4
+NanoscoPy.egg-info/PKG-INFO
+NanoscoPy.egg-info/SOURCES.txt
+NanoscoPy.egg-info/dependency_links.txt
+NanoscoPy.egg-info/top_level.txt
+nanoscopy/__init__.py
+nanoscopy/utilities.py
+nanoscopy/afm/AFMForceRecovery.py
+nanoscopy/loaders/__init__.py
+nanoscopy/loaders/dataIO.py
+nanoscopy/loaders/__pycache__/dataIO.cpython-37.pyc
+nanoscopy/plot/PlotGen - Backup.py
+nanoscopy/plot/PlotGen.py
+nanoscopy/plot/__init__.py
+nanoscopy/plot/plot_styles.py
+nanoscopy/plot/matplotlib_styles/jet-paper.mplstyle
+nanoscopy/plot/matplotlib_styles/jetplot.mplstyle
+nanoscopy/plot/matplotlib_styles/reference/bmh.mplstyle
+nanoscopy/plot/matplotlib_styles/reference/grayscale.mplstyle
+nanoscopy/plot/matplotlib_styles/reference/seaborn-colorblind.mplstyle
+nanoscopy/plot/matplotlib_styles/reference/seaborn-paper.mplstyle
+nanoscopy/plot/matplotlib_styles/reference/seaborn-poster.mplstyle
+nanoscopy/plot/matplotlib_styles/reference/seaborn-talk.mplstyle
+nanoscopy/spectrum/__init__.py
+nanoscopy/spectrum/analysis.py
+nanoscopy/spectrum/io.py
+nanoscopy/spectrum/spectrum.py
+nanoscopy/spm/SPMImage.py
+nanoscopy/spm/__init__.py
+nanoscopy/spm/analysis.py
+nanoscopy/spm/driftspeed.py
+nanoscopy/spm/io.py
+nanoscopy/spm/process.py
