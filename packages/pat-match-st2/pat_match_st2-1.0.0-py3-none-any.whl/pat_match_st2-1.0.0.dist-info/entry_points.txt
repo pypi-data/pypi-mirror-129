@@ -1,0 +1,4 @@
+[console_scripts]
+gen-lcp = scripts.gen_lcp:main
+search-st2 = scripts.search_st2:main
+
