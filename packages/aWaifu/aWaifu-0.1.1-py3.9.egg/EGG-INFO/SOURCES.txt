@@ -1,0 +1,12 @@
+README.rst
+setup.py
+aWaifu/__init__.py
+aWaifu/__main__.py
+aWaifu/species.py
+aWaifu/utils.py
+aWaifu.egg-info/PKG-INFO
+aWaifu.egg-info/SOURCES.txt
+aWaifu.egg-info/dependency_links.txt
+aWaifu.egg-info/entry_points.txt
+aWaifu.egg-info/requires.txt
+aWaifu.egg-info/top_level.txt

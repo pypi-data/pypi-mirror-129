@@ -1,0 +1,3 @@
+[console_scripts]
+awaifu = awaifu.__main__:main
+
