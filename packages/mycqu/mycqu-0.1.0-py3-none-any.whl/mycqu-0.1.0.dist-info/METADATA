@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mycqu
+Version: 0.1.0
+Summary: 重庆重庆大学新教务网及相关 api 的封装
+License: AGPL-3.0-or-later
+Author: Hagb
+Author-email: hagb_green@qq.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4,<5)
+Requires-Dist: pycryptodome (>=3,<4)
+Requires-Dist: pydantic (>=1,<2)
+Requires-Dist: requests (>=2,<3)
