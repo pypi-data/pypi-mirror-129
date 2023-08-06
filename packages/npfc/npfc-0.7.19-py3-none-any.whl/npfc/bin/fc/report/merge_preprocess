@@ -1,0 +1,215 @@
+#!/usr/bin/env python
+
+"""
+Script report_fc_preprocess
+==================================
+This script generates a plot and its corresponding data as csv to describe the
+step of preprocessing molecules:
+load, standardize, deduplicate, depict
+"""
+import argparse
+import re
+import sys
+from datetime import datetime
+from pathlib import Path
+from pkg_resources import resource_filename
+# data handling
+import pandas as pd
+from pandas import DataFrame
+# data visualization
+import matplotlib
+from matplotlib import pyplot as plt
+import seaborn as sns
+# docs
+from typing import List
+# custom libraries
+import npfc
+from npfc import utils
+from npfc import load
+from npfc import save
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FUNCTIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+
+def _get_chunk(path_wd, pattern):
+    """Get the wanted chunk from the given Path object using a pattern.
+    """
+    files = [str(x) for x in path_wd.glob(pattern)]
+    if len(files) != 1:
+        raise ValueError("ERROR! AMBIGUOUS INPUT FILE LOAD: %s", input_file_load)
+    return files[0]
+
+
+def parse_load_log(input_file: str) -> DataFrame:
+    """Parse a log file from the load step into a DataFrame.
+
+    :param input_file: the input file parse
+    :return: a DataFrame summarizing the success of the step
+    """
+    df = pd.read_csv(input_file, sep="@", header=None)
+    records = df[df[0].str.contains("FAILURE")].iloc[0][0].split()
+    num_errors = int(records[9])
+    num_passed = int(df[df[0].str.contains("SAVED")].iloc[0][0].split()[6])
+    return DataFrame({'Step': 'load', 'Category': ['loaded', 'cannot_load'], 'Count': [num_passed, num_errors]})
+
+
+def parse_std_data(input_file: str) -> DataFrame:
+    """Parse a data file from the standardize step into a DataFrame.
+
+    :param input_file: the input file parse
+    :return: a DataFrame summarizing the success of the step
+    """
+    # count how many molecules passed standardization
+    num_passed = len(load.file(input_file, decode=False))
+    return pd.DataFrame({'Step': 'std', "Category": ['passed'], 'Count': [num_passed]})
+
+
+def _parse_std_filtered_error(input_file: str):
+    df = load.file(input_file, decode=False).groupby("task").count()[['status']].reset_index().rename({'status': 'Count', 'task': 'Category'}, axis=1)
+    df['Step'] = 'std'
+    df = df[['Step', 'Category', 'Count']]
+    return df
+
+def parse_std_filtered(input_file: str) -> DataFrame:
+    """Parse a filtered data file from the standardize step into a DataFrame.
+
+    :param input_file: the input file parse
+    :return: a DataFrame summarizing the success of the step
+    """
+    return _parse_std_filtered_error(input_file)
+
+
+def parse_std_error(input_file: str) -> DataFrame:
+    """Parse a error data file from the standardize step into a DataFrame.
+
+    :param input_file: the input file parse
+    :return: a DataFrame summarizing the success of the step
+    """
+    return _parse_std_filtered_error(input_file)
+
+
+def parse_dedupl_log(input_file: str):
+    """Parse a log file from the dedupl step into a DataFrame.
+
+    :param input_file: the input file parse
+    :return: a DataFrame summarizing the success of the step
+    """
+    df = pd.read_csv(input_file, sep="@", header=None)  # char not found in the log file so we can extract all lines as one column
+    num_passed, num_total = [int(x) for x in df[df[0].str.contains("REMAINING MOLECULES")].iloc[0][0].split("MOLECULES:")[1].split("/")]
+    num_filtered = num_total - num_passed
+    return DataFrame({'Step': 'dedupl', 'Category': ['filtered', 'kept'], 'Count': [num_filtered, num_passed]})
+
+
+def main():
+
+    # init
+    d0 = datetime.now()
+    description = """Script for generating the plots describing the molecule standardization.
+    It uses the installed npfc libary in your favorite env manager.
+
+    Example:
+        >>> # with a single input file
+        >>> report_fc_mols_standardize fct/molecule/molecule.csv.gz molecule_descr.svg green dnp
+        >>> # with a folder containing multiple files
+        >>> report_fc_mols_standardize fct/molecule molecule_descr.svg green dnp
+
+    """
+
+    # parameters CLI
+    parser = argparse.ArgumentParser(description=description, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument('input_preprocess_dir', type=str, default=None, help="Input directory where preprocess output subdirs are stored.")
+    parser.add_argument('prefix', type=str, default=None, help="The id of the chunk to investigate (i.e. dnp_001, crms, etc.)")
+    parser.add_argument('output_csv', type=str, default=None, help="Output file with all results from preprocess step.")
+    parser.add_argument('--log', type=str, default='INFO', help="Specify level of logging. Possible values are: CRITICAL, ERROR, WARNING, INFO, DEBUG.")
+    args = parser.parse_args()
+
+    # logging
+    logger = utils._configure_logger(args.log)
+    logger.info("RUNNING MERGE_PREPROCESS")
+    pad = 40
+
+    # parse arguments
+
+    # input_files
+    utils.check_arg_input_dir(args.input_preprocess_dir)
+    path_wd = Path(args.input_preprocess_dir)
+
+    pattern_load = f"*load/log/{args.prefix}*"
+    pattern_std = f"*std/data/{args.prefix}_std*"
+    pattern_filtered = f"*std/log/{args.prefix}_filtered*"
+    pattern_error = f"*std/log/{args.prefix}_error*"
+    pattern_dedupl = f"*dedupl/log/{args.prefix}_dedupl*"
+
+    # output_csv
+    utils.check_arg_output_file(args.output_csv)
+
+    # display infos
+
+    # versions
+    logger.info("LIBRARY VERSIONS:")
+    logger.info("pandas".ljust(pad) + f"{pd.__version__}")
+    logger.info("npfc".ljust(pad) + f"{npfc.__version__}")
+    # arguments
+    logger.info("ARGUMENTS:")
+    logger.info("INPUT_PROCESS_DIR".ljust(pad) + f"{args.input_preprocess_dir}")
+    logger.info("PREFIX".ljust(pad) + f"{args.prefix}")
+    logger.info("OUTPUT_CSV".ljust(pad) + f"{args.output_csv}")
+    # log
+    logger.info("LOG".ljust(pad) + f"{args.log}")
+
+    # begin
+
+    logger.info("BEGIN")
+
+    # define inputs
+    input_load = _get_chunk(path_wd, pattern_load)
+    input_std = _get_chunk(path_wd, pattern_std)
+    input_filtered = _get_chunk(path_wd, pattern_filtered)
+    input_error = _get_chunk(path_wd, pattern_error)
+    input_dedupl = _get_chunk(path_wd, pattern_dedupl)
+    d1 = datetime.now()
+
+    # load
+    df_load = parse_load_log(input_load)
+    d2 = datetime.now()
+    # std
+    df_std = parse_std_data(input_std)
+    d3 = datetime.now()
+    # filtered
+    df_filtered = parse_std_filtered(input_filtered)
+    d4 = datetime.now()
+    # error
+    df_error = parse_std_filtered(input_error)
+    d5 = datetime.now()
+    # dedupl
+    df_dedupl = parse_dedupl_log(input_dedupl)
+    d6 = datetime.now()
+    # merge data
+    df_preprocess = pd.concat([df_load, df_std, df_filtered, df_error, df_dedupl])
+    d7 = datetime.now()
+
+    # export data
+    save.file(df_preprocess, args.output_csv)
+    d8 = datetime.now()
+
+    # end
+    logger.info("SUMMARY")
+    logger.info("COMPUTATIONAL TIME: CONFIGURING JOB".ljust(pad * 2) + f"{d1-d0}")
+    logger.info("COMPUTATIONAL TIME: PARSING LOAD".ljust(pad * 2) + f"{d2-d1}")
+    logger.info("COMPUTATIONAL TIME: PARSING STD".ljust(pad * 2) + f"{d3-d2}")
+    logger.info("COMPUTATIONAL TIME: PARSING FILTERED".ljust(pad * 2) + f"{d4-d3}")
+    logger.info("COMPUTATIONAL TIME: PARSING ERROR".ljust(pad * 2) + f"{d5-d4}")
+    logger.info("COMPUTATIONAL TIME: MERGE DATA".ljust(pad * 2) + f"{d6-d5}")
+    logger.info("COMPUTATIONAL TIME: PARSING DEDUPL".ljust(pad * 2) + f"{d7-d6}")
+    logger.info("COMPUTATIONAL TIME: SAVING RESULTS".ljust(pad * 2) + f"{d8-d7}")
+    logger.info("COMPUTATIONAL TIME: TOTAL".ljust(pad * 2) + f"{d8-d0}")
+    logger.info("END")
+    sys.exit(0)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+
+
+if __name__ == '__main__':
+    main()
+    sys.exit(0)
