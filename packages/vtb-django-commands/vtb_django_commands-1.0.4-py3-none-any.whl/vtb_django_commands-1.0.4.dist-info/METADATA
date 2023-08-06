@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: vtb-django-commands
+Version: 1.0.4
+Summary: Django commands
+Home-page: UNKNOWN
+Author: Mikhail Shutov
+Author-email: mshutov@vtb.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django :: 3.0
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=3.0.0)
+Requires-Dist: djangorestframework (>=3.12.2)
+Requires-Dist: vtb-authorizer-utils (>=0.0.17)
+Requires-Dist: vtb-http-interaction (>=0.1.4)
+Requires-Dist: vtb-django-utils
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-env ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+
+
+`pip install vtb-django-commands`
+
+**Add to installed apps to your django project:**
+
+```python
+# settings.py
+INSTALLED_APPS = (
+    ...
+    'vtb_django_commands',
+    ...
+)
+```
+
+### Export/import схемы сервиса в авторайзер
+
+Для генерации схемы
+
+```
+python manage.py export_authorizer_schema --file "cfg.json"
+```
+
+Для загрузки схемы в авторайзер
+
+```
+python manage.py import_authorizer_schema --file "cfg.json"
+
