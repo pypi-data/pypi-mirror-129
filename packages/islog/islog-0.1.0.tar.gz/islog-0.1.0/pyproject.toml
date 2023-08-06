@@ -1,0 +1,27 @@
+[project]
+name = "islog"
+version = "0.1.0"
+description = ""
+dependencies = [ "PyGithub~=1.55",]
+requires-python = ">=3.7"
+classifiers = [ "Development Status :: 4 - Beta", "Topic :: Software Development :: Build Tools", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",]
+[[project.authors]]
+name = "Yang Keming"
+email = "kemingy94@gmail.com"
+
+[build-system]
+requires = [ "pdm-pep517",]
+build-backend = "pdm.pep517.api"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+homepage = "https://github.com/kemingy/islog"
+repository = "https://github.com/kemingy/islog"
+documentation = "https://kemingy.github.io/islog"
+
+[project.scripts]
+islog = "islog.main:run"
+
+[tool.pdm]
