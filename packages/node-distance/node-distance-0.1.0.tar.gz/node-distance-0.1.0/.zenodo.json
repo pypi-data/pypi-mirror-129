@@ -1,0 +1,16 @@
+{
+  "creators": [{
+    "name": "Ulf Hamster",
+    "orcid": "0000-0002-0440-4868"
+  }],
+  "title": "node-distance: Tree node distances as features.",
+  "description": "Compute distance between all nodes of a tree, and estimate an histogram that can be used as features for other models..",
+  "license": "Apache-2.0",
+  "upload_type": "software",
+  "keywords": [
+    "dependency tree", 
+    "node distance", 
+    "shortest path", 
+    "networkx"
+  ]
+}
