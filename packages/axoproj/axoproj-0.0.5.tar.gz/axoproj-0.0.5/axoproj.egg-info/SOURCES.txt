@@ -1,0 +1,15 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+setup.cfg
+setup.py
+.github/workflows/ci.yml
+axoproj/__init__.py
+axoproj/classes.py
+axoproj/funcs.py
+axoproj.egg-info/PKG-INFO
+axoproj.egg-info/SOURCES.txt
+axoproj.egg-info/dependency_links.txt
+axoproj.egg-info/requires.txt
+axoproj.egg-info/top_level.txt

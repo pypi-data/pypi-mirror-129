@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: axoproj
+Version: 0.0.5
+Summary: A code to create datacubes from simple models
+Home-page: https://github.com/Alois-deValon/Axoproj
+Author: A. de Valon
+Author-email: aloisdevalon@gmail.com
+License: GPL-3.0
+Description: # AxoProj
+        This is a first test, help
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
