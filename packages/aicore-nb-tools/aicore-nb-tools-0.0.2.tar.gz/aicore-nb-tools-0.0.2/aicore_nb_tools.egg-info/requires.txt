@@ -1,0 +1,3 @@
+nbformat
+PyYaml
+PyQt5
