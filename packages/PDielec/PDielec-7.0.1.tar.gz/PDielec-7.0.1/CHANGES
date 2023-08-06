@@ -1,0 +1,175 @@
+version 7.0.1
+  Added a single crystal tab to show transmission and reflectance at a single crystal surface
+  The method used is that described by Passler et al
+  Rewrote the calculation of dielectric permittivity so that it would be much more general.
+  There is now a class which looks after dielectric permittivity information
+  The sign convention for the imaginary component of the permittivity has changed - e(real)-e(imag)j
+  Moved the CrystalPermittivity to the SettingsTab
+  Modified the scripting, scripts written before version 7 may not work. 
+  Modified the way masses are handled, so if the gui modifies the masses they are written out to the script.
+  Changed the communication between tabs, it was completed before and it still is unfortunately
+  Stopped setting the requestRefresh variable directly - now use a subroutine to do it.
+  Added a lot of debugging information to the tabs so it is much clearer what the flow is through the code
+  Two new input file type has been added 'experimental' and 'pdgui'.
+    'experimental' allows an experimental dieletric to be specified this includes a lorentz type spectrum
+    'pdgui' allows a script to be read in and executed 'experimental' and 'pdgui'.
+    'experimental' allows an experimental dieletric to be specified this includes a lorentz type spectrum
+    'pdgui' allows a script to be read in and executed.  
+        Scripts read in like this must have the 'program' and 'output file name' specified in the mainTab.settings dictionary.
+  The mainTab gui no longer needs to have specified the 'program' name (eg. castep, or vasp). 
+      This is determined from the name of the file.
+  Added a new example of using the fitter and the fitting tab
+  Revised all the documentation
+  Added the Mie module from PyMieScatt as there were some issues about crossover
+  Major changes to the parallel methods used by the code.  Now using 'partial' from functools
+      also removed sending the whole crystal_permittivity array at once.
+      also create the pool in the notebook and keep reusing it.
+      also switch back to multiprocessing 
+  MKL threads are no longer changed by the code
+
+
+version 6.4.5
+  Fixed a couple of problems when switching molecule using the GUI.  The sigmas array and the mode fitting flags are now reset when a new molecule/crystal is read in.
+  Modified the ViewerTab to display super-cells
+  Added a new VibAnalysis module based on the work of filipe teixeira https://github.com/teixeirafilipe/vibAnalysis
+  Example output in Examples/Castep/AsparticAcid/phonon.nm (generated with 'vibanalysis phonon)
+                  Examples/Vasp/Na2SO42/OUTCAR.nma (generated with 'vibanalysis OUTCAR)
+  Added sklearn to the list of required packages
+
+version 6.4.4 (Internal release only)
+  Added an option in viewerTab to write the vibrating molecule as a cif file.
+  Modified the cif output format so it is more like that of Mercury
+  Introduced psutil.cpu_count as this will give the number of physical processors
+  Switched the multiprocessing module to the multiprocess module (pickling is better)
+  Overrode the mkl environment variable for the number of threads.  PDgui now uses mkl threading, unless it is in multiprocessing mode.
+  Used dill for the pickling itself.
+In preader added an option to pickle each of the readers that are created and store them in a file
+Added a script, pickled_reader which can read the pickled file.  The script is just an example of how the readers can be read in and the contents accessed.
+Modified UnitCell.py to use print_info instead of printInfo
+New set of pyhton packages are needed for the above;
+dill,multiprocess,psutil
+Added new test for p2cif
+Removed redundant imports from all files
+
+version 6.4.3
+Modified p2cif so that it becomes a windows executable
+Modified p2cif and preader to be more robust when reading phonopy output
+Re-introduced fitting the frequency scaling in the fitter tab
+
+version 6.4.2
+Modified the plotting in fitter so that scaling is always applied
+Removed the tick box in the Fitter tab that switches scaling on/off
+Only store the optical permittivity in a script if it has been altered in the GUI
+This means that older scripts will not be compatible with the newer defaults.
+
+version 6.4.1
+Fixed a packaging problem on pypi and conda-forge
+No changes to source code
+
+version 6.4.0
+Removed the imageio-ffmpeg download code added pip install dependence instead
+Updated the installation instructions on the documentation to reflect conda-forge installation
+Added environment variables to control threading and number of cpus
+Made the refractive_index_medium variable real (not complex) to remove the warning message from PyMieScatt
+
+Version 6.3.1
+Solved packaging issues ready for release on PyPi
+
+Version 6.3.0
+Added ability to request fewer cpus for parallel computation.  Also can now switch to threading model if necessary.  
+Restructured directory structure to be consistent with setup.py
+Changed the spreadsheet checking so that 'Settings' is not included - problems with checking degenerate systems
+Changed the threshold in checkcsv to 3E-2.  All tests now pass.
+Created commands in the root directory which should be similar to those created by a pip installation - pdgui, preader
+
+Version 6.2
+Treats the case of a support matrix with spherical inclusions. The scattering from the inclusions is accounted for by Mie theory. The resulting effective permittivity is used in the calculation of the effective permittivity of the active dielectric in the matrix. In addition the following features have been added;
+
+    the sign of the imaginary component of the Mie permittivity is now consistent with Bruggeman and Maxwell-Garnett methods
+    a Hodrick-Prescott filter performs a baseline correction to the experimental spectrum in the Fitter tab.
+    saving a script has been modified to improve the scripts robustness
+    various other minor bugs have been fixed
+
+Version 6.1
+Sees the release of new Mie routines which allow a more robust treatment of anisotropic crystals. A few other issues have also been addressed. The mass and volume fractions can be edited more easily. The spreadsheet is now written out at the end of the calculation (on exiting the program). There are several changes to the fitter tab. All the options are now in their own settings tab, which gives more space for listing the frequencies. A new fitting algorithm has been provided, which minimises the root means squared error between the experimental and calculated spectra.
+
+Version 6.0.1 
+Is a minor bug-fix release to Version v6.0.
+
+Version 6.0 
+Adds the ability to alter the Lorentzian widths of the phonon transitions and compare the results interactively with an experimental spectrum.
+
+version 5.0.0
+Removed the command line interface
+Added ATR functionality
+
+version 4.0.1
+Modified preader to work in parallel under Windows
+Changed the complex optical dielectric to real if the imaginary components are 0
+Changed the README to give much better information about Windows 10 installations
+Modified the shebang on the preader and pdielec commands so that Windows recognises them
+Modified the checkcsv command so that it ignores the number of processors
+
+Version 4.0.0
+Mie scattering
+Excel spread sheet writing completed
+Added an 'experiment' program for testing parts of the code without having to do an abinitio calculation.
+
+Version 3.0.1
+Added degeneracy checking
+Added improved checking of output files, so that small changes due to numpy/mkl choice are ignored
+Parallel version of PDielec and preader
+
+Version 3.0.0
+Fixed a bug in the way born charges were read in by the Crystal interface.
+Added a Phonopy interface (only the VASP driver in Phonopy has been tested)
+Added an internal table of masses to PDielec so that a consistent set of masses is used across all QM/MM programs
+
+Version 2.0.1
+Fixed a small error in the logic for printing to csv using -csv_ext
+Modified the reading of Crystal14 ouput so that the NOECKART flag  in the output file is now ignored and overriden by the PDielec -noeckart flag
+Added a -threshold command which allows the user to be more selective as to which modes are included in the absorption calculation
+
+Version 2.0
+Updated the code to be compatible with both Python 2 and Python 3
+In the process of modifying all the print statement, prettified the output
+Added a -h -help to print out the usage information
+Added a -debug keyword to cut down on some of the output
+Added a -csv_ext name flag.  Output is sent to 3 files instead of one
+         name_command.csv, name_frequencies.csv and name_spectrum.csv
+Added tests to check if any file name given on the command line actually exists or not
+Propagated the debug state to any reader
+Moved the creation of the Plotter object to early in the code
+Used plotter methods print3x3 and printReals to perform printing of arrrays
+
+The command.sh files in the Examples directories have all been modified so that they use the "python" command, not python2 or python3.  These files also all command line parameters to be passed to the executing PDielec command.  This means that
+command.sh -plot absorption
+will run the example command and a plot of the results will be created.
+
+
+
+Version 1.3
+
+Added interfaces to Abinit and Quantum Espresso
+
+There is now a -program castep/vasp/qe etc option
+It was getting too hard to think of a unique identifier for the output file!
+
+There is a new, Na2(SO4)2 example which was important because it has very asymmetric born charge matrices.  
+
+I have added an option to use Crystal's symmetrising algorithm, so provided 
+the HESSFREQ.DAT and the BORN.DAT files are present and
+the "-hessian crystal" option is used, the Crystal frequencies should now agree with Crystal14 output.
+
+There is -eckart flag, which forces PDielec to project out the translational modes.  
+The flag works for any package.  It also applies projection to the LO modes.
+
+There is a -LO_cart flag which gives the LO directions in cartesian directions.
+This is the same as Abinit, so I was able to test the output against Abinit output.
+
+There are changes in the output, as I now force the mass weighted normal modes to be unitary. 
+This improves the Crystal results, but it did change all the other interfaces too. 
+The results should still agree to between 4 and 5 significant figures with the old results.
+
+Version 1.2
+Added interface to Crystal14
