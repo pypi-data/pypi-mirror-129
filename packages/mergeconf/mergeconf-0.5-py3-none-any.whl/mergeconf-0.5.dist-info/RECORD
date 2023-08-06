@@ -1,0 +1,10 @@
+mergeconf/__init__.py,sha256=mGGylwuyDPusjiS10_0dT5RHlZ4aBqWVo7rL4GnKAWM,3845
+mergeconf/exceptions.py,sha256=KTiy3j68hxh1hzduiPD_j-XQYvLcyBH4ne9d0n8ESzk,2977
+mergeconf/mergeconf.py,sha256=V6CBrRZs3p_lmrEhc3ugR-TypD2BYUh3K2qD_-jGxLw,12079
+mergeconf/mergeconfsection.py,sha256=F6rSIHHzZ1leF1efaZoVUggr6hWruMAR5v9L8fsRf_k,5439
+mergeconf/mergeconfvalue.py,sha256=U00Ikq7SGHSLOf6RDZqNsYs3pttbi1_M1Orhmfk0ukg,2130
+mergeconf-0.5.dist-info/LICENSE,sha256=iINSqS7vxl2hTdRRmsnceENoYOlNT4in3bBZfvX_3tU,1083
+mergeconf-0.5.dist-info/METADATA,sha256=DcaEOWKj9t88MaZE8QQHVG-M3y1hV_VVPWYPG-C4LLw,13559
+mergeconf-0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mergeconf-0.5.dist-info/top_level.txt,sha256=kUASoMBtVgWzurQvAHDKWH9eqj035NcYrxjbejcgmn8,10
+mergeconf-0.5.dist-info/RECORD,,
