@@ -1,0 +1,4 @@
+[console_scripts]
+HiveMind-announce = HiveMind_presence.__main__:main
+HiveMind-scan = HiveMind_presence.cli:scan_and_print
+
