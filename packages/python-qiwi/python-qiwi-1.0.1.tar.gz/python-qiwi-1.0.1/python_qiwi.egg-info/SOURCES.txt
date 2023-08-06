@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+python_qiwi/__init__.py
+python_qiwi/python_qiwi.py
+python_qiwi.egg-info/PKG-INFO
+python_qiwi.egg-info/SOURCES.txt
+python_qiwi.egg-info/dependency_links.txt
+python_qiwi.egg-info/top_level.txt
