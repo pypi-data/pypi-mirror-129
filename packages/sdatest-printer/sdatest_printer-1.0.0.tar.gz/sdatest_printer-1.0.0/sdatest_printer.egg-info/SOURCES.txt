@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+printer/__init__.py
+printer/__main__.py
+sdatest_printer.egg-info/PKG-INFO
+sdatest_printer.egg-info/SOURCES.txt
+sdatest_printer.egg-info/dependency_links.txt
+sdatest_printer.egg-info/entry_points.txt
+sdatest_printer.egg-info/top_level.txt
