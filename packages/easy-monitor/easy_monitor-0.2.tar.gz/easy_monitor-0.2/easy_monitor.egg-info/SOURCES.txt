@@ -1,0 +1,6 @@
+easy_monitor.py
+setup.py
+easy_monitor.egg-info/PKG-INFO
+easy_monitor.egg-info/SOURCES.txt
+easy_monitor.egg-info/dependency_links.txt
+easy_monitor.egg-info/top_level.txt

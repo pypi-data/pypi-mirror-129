@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: easy_monitor
+Version: 0.2
+Summary: A module for monitoring variable changes
+Home-page: https://github.com/SanLiWuXun/easy_monitor
+Author: Feifei Song
+Author-email: songfeifei@tsinghua.org.cn
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: matplotlib
+Requires: numpy
