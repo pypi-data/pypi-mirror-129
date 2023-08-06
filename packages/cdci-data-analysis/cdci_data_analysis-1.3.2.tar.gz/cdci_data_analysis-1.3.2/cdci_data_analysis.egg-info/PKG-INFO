@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cdci-data-analysis
+Version: 1.3.2
+Summary: A Python Framework for CDCI online data analysis
+Home-page: UNKNOWN
+Author: Andrea Tramacere
+Author-email: andrea.tramacere@unige.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE.rst
+
+UNKNOWN
+

@@ -1,0 +1,58 @@
+# example configuration, please adapt!
+
+dispatcher:
+    dummy_cache: dummy-cache
+
+    # base for persistent urls for resulting product, should coincide with ingress for frontend
+    # necessary 
+    products_url: https://www.astro.unige.ch/cdci/astrooda_ 
+
+    # base to build up the callback url for the various back-end to call-back the dispatcher
+    # might be also not known and in that case the bind options will be used
+    dispatcher_callback_url_base: http://localhost:8001
+
+    # register on sentry.io and  put here url for reporting issues!
+    # optional, but should be enforcable in "strict" mode
+    sentry_url:
+    
+    # can be ignored, install your own (https://www.elastic.co/logstash) or use external https://logz.io/
+    # optional, but may be be enforcable in "strict" mode
+    logstash_host: 
+    logstash_port: 
+    
+    # used for token validation
+    secret_key:  YOUR_VERY_OWN_SECRET_KEY
+
+    # where the dispatcher binds, will be used for the flask app at start-up
+    # host and port are well distinguished for clarity
+    # necessary
+    bind_options:
+        bind_host: 0.0.0.0
+        bind_port: 8001
+
+    # e-mail related configurations: a user might want to receive an eamil with an update of the status of the request in
+    # some cases (e.g. the request has failed)
+    email_options:
+        # the smtp server to use in order to actually send the email
+        smtp_server: 'localhost'
+        smtp_port: 1025
+        smtp_server_password: SMTP_SERVER_PASSWORD
+        # address from which the email should be sent from
+        sender_email_address: 'team@odahub.io'
+        # list of address to be put in cc
+        cc_receivers_email_addresses: [ 'team@odahub.io' ]
+        # list of address to be put in bcc
+        bcc_receivers_email_addresses: ['teamBcc@odahub.io']
+        # enable the sending of an email when a request is ''done'', and this took long to complete
+        email_sending_timeout: True
+        # amount of time (in seconds) elapsed from the issuing of the request,
+        # that will trigger the email when the request is complete, if this time is exceeded
+        email_sending_timeout_default_threshold: 1800
+        # sending of an email when a request has been submitted
+        email_sending_job_submitted: True
+        # amount of time (in seconds) elapsed from the sending of the last email
+        # for when a request has been submitted
+        email_sending_job_submitted_default_interval: 5
+
+
+
