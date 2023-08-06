@@ -1,0 +1,11 @@
+sweetify/__init__.py,sha256=PiU1LoEaO4qKSxmzT35zsUoA2z2cthqn3DnC0unxkTc,25
+sweetify/__version__.py,sha256=Voeii6S3o7mksChw5yyb09j-1agy3HpSGDrL02gxKck,424
+sweetify/encoder.py,sha256=OM15kUKTGJe0FGQnQISa_vbsP6K-drq9mZa9cooWy38,351
+sweetify/sweetify.py,sha256=hQVIuJZZ2HmvLE_QBwJzUFWp3rbp4C86ooeN-Q86jXI,2595
+sweetify/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sweetify/templatetags/sweetify.py,sha256=lQYF7Wo2MaJaFVCIPY3hLzi5An-zZHEFOiG2xWRbsG0,1197
+sweetify/views.py,sha256=JEkaGmw9WlBqrH1ipjrrojeF0gRaOb3tw505vxzKFJk,764
+sweetify-2.2.0.dist-info/LICENSE,sha256=gBOczHL2G3rmorQ3cCG0AvG1yfebvRSMYgLK7HqmBN0,1536
+sweetify-2.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+sweetify-2.2.0.dist-info/METADATA,sha256=wLqwZjHVBha1aopiiZYnkcxbbMTtd4lbCtZSbSsZY1A,6142
+sweetify-2.2.0.dist-info/RECORD,,
