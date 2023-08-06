@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: saures-api-client
+Version: 0.1
+Summary: SAURES API client
+Author: Yury Sokov
+Author-email: yury@yurzs.dev
+Requires-Python: >=3.6.2,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
