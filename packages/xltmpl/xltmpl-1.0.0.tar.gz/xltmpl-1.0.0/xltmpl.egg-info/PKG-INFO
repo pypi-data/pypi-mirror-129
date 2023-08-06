@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: xltmpl
+Version: 1.0.0
+Summary: xltmpl is a package that can append data to excel files without changing worksheets’ style base on openpyxl and xlrd.
+Home-page: UNKNOWN
+Author: PyDa5
+Author-email: 1174446068@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: lxml
