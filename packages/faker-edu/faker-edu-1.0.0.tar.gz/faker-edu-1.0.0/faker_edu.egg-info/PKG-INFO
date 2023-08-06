@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: faker-edu
+Version: 1.0.0
+Summary: Provider for Faker which adds fake information about educational institutions and academics.
+Home-page: https://github.com/SFDO-Community-Sprints/Snowfakery-Edu
+Author: Allison Letts, Aaron Crosman, Paul Prescod
+Author-email: DatagenToolkitTeam@example.invalid
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Snowfakery-Edu
+Fake data to support educational institutions
+
+
