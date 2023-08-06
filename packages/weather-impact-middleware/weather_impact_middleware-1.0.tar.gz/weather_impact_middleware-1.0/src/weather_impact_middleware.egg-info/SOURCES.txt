@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+setup.py
+src/weather_impact_middleware.egg-info/PKG-INFO
+src/weather_impact_middleware.egg-info/SOURCES.txt
+src/weather_impact_middleware.egg-info/dependency_links.txt
+src/weather_impact_middleware.egg-info/not-zip-safe
+src/weather_impact_middleware.egg-info/top_level.txt
