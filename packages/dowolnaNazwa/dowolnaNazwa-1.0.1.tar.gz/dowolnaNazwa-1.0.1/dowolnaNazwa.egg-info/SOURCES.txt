@@ -1,0 +1,7 @@
+setup.py
+dowolnaNazwa.egg-info/PKG-INFO
+dowolnaNazwa.egg-info/SOURCES.txt
+dowolnaNazwa.egg-info/dependency_links.txt
+dowolnaNazwa.egg-info/top_level.txt
+pakiet/__init__.py
+pakiet/dzialania.py
