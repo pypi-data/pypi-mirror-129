@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: minecraft-server-updater
+Version: 0.1.0
+Summary: pull down most recent server jar file (for Java edition)
+Author: Ryan
+Author-email: citizen.townshend@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.8.2,<5.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: click-spinner (>=0.1.8,<0.2.0)
+Requires-Dist: click_log (>=0.3.2,<0.4.0)
+Requires-Dist: requests (>=2.22,<3.0)

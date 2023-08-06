@@ -1,0 +1,3 @@
+[console_scripts]
+msu=minecraft_server_updater:main
+
