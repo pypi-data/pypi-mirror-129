@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: datastoreflex
+Version: 0.2.1
+Summary: Messging Client
+Home-page: https://github.com/seung-lab/datastore-flex
+Author: Akhilesh Halageri
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/seung-lab/datastore-flex/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-cloud-datastore
+Requires-Dist: cloud-files
+
+##
+Adds the ability to read/write objects in a cloud bucket to datastore client.
+
+```
+from datastoreflex import DatastoreFlex
+client = DatastoreFlex(project="<project-id>", namespace="<namespace>")
+
+# The following configuration means store a column/property named `v1`
+# in a cloud bucket (protocol must be supported by cloudfiles).
+# Value for `v1` will be stored in the path `gs://ngl_states/<group_id>/<user_id>`
+# where <group_d> = entity["group_id"] and <user_id> = entity["user_id"]
+
+config = {"v1": {"bucket_path": "gs://ngl_states", "path_elements": ["group_id", "user_id"]}}
+client.add_config(config)
+```
+
