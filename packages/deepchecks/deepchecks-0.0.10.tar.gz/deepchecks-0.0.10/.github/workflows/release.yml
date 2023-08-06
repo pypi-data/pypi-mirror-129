@@ -1,0 +1,63 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  Create-Release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: "Upload Package"
+      run: |
+        TAG=$(echo -n "${{ github.event.ref }}" | cut -d '/' -f3)
+        make release version=$TAG
+      env:
+        TWINE_REPOSITORY_URL: ${{ secrets.REPOSITORY_URL }}
+        TWINE_USERNAME: ${{ secrets.REPOSITORY_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.REPOSITORY_PASSWORD }}
+
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        files: |
+          dist/*.whl
+          dist/*.tar.gz
+          LICENSE
+
+  Update-Docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - uses: webfactory/ssh-agent@v0.5.0
+      with:
+        ssh-private-key: ${{ secrets.GIT_SSH_KEY }}
+    - name: Release to GitHub Pages
+      env:
+        USE_SSH: true
+        GIT_USER: git
+      run: |
+        git config --global user.email "app@deepchecks.com"
+        git config --global user.name "deepchecks-ci-bot"
+        make website
+        cd docs/_website/
+        if [ -e package-lock.json ]; then
+          npm ci
+        else
+          npm i
+        fi
+        npm run deploy
