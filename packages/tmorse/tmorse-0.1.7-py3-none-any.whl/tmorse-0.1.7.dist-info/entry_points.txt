@@ -1,0 +1,3 @@
+[console_scripts]
+tmorse=tmorse.__main__:run
+
