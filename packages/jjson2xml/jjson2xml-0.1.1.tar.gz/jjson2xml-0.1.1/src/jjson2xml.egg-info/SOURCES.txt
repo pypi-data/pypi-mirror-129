@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/jjson2xml/__init__.py
+src/jjson2xml/j2x.py
+src/jjson2xml.egg-info/PKG-INFO
+src/jjson2xml.egg-info/SOURCES.txt
+src/jjson2xml.egg-info/dependency_links.txt
+src/jjson2xml.egg-info/not-zip-safe
+src/jjson2xml.egg-info/top_level.txt
