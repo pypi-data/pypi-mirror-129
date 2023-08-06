@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aws-secrets-manager
+Version: 0.0.1
+Summary: Helper for AWS Secrets Manager
+Home-page: UNKNOWN
+Author: id0
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+UNKNOWN
+

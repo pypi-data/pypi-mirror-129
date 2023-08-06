@@ -1,0 +1,9 @@
+README.md
+setup.py
+aws_secrets_manager/__init__.py
+aws_secrets_manager/manager.py
+aws_secrets_manager.egg-info/PKG-INFO
+aws_secrets_manager.egg-info/SOURCES.txt
+aws_secrets_manager.egg-info/dependency_links.txt
+aws_secrets_manager.egg-info/requires.txt
+aws_secrets_manager.egg-info/top_level.txt
