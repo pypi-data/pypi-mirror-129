@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+education_level_library.egg-info/PKG-INFO
+education_level_library.egg-info/SOURCES.txt
+education_level_library.egg-info/dependency_links.txt
+education_level_library.egg-info/requires.txt
+education_level_library.egg-info/top_level.txt
+majormode/__init__.py
+majormode/education.py
