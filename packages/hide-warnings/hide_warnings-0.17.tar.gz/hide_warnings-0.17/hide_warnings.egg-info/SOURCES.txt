@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+hide_warnings.py
+setup.cfg
+setup.py
+hide_warnings.egg-info/PKG-INFO
+hide_warnings.egg-info/SOURCES.txt
+hide_warnings.egg-info/dependency_links.txt
+hide_warnings.egg-info/requires.txt
+hide_warnings.egg-info/top_level.txt
