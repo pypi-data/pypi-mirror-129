@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: breno-csv-converter
+Version: 0.1.0
+Summary: Convert csv to json and vice versa.
+Author: Breno M L Costa
+Author-email: brenomlomasso@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=8.0.3,<9.0.0)
+Description-Content-Type: text/markdown
+
+
