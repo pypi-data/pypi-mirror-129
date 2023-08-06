@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tsc-auto
+Version: 0.5.1
+Summary: tanshicheng's tools
+Home-page: https://github.com/aitsc
+Author: tanshicheng
+License: GPLv3
+Keywords: tools
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+License-File: LICENSE
+
+
+Auto selector for NVIDIA GPUs and CUDA
+
+Support detection for tensorflow or torch
+
+
