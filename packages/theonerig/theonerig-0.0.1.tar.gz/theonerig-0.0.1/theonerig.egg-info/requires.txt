@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+h5py
+sklearn
+pandas
+seaborn
+sqlalchemy
+colorama
