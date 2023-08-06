@@ -1,0 +1,8 @@
+django_loguru/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_loguru/configs.py,sha256=N0PW6FP2quf8u1Cum5SGWjYAM5-NQGyzT82lnj3ebDg,2417
+django_loguru/middleware.py,sha256=FRiizUrVoO_edNCkeoCqlLO1kApaFl5d8EUH74dq3zk,1415
+django_loguru-1.0.0.dist-info/LICENSE,sha256=LE8ZdXZCO6-1-FzAAlXtmJmAymziACk4VxYbmY1fH2U,1072
+django_loguru-1.0.0.dist-info/METADATA,sha256=OPkpEsNOBDqwludg4rIPHrxBhcE1vFE06y_SSMkk9k8,3066
+django_loguru-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_loguru-1.0.0.dist-info/top_level.txt,sha256=nDnlYWquolLbzWmruIwnA2p7TmrzhnhJzo93fkGRndI,14
+django_loguru-1.0.0.dist-info/RECORD,,
