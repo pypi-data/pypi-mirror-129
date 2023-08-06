@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pip-packaging
+Version: 0.1
+Summary: Pip packaging tutorial package
+Home-page: https://github.com/fnlastname/pip_packaging
+Author: Firstname Lastname
+Author-email: firstname.lastname@somwhere.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Pip packaging process
+
+1 - verify environnent
+
+    python -V
+      Python 2.7.17
+
+    python -m pip --version
+      pip 19.3.1 from /home/jeec6230/.local/lib/python2.7/site-packages/pip (python 2.7)
+
+2 - Install the required packages
+
+    sudo python -m pip install --upgrade pip setuptools wheel
+    sudo python -m pip install tqdm
+    sudo python -m pip install --user --upgrade twine
+
+3 - Create an executable file without extension named as your project name
+
+    touch pip_packaging
+    chmod +x pip_packaging
+
+4 - Edit this file and type in :
+
+    #!/usr/bin/env python
+
+    echo "hey there, this is my first pip package"
+
+5 - Create a setup file setup.py
+
+It will contain all your package metadata information.
+
+    import setuptools
+
+    with open("README.md", "r") as fh:
+        long_description = fh.read()
+
+
+    setuptools.setup(
+        name='pip_packaging',  
+        version='0.1',
+        scripts=['pip_packaging'] ,
+        author="Firstname Lastname",
+        author_email="firstname.lastname@somwhere.org",
+        description="Pip packaging tutorial package",
+        long_description=long_description,
+    long_description_content_type="text/markdown",
+        url="https://github.com/fnlastname/pip_packaging",
+        packages=setuptools.find_packages(),
+        classifiers=[
+            "Programming Language :: Python :: 3",
+            "License :: OSI Approved :: MIT License",
+            "Operating System :: OS Independent",
+        ],
+    )
+
+6 - Compile your package
+
+While in your repository execute the following command :
+
+    python setup.py bdist_wheel
+
+
