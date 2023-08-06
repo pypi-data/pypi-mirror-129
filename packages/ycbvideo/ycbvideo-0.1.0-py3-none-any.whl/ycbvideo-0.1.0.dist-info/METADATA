@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ycbvideo
+Version: 0.1.0
+Summary: A small package to ease working with the YCB-Video dataset
+Home-page: https://github.com/oprb/ycbvideo
+Author: Ole Priebusch
+Author-email: opriebusch@web.de
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/oprb/ycbvideo/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imageio (>=2.10)
+Requires-Dist: numpy (>=1.21)
+
+# ycbvideo
+
+Code for loading and transforming the data from the YCB-Video Dataset.
+
+
