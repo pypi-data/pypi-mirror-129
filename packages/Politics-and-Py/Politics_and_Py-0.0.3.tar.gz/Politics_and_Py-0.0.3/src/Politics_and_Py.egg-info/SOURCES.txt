@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Politics_and_Py.egg-info/PKG-INFO
+src/Politics_and_Py.egg-info/SOURCES.txt
+src/Politics_and_Py.egg-info/dependency_links.txt
+src/Politics_and_Py.egg-info/requires.txt
+src/Politics_and_Py.egg-info/top_level.txt
+src/Politics_and_Python/__init__.py
+src/Politics_and_Python/main.py
