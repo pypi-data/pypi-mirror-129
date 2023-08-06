@@ -1,0 +1,27 @@
+[package]
+name = "snakefusion"
+version = "0.1.0"
+authors = ["Daniël de Kok <me@danieldk.eu>"]
+edition = "2018"
+description = "Finalfusion Python module"
+homepage = "https://github.com/danieldk/snakefusion"
+repository = "https://github.com/danieldk/snakefusion.git"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "snakefusion"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.15.1"
+features = ["extension-module"]
+
+[dependencies]
+itertools = "0.8"
+finalfusion = { git = "https://github.com/finalfusion/finalfusion-rust" }
+ndarray = "0.15"
+numpy = "0.15"
+toml = "0.5"
+
+[package.metadata.maturin]
+requires-dist = ["numpy"]
