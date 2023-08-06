@@ -1,0 +1,208 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_THEACHER_VIEW_PREFIX_PATH" as teacher_prefix %}
+
+{% block storage_block_top %}
+{% include "blocks/includes/unical_storage_check.html" %}
+{% endblock storage_block_top %}
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+
+                            {% include "includes/unical_storage_search_input.html" with id=id %}
+
+                            {% block filters %}
+                            <div class="form-group">
+                                <!-- Department -->
+                                <div class="row">
+                                    <loading-icon
+                                        v-if="is_loading_departments"
+                                        :loader_source="loader_source_departments">
+                                    </loading-icon>
+
+                                    <div class="col-sm" v-else>
+                                        <div>
+                                            <label for="{{ id }}_department_input">
+                                                {% trans "Department" %}
+                                            </label>
+                                            <div class="w-30 mt-5">
+                                                <select id="{{ id }}_department_input"
+                                                        title="{% trans 'Choose an option' %}"
+                                                        name="{{ id }}_department_input"
+                                                        class="form-control"
+                                                        @change="{{ id }}.search()">
+                                                    <option value="">- {% trans 'Choose an option' %} -</option>
+                                                    <option v-for="item in departments"
+                                                            :value="item.DepartmentCod"
+                                                            :selected="item.DepartmentCod == selected_department">
+                                                        [[ item.DepartmentName ]]
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {% endblock filters %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div v-else>
+            <div class="row mb-3" v-for="item in items.results">
+                <div class="col-12">
+                    <!--start card-->
+                    <div class="card-wrapper pb-0">
+                        <div class="card no-after" style="border:1px solid #b71918">
+                            <div class="card-body">
+                                <b>
+                                    [[ item.RLineDescription ]]
+                                </b>
+                                <div class="row" v-if="item.RLineResults">
+                                    <div class="col-12 col-md-auto">
+                                        <span style="white-space: pre-line;">
+                                            [[ item.RLineResults ]]
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row mt-2" v-if="item.Teachers.length > 0 || item.RYear || item.RLineErc2Name">
+                                    <div class="col-12 col-md-auto" v-if="item.RYear">
+                                        <small>
+                                            [[ labels['RYear'] ]] >
+                                            <b>[[ item.RYear ]]</b>
+                                        </small>
+                                    </div>
+                                    <div class="col-12 col-md-auto" v-if="item.Teachers.length > 0">
+                                        <small>
+                                            [[ labels['Teachers'] ]] >
+                                            <b v-for="(teacher, index) in item.Teachers">
+                                                <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ teacher_prefix }}/' + [[ teacher.TeacherID ]] +'/'">
+                                                    [[ teacher.TeacherName ]]
+                                                </a>
+                                                <span v-if="index != item.Teachers.length -1">,&nbsp;</span>
+                                            </b>
+                                        </small>
+                                    </div>
+                                    <div class="col-12 col-md-auto" v-if="item.RLineErc2Name">
+                                        <small>
+                                            [[ labels['RLineErc2Name'] ]] >
+                                            <b>[[ item.RLineErc2Name ]]</b>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+{% block storage_block_bottom %}
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock storage_block_bottom %}
+
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters(keyword=null, value=null) {
+
+    let dict = {}
+
+    if (keyword)
+        dict[keyword] = value
+
+
+    // search
+    let search = document.getElementById('{{ id }}_search')
+    if (search && search.value) dict['search'] = search.value
+
+    {% block researchgroup_filter_input %}
+
+        // department
+        let department = document.getElementById('{{ id }}_department_input')
+        if (department && department.value) dict['department'] = department.value
+
+    {% endblock researchgroup_filter_input %}
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% settings_value "CMS_STORAGE_DEPARTMENTSFILTER_API" as departmentsfilter_api %}
+
+search_dict: {},
+departments: [],
+
+is_loading_departments: true,
+
+loader_source_departments: '{{ departmentsfilter_api }}?lang={{ LANGUAGE_CODE }}',
+
+selected_department: this.getItemFromSession("{{ id }}", 'department'),
+selected_search: this.getItemFromSession("{{ id }}", 'search'),
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+
+    {% block call_researchgroup_on_mounted %}
+        this.callDepartments();
+    {% endblock call_researchgroup_on_mounted %}
+
+this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+{% endblock extra_mounted %}
+
+{% block extra_methods %}
+
+    {% block researchgroup_call_method %}
+    callDepartments() {
+        axios
+            .get(this.loader_source_departments)
+            .then(response => {
+                this.departments = response.data.results;
+                this.is_loading_departments = false
+            })
+    },
+    {% endblock researchgroup_call_method %}
+
+{% endblock extra_methods %}
+</script>

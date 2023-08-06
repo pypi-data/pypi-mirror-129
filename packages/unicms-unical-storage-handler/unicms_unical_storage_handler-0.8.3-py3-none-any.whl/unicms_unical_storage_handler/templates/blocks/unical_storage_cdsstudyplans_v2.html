@@ -1,0 +1,105 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="(initial_items && initial_items.length) || parameters">
+
+        <div class="bd-example-tabs">
+            <div class="row">
+                <div class="col-4 col-md-3">
+                    <div class="nav nav-tabs nav-tabs-vertical nav-tabs-vertical-background"
+                         id="nav-vertical-tab-bg-{{ id }}"
+                         role="tablist"
+                         aria-orientation="vertical">
+                        <a v-for="(item, index) in items.results"
+                           :class="index == 0 ? 'nav-link active' : 'nav-link'"
+                           :id="'nav-vertical-tab-bg-{{ id }}-' + index + '-tab'"
+                           data-toggle="tab"
+                           :href="'#nav-vertical-tab-bg-{{ id }}-' + index"
+                           role="tab"
+                           :aria-controls="'nav-vertical-tab-bg-{{ id }}-' + index"
+                           :aria-selected="index == 0 ? 'true' : 'false'">
+                            [[ item.StudyPlanName ]]
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-8 col-md-9">
+                    <div class="tab-content" id="nav-vertical-tab-bg-{{ id }}Content">
+                        <div v-for="(item, index) in items.results"
+                             :class="index == 0 ? 'tab-pane p-3 fade show active' : 'tab-pane p-3 fade'"
+                             :id="'nav-vertical-tab-bg-{{ id }}-' + index"
+                             role="tabpanel"
+                             :aria-labelledby="'nav-vertical-tab-bg-{{ id }}-' + index">
+
+                            <div v-for="(value, label, index2) in item.StudyActivities"
+                                 :id="'collapseDiv{{ id }}-' + index + '-lft'"
+                                 class="collapse-div collapse-left-icon"
+                                 role="tablist">
+                                <div
+                                     class="collapse-header"
+                                     :id="'heading-{{ id }}-' + index + index2 + '-lft'">
+                                    <button data-toggle="collapse"
+                                            :data-target="'#collapse-{{ id }}-' + index + index2 +'-lft'"
+                                            aria-expanded="false"
+                                            :aria-controls="'collapse-{{ id }}-' + index + index2 +'-lft'">
+                                    {% trans "Year" %}: [[ label ]]
+                                    </button>
+                                </div>
+                                <div :id="'collapse-{{ id }}-' + index + index2 +'-lft'"
+                                     class="collapse"
+                                     role="tabpanel"
+                                     :aria-labelledby="'heading-{{ id }}-' + index + index2 + '-lft'">
+                                    <div class="collapse-body">
+                                        <div class="it-list-wrapper">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">[[ items.labels.StudyActivityName ]]</th>
+                                                  <th scope="col">[[ items.labels.StudyActivitySemester ]]</th>
+                                                  <th scope="col">[[ items.labels.StudyActivityECTS ]]</th>
+                                                  <th scope="col">[[ items.labels.StudyActivitySSD ]]</th>
+                                                  <th scope="col">[[ items.labels.StudyActivityCompulsory ]]</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr v-for="activity in value">
+                                                  <td><a href="#">[[ activity.StudyActivityName ]]</a></td>
+                                                  <td>[[ activity.StudyActivitySemester ]]</td>
+                                                  <td>[[ activity.StudyActivityECTS ]]</td>
+                                                  <td>[[ activity.StudyActivitySSD ]]</td>
+                                                  <td>[[ activity.StudyActivityCompulsory ]]</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock content %}
+
+{% block component %}
+{% endblock component %}

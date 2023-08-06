@@ -1,0 +1,190 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+<div id="{{ id }}">
+
+    <div v-if="(initial_items && initial_items.length) || parameters">
+
+        {% block filters_teacherstudyactivities %}
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+                            <!-- Year & YearFrom & YearTo -->
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="ml-5 mr-5">
+                                            <label for="{{ id }}_year_input">{% trans "Year" %}</label>
+                                            <div class="w-30 mt-5">
+                                                <span class="input-number">
+                                                    <input type="number"
+                                                           id="{{ id }}_year_input"
+                                                           name="{{ id }}_year_input"
+                                                           v-on:keyup.enter="{{ id }}.search()"
+                                                           v-model="selected_year">
+                                                    <button class="input-number-add">
+                                                        <span class="sr-only">{% trans "Increase value" %}</span>
+                                                    </button>
+                                                    <button class="input-number-sub">
+                                                        <span class="sr-only">{% trans "Decrease value" %}</span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="ml-5 mr-5">
+                                            <label for="{{ id }}_year_from_input">{% trans "From" %}</label>
+                                            <div class="w-30 mt-5">
+                                                <span class="input-number">
+                                                    <input type="number"
+                                                           id="{{ id }}_year_from_input"
+                                                           name="{{ id }}_year_from_input"
+                                                           v-on:keyup.enter="{{ id }}.search()"
+                                                           v-model="selected_year_from">
+                                                    <button class="input-number-add">
+                                                        <span class="sr-only">{% trans "Increase value" %}</span>
+                                                    </button>
+                                                    <button class="input-number-sub">
+                                                        <span class="sr-only">{% trans "Decrease value" %}</span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="ml-5 mr-5">
+                                            <label for="{{ id }}_year_to_input">{% trans "To" %}</label>
+                                            <div class="w-30 mt-5">
+                                                <span class="input-number">
+                                                    <input type="number"
+                                                           id="{{ id }}_year_to_input"
+                                                           name="{{ id }}_year_to_input"
+                                                           v-on:keyup.enter="{{ id }}.search()"
+                                                           v-model="selected_year_to">
+                                                    <button class="input-number-add">
+                                                        <span class="sr-only">{% trans "Increase value" %}</span>
+                                                    </button>
+                                                    <button class="input-number-sub">
+                                                        <span class="sr-only">{% trans "Decrease value" %}</span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="w-20 mt-5 ml-5 mr-5">
+                                            {% include "includes/unical_storage_search_button.html" with id=id %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock filters_teacherstudyactivities %}
+
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div class="row" v-else>
+            <div class="table-responsive">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">[[ labels.StudyActivityName ]]</th>
+                            <th scope="col">[[ labels.StudyActivityAA ]]</th>
+                            <th scope="col">[[ labels.StudyActivityCdSName ]]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% get_allowed_website request.get_host as host %}
+                        {% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+                        {% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+                        {% settings_value "CMS_STORAGE_CDS_VIEW_PREFIX_PATH" as cds_prefix %}
+                        {% settings_value "CMS_STORAGE_ACTIVITY_VIEW_PREFIX_PATH" as activity_prefix %}
+                        <tr v-for="item in items.results">
+                            <td>
+                                <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ cds_prefix }}/' + [[ item.StudyActivityRegDidId ]] + '/{{ activity_prefix }}/' + [[ item.StudyActivityID ]] +'/'">
+                                    [[ item.StudyActivityName ]]
+                                    <span v-if="item.StudyActivityCompulsory == 1">*</span>
+                                </a>
+                            </td>
+                            <td>[[ item.StudyActivityAA ]]</td>
+                            <td>
+                                <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ cds_prefix }}/' + [[ item.StudyActivityRegDidId ]] + '/'">
+                                    [[ item.StudyActivityCdSName ]]
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+    </div>
+
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters() {
+    let dict = {};
+
+    // year
+    let year = document.getElementById('{{ id }}_year_input')
+    if (year && year.value) dict['year'] = year.value
+
+    // year_to
+    let year_to = document.getElementById('{{ id }}_year_to_input')
+    if (year_to && year_to.value) dict['yearTo'] = year_to.value
+
+    // year_from
+    let year_from = document.getElementById('{{ id }}_year_from_input')
+    if (year_from && year_from.value) dict['yearFrom'] = year_from.value
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+selected_year: this.getItemFromSession("{{ id }}", 'year'),
+selected_year_from: this.getItemFromSession("{{ id }}", 'yearFrom'),
+selected_year_to: this.getItemFromSession("{{ id }}", 'yearTo'),
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+
+this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+
+{% endblock extra_mounted %}
