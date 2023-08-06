@@ -1,0 +1,3 @@
+[gui_scripts]
+nextlevel = nextlevel.__main__:main
+

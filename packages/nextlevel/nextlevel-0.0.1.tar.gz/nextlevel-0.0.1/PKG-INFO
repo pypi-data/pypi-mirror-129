@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nextlevel
+Version: 0.0.1
+Summary: A future game level editor
+Home-page: http://nextlevel.indiepython.com
+Author: Kennedy Richard
+Author-email: kennedy@kennedyrichard.com
+License: Unlicense
+Project-URL: Source, https://github.com/kennedyrichard/nextlevel
+Project-URL: Bug Tracker, https://github.com/kennedyrichard/nextlevel/issues
+Keywords: gui,desktop,application,pygame,gamedev,games,editor
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Desktop Environment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Next Level: A future game level editor
+
+Visit the [homepage][] to know more about this desktop application. To talk to the author [tweet][] or [email][] him.
+
+[homepage]: http://nextlevel.indiepython.com
+[tweet]: https://twitter.com/KennedyRichard
+[email]: mailto:kennedy@kennedyrichard.com
+
+
