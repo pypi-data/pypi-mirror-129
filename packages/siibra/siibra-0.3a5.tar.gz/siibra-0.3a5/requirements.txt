@@ -1,0 +1,11 @@
+numpy
+requests
+nibabel
+anytree
+appdirs
+scikit-image
+click
+cloud-volume
+memoization
+nilearn
+simple-term-menu
