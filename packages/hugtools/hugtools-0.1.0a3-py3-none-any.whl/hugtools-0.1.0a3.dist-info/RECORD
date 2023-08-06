@@ -1,0 +1,11 @@
+hugtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugtools/_logging.py,sha256=2CTr6bLG1B8gdWK0Gsqtad1vwyW6vXmq3S0UQb0ozd0,62
+hugtools/_version.py,sha256=bfmsOl_p_COPFhF_rCxP9mH6Q219iNreAEkDflG4VMg,80
+hugtools/jupyter/__init__.py,sha256=GV5aJRuO5cgJlj9FMyGCqQh88t4v53bddERrDebs_BU,853
+hugtools/nlp/__init__.py,sha256=Q15f2ek29CJTVQIF8fkElxaW5Tk0z9xmyCVhdCviXtM,2959
+hugtools/profiling.py,sha256=Kp6WHQjs8yd_8HAJzlawyLw5hNZpsB7neg0CmlCjUP8,1886
+hugtools/util.py,sha256=fMmRm6mgbAw_wEtYdyhcUT8LQpyelnhc2gI6z4DjJWk,2290
+hugtools-0.1.0a3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hugtools-0.1.0a3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+hugtools-0.1.0a3.dist-info/METADATA,sha256=I8Ed_eqBSXXfFXGbS6uuvZVcJdTBnu4JmhoWAq6tpbw,508
+hugtools-0.1.0a3.dist-info/RECORD,,
