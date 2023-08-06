@@ -1,0 +1,11 @@
+sqlauth/__init__.py,sha256=kFUcdqWnLlvkSNxVuRqGn-FSsdkM3iFzpoyG_euv8Ag,142
+sqlauth/cli.py,sha256=XBpCmMal38n_8evq_S8lrBg_1FOfxSSW2XzJD7wliCo,399
+sqlauth/set_credentials.py,sha256=pTKnrxTuOs3CsEBL_rzaxFSrf1aoa88nK2uIAd8Ivj8,4249
+sqlauth/sqlauth.py,sha256=uIPpVR4Sgcx_L2pd1B1wgg5vME_P_4IYxXWQVnEMHxw,3967
+sqlauthandle-0.1.0.dist-info/AUTHORS.rst,sha256=qDNhrhvOY_JF4bpdC9k4nlSJlWza6f2-9P_BLpY1PXU,173
+sqlauthandle-0.1.0.dist-info/LICENSE,sha256=dg9N3nBJBMckgCKv6NXmjvExeqyBvv3S--MJmZR5MOo,1082
+sqlauthandle-0.1.0.dist-info/METADATA,sha256=EjHGpXzfMhCkmb_y9WJqQmY2nBDZuZOydm9_Fq_piSw,2089
+sqlauthandle-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+sqlauthandle-0.1.0.dist-info/entry_points.txt,sha256=dohmMn-fuasFv6vCzyV-eajk2cem7h0FQvIW-wvzi2o,46
+sqlauthandle-0.1.0.dist-info/top_level.txt,sha256=rmNFEOkP79X-wPMhbrwVqS18cVRB5GcmVhpa_-KDmog,8
+sqlauthandle-0.1.0.dist-info/RECORD,,

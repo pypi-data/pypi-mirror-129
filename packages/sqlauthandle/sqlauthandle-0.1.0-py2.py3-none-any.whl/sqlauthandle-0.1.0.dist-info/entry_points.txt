@@ -1,0 +1,3 @@
+[console_scripts]
+sqlauth = sqlauth.cli:main
+
