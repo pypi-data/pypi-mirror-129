@@ -1,0 +1,10 @@
+vpack/__init__.py,sha256=5krmLRXHcb5avEqaOLbPdfhbrPfrRqLX6bDpyhSMtzg,115
+vpack/breakpt.py,sha256=9mw4e3k4KMdHTvl_mlNT4PxkbL2cblzdqM_j1_oGHKk,3526
+vpack/reload.py,sha256=1pI7X3zmUEpE4U4smuxJLWAClTICxEQnYv_dL4LNMjU,587
+vpack/sigview.py,sha256=zcqMaCJjgW5JL7hGqo7btu_C1C6xbKl4YFol8XAyExo,3513
+vpack/utils.py,sha256=cLUGztNcalE-6f08lqx-5MwifNzgI512aviMDkXbbFE,355
+vpack-0.0.11.dist-info/LICENSE,sha256=dgb7OPTq_gi61wsrn95D6s9bVNUvC6rjCvBZQY3pYIs,1051
+vpack-0.0.11.dist-info/METADATA,sha256=DuBXiJxTDEsYvbu8Usw7s9r32_TZFc_ZYlh4kUd6Rwc,3823
+vpack-0.0.11.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vpack-0.0.11.dist-info/top_level.txt,sha256=2RvgWhDuYb8D1zoUP3ir67le3gSPLoksmkqEsgo-gxw,6
+vpack-0.0.11.dist-info/RECORD,,
