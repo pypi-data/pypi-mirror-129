@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/gdlib/__init__.py
+src/gdlib.egg-info/PKG-INFO
+src/gdlib.egg-info/SOURCES.txt
+src/gdlib.egg-info/dependency_links.txt
+src/gdlib.egg-info/requires.txt
+src/gdlib.egg-info/top_level.txt

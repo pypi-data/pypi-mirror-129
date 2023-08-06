@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gdlib
+Version: 0.0.0
+Summary: Another opinionated gamedev library for teaching, not for production.
+Home-page: https://gitlab.com/hdm-gamedev/gdlib
+Author: Kai Eckert
+Author-email: eckert@hdm-stuttgart.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GD Lib
+
+This is an opinionated gamedev library that is developed within the Software- and Game Development lecture at Stuttgart Media University.
+
+
