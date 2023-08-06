@@ -1,0 +1,10 @@
+machdi/_Optimize.py,sha256=9v2XECbVrpgQGxCeLA6CRRtcucDKWvO0ChZvtvEpLjI,3238
+machdi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+machdi/evaluation.py,sha256=L6HNlmZhSfPoSzCfpRVezLooBhFx-gbGcD-oh-JyqlA,1164
+machdi/models.py,sha256=9pGEb1HfVktslXdhztILGviHzHyB-S0fVdKFjgtIW0U,4948
+machdi/preprocessing.py,sha256=r5RZGt_G4oB9LgHwvPQ3K4PPzUFHqZnva2o025lO1As,3426
+machdi-0.0.1.4.dev4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+machdi-0.0.1.4.dev4.dist-info/METADATA,sha256=Prnvj2iVZu0pJChsjORU_ysODfqbu_xk62mPXXs5GhM,989
+machdi-0.0.1.4.dev4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+machdi-0.0.1.4.dev4.dist-info/top_level.txt,sha256=rtdWxTzCzQqck8RkKYxDMpSHghMmjJTqe3EhXN1S_o8,7
+machdi-0.0.1.4.dev4.dist-info/RECORD,,
