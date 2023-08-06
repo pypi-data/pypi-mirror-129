@@ -1,0 +1,17 @@
+CHANGELOG.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+SimplePBI.egg-info/PKG-INFO
+SimplePBI.egg-info/SOURCES.txt
+SimplePBI.egg-info/dependency_links.txt
+SimplePBI.egg-info/requires.txt
+SimplePBI.egg-info/top_level.txt
+simplepbi/__init__.py
+simplepbi/admin/__init__.py
+simplepbi/dataflows/__init__.py
+simplepbi/datasets/__init__.py
+simplepbi/groups/__init__.py
+simplepbi/token/__init__.py
+simplepbi/utils/__init__.py
