@@ -1,0 +1,6 @@
+include *.png
+include *.txt
+include .isort.cfg
+include LICENSE
+recursive-include feature_encoders *.yaml
+recursive-exclude docs *
