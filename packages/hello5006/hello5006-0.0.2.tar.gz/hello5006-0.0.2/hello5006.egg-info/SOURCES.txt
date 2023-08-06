@@ -1,0 +1,8 @@
+README.md
+setup.py
+hello5006/__init__.py
+hello5006/hello.py
+hello5006.egg-info/PKG-INFO
+hello5006.egg-info/SOURCES.txt
+hello5006.egg-info/dependency_links.txt
+hello5006.egg-info/top_level.txt
