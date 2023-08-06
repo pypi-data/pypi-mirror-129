@@ -1,0 +1,70 @@
+Modules/_SpriteKit.m:32:9: error: implicit declaration of function 'PyExc_SetString' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+        PyExc_SetString(PyExc_ValueError, "Expecting a 3 tuple of floats");
+        ^
+Modules/_SpriteKit.m:32:9: note: did you mean 'PyErr_SetString'?
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/pyerrors.h:13:18: note: 'PyErr_SetString' declared here
+PyAPI_FUNC(void) PyErr_SetString(
+                 ^
+Modules/_SpriteKit.m:36:45: error: implicit declaration of function 'PySequenceFast_GET_ITEM' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 0), &f1) == -1) {
+                                            ^
+Modules/_SpriteKit.m:36:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 0), &f1) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:40:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 1), &f2) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:44:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 2), &f3) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:50:19: error: redefinition of 'vec' with a different type: 'vector_float3' (aka 'simd_float3') vs 'PyObject *' (aka 'struct _object *')
+    vector_float3 vec = (vector_float3){f1, f2, f3};
+                  ^
+Modules/_SpriteKit.m:21:15: note: previous definition is here
+    PyObject* vec;
+              ^
+Modules/_SpriteKit.m:58:61: error: passing 'PyObject *' (aka 'struct _object *') to parameter of incompatible type 'vector_float3' (aka 'simd_float3')
+                &super, PyObjCSelector_GetSelector(method), vec);
+                                                            ^~~
+Modules/_SpriteKit.m:152:9: error: implicit declaration of function 'PyExc_SetString' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+        PyExc_SetString(PyExc_ValueError, "Expecting a 3 tuple of floats");
+        ^
+Modules/_SpriteKit.m:156:45: error: implicit declaration of function 'PySequenceFast_GET_ITEM' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 0), &f1) == -1) {
+                                            ^
+Modules/_SpriteKit.m:156:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 0), &f1) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:160:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 1), &f2) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:164:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 2), &f3) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:170:19: error: redefinition of 'vec' with a different type: 'vector_float3' (aka 'simd_float3') vs 'PyObject *' (aka 'struct _object *')
+    vector_float3 vec = (vector_float3){f1, f2, f3};
+                  ^
+Modules/_SpriteKit.m:141:15: note: previous definition is here
+    PyObject* vec;
+              ^
+Modules/_SpriteKit.m:178:61: error: passing 'PyObject *' (aka 'struct _object *') to parameter of incompatible type 'vector_float3' (aka 'simd_float3')
+                &super, PyObjCSelector_GetSelector(method), vec);
+                                                            ^~~
+Modules/_SpriteKit.m:240:9: error: implicit declaration of function 'PyExc_SetString' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+        PyExc_SetString(PyExc_ValueError, "Expecting a 3 tuple of floats");
+        ^
+Modules/_SpriteKit.m:244:45: error: implicit declaration of function 'PySequenceFast_GET_ITEM' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 0), &f1) == -1) {
+                                            ^
+Modules/_SpriteKit.m:244:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 0), &f1) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:248:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 1), &f2) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_SpriteKit.m:252:45: error: incompatible integer to pointer conversion passing 'int' to parameter of type 'PyObject *' (aka 'struct _object *') [-Werror,-Wint-conversion]
+    if (PyObjC_PythonToObjC(@encode(float), PySequenceFast_GET_ITEM(vec, 2), &f3) == -1) {
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
