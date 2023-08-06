@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple_async_mq_server
+Version: 0.0.3
+Summary: A simple async message queue server - socket-io wrapper
+Home-page: https://github.com/3520kramer/simple-async-mq-server
+Author: Oliver Kramer
+Author-email: 3520.kramer@gmail.com
+License: MIT
+Download-URL: https://github.com/3520kramer/simple-async-mq-server/archive/v_003.tar.gz
+Keywords: mq,async,server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+
+UNKNOWN
+
