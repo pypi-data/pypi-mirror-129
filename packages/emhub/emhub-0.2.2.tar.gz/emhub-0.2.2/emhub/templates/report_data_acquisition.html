@@ -1,0 +1,110 @@
+
+{% macro title_text(title, text) -%}
+    <div class="col-12"><h3 class="pb-0 mb-0 mt-3">{{ title }}</h3><p>{{ text }}</p></div>
+{%- endmacro %}
+
+<div class="container-fluid dashboard-content">
+
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-8 mb-3">
+                        <img src="https://www.scilifelab.se/wp-content/uploads/2020/09/SciLifeLab_Logotype_Green_POS_large-copy-2048x445.png" width="200px">
+                    </div>
+                    <div class="col-4">
+                        <h3>Experimental Protocol</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row">
+                            {{ title_text('Protocol Number', 'SLL-001') }}
+                            {{ title_text('Issuer', 'Cryo-EM Facility') }}
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        {{ title_text('Title', 'SPA Data Acquisition') }}
+                    </div>
+                    <div class="col-4">
+                        {{ title_text('Version', 'V-0001') }}
+                        {{ title_text('Replaces', '') }}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row">
+                            {{ title_text('Valid From', '2021-11-26') }}
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        {{ title_text('Refers to Protocol', 'sll-0001-SPA Data Acquisition') }}
+                    </div>
+                    <div class="col-4">
+                        {{ title_text('', 'Page 1 of 3') }}
+                    </div>
+                </div>
+
+                <hr/>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="mb-1">Session Details</h3>
+                    </div>
+
+                    <div class="card-body">
+
+
+
+                <div class="table-responsive-sm">
+                    <table class="table table-striped" id="details-table">
+                    <tbody>
+                    <tr>
+                    <td class="left strong">Origin License</td>
+                    <td class="right">$1500,00</td>
+                    </tr>
+                    <tr>
+                    <td class="left">Custom Services</td>
+                    <td class="right">$110,00</td>
+                    </tr>
+                    <tr>
+                    <td class="left">Hosting</td>
+                    <td class="right">$309,00</td>
+                    </tr>
+                    <tr>
+                    <td class="left">Platinum Support</td>
+                    <td class="right">$5.000,00</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    (function(window, document, $, undefined) {
+    "use strict";
+
+    $('#details-table').DataTable();
+
+})(window, document, window.jQuery);
+</script>
