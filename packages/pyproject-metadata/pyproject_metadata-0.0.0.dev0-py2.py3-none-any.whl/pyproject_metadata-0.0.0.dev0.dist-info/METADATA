@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pyproject_metadata
+Version: 0.0.0.dev0
+Summary: A package to load project metadata from pyproject.toml.
+Author-email: Pradyun Gedam <mail@pradyunsg.me>
+Project-URL: Home, https://github.com/pradyunsg/pyproject-metadata
