@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: ${{ matrix.platform }} (${{ matrix.python-version }})
+    runs-on: ${{ matrix.platform }}
+    defaults:
+      run:
+        shell: bash -l {0}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.7, 3.8, 3.9, '3.10']
+        platform: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: tlambert03/setup-qt-libs@v1
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+          mamba-version: "*"
+          channels: conda-forge,defaults
+          channel-priority: true
+
+      - name: Install dependencies
+        run: |
+          mamba install pyopencl pocl
+          sudo apt-get install -y xvfb
+          pip install -U pip wheel
+          pip install -e .[tests]
+
+      - name: Test with xvfb
+        if: runner.os == 'Linux'
+        run: xvfb-run --auto-servernum pytest --cov llspy
+
+      - name: Coverage
+        uses: codecov/codecov-action@v2
+
+  deploy:
+    name: Deploy
+    needs: test
+    if: "success() && startsWith(github.ref, 'refs/tags/')"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: install
+        run: |
+          git tag
+          pip install -U pip
+          pip install -U setuptools setuptools_scm wheel twine build
+          python -m build .
+
+      - name: twine check
+        run: |
+          twine check dist/*
+          ls -lh dist
+
+      - name: Build and publish
+        run: twine upload dist/*
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.TWINE_API_KEY }}
