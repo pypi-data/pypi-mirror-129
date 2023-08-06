@@ -1,0 +1,10 @@
+porter2/__init__.py,sha256=NztGjStpQ7-Wj4RmZTMMhm6jSIhphWq__AzrfaW9HVQ,353
+porter2/surgebase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+porter2/surgebase/_porter2.bz,sha256=1_WkngSYMTbrhf78dj6GlwKJvZrQj1ulYK7gKV4TNe8,810561
+porter2/surgebase/_porter2.h,sha256=CEGaFy8nFYAEdWyHmfRqmZummwjiXFaSL9EyXEaVe1M,1697
+porter2/surgebase/zipper.py,sha256=KxF1K2j4cRlEBdsaTETMyFaPRwCEfFmyzWcrADHoC6s,915
+porter2-0.1.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+porter2-0.1.1.dist-info/METADATA,sha256=sf77UdEKd6bk3ZLzShhAajCded4Rd_1_VBmk0K9IKyM,2448
+porter2-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+porter2-0.1.1.dist-info/top_level.txt,sha256=U4SpstXgwaJ6SYULo6i9QRsh0oe0COQFaau9BCgNI8A,8
+porter2-0.1.1.dist-info/RECORD,,
