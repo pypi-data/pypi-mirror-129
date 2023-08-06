@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+src/femopt.egg-info/PKG-INFO
+src/femopt.egg-info/SOURCES.txt
+src/femopt.egg-info/dependency_links.txt
+src/femopt.egg-info/requires.txt
+src/femopt.egg-info/top_level.txt
