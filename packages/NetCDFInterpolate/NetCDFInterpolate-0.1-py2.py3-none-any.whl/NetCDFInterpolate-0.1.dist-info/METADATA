@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: NetCDFInterpolate
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/joergbuchwald/NetCDFInterpolate
+Author: Jörg Buchwald
+Author-email: joerg.buchwald@ufz.de
+Maintainer: Jörg Buchwald
+Maintainer-email: joerg_buchwald@ufz.de
+License: BSD-3 -  see LICENSE.txt
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+# NetCDFInterpolate
+
+NetCDFInterpolate is a package for interpolating XDMF/HDF5 grid data.
+It can be used e.g., to retrieve time-series data at arbitrary points.
+
+## 0. Installation
+
+You can clone the repository and use pip to install the package or alternatively
+
+```shell
+# pip install [--user] https://github.com/joergbuchwald/NetCDFInterpolate/archive/refs/heads/master.zip
+```
+
+## 1. Documentation for VTUinterface
+
+You can find the documentation under [https://joergbuchwald.github.io/NetCDFInterpolate-doc/](https://joergbuchwald.github.io/NetCDFInterpolate-doc/)
+
+
+
