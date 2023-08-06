@@ -1,0 +1,16 @@
+breath_data/__init__.py,sha256=4raxI0sO5GieTBqrhm2HxMei68cWlZnSeYkBjbFUGtE,80
+breath_data/bd_acess_point/__init__.py,sha256=z4SzgrFWHziSsAK-LM0kO9GTMkCVOgZhcYfn9mvEoPM,33
+breath_data/bd_acess_point/service.py,sha256=oviNtlhM8REdE0FOn24Q1zyWNj3hu2fFA0ApLkIraY4,7519
+breath_data/bd_acess_point/graph_querier/__init__.py,sha256=UX04pgq55IwutRBSt-CESBui_wy-XYUmUgcFaZoAoPY,39
+breath_data/bd_acess_point/graph_querier/graph_querier.py,sha256=KJR-Vgq-FqgsjmZ1xCac0fIz9J672l3UPLtpLF49jUc,1489
+breath_data/bd_acess_point/relational_querier/__init__.py,sha256=mixTVm4n8DCbnryEs__qB1_FOCoiD0CChyzh_NJzI7E,49
+breath_data/bd_acess_point/relational_querier/relational_querier.py,sha256=OOkOcXPaKrjFMbnjZUk4GNzcq3F3e2-9aG8vdGt-tPc,4241
+breath_data/data_workflow/__init__.py,sha256=bA73cLMNxclAWMfgjfEfuzbSrSZcwAP5OvWjbaw0gyU,32
+breath_data/data_workflow/ibge.py,sha256=EMxVHrZu0DmZGhUp0cWGq-gncPJ2nA3olfRU-6R77j8,228
+breath_data/data_workflow/main.py,sha256=e7fLOWw6njqSQAxVSZdVHT0soxA22heKHpBKVkDBgSI,3797
+breath_data/data_workflow/open_sus.py,sha256=Wpl4QutAO08a4MaXAy02z4Ynn4P9_0d-JwsVHr3EqQA,1896
+breath_data/data_workflow/service.py,sha256=WMuQHRBTZWAFFEBgApM6j6zUKJSqg_YUXPUVGhXOTbw,5337
+breath_data-0.0.1.dist-info/METADATA,sha256=wANVO2JsglshoAg9sKD_VKzCOkzgtB8gflpySEmCil8,1155
+breath_data-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+breath_data-0.0.1.dist-info/top_level.txt,sha256=7EklPjKD3Hgc6Ih6-2YNOUQ_1CRo95leowbmuoUbHOU,12
+breath_data-0.0.1.dist-info/RECORD,,
