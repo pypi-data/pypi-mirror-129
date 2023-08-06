@@ -1,0 +1,3 @@
+[console_scripts]
+bcf-extras = bcf_extras.entry:main
+
