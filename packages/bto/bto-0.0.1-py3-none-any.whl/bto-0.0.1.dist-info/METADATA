@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bto
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Divinemonk
+Author-email: <v1b7rc8eb@relay.firefox.com>
+License: UNKNOWN
+Keywords: python,bytes,divinemonk,memory,cli,kb,mb,gb,size convertion
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: rich
+Requires-Dist: termcolor
+
+UNKNOWN
+
+
