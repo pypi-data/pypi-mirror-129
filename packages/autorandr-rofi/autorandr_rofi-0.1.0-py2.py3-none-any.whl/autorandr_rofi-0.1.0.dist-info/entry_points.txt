@@ -1,0 +1,3 @@
+[console_scripts]
+autorandr-rofi=autorandr_rofi:main
+
