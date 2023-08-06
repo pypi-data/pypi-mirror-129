@@ -1,0 +1,17 @@
+Bonjour {{contact.firstname|safe}} {{contact.name|safe}} !
+
+Ta demande à rejoindre le réseau a bien été prise en compte. Nous allons revenir vers toi dans les 48h.
+
+Voici les informations que tu nous a transmises : 
+
+Ton prénom : {{contact.firstname|safe}} 
+Ton nom : {{contact.name|safe}}
+Ta ville : {{contact.city|safe}}
+Ton e-mail : {{contact.email|safe}}
+Ton téléphone : {{contact.phone|safe}}
+
+Tes données ne sont utilisées par HUBL que dans le cadre de votre demande présente et ne seront en aucun cas transmises à des tiers. Elles sont conservées par HUBL pendant une durée de 6 mois. Si tu souhaites y avoir accès, les rectifier ou encore en demander l'effacement, nous t'invitons à nous contacter à cette adresse contact@hubl.world
+
+Merci pour ta confiance,
+
+Cyril pour la team HUBL 
