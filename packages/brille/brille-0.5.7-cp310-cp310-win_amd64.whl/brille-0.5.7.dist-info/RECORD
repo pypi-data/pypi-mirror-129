@@ -1,0 +1,13 @@
+brille/plotting.py,sha256=sdKMEJ1RllrnDKGkSRR1VzFbwT0nj6y60xw9JK-WqSo,21914
+brille/utils.py,sha256=7FHNrk-iaK7rlYryd67XH1nc3X-AFTOvd531voLamcM,13572
+brille/_brille.cp310-win_amd64.pyd,sha256=BRlgbG3c4lWknT6j6whgl_QW_9Q_038HLNepR25w-lA,2284544
+brille/__init__.py,sha256=Vwom_u_bJiRqOUSG5sxaEUWXHlstFb8wbsGN3O9zbhc,3205
+brille-0.5.7.dist-info/COPYING,sha256=Sqk6nYDwo19ZDNLKIZFN_nQKApstcNtIMDwTehofesU,34557
+brille-0.5.7.dist-info/DELVEWHEEL,sha256=OsBpPqFW_BA_69emBEnZC2U3gWtnhn30Pvv3GhFA_ak,8
+brille-0.5.7.dist-info/METADATA,sha256=xnuTT1N6JDPYgKpF8dCV3_pGr2YUM_vWaPQMBsPm2mE,3226
+brille-0.5.7.dist-info/RECORD,,
+brille-0.5.7.dist-info/top_level.txt,sha256=-M8-VE2QuPFYuMLLsbCSZmfK6W9HEWn1tj58duE86b4,7
+brille-0.5.7.dist-info/WHEEL,sha256=C6CHup2HLC2Rld8AL5u9w89MYULjdaP5k0k7SG83CcI,102
+brille.libs/.load-order-brille-0.5.7,sha256=kHxHR6_cJVySPoFEceYUF8rDmTh1EyzVUagJ7kw4ZSU,28
+brille.libs/msvcp140.dll,sha256=qBAokdBrXyHDXGfkqybrhPVEBbZ-Z-r3Xa3GLO8ItVo,567688
+brille.libs/vcomp140.dll,sha256=8z1zk70n3jgNKaP-VbBbnrraVjVdvNk52d60dzBTh8o,180624
