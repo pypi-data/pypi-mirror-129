@@ -1,0 +1,6 @@
+pytailer/__init__.py,sha256=_ZYqA3Rpcn4kCMvcq5gUcH4kiXktwGAX3Z6j8p1aY5w,93
+pytailer/async_core.py,sha256=hTAEC6uNQtdrN2ehRj6nldJdWlvk3E3-UDi0aQUJ208,745
+pytailer/core.py,sha256=hyz1U9zI9ytLKHT-7TmlIB5UiXuMe4JR3J2mY2lUip0,3939
+pytailer-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytailer-0.1.0.dist-info/METADATA,sha256=zFnuywBfQ4FMA-SHffoWarkiOiWpwP0DTQXRkQaYPtI,1315
+pytailer-0.1.0.dist-info/RECORD,,
