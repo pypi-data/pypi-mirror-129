@@ -1,0 +1,11 @@
+Modules/objc/python-method.m:85:85: error: passing 'PyObject' (aka 'struct _object') to parameter of incompatible type 'PyObject *' (aka 'struct _object *'); take the address with &
+    return PyObject_Vectorcall(((PyObjCPythonMethod*)self)->callable, args, nargsf, kwnames);
+                                                                                    ^~~~~~~
+                                                                                    &
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/cpython/abstract.h:120:47: note: passing argument to parameter 'kwnames' here
+                     size_t nargsf, PyObject *kwnames)
+                                              ^
+Modules/objc/python-method.m:108:24: error: incompatible function pointer types assigning to 'vectorcallfunc' (aka 'struct _object *(*)(struct _object *, struct _object *const *, unsigned long, struct _object *)') from 'PyObject *(PyObject *, PyObject *const *, size_t, PyObject)' (aka 'struct _object *(struct _object *, struct _object *const *, unsigned long, struct _object)') [-Werror,-Wincompatible-function-pointer-types]
+    result->vectorcall = meth_vectorcall;
+                       ^ ~~~~~~~~~~~~~~~
+

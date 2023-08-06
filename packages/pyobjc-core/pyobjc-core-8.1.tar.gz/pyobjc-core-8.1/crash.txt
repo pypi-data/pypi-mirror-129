@@ -1,0 +1,10 @@
+Thread 0 Crashed::  Dispatch queue: com.apple.main-thread
+0   _objc.cpython-310-darwin.so   	       0x10d420792 PyObjCBlock_GetSignature + 98 (block_support.m:79)
+1   _objc.cpython-310-darwin.so   	       0x10d4496bd PyObjCFFI_BuildResult_Simple + 317 (libffi_support.m:3970)
+2   _objc.cpython-310-darwin.so   	       0x10d44bd70 PyObjCFFI_Caller_SimpleSEL + 1984 (libffi_support.m:4786)
+3   _objc.cpython-310-darwin.so   	       0x10d477d63 objcsel_vectorcall_simple + 1011 (selector.m:540)
+4   Python                        	       0x10c780ab0 call_function + 176
+5   Python                        	       0x10c778330 _PyEval_EvalFrameDefault + 24976
+6   Python                        	       0x10c7708c3 _PyEval_Vector + 387
+7   Python                        	       0x10c6459ee method_vectorcall + 158
+
