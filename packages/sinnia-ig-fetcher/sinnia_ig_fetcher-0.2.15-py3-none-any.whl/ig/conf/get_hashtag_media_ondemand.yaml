@@ -1,0 +1,66 @@
+
+graph_api:
+  host:           'https://graph.facebook.com/v11.0'
+  id_path:        '/ig_hashtag_search?user_id={user_id}&q={hashtag}'
+  top_path:       '/{hashtag_id}/top_media?user_id={user_id}&fields=id,timestamp,caption,media_type,permalink,media_url,comments_count,like_count&limit=50'
+  recent_path:    '/{hashtag_id}/recent_media?user_id={user_id}&fields=id,timestamp,caption,media_type,permalink,media_url,comments_count,like_count&limit=50'
+
+
+queries:
+  get_hashtags: |  
+    SELECT h.instagram_id, h.hashtag, h.hashtag_id, ua.access_token
+    FROM Clients c 
+    JOIN UserAuthsInClient uac ON c.id = uac.client_id
+    JOIN UsersAuth ua ON ua.instagram_id = uac.instagram_id
+    JOIN Hashtags h ON h.instagram_id = ua.instagram_id
+    WHERE ua.data_access_until > CURRENT_TIMESTAMP()
+    AND ua.instagram_id IS NOT NULL 
+    AND c.service_level != "DEACTIVATED"
+    AND uac.active = 1 
+    AND ua.active = 1 
+    AND h.active = 1
+    AND h.hashtag IN ('viviresincreible')
+            
+  insert_media: |
+    INSERT INTO Media (id, user_id, created_at, fetched_at, type,
+                       caption, url, likes_count, comments_count, image)
+    VALUES ('{id}', {user_id}, '{created_at}', '{fetched_at}', '{type}',
+            '{caption}', '{url}', {likes_count}, {comments_count}, '{image}')
+    ON DUPLICATE KEY UPDATE
+            created_at = '{created_at}',
+            fetched_at = '{fetched_at}',
+            likes_count = {likes_count}, 
+            comments_count = {comments_count},
+            image = '{image}'
+
+  get_last_media: |
+    SELECT media_id FROM HashTagsInMedia hm JOIN Media m ON m.id = hm.media_id
+    WHERE lower_hashtag = '{hashtag}'
+    ORDER BY m.created_at DESC LIMIT 1
+
+  get_last_media_after: |
+    SELECT media_id FROM HashTagsInMedia hm JOIN Media m ON m.id = hm.media_id
+    WHERE lower_hashtag = '{hashtag}'
+    AND m.created_at < '{date_limit}'
+    ORDER BY m.created_at DESC LIMIT 1
+    
+  insert_ht: |
+    INSERT INTO HashTagsInMedia 
+      (media_id, hashtag, lower_hashtag, created_at)
+    VALUES
+      ('{media_id}', '{hashtag}', '{lower_hashtag}', '{created_at}')
+    ON DUPLICATE KEY UPDATE
+      created_at = '{created_at}'
+
+  update_ht: |
+    UPDATE Hashtags SET hashtag_id = {hashtag_id}  WHERE hashtag = '{hashtag}'
+
+    
+db_config:
+  ig:
+    host:    'sinnia-db-2-3.ce4bgmsedant.us-east-1.rds.amazonaws.com'
+    db:      'vizgram'
+    user:    'vizgram'
+    passwd:  'vzig6-hanGR'
+    charset: 'utf8mb4' 
+  
