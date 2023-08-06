@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+install.sh
+package.json
+pyproject.toml
+setup.py
+roundtrip/__init__.py
+roundtrip/manager.py
+roundtrip/roundtrip.js
+roundtrip/version.py
+roundtrip_lib.egg-info/PKG-INFO
+roundtrip_lib.egg-info/SOURCES.txt
+roundtrip_lib.egg-info/dependency_links.txt
+roundtrip_lib.egg-info/requires.txt
+roundtrip_lib.egg-info/top_level.txt
