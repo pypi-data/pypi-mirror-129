@@ -1,0 +1,5 @@
+setuptools
+pycryptodome==3.11.0
+pymongo==3.12.1
+requests==2.26.0
+PyYAML==6.0
