@@ -1,0 +1,209 @@
+#!python
+
+import asyncio
+import yaml
+import sys
+import logging
+import glob
+
+from minici.observers import FileObserver
+from minici.observers import ProcessObserver
+from minici.executors import ProcessExecutor
+
+USAGE = """
+Usage:
+$ minici <config_file>
+
+    config_file:    A configuration for minici in yaml format (see example below).
+
+Below is an example configuration to trigger a compile process as soon
+the file 'helloworld.cpp' changes. If the compile process finishes
+without errors (return code = 0), the executable 'helloworld' will
+be executed afterwards.
+
+Available triggers:
+- files: 'on_modify_trigger'
+- processes: 'on_done_trigger', 'on_success_trigger', 'on_fail_trigger'
+
+Triggers of files or processes trigger any process when the name of a
+'on_*_trigger' field matches with the name of a 'trigger_signal' field.
+
+example config_file:
+#minici-config.yml
+observers:
+    - files:
+        - helloworld.cpp
+      on_modify_triggers:
+        - compile_helloworld
+
+    - file: helloworld2.cpp
+      on_modify_trigger: compile_helloworld2
+
+processes:
+    - trigger_signals:
+        - compile_helloworld
+      command: g++ helloworld.cpp -o helloworld
+      on_success_triggers:
+        - execute_helloworld
+
+    - trigger_signal: compile_helloworld2
+      command: g++ helloworld2.cpp -o helloworld
+
+    - trigger_signals:
+        - execute_helloworld
+      command: ./helloworld
+"""
+
+
+class MiniCIFactory(object):
+    def __init__(self):
+        self.logger = logging.getLogger(self.__class__.__name__)
+        self.logger.setLevel(logging.INFO)
+        self.config = None
+        self.observers = []
+        self.executors = []
+
+    @staticmethod
+    def getTriggerKeys(trigger):
+        trigger_keys = [
+            "on_{}_trigger".format(trigger),
+            "on_{}_triggers".format(trigger),
+        ]
+        return trigger_keys
+
+    def parseConfigFile(self, config_file):
+        with open(config_file, "r") as file_:
+            self.config = yaml.safe_load(file_)
+        self.logger.info("Loaded {}".format(config_file))
+
+    def create(self):
+        ## create all observable classes ##
+        self.logger.info("Create Executors")
+
+        # executors can be observed
+        process_executors = self.config["processes"]
+        for process_executor in process_executors:
+            command = process_executor["command"]
+            executor = ProcessExecutor(command)
+            process_executor["executor"] = executor
+            self.executors.append(executor)
+
+        ## create all observers ##
+        self.logger.info("Create Observers")
+
+        # file observers
+        file_observers = self.config["observers"]
+        for file_observer in file_observers:
+
+            file_observer_files = []
+            for key in ["file", "files"]:
+                file_observer_files_part = file_observer.get(key, None)
+                if file_observer_files_part is not None:
+                    if not isinstance(file_observer_files_part, list):
+                        file_observer_files_part = [file_observer_files_part]
+                    file_observer_files += file_observer_files_part
+
+            files = []
+            for entry in file_observer_files:
+                files += glob.glob(entry, recursive=True)
+
+            for file_ in files:
+                observer = FileObserver(file_)
+
+                for callback_trigger in ["modify"]:
+
+                    trigger_signals = []
+                    for key in self.getTriggerKeys(callback_trigger):
+
+                        trigger_signals_part = file_observer.get(key, None)
+                        if trigger_signals_part is not None:
+                            if not isinstance(trigger_signals_part, list):
+                                trigger_signals_part = [trigger_signals_part]
+                            trigger_signals += trigger_signals_part
+
+                    for trigger_signal in trigger_signals:
+                        observer.addCallbackTrigger(trigger_signal, callback_trigger)
+
+                file_observer["observer"] = observer
+                self.observers.append(observer)
+
+        # process observers
+        process_observers = self.config["processes"]
+        for process_observer in process_observers:
+
+            trigger_signals = []
+            for key in ["trigger_signal", "trigger_signals"]:
+                trigger_signals_part = process_observer.get(key, None)
+                if trigger_signals_part is not None:
+                    if not isinstance(trigger_signals_part, list):
+                        trigger_signals_part = [trigger_signals_part]
+                    trigger_signals += trigger_signals_part
+
+            for trigger_signal in trigger_signals:
+                observer = ProcessObserver(process_observer["executor"])
+                for callback_trigger in ["success", "fail", "done"]:
+
+                    trigger_signals_out = []
+                    for key in self.getTriggerKeys(callback_trigger):
+
+                        trigger_signals_out_part = process_observer.get(key, None)
+                        if not isinstance(trigger_signals_out_part, list):
+                            trigger_signals_out_part = [trigger_signals_out_part]
+                        trigger_signals_out += trigger_signals_out_part
+
+                    for trigger_signal_out in trigger_signals_out:
+                        observer.addCallbackTrigger(
+                            trigger_signal_out, callback_trigger
+                        )
+
+                process_observer["observer"] = observer
+                self.observers.append(observer)
+
+        ## connect all executors to observers by callbacks
+        self.logger.info("Connect Observers and Executors with trigger signals")
+
+        process_executors = self.config["processes"]
+        for process_executor in process_executors:
+            executor = process_executor["executor"]
+
+            trigger_signals = []
+            for key in ["trigger_signal", "trigger_signals"]:
+                trigger_signals_part = process_executor.get(key, None)
+                if trigger_signals_part is not None:
+                    if not isinstance(trigger_signals_part, list):
+                        trigger_signals_part = [trigger_signals_part]
+                    trigger_signals += trigger_signals_part
+
+            for trigger_signal in trigger_signals:
+                for observer in self.observers:
+                    if trigger_signal in observer.callback_triggers.keys():
+                        for callback_trigger in observer.callback_triggers[
+                            trigger_signal
+                        ]:
+                            observer.addCallbacks(callback_trigger, [executor])
+                        self.logger.debug(
+                            "Connected trigger_signal '{}'".format(trigger_signal)
+                        )
+
+        self.logger.info("Observers and Executors initialized")
+
+    async def run(self):
+        self.logger.info("Start Observers")
+        await asyncio.gather(*[observer.observe() for observer in self.observers])
+
+
+async def async_main(config_file):
+    minici_factory = MiniCIFactory()
+    minici_factory.parseConfigFile(config_file)
+    minici_factory.create()
+    await minici_factory.run()
+
+
+if __name__ == "__main__":
+    logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.INFO)
+    try:
+        config_file = sys.argv[1]
+        asyncio.run(async_main(config_file))
+    except:
+        print(USAGE)
+        raise
