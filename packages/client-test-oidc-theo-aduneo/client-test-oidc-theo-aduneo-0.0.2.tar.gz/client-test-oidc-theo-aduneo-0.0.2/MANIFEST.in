@@ -1,0 +1,3 @@
+graft src\clientOIDCAduneo\static
+graft src\clientOIDCAduneo\templates
+graft src\clientOIDCAduneo\conf

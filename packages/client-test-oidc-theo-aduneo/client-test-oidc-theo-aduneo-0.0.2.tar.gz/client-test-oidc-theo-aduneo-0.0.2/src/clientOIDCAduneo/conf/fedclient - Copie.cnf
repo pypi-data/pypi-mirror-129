@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "key": "fedclient.key"
+  },
+  "server": {
+    "host": "localhost",
+    "port": "443",
+    "ssl": "on",
+    "ssl_key_file": "_localhost.key",
+    "ssl_cert_file": "_localhost.crt"
+  },
+  "oidc_clients": {
+    "azureadaduneo": {
+      "name": "Azure AD Aduneo",
+      "discovery_uri": "https://login.microsoftonline.com/b20a2822-5260-4ea7-b000-c17131389b33/v2.0/.well-known/openid-configuration",
+      "client_id": "fd720de3-302d-4f2f-97f8-9f78d05f46cf",
+      "client_secret!": "{Fernet}gAAAAABhLioqwXgs0T1pTEQkQlL_lfle8CejOvUIKIXZv81XTNyGVdciwu1DaUaswO-wfHye4NS9pu6fgbdnM1eqvPwHFyEWEJhgDYo_LWeXnIbtGADbJSKLKLxyjZs0XvXLFj3wV4mV",
+      "scope": "openid email",
+      "response_type": "code",
+      "redirect_uri": "https://localhost/oidc/client/callback",
+      "fetch_userinfo": "on",
+      "endpoint_configuration": "Discovery URI",
+      "authorization_endpoint": "",
+      "token_endpoint": "",
+      "userinfo_endpoint": "",
+      "signature_key_configuration": "JWKS URI",
+      "jwks_uri": "",
+      "signature_key": ""
+    },
+    "okta": {
+      "name": "okta",
+      "endpoint_configuration": "Discovery URI",
+      "discovery_uri": "https://aduneo.okta.com/.well-known/openid-configuration",
+      "signature_key_configuration": "JWKS URI",
+      "client_id": "0oap9dz4wZY1Ti5Fc356",
+      "client_secret!": "{Fernet}gAAAAABhLioqMOnIMTy8cV7A4r2QBRU9QOaTVdJSVHTiMhXX5wKQrwp381qKbRTkDY_HHkM5D3jJY8d4_drLpWsGuFUiLU89nzjM72FrOD-5Arh-jfx3Vmo7N0eq0AGrTfeNkWww26e1",
+      "scope": "openid email",
+      "response_type": "code",
+      "fetch_userinfo": "on"
+    },
+    "franceconnectneuillydev": {
+      "name": "France Connect Neuilly dev",
+      "endpoint_configuration": "Local configuration",
+      "authorization_endpoint": "https://fcp.integ01.dev-franceconnect.fr/api/v1/authorize",
+      "signature_key_configuration": "Local configuration",
+      "client_id": "5e7db9ee631d58f05e1499836b43eb2d10eb3b4dd445111a8ea1a5ffd2355838",
+      "client_secret!": "{Fernet}gAAAAABhLioqu7tJ4aY9apoU0IRf5V3jXbPbN5rwPfXQ5R_cuaXoSlONud2pcjReBqrCXKVsSWf5ryEqzHX16No0ndboc2Z6sG6qXYISavcGRB9gN4ya1kd62Nt5VwCoe7DJMfsn0ysHgENincT9r7mi-cnG112OJXbAeDR356Ed5Y7gIy2yMB0=",
+      "scope": "openid email",
+      "response_type": "code",
+      "fetch_userinfo": "off",
+      "token_endpoint": "https://fcp.integ01.dev-franceconnect.fr/api/v1/token",
+      "issuer": "https://fcp.integ01.dev-franceconnect.fr/"
+    },
+    "idphub": {
+      "name": "IdpHub",
+      "endpoint_configuration": "Local configuration",
+      "authorization_endpoint": "http://localhost:5000/oidc/op/authorization_endpoint",
+      "signature_key_configuration": "JWKS URI",
+      "client_id": "testsp",
+      "client_secret!": "{Fernet}gAAAAABhLioq8mtpf1hTpt204adtKGG0jnP0SgXU67JecCo-4O4J_HOdBKfG-m5ZqhXP9wZJz6-FpXAJvDtIHfC4NU-X6LIO0A==",
+      "scope": "openid email",
+      "response_type": "code",
+      "fetch_userinfo": "off",
+      "token_endpoint": "http://localhost:5000/oidc/op/token_endpoint",
+      "issuer": "https://idphub.com",
+      "jwks_uri": "http://localhost:5000/oidc/op/jwks"
+    },
+    "jitsiovh": {
+      "name": "Jitsi OVH",
+      "endpoint_configuration": "Discovery URI",
+      "discovery_uri": "https://152.228.212.33:8443/auth/realms/Cnam/.well-known/openid-configuration",
+      "signature_key_configuration": "JWKS URI",
+      "client_id": "FederationTest",
+      "scope": "openid email",
+      "response_type": "code",
+      "fetch_userinfo": "off",
+      "client_secret!": "{Fernet}gAAAAABhLioqng9U7VSMzy7RI_BrVTi18asuFVi-TH9reMPfYaiH5Y3u34W7WW8oQWqGCzzS1aH2FZpu191l628lGODhNr3b9oOLKNBFw42242vtsENSnVbIoPUW_5sbKNzvgxpRjeQn"
+    },
+    "keycloakaduneo": {
+      "name": "Keycloak  Aduneo",
+      "endpoint_configuration": "Local configuration",
+      "discovery_uri": "http://vm0115.maq.aduneo.com:8080/auth/realms/Aduneo/.well-known/openid-configuration",
+      "signature_key_configuration": "Local configuration",
+      "client_id": "MarcTest",
+      "client_secret!": "{Fernet}gAAAAABhLioqGSTwMm4aDwoR39-r_8IeVX8ODLV7INylEQYHmdwMEnU-GXipJwfeg-usCeDX1unDePhK63zcz8UhFHXJXmhAJdtFgpgm7T1KgJxwPkdK3LOhmc1Q2DOBHcWGn3oGVwE-",
+      "scope": "openid profile",
+      "response_type": "code",
+      "fetch_userinfo": "off",
+      "issuer": "http://vm0115.maq.aduneo.com:8080/auth/realms/Aduneo",
+      "authorization_endpoint": "http://vm0115.maq.aduneo.com:8080/auth/realms/Aduneo/protocol/openid-connect/auth",
+      "token_endpoint": "http://vm0115.maq.aduneo.com:8080/auth/realms/Aduneo/protocol/openid-connect/token",
+      "signature_key": "{\"alg\": \"HS265\", \"kty\": \"oct\", \"use\": \"sig\", \"k\": \"IZzuJF3aDAYwjF7xUzguh8J89zLITMRNA6iCfIYzMk7Ay2ZX2IUxIT5Fkd0TqtRg9dII9eynUVjJAKc71ousrg\"}"
+    }
+  },
+  "saml_clients": {
+    "samlokta": {
+      "name": "SAML Okta SP",
+      "idp_entity_id": "http://www.okta.com/exk7ygvp92Eup9h7k357",
+      "idp_certificate": "MIIDnDCCAoSgAwIBAgIGAWtBjwurMA0GCSqGSIb3DQEBCwUAMIGOMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxDzANBgNVBAMMBmFkdW5lbzEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0xOTA2MTAxMzIyNDJaFw0yOTA2MTAxMzIzNDJaMIGOMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxDzANBgNVBAMMBmFkdW5lbzEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAItKHxC0wySzWuF0Vdp5LYfjDEM6NcmaOQ9RXFBL25aZR7/O9Z6hXfjshUXW6NIQIgTOLslhJbiiQCDGuzne6zonZ9F5eGx0J+dNuiMFRbEFZKwX8lwHsmVvCN+W5aVPFrGLQZ9zMLyLGF8qBz67bom0wnBFQpyToweuHl8GIUE8d0O+wBhsP7PsXsUplLeDep78l5B4LtQ8CfvUizveBu+yTYKMS4/zYw9mgzBuWFZ/CqOkWs14wPi0aFg/aPWKAkqWbbKSlq+9wlKp+FMAGfUqF3KTalcJNbENs8M9t8EzzxPssA2sGQZhDpv/rmM7b4y7QSsny6lmU7ncolrU5n0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAOd9pwdiJbWThCgHKkItq9sgEFnORhmWcZ6tz+RGk0Z4aJuQZcKUsz/omID4ewhf06u3wyjQxXYZp7h/v044lPevISougc2KM5Z1yW9mDrpL25VJzc7dGodNEYb4LgJtCdeXJkhzG88w+JBP20EVFu1JlSsszSxDeaqwIYvJJxBS/2c4yM554TJoSW4AneTY4h6lEk82I8yECi5ML89gu/mV5ygRuxQ7xtdAFr8GWtYBG6L1FCpxfbGnkgZkytgSEG6BwAVTB9lIyUJMlSbbqKHtqtLh0wGGRD6GO+dXINqSr3ndhu+NiPV8HIRHdwDVN4EUgyKrO7kGhci2sjOV+dg==",
+      "idp_sso_url": "https://aduneo.okta.com/app/aduneo_federationtest_1/exk7ygvp92Eup9h7k357/sso/saml",
+      "idp_slo_url": "https://aduneo.okta.com/app/aduneo_federationtest_1/exk7ygvp92Eup9h7k357/slo/saml",
+      "sp_entity_id": "https://aduneo.com/FedTest/SAML",
+      "sp_acs_url": "https://localhost/saml/client/acs",
+      "sp_key_configuration": "Server keys",
+      "sp_private_key": "",
+      "sp_certificate": "",
+      "nameid_policy": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+      "authentication_binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+      "sign_auth_request": "on",
+      "logout_binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+      "sign_logout_request": "on"
+    },
+    "azureadsaml": {
+      "name": "Azure AD SAML",
+      "idp_entity_id": "https://sts.windows.net/b20a2822-5260-4ea7-b000-c17131389b33/",
+      "idp_certificate": "MIIC8DCCAdigAwIBAgIQNwUNAOhuCYlJ6/2EU7ttcTANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQD\r\nEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0yMTAzMDMwOTU1\r\nNTBaFw0yNDAzMDMwOTU1NDNaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQg\r\nU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwtKv3bCYXFGa\r\nD4GbnpJXq3bLywojqGtGAEqoDo12O82VGXUjZcTtwPHV8zxtWJ/iWW+ybN4pKtCuaGsaY3io05XU\r\nZk95bVl3dBBhReASiJgl2DqVv0M3Z33FCh/yV45owGjGIlQ5nScAwmYfrHR+NCrx1hEyATGMIRfA\r\nNZ8yYE4Tue91zVabfHLHXB8gS3+/guYh7YZJd/Mcj1Rp2+7K1ay5Jua3m4Z2Gy6mwQ/2ak+CKbNd\r\nnUpD2b5/iwfB7pRrP/X56dlp0uGHyIgn++/OBH8gw+oDILlaBK8gxCL6+9bDtcYGpVEWV081spSK\r\ne91zd2hv4aYF/G5bnThPMPPfDQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCRlbhtkDjZ12m6t5/c\r\n7NV6a/hWDmowKih7Q4NDKpVeq9hAuP8jnvGgrJzZIeuVTi/zJzA0edy22GrvzYavUEhxCjRQ+ERV\r\nDASZ1hzFhQS/SR0PWGZh0kjUKqRNdy46yDoggxeFMu+yJJVhyfF66IR9xXS4JI36dGHh4qGh2twV\r\n5f5Li8rMYYaHh8N4uRHigPkbAdBLEDCu4CVuNFtD2SAQ+uEhC/wUUW5FdY8UeJbg7ic2cLEQkIuP\r\nr6oVnc3nxT6lNkt+LWSJwxwKly5zf7mqNKG6GxyOwnv4Qldq0U1irHV6oeUi2QZeW6GdSMQbG6po\r\nIDscODd8T/Hh9VSUxafr",
+      "idp_sso_url": "https://login.microsoftonline.com/b20a2822-5260-4ea7-b000-c17131389b33/saml2",
+      "sp_entity_id": "https://aduneo.com/FedTest/SAML",
+      "sp_acs_url": "https://localhost/saml/client/acs",
+      "authentication_binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+      "logout_binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect",
+      "sign_auth_request": "off",
+      "sign_logout_request": "off",
+      "idp_slo_url": "https://login.microsoftonline.com/b20a2822-5260-4ea7-b000-c17131389b33/saml2",
+      "sp_key_configuration": "Server keys"
+    }
+  }
+}
