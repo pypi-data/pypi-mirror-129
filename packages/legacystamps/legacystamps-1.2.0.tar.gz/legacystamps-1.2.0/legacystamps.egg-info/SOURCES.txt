@@ -1,0 +1,10 @@
+README.md
+setup.py
+legacystamps.egg-info/PKG-INFO
+legacystamps.egg-info/SOURCES.txt
+legacystamps.egg-info/dependency_links.txt
+legacystamps.egg-info/requires.txt
+legacystamps.egg-info/top_level.txt
+src/legacystamps/legacystamps.py
+tests/__init__.py
+tests/test_downloads.py
