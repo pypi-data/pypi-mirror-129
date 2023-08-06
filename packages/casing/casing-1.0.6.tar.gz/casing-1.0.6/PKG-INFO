@@ -1,0 +1,68 @@
+Metadata-Version: 1.1
+Name: casing
+Version: 1.0.6
+Summary: Easy casing nomenclatures management such as camelCase, snake_case and many others!
+Home-page: https://github.com/vincentBenet/casing
+Author: Vincent Bénet
+Author-email: vincent.benet@outlook.fr
+License: UNKNOWN
+Description: 
+            
+        Casing
+        ==========
+        
+        This project aim to manage automatically you casing names of variables.
+        
+        Usage
+        -----------
+        
+        There is 3 functions that you save you time:
+            
+        `casing.analyse` will parse your string.
+        
+            >>> casing.analyze("stringToDetect")
+            >>> ['string', 'to', 'detect']
+            
+        `casing.transform` will transform a string or a list into a casing.
+        
+            >>> casing.transform("stringToDetect", case="snake")
+            >>> "string_to_detect"
+            
+            >>> casing.transform(['string', 'to', 'detect'], case="snake")
+            >>> "string_to_detect"
+        
+        `casing.detect` will detect the casing of a string.
+        
+            >>> casing.detect("string_to_detect")
+            >>> "snake"
+            
+        
+        Options
+        -----------
+        
+        You can switch between all this cases:
+        
+        attachedcase: stringtodetect 
+        attacheduppercase: STRINGTODETECT 
+        camelcase: stringToDetect    
+        dashcase: string-to-detect   
+        dashuppercase: STRING-TO-DETECT   
+        normalcase: string to detect 
+        normaluppercase: STRING TO DETECT 
+        pascalcase: StringToDetect   
+        prettycase: String To Detect 
+        reversedcase: string To Detect    
+        sentencecase: String to detect    
+        snakecase: string_to_detect  
+        snakeuppercase: STRING_TO_DETECT
+            
+            
+Keywords: casing,snake_case,camelCase,case,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
