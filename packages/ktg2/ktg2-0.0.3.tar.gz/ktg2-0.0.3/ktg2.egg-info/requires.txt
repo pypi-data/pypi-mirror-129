@@ -1,0 +1,4 @@
+jsoncodable>=0.1.7
+kcu>=0.0.73
+noraise>=0.0.16
+setuptools>=59.3.0
