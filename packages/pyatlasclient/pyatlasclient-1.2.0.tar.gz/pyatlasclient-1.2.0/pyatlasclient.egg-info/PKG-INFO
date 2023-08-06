@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pyatlasclient
+Version: 1.2.0
+Summary: Apache Atlas Python Client
+Home-page: https://github.com/verdan/pyatlasclient
+Author: Verdan Mahmood
+Author-email: verdan.mahmood@gmail.com
+License: Apache Software License 2.0
+Keywords: atlasclient,pyatlasclient,apache atlas,atlas
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+### This repository is no longer maintained in favour of Official Apache Atlas' python client: <https://pypi.org/project/apache-atlas/>
+
+
+Apache Atlas Client in Python
+-----------------------------
+
+[![image](https://img.shields.io/pypi/v/pyatlasclient.svg)](https://pypi.python.org/pypi/pyatlasclient) [![image](https://img.shields.io/travis/verdan/pyatlasclient.svg)](https://travis-ci.org/verdan/pyatlasclient) [![image](https://coveralls.io/repos/github/verdan/pyatlasclient/badge.svg?branch=master)](https://coveralls.io/github/verdan/pyatlasclient?branch=master) [![Documentation Status](https://readthedocs.org/projects/pyatlasclient/badge/?version=latest)](https://pyatlasclient.readthedocs.io/en/latest/?badge=latest) [![Updates](https://pyup.io/repos/github/verdan/pyatlasclient/shield.svg)](https://pyup.io/repos/github/verdan/pyatlasclient/)
+
+Apache Atlas client in Python. Only compatible with Apache Atlas REST
+API **v2**.
+
+*Based on the awesome work done by Poullet in atlasclient*
+
+-   Free software: Apache Software License 2.0
+-   Documentation: <https://pyatlasclient.readthedocs.io>
+
+### Get started
+
+```python
+    from atlasclient.client import Atlas
+    client = Atlas('<atlas.host>', port=21000, username='admin', password='admin')
+    client.entity_guid("<guid>").status
+    params = {'typeName': 'DataSet', 'attrName': 'name', 'attrValue': 'data', 'offset': '1', 'limit':'10'}
+    search_results = client.search_attribute(**params) 
+    for s in search_results:
+        for e in s.entities:
+            print(e.name)
+            print(e.guid)
+```
+
+### Features
+
+-   Lazy loading: requests are only performed when data are required and
+    not yet available
+-   Leverages Python\'s Data Classes for Glossary.
+-   Resource object relationships: REST API from sub-resources are done
+    transparently for the user, for instance the user does not have to
+    know that it needs to trigger a different REST request for getting
+    the classifications of a specific entity.
+
+### TODO features
+
+-   allow multiprocessing
+-   Implement Caching
+-   Apply Data Classes to all entity types. For now only Glossary
+    endpoints are using it.
+
+### Credits
+
+This package was created with
+[Cookiecutter](https://github.com/audreyr/cookiecutter) and the
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+project template.
+
+
