@@ -1,0 +1,12 @@
+django_permanent_helpers/__init__.py,sha256=cDW3ar1ZS1slsox6D8PzctiAJ8v4lAUeLLG3Y7XcIk0,52
+django_permanent_helpers/admin.py,sha256=IjY2vIHkrcrFjZFqDmrUAgC_zxhQrA3ZDWLMfWGFgbw,4140
+django_permanent_helpers/apps.py,sha256=7Pb1HvtYV1WMVKylKy7GFVZgS3VN5EQKvgIcGZs0MFY,296
+django_permanent_helpers/locale/ru/LC_MESSAGES/django.mo,sha256=yVYTwtlC3ZyjmzbxofjrR0ZOK_4pozJ7zr0HICI8bcg,689
+django_permanent_helpers/locale/ru/LC_MESSAGES/django.po,sha256=ofE9_WPvLMbBrOKz4w7B_wwttAydNUz6ibIBHyLGoGA,1777
+django_permanent_helpers/templates/django_permanent_helpers/restore_selected_confirmation.html,sha256=jEWnUQMIyShtvk__6DDuGy6UOVV2MZlspRj6P54FV84,656
+django_permanent_helpers-1.0.1.dist-info/AUTHORS,sha256=u1cm9Cmz96QJrvwR51crep7BQVjK_jy9A8gXmJkalNE,37
+django_permanent_helpers-1.0.1.dist-info/LICENSE,sha256=CZPlYtPHeGvHL9aVHMypfIZUkaMmq_SWL4VfHXo5QSY,1069
+django_permanent_helpers-1.0.1.dist-info/METADATA,sha256=VXHRsNTw0SQGdZLRm77fr1LJE21BcDAuYDyh_6YdGxE,3687
+django_permanent_helpers-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+django_permanent_helpers-1.0.1.dist-info/top_level.txt,sha256=oqyFEPiPkXPPXw09tmYyy-XB9n03IZz2GHJeHy6Hst4,25
+django_permanent_helpers-1.0.1.dist-info/RECORD,,
