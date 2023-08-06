@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: imptools
+Version: 1.0.0
+Summary: Tools for improving Python imports.
+Home-page: http://github.com/danijar/imptools
+Author: Danijar Hafner
+Author-email: mail@danijar.com
+License: UNKNOWN
+Description: [![PyPI](https://img.shields.io/pypi/v/imptools.svg)](https://pypi.python.org/pypi/imptools/#history)
+        
+        # imptools
+        
+        Tools for improving Python imports.
+        
+        ## Installation
+        
+        ```sh
+        pip3 install imptools
+        ```
+        
+        ## Docs
+        
+        ### `import_from_path()`
+        
+        Import a module from any path on the filesystem.
+        
+        Usually, this would be achieved by adding the parent directory of the module to
+        `sys.path` or the `PYTHONPATH` environment variable. However, this pollutes the
+        import path and can lead to accidentally importing the wrong modules. The
+        function `import_from_path()` avoids this problem by importing a package from a
+        search path without modifying the Python import path.
+        
+        The module can be either a directory containing `__init__.py` or a single file.
+        
+        Relative paths are resolved relative to the source file that calls
+        `import_from_path()`.
+        
+        ```python
+        import imptools
+        
+        imptools.import_from_path(
+            name='my_module',              # Name of the module directory or file.
+            path='../path/to/parent/dir',  # Path or list of paths to search under.
+            notfound='error')              # Raise 'error' or 'ignore' when not found.
+        
+        import my_module
+        ```
+        
+        ### `enable_relative()`
+        
+        Enable relative imports for scripts that are not executed as module.
+        
+        Usually, scripts that are part of a module and use relative imports must be run
+        as python3 -m module.script. However, this requires being in the correct
+        working directory and can be annoying. The `enable_relative()` function allows to
+        execute those scripts normally as python3 script.py.
+        
+        Since PEP 366, this can be achieved by specifying the `__package__` variable in
+        the script and importing the package or making it availble on the Pyhton import
+        path. The `enable_relative()` function hides this behind a simple function that
+        can be imported and called inside the script, before any relativer imports.
+        
+        ```python
+        import imptools
+        
+        imptools.enable_relative()
+        
+        # Relative imports...
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
