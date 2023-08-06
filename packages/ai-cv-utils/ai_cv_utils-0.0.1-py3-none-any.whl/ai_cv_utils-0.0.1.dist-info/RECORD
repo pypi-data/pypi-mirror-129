@@ -1,0 +1,12 @@
+aicv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicv/main.py,sha256=cP7vCOj3Luo-qDfDV25Bd6_rSyPvL2P5VsLLTO0Y5Ow,4801
+aicv/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicv/utils/remove_background.py,sha256=SXEuctkPNSU36KYRlIYmZpH6pcpfiDvQxPvJn8m5fYI,4138
+aicv/utils/separator.py,sha256=QfyLeU1hPFRHmf6ZMMwyms6gxDJj8CB7bFlBTxxShQk,3821
+aicv/utils/yolo_generator.py,sha256=iPQDD_qa5kqGcHINyfx161hdgoPUwg5OaP1yPF_sJAE,8270
+ai_cv_utils-0.0.1.dist-info/LICENSE,sha256=4mFTV0FqnmVjDxrU1vZ42gpg9VnkfHPfMd59ksXb42E,686
+ai_cv_utils-0.0.1.dist-info/METADATA,sha256=UrCSLRy_UanrNic9uDHfjxHYMV8ajeesQpLFZRwXMZU,502
+ai_cv_utils-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+ai_cv_utils-0.0.1.dist-info/entry_points.txt,sha256=S4umBYIA_I6mQ3kw9DyRW6ASQL5MgdutGjv3oG2I42E,59
+ai_cv_utils-0.0.1.dist-info/top_level.txt,sha256=0BWSHZFku7nLmnpa3RnEUnw5Nu5Tvcv_J4Ax4FbcYEA,5
+ai_cv_utils-0.0.1.dist-info/RECORD,,
