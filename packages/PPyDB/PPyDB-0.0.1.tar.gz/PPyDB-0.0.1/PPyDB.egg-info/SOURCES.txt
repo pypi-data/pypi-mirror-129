@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+PPyDB.egg-info/PKG-INFO
+PPyDB.egg-info/SOURCES.txt
+PPyDB.egg-info/dependency_links.txt
+PPyDB.egg-info/top_level.txt
+ppydb/__init__.py
+ppydb/constraints.py
+ppydb/datatypes.py
+ppydb/schema.py
+ppydb/table.py
