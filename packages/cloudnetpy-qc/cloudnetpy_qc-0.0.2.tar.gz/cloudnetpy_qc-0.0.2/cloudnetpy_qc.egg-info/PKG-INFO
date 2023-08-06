@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cloudnetpy-qc
+Version: 0.0.2
+Summary: Quality control routines for CloudnetPy
+Home-page: https://github.com/actris-cloudnet/cloudnetpy-qc
+Author: Finnish Meteorological Institute
+Author-email: actris-cloudnet@fmi.fi
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cloudnetpy-qc
+CloudnetPy quality control
+
+
