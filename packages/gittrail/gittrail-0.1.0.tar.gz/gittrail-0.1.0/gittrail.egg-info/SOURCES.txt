@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gittrail/__init__.py
+gittrail/core.py
+gittrail/exceptions.py
+gittrail/test_core.py
+gittrail/test_helpers.py
+gittrail/test_utils.py
+gittrail/utils.py
+gittrail.egg-info/PKG-INFO
+gittrail.egg-info/SOURCES.txt
+gittrail.egg-info/dependency_links.txt
+gittrail.egg-info/top_level.txt
