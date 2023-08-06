@@ -1,0 +1,1 @@
+export default __webpack_public_path__ + "dio/js/croppie/croppie.min.js";
