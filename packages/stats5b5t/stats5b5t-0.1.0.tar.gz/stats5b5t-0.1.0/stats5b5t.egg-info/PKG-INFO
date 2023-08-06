@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: stats5b5t
+Version: 0.1.0
+Summary: API Wrapper for 5b5t.org
+Home-page: UNKNOWN
+Author: ScobraScope
+License: UNKNOWN
+Keywords: python,api,
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows
+
+Automate and simplify api requests  for 5b5t.org
+
