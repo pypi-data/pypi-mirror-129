@@ -1,0 +1,10 @@
+tapystry/__init__.py,sha256=baZC98e4mMwupbDNxpfPMV7CYyNiYmaQL7xepLaoGPk,329
+tapystry/concurrency.py,sha256=9XV504ZYpB6vKSE-zmtM-OHnnuQYaHjMIOMTSE2BugI,4641
+tapystry/effects.py,sha256=kjAgOOYjnuOiLlRvDZLzBR1yTuqzb0wLhF-ypwC2IXc,4707
+tapystry/main.py,sha256=82mujPac5J_4SEG9xKTCc9hOSc3vtBuUmrU3FnQmb2k,19086
+tapystry/utils.py,sha256=M2JPdMcMaK4GKrj2Db18KQFRG2ks-Kwtzb6vkooLU9c,889
+tapystry-0.4.0.dist-info/LICENSE,sha256=qSSVNP-5HlHVsicoJn3oproOng9s_QeXSXuG3dJxbaA,1080
+tapystry-0.4.0.dist-info/METADATA,sha256=40uBC4Fw6gxiOzl7L2R6ACZ7YRiENPgvSvddQZT97Ho,261
+tapystry-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tapystry-0.4.0.dist-info/top_level.txt,sha256=5kuHOnakgPgPsa8IHd9Wyq04x0Ww8dSzfKLcPy9sHGs,9
+tapystry-0.4.0.dist-info/RECORD,,
