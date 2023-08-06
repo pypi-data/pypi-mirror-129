@@ -1,0 +1,13 @@
+name: xarray-extras-docs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - gcc_linux-64
+  - dask
+  - numba
+  - scipy
+  - sphinx
+  - sphinx_rtd_theme
+  - xarray
