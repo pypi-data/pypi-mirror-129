@@ -1,0 +1,75 @@
+project_name: NengoSPA
+pkg_name: nengo_spa
+repo_name: nengo/nengo-spa
+
+copyright_start: 2013
+
+contributing_rst: {}
+
+contributors_rst: {}
+
+license_rst: {}
+
+manifest_in:
+  global-exclude:
+    - "*.swp" # exclude VIM swp files
+
+travis_yml:
+  python: 3.8
+  global_vars:
+    NUMPY: numpy
+    SCIPY: scipy
+  jobs:
+    - script: static
+    - script: docs
+      dist: focal
+    - script: test
+      python: 3.6
+      env:
+        NUMPY: numpy>=1.10,<1.11
+        SCIPY: scipy>=1.0,<1.1
+      dist: $DIST
+    - script: test
+      python: 3.7
+      dist: $DIST
+    - script: test
+      python: 3.9
+    - script: test-coverage
+    - script: test-coverage-no-scipy
+  pypi_user: __token__
+  deploy_dists:
+    - sdist
+    - bdist_wheel
+
+codecov_yml:
+  abs_target: 90%
+  diff_target: 90%
+
+ci_scripts:
+  - template: static
+    codespell_ignore_words:
+      - ba
+    pip_install:
+      - flake8
+    post_commands:
+      - flake8 -v nengo_spa
+  - template: test
+    pip_install:
+      - $NUMPY
+      - $SCIPY
+  - output_name: test-coverage
+    template: test
+    pip_install:
+      - $NUMPY
+      - $SCIPY
+    coverage: true
+  - output_name: test-coverage-no-scipy
+    template: test
+    pip_install:
+      - $NUMPY
+    coverage: true
+  - template: docs
+    pip_install:
+      - matplotlib
+      - $SCIPY
+  - template: deploy
