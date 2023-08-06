@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: orm-right-version
+Version: 0.1.0
+Summary: 
+Author: TheBatya3
+Author-email: 86134076+TheBatya3@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=21.11b1,<22.0)
