@@ -1,0 +1,9 @@
+cdktf_cdktf_provider_azuread/__init__.py,sha256=cHNb0Ni8ff3X1LFibaFfJxc8IENOKlos0XSv-lPCoFI,1140957
+cdktf_cdktf_provider_azuread/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdktf_cdktf_provider_azuread/_jsii/__init__.py,sha256=7giDuOGKf7n3NQSSp9CQRIcuerHzRcOb-BNURZ9nET8,383
+cdktf_cdktf_provider_azuread/_jsii/provider-azuread@0.1.4.jsii.tgz,sha256=aEdjDSQJ1geq-GOSkafA7RiT6nx7_wG2wtP2DcKacVU,384776
+cdktf_cdktf_provider_azuread-0.1.4.dist-info/LICENSE,sha256=qDABaRGjSKVOib1U8viw2P_96sIK7Puo426784oD9f8,15976
+cdktf_cdktf_provider_azuread-0.1.4.dist-info/METADATA,sha256=fb_DMJ6iAKsQ2vIwhWmUa-1iI0UnLEETjeo4xDk7CGI,3976
+cdktf_cdktf_provider_azuread-0.1.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cdktf_cdktf_provider_azuread-0.1.4.dist-info/top_level.txt,sha256=oxPxOSOTd8mPVHPJz2j-MUTNR0u9lG2S6YDH7Spp060,29
+cdktf_cdktf_provider_azuread-0.1.4.dist-info/RECORD,,
