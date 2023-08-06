@@ -1,0 +1,29 @@
+{% load unicms_templates %}
+
+{% random_id as id %}
+
+{% if collection.get_items %}
+<div id="carousel-{{id}}" class="it-carousel-wrapper owl-carousel">
+    {% for item in collection.get_items %}
+    <div class="item">
+        <img src="{{ item.media.get_media_path }}"
+             title="{{ item.media.title }}"
+             alt="{{ item.media.description }}"
+             class="w-100 h-auto d-block">
+    </div>
+    {% endfor %}
+</div>
+
+
+<script>
+$(document).ready(function() {
+  $("#carousel-{{id}}").owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: true,
+    items: 1,
+    autoHeight: true
+  });
+});
+</script>
+{% endif %}
