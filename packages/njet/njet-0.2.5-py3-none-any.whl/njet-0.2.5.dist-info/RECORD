@@ -1,0 +1,11 @@
+njet/__init__.py,sha256=cdA76rRR6efGEsdJEpILRgurESnwx_jQeCTl0sK2KC0,893
+njet/_version.py,sha256=Xsa3ayOMVkhUWm4t06YeyHE0apjpZefxLH4ylp0CDtU,22
+njet/ad.py,sha256=tR1frE9wa-evUDXwkhupYrWQb2d92NRh6AyBMOnMpLE,11442
+njet/functions.py,sha256=dsApWNrD2qYCgd2MXoq0kuIPZugbbHfdbIJLmM8fiN0,5487
+njet/jet.py,sha256=EmWIRsjbsBetKM3JmYUDsQZR8EpqUoilSFr7DyMXl24,11950
+njet/poly.py,sha256=jh0_GfmE8ozY0jPoTPMCQdRlCCDiP__6pdZIbAx4-es,5423
+njet-0.2.5.dist-info/LICENSE.txt,sha256=j_f4LOp0rTE3W4hX4BOAPFdbjeIHoLez5KuPzPtf5Gw,718
+njet-0.2.5.dist-info/METADATA,sha256=EJQOc5-hrSf6ppObd6IRZ34T3Kd-V3Uwcn8febf1LcI,3574
+njet-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+njet-0.2.5.dist-info/top_level.txt,sha256=E9NKPB7XFbRXJS3ho-vIJN9yzjp4_kbfNumhMLmvEyQ,5
+njet-0.2.5.dist-info/RECORD,,
