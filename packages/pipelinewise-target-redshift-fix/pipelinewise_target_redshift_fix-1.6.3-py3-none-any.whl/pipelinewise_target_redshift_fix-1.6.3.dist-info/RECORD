@@ -1,0 +1,8 @@
+target_redshift/__init__.py,sha256=poSgFinlgEQmewvXQ_qm-nKo09RmZtAsbxbEtT-iEA0,17430
+target_redshift/db_sync.py,sha256=EqZDCE9HYDZr-R9hyP-4-guoOwk_phwUU-tDsvGTCO8,34862
+pipelinewise_target_redshift_fix-1.6.3.dist-info/LICENSE,sha256=jIxGZfKZZKmzBWbYAj3iSoFNi7o87Hp3aowDsnkr0Pw,10409
+pipelinewise_target_redshift_fix-1.6.3.dist-info/METADATA,sha256=VBAbnV_f5UTh9NHDkQRjkWx5wb_pl6O5x1WHwQTT9VI,13634
+pipelinewise_target_redshift_fix-1.6.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pipelinewise_target_redshift_fix-1.6.3.dist-info/entry_points.txt,sha256=Victkw-TLpQzowtQMwJ6J4o4Rzcm5I_LeQcxN9Tx2tQ,82
+pipelinewise_target_redshift_fix-1.6.3.dist-info/top_level.txt,sha256=gF_0cKlmNuP_sxOhVQawya6G1_Awm7GJQ2rmHz8lx48,16
+pipelinewise_target_redshift_fix-1.6.3.dist-info/RECORD,,
