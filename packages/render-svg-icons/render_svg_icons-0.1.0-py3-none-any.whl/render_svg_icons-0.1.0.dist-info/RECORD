@@ -1,0 +1,12 @@
+render_svg_icons/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+render_svg_icons/__init__.py,sha256=a9J5-PylUAvhVdWMbscXkLdx7dWY50EbHFS45ASe-q8,12683
+render_svg_icons/dependencies.py,sha256=04NaYtefH8pvuEsMdkH0rrlzW_L_4xP6P1_vGjpaxmA,2546
+render_svg_icons/output.py,sha256=6ek8a2-2XiaVf1UfCBp6oANZoH6hewn50Jjb6CVd6yM,2330
+render_svg_icons/parse_svg.py,sha256=iZRRGPpvuCpRoRoRYQWcyc3HZ90UrrjnQvDh1Y1petY,5544
+render_svg_icons/png.py,sha256=KVgS_7_zNByR2TRiR9b4GbHjtdot5_ubvhDWvGUtkts,1083
+render_svg_icons/render.py,sha256=mqhYKCZbjiEPE2VJS-MEXeLPXktoetrTyFZCBggY4L0,1611
+render_svg_icons/render_category.py,sha256=9Y5Uu2DemdfBXeFKia5qIdxZQIr_w83rUZaXBt00P1U,1912
+render_svg_icons-0.1.0.dist-info/entry_points.txt,sha256=pDgO6UEHOQbqwsNqqgC3QsMCyxo_n6ipocT7eFueZ5k,58
+render_svg_icons-0.1.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+render_svg_icons-0.1.0.dist-info/METADATA,sha256=1_EEYnG1DF8A2t2a-LBi6f98C21Ifum1MY6ahkeLEg4,9081
+render_svg_icons-0.1.0.dist-info/RECORD,,

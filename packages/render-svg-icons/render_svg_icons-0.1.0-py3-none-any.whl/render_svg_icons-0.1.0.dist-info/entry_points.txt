@@ -1,0 +1,3 @@
+[console_scripts]
+render_svg_icons=render_svg_icons:main
+
