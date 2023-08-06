@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PyMyORM
+Version: 1.0.0
+Summary: Pure Python MySQL ORM
+Home-page: https://github.com/oldjun/PyMyORM
+Author: JP Chen
+Author-email: oldjun@sina.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: PyMySQL (>=1.0.2)
+
+README
+
+
