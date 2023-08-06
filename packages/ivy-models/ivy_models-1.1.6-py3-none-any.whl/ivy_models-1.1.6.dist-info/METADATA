@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ivy-models
+Version: 1.1.6
+Summary: Collection of pre-trained models, compatible with any backend framework
+Home-page: https://ivy-dl.org/models
+Author: Ivy Team
+Author-email: ivydl.team@gmail.com
+License: Apache 2.0
+Project-URL: Docs, https://ivy-dl.org/models/
+Project-URL: Source, https://github.com/ivy-dl/models
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+Requires-Dist: ivy-core
+
+Collection of pre-trained models, compatible with any backend framework
+
+

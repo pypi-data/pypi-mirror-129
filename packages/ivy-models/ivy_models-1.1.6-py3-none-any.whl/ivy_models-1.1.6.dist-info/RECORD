@@ -1,0 +1,9 @@
+ivy_models/__init__.py,sha256=gd1B2ILLzmwuzwRrm2U2g08jfpaApqETsP6NMEOzsfc,55
+ivy_models/transformers/__init__.py,sha256=M_k1oc7elVstW7L3AQlsqCHya6OiopcvyM_BDaxKvSg,55
+ivy_models/transformers/helpers.py,sha256=LpB9W4gG04KVH0Qj5-naEH2Pw3XJqAqBkisAYbHwdBs,1162
+ivy_models/transformers/perceiver_io.py,sha256=qb1-OOwfTO8lkoCERPxR8OSXg6qpsMYMAI6MY7RcHc8,9656
+ivy_models-1.1.6.dist-info/LICENSE,sha256=t-nXmWHKutTsf2emDful2tq1ur9DAgjuN2uGlejY9MA,11411
+ivy_models-1.1.6.dist-info/METADATA,sha256=bxP5PQHHwCZQgfxa6I_Ly7QVN1GwkngnLkGgOH89lJ4,564
+ivy_models-1.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ivy_models-1.1.6.dist-info/top_level.txt,sha256=6dbJlXMdmPl47guw3HAt01K3JzMG77aoWRZI3BGCSvY,11
+ivy_models-1.1.6.dist-info/RECORD,,
