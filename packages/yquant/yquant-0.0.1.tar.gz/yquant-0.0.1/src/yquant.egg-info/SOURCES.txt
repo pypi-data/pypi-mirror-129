@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/yquant.egg-info/PKG-INFO
+src/yquant.egg-info/SOURCES.txt
+src/yquant.egg-info/dependency_links.txt
+src/yquant.egg-info/requires.txt
+src/yquant.egg-info/top_level.txt

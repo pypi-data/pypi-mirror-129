@@ -1,0 +1,4 @@
+requests
+setuptools
+pyzmq
+python_version>="3.10"
