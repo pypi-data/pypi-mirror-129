@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: paradoxapi
+Version: 1.0.1.2
+Summary: Paradox Quantitative Data API
+Home-page: https://www.paradoxasset.com
+Author: Paradox FINANCIAL GROUP LTD.
+Author-email: 1013359736@qq.com
+License: Apache License 2.0
+Keywords: Paradox Stock Quant Data API
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: urllib3 (>=1.25.8)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=1.1.3)
+Requires-Dist: websocket (>=0.2.1)
+Requires-Dist: json5 (>=0.9.1)
+Requires-Dist: crypto (==1.4.1)
+Requires-Dist: pymysql (>=1.0.2)
+
+
+    Paradox Quantitative Data API is provided.
+    The correspondingly market data and trading is supported in A market.
+    see details in https://www.paradoxasset.com
+
+
