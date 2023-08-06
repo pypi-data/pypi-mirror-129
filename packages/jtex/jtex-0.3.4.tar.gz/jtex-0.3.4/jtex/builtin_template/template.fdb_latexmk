@@ -1,0 +1,16 @@
+# Fdb version 3
+["pdflatex"] 1638471473 "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/template.tex" "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/template.pdf" "template" 1638471473
+  "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/curvenote.def" 0 -1 0 ""
+  "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/template.aux" 1638471473 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/template.tex" 1638465867 788 37ea748574227d4537097e970e7af969 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls" 1601675358 20145 aad8c3dd3bc36e260347b84002182bc2 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo" 1601675358 8449 a72d5d4e612221b46000c3d71724e0ef ""
+  "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1616443989 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
+  "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1638467721 2724739 fb7164e6e06f80f9a82a2dedbbf5919c ""
+  "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
+  "curvenote.def" 0 -1 0 ""
+  "template.tex" 1638465867 788 37ea748574227d4537097e970e7af969 ""
+  (generated)
+  "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/template.log"
+  "template.log"
+  "/Users/rowan/git/curvenote/jtex/jtex/builtin_template/template.pdf"
