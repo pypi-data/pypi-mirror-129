@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pylogz.egg-info/PKG-INFO
+pylogz.egg-info/SOURCES.txt
+pylogz.egg-info/dependency_links.txt
+pylogz.egg-info/top_level.txt
