@@ -1,0 +1,12 @@
+aiscot/__init__.py,sha256=t_7ed36yJReu_9QDKn6ofK23YVnAoccYzdxIZepEf2A,827
+aiscot/classes.py,sha256=bJbt32n-CKU22JQRNdJyii8fxR-XEx6lZvwXTEoyqSY,10061
+aiscot/commands.py,sha256=2bJsAzKi3OhJPx4he-nINvy6cr3lc47GiQ_4bIM6ekk,2260
+aiscot/constants.py,sha256=tQ5OCXl1LfF6A_5HNhSCUW4SjeBQSWuyXR7Bjt3rxHQ,825
+aiscot/functions.py,sha256=cNbKbq2xxfzPIp4euKgTZm3lLN__3Lai85BeLZD-5fU,7858
+aiscot/pyAISm.py,sha256=bOdO5A2ykkeZ_CmOG_X6drq1fu6XzIcQ3HbDu89dW_8,27314
+aiscot-4.0.0b2.dist-info/LICENSE,sha256=Ynwjusd_a6syN4066WC5Zk2nWCSOeSFXXQafdg0vZk8,560
+aiscot-4.0.0b2.dist-info/METADATA,sha256=8GE-29f39USqazFqlxmPdNhv59FUnJgH4b45kNS1T0s,3998
+aiscot-4.0.0b2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+aiscot-4.0.0b2.dist-info/entry_points.txt,sha256=dy6Yy0tUSdNKBmhUQL_JuDMPSI7A1fGGzDHvPnK6BrY,48
+aiscot-4.0.0b2.dist-info/top_level.txt,sha256=Td4buWPv3UZZNA2zxL_JEbsiSyUc99id6f-xNmZcpIY,7
+aiscot-4.0.0b2.dist-info/RECORD,,
