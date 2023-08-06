@@ -1,0 +1,10 @@
+Change Log
+================
+
+0.0.1 (Nov 29, 2021)
+-------------------------------
+- First Release
+
+0.0.2 (Nov 30, 2021)
+-------------------------------
+- Added calculator functionality. Moved init.
