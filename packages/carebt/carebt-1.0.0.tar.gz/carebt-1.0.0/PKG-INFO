@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: carebt
+Version: 1.0.0
+Summary: A Python library for contingency aware Behavior Trees (careBT)
+Home-page: https://github.com/careBT/carebt_core
+Author: Andreas Steck
+Author-email: steck.andi@gmail.com
+License: Apache License 2.0
+Project-URL: Bug Tracker, https://github.com/careBT/carebt_core/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![build workflow](https://github.com/CareBT/carebt_core/actions/workflows/python-app.yml/badge.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+# careBT - contingency aware Behavior Trees
+
+## About
+
+A Python library offering a Behavior Tree implementation which focuses on contingency handling - the key to
+master complex applications which operate in dynamic worlds.
+
+## Documentation
+
+Documentation can be found at [https://carebt.readthedocs.io/](https://carebt.readthedocs.io/)
+
+## Contacts
+
+Andreas Steck - <steck.andi@gmail.com>
+
+
