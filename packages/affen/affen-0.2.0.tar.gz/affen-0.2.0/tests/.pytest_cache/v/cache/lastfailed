@@ -1,0 +1,4 @@
+{
+  "test_items.py::test_calling_next_on_batchingiterator": true,
+  "test_session.py::test_items_raises_error_on_bad_response": true
+}

@@ -1,0 +1,9 @@
+[
+  "test_items.py::test_iterating_over_folder",
+  "test_items.py::test_items_raises_error_on_bad_response",
+  "test_items.py::test_getting_single_item_from_items",
+  "test_items.py::test_closed_slice_items",
+  "test_items.py::test_half_open_slice_items",
+  "test_items.py::test_open_ended_slice_items",
+  "test_items.py::test_negative_indexing_raises_error"
+]
