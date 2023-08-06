@@ -1,0 +1,10 @@
+PyWebValidators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyWebValidators/fileValidators.py,sha256=4ZUAm7khPNnCtZTgoT0kBOdAW3bV4aa8bOUvuXKgUtI,4821
+PyWebValidators/miscValidators.py,sha256=IPpJUp-2JUussij2y8OKNQ1ysPiMAnJWB7AWgmvSfOo,1227
+PyWebValidators/textValidators.py,sha256=iYqi56Mb-HU9f6CFslUeFQUWn_s1LEB9WJCe2BuOb_o,2921
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_validators.py,sha256=Gu47yAuUH-odaFBpr7lxeomKxHPR4OoC2LYGcTIgfAw,6588
+PyWebValidators-0.0.1.dist-info/METADATA,sha256=D2cl9XthDIEgfMTyrJqEEZrPv8C2IhRaSGkFQ1GcT60,634
+PyWebValidators-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyWebValidators-0.0.1.dist-info/top_level.txt,sha256=KwrvWyqeTk-M7Q_CXQ1SU3qEjChvNLcQAECvVVnGfFQ,22
+PyWebValidators-0.0.1.dist-info/RECORD,,
