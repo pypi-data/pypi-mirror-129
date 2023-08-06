@@ -1,0 +1,6 @@
+README.md
+setup.py
+pythonomics.egg-info/PKG-INFO
+pythonomics.egg-info/SOURCES.txt
+pythonomics.egg-info/dependency_links.txt
+pythonomics.egg-info/top_level.txt
