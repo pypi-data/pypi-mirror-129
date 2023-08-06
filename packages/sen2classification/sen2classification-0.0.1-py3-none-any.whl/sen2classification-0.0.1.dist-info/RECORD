@@ -1,0 +1,14 @@
+sen2classification/__init__.py,sha256=VCFE6Z-_wDamtG7dq8hvSS5yFnUORAg7nRq99QYFZuI,354
+sen2classification/alcc.py,sha256=jkGiXkLmgR256KXrhw5qNbDk29Ck2VyL9jwSQb1j0PE,10606
+sen2classification/bands.py,sha256=Rh1qGF19uD0OKxmxVptoj9qZLNSUh5oRYLgpAVMINI0,6708
+sen2classification/exceptions.py,sha256=ZuowqviGfYgLWFveIUpn412hO3D4z0VVTlqsdV5bqVo,1715
+sen2classification/gb_classification.py,sha256=yJqtflzb4l7-oVYtTK4I03VxiOKewBcqbq3JaC7qjqY,16740
+sen2classification/helpers.py,sha256=DfFdWuh-1XweHmpXeRXrjfPOLu7aEt4PWPcUiNTwFKE,6069
+sen2classification/land_cover_classification.py,sha256=sbRKzxEs8LD3amq9sfsO103lOTXZ5JoPWqDmi8DqHAo,18445
+sen2classification/metas.py,sha256=-krNyYm9SrnFUPvFJnusX6r3yhDA8smAujfqrZGdbRU,2287
+sen2classification/product.py,sha256=9KHuVvl3nUrv0ggazW40xa--MxkKAiIwm-W6nh7-pq8,8373
+sen2classification/spectral_index.py,sha256=FCtW0r4kbGSQpgNbeeqvBO82bk0_7wPutqQ_itmxnSM,6491
+sen2classification-0.0.1.dist-info/METADATA,sha256=K7CyeXtwNqZOIFz2Fx2a1UQxXdI-Qmvc84nZAZXAmWw,3479
+sen2classification-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+sen2classification-0.0.1.dist-info/top_level.txt,sha256=AkinytlS-0YF8Tq-8xrBdJfIjOuqxeTwGoPPD7SgMsI,19
+sen2classification-0.0.1.dist-info/RECORD,,
