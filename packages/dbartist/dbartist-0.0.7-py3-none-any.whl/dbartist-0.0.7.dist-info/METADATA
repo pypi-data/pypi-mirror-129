@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dbartist
+Version: 0.0.7
+Summary: description
+Home-page: https://github.com/DBArtist
+Author: dbartist
+Author-email: 1595628527@qq.com
+License: GPLv3
+Keywords: dbartist
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: requests
+
+###dbartist long description.
+
+
