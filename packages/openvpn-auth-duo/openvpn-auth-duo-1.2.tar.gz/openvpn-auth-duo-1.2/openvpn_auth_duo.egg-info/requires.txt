@@ -1,0 +1,6 @@
+msal~=1.4
+cacheout~=0.11
+ConfigArgParse~=1.2
+prometheus_client~=0.8
+concurrent-log-handler~=0.9
+duo-client

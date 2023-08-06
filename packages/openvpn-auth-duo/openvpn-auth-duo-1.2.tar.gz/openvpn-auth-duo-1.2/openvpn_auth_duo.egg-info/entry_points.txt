@@ -1,0 +1,3 @@
+[console_scripts]
+openvpn-auth-duo = openvpn_auth_duo.duo_cli:main
+
