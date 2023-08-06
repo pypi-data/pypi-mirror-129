@@ -1,0 +1,10 @@
+drf_orjson_renderer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_orjson_renderer/encoders.py,sha256=Bn-gD9ggRFXAV12GNZMJ6M_Jz90jJsKwaQafWQgSCiY,733
+drf_orjson_renderer/parsers.py,sha256=SVwYd9tkZ8juKto4wk22s67kGMmApSfOKHIjGwjbwOc,1389
+drf_orjson_renderer/renderers.py,sha256=0mujeyHvowFxDB1ls6lxvhK-_H0nx6i-boIRkZ0HvCs,3606
+drf_orjson_renderer-1.3.0.dist-info/LICENSE,sha256=993WjXeoQ9znjQpkCUaUgjeqJMArZlF85hWjmGZ0f08,1077
+drf_orjson_renderer-1.3.0.dist-info/METADATA,sha256=4gjzRWgyaJN56_bJSxeB0NxPQDa9Nx-66QvDPrtR_a0,4984
+drf_orjson_renderer-1.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+drf_orjson_renderer-1.3.0.dist-info/top_level.txt,sha256=OiY--TpwWAJI64sT2pvYOX8HFIG4gHzoOtG-t9mfH68,20
+drf_orjson_renderer-1.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+drf_orjson_renderer-1.3.0.dist-info/RECORD,,
