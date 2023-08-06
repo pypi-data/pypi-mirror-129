@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: phacts
+Version: 1.2
+Summary: A program to predict the lifestyle (virulent/temperate) of a phage genome
+Home-page: https://github.com/deprekate/phacts
+Author: Katelyn McNair
+Author-email: deprekate@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.5.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sklearn
+Requires-Dist: numpy
+Requires-Dist: dill
+
+# PHACTS
+A simple program to classify the lifestyle of phages.
+
+I am slowly adding the PHACTS code to this repo
+
+The current online version can be found at
+  http://edwards.sdsu.edu/PHACTS/
+
+
