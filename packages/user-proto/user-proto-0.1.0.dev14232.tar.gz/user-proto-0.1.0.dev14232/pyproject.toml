@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "user-proto"
+version = "0.1.0.dev14232"
+description = "user proto messages and proto client"
+authors = ["Anonymous pivi generator <gen@ivi.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pivi = "^0.2.1"
+
+[[tool.poetry.source]]
+name = "ivi"
+url = "https://artifactory.at.ivi.ru/api/pypi/pypi-virt/simple/"
+default = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

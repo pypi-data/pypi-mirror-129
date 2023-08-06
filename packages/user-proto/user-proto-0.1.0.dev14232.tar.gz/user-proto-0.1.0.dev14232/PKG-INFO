@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: user-proto
+Version: 0.1.0.dev14232
+Summary: user proto messages and proto client
+Author: Anonymous pivi generator
+Author-email: gen@ivi.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pivi (>=0.2.1,<0.3.0)
