@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+loopedlist/__init__.py
+loopedlist/loopedlist.py
+loopedlist.egg-info/PKG-INFO
+loopedlist.egg-info/SOURCES.txt
+loopedlist.egg-info/dependency_links.txt
+loopedlist.egg-info/not-zip-safe
+loopedlist.egg-info/top_level.txt
