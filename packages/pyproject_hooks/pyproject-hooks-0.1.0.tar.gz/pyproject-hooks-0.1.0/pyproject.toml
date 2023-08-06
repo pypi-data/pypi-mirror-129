@@ -1,0 +1,35 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyproject-hooks"
+description = "Wrappers to call hooks on pyproject.toml-based build backends."
+dynamic = ["version"]
+readme = "README.md"
+
+requires-python = ">=3.7"
+dependencies = [
+    "tomli >=1.1.0",
+    "importlib_metadata;python_version<'3.8'",
+    "zipp;python_version<'3.8'",
+]
+
+license = { file = "LICENSE"}
+authors = [
+    {name = "Thomas Kluyver", email = "thomas@kluyver.me.uk"},
+    {name = "Pradyun Gedam", email = "mail@pradyunsg.me"},
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[tool.flit.module]
+name = "pyproject_hooks"
+
+[tool.isort]
+profile = "black"
