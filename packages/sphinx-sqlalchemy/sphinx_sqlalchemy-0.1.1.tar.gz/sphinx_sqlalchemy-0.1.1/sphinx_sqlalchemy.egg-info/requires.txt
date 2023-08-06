@@ -1,0 +1,9 @@
+sphinx<5,>=3
+sqlalchemy~=1.4.22
+
+[dev]
+pytest
+pytest-cov
+
+[docs]
+furo==2021.11.23
