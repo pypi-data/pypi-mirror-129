@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+cdaptools/__init__.py
+cdaptools/cdaptools.py
+cdaptools.egg-info/PKG-INFO
+cdaptools.egg-info/SOURCES.txt
+cdaptools.egg-info/dependency_links.txt
+cdaptools.egg-info/not-zip-safe
+cdaptools.egg-info/top_level.txt
