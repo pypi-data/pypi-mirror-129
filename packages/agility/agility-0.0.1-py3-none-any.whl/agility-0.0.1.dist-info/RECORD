@@ -1,0 +1,13 @@
+agility/__init__.py,sha256=lYBEdOFHWuBe9I6v64K4y5wLzy74GXJ4R0zRDFaMlXU,37
+agility/analysis.py,sha256=dU68ueCQSv7Qca-vBDPaWQ0rJxIB--4WYlsWAVpipzU,26436
+agility/minimiser.py,sha256=rOUmG87LkdbnUSZi1SmkJgqE7zh8yiSK5QnXqYSMOzw,1132
+agility/plotting.py,sha256=vflGENu0FSuTzlLZDpPAU_STTcml2ViMRFwUMVvGU74,2073
+autogabi/__init__.py,sha256=lYBEdOFHWuBe9I6v64K4y5wLzy74GXJ4R0zRDFaMlXU,37
+autogabi/analysis.py,sha256=ioh7oR6XWYvQfrE-KmnBJSgtAv9ydqOH8A1HQ7GRJMs,26108
+autogabi/minimiser.py,sha256=0QdUWN6SXDiy7LwZZV4teLJPvn1bLUPxEhp2prG9BNQ,978
+autogabi/plotting.py,sha256=vflGENu0FSuTzlLZDpPAU_STTcml2ViMRFwUMVvGU74,2073
+agility-0.0.1.dist-info/LICENSE,sha256=Sl6YTgbMovxyoVUqCyrb84RM3kvOnFPmjTAJN-O8vpY,1076
+agility-0.0.1.dist-info/METADATA,sha256=g166FZ6Hwffe0lQ2_FUPPaZ1O-LVpjh7eHvopFf1fcc,2441
+agility-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+agility-0.0.1.dist-info/top_level.txt,sha256=OyNjVWafm3pbY9YOi1tWw0QHKFy7WAUqU0lasazDdm8,8
+agility-0.0.1.dist-info/RECORD,,
