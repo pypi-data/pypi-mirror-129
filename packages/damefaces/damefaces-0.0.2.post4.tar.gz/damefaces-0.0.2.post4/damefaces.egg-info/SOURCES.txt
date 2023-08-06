@@ -1,0 +1,11 @@
+README.md
+setup.py
+damefaces/__init__.py
+damefaces.egg-info/PKG-INFO
+damefaces.egg-info/SOURCES.txt
+damefaces.egg-info/dependency_links.txt
+damefaces.egg-info/not-zip-safe
+damefaces.egg-info/requires.txt
+damefaces.egg-info/top_level.txt
+damefaces/bin/__init__.py
+damefaces/bin/damefaces.py
