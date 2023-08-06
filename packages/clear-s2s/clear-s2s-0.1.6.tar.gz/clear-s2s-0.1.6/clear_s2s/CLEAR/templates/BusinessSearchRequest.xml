@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bs:BusinessSearchRequest xmlns:bs="http://clear.thomsonreuters.com/api/search/2.0">
+    <PermissiblePurpose>
+        <GLB>Q</GLB>
+        <DPPA>0</DPPA>
+        <VOTER>7</VOTER>
+    </PermissiblePurpose>
+    <Reference>S2S Business Search</Reference>
+    <Criteria>
+        <b1:BusinessCriteria xmlns:b1="com/thomsonreuters/schemas/search">
+            <CompanyEntityId></CompanyEntityId>
+            {% if business_name is defined %}
+                <BusinessName>{{ business_name }}</BusinessName>
+            {% endif %}
+            <CorporationInfo>
+                {% if corporation_id is defined %}
+                    <CorporationId>{{corporation_id}}</CorporationId>
+                {% endif %}
+                {% if filing_number is defined %}
+                    <FilingNumber>{{filing_number}}</FilingNumber>
+                {% endif %}
+                {% if filing_date is defined %}
+                    <FilingDate>{{filing_date}}</FilingDate>
+                {% endif %}
+                {% if fein is defined %}
+                    <FEIN>{{fein}}</FEIN>
+                {% endif %}
+                {% if duns_number is defined %}
+                    <DUNSNumber>{{duns_number}}</DUNSNumber>
+                {% endif %}
+            </CorporationInfo>
+            <NPINumber></NPINumber>
+            <NameInfo>
+                <AdvancedNameSearch>
+                    <LastSecondaryNameSoundSimilarOption>false</LastSecondaryNameSoundSimilarOption>
+                    <SecondaryLastNameOption>OR</SecondaryLastNameOption>
+                    <FirstNameSoundSimilarOption>false</FirstNameSoundSimilarOption>
+                    <FirstNameVariationsOption>false</FirstNameVariationsOption>
+                </AdvancedNameSearch>
+                {% if last_name is defined %}
+                    <LastName>{{ last_name }}</LastName>
+                {% endif %}
+                {% if first_name is defined %}
+                    <FirstName>{{ first_name }}</FirstName>
+                {% endif %}
+                {% if middle_initial is defined %}
+                    <MiddleInitial>{{ middle_initial }}</MiddleInitial>
+                {% endif %}
+                {% if secondary_last_name is defined %}
+                    <SecondaryLastName>{{ secondary_last_name }}</SecondaryLastName>
+                {% endif %}
+            </NameInfo>
+            <AddressInfo>
+                <StreetNamesSoundSimilarOption>false</StreetNamesSoundSimilarOption>
+                {% if street is defined %}
+                    <Street>{{street}}</Street>
+                {% endif %}
+                {% if city is defined %}
+                    <City>{{city}}</City>
+                {% endif %}
+                {% if state is defined %}
+                    <State>{{state}}</State>
+                {% endif %}
+                {% if zip_code is defined %}
+                    <ZipCode>{{zip_code}}</ZipCode>
+                {% endif %}
+            </AddressInfo>
+            {% if phone_number is defined %}
+                <PhoneNumber>{{ phone_number }}</PhoneNumber>
+            {% endif %}
+        </b1:BusinessCriteria>
+    </Criteria>
+    <Datasources>
+        <PublicRecordBusiness>true</PublicRecordBusiness>
+        <NPIRecord>true</NPIRecord>
+        <PublicRecordUCCFilings>true</PublicRecordUCCFilings>
+        <WorldCheckRiskIntelligence>true</WorldCheckRiskIntelligence>
+    </Datasources>
+</bs:BusinessSearchRequest>   
