@@ -1,0 +1,14 @@
+poppygen/__init__.py,sha256=XRclpW7PZDMoTCl3xi3rbq1pAlYdZLta691b_4oOWXc,363
+poppygen/person.py,sha256=8LJFXXeNHtJsFJrR9h6TcZMGqfu07r3_l6cuz6lpBZY,1387
+poppygen/population_generator.py,sha256=I3iP1fMg8kfWqEynYRNiE2MJHqRfmYXf_DzCZTIxelM,5766
+poppygen/datasets/__init__.py,sha256=ak8-rlO1-pAUddPuFMjlpAnwhxXdVCFX54PoxSqmW6k,189
+poppygen/datasets/process_acs.py,sha256=Cq1dkHnMbd1iMBvZ-rVHKLDBn4OxZwcak5ZZB9cGol8,2722
+poppygen/datasets/process_pums.py,sha256=r3nh509ZEqJ-XfYTNTklx_h9TmlADmsK2rKlrzqV4YU,29
+poppygen/datasets/process_safegraph_poi.py,sha256=71U9YRjJlY-1PCF9mBGlleqSDv5Tk2skEGFFI6EKfsY,385
+poppygen/datasets/data/cbg_b01.csv,sha256=0J0KNMRzfPPavGyCFPgV5dKHr9NpW29-5vJazYwOtPw,117660358
+poppygen/datasets/data/cbg_field_descriptions.csv,sha256=X2INsjDfMs4O0lpXBHW2eCV6rkcSADbc7I6afGK6BkE,3133917
+poppygen-0.2.0.dist-info/LICENSE,sha256=V5Z1koj3iT7QqzdIkVpa_DTGmOAn5I0DNdTryjgFMnM,1667
+poppygen-0.2.0.dist-info/METADATA,sha256=wOZOEI03hQh8fPN1Zo8g0PrrR5LZcfFIpa-UTvbMCUI,1371
+poppygen-0.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+poppygen-0.2.0.dist-info/top_level.txt,sha256=5ZNlusnwh0ibmxtN3cwyY2r8-1tWKlM7zBxCObGHfuU,9
+poppygen-0.2.0.dist-info/RECORD,,
