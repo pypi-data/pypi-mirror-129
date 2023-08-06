@@ -1,0 +1,13 @@
+freem_bots/__init__.py,sha256=vglyr4KD4c4o3cntPQwtmIQcCGIpiUqvDK3m4jE5f_s,765
+freem_bots/asyncio_queue_log_handler.py,sha256=_jcnlYIN7CwbE_kufvPrP7E1zHfZPCQZCzgQ-CBrTss,431
+freem_bots/configuration.py,sha256=xL4ScIDt4sINMev8u-jAnLH_YjcTQI03fhuDdInd0SU,1410
+freem_bots/demoji_wrp.py,sha256=kaDFHDefuH0CpOhuh-BSKuNrpSp_Xs0VjWyBEnY8Zd8,153
+freem_bots/discord_bot.py,sha256=EPLuAxfb_MTrrahIPzfY9iCZQa2aSM-83aUH4WtyIKw,7154
+freem_bots/random_provider.py,sha256=yVVUYtq79RuuhM4Xl11GvfUeeAi10oBSOmKUuOX14XA,402
+freem_bots/tools.py,sha256=pLrUYGf8I2uPiOGLbiEBpHYSP66Z2queOd3fvfzewws,1080
+freem_bots/tts.py,sha256=58Eym5brhH7s7e6qRaTL5p761k86Weg9mg4DZ7_B5Sw,11808
+freem_bots-0.1.0.dist-info/LICENSE,sha256=HDdi-_VkM84Y05Jtn2CioIFdDThh5oCjvFmZLqSPfbc,1051
+freem_bots-0.1.0.dist-info/METADATA,sha256=7h0lKcCfUGEvU8DBe0wuCZXQdj05QMhOj1HLqC2KRDQ,840
+freem_bots-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+freem_bots-0.1.0.dist-info/top_level.txt,sha256=t3J-AaAbwdyAIfgJ6uj-uFaCWQLFUmnFmnOhycqRnmM,11
+freem_bots-0.1.0.dist-info/RECORD,,
