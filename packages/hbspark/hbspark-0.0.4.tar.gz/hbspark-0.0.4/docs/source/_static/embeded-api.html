@@ -1,0 +1,24 @@
+<iframe src="api/index.html" id = "iFrame" style="border:none; width:100%;" scrolling="no"></iframe>
+
+<script>
+    // Selecting the iframe element
+    var frame = document.getElementById("iFrame");
+
+
+    // Functionality on load:
+    frame.onload = function()
+    {   
+        //Change the minHeight property for embedding:
+        frame.contentWindow.document.body.style.minHeight = "initial";
+        
+        //Set the height
+        frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';        
+    }
+
+    //When user resizes (causes flex changes)
+    window.onresize = function()
+    {
+        //Set the height
+        frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+    }
+</script>
