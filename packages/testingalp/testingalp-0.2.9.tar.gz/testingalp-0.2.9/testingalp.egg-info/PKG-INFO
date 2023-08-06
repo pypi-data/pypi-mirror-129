@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: testingalp
+Version: 0.2.9
+Summary: Test package
+Home-page: http://13.76.30.220:4000
+Author: Nishant Chhetri
+Author-email: nishant.chhetri@precily.com
+License: UNKNOWN
+Description: # testingalp
+        
+        This is a test package for ALP
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
