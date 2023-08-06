@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: squaretheinput
+Version: 1.0.0
+Summary: It squares the number
+Home-page: https://github.com
+Author: Ajit Kulkarni
+Author-email: ajitkulkarni932002@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Squaretheinput
+Package should be used to square a number.
+
+## How to install?
+
+## Windows
+pip install squaretheinput
+
+## Linux
+
+sudo pip install squaretheinput
+
+
+## How to use it?
+Open terminal and type square and then input the integer
+
+## License
+
+Â© 2021 Ajit Kulkarni
+
+
+
