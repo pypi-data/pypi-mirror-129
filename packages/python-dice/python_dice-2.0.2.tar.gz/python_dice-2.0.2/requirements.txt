@@ -1,0 +1,5 @@
+matplotlib>=3.0.0
+networkx>=2.3
+numpy>=1.17.3
+pillow>=7.2.0
+rply>=0.7.7
