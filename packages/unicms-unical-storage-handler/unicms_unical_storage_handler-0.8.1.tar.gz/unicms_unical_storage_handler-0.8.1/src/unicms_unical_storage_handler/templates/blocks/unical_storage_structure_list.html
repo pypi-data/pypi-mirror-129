@@ -1,0 +1,194 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_STRUCTURE_VIEW_PREFIX_PATH" as structures_prefix %}
+
+{% block storage_block_top %}
+{% include "blocks/includes/unical_storage_check.html" %}
+{% endblock storage_block_top %}
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+
+                    {% block search %}
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+                            {% include "includes/unical_storage_search_input.html" with id=id %}
+
+                            {% block structure_type_filter %}
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm">
+                                         <loading-icon
+                                                 v-if="is_loading_types"
+                                                 :loader_source="loader_source_types">
+                                         </loading-icon>
+
+                                         <div v-else>
+                                             <label for="{{ id }}_type_input">
+                                                 {% trans "Types" %}
+                                             </label>
+                                             <div class="w-30 mt-5">
+                                                 <select id="{{ id }}_type_input"
+                                                         title="{% trans 'Choose an option' %}"
+                                                         name="{{ id }}_type_input"
+                                                         class="form-control"
+                                                         @change="{{ id }}.search()">
+                                                     <option value="">- {% trans 'Choose an option' %} -</option>
+                                                     <option v-for="item in types_filter"
+                                                             :value="item.StructureTypeCOD"
+                                                             :selected="item.StructureTypeCOD == selected_types"
+                                                             v-if="allowed_types.length==0 || allowed_types.includes(item.StructureTypeCOD)">
+                                                         [[ item.StructureTypeName ]]
+                                                     </option>
+                                                 </select>
+                                             </div>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                            {% endblock structure_type_filter %}
+
+                        </div>
+                    </div>
+                    {% endblock search %}
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div v-else>
+            <div class="row mb-3" v-for="item in items.results">
+                <div class="col-12">
+                    <!--start card-->
+                    <div class="card-wrapper pb-0">
+                        <div class="card no-after" style="border:1px solid #b71918">
+                            <div class="card-body">
+                                <h4>
+                                    <a class="no-color" :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ structures_prefix }}/' + [[ item.StructureCod ]] +'/'">
+                                        [[ item.StructureName ]]
+                                    </a>
+                                </h4>
+                                <div class="row">
+                                    <div class="col-12 col-md-auto">
+                                        <small>
+                                            [[ labels['StructureTypeName'] ]] >
+                                            <b>[[ item.StructureTypeName ]]</b>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+{% block storage_block_bottom %}
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock storage_block_bottom %}
+
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters(keyword=null, value=null) {
+
+    let dict = {}
+
+    if (keyword)
+        dict[keyword] = value
+
+    {% block structure_search_script %}
+    // search
+    let search = document.getElementById('{{ id }}_search')
+    if (search && search.value) dict['search'] = search.value
+    {% endblock structure_search_script %}
+
+    {% block structure_type_filter_script %}
+    //types
+    let type = document.getElementById('{{ id }}_type_input')
+    if (type && type.value) dict['type'] = type.value
+    {% endblock structure_type_filter_script %}
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% settings_value "CMS_STORAGE_STRUCTURETYPES_API" as types_api %}
+
+search_dict: {},
+selected_types: this.getItemFromSession("{{ id }}", 'type'),
+
+is_loading_types: true,
+
+{% get_father_from_url url as father_code %}
+loader_source_types: '{{ types_api }}?lang={{ LANGUAGE_CODE }}',
+
+selected_search: this.getItemFromSession("{{ id }}", 'search'),
+allowed_types: [],
+types_filter: [],
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+
+    // if url if pre-filtered resize select field
+    // this allows to auto generate select options according to URL get filters!
+    let params = new URLSearchParams(this.url.split('?')[1]);
+
+    let get_types = params.get("type")
+    if (get_types != null){
+        let get_types_list = get_types.split(',')
+        this.allowed_types = get_types
+    }
+
+    this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+    this.callTypes();
+
+{% endblock extra_mounted %}
+
+{% block extra_methods %}
+
+    callTypes() {
+    axios
+        .get(this.loader_source_types)
+        .then(response => {
+            this.types_filter = response.data.results;
+            this.is_loading_types = false
+        })
+},
+{% endblock extra_methods %}
+</script>

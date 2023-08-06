@@ -1,0 +1,43 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% block content %}
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="(initial_items && initial_items.length) || parameters">
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <div class="row">
+            <div class="col-12 col-lg-6" v-for="item in items.results">
+                <!--start card-->
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                [[ item["R&SLineDescription"] ]]
+                            </h5>
+                            <ul v-for="(value, name) in item">
+                                <li>[[ labels[name] ]]: [[ value ]]
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end card-->
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock content %}

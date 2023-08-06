@@ -1,0 +1,235 @@
+{% load static %}
+
+{% load i18n %}
+
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% random_id uid as id %}
+{% include "includes/unical_storage_loading.html" %}
+
+{% settings_value "STRUCTURE_INFO_NOT_SHOW" as fields_to_hide %}
+
+{% get_allowed_website request.get_host as host %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% settings_value "ALLOWED_ADDRESSBOOK_ROLES" as allowed_addressbook_roles %}
+{% settings_value "ALLOWED_STRUCTURE_TYPES" as allowed_structure_types %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_STRUCTURE_VIEW_PREFIX_PATH" as structures_prefix %}
+{% settings_value "CMS_STORAGE_ADDRESSBOOK_VIEW_PREFIX_PATH" as addressbook_prefix %}
+{% settings_value "CMS_STORAGE_LABORATORY_VIEW_PREFIX_PATH" as laboratories_prefix %}
+
+{% settings_value "CMS_STORAGE_ADDRESSBOOK_API" as addressbook_api %}
+{% settings_value "CMS_STORAGE_STRUCTURE_API" as structures_api %}
+{% settings_value "CMS_STORAGE_LABORATORY_API" as laboratories_api %}
+{% settings_value "CMS_STORAGE_STRUCTUREFUNCTIONS_API" as functions_api %}
+
+
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length">
+        <div class="row">
+            <div class="col-12 col-lg-2 d-flex">
+                <svg class="m-auto icon icon-xl icon-muted">
+                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-pa"></use>
+                </svg>
+            </div>
+            <div class="col-12 col-lg-10 my-3 my-lg-0">
+                <h1 class="lighter">
+                    [[ item.StructureName ]]
+                </h1>
+            </div>
+        </div>
+        <hr class="my-4 bordeaux-unical-bg">
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <tbody>
+                    <tr v-for="(value, name) in item" v-if="value && !fields_to_not_show.includes(name) && value != ''">
+                        <td>[[ labels[name] ]]</td>
+                        <td v-if="typeof value === 'object'">
+                            <ul v-for="(valueProfile, nameProfile) in value">
+                                <div v-if="typeof valueProfile === 'object'">
+                                    <ul v-for="(valueProfileInstance, nameProfileInstance) in valueProfile">
+                                        <li>
+                                            [[ labels[nameProfileInstance] ]] :
+                                            <span style="white-space: pre-line;">
+                                                [[ valueProfileInstance ]]
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <li v-else>
+                                    <span v-if="nameProfile in labels">
+                                        [[ labels[nameProfile] ]] :
+                                    </span>
+                                    <span style="white-space: pre-line;">
+                                        [[ valueProfile ]]
+                                    </span>
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else-if="typeof value === 'array'">
+                            <ul>
+                                <li v-for="subvalue in value">
+                                    [[ subvalue ]]
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else>
+                            <a v-if="name == 'StructureFatherName'" :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ structures_prefix }}/' + [[ item.StructureFatherId ]] +'/'">
+                                        [[ item.StructureFatherName ]]
+                                    </a>
+                            <span v-else style="white-space: pre-line;">
+                                [[ value ]]
+                            </span>
+                        </td>
+                    </tr>
+
+                    <!-- Manager -->
+                    <tr v-if="item.StructurePersonnelFunctions">
+                        <td>{% trans "Manager" %}</td>
+                        <td>
+                            <li v-for="subvalue in item.StructurePersonnelFunctions" v-if="subvalue.Name && subvalue.Name != '' && functions.includes(subvalue.FunctionCod)">
+                                <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ subvalue.ID ]] +'/'">
+                                        [[ subvalue.Name ]]
+                                </a>  - [[ subvalue.Function ]]
+                            </li>
+                        </td>
+                    </tr>
+                    <!-- End Manager -->
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+
+</div>
+
+<!-- Personnel -->
+<div id="{{ id }}_collapse-1-lft" class="collapse-div collapse-left-icon" role="tablist">
+    <div class="collapse-header" id="{{ id }}_heading-personnel-lft">
+        <button data-toggle="collapse"
+                data-target="#{{ id }}_collapse-personnel-lft"
+                aria-expanded="false"
+                aria-controls="{{ id }}_collapse-personnel-lft">
+            {% trans "Personnel" %}
+        </button>
+    </div>
+    <div id="{{ id }}_collapse-personnel-lft"
+         class="collapse"
+         role="tabpanel"
+         aria-labelledby="{{ id }}_heading-personnel-lft">
+        <div class="mt-3">
+            {% with allowed_addressbook_roles|join:"," as allowed_address_book_roles_list %}
+            {% with allowed_structure_types|join:"," as allowed_structure_types_list %}
+
+            {% with "&role="|add:allowed_address_book_roles_list as roles_filter %}
+            {% with "&structuretypes="|add:allowed_structure_types_list as structure_types_filter %}
+
+            {% with addressbook_api|add:"?structuretree="|add:code|add:"&structuretypes="|add:allowed_structure_types_list as personnel_url %}
+
+            {% if allowed_address_book_roles_list and allowed_structure_types_list %}
+                {% with personnel_url|add:roles_filter|add:structure_types_filter as personnel_url %}
+                {% include "blocks/unical_storage_addressbook_without_structure_type_filter.html" with url=personnel_url structure_id=code uid=id|add:"_1" %}
+                {% endwith %}
+            {% elif allowed_address_book_roles_list %}
+                {% with personnel_url|add:roles_filter as personnel_url %}
+                {% include "blocks/unical_storage_addressbook_without_structure_type_filter.html" with url=personnel_url structure_id=code uid=id|add:"_1" %}
+                {% endwith %}
+            {% elif allowed_address_book_roles_list %}
+                {% with addressbook_api|add:structure_types_filter as personnel_url %}
+                {% include "blocks/unical_storage_addressbook_without_structure_type_filter.html" with url=personnel_url structure_id=code uid=id|add:"_1" %}
+                {% endwith %}
+            {% else %}
+                {% include "blocks/unical_storage_addressbook_without_structure_type_filter.html" with url=personnel_url structure_id=code uid=id|add:"_1" %}
+            {% endif %}
+
+            {% endwith %}
+
+            {% endwith %}
+            {% endwith %}
+
+            {% endwith %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+<!-- Child Structures -->
+{% with allowed_structure_types|join:"," as allowed_structure_types_list %}
+{% with "&type="|add:allowed_structure_types_list as structure_types_filter %}
+
+{% with structures_api|add:"?father="|add:code as child_structures_url %}
+
+{% if structure_types_filter %}
+    {% with child_structures_url|add:structure_types_filter as child_structures_url %}
+    {% include "blocks/collapse/unical_storage_collapse_structure_list.html" with url=child_structures_url uid=id|add:"_2" %}
+    {% endwith %}
+{% else %}
+    {% include "blocks/collapse/unical_storage_collapse_structure_list.html" with url=child_structures_url uid=id|add:"_2" %}
+{% endif %}
+
+{% endwith %}
+
+{% endwith %}
+{% endwith %}
+
+<!-- Laboratories -->
+{% with laboratories_api|add:"?department="|add:code as laboratories_url %}
+{% include "blocks/collapse/unical_storage_collapse_laboratory_list_without_filters.html" with url=laboratories_url laboratories_id=code uid=id|add:"_3" %}
+{% endwith %}
+
+<script>
+    var {{ id }} = new Vue({
+        el: '[id="{{ id }}"]',
+        data() {
+            return {
+                item: {},
+                labels: {},
+                url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+                functions_url: '{{ functions_api }}?lang={{ LANGUAGE_CODE }}',
+                functions: [],
+                is_loading: true,
+                loader_source: '{{ url }}',
+                fields_to_not_show: {{ fields_to_hide|safe }},
+            }
+        },
+        mounted() {
+            this.callURL()
+        },
+        methods: {
+            callURL() {
+                axios
+                    .get(this.url)
+                    .then(response => {
+                        this.item = response.data.results;
+                        this.labels = response.data.labels;
+                        this.is_loading = false
+                        this.getPersonnelFunctions(this.item.StructureTypeCOD)
+                    })
+            },
+            getPersonnelFunctions(cod) {
+                axios
+                    .get(this.functions_url)
+                    .then(response => {
+                        for(let func in response.data.results)
+                            if (response.data.results[func].StructureTypeCOD == cod){
+                                this.functions.push(response.data.results[func].Function)
+                                break
+                            }
+                    })
+            }
+        }
+    })
+</script>

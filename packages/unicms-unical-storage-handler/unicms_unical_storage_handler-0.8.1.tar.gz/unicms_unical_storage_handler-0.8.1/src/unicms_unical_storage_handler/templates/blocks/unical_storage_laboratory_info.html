@@ -1,0 +1,308 @@
+{% load static %}
+{% load i18n %}
+
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% random_id uid as id %}
+{% include "includes/unical_storage_loading.html" %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "LABORATORY_INFO_NOT_SHOW" as fields_to_hide %}
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_ADDRESSBOOK_VIEW_PREFIX_PATH" as addressbook_prefix %}
+{% settings_value "CMS_STORAGE_STRUCTURE_VIEW_PREFIX_PATH" as structures_prefix %}
+
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length">
+
+        <div class="row">
+            <div class="col-12 col-lg-2 d-flex">
+                <img :src="item.LaboratoryLogo"
+                     v-if="item.LaboratoryLogo"
+                     class="w-100 m-auto">
+                <svg class="m-auto icon icon-xl icon-muted" v-else>
+                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-info-circle"></use>
+                </svg>
+            </div>
+            <div class="col-12 col-lg-9 offset-lg-1 my-3 my-lg-0">
+                <h1 class="lighter">
+                    [[ item.LaboratoryName ]]
+                </h1>
+                <h3 class="lighter">
+                    [[ item.LaboratoryScope ]]
+                </h3>
+            </div>
+        </div>
+        <hr class="my-4 bordeaux-unical-bg">
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <tbody>
+                    <tr v-for="(value, name) in item" v-if="value && !fields_to_not_show.includes(name) && value != ''">
+
+                        <td v-if="name == 'LaboratoryErc1'">
+                            {% trans 'European Research Council Classification' %}
+                        </td>
+                        <td v-else>[[ labels[name] ]]</td>
+
+                        <td v-if="typeof value === 'object'">
+                            <span v-if="name == 'LaboratoryErc1'">
+                                [[ value.Description ]]
+                                <ul>
+                                    <li v-for="erc1 in value.Erc1List">
+                                        [[ erc1.Description ]]
+                                    </li>
+                                </ul>
+                            </span>
+                            <span v-else-if="name == 'LaboratoryLocation'">
+                                <span v-if="value.LocationBuilding">
+                                [[ labels['LocationBuilding'] ]] [[ value.LocationBuilding ]],
+                                </span>
+                                <span v-if="value.LocationFloor">
+                                [[ labels['LocationFloor'] ]] [[ value.LocationFloor ]]
+                                </span>
+                            </span>
+                            <ul v-else-if="name == 'LaboratoryScopes'">
+                                <li v-for="v in value">
+                                    <span style="white-space: pre-line;">
+                                        [[ v.ScopeDescription ]]
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul v-else>
+                                <li v-for="v1 in value">
+                                    <span style="white-space: pre-line;" v-for="v2 in v1">
+                                        [[ v2 ]]
+                                    </span>
+                                </li>
+                            </ul>
+                        </td>
+
+                        <td v-else>
+                            <a v-if="name == 'CompletionReferentName' "
+                               :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ item.CompletionReferentId ]] +'/'">
+                                [[ item.CompletionReferentName ]]
+                            </a>
+                            <a v-else-if="name == 'ScientificDirectorName' "
+                               :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ item.ScientificDirectorId ]] +'/'">
+                                [[ item.ScientificDirectorName ]]
+                            </a>
+                            <a v-else-if="name == 'DepartmentReferentName' "
+                               :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ structures_prefix }}/' + [[ item.DepartmentReferentId ]] +'/'">
+                                [[ item.DepartmentReferentName ]]
+                            </a>
+                            <a target="_blank"
+                               v-else-if="name == 'LaboratoryURL' "
+                               :href="[[ item.LaboratoryURL ]]" >
+                                {% trans "Link" %}
+                            </a>
+                            <span v-else style="white-space: pre-line;">
+                                [[ value ]]
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+
+
+    <div id="{{ id }}_collapseDiv-lft" class="collapse-div collapse-left-icon" role="tablist">
+
+        <!-- ExtraDepartments -->
+        <div class="collapse-header"
+             id="{{ id }}_heading-extradepartments-lft"
+             v-if="item.Interdepartmental != 'NO'">
+            <button data-toggle="collapse"
+                    data-target="#{{ id }}_collapse-extradepartments-lft"
+                    aria-expanded="false"
+                    aria-controls="{{ id }}_collapse-extradepartments-lft">
+                {% trans "Laboratory Extra Departments" %}
+            </button>
+        </div>
+        <div id="{{ id }}_collapse-extradepartments-lft"
+             class="collapse"
+             role="tabpanel"
+             aria-labelledby="{{ id }}_heading-extradepartments-lft">
+            <div class="collapse-body">
+                <ul>
+                    <li v-for="subvalue in item.ExtraDepartments" v-if="subvalue.DepartmentName && subvalue.DepartmentName != ''">
+                        <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ structures_prefix }}/' + [[ subvalue.DepartmentCod ]] +'/'">
+                            [[ subvalue.DepartmentName ]]
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Scope -->
+        <div class="collapse-header" id="{{ id }}_heading-scopes-lft">
+            <button data-toggle="collapse"
+                    data-target="#{{ id }}_collapse-scopes-lft"
+                    aria-expanded="false"
+                    aria-controls="{{ id }}_collapse-scopes-lft">
+                {% trans 'Scope' %}
+            </button>
+        </div>
+        <div id="{{ id }}_collapse-scopes-lft"
+             class="collapse"
+             role="tabpanel"
+             aria-labelledby="{{ id }}_heading-scopes-lft">
+
+            <div class="collapse-body">
+                <ul>
+                    <li v-if="item.LaboratoryServicesScope && item.LaboratoryServicesScope != ''">
+                        <b>{% trans 'Services Scope' %}</b>
+                        <br>
+                        [[ item.LaboratoryServicesScope ]]
+                    </li>
+                    <li v-if="item.LaboratoryResearchScope && item.LaboratoryResearchScope != ''">
+                        <b>{% trans 'Research Scope' %}</b>
+                        <br>
+                        [[ item.LaboratoryResearchScope ]]
+                    </li>
+                    <li v-if="item.LaboratoryTeachingScope && item.LaboratoryTeachingScope != ''">
+                        <b>{% trans 'Teaching Scope' %}</b>
+                        <br>
+                        [[ item.LaboratoryTeachingScope ]]
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- OfferedServices -->
+        <div class="collapse-header" id="{{ id }}_heading-offeredservices-lft">
+            <button data-toggle="collapse"
+                    data-target="#{{ id }}_collapse-offeredservices-lft"
+                    aria-expanded="false"
+                    aria-controls="{{ id }}_collapse-offeredservices-lft">
+                {% trans "Offered Services" %}
+            </button>
+        </div>
+        <div id="{{ id }}_collapse-offeredservices-lft"
+             class="collapse"
+             role="tabpanel"
+             aria-labelledby="{{ id }}_heading-offeredservices-lft">
+            <div class="collapse-body">
+                <ul>
+                    <li v-for="subvalue in item.LaboratoryOfferedServices">
+                        <b> [[ subvalue.ServiceName ]] </b>
+                        <br>
+                        [[ subvalue.ServiceDescription ]]
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LaboratoryEquipment -->
+        <div class="collapse-header" id="{{ id }}_heading-laboratoryequipment-lft">
+            <button data-toggle="collapse"
+                    data-target="#{{ id }}_collapse-laboratoryequipment-lft"
+                    aria-expanded="false"
+                    aria-controls="{{ id }}_collapse-laboratoryequipment-lft">
+                {% trans "Laboratory Equipment" %}
+            </button>
+        </div>
+        <div id="{{ id }}_collapse-laboratoryequipment-lft"
+             class="collapse"
+             role="tabpanel"
+             aria-labelledby="{{ id }}_heading-laboratoryequipment-lft">
+            <div class="collapse-body">
+                [[ item.LaboratoryEquipment ]]
+            </div>
+        </div>
+
+        <!-- ResearchPersonnel -->
+        <div v-if="item.LaboratoryResearchPersonnel && item.LaboratoryResearchPersonnel.length">
+            <div class="collapse-header" id="{{ id }}_heading-researchpersonnel-lft">
+                <button data-toggle="collapse"
+                        data-target="#{{ id }}_collapse-researchpersonnel-lft"
+                        aria-expanded="false"
+                        aria-controls="{{ id }}_collapse-researchpersonnel-lft">
+                    {% trans "Research Personnel" %}
+                </button>
+            </div>
+            <div id="{{ id }}_collapse-researchpersonnel-lft"
+                 class="collapse"
+                 role="tabpanel"
+                 aria-labelledby="{{ id }}_heading-researchpersonnel-lft">
+                <div class="collapse-body">
+                    <ul>
+                        <li v-for="subvalue in item.LaboratoryResearchPersonnel" v-if="subvalue.ResearchPersonnelName && subvalue.ResearchPersonnelName != ''">
+                            <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ subvalue.ResearchPersonnelID ]] +'/'">
+                                [[ subvalue.ResearchPersonnelName ]]
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- TechPersonnel -->
+        <div v-if="item.LaboratoryTechPersonnel && item.LaboratoryTechPersonnel.length">
+            <div class="collapse-header" id="{{ id }}_heading-techpersonnel-lft">
+                <button data-toggle="collapse"
+                        data-target="#{{ id }}_collapse-techpersonnel-lft"
+                        aria-expanded="false"
+                        aria-controls="{{ id }}_collapse-techpersonnel-lft">
+                    {% trans "Tech Personnel" %}
+                </button>
+            </div>
+            <div id="{{ id }}_collapse-techpersonnel-lft"
+                 class="collapse"
+                 role="tabpanel"
+                 aria-labelledby="{{ id }}_heading-techpersonnel-lft">
+                <div class="collapse-body">
+                    <ul>
+                        <li v-for="subvalue in item.LaboratoryTechPersonnel" v-if="subvalue.TechPersonnelName && subvalue.TechPersonnelName != ''">
+                            <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ addressbook_prefix }}/' + [[ subvalue.TechPersonnelID ]] +'/'">
+                                [[ subvalue.TechPersonnelName ]]
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var {{ id }} = new Vue({
+        el: '[id="{{ id }}"]',
+        data() {
+            return {
+                item: {},
+                labels: {},
+                url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+                is_loading: true,
+                loader_source: '{{ url }}',
+                fields_to_not_show: {{ fields_to_hide|safe }},
+            }
+        },
+        mounted() {
+            this.CallURL();
+        },
+        methods: {
+            CallURL() {
+                axios
+                    .get(this.url)
+                    .then(response => {
+                        this.item = response.data.results;
+                        this.labels = response.data.labels;
+                        this.is_loading = false
+                    })
+            }
+        }
+    })
+</script>

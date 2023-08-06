@@ -1,0 +1,250 @@
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% get_cdsid_from_url url as cdsid %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% random_id uid as id %}
+
+{% settings_value "CMS_STORAGE_TEACHER_API" as teachers_api %}
+{% settings_value "ALLOWED_CDS_JOINT_DEGREES" as allowed_joint_degrees %}
+{% settings_value "ALMALAUREA_LINK" as almalaurea_link %}
+{% settings_value "CDS_INFO_FIELDS" as fields_to_show %}
+
+{% include "includes/unical_storage_loading.html" %}
+
+<script src="{% static 'js/vue-markdown.js' %}"></script>
+
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length">
+        <h1 class="lighter">[[ item.CdSName ]]</h1>
+        <div class="my-3">
+            <h3 class="lighter" style="display: inline">[[ item.CourseTypeDescription ]]</h3>
+            <h3 class="lighter"
+                v-for="joint in joint_degree_filter"
+                v-if="item.JointDegree == joint.COD && item.JointDegree != 'N'"
+                style="display: inline">
+                &nbsp;- [[ joint.name ]]
+            </h3>
+        </div>
+        <p>
+            <span v-if="item.CdSCod">
+                [[ labels['CdSCod'] ]]  [[ item.CdSCod ]]
+                <br>
+            </span>
+            {% trans "Degree class" %} [[ item.CourseClassCod ]]
+            <span v-if="item.CourseInterClassCod">
+                / [[ item.CourseInterClassCod ]]
+            </span>
+            <br>
+            [[ item.CourseClassName ]]
+            <span v-if="item.CourseInterClassCod">
+                <br>
+                [[ item.CourseInterClassDes ]]
+            </span>
+        </p>
+        <div class="card-wrapper pb-0">
+            <div class="card no-after" style="border:1px solid #b71918">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-auto">
+                            <small>
+                                [[ labels['AcademicYear'] ]]
+                                <b>[[ item.AcademicYear ]]/[[ item.AcademicYear + 1 ]]</b>
+                            </small>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <small>
+                                [[ labels['CdSDuration'] ]] >
+                                <b>[[ item.CdSDuration ]] {% trans "years" %}</b>
+                            </small>
+                        </div>
+                        <div class="col-12 col-md-auto">
+                            <small>
+                                [[ labels['CdSLanguage'] ]] >
+                                <b>[[ item.CdSLanguage.join(', ') ]] </b>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4" v-if="item.CdSVideo">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe :title="item.CdSVideo"
+                        class="embed-responsive-item"
+                        :src="item.CdSVideo" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <vue-markdown :emoji=false>
+                [[ item.CdSIntro ]]
+            </vue-markdown>
+        </div>
+
+        <div class="card-wrapper pb-0 mb-4" v-if="item.CdSDoc">
+            <div class="card no-after" style="border:1px solid #b71918">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-md-auto">
+                            <a :href="item.CdSDoc" target="_blank">
+                                <svg class="m-auto icon icon-muted">
+                                    <use xlink:href="{% static 'svg/sprite.svg' %}#it-clip"></use>
+                                </svg> <b>{% trans "Download brochure" %}</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="collapseDiv1-lft"
+             class="collapse-div collapse-left-icon"
+             style="border-bottom: 0"
+             role="tablist">
+            <div v-for="name in fields_to_show" v-if="item[name] && item[name].length > 0">
+                <div class="collapse-header" :id="'heading-' + name +'-lft'">
+                    <button data-toggle="collapse" :data-target="'#collapse-' + name +'-lft'" aria-expanded="false" :aria-controls="'collapse-' + name +'-lft'">
+                        [[ labels[name] ]]
+                    </button>
+                </div>
+                <div :id="'collapse-' + name +'-lft'" class="collapse" role="tabpanel" :aria-labelledby="'heading-' + name +'-lft'">
+                    <div class="collapse-body">
+                        <span v-if="typeof item[name] === 'object'" class="col-9">
+                            <ul v-for="(valueProfile, nameProfile) in item[name]">
+                                <li>
+                                    [[ nameProfile ]]
+                                    <ul v-for="(valueProfileInstance, nameProfileInstance) in valueProfile">
+                                        <li>
+                                            <span v-if="nameProfile in labels && nameProfileInstance in labels[nameProfile]"
+                                                  style="white-space: pre-line;">
+                                                [[ labels[nameProfile][nameProfileInstance] ]]
+                                            </span>
+                                            <span v-else>
+                                                [[ nameProfileInstance ]]
+                                            </span> :
+                                            <span style="white-space: pre-line;">
+                                                [[ valueProfileInstance ]]
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                        <span v-else-if="typeof item[name] === 'array'" class="col-9">
+                            <ul>
+                                <li v-for="subvalue in item[name]">
+                                    [[ subvalue ]]
+                                </li>
+                            </ul>
+                        </span>
+                        <span v-else>
+                            <span style="white-space: pre-line;">
+                                <a v-if="name == 'CdSSatisfactionSurvey'" v-bind:href="link_almalaurea + item[name]">[[ link_almalaurea ]][[ item[name] ]]</a>
+                                <a v-else-if="name == 'CdSDoc'" v-bind:href="item[name]">[[ item[name] ]]</a>
+                                <span v-else>[[ item[name] ]]</span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+</div>
+
+<!-- studyplans block import -->
+<div id="collapseDiv2-lft"
+     class="collapse-div collapse-left-icon"
+     role="tablist">
+    <div class="collapse-header" id="heading-studyplans-lft">
+        <button data-toggle="collapse"
+                data-target="#collapse-studyplans-lft"
+                aria-expanded="false"
+                aria-controls="collapse-studyplans-lft">
+            {% trans "Study plans" %}
+        </button>
+    </div>
+    <div id="collapse-studyplans-lft"
+         class="collapse"
+         role="tabpanel"
+         aria-labelledby="heading-studyplans-lft">
+        <div class="mt-3">
+            {% clean_url url as cleaned_url %}
+            {% with cleaned_url|add:"/studyplans/" as studyplans_url %}
+            {% include "blocks/unical_storage_cdsstudyplans.html" with url=studyplans_url uid=id|add:"_1" %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+<!-- teachers block import -->
+<div id="collapseDiv3-lft"
+     class="collapse-div collapse-left-icon"
+     role="tablist">
+    <div class="collapse-header" id="heading-teachers-lft">
+        <button data-toggle="collapse"
+                data-target="#collapse-teachers-lft"
+                aria-expanded="false"
+                aria-controls="collapse-teachers-lft"
+                style="border-top: 0">
+            {% trans "Teachers" %}
+        </button>
+    </div>
+    <div id="collapse-teachers-lft"
+         class="collapse"
+         role="tabpanel"
+         aria-labelledby="heading-teachers-lft">
+        <div class="mt-3">
+            {% with teachers_api|add:"?regdid="|add:cdsid as teachers_url %}
+            {% include "blocks/unical_storage_teacherslist_without_filters.html" with url=teachers_url uid=id|add:"_2" %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+<script>
+Vue.use(VueMarkdown);
+
+var {{ id }} = new Vue({
+    el: '#{{ id }}',
+    data() {
+        return {
+            item: {},
+            labels: {},
+            url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+            fields_to_show: {{ fields_to_show|safe }},
+            is_loading: true,
+            loader_source: '{{ url }}',
+            link_almalaurea: '{{ almalaurea_link }}',
+            joint_degree_filter: {{ allowed_joint_degrees|safe }}
+        }
+    },
+    mounted() {
+        this.CallURL();
+    },
+    methods: {
+        CallURL() {
+            axios
+                .get(this.url)
+                .then(response => {
+                    this.item = response.data.results;
+                    this.labels = response.data.labels;
+                    this.is_loading = false
+                });
+        }
+    }
+})
+</script>

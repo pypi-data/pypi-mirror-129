@@ -1,0 +1,102 @@
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% get_current_language as LANGUAGE_CODE %}
+
+{% random_id uid as id %}
+
+{% include "includes/unical_storage_loading.html" %}
+
+
+<div id="{{ id }}" class="mb-3">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length" class="row">
+        <div class="col-2">
+            <svg class="icon icon-lg icon-muted">
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-info-circle"></use>
+            </svg>
+        </div>
+        <div class="col-9 pl-3 align-left">
+            <small>
+                <b>[[ item.StructureName ]]</b>
+                <br>
+                <div v-if="item.StructureFatherName">
+                    <span>[[ item.StructureFatherName ]]</span>
+                    <br>
+                </div>
+                <div>
+                    <span>
+                        <svg class="icon icon-sm icon-muted mr-2">
+                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-map-marker-circle"></use>
+                        </svg>
+                        <a href="#">-</a>
+                    </span>
+                    <br>
+                </div>
+                <div v-for="email in item.StructureEmail">
+                    <span>
+                        <svg class="icon icon-sm icon-muted mr-2">
+                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-mail"></use>
+                        </svg>
+                        <a href="mailto: [[ email ]]">[[ email ]]</a>
+                    </span>
+                    <br>
+                </div>
+                <div v-for="pec in item.StructurePec">
+                    <span>
+                        <svg class="icon icon-sm icon-muted mr-2">
+                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-mail"></use>
+                        </svg>
+                        <a href="mailto: [[ pec ]]">[[ pec ]]</a>
+                    </span>
+                    <br>
+                </div>
+                <div v-for="tel in item.StructureTfr">
+                    <span>
+                        <svg class="icon icon-sm icon-muted mr-2">
+                            <use xlink:href="{% static 'svg/sprite.svg' %}#it-telephone"></use>
+                        </svg> [[ tel ]]
+                    </span>
+                    <br>
+                </div>
+            </small>
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+</div>
+
+<script>
+var {{ id }} = new Vue({
+    el: '#{{ id }}',
+    data() {
+        return {
+            item: {},
+            url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+            is_loading: true,
+            loader_source: '{{ url }}',
+        }
+    },
+    mounted() {
+        this.CallURL();
+    },
+    methods: {
+        CallURL() {
+            axios
+                .get(this.url)
+                .then(response => {
+                    this.item = response.data.results;
+                    this.is_loading = false
+                });
+        }
+    }
+})
+</script>

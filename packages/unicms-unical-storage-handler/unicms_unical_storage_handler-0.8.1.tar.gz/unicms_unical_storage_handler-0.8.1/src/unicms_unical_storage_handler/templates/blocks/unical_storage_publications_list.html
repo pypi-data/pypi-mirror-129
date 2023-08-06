@@ -1,0 +1,213 @@
+{% extends "bases/unical_storage_list.html" %}
+
+{% load i18n %}
+{% load static %}
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% block content %}
+
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_PUBLICATIONS_VIEW_PREFIX_PATH" as publications_prefix %}
+
+{% settings_value "CMS_STORAGE_THEACHER_VIEW_PREFIX_PATH" as teacher_prefix %}
+
+
+<div id="{{ id }}">
+
+    <div if="(initial_items && initial_items.length) || parameters">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-wrapper card-space">
+                    <div class="card card-bg no-after">
+                        <br>
+                        <div class="card-body">
+
+                            {% include "includes/unical_storage_search_input.html" with id=id %}
+
+                                <div class="form-group">
+
+                                {% block filters %}
+                                    <!-- Year and Types -->
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <div class="w-30 mt-5">
+                                                <label class="input-number"
+                                                       for="{{ id }}_year_input">
+                                                    {% trans "Year" %}
+                                                </label>
+                                                <div class="w-30 mt-5">
+                                                    <span class="input-number">
+                                                        <input type="number"
+                                                               id="{{ id }}_year_input"
+                                                               name="{{ id }}_year_input"
+                                                               v-on:keyup.enter="{{ id }}.search()"
+                                                               v-model="selected_year">
+                                                        <button class="input-number-add">
+                                                            <span class="sr-only">
+                                                                {% trans "Increase value" %}
+                                                            </span>
+                                                        </button>
+                                                        <button class="input-number-sub">
+                                                            <span class="sr-only">
+                                                                {% trans "Decrease value" %}
+                                                            </span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm">
+                                            <loading-icon
+                                                v-if="is_loading_types"
+                                                :loader_source="loader_source_types">
+                                            </loading-icon>
+                                            <div v-else>
+                                                <label for="{{ id }}_type_input">
+                                                    {% trans "Types" %}
+                                                </label>
+                                                <div class="w-30 mt-5">
+                                                    <select id="{{ id }}_type_input"
+                                                            title="{% trans 'Choose an option' %}"
+                                                            name="{{ id }}_type_input"
+                                                            class="form-control"
+                                                            @change="{{ id }}.search()">
+                                                        <option value="">- {% trans 'Choose an option' %} -</option>
+                                                        <option v-for="item in types_filter"
+                                                                :value="item.CommunityId"
+                                                                :selected="item.CommunityId == selected_types">
+                                                            [[ item.CommunityName ]]
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                {%  endblock filters %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+
+        <loading-icon
+            v-if="is_loading"
+            :loader_source="loader_source">
+        </loading-icon>
+
+        <div v-else>
+            <div class="row mb-3" v-for="item in items.results">
+                <div class="col-12">
+                    <!--start card-->
+                    <div class="card-wrapper pb-0">
+                        <div class="card no-after" style="border:1px solid #b71918">
+                            <div class="card-body">
+                                <h4>
+                                    <a class="no-color" :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ publications_prefix }}/' + [[ item.PublicationId ]] +'/'">
+                                        [[ item.PublicationTitle ]]
+                                    </a>
+                                </h4>
+                                <p>[[ item.PublicationContributors ]]</p>
+                                <div class="row">
+                                    <div class="col-12 col-md-auto">
+                                        <small>
+                                            [[ labels['PublicationYear'] ]] >
+                                            <b>[[ item.PublicationYear ]]</b>
+                                        </small>
+                                    </div>
+                                    <div class="col-12 col-md-auto">
+                                        <small>
+                                            [[ labels['PublicationCommunity'] ]] >
+                                            <b>[[ item.PublicationCommunity ]] </b>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card-->
+                </div>
+            </div>
+        </div>
+
+        <list-panel v-bind:data="items" v-if="items.results" id="{{ id }}"></list-panel>
+    </div>
+
+    <div v-else>
+        {% trans "No items here" %}
+    </div>
+
+</div>
+{% endblock content %}
+
+{% block extra_scripts %}
+<script>
+function {{ id }}_get_form_paramenters(keyword=null, value=null) {
+
+    let dict ={};
+
+    if (keyword)
+        dict[keyword] = value
+
+    // search
+    let search = document.getElementById('{{ id }}_search').value
+    if (search && search.value) dict['search'] = search.value
+
+    // year
+    let year = document.getElementById('{{ id }}_year_input')
+    if (year && year.value) dict['year'] = year.value
+
+    // types
+    let type = document.getElementById('{{ id }}_type_input')
+    if (type && type.value) dict['type'] = type.value
+
+    setItemInSession("{{ id }}", dict)
+
+    return dict
+}
+</script>
+{% endblock extra_scripts %}
+
+{% block extra_data %}
+
+selected_types: this.getItemFromSession("{{ id }}", 'type'),
+selected_search: this.getItemFromSession("{{ id }}", 'search'),
+selected_year: this.getItemFromSession("{{ id }}", 'year') || {{ id }}_get_param('year'),
+
+is_loading_types: true,
+
+{% settings_value "CMS_STORAGE_COMMUNITYTYPES_API" as types_api %}
+{% get_current_language as LANGUAGE_CODE %}
+loader_source_types: '{{ types_api }}?lang={{ LANGUAGE_CODE }}',
+
+types_filter: []
+
+{% endblock extra_data %}
+
+{% block extra_mounted %}
+
+    this.parameters = {{ id }}_encodeQueryData(this.getItemsFromSession("{{ id }}"))
+    this.callTypes();
+
+{% endblock extra_mounted %}
+
+{% block extra_methods %}
+    callTypes() {
+        axios
+            .get(this.loader_source_types)
+            .then(response => {
+                this.types_filter = response.data.results;
+                this.is_loading_types = false
+            })
+    },
+{% endblock extra_methods %}
+</script>
+

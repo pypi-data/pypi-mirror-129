@@ -1,0 +1,199 @@
+{% load i18n %}
+{% load static %}
+
+{% load unicms_storage_handler %}
+{% load unicms_templates %}
+
+{% random_id uid as id %}
+{% include "includes/unical_storage_loading.html" %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_allowed_website request.get_host as host %}
+
+{% settings_value "CMS_PATH_PREFIX" as cms_path_prefix %}
+{% settings_value "CMS_STORAGE_BASE_PATH" as base_prefix %}
+{% settings_value "CMS_STORAGE_CDS_VIEW_PREFIX_PATH" as cds_prefix %}
+{% settings_value "CMS_STORAGE_ACTIVITY_VIEW_PREFIX_PATH" as activity_prefix %}
+{% settings_value "CMS_STORAGE_THEACHER_VIEW_PREFIX_PATH" as teacher_prefix %}
+
+
+<div id="{{ id }}">
+
+    <loading-icon
+        v-if="is_loading"
+        :loader_source="loader_source">
+    </loading-icon>
+
+    <div v-else-if="Object.keys(item).length">
+        <h1 class="lighter">[[ item.StudyActivityName ]]</h1>
+        <h3 class="lighter">[[ item.StudyActivityCdSName ]]</h3>
+        <hr class="my-4 bordeaux-unical-bg">
+        <div class="table-responsive">
+            <table class="table table-sm mb-0">
+                <tbody>
+                    <tr v-for="(value, name) in item" v-if="value && !fields_to_not_show.includes(name) && value != ''">
+                        <td class="col-3">[[ labels[name] ]]</td>
+
+                        <!-- Root activity -->
+                        <td v-if="name === 'StudyActivityRoot' && item.StudyActivityRoot">
+                            <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ cds_prefix }}/' + [[ item.StudyActivityRegDidId ]] +'/{{ activity_prefix }}/' + [[ item.StudyActivityRoot.StudyActivityID ]] +'/'">
+                                [[ item.StudyActivityRoot.StudyActivityName ]]
+                            </a>
+                        </td>
+
+                        <!-- Modules activities -->
+                        <td v-else-if="name === 'StudyActivitiesModules' && item.StudyActivitiesModules">
+                            <ul v-for="(valueProfile, nameProfile) in value">
+                                <li>
+                                    <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ cds_prefix }}/' + [[ item.StudyActivityRegDidId ]] +'/{{ activity_prefix }}/' + [[ valueProfile.StudyActivityID ]] +'/'">
+                                        [[ valueProfile.StudyActivityName ]]
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+
+                        <!-- StudyActivitiesBorrowedFromThis activity -->
+                        <td v-else-if="name === 'StudyActivityBorrowedFrom' && item.StudyActivityBorrowedFrom">
+                            <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ cds_prefix }}/' + [[ item.StudyActivityBorrowedFrom.StudyActivityRegDidId ]] +'/{{ activity_prefix }}/' + [[ item.StudyActivityBorrowedFrom.StudyActivityID ]] +'/'">
+                                [[ item.StudyActivityBorrowedFrom.StudyActivityName ]]
+                            </a>
+                        </td>
+
+                        <!-- Modules activities -->
+                        <td v-else-if="name === 'StudyActivitiesBorrowedFromThis' && item.StudyActivitiesBorrowedFromThis">
+                            <ul>
+                                <li v-for="borrow in item.StudyActivitiesBorrowedFromThis">
+                                    <a :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ cds_prefix }}/' + [[ borrow.StudyActivityRegDidId ]] +'/{{ activity_prefix }}/' + [[ borrow.StudyActivityID ]] +'/'">
+                                        [[ borrow.StudyActivityName ]]
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+
+                        <td v-else-if="typeof value === 'object'" class="col-9">
+                            <ul v-for="(valueProfile, nameProfile) in value">
+                                <div v-if="typeof valueProfile === 'object'">
+                                    <ul v-for="(valueProfileInstance, nameProfileInstance) in valueProfile">
+                                        <li>
+                                            [[ nameProfileInstance ]] :
+                                            <span style="white-space: pre-line;">
+                                                [[ valueProfileInstance ]]
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <li v-else>
+                                    <span v-if="nameProfile in labels">
+                                        [[ labels[nameProfile] ]]
+                                    </span>
+                                    <span v-else>
+                                        [[ nameProfile ]]
+                                    </span>
+                                    :
+                                    <span style="white-space: pre-line;">
+                                        [[ valueProfile ]]
+                                    </span>
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else-if="typeof value === 'array'" class="col-9">
+                            <ul>
+                                <li v-for="subvalue in value">
+                                    [[ subvalue ]]
+                                </li>
+                            </ul>
+                        </td>
+                        <td v-else class="col-9">
+                            <a v-if="name === 'StudyActivityTeacherName'"
+                               :href="'//{{ host }}/{{ cms_path_prefix }}{{ base_prefix }}/{{ teacher_prefix }}/' + [[ item.StudyActivityTeacherID ]] +'/'">
+                                [[ item[name] ]]
+                            </a>
+                            <span v-else style="white-space: pre-line;">
+                                [[ value ]]
+                            </span>
+                        </td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="collapseDiv1-lft"
+                 class="collapse-div collapse-left-icon"
+                 style="border-bottom: 0"
+                 role="tablist">
+                <div v-for="name in fields_to_collapse" v-if="item[name] != null">
+                    <div class="collapse-header"
+                         :id="'heading-' + name +'-lft'">
+                        <button data-toggle="collapse"
+                                :data-target="'#collapse-' + name +'-lft'"
+                                aria-expanded="false"
+                                :aria-controls="'collapse-' + name +'-lft'">
+                            [[ labels[name] ]]
+                        </button>
+                    </div>
+                    <div :id="'collapse-' + name +'-lft'"
+                         class="collapse"
+                         role="tabpanel"
+                         :aria-labelledby="'heading-' + name +'-lft'">
+                        <div class="collapse-body">
+                            <span style="white-space: pre-line;">
+                                <span>[[ item[name] ]]</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div v-else>
+        {% include "includes/unical_storage_empty.html" with url=url %}
+    </div>
+</div>
+<script>
+    var {{ id }} = new Vue({
+        el: '[id="{{ id }}"]',
+        data() {
+            return {
+                item: {},
+                labels: {},
+                url: '{{ url }}?lang={{ LANGUAGE_CODE }}',
+                is_loading: true,
+                loader_source: '{{ url }}',
+                fields_to_collapse: ['StudyActivityContent',
+                                     'StudyActivityProgram',
+                                     'StudyActivityLearningOutcomes',
+                                     'StudyActivityMethodology',
+                                     'StudyActivityEvaluation',
+                                     'StudyActivityTextbooks',
+                                     'StudyActivityWorkload'],
+                fields_to_not_show: ['StudyActivityCdSID',
+                                     'StudyActivityRegDidId',
+                                     'StudyActivityTeacherID',
+                                     'StudyActivityID',
+                                     'StudyActivityContent',
+                                     'StudyActivityProgram',
+                                     'StudyActivityLearningOutcomes',
+                                     'StudyActivityMethodology',
+                                     'StudyActivityEvaluation',
+                                     'StudyActivityTextbooks',
+                                     'StudyActivityWorkload']
+            }
+        },
+        mounted() {
+            this.CallURL();
+        },
+        methods: {
+            CallURL() {
+                axios
+                    .get(this.url)
+                    .then(response => {
+                        this.item = response.data.results;
+                        this.labels = response.data.labels;
+                        this.is_loading = false
+                    });
+            }
+        }
+    })
+</script>
