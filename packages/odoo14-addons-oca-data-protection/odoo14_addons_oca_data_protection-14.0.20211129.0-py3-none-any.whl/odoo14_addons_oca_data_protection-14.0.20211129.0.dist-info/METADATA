@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-data-protection
+Version: 14.0.20211129.0
+Summary: Meta package for oca-data-protection Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-privacy
+Requires-Dist: odoo14-addon-privacy-consent
+
+UNKNOWN
+
