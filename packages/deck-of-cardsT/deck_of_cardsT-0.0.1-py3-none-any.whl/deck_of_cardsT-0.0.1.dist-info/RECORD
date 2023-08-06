@@ -1,0 +1,11 @@
+deck_of_cards/__init__.py,sha256=cXT1d6oRJsn_iZJQ7MiR-F7dkSyEvwM8L0rrinGMyjo,42
+deck_of_cards/_nbdev.py,sha256=VZqlseSFh_eP-5MVSCTCcRXXpLLV-0TLxCe6OZSEWJI,414
+deck_of_cards/card.py,sha256=GwmD1t-RBd9qbZsg7vZ6VNS_OQZuqvbEdvvPFliESGI,1330
+deck_of_cards/core.py,sha256=nHJRmrNLZ-Mpi-4HwSpAeNEpac0AaSpQ6BcRUVEupaE,101
+deck_of_cards/deck.py,sha256=nsaj-yH9OwTGouY70Ny8OUDX6MwrVzWW8ZhbyJL13YA,1870
+deck_of_cardsT-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+deck_of_cardsT-0.0.1.dist-info/METADATA,sha256=ybVxPNt8p6lEBk7BUe85KRNNh1t9yfdvaDGuktSBMXs,1100
+deck_of_cardsT-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+deck_of_cardsT-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+deck_of_cardsT-0.0.1.dist-info/top_level.txt,sha256=Ehk7TPeFCz_flsXJpsCjBuNwG7g89ANySZ22lBaNBlg,14
+deck_of_cardsT-0.0.1.dist-info/RECORD,,
