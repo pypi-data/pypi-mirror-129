@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+squaremeup.egg-info/PKG-INFO
+squaremeup.egg-info/SOURCES.txt
+squaremeup.egg-info/dependency_links.txt
+squaremeup.egg-info/top_level.txt
