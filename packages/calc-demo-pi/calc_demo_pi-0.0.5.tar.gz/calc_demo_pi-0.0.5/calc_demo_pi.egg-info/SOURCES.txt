@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+calc_demo_pi/__init__.py
+calc_demo_pi/calc_demo.py
+calc_demo_pi.egg-info/PKG-INFO
+calc_demo_pi.egg-info/SOURCES.txt
+calc_demo_pi.egg-info/dependency_links.txt
+calc_demo_pi.egg-info/top_level.txt
+calc_demo_pi/Chebychev/__init__.py
+calc_demo_pi/Chebychev/func.py
