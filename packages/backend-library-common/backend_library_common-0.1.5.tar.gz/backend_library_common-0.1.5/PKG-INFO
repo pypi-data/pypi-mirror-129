@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: backend-library-common
+Version: 0.1.5
+Summary: 
+Home-page: https://github.com/intelligence-for-robots/backend.library.common
+License: MIT
+Author: Felix
+Author-email: contact@felixnaser.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.70.0,<0.71.0)
+Requires-Dist: httpx (>=0.21.1,<0.22.0)
+Requires-Dist: pydantic (>=1.6.1,<2.0.0)
+Project-URL: Repository, https://github.com/intelligence-for-robots/backend.library.common
+Description-Content-Type: text/markdown
+
+backend_library_common
+https://pypi.org/project/backend-library-common/
+```
+poetry build
+poetry publish
+```
+
