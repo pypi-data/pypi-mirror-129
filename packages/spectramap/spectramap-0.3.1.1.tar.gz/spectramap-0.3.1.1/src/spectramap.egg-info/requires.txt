@@ -1,0 +1,4 @@
+scikit-learn
+pyspectra
+hdbscan
+scipy
