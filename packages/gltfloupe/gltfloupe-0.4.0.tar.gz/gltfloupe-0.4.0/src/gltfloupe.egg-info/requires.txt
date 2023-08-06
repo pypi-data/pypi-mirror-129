@@ -1,0 +1,4 @@
+glglue>=1.6.0
+pygltfio>=0.2.0
+pyside6
+pillow
