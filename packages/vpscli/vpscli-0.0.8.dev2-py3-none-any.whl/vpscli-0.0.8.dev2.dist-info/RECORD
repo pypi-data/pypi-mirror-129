@@ -1,0 +1,12 @@
+vps/__init__.py,sha256=aMs-QSLjY6mmGiqL5Mq0JvPEF7E1cJjR48dUliBxSdI,610
+vps/configer.py,sha256=UQM-X1jh8p2CzmImS9hAebINLk_IFetHwhosHNocyhw,3657
+vps/installer.py,sha256=v8y4kO-8ekgb6FxCC-9NC0dwfkdWIN1d2yaLVyGKfwg,1631
+vps/osi.py,sha256=K8df2uWzl46RAQ2ZpibvsvnqmoXRv4jaMYnMWKzPEFU,1614
+vps/piper.py,sha256=bJpc1yGT30qLDGdMquzHoSkhYUyvE1Wx8dbMasJAKMM,628
+vps/vpsstatus.py,sha256=X460VtpsbG-pIwL3rZfjxQvGhCvQmCt2hPegqRxlKIs,2778
+vpscli-0.0.8.dev2.dist-info/LICENSE,sha256=_HI1JyuoQphi0ndWr462WvVW140RsHasTSgwnBgPn8w,1064
+vpscli-0.0.8.dev2.dist-info/METADATA,sha256=bygf_85ubEx8o4g5-V03tsLXLFn5Cy9qaDV2AsyWXq8,517
+vpscli-0.0.8.dev2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vpscli-0.0.8.dev2.dist-info/entry_points.txt,sha256=JchZRvh9PeCx93Ru5JgkTbNZvqdtFeMua2ApysU--vg,82
+vpscli-0.0.8.dev2.dist-info/top_level.txt,sha256=t_r7hr9mI-OIuE_LJEO_AzZg6f3VvZZp8CIwUakLfKI,4
+vpscli-0.0.8.dev2.dist-info/RECORD,,
