@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: Simplesender
+Version: 0.1.0.2
+Summary: Webhook 을 이용해 채널에 메시지를 보냅니다.
+Home-page: https://github.com/9Hundred100Five1/simple-discordWebhook-sender
+Author: 9Hundred100Five1
+Author-email: ohot2124@naver.com
+License: GPL-3.0
+Keywords: discord,discord.py,sWs,SimpleSender
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# SimpleSender
+Send message to your server with Webhook sender!
+
+# 사용법
+```python
+import Simplesender
+
+content = input() # 보낼 메시지
+a = Simplesender.sender('웹훅주소', content, '웹훅 이름')
+a.sends() # 
+```
+
+반복해서 쓰고싶으면 while문 추가가능
+```python
+
+import Simplesender
+
+while True:
+    content = input() # 보낼 메시지
+    a = Simplesender.sender('웹훅주소', content, '웹훅 이름')
+    a.sends() # 
+```
+
+
