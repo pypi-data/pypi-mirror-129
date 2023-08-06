@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+qq/__init__.py
+qq/aiorequests.py
+qq/client.py
+qq/error.py
+qq/guild.py
+qq/http.py
+qq.py.egg-info/PKG-INFO
+qq.py.egg-info/SOURCES.txt
+qq.py.egg-info/dependency_links.txt
+qq.py.egg-info/top_level.txt
