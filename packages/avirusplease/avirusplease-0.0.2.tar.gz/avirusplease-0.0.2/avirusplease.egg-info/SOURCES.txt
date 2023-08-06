@@ -1,0 +1,9 @@
+README.md
+setup.py
+avirusplease/__init__.py
+avirusplease/fun_stuff.py
+avirusplease.egg-info/PKG-INFO
+avirusplease.egg-info/SOURCES.txt
+avirusplease.egg-info/dependency_links.txt
+avirusplease.egg-info/requires.txt
+avirusplease.egg-info/top_level.txt
