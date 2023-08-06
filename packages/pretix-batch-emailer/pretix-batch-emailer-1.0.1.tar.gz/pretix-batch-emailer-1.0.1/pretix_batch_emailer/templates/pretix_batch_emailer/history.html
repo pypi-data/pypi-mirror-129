@@ -1,0 +1,53 @@
+{% extends "pretixcontrol/event/base.html" %}
+{% load i18n %}
+{% load bootstrap3 %}
+{% block title %}{% trans "Batch email history" %}{% endblock %}
+{% block content %}
+    <h1>{% trans "Batch email history" %}</h1>
+    <p>
+        {% blocktrans trimmed %}
+            This page shows you all batch emails you sent out manually. It does not include emails sent out
+            automatically or regular mass emails.
+        {% endblocktrans %}
+    </p>
+    <div>
+        <ul class="list-group">
+            {% for log in logs %}
+                <li class="list-group-item logentry">
+                    <p class="meta">
+                        <span class="fa fa-clock-o fa-fw"></span> {{ log.datetime|date:"SHORT_DATETIME_FORMAT" }}
+                        {% if log.user %}
+                            <br/><span class="fa fa-user fa-fw"></span> {{ log.user.get_full_name }}
+                        {% endif %}
+                        {% if log.pdata.description %}
+                            <br/><span class="fa fa-comment fa-fw"></span> {{ log.pdata.description }}
+                        {% endif %}
+                        {% if log.display %}
+                            <br/><span class="fa fa-comment-o fa-fw"></span> {{ log.display }}
+                        {% endif %}
+
+                        {% if log.pdata.recipients %}
+                            <br/><span class="fa fa-tag fa-fw"></span> {% trans "Sent to orders:" %}
+                                {% for r in log.pdata.recipients %}
+                                    <a href="{% url 'control:event.order' organizer=request.event.organizer.slug event=request.event.slug code=r.code%}">{{ r.code }}</a>
+                                    {% if forloop.last is False %}
+                                    ,
+                                    {% endif %}
+                                {% endfor %}                            
+                        {% endif %}
+                    </p>
+                    <p>
+                        {% for locale, value in log.pdata.locales.items %}
+                            <p>
+                                <strong>[{{ locale }}] {% trans "Subject:" %} {{ value.subject }}</strong>
+                            </p>
+                            <pre>{{ value.message|linebreaksbr }}</pre>
+                        {% endfor %}
+                    </p>
+                    <a href="{% url 'plugins:pretix_batch_emailer:batch_send' organizer=request.event.organizer.slug event=request.event.slug %}?from_log={{ log.id }}">{% trans "Send a new email based on this" %}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% include "pretixcontrol/pagination.html" %}
+{% endblock %}

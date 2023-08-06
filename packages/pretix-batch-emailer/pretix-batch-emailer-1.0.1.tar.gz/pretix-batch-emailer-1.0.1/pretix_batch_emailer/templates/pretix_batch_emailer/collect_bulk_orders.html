@@ -1,0 +1,14 @@
+
+{% load i18n %}
+{% load bootstrap3 %}
+{% load eventurl %}
+
+
+
+<form id="batch_emailer" action="{% url 'plugins:pretix_batch_emailer:batch_send' organizer.slug event.slug %}" method="post" class="form-horizontal">
+    {% csrf_token %}
+        <input type="hidden" name="previous" id="batch_emailer_previous" value="{{ request.path }}">
+        {{ form.orders }}
+        {{ form.url }}
+        {{ form.action }}
+</form>

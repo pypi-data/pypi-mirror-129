@@ -1,0 +1,8 @@
+recursive-include pretix_batch_emailer/static *
+recursive-include pretix_batch_emailer/templates *
+recursive-include pretix_batch_emailer/locale *
+recursive-include docs *.png
+include LICENSE
+exclude .gitlab-ci.yml
+recursive-exclude pretix_batch_emailer/locale .DS_Store
+exclude .vscode/*

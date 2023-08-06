@@ -1,0 +1,3 @@
+
+[pretix.plugin]
+pretix_batch_emailer=pretix_batch_emailer:PretixPluginMeta

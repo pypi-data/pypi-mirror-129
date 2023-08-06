@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-01 00:20+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Lukas Bockstaller\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+
+#: pretix_batch_emailer/__init__.py:16
+msgid "Batch Emailer"
+msgstr "Batch E-Mailer"
+
+#: pretix_batch_emailer/__init__.py:19
+msgid "Send a Batch Email to all currently displayed orders. "
+msgstr "Sende eine Batch E-Mail an alle dargestellten Bestellungen. "
+
+#: pretix_batch_emailer/forms.py:26
+msgid "Recipient Description"
+msgstr "Recipient Description"
+
+#: pretix_batch_emailer/forms.py:27 pretix_batch_emailer/forms.py:96
+msgid "Subject"
+msgstr "Betreff"
+
+#: pretix_batch_emailer/forms.py:28 pretix_batch_emailer/forms.py:102
+msgid "Message"
+msgstr "Nachricht"
+
+#: pretix_batch_emailer/forms.py:30
+msgid "Attachment"
+msgstr "Anhang"
+
+#: pretix_batch_emailer/forms.py:56
+msgid ""
+"Sending an attachment increases the chance of your email not arriving or "
+"being sorted into spam folders. We recommend only using PDFs of no more than "
+"2 MB in size."
+msgstr ""
+"Das Versenden von Anhängen erhöht die Chance, dass die E-Mail nicht ankommt "
+"oder in Spamordner sortiert wird. Wir empfehlen nur PDF-Dateien mit maximal "
+"2 MB zu verwenden."
+
+#: pretix_batch_emailer/forms.py:69
+#, python-brace-format
+msgid "Available placeholders: {list}"
+msgstr "Verfügbare Platzhalter: {list}"
+
+#: pretix_batch_emailer/forms.py:89
+msgid "Send email to"
+msgstr "E-Mail verschicken an"
+
+#: pretix_batch_emailer/signals.py:21
+msgid "Batch email visible orders"
+msgstr "Sende Batch E-Mail an sichtbare Bestellungen"
+
+#: pretix_batch_emailer/signals.py:51
+#: pretix_batch_emailer/templates/pretix_batch_emailer/history.html:4
+#: pretix_batch_emailer/templates/pretix_batch_emailer/history.html:6
+msgid "Batch email history"
+msgstr "Batch E-Mail Verlauf"
+
+#: pretix_batch_emailer/signals.py:78
+msgid "Batch email was sent"
+msgstr "Batch E-Mail wurde versendet"
+
+#: pretix_batch_emailer/signals.py:80
+msgid "The order received a batch email."
+msgstr "Die Bestellung hat eine Batch E-Mail erhalten."
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/history.html:8
+msgid ""
+"This page shows you all batch emails you sent out manually. It does not "
+"include emails sent out automatically or regular mass emails."
+msgstr ""
+"Diese Seite zeigt alle manuell verschickten Batch E-Mails. Sie enthält keine "
+"automatisch verschickten oder reguläre Massen Emails."
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/history.html:30
+msgid "Sent to orders:"
+msgstr "An Bestellungen verschickt:"
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/history.html:42
+msgid "Subject:"
+msgstr "Betreff:"
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/history.html:47
+msgid "Send a new email based on this"
+msgstr "Neue E-Mail anhand dieser E-Mail versenden"
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/send_mail.html:5
+#: pretix_batch_emailer/templates/pretix_batch_emailer/send_mail.html:7
+msgid "Send out emails"
+msgstr "E-Mails verschicken"
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/send_mail.html:22
+msgid "Email preview"
+msgstr "E-Mail Vorschau"
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/send_mail.html:35
+msgid "Preview email"
+msgstr "E-Mail Vorschau"
+
+#: pretix_batch_emailer/templates/pretix_batch_emailer/send_mail.html:38
+msgid "Send"
+msgstr "Senden"
+
+#: pretix_batch_emailer/views.py:73
+msgid "You supplied an invalid log entry ID"
+msgstr "Du hast eine ungültige Log Eintrag ID übergeben"
+
+#: pretix_batch_emailer/views.py:95
+msgid "No orders are visible."
+msgstr "Keine sichtbaren Bestellungen."
+
+#: pretix_batch_emailer/views.py:103
+msgid "We could not send the email. See below for details."
+msgstr "Wir konnten die Batch E-Mail nicht versenden. Details siehe unten."
+
+#: pretix_batch_emailer/views.py:113
+msgid "There are no orders matching this selection."
+msgstr "Es existieren keine Bestellungen die der Auswahl entsprechen."
+
+#: pretix_batch_emailer/views.py:128
+msgid "This value will be replaced based on dynamic parameters."
+msgstr ""
+"Dieser Textbaustein wird aufgrund verschiedener Parameter dynamisch "
+"angepasst."
+
+#: pretix_batch_emailer/views.py:143
+#, python-brace-format
+msgid "Subject: {subject}"
+msgstr "Betreff: {subject}"
+
+#: pretix_batch_emailer/views.py:175
+#, python-format
+msgid ""
+"Your message has been queued and will be sent to the contact addresses of %d "
+"orders in the next few minutes."
+msgstr ""
+"Die Nachricht wurde gespeichert und wird in den nächsten Minuten an die "
+"Kontaktadressen von %d Bestellungen versendet."
+
+#~ msgid "Batch Email history"
+#~ msgstr "Batch "
