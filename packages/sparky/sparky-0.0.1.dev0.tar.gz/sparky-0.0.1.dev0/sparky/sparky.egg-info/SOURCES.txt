@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sparky/sparky.egg-info/PKG-INFO
+sparky/sparky.egg-info/SOURCES.txt
+sparky/sparky.egg-info/dependency_links.txt
+sparky/sparky.egg-info/not-zip-safe
+sparky/sparky.egg-info/top_level.txt
