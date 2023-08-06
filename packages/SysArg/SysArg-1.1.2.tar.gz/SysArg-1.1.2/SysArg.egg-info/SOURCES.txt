@@ -1,0 +1,7 @@
+README.md
+setup.py
+SysArg.egg-info/PKG-INFO
+SysArg.egg-info/SOURCES.txt
+SysArg.egg-info/dependency_links.txt
+SysArg.egg-info/requires.txt
+SysArg.egg-info/top_level.txt
