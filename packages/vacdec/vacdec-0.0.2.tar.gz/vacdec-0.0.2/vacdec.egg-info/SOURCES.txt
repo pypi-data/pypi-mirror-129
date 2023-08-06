@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+vacdec
+vacdec.egg-info/PKG-INFO
+vacdec.egg-info/SOURCES.txt
+vacdec.egg-info/dependency_links.txt
+vacdec.egg-info/requires.txt
+vacdec.egg-info/top_level.txt
+vacdec.egg-info/zip-safe
