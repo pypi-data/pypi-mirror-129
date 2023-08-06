@@ -1,0 +1,8 @@
+README.md
+setup.py
+pywin10/__init__.py
+pywin10.egg-info/PKG-INFO
+pywin10.egg-info/SOURCES.txt
+pywin10.egg-info/dependency_links.txt
+pywin10.egg-info/requires.txt
+pywin10.egg-info/top_level.txt
