@@ -1,0 +1,5 @@
+v1.0.0, 2019-10-10 -- First version
+v1.0.1, 2019-10-28 -- Enable  explicit definition of aws region and credentials
+v1.0.2, 2019-10-28 -- Correct argument: region => region_name
+vv=1.0.3, 2021-11-22 -- msg=correct import
+v1.0.4, 2021-12-01 -- Clean pyc files
