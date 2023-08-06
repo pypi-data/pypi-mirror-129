@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+kursversorgung_google_sheets/Kursversorgung.py
+kursversorgung_google_sheets/ReportsDaily.py
+kursversorgung_google_sheets/ReportsMonthly.py
+kursversorgung_google_sheets/__init__.py
+kursversorgung_google_sheets/authenticate.py
+kursversorgung_google_sheets/gui.py
+kursversorgung_google_sheets/test.py
+kursversorgung_google_sheets.egg-info/PKG-INFO
+kursversorgung_google_sheets.egg-info/SOURCES.txt
+kursversorgung_google_sheets.egg-info/dependency_links.txt
+kursversorgung_google_sheets.egg-info/requires.txt
+kursversorgung_google_sheets.egg-info/top_level.txt

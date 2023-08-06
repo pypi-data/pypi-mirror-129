@@ -1,0 +1,11 @@
+exchangelib
+setuptools
+gspread
+pandas
+oauth2client
+google-api-python-client
+bs4
+beautifulsoup4
+blpapi
+xbbg
+future
