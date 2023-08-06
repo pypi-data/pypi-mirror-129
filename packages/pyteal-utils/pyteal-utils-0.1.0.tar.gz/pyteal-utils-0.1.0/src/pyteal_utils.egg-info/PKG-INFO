@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyteal-utils
+Version: 0.1.0
+Summary: Utilities to help in the development of PyTeal contracts for Algorand
+Home-page: UNKNOWN
+Author: Garrin McGoldrick
+Author-email: garrin.mcgoldrick@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
