@@ -1,0 +1,3 @@
+[console_scripts]
+glone=glone.cli:main
+
