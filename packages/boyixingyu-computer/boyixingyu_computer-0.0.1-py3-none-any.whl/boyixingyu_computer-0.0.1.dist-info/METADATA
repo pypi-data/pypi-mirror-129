@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: boyixingyu-computer
+Version: 0.0.1
+Summary: 计算加减乘除
+Home-page: UNKNOWN
+Author: boyixingyu
+Author-email: boyixingyu@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+这是一个实现加减乘车的API
+
