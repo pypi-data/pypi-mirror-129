@@ -1,0 +1,11 @@
+future==0.18.2
+pyjwt>=1.6.4
+pyyaml==5.*,>=5.4.1
+setuptools>=21.0.0
+urllib3>=1.25.3
+python-dateutil<3.0.0,>=2.8.1
+bkapi-bk-apigateway<2.0.0,>=1.0.0
+
+[extra]
+django>=1.11.1
+cryptography>=3.1.1
