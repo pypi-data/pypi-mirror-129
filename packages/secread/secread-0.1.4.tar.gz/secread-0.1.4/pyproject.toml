@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "secread"
+version = "0.1.4"
+description = "This Python module allows to retrive secrets from Thycotic Secret Server. It utilizes the REST API"
+authors = ["Josef Fuchs <j053ff0x@gmail.com>"]
+homepage = "https://github.com/jifox/secret-server-reader.git"
+keywords = ["thycotic", "secret", "secret-server"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0.0"
+python-dotenv = ">=0.1.0,<1.0.0"
+types-requests = ">=2.0.0, <3.0.0"
+requests = ">=2.0.0, <3.0.0"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+pylama = "*"
+pytest = "*"
+mypy = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ['py36']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
