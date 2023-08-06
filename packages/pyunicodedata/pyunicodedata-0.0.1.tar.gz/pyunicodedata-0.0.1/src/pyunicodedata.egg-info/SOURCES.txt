@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/pyunicodedata/__init__.py
+src/pyunicodedata.egg-info/PKG-INFO
+src/pyunicodedata.egg-info/SOURCES.txt
+src/pyunicodedata.egg-info/dependency_links.txt
+src/pyunicodedata.egg-info/top_level.txt
