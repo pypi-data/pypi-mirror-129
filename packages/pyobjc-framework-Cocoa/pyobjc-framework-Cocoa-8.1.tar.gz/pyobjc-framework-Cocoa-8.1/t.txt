@@ -1,0 +1,53 @@
+Modules/_AppKit_appmain.m:29:32: error: implicit conversion changes signedness: 'int' to 'unsigned long' [-Werror,-Wsign-conversion]
+    argv = (char**)malloc((argc+1)*sizeof(char*));
+                           ~~~~^~ ~
+Modules/_AppKit_appmain.m:62:57: error: cast from 'char **' to 'const char **' must have all intermediate pointers const qualified to be safe [-Werror,-Wcast-qual]
+            res = NSApplicationMain(argc, (const char**)argv);
+                                                        ^
+Modules/_AppKit_appmain.m:28:12: error: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Werror,-Wshorten-64-to-32]
+    argc = PySequence_Size(arglist);
+         ~ ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from Modules/_AppKit.m:13:
+Modules/_AppKit_nsbezierpath.m:123:11: error: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Werror,-Wshorten-64-to-32]
+    len = PySequence_Fast_GET_SIZE(seq);
+        ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/abstract.h:720:24: note: expanded from macro 'PySequence_Fast_GET_SIZE'
+    (PyList_Check(o) ? PyList_GET_SIZE(o) : PyTuple_GET_SIZE(o))
+                       ^~~~~~~~~~~~~~~~~~
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/cpython/listobject.h:34:32: note: expanded from macro 'PyList_GET_SIZE'
+#define PyList_GET_SIZE(op)    Py_SIZE(_PyList_CAST(op))
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/object.h:140:57: note: expanded from macro 'Py_SIZE'
+#define Py_SIZE(ob)             (_PyVarObject_CAST(ob)->ob_size)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from Modules/_AppKit.m:13:
+Modules/_AppKit_nsbezierpath.m:123:11: error: implicit conversion loses integer precision: 'Py_ssize_t' (aka 'long') to 'int' [-Werror,-Wshorten-64-to-32]
+    len = PySequence_Fast_GET_SIZE(seq);
+        ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/abstract.h:720:45: note: expanded from macro 'PySequence_Fast_GET_SIZE'
+    (PyList_Check(o) ? PyList_GET_SIZE(o) : PyTuple_GET_SIZE(o))
+                                            ^~~~~~~~~~~~~~~~~~~
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/cpython/tupleobject.h:21:33: note: expanded from macro 'PyTuple_GET_SIZE'
+#define PyTuple_GET_SIZE(op)    Py_SIZE(_PyTuple_CAST(op))
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10/object.h:140:57: note: expanded from macro 'Py_SIZE'
+#define Py_SIZE(ob)             (_PyVarObject_CAST(ob)->ob_size)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+In file included from Modules/_AppKit.m:14:
+Modules/_AppKit_nsbitmap.m:315:60: error: unused parameter 'arguments' [-Werror,-Wunused-parameter]
+                                           PyObject*const* arguments, size_t nargs)
+                                                           ^
+Modules/_AppKit_nsbitmap.m:340:17: error: implicit conversion loses integer precision: 'NSInteger' (aka 'long') to 'int' [-Werror,-Wshorten-64-to-32]
+                [(NSBitmapImageRep*)PyObjCObject_GetObject(self) bytesPerPlane];
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modules/_AppKit_nsbitmap.m:381:84: error: unused parameter 'arguments' [-Werror,-Wunused-parameter]
+call_NSBitmapImageRep_bitmapData(PyObject* method, PyObject* self, PyObject*const* arguments, size_t nargs)
+                                                                                   ^
+Modules/_AppKit_nsbitmap.m:402:17: error: implicit conversion loses integer precision: 'NSInteger' (aka 'long') to 'int' [-Werror,-Wshorten-64-to-32]
+                [(NSBitmapImageRep*)PyObjCObject_GetObject(self) bytesPerPlane];
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from Modules/_AppKit.m:15:
+Modules/_AppKit_nsfont.m:48:37: error: implicit conversion changes signedness: 'long' to 'unsigned long' [-Werror,-Wsign-conversion]
+    packedGlyphs = malloc(count * 4 + 1);
+                   ~~~~~~ ~~~~~~~~~~^~~
+
