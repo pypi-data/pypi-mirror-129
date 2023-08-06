@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ontoviz
+Version: 0.post1.dev34
+Summary: UNKNOWN
+Home-page: https://github.com/WWU-AMM/ontoviz
+Author: René Fritze
+Author-email: rene.fritze@wwu.de
+License: BSD license
+Keywords: ontoviz
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: ci
+Provides-Extra: docs
+Provides-Extra: full
+License-File: LICENSE
+License-File: AUTHORS.md
+
+To be converted from README.org
+
+
