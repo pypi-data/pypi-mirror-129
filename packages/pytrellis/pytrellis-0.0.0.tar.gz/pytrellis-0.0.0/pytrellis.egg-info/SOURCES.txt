@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytrellis.egg-info/PKG-INFO
+pytrellis.egg-info/SOURCES.txt
+pytrellis.egg-info/dependency_links.txt
+pytrellis.egg-info/top_level.txt
