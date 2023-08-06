@@ -1,0 +1,52 @@
+# TextPreprocessing
+
+This is the beta release of TextPreprocessing library. This library currenly capable of cleansing your text data for modal training.
+
+TextPreprocessing library can do the below actions:
+
+    * Expand general abbreviations
+    * Clear email ids in the text data
+    * Clear web URLs
+    * Clear html tags present in the text dataset
+    * Clear gibberish charsets
+    * Removes english stop words
+    * Lemetize the text
+    * Correct spelling errors.
+
+We are enhancing this package on a regular basis and adding more flexible components to it in the upcoming releases. Please do update this package on frequently.
+
+### How to install this package?
+
+```
+pip install TextPreprocessing
+
+```
+- Post installing the package, please install spacy en_core_web_sm library.
+
+```
+python spacy download en_core_web_sm
+```
+
+### How to use the package?
+
+```
+from TextPreprocessing.preprocess import preprocess
+
+obj = preprocess()
+
+txts = ["""No Rohny J, it doesn't CLEARLY indicate it can't find the drives.  The new error is that the program won't even open. And on the uninstall, for the 2nd time, it failed. I'm giving up on your support.  It's been nothing but more wasted time for me. I now have to get my 2nd new warranty replacement drive cloned and installed into my laptop and have the 2nd failed warranty ssd returned to you before you bill me more. I've already paid too much to have replacement drives sent to me. At this point, I could have simply bought a new drive, probably for less than WD has been charging for warranty replacement. It's a real shame customer service has fallen as much as it has.  Customer service is all we have sometimes, and WD used to have such high standards. I've gotten very tired of dealing with WD. In my 30 year IT career, I've never bought another product but WD. Now it's causing me more headache than necessary.  Not a happy customer. ~Betsy""", """I hear a noise whne it trys to run. It shows on my PC but that it has 0 room. I've tried checking the wires to it and they are fine. The system will not allow me to do anything with the drive. Thankfully I only had a couple of things on it. I have tried my other drives and then are fine. It was working until the vibration noise started. Now this drive doesn't work.
+"""]
+
+obj.reset_start()
+results = list(map(lambda x: obj.cleanup(x, len(txts)), txts))
+
+print(results)
+```
+
+**Output**
+
+```
+
+['round j clearly indicate find drive new error program open install and time fail give support waste time and new warranty replacement drive close instal lawton and fail warranty sad return bill pay replacement drive send point simply buy new drive probably we charge warranty replacement real shame customer service fall customer service we high standard get tired dealing we 30 year career buy product we cause headache necessary happy customer bet', 'hear noise when try run show pp 0 room try check wire fine system allow drive thankful couple thing try drive fine work vibration noise start drive work']
+
+```
