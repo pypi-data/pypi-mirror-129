@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyome.egg-info/PKG-INFO
+pyome.egg-info/SOURCES.txt
+pyome.egg-info/dependency_links.txt
+pyome.egg-info/top_level.txt
