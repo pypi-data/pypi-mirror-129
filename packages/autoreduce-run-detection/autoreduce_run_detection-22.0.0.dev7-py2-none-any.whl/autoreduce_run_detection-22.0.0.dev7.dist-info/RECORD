@@ -1,0 +1,12 @@
+autoreduce_run_detection/__init__.py,sha256=RB38bWz-kXNuE7ILpYChL9ou-yVFht_zY6i3QXvvL_U,336
+autoreduce_run_detection/run_detection.py,sha256=RsooAN4AZEvG0_tIR2BZOfQbCsyrEQsXeyiW4gM4EJc,6876
+autoreduce_run_detection/settings.py,sha256=y2ybmyKBZU9LjvpwsSk3tLgRnZpIOURnVA06TKyo6l4,977
+autoreduce_run_detection/tests/__init__.py,sha256=RB38bWz-kXNuE7ILpYChL9ou-yVFht_zY6i3QXvvL_U,336
+autoreduce_run_detection/tests/test_run_detection.py,sha256=IjVpbZ-V3DbsPjsqF1S_Nt6yAmtxEMiZ225oHV1V_uo,12211
+autoreduce_run_detection-22.0.0.dev7.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+autoreduce_run_detection-22.0.0.dev7.dist-info/METADATA,sha256=VIY_FVVcFv2eX2uryiRXd-HjtBaV5pC3x31jeNpG1LY,504
+autoreduce_run_detection-22.0.0.dev7.dist-info/RECORD,,
+autoreduce_run_detection-22.0.0.dev7.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+autoreduce_run_detection-22.0.0.dev7.dist-info/entry_points.txt,sha256=yd2fjB-CCsHjWATSmiqcXnh7jmzO_ThjYW_EfYL6Jk0,90
+autoreduce_run_detection-22.0.0.dev7.dist-info/metadata.json,sha256=N_5XZjX0A8aZeaNrWqZXcFMLwdHVxpWTikzL6kjo9as,888
+autoreduce_run_detection-22.0.0.dev7.dist-info/top_level.txt,sha256=3USujH23_qt4ym0Tej7sVRYjNxv-s9i4nsc3Wn6d8PQ,25
