@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ivp-enhanced
+Version: 0.0.4
+Summary: enhance some missing features of scipy.integrate.solve_ivp
+Home-page: https://github.com/zhaofeng-shu33/ivp-enhanced
+Author: zhaofeng-shu33
+Author-email: 616545598@qq.com
+License: UNKNOWN
+Description: # Solving initial value problem of ODE based on Scipy
+        still working in progress, enhance some missing features of scipy
+        * fixed stepsize RK
+        * explicit midpoint and RKF4
+        * implicit midpoint and euler
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
